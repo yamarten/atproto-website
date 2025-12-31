@@ -1,0 +1,294 @@
+# Japanese translations for PACKAGE package
+# Copyright (C) 2026 Bluesky Social PBC
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"PO-Revision-Date: 2026-01-07 19:40+0900\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. type: Plain text
+#: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:21
+#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:64
+#: src/guides/streaming-data/en.mdx:60 src/guides/video-handling/en.mdx:39
+#: src/guides/account-migration/en.mdx:74 src/guides/feeds/en.mdx:105
+#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:52
+#: src/guides/scopes/en.mdx:45 src/guides/subscriptions/en.mdx:78
+#: src/guides/writing-data/en.mdx:181 src/guides/creating-a-labeler/en.mdx:56
+#: src/guides/labels/en.mdx:110 src/guides/sdk-auth/en.mdx:145
+#: src/guides/sync/en.mdx:51 src/guides/auth/en.mdx:41
+#: src/guides/lexicon/en.mdx:128 src/guides/publishing-lexicons/en.mdx:53
+#: src/guides/backfilling/en.mdx:60 src/guides/reading-data/en.mdx:165
+#: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
+#, no-wrap
+msgid "## Further Reading and Resources\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-patterns/en.mdx:2 src/guides/subscriptions/en.mdx:2
+#: src/guides/labels/en.mdx:2 src/guides/sdk-auth/en.mdx:2
+#: src/guides/auth/en.mdx:2
+#, no-wrap
+msgid "import {Container} from \"@/components/Container\"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/labels/en.mdx:7
+#, fuzzy, no-wrap
+msgid ""
+"export const header = {\n"
+"  title: 'Labels',\n"
+"  description: 'All about moderation labels',\n"
+"}\n"
+msgstr "import {Heading} from '@/components/Heading' export const header = { title: 'FAQ', description: 'AT プロトコルに関するよくある質問。', }"
+
+#. type: Plain text
+#: src/guides/labels/en.mdx:9
+#, no-wrap
+msgid "## About labels\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/labels/en.mdx:11
+#, no-wrap
+msgid "Moderation in AT consists of multiple, stackable systems, including:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/labels/en.mdx:15
+#, no-wrap
+msgid ""
+"1. Network takedowns which filter the content from the APIs\n"
+"2. Labels placed on content by moderation services\n"
+"3. User controls such as mutes and blocks\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/labels/en.mdx:17
+#, no-wrap
+msgid "Developers building client applications should understand how to apply labels and user controls.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/labels/en.mdx:19
+#, no-wrap
+msgid "**Labels** are a form of metadata about any account or content in the AT ecosystem. Labels are published by *moderation services*, which are either hardcoded into the application or chosen by the user. They are attached to records in the responses under the `labels` key.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/labels/en.mdx:21
+#, no-wrap
+msgid "A label is published with the following information:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/labels/en.mdx:37
+#, no-wrap
+msgid ""
+"```markdown\n"
+"{\n"
+"  /** DID of the actor who created this label. */\n"
+"  src: string\n"
+"  /** AT URI of the record, repository (account), or other resource that this label applies to. */\n"
+"  uri: string\n"
+"  /** Optionally, CID specifying the specific version of 'uri' resource this label applies to. */\n"
+"  cid?: string\n"
+"  /** The short string name of the value or type of this label. */\n"
+"  val: string\n"
+"  /** If true, this is a negation label, overwriting a previous label. */\n"
+"  neg?: boolean\n"
+"  /** Timestamp when this label was created. */\n"
+"  cts: string\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/labels/en.mdx:39
+#, no-wrap
+msgid "```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/labels/en.mdx:41
+#, no-wrap
+msgid "## **Label values**\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/labels/en.mdx:43
+#, no-wrap
+msgid "The *value* of a label will determine its behavior. Some example label values are `porn`, `gore`, and `spam`.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/labels/en.mdx:45
+#, no-wrap
+msgid "Label values are strings. They currently must only be lowercase a-z or a dash character `^[a-z-]+$`. Some of them start with `!`, but that can only be used by global label values.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/labels/en.mdx:47
+#, no-wrap
+msgid "Label values are interpreted by their definitions. Those definitions include these attributes:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/labels/en.mdx:52
+#, no-wrap
+msgid ""
+"- `blurs` which may be `content` or `media` or `none`\n"
+"- `severity` which may be `alert` or `inform` or `none`\n"
+"- `defaultSetting` which may be `hide` or `warn` or `ignore`\n"
+"- `adultOnly` which is boolean\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/labels/en.mdx:54
+#, no-wrap
+msgid "There are other definition attributes, but they are only used by the global label values.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/labels/en.mdx:56
+#, no-wrap
+msgid "## **Global label values**\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/labels/en.mdx:58
+#, no-wrap
+msgid "There are a few label values which are defined by the protocol. They are:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/labels/en.mdx:66
+#, no-wrap
+msgid ""
+"- `!hide` which puts a generic warning on content that cannot be clicked through, and filters the content from listings. Not configurable by the user.\n"
+"- `!warn` which puts a generic warning on content but can be clicked through. Not configurable by the user.\n"
+"- `!no-unauthenticated` which makes the content inaccessible to logged-out users in applications which respect the label.\n"
+"- `porn` which puts a warning on images and can only be clicked through if the user is 18+ and has enabled adult content.\n"
+"- `sexual` which behaves like `porn` but is meant to handle less intense sexual content.\n"
+"- `graphic-media` which behaves like `porn` but is for violence / gore.\n"
+"- `nudity` which puts a warning on images but isn't 18+ and defaults to ignore.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/labels/en.mdx:68
+#, no-wrap
+msgid "There are two reasons global label values exist.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/labels/en.mdx:70
+#, no-wrap
+msgid "The first is because only label values which are defined globally can be used as self-labels (ie set by a user who is not a Labeler). The porn, sexual, gore, nudity, and !no-unauthenticated labels are global for this reason.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/labels/en.mdx:72
+#, no-wrap
+msgid "The second is because some special behaviors, like \"non-configurable\" and \"applies only to logged out users,\" cannot be applied to custom labels. The !hide, !warn, and !no-unauthenticated labels are global for this reason.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/labels/en.mdx:74
+#, no-wrap
+msgid "## **Custom label values**\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/labels/en.mdx:76
+#, no-wrap
+msgid "Labelers may define their own label values. Every Labeler has its own namespace of label values it defines. Custom definitions can override all global definitions for the defining Labeler except for the ones that start with a `!`, because those are reserved.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/labels/en.mdx:78
+#, no-wrap
+msgid "Since there are two behavior attributes (`blurs` and `severity`) with three values each, there are 9 possible behaviors for custom label values.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/labels/en.mdx:90
+#, no-wrap
+msgid ""
+"| **Blurs** | **Severity** | **Description** |\n"
+"| --- | --- | --- |\n"
+"| `content` | `alert` | Hide the content and put a \"danger\" warning label on the content if viewed |\n"
+"| `content` | `inform` | Hide the content and put a \"neutral\" information label on the content if viewed |\n"
+"| `content` | `none` | Hide the content |\n"
+"| `media` | `alert` | Hide images in the content and put a \"danger\" warning label on the content if viewed |\n"
+"| `media` | `inform` | Hide images in the content and put a \"neutral\" information label on the content if viewed |\n"
+"| `media` | `none` | Hide images in the content |\n"
+"| `none` | `alert` | Put a \"danger\" warning label on the content |\n"
+"| `none` | `inform` | Put a \"neutral\" information label on the content |\n"
+"| `none` | `none` | No visual effect |\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/labels/en.mdx:92
+#, no-wrap
+msgid "Some examples of the definitions you might use for a label\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/labels/en.mdx:98
+#, no-wrap
+msgid ""
+"- Harassment: `blurs=content` + `severity=alert`\n"
+"- Spider warning: `blurs=media` + `severity=alert`\n"
+"- Misinformation: `blurs=none` + `severity=alert`\n"
+"- Verified user: `blurs=none` + `severity=inform`\n"
+"- Curational down-regulate: `blurs=none` + `severity=none`\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/labels/en.mdx:100
+#, no-wrap
+msgid "The `defaultSetting` establishes how the label will be configured when the user first subscribes to the labeler.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/labels/en.mdx:102
+#, no-wrap
+msgid "The `adultOnly` establishes whether the label should be configurable if adult content is disabled.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/labels/en.mdx:104
+#, no-wrap
+msgid "## **Label configuration**\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/labels/en.mdx:106
+#, no-wrap
+msgid "A user may choose to hide, warn, or ignore each label from a labeler. Hiding and warning are basically similar, except that hide will also filter the labeled content from feeds and listings. Ignore just ignores the label. If adult content is not enabled in preferences, the behavior should force to hide with no override.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/labels/en.mdx:108
+#, no-wrap
+msgid "For more information, see the [Labels](/specs/label) spec.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/labels/en.mdx:115
+#, no-wrap
+msgid ""
+"- [Moderation](/guides/moderation)\n"
+"- [Subscriptions](/guides/subscriptions)\n"
+"- [Creating a labeler](/guides/creating-a-labeler)\n"
+"- [Using Ozone](/guides/using-ozone)\n"
+"- [Label Specs](/specs/label)\n"
+msgstr ""

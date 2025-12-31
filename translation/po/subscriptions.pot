@@ -1,0 +1,223 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Bluesky Social PBC
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:21
+#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:64
+#: src/guides/streaming-data/en.mdx:60 src/guides/video-handling/en.mdx:39
+#: src/guides/account-migration/en.mdx:74 src/guides/feeds/en.mdx:105
+#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:52
+#: src/guides/scopes/en.mdx:45 src/guides/subscriptions/en.mdx:78
+#: src/guides/writing-data/en.mdx:181 src/guides/creating-a-labeler/en.mdx:56
+#: src/guides/labels/en.mdx:110 src/guides/sdk-auth/en.mdx:145
+#: src/guides/sync/en.mdx:51 src/guides/auth/en.mdx:41
+#: src/guides/lexicon/en.mdx:128 src/guides/publishing-lexicons/en.mdx:53
+#: src/guides/backfilling/en.mdx:60 src/guides/reading-data/en.mdx:165
+#: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
+#, no-wrap
+msgid "## Further Reading and Resources\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-patterns/en.mdx:2 src/guides/subscriptions/en.mdx:2
+#: src/guides/labels/en.mdx:2 src/guides/sdk-auth/en.mdx:2
+#: src/guides/auth/en.mdx:2
+#, no-wrap
+msgid "import {Container} from \"@/components/Container\"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/subscriptions/en.mdx:7
+#, no-wrap
+msgid ""
+"export const header = {\n"
+"  title: 'Subscriptions',\n"
+"  description: 'Subscribing to a labeler service',\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/subscriptions/en.mdx:9
+#, no-wrap
+msgid "## Labeler Subscriptions\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/subscriptions/en.mdx:11
+#, no-wrap
+msgid "Labeler services each have a service identity, meaning a DID document. This is the DID that appears in the label source (**`src`**) field.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/subscriptions/en.mdx:13
+#, no-wrap
+msgid "To include labels from a given labeler, set the `atproto-accept-labelers` header on an XRPC request to a comma-separated list of the DIDs of the labelers you want to include, like so:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/subscriptions/en.mdx:17
+#, no-wrap
+msgid ""
+"```bash\n"
+"curl -H \"atproto-accept-labelers: did:plc:vmt7o7y6titkqzzxav247zrn, did:plc:vmt7o7y6titkqzzxav247zrn\"\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/subscriptions/en.mdx:19
+#, no-wrap
+msgid "You can also add labelers using the TypeScript SDK:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/subscriptions/en.mdx:22
+#, no-wrap
+msgid ""
+"```tsx\n"
+"import { Client } from '@atproto/lex'\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/subscriptions/en.mdx:27
+#, no-wrap
+msgid ""
+"// Global app-level labelers\n"
+"Client.configure({\n"
+"  appLabelers: ['did:plc:labeler1', 'did:plc:labeler2'],\n"
+"})\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/subscriptions/en.mdx:32
+#, no-wrap
+msgid ""
+"// Client-specific labelers\n"
+"const client = new Client(session, {\n"
+"  labelers: ['did:plc:labeler3'],\n"
+"})\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/subscriptions/en.mdx:35
+#, no-wrap
+msgid ""
+"// Add labelers dynamically\n"
+"client.addLabelers(['did:plc:labeler4'])\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/subscriptions/en.mdx:38
+#, no-wrap
+msgid ""
+"// Replace all labelers\n"
+"client.setLabelers(['did:plc:labeler5'])\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/subscriptions/en.mdx:42
+#, no-wrap
+msgid ""
+"// Clear labelers\n"
+"client.clearLabelers()\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/subscriptions/en.mdx:44
+#, no-wrap
+msgid "## Use labels in your app\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/subscriptions/en.mdx:46
+#, no-wrap
+msgid "Labels may be placed on accounts or records. Apps can interprets targets in different ways:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/subscriptions/en.mdx:50
+#, no-wrap
+msgid ""
+"- On an account: has account-wide effects\n"
+"- On a profile: affects only the profile record (e.g. user avatar) and never hides any content, including the account in listings.\n"
+"- On content: affects the content specifically (a post record, a list, a feed, etc.)\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/subscriptions/en.mdx:52
+#, no-wrap
+msgid "## Reporting\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/subscriptions/en.mdx:54
+#, no-wrap
+msgid "To send a report to a Labeler, use the `com.atproto.moderation.createReport` procedure. Users may send reports to any of their labelers.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/subscriptions/en.mdx:56
+#, no-wrap
+msgid "To specify which labeler should receive the label, set the `atproto-proxy` header with the DID of the labeler and the service key of `atproto_labeler`. In the TypeScript SDK, it looks like this:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/subscriptions/en.mdx:59
+#, no-wrap
+msgid ""
+"```typescript\n"
+"import { AtpAgent } from '@atproto/api'\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/subscriptions/en.mdx:67
+#, no-wrap
+msgid ""
+"const agent = new AtpAgent({\n"
+"    service: 'https://bsky.social'\n"
+"})\n"
+"await agent.login({\n"
+"    identifier: 'alex.bsky.team',\n"
+"    password: 'your-app-password'\n"
+"})\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/subscriptions/en.mdx:76
+#, no-wrap
+msgid ""
+"agent\n"
+"  .withProxy('atproto_labeler', 'did:web:my-labeler.com')\n"
+"  .createModerationReport({\n"
+"    reasonType: 'com.atproto.moderation.defs#reasonViolation',\n"
+"    reason: 'They were being such a jerk to me!',\n"
+"    subject: { did: 'did:web:bob.com' },\n"
+"  })\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/subscriptions/en.mdx:83
+#, no-wrap
+msgid ""
+"- [Moderation](/guides/moderation)\n"
+"- [Labels](/guides/labels)\n"
+"- [Creating a labeler](/guides/creating-a-labeler)\n"
+"- [Label Specs](/specs/label)\n"
+"- [Using Ozone](/guides/using-ozone)\n"
+msgstr ""

@@ -1,0 +1,162 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Bluesky Social PBC
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:21
+#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:64
+#: src/guides/streaming-data/en.mdx:60 src/guides/video-handling/en.mdx:39
+#: src/guides/account-migration/en.mdx:74 src/guides/feeds/en.mdx:105
+#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:52
+#: src/guides/scopes/en.mdx:45 src/guides/subscriptions/en.mdx:78
+#: src/guides/writing-data/en.mdx:181 src/guides/creating-a-labeler/en.mdx:56
+#: src/guides/labels/en.mdx:110 src/guides/sdk-auth/en.mdx:145
+#: src/guides/sync/en.mdx:51 src/guides/auth/en.mdx:41
+#: src/guides/lexicon/en.mdx:128 src/guides/publishing-lexicons/en.mdx:53
+#: src/guides/backfilling/en.mdx:60 src/guides/reading-data/en.mdx:165
+#: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
+#, no-wrap
+msgid "## Further Reading and Resources\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-patterns/en.mdx:2 src/guides/subscriptions/en.mdx:2
+#: src/guides/labels/en.mdx:2 src/guides/sdk-auth/en.mdx:2
+#: src/guides/auth/en.mdx:2
+#, no-wrap
+msgid "import {Container} from \"@/components/Container\"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/auth/en.mdx:7
+#, no-wrap
+msgid ""
+"export const header = {\n"
+"  title: 'Auth',\n"
+"  description: 'Auth for AT Protocol application developers',\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/auth/en.mdx:9
+#, no-wrap
+msgid "## About authentication\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/auth/en.mdx:11
+#, no-wrap
+msgid "**Authentication is the first part of our docs for a reason!** You don't always need to be authenticated to [read data](/reading-data#unauthenticated-reads) from AT Protocol records or even to [stream data from the firehose](/guides/streaming-data). But if you're looking to build an application that integrates with the Atmosphere of ATProto apps in some way, you'll begin with authentication. You might start out by just using AT Protocol identities as an OAuth source — though you'll find that there's lots more you can do by building on top of the ATProto [social graph](/guides/social-graph).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/auth/en.mdx:13
+#, no-wrap
+msgid "This section is aimed at developers building applications on AT Protocol. Applications with their own end-user login flow should implement [OAuth](#what-is-oauth) for authentication. Single-purpose applications such as bots or command line tools may use [password authentication](/guides/sdk-auth) instead.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/auth/en.mdx:17
+#, no-wrap
+msgid ""
+"<Note>\n"
+"We also support the use of [App Passwords](/specs/xrpc#app-passwords). Accounts can create and revoke app passwords separate from their primary password. This way, you do not need to supply your primary password to applications that use password auth.\n"
+"</Note>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/auth/en.mdx:19
+#, no-wrap
+msgid "To implement OAuth in your application, refer to [OAuth patterns](/guides/oauth-patterns) for common use cases, and the [Scopes](/guides/scopes) guide for understanding permission models. If you're building your own protocol implementation or OAuth Client SDK, refer to the [OAuth spec](/specs/oauth).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/auth/en.mdx:21
+#, no-wrap
+msgid "## What *is* OAuth?\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/auth/en.mdx:23
+#, no-wrap
+msgid "OAuth is an authorization framework that lets developers request access to an account without requiring users to hand over their password. Without OAuth, if someone wanted to authorize a 3rd party app to access their account, their only option would be to type their username and password into that app. This is bad for all sorts of reasons, the first being that a 3rd party app gets to see, and likely save, passwords. And once an app has a username and password, the app would have _full_ access to their account.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/auth/en.mdx:25
+#, no-wrap
+msgid "OAuth aims to solve these problems with a family of open specifications for managing secure authorization without requiring a person's username and password. If you've ever used a \"Sign in with...\" button or link on the web, you've used OAuth.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/auth/en.mdx:27
+#, no-wrap
+msgid "As a developer, you can request limited access to a person's account, meaning if you only need to post a message to someone's public timeline, you don't also need to request access to read their private messages. This is great for your app because you don't have to worry about managing data you don't need, and it's great for the person using your app because they don't need to worry about their DMs being compromised.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/auth/en.mdx:29
+#, no-wrap
+msgid "## How is OAuth Different in AT Protocol?\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/auth/en.mdx:31
+#, no-wrap
+msgid "ATProto [specifies](/specs/oauth) a particular \"profile\" of the OAuth standards, using [OAuth 2.1](https://www.ietf.org/archive/id/draft-ietf-oauth-v2-1-13.html) as the foundation.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/auth/en.mdx:33
+#, no-wrap
+msgid "There are a few details that might catch you off guard if you're used to using other OAuth systems.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/auth/en.mdx:35
+#, no-wrap
+msgid "- **ATProto is distributed**: Usually, when an app has a \"sign in with...\" button, it provides a choice of which authorities it allows to authenticate users (usually one of a few big corporations). With ATProto OAuth, the app has no prior relationship with the authentication provider: a user's [PDS](/guides/the-at-stack#pds). This is also the reason why ATProto OAuth is not compatible with OIDC, which requires a pre-established relationship.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/auth/en.mdx:37
+#, no-wrap
+msgid "- **Migration**: ATProto users can migrate their accounts between servers ([PDSes](/guides/glossary#pds-personal-data-server)) over time. To facilitate this ATProto has a flexible [Identity](/guides/identity) layer, which allows usernames ([handles](/specs/handle)) to be resolved to a static user ID ([DID](/specs/did)), which in turn can be resolved to locate the user's PDS. When a user logs in to an app, the OAuth client dynamically resolves these relationships.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/auth/en.mdx:39
+#, no-wrap
+msgid "- **Client IDs**: In other OAuth ecosystems, it is often necessary for client apps to pre-register themselves with the resource server. This is not viable in a decentralized system (with many clients and many resource servers), so ATProto addresses this using [Client ID Metadata Documents](/specs/oauth#client-id-metadata-document).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/auth/en.mdx:43
+#, no-wrap
+msgid "Begin by reading [SDK authentication](/guides/sdk-auth). To implement OAuth in your application, refer to [OAuth patterns](/guides/oauth-patterns) for common use cases, and the [Scopes](/guides/scopes) guide for understanding permission models.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/auth/en.mdx:48
+#, no-wrap
+msgid ""
+"- [SDK authentication](/guides/sdk-auth)\n"
+"- [OAuth patterns](/guides/oauth-patterns)\n"
+"- [Scopes](/guides/scopes)\n"
+"- [OAuth spec](/specs/oauth)\n"
+"- [Permissions spec](/specs/permission)\n"
+msgstr ""

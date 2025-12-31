@@ -1,0 +1,586 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Bluesky Social PBC
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: src/guides/applications/en.mdx:677 src/articles/atproto-ethos/en.mdx:147
+#: src/articles/atproto-for-distsys-engineers/en.mdx:232
+#, no-wrap
+msgid "<FooterCTA href=\"/\" title=\"Ready to learn more?\" description=\"Specs, guides, and SDKs can be found here.\" />\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:27
+#, no-wrap
+msgid ""
+"import {Container} from \"@/components/Container\"\n"
+"import {FooterCTA} from \"@/components/FooterCTA\"\n"
+"import image1 from \"./image1.png\"\n"
+"import image2 from \"./image2.png\"\n"
+"import image3 from \"./image3.png\"\n"
+"import image4 from \"./image4.png\"\n"
+"import image5 from \"./image5.png\"\n"
+"import image6 from \"./image6.png\"\n"
+"import image7 from \"./image7.png\"\n"
+"import image8 from \"./image8.png\"\n"
+"import image9 from \"./image9.png\"\n"
+"import image10 from \"./image10.png\"\n"
+"import image11 from \"./image11.png\"\n"
+"import image12 from \"./image12.png\"\n"
+"import image13 from \"./image13.png\"\n"
+"import image14 from \"./image14.png\"\n"
+"import image15 from \"./image15.png\"\n"
+"import image16 from \"./image16.png\"\n"
+"import image17 from \"./image17.png\"\n"
+"import image18 from \"./image18.png\"\n"
+"import image19 from \"./image19.png\"\n"
+"import image20 from \"./image20.png\"\n"
+"import image21 from \"./image21.png\"\n"
+"import image22 from \"./image22.png\"\n"
+"import image23 from \"./image23.png\"\n"
+"import image24 from './image24.png'\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:33
+#, no-wrap
+msgid ""
+"export const header = {\n"
+"  title: 'ATProto for distributed systems engineers',\n"
+"  description:\n"
+"    'AT Protocol is the tech developed at Bluesky for open social networking. In this article we\\'re going to explore AT Proto from the perspective of distributed backend engineering.',\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:35
+#, no-wrap
+msgid "# ATProto for distributed systems engineers\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:37
+#, no-wrap
+msgid "*Sep 3, 2024*\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:39
+#, no-wrap
+msgid "AT Protocol is the tech developed at [Bluesky](https://bsky.app) for open social networking. In this article we're going to explore AT Proto from the perspective of distributed backend engineering. {{className: 'lead'}}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:41
+#, no-wrap
+msgid "If you've ever built a backend with [stream-processing](https://milinda.pathirage.org/kappa-architecture.com/), then you're familiar with the kind of systems we'll be exploring. If you're not &mdash; no worries! We'll step through it. {{className: 'lead'}}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:43
+#, no-wrap
+msgid "## Scaling the traditional Web backend\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:45
+#, no-wrap
+msgid "The classic, happy Web architecture is the “one big SQL database” behind our app server. The app talks to the database and handles requests from the frontend.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:49
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={image1} alt=\"\" className=\"w-full dark:invert max-w-md mx-auto\" />\n"
+"</Container>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:51
+#, no-wrap
+msgid "As our application grows, we hit some performance limits so we toss some caches into the stack.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:55
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={image2} alt=\"\" className=\"w-full dark:invert max-w-2xl mx-auto\" />\n"
+"</Container>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:57
+#, no-wrap
+msgid "Then let's say we scale our database horizontally through sharding and replicas.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:61
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={image3} alt=\"\" className=\"w-full dark:invert max-w-xl mx-auto\" />\n"
+"</Container>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:63
+#, no-wrap
+msgid "This is pretty good, but we're building a social network with hundreds of millions of users; even this model hits limits. The problem is that our SQL database is “[strongly consistent](https://en.wikipedia.org/wiki/Strong_consistency)” which means the state is kept uniformly in sync across the system. Maintaining strong consistency incurs a performance cost which becomes our bottleneck. \n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:65
+#, no-wrap
+msgid "If we can relax our system to use “[eventual consistency](https://en.wikipedia.org/wiki/Eventual_consistency),” we can scale much further. We start by switching to a NoSQL cluster.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:69
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={image4} alt=\"\" className=\"w-full dark:invert max-w-lg mx-auto\" />\n"
+"</Container>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:71
+#, no-wrap
+msgid "This is better for scaling, but without SQL it's becoming harder to build our queries. It turns out that SQL databases have a lot of useful features, like JOIN and aggregation queries. In fact, our NoSQL database is really just a key-value store. Writing features is becoming a pain!\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:73
+#, no-wrap
+msgid "To fix this, we need to write programs which generate precomputed views of our dataset. These views are essentially like cached queries. We even duplicate the canonical data into these views so they're very fast.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:75
+#, no-wrap
+msgid "We'll call these our View servers.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:79
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={image5} alt=\"\" className=\"w-full dark:invert\" />\n"
+"</Container>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:81
+#, no-wrap
+msgid "Now we notice that keeping our view servers synced with the canonical data in the NoSQL cluster is tricky. Sometimes our view servers crash and miss updates. We need to make sure that our views stay reliably up-to-date.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:83
+#, no-wrap
+msgid "To solve this, we introduce an event log (such as [Kafka](https://kafka.apache.org/)). That log records and broadcasts all the changes to the NoSQL cluster. Our view servers listen to &mdash; and replay &mdash; that log to ensure they never miss an update, even when they need to restart.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:87
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={image6} alt=\"\" className=\"w-full dark:invert\" />\n"
+"</Container>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:89
+#, no-wrap
+msgid "We've now arrived at a [stream processing architecture](https://milinda.pathirage.org/kappa-architecture.com/), and while there are a lot more details we could cover, this is enough for now.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:91
+#, no-wrap
+msgid "The good news is that this architecture scales pretty well. We've given up strong consistency and sometimes our read queries lag behind the most up to date version of the data, but the service doesn't drop writes or enter an incorrect state.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:93
+#, no-wrap
+msgid "In a way, what we've done is custom-built a database by [turning it inside-out](https://www.youtube.com/watch?v=fU9hR3kiOK0). We simplified the canonical storage into a NoSQL cluster, and then built our own querying engine with the view servers. It's a lot less convenient to build with, but it scales.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:95
+#, no-wrap
+msgid "## Decentralizing our high-scale backend\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:97
+#, no-wrap
+msgid "The goal of AT Protocol is to interconnect applications so that their backends share state, including user accounts and content.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:99
+#, no-wrap
+msgid "How can we do that? If we look at our diagram, we can see that most of the system is isolated from the outside world, with only the App server providing a public interface.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:103
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={image7} alt=\"\" className=\"w-full dark:invert\" />\n"
+"</Container>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:105
+#, no-wrap
+msgid "Our goal is to break this isolation down so that other people can join our NoSQL cluster, our event log, our view servers, and so on.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:107
+#, no-wrap
+msgid "Here's how it's going to look:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:111
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={image8} alt=\"\" className=\"w-full dark:invert\" />\n"
+"</Container>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:113
+#, no-wrap
+msgid "Each of these internal services are now external services. They have public APIs which anybody can consume. On top of that, anybody can create their own instances of these services.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:115
+#, no-wrap
+msgid "Our goal is to make it so anybody can contribute to this decentralized backend. That means that we don't just want one NoSQL cluster, or one View server. We want lots of these servers working together. So really it's more like this:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:119
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={image9} alt=\"\" className=\"w-full dark:invert\" />\n"
+"</Container>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:121
+#, no-wrap
+msgid "So how do we make all of these services work together?\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:123
+#, no-wrap
+msgid "## Unifying the data model\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:125
+#, no-wrap
+msgid "We're going to establish a shared data model called the [“user data repository.”](/guides/data-repos)\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:129
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={image10} alt=\"\" className=\"w-full dark:invert max-w-72 mx-auto\" />\n"
+"</Container>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:131
+#, no-wrap
+msgid "Every data repository contains JSON documents, which we'll call “records”.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:135
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={image11} alt=\"\" className=\"w-full dark:invert max-w-lg mx-auto\" />\n"
+"</Container>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:137
+#, no-wrap
+msgid "For organizational purposes, we'll bucket these records into “collections.”\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:141
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={image12} alt=\"\" className=\"w-full dark:invert max-w-lg mx-auto\" />\n"
+"</Container>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:143
+#, no-wrap
+msgid "Now we're going to opinionate our NoSQL services so they all use this [data repository](/guides/data-repos) model.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:147
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={image13} alt=\"\" className=\"w-full dark:invert\" />\n"
+"</Container>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:149
+#, no-wrap
+msgid "Remember: the data repo services are still basically NoSQL stores, it's just that they're now organized in a very specific way:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:153
+#, no-wrap
+msgid ""
+"1. Each user has a data repository.\n"
+"2. Each repository has collections.\n"
+"3. Each collection is an ordered K/V store of JSON documents.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:155
+#, no-wrap
+msgid "Since the data repositories can be hosted by anybody, we need to give them [URLs](/specs/at-uri-scheme).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:159
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={image14} alt=\"\" className=\"w-full dark:invert max-w-72 mx-auto\" />\n"
+"</Container>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:161
+#, no-wrap
+msgid "While we're at it, let's create a [whole URL scheme](/specs/at-uri-scheme) for our records too.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:165
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={image15} alt=\"\" className=\"w-full dark:invert max-w-lg mx-auto\" />\n"
+"</Container>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:167
+#, no-wrap
+msgid "Great! Also, since we're going to be syncing these records around the Internet, it would be a good idea to cryptographically sign them so that we know they're authentic.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:171
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={image16} alt=\"\" className=\"w-full dark:invert max-w-lg mx-auto\" />\n"
+"</Container>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:173
+#, no-wrap
+msgid "## Charting the flow of data\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:175
+#, no-wrap
+msgid "Now that we've set up our high-scale decentralized backend, let's map out how an application actually works on ATProto.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:177
+#, no-wrap
+msgid "Since we're making a new app, we're going to want two things: an app server (which hosts our API & frontend) and a view server (which collects data from the network for us). We often bundle the app & view servers, and so we can just call it an “Appview.” Let's start there:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:181
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={image17} alt=\"\" className=\"w-full dark:invert max-w-md mx-auto\" />\n"
+"</Container>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:183
+#, no-wrap
+msgid "A user logs into our app using OAuth. In the process, they tell us which server hosts their data repository, _and_ they give us permission to read and write to it.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:187
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={image18} alt=\"\" className=\"w-full dark:invert max-w-md mx-auto\" />\n"
+"</Container>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:189
+#, no-wrap
+msgid "We're off to a good start &mdash; we can read and write JSON documents in the user's repo. If they already have data from other apps (like a profile) we can read that data too. If we were building a singleplayer app, we'd already be done.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:191
+#, no-wrap
+msgid "But let's chart what happens when we write a JSON document.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:195
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={image19} alt=\"\" className=\"w-full dark:invert max-w-xl mx-auto\" />\n"
+"</Container>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:197
+#, no-wrap
+msgid "This commits the document to the repo, then fires off a write into the event logs which are listening to the repo.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:201
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={image20} alt=\"\" className=\"w-full dark:invert\" />\n"
+"</Container>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:203
+#, no-wrap
+msgid "From there, the event gets sent to any view services that are listening &mdash; including our own!\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:207
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={image21} alt=\"\" className=\"w-full dark:invert\" />\n"
+"</Container>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:209
+#, no-wrap
+msgid "Why are we listening to the event stream if we're the one making the write? Because we're not the only ones making writes! There are lots of user repos generating events, and lots of apps writing to them!\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:213
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={image22} alt=\"\" className=\"w-full dark:invert max-w-lg mx-auto\" />\n"
+"</Container>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:215
+#, no-wrap
+msgid "So we can see a kind of circular data flow throughout our decentralized backend, with writes being committed to the data repos, then emitted through the event logs into the view servers, where they can be read by our applications.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:219
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={image23} alt=\"\" className=\"w-full dark:invert\" />\n"
+"</Container>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:221
+#, no-wrap
+msgid "And (one hopes) that this network continues to scale: not just to add capacity, but to create a wider variety of applications sharing in this open applications network.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:225
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={image24} className=\"w-full dark:invert max-w-2xl\" />\n"
+"</Container>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:227
+#, no-wrap
+msgid "## Building practical open systems\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:229
+#, no-wrap
+msgid "The AT Protocol merges p2p tech with high-scale systems practices. Our founding engineers were core [IPFS](https://en.wikipedia.org/wiki/InterPlanetary_File_System) and [Dat](https://en.wikipedia.org/wiki/Dat_(software)) engineers, and Martin Kleppmann &mdash; the author of [Data Intensive Applications](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/) &mdash; is an active technical advisor.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-for-distsys-engineers/en.mdx:231
+#, no-wrap
+msgid "Before Bluesky was started, we established a clear requirement of “no steps backwards.” We wanted the network to feel as convenient and global as every social app before it, while still working as an open network. This is why, when we looked at federation and blockchains, the scaling limits of those architectures stood out to us. Our solution was to take standard practices for high scale backends, and then apply the techniques we used in peer-to-peer systems to create an open network.\n"
+msgstr ""

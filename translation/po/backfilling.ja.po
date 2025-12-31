@@ -1,0 +1,188 @@
+# Japanese translations for PACKAGE package
+# Copyright (C) 2026 Bluesky Social PBC
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"PO-Revision-Date: 2026-01-07 19:40+0900\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. type: Plain text
+#: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:21
+#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:64
+#: src/guides/streaming-data/en.mdx:60 src/guides/video-handling/en.mdx:39
+#: src/guides/account-migration/en.mdx:74 src/guides/feeds/en.mdx:105
+#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:52
+#: src/guides/scopes/en.mdx:45 src/guides/subscriptions/en.mdx:78
+#: src/guides/writing-data/en.mdx:181 src/guides/creating-a-labeler/en.mdx:56
+#: src/guides/labels/en.mdx:110 src/guides/sdk-auth/en.mdx:145
+#: src/guides/sync/en.mdx:51 src/guides/auth/en.mdx:41
+#: src/guides/lexicon/en.mdx:128 src/guides/publishing-lexicons/en.mdx:53
+#: src/guides/backfilling/en.mdx:60 src/guides/reading-data/en.mdx:165
+#: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
+#, no-wrap
+msgid "## Further Reading and Resources\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/backfilling/en.mdx:5
+#, fuzzy, no-wrap
+msgid ""
+"export const header = {\n"
+"  title: 'Backfilling',\n"
+"  description: 'Replicating the network',\n"
+"}\n"
+msgstr "import {Heading} from '@/components/Heading' export const header = { title: 'プロトコルの概要', description: 'AT プロトコルの概要。', }"
+
+#. type: Plain text
+#: src/guides/backfilling/en.mdx:7
+#, no-wrap
+msgid "## About backfilling\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/backfilling/en.mdx:9
+#, no-wrap
+msgid "Backfilling is the process of syncing all the data in the network from scratch. You may want to do this if you're running a service that requires a complete copy of the data in the network. This is not generally necessary for running feed generators, labelers, or bots, as most of the time they are fine handling live data off of the firehose. However, backfilling may be of interest if you want to perform large-scale data analysis.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/backfilling/en.mdx:11
+#, no-wrap
+msgid "For the entire network to be backfillable by third parties at all is a novel concept for AT. Other, monolithic social networks generally only offer an large-scale event stream (like our firehose) from the current date and time, making it difficult to perform longitudinal data analysis without additional data vendors. With the AT Protocol and adequate resources, you can *always* backfill the entire network on your own. This, in turn, benefits researchers and other forms of data analysis — if you can provision enough storage, you can have your own local copy of the entire Atmosphere.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/backfilling/en.mdx:13
+#, no-wrap
+msgid "When backfilling, you generally need to maintain 'up to date' replica of the data, which requires a cutover to streaming firehose data once the backfill is complete. We created `tap` to streamline this process.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/backfilling/en.mdx:15
+#, no-wrap
+msgid "## Using tap\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/backfilling/en.mdx:17
+#, no-wrap
+msgid "`tap` simplifies AT sync by handling the firehose connection, verification, backfill, and filtering. Your application connects to a Tap and receives simple JSON events for only the repos and collections you care about, no need to worry about binary formats for validating cryptographic signatures.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/backfilling/en.mdx:19
+#, no-wrap
+msgid "Tap can be run from the command line:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/backfilling/en.mdx:24
+#, no-wrap
+msgid ""
+"```shell\n"
+"# Run tap\n"
+"go run ./cmd/tap run --disable-acks=true\n"
+"# By default, the service uses SQLite at `./tap.db` and binds to port `:2480`.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/backfilling/en.mdx:27
+#, no-wrap
+msgid ""
+"# In a separate terminal, connect to receive events:\n"
+"websocat ws://localhost:2480/channel\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/backfilling/en.mdx:33
+#, no-wrap
+msgid ""
+"#  Add a repo to track\n"
+"curl -X POST http://localhost:2480/repos/add \\\n"
+"  -H \"Content-Type: application/json\" \\\n"
+"  -d '{\"dids\": [\"did:plc:ewvi7nxzyoun6zhxrhs64oiz\"]}' # @atproto.com repo\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/backfilling/en.mdx:35
+#, no-wrap
+msgid "When a repo is added, tap provides:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/backfilling/en.mdx:41
+#, no-wrap
+msgid ""
+"1. Historical backfill: Tap fetches the full repo from the account's PDS using com.atproto.sync.getRepo\n"
+"2. Live event buffering: Any firehose events for this repo during backfill are held in memory\n"
+"3. Ordering guarantee: Historical events (marked live: false) are delivered first\n"
+"4. Cutover: After historical events complete, buffered live events are drained\n"
+"5. Live streaming: New firehose events are delivered immediately (marked live: true)\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/backfilling/en.mdx:43
+#, no-wrap
+msgid "Tap is also available as a [TypeScript library](https://www.npmjs.com/package/@atproto/tap). For more information, refer to [The AT Stack](/guides/the-at-stack#tap) and the [tap repository](https://github.com/bluesky-social/atproto/blob/main/packages/tap/README.md).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/backfilling/en.mdx:45
+#, no-wrap
+msgid "## How backfilling works\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/backfilling/en.mdx:47
+#, no-wrap
+msgid "If you are implementing backfilling on your own, the general process is:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/backfilling/en.mdx:53
+#, no-wrap
+msgid ""
+"- Given a DID, check your current 'revision' for that DID (Each change to a repo is tagged with a 'revision' or 'rev' string that is a lexicographically sortable timestamp).\n"
+"- If you do not have a rev for that repo, download and process the users repo checkpoint from the `com.atproto.sync.getRepo` endpoint.\n"
+"- While you are doing that, buffer any events for the repo to go through after the checkpoint has been processed.\n"
+"- The checkpoint will contain a rev value that you can use to skip any buffered events that have already been included in said checkpoint.\n"
+"- For each buffered event, if the rev is less than the current rev you have, you can safely skip it.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/backfilling/en.mdx:55
+#, no-wrap
+msgid "Do the above process for each repo and you will end up with a complete replica of the network. To get a list of all the repos, you can use the `com.atproto.sync.listRepos` endpoint on the relay, or on each PDS.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/backfilling/en.mdx:58
+#, no-wrap
+msgid ""
+"- This is a fairly large amount of data (hundreds of GBs at the time of writing), and will be somewhat demanding in terms of resources.\n"
+"- Be careful not to get rate limited. You will be making one call to `getRepo` per user. It is recommended to implement client side rate limiting to prevent your requests from getting blocked by firewalls on the PDS or relay you are requesting data from.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/backfilling/en.mdx:67
+#, no-wrap
+msgid ""
+"- [Sync](/guides/sync)\n"
+"- [Streaming data](/guides/streaming-data)\n"
+"- [Feeds](/guides/feeds)\n"
+"- [Repository spec](/specs/repository)\n"
+"- [Event Stream spec](/specs/event-stream)\n"
+"- [Sync spec](/specs/sync)\n"
+"- The [Microcosm](https://www.microcosm.blue/) community project maintains tools for working with AT records at scale without local mirroring.\n"
+msgstr ""

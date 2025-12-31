@@ -1,0 +1,126 @@
+# Japanese translations for PACKAGE package
+# Copyright (C) 2026 Bluesky Social PBC
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"PO-Revision-Date: 2026-01-07 19:40+0900\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. type: Plain text
+#: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:21
+#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:64
+#: src/guides/streaming-data/en.mdx:60 src/guides/video-handling/en.mdx:39
+#: src/guides/account-migration/en.mdx:74 src/guides/feeds/en.mdx:105
+#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:52
+#: src/guides/scopes/en.mdx:45 src/guides/subscriptions/en.mdx:78
+#: src/guides/writing-data/en.mdx:181 src/guides/creating-a-labeler/en.mdx:56
+#: src/guides/labels/en.mdx:110 src/guides/sdk-auth/en.mdx:145
+#: src/guides/sync/en.mdx:51 src/guides/auth/en.mdx:41
+#: src/guides/lexicon/en.mdx:128 src/guides/publishing-lexicons/en.mdx:53
+#: src/guides/backfilling/en.mdx:60 src/guides/reading-data/en.mdx:165
+#: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
+#, no-wrap
+msgid "## Further Reading and Resources\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/moderation/en.mdx:3
+#, no-wrap
+msgid ""
+"import {Container} from \"@/components/Container\"\n"
+"import moderation from \"./moderation.png\"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/moderation/en.mdx:8
+#, fuzzy, no-wrap
+msgid ""
+"export const header = {\n"
+"  title: 'Moderation',\n"
+"  description: 'Moderation in the Atmosphere',\n"
+"}\n"
+msgstr "import {Heading} from '@/components/Heading' export const header = { title: 'プロトコルの概要', description: 'AT プロトコルの概要。', }"
+
+#. type: Plain text
+#: src/guides/moderation/en.mdx:10
+#, fuzzy, no-wrap
+msgid "## About moderation\n"
+msgstr "<Heading level={2} id=\"interoperation\">相互運用</Heading>"
+
+#. type: Plain text
+#: src/guides/moderation/en.mdx:12
+#, fuzzy, no-wrap
+msgid "The AT Proto model is that *speech* and *reach* should be two separate layers, built to work with each other. The “speech” layer should remain permissive, distributing authority and designed to ensure everyone has a voice. The “reach” layer lives on top, built for flexibility and designed to scale. AT Proto moderation is implemented using [Labels](/guides/labels).\n"
+msgstr "Atproto のモデルでは、_スピーチ_ と _リーチ_ は 2 つの別々のレイヤーとして構築され、互いに連携するように構築されます。「スピーチ」レイヤーは、権限を分散し、誰もが発言権を持つように設計されている必要があります。「リーチ」レイヤーは、その上にあり、柔軟性と拡張性を考慮して構築されています。"
+
+#. type: Plain text
+#: src/guides/moderation/en.mdx:16
+#, fuzzy, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={moderation} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
+"</Container>\n"
+msgstr "<Container> <Image src={image1} alt=\"\" className=\"w-full dark:invert max-w-md mx-auto\" /> </Container>"
+
+#. type: Plain text
+#: src/guides/moderation/en.mdx:18
+#, no-wrap
+msgid "Our moderation architecture is provided by two services: [*Osprey*](#algorithmic-moderation), an event stream decisions engine and analysis UI designed to investigate and take automatic action; and [*Ozone*](#using-ozone), a labeling service and web frontend for making moderation decisions.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/moderation/en.mdx:20
+#, no-wrap
+msgid "[Read more](https://docs.bsky.app/blog/blueskys-moderation-architecture) about moderation on our blog.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/moderation/en.mdx:22
+#, fuzzy, no-wrap
+msgid "## Algorithmic moderation\n"
+msgstr "<Heading level={2} id=\"algorithmic-choice\">アルゴリズムの選択</Heading>"
+
+#. type: Plain text
+#: src/guides/moderation/en.mdx:24
+#, no-wrap
+msgid "[Osprey](https://github.com/bluesky-social/osprey-atproto) is an event stream decisions engine and analysis UI designed to investigate and take automatic action, to enable sustainable at-scale moderation. It makes use of [Kafka](https://kafka.apache.org/) with its own [rules engine](https://github.com/roostorg/osprey/blob/main/docs/rules.md).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/moderation/en.mdx:26
+#, no-wrap
+msgid "From another perspective, Osprey is a Python library for processing actions through human written rules and outputting labels, webhooks back to an API and other sinks. It evaluates events using structured logic, user-defined functions, and external signals to assign labels, verdicts, and actions. It can make use of fine-tuned LLMs and other classifiers that expose their own web endpoints to Osprey. LLMs can be a useful tool for surfacing moderation reports; these reports can be acted on automatically and/or manually depending on your configuration. \n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/moderation/en.mdx:28
+#, no-wrap
+msgid "Refer to the [Osprey](https://github.com/bluesky-social/osprey-atproto) Github repository for further guidance.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/moderation/en.mdx:32
+#, no-wrap
+msgid "Learn all about the types and format of moderation [labels](/guides/labels). Then, you can [subscribe](/guides/subscriptions) to moderation labelers to have their labels applied in your application. You can also [create your own labeler](/guides/creating-a-labeler) to publish labels. If you need to moderate content manually, you can use [Ozone](/guides/using-ozone) as a web interface for labeling content.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/moderation/en.mdx:37
+#, no-wrap
+msgid ""
+"- [Labels](/guides/labels)\n"
+"- [Creating a labeler](/guides/creating-a-labeler)\n"
+"- [Subscriptions](/guides/subscriptions)\n"
+"- [Label Specs](/specs/label)\n"
+"- [Using Ozone](/guides/using-ozone)\n"
+msgstr ""

@@ -1,0 +1,293 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Bluesky Social PBC
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:21
+#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:64
+#: src/guides/streaming-data/en.mdx:60 src/guides/video-handling/en.mdx:39
+#: src/guides/account-migration/en.mdx:74 src/guides/feeds/en.mdx:105
+#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:52
+#: src/guides/scopes/en.mdx:45 src/guides/subscriptions/en.mdx:78
+#: src/guides/writing-data/en.mdx:181 src/guides/creating-a-labeler/en.mdx:56
+#: src/guides/labels/en.mdx:110 src/guides/sdk-auth/en.mdx:145
+#: src/guides/sync/en.mdx:51 src/guides/auth/en.mdx:41
+#: src/guides/lexicon/en.mdx:128 src/guides/publishing-lexicons/en.mdx:53
+#: src/guides/backfilling/en.mdx:60 src/guides/reading-data/en.mdx:165
+#: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
+#, no-wrap
+msgid "## Further Reading and Resources\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon/en.mdx:5
+#, no-wrap
+msgid ""
+"export const header = {\n"
+"  title: 'Lexicons',\n"
+"  description: 'A schema-driven interoperability framework',\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon/en.mdx:7
+#, no-wrap
+msgid "## About lexicons\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon/en.mdx:9
+#, no-wrap
+msgid "Lexicon is a schema system used to define RPC methods and record types. Every Lexicon schema is written in JSON, in a format similar to [JSON-Schema](https://json-schema.org/) for defining constraints.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon/en.mdx:11
+#, no-wrap
+msgid "**Lexicons provide Interoperability.** AT applications need a way to declare their own behaviors and semantics. Lexicon solves this while making it straightforward for developers to introduce new schemas.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon/en.mdx:13
+#, no-wrap
+msgid "The schemas are identified using [NSIDs](/specs/nsid), a reverse-DNS format. Here are some example API endpoints:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon/en.mdx:20
+#, no-wrap
+msgid ""
+"```\n"
+"com.atproto.repo.getRecord\n"
+"com.atproto.identity.resolveHandle\n"
+"app.bsky.feed.getPostThread\n"
+"app.bsky.notification.listNotifications\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon/en.mdx:22
+#, no-wrap
+msgid "And here are some example record types:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon/en.mdx:29
+#, no-wrap
+msgid ""
+"```\n"
+"app.bsky.feed.post\n"
+"app.bsky.feed.like\n"
+"app.bsky.actor.profile\n"
+"app.bsky.graph.follow\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon/en.mdx:31
+#, no-wrap
+msgid "The schema types, definition language, and validation constraints are described in the [Lexicon specification](/specs/lexicon), and representations in JSON and CBOR are described in the [Data Model specification](/specs/data-model).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon/en.mdx:33
+#, no-wrap
+msgid "## HTTP API methods\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon/en.mdx:35
+#, no-wrap
+msgid "Atmosphere HTTP API methods each scope and implement a particular set of Lexicons. The AT Protocol's API system, [XRPC](/specs/xrpc), is essentially a thin wrapper around HTTPS. For example, a call to:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon/en.mdx:39
+#, no-wrap
+msgid ""
+"```tsx\n"
+"client.call(app.bsky.actor.getProfile, {})\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon/en.mdx:41
+#, no-wrap
+msgid "is actually just an HTTP request:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon/en.mdx:45
+#, no-wrap
+msgid ""
+"```\n"
+"GET /xrpc/com.example.getProfile\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon/en.mdx:47
+#, no-wrap
+msgid "The schemas establish valid query parameters, request bodies, and response bodies.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon/en.mdx:77
+#, no-wrap
+msgid ""
+"```json\n"
+"{\n"
+"  \"lexicon\": 1,\n"
+"  \"id\": \"com.example.getProfile\",\n"
+"  \"defs\": {\n"
+"    \"main\": {\n"
+"      \"type\": \"query\",\n"
+"      \"parameters\": {\n"
+"        \"type\": \"params\",\n"
+"        \"required\": [\"user\"],\n"
+"        \"properties\": { \"user\": { \"type\": \"string\" } }\n"
+"      },\n"
+"      \"output\": {\n"
+"        \"encoding\": \"application/json\",\n"
+"        \"schema\": {\n"
+"          \"type\": \"object\",\n"
+"          \"required\": [\"did\", \"name\"],\n"
+"          \"properties\": {\n"
+"            \"did\": { \"type\": \"string\" },\n"
+"            \"name\": { \"type\": \"string\" },\n"
+"            \"displayName\": { \"type\": \"string\", \"maxLength\": 64 },\n"
+"            \"description\": { \"type\": \"string\", \"maxLength\": 256 }\n"
+"          }\n"
+"        }\n"
+"      }\n"
+"    }\n"
+"  }\n"
+"}\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon/en.mdx:79
+#, no-wrap
+msgid "## Record types\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon/en.mdx:81
+#, no-wrap
+msgid "Schemas define the possible values of a record. Every record has a “type” which maps to a schema and also establishes the URL of a record.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon/en.mdx:83
+#, no-wrap
+msgid "For instance, this “follow” record:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon/en.mdx:91
+#, no-wrap
+msgid ""
+"```json\n"
+"{\n"
+"  \"$type\": \"com.example.follow\",\n"
+"  \"subject\": \"at://did:plc:12345\",\n"
+"  \"createdAt\": \"2022-10-09T17:51:55.043Z\"\n"
+"}\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon/en.mdx:93
+#, no-wrap
+msgid "…would have a URL like:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon/en.mdx:97
+#, no-wrap
+msgid ""
+"```\n"
+"at://bob.com/com.example.follow/12345\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon/en.mdx:99
+#, no-wrap
+msgid "…and a schema like:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon/en.mdx:120
+#, no-wrap
+msgid ""
+"```json\n"
+"{\n"
+"  \"lexicon\": 1,\n"
+"  \"id\": \"com.example.follow\",\n"
+"  \"defs\": {\n"
+"    \"main\": {\n"
+"      \"type\": \"record\",\n"
+"      \"description\": \"A social follow\",\n"
+"      \"record\": {\n"
+"        \"type\": \"object\",\n"
+"        \"required\": [\"subject\", \"createdAt\"],\n"
+"        \"properties\": {\n"
+"          \"subject\": { \"type\": \"string\" },\n"
+"          \"createdAt\": { \"type\": \"string\", \"format\": \"datetime\" }\n"
+"        }\n"
+"      }\n"
+"    }\n"
+"  }\n"
+"}\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon/en.mdx:122
+#, no-wrap
+msgid "## Versioning\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon/en.mdx:124
+#, no-wrap
+msgid "Once a Lexicon is published, it can never change its constraints. Loosening a constraint (adding possible values) will cause old software to fail validation for new data, and tightening a constraint (removing possible values) will cause new software to fail validation for old data. As a consequence, lexicons may only add optional constraints to previously unconstrained fields.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon/en.mdx:126
+#, no-wrap
+msgid "If a lexicon must change a previously-published constraint, it should be published as a new lexicon under a new NSID.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon/en.mdx:130
+#, no-wrap
+msgid "Lexicons can be [installed locally](/guides/installing-lexicons) for each of our SDKs from our Lexicon registry. You can also [publish your own Lexicons](/guides/publishing-lexicons) following our [Style Guide](/guides/lexicon-style-guide).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon/en.mdx:134
+#, no-wrap
+msgid ""
+"- [Installing Lexicons](/guides/installing-lexicons)\n"
+"- [Publishing Lexicons](/guides/publishing-lexicons)\n"
+"- [Lexicon Style Guide](/guides/lexicon-style-guide)\n"
+"- [Lexicon Specs](/specs/lexicon)\n"
+msgstr ""

@@ -1,0 +1,246 @@
+# Japanese translations for PACKAGE package
+# Copyright (C) 2026 Bluesky Social PBC
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"PO-Revision-Date: 2026-01-07 19:40+0900\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. type: Plain text
+#: src/guides/lexicon-style-guide/en.mdx:6
+#, fuzzy, no-wrap
+msgid ""
+"export const header = {\n"
+"  title: 'Lexicon Style Guide',\n"
+"  description:\n"
+"    'A style guide for creating new ATProto Lexicons',\n"
+"}\n"
+msgstr "export const header = { title: '個人データ リポジトリ', description: 'AT プロトコル リポジトリ構造のガイド。', }"
+
+#. type: Plain text
+#: src/guides/lexicon-style-guide/en.mdx:8
+#, fuzzy, no-wrap
+msgid "## Overview\n"
+msgstr "# プロトコルの概要"
+
+#. type: Plain text
+#: src/guides/lexicon-style-guide/en.mdx:10
+#, no-wrap
+msgid "Here are some recommended conventions and best practices for designing Lexicon schemas.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon-style-guide/en.mdx:12
+#, no-wrap
+msgid "Name casing conventions:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon-style-guide/en.mdx:16
+#, no-wrap
+msgid ""
+"- Schemas & attributes: Use `lowerCamelCase` capitalization for schemas and names (as opposed to `UpperCamelCase`, `snake_case`, `ALL_CAPS`, etc).\n"
+"- API error names: `UpperCamelCase`\n"
+"- Fixed strings (eg `knownValues`): `kebab-case`\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon-style-guide/en.mdx:18
+#, no-wrap
+msgid "Acceptable characters:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon-style-guide/en.mdx:22
+#, no-wrap
+msgid ""
+"- Field names should stick to the same character set as schema names (NSID name segments): ASCII alphanumeric, first character not a digit, no hyphens, case-sensitive\n"
+"    - Exceptions may be justifiable in some situations, such as preservation of names in existing external schemas\n"
+"    - Data objects should never contain schema-specified field names starting with `$` at any level of nesting; these are reserved for future protocol-level extensions\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon-style-guide/en.mdx:24
+#, no-wrap
+msgid "## Naming conventions\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon-style-guide/en.mdx:38
+#, no-wrap
+msgid ""
+"- Use singular nouns for `record` schemas\n"
+"    - eg `post`, `like`, `profile`\n"
+"- Use “verb-noun” for `query` and `procedure` endpoints\n"
+"    - eg `getPost`, `listLikes`, `putProfile`\n"
+"    - Common verbs for `query` endpoints are: `get`, `list`, `search` (for full-text search), `query` (for flexible matching or filtering filtering)\n"
+"    - Common verbs for `procedure` endpoints: `create`, `update`, `delete`, `upsert`, `put`\n"
+"- Use “subscribe-plural-noun” for `subscription`\n"
+"    - eg `subscribeLabels`\n"
+"- Conventions for `permission-set` schema naming has not be established yet, but probably has “auth” prefix (eg, `authBasic`)\n"
+"- If an endpoint is experimental, unstable, or not intended for interoperability, indicate that in the NSID name\n"
+"    - eg, include `.temp.` or `.unspecced.` in the NSID hierarchy\n"
+"- Avoid generic names which conflict with popular programming language conventions\n"
+"    - eg, avoid using `default` or `length` as schema names\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon-style-guide/en.mdx:40
+#, fuzzy, no-wrap
+msgid "## Documentation\n"
+msgstr "<Heading level={2} id=\"collection\">コレクション</Heading>"
+
+#. type: Plain text
+#: src/guides/lexicon-style-guide/en.mdx:44
+#, no-wrap
+msgid ""
+"- Add a description to every `main` schema definition (records, API endpoints, etc)\n"
+"    - for API endpoints, mention in the description if authentication is required, and whether responses will be personalized if authentication is optional\n"
+"- Add descriptions to potentially ambiguous fields and properties. This is particularly important for fields with generic names like `uri` or `cid`: CID of what?\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon-style-guide/en.mdx:46
+#, no-wrap
+msgid "NSID namespace grouping:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon-style-guide/en.mdx:56
+#, no-wrap
+msgid ""
+"- Many applications and projects will have multiple distinct functions or features, and schemas of all types can have that grouping represented in the NSID hierarchy\n"
+"    - eg `app.bsky.feed.*` , `app.bsky.graph.*`\n"
+"- Very simple applications can include all endpoints under a single NSID “group”\n"
+"- use a `.defs` schema for definitions which might be reused by multiple schemas in the same namespace, or by third parties\n"
+"    - eg `app.bsky.feed.defs`\n"
+"    - putting these in a separate schema file means that deprecation or removal of other schema files doesn’t impact reuse\n"
+"- Avoid conflicts and confusion between groups, names, and definitions\n"
+"    - eg `app.bsky.feed.post#main` vs `app.bsky.feed.post.main`, or `com.example.record#foo` and `com.example.record.foo`\n"
+"    - or defining both `app.bsky.feed` (as a record) and `app.bsky.feed.post` (with `app.bsky.feed` as a group)\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon-style-guide/en.mdx:58
+#, no-wrap
+msgid "## Other guidelines\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon-style-guide/en.mdx:79
+#, no-wrap
+msgid ""
+"- Specify the format of string fields when appropriate\n"
+"- String fields in records should almost always have a maximum length if they don’t have a format type\n"
+"    - Don’t redundantly specify both a format and length limits\n"
+"    - If limiting the length of a string for semantic or visual reasons, grapheme limits should be used to ensure a degree of consistency across human languages. A data size (bytes) limit should also be added in these cases. A ratio of between 10 to 20 bytes to 1 grapheme is recommended.\n"
+"- The string and bytes record data types are intended for constrained data size use-cases. For text or binary data of larger size, blob references should be used. This can include longer-form text and structured data.\n"
+"- Enum sets are “closed” and can not be updated or extended without breaking schema evolution rules. For this reason they should almost always be avoided.\n"
+"    - For strings, `knownValues` provides more flexible alternative\n"
+"- String `knownValues` may include simple string constants, or may include schema references to a `token` (eg, the string `\"com.example.defs#tokenOne\"`)\n"
+"    - Tokens provide an extension mechanism, and work well for values that have subjective definitions or may be expanded over time\n"
+"    - See `com.atproto.moderation.defs#reasonType` and `com.atproto.sync.defs#hostStatus` for two contrasting instances, the former extensible and the later more constrained\n"
+"- Take advantage of re-usable definitions, such as `com.atproto.repo.strongRef` (for versioned references to records) or `com.atproto.label.defs#label` (in an array, for hydrated labels)\n"
+"- API endpoints which take an account identifier as an argument (eg, query parameter) should use `at-identifier` so that clients can avoid calling `resolveHandle` if they only have an account handle\n"
+"- Record schemas should always use persistent identifiers (DIDs) for references to other accounts, instead of handles\n"
+"- API endpoints should always specify an `output` with `encoding`, even if they have no meaningful response data\n"
+"    - a good default is `application/json` with the schema being an object with no defined properties\n"
+"- Optional `boolean` fields should be phrased such that `false` is the default and expected value\n"
+"    - For example, if an endpoint can return a mix of “foo” and “bar”, and the common behavior is to include “foo” but not “bar”, then controlling parameters should be named `excludeFoo` (default `false`) and `includeBar` (default `false`), as opposed to `excludeBar` (default `true`)\n"
+"- Content hashes (CIDs) may be represented as a string format or in binary encoding (`cid-link`)\n"
+"    - In most situations, including versioned references between records, the string format is recommended.\n"
+"    - Binary encoding is mostly used for protocol-level mechanisms, such as the firehose.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon-style-guide/en.mdx:81
+#, fuzzy, no-wrap
+msgid "## Lexicon evolution\n"
+msgstr "<Heading level={2} id=\"lexicon\">Lexicon</Heading>"
+
+#. type: Plain text
+#: src/guides/lexicon-style-guide/en.mdx:83
+#, no-wrap
+msgid "All Lexcions should be flexible to extension and evolution over time, without breaking the Lexicon schema evolution rules. This is particularly true for record schemas. Given the distributed storage model of atproto, developers do not have a reliable mechanism to update all data records in the network. Extensions could come from the original designer, or other developers and projects.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon-style-guide/en.mdx:85
+#, no-wrap
+msgid "Experimental schemas and projects can use variant NSIDs (eg, including `.temp.` in the name hierarchy) to develop in the live network without committing to a stable record data schemas.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon-style-guide/en.mdx:87
+#, no-wrap
+msgid "Major non-backwards-compatible schema changes are possible by declaring a new schema. The current naming convention is to append “V2” to the original name (or “V3”, etc).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon-style-guide/en.mdx:89
+#, no-wrap
+msgid "Design recommendations to make schemas flexible to future evolution and extension:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon-style-guide/en.mdx:97
+#, no-wrap
+msgid ""
+"- do not mark data fields or API parameters as `required` unless they are truly required for functionality\n"
+"    - `required` fields can not be made optional or deprecated under the evolution rules\n"
+"- you can add new `optional` fields to a schema without changing backwards compatibility or requiring a V2 schema, but you can’t add new `required` fields\n"
+"- use object types containing a single element/field instead of atomic data types in arrays, to allow additional context to be included in the future\n"
+"    - for example, in an API response listing accounts (DIDs), return an array of objects each with an `account` field listing the DID, instead of an array of strings\n"
+"- make unions “open” in almost all situations, to allow future addition of types or values\n"
+"    - open unions can be an extension mechanism for third parties to include self-defined data types\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon-style-guide/en.mdx:99
+#, no-wrap
+msgid "## Design Patterns\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/lexicon-style-guide/en.mdx:127
+#, no-wrap
+msgid ""
+"- There is a basic convention for pagination of `query` API endpoints:\n"
+"    - query parameters include an optional `limit` (integer) and optional`cursor` (string)\n"
+"    - the output body includes optional `cursor` (string) and a required array of response objects (with context-specific pluralized field name)\n"
+"    - the initial client request does not define a `cursor`. If the response includes a `cursor`, then more results are available, and the client should query again with the new `cursor` to get more results\n"
+"    - the `limit` value is an upper limit, and the response may include fewer (or even zero) results, while further results are still available. It is the lack of `cursor` in responses that indicates pagination is complete. The response set may have items removed if they are tombstoned or have been otherwise filtered from the response set.\n"
+"- There is also a convention for subscription endpoints which support “sequencing” and backfill cursors:\n"
+"    - the endpoint has an optional `cursor` query parameter (integer)\n"
+"    - all core message types include a `seq` field (integer). The `seq` of messages increases monotonically, though may have gaps.\n"
+"    - if the `cursor` is not provided, the server will start returning new messages from the current point forward\n"
+"    - if the `cursor` is provided, the server will attempt to return historical messages starting with the matching `seq`, continuing through to the current stream\n"
+"    - if the `cursor` is in the future (higher than the current sequence), an error is returned and the connection closed\n"
+"    - if the `cursor` is older than the earliest available message (or is 0), the server returns an info message of name `OutdatedCursor`, then returns messages starting from the oldest available\n"
+"- A common pattern in API responses is to include “hydrated views” of data records. For example, when viewing an account’s profile, the response might include CDN or thumbnail URLs for any media files, moderation labels, global aggregations, and viewer-specific social graph context.\n"
+"    - For detailed views, a best practice to include the original record verbatim, instead of defining a new schema with a superset of fields. This is easier to maintain (can’t forget to update fields), and ensures any off-schema extension data is included.\n"
+"    - Viewer-specific metadata should be optional and either indicated in descriptions or grouped under a sub-object. This makes schemas reusable between “public” and “logged-in” views, and makes it clearer what information will be available when.\n"
+"    - A helpful pattern for application developers is to ensure there is an API endpoint that accepts a reference to a record (eg, a AT URI or equivalent; or multiple references) returns the hydrated data object(s).\n"
+"- the `app.bsky.richtext.facet` system can be used to annotate short text strings in a way that is simpler and safer to work with than full-featured markup languages\n"
+"    - for more details see [\"Why RichText facets in Bluesky\"](https://www.pfrazee.com/blog/why-facets)\n"
+"    - the feature type system is an open union which can be extended with additional types\n"
+"    - more powerful systems like Markdown are more appropriate for long-form text\n"
+"- One pattern for extending or supplementing a record is to define “sidecar” records in the same account repository with the same record key and different types (collections).\n"
+"    - Sidecar records can be defined and managed by the original Lexicon designer or by independent developers.\n"
+"    - The sidecar records can be updated (mutated) without breaking strong references to the original record.\n"
+"    - Sidecar context can be included in API responses.\n"
+"- Because atproto accounts can be used flexibly with any application in the network, it can be ambiguous which accounts are participating in a particular app modality. This can be clarified if there is a known representative record type for the modality, and that clients create such a record for active accounts. Deletion of this record can be a way to indicate the user is no longer active. This works best if the record has a single known instance (fixed record key).\n"
+"    - For example, an-app specific “profile” or “declaration” record can indicate that the account has logged in to an associated app at least once, even if the record is “empty”.\n"
+"    - Backfill services can enumerate all accounts in the network with the given signaling record, and also process deletion of that record as deactivation of that modality.\n"
+"    - This design pattern is strongly recommended for new app modalities.\n"
+msgstr ""

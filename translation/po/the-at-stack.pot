@@ -1,0 +1,363 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Bluesky Social PBC
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: src/guides/feeds/en.mdx:66 src/guides/the-at-stack/en.mdx:117
+#, no-wrap
+msgid "A Feed Generator service can host one or more algorithms. The service itself is identified by DID, while each algorithm that it hosts is declared by a record in the repo of the account that created it. For instance, feeds offered by Bluesky will likely be declared in `@bsky.app`'s repo. Therefore, a given algorithm is identified by the at-uri of the declaration record. This declaration record includes a pointer to the service's DID along with some profile information for the feed.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/sync/en.mdx:45 src/guides/going-to-production/en.mdx:12
+#: src/guides/self-hosting/en.mdx:10 src/guides/the-at-stack/en.mdx:35
+#, no-wrap
+msgid "## PDS\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/self-hosting/en.mdx:31 src/guides/the-at-stack/en.mdx:68
+#, no-wrap
+msgid "## Tap\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:5
+#, no-wrap
+msgid ""
+"import {Container} from \"@/components/Container\"\n"
+"import crawling from \"./crawling.png\"\n"
+"import did from \"./did.png\"\n"
+"import feeds from \"./feeds.png\"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:11
+#, no-wrap
+msgid ""
+"export const header = {\n"
+"  title: 'The AT Stack',\n"
+"  description:\n"
+"    'Components of the AT Protocol Stack',\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:13
+#, no-wrap
+msgid "## The Authenticated Transfer Protocol\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:15
+#, no-wrap
+msgid "The AT Protocol (Authenticated Transfer Protocol) is a standard for public conversation and an open-source framework for building social apps.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:17
+#, no-wrap
+msgid "It creates a standard format for user identity, follows, and data on social apps, allowing apps to interoperate and users to move across them freely. It is a federated network with account portability.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:19
+#, no-wrap
+msgid "## Decentralized Architecture\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:21
+#, no-wrap
+msgid "AT syncs repositories in a federated networking model. Federation ensures the network is convenient to use and reliably available. Repository data is synchronized between servers over standard web technologies (HTTP and WebSockets).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:23
+#, no-wrap
+msgid "[**Personal data servers**, or PDSes](/guides/the-at-stack#pds), are your home in the cloud. They host your data, distribute it, manage your identity, and orchestrate requests to other services to give you your views.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:25
+#, no-wrap
+msgid "**Relays** handle all of your events, like retrieving large-scale metrics (likes, reposts, followers), content discovery (algorithms), and user search.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:29
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={crawling} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
+"</Container>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:31
+#, no-wrap
+msgid "The AT Protocol is architected in a “big world with small world fallbacks” way, modeled after the open web itself. With the web, individual computers upload content to the network, and then all of that content is then broadcasted back to other computers. Similarly, with the AT Protocol, we're sending messages to a much smaller number of big aggregators, which then broadcast that data to personal data servers across the network.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:33
+#, no-wrap
+msgid "Technically, you can implement an AT application with just a single PDS — Relays are not a necessary part of the specification. They enable the ecosystem to scale for big-world social networks.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:37
+#, no-wrap
+msgid "PDS instances host accounts for users, which require account management and lifecycle controls similar to any network server. While AT identities (DIDs and handles) can in theory be entirely separate from the PDS, in practice the PDS is expected to help manage the user's identity. \n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:39
+#, no-wrap
+msgid "You can [host your own PDS](/guides/self-hosting).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:41
+#, no-wrap
+msgid "User data is stored in signed data repositories and verified by DIDs. Signed data repositories are like Git repos but for database records, and DIDs are essentially registries of user certificates, similar in some ways to the TLS certificate system. They are expected to be secure, reliable, and independent of the user's PDS.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:45
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={did} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
+"</Container>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:47
+#, no-wrap
+msgid "The PDS handles:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:59
+#, no-wrap
+msgid ""
+"- account lifecycle: signup, deletion, migration\n"
+"- account security: email verification, password reset flow, change email flow\n"
+"- AT identity resolution: DIDs, handles. [Read more](https://fusectore.dev/2025/01/04/atproto-identity.html) about how identity resolution.\n"
+"- storage of preferences and private state\n"
+"- ability to takedown or suspend accounts, and handle moderation contacts\n"
+"- secret key management: AT signing key, and PLC rotation key\n"
+"- [PLC](https://web.plc.directory/) identity operations and endpoints: change handle; validate, sign, and submit PLC ops\n"
+"- email delivery: for reset flows, as well as forwarding moderation mail\n"
+"- output `#identity` and `#account` (coming soon) events on repo event stream\n"
+"- usually the ability to manage a default handle namespace (base domain)\n"
+"- OAuth client flows, including web sign-in pages, and optional MFA\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:61
+#, no-wrap
+msgid "You can migrate an individual account's data repository freely from one PDS to another. This involves the import and export of repositories as CAR files. There are some community tools that make this easier:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:66
+#, no-wrap
+msgid ""
+"- https://pdsls.dev/, which lets you browse all the data stored in your own repository (and what PDS it's currently hosted on)\n"
+"- https://pdsmoover.com/, a collection of tools for PDS migration\n"
+"- https://boat.kelinci.net/, a set of interfaces for repository import and export\n"
+"- https://github.com/bluesky-social/goat, our Go AT command-line tool.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:70
+#, no-wrap
+msgid "Tap is used for syncing existing records from the AT network and then continuing to receive new records from the firehose.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:72
+#, no-wrap
+msgid "Tap simplifies AT sync by handling the firehose connection, verification, backfill, and filtering. Your application connects to a Tap and receives simple JSON events for only the repos and collections you care about, no need to worry about binary formats for validating cryptographic signatures. Tap features:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:81
+#, no-wrap
+msgid ""
+"- verifies repo structure, MST integrity, and identity signatures\n"
+"- automatic backfill: fetches full repo history from PDS when adding new repos\n"
+"- filtered output: by DID list, by collection, or full network mode\n"
+"- ordering guarantees: live events wait for historical backfill to complete\n"
+"- delivery modes: WebSocket with acks, fire-and-forget, or webhook\n"
+"- single Go binary\n"
+"- SQLite or Postgres backend\n"
+"- designed for moderate scale (millions of repos, 30k+ events/sec)\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:83
+#, no-wrap
+msgid "There is a Typescript library for working with Tap at [@atproto/tap](https://www.npmjs.com/package/@atproto/tap).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:85
+#, no-wrap
+msgid "## App Views and Relay\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:87
+#, no-wrap
+msgid "**Relays** handle all of your events, like retrieving large-scale metrics (likes, reposts, followers), content discovery (algorithms), and user search. The Relay also handles [rate limiting](https://docs.bsky.app/docs/advanced-guides/rate-limits) of individual PDSes to ensure that content can be indexed from across the network.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:89
+#, no-wrap
+msgid "An App View is the piece that actually assembles your feed and all the other data you see in the app, and is downstream from a Relay's firehose of data. This is a semantically-aware service that produces aggregations across the network and views over some subset of the network. For example, the Relay might crawl to grab data such as a certain post's likes and reposts, and the app view will output the count of those metrics.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:91
+#, no-wrap
+msgid "There can be an ecosystem of App Views for each lexicon deployed on the network. For example, *Bluesky* currently supports a micro-blogging mode: the `app.bsky` Lexicon. Developers who create new lexicons could deploy a corresponding App View that understands their Lexicon to service their users. Other lexicons could include [video](https://stream.place/), or [long-form blogging](https://leaflet.pub/), or [collaborative coding](https://tangled.org/). By bootstrapping off of an existing Relay, data collation will already be taken care of for these new applications. They can benefit from the critical mass of users already posting on Bluesky and populating their repositories with other Lexicons; they only need to provide the indexing behaviors necessary for their application.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:93
+#, no-wrap
+msgid "App Views and Relays are both application-level tooling, rather than inherent parts of the AT protocol. Our App View implementation responds to [XRPC](/specs/xrpc) calls — our HTTP API.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:95
+#, no-wrap
+msgid "You can find a well-documented example of other App View and Relay implementations in [The Blacksky Architecture](https://blackskyweb.xyz/overview/#blacksky-architecture). Different Atmosphere applications may make different implementation choices.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:97
+#, no-wrap
+msgid "## DID PLC\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:99
+#, no-wrap
+msgid "[DID PLC](https://web.plc.directory/) is a self-authenticating DID which is strongly-consistent, recoverable, and allows for key rotation. Each identity is made up of a series of signed operations that each reference the preceding operation in a chain back to the genesis operation. Any observer can verify the chain of operations in order to verify the current state of the identity.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:101
+#, no-wrap
+msgid "PLC operations are stored in a directory (currently run at [plc.directory](http://plc.directory)) which is a centralized service that validates operations, stores them, and serves those operations as well as computed views of the identities derived from the operations. The trust model for the directory is fairly limited as it is unable to modify identities without a signed operation on their behalf.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:103
+#, no-wrap
+msgid "For guidance on PLC mirroring, refer to [this developer blog](https://dholms.leaflet.pub/3m6zswymcqk2p).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:105
+#, no-wrap
+msgid "## Feeds\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:107
+#, no-wrap
+msgid "As with Web search engines, users are free to select their aggregators. Feeds, search indices, and entire app views can be provided by independent third parties, with requests routed by the PDS based on user configuration.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:111
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={feeds} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
+"</Container>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:113
+#, no-wrap
+msgid "Custom feeds, or feed generators, are services that provide custom algorithms to users through the AT Protocol. This allows users to choose their own timelines, whether it's an algorithmic For You page or a feed of entirely cat photos.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:115
+#, no-wrap
+msgid "Custom feeds work straightforwardly: the server receives a request from a user's server and returns a list of post URIs with some optional metadata attached. Those posts are then hydrated into full views by the requesting server and sent back to the client.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:119
+#, no-wrap
+msgid "[Browse](https://blueskydirectory.com/feeds/all) custom feeds.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:121
+#, no-wrap
+msgid "## Osprey and Ozone\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:123
+#, no-wrap
+msgid "Moderation is handled by two parts of our stack: [*Osprey*](https://github.com/bluesky-social/osprey-atproto), an event stream decisions engine and analysis UI designed to investigate and take automatic action; and [*Ozone*](https://github.com/bluesky-social/ozone), a labeling service and web frontend for making moderation decisions.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:125
+#, no-wrap
+msgid "Osprey is written in Python, and was designed and open sourced in collaboration with Discord. Osprey is a library for processing actions through human written rules and outputting labels, webhooks back to an API and other sinks. It evaluates events using structured logic, user-defined functions, and external signals to assign labels, verdicts, and actions. Some of these, such as our Toxrank model for toxicity detection, make use of fine-tuned LLMs and other classifiers that expose their own web endpoints to Osprey. We also utilize image OCR and hashing to create actionable moderation metadata, which can be automatically actioned, surfaced to moderators via Ozone, and in turn helps shape our Discover feed algorithms.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:127
+#, no-wrap
+msgid "Although some of our internal heuristics are private, Osprey and Ozone are designed to be deployed and run by other app hosts with their own custom rules and moderation practices, whether they are reimplementing the Bluesky Lexicon and feature set or running a different kind of Atmosphere app with a different set of content.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:129
+#, no-wrap
+msgid "## Tools and SDKs\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:131
+#, no-wrap
+msgid "Most AT tooling is implemented in Go and TypeScript.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:135
+#, no-wrap
+msgid ""
+"- The [indigo](https://github.com/bluesky-social/indigo) repository contains most of our Go tooling, including the code for the [Relay](https://github.com/bluesky-social/indigo/blob/main/cmd/relay/README.md) and the Go SDK.\n"
+"- There's also https://github.com/bluesky-social/goat, our Go AT command-line tool.\n"
+"- The https://github.com/bluesky-social/atproto repository contains most of our TypeScript tooling, including the code for the [PDS](https://github.com/bluesky-social/atproto/tree/main/packages/pds) and the TypeScript SDK.\n"
+"- There are many other community tools that we use every day. For example, the [Microcosm](https://www.microcosm.blue/) tooling, written in Rust, provides a set of APIs to help build query layers without requiring dedicated AppViews! Refer to https://constellation.microcosm.blue/ for details.\n"
+msgstr ""

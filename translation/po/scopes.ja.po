@@ -1,0 +1,156 @@
+# Japanese translations for PACKAGE package
+# Copyright (C) 2026 Bluesky Social PBC
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"PO-Revision-Date: 2026-01-07 19:40+0900\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. type: Plain text
+#: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:21
+#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:64
+#: src/guides/streaming-data/en.mdx:60 src/guides/video-handling/en.mdx:39
+#: src/guides/account-migration/en.mdx:74 src/guides/feeds/en.mdx:105
+#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:52
+#: src/guides/scopes/en.mdx:45 src/guides/subscriptions/en.mdx:78
+#: src/guides/writing-data/en.mdx:181 src/guides/creating-a-labeler/en.mdx:56
+#: src/guides/labels/en.mdx:110 src/guides/sdk-auth/en.mdx:145
+#: src/guides/sync/en.mdx:51 src/guides/auth/en.mdx:41
+#: src/guides/lexicon/en.mdx:128 src/guides/publishing-lexicons/en.mdx:53
+#: src/guides/backfilling/en.mdx:60 src/guides/reading-data/en.mdx:165
+#: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
+#, no-wrap
+msgid "## Further Reading and Resources\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/scopes/en.mdx:3
+#, no-wrap
+msgid ""
+"import {Container} from \"@/components/Container\"\n"
+"import oauthdomain from \"./oauth-domain.jpg\"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/scopes/en.mdx:8
+#, fuzzy, no-wrap
+msgid ""
+"export const header = {\n"
+"  title: 'Scopes',\n"
+"  description: 'OAuth permission scopes and sets',\n"
+"}\n"
+msgstr "export const header = { title: 'Identity', description: 'AT プロトコルがユーザー ID を処理する方法。', }"
+
+#. type: Plain text
+#: src/guides/scopes/en.mdx:10
+#, no-wrap
+msgid "## Implementing OAuth Scopes\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/scopes/en.mdx:12
+#, no-wrap
+msgid "The OAuth flow requires permission \"scopes\" which describe the level of access granted with the session. For now, granular permissions have been implemented on the `bsky.social` hosting service, and the [self-hosted PDS distribution](/guides/self-hosting). Work on permission sets (including lexicon resolution) is in progress. Developers may start to implement more granular permissions -- for example, apps only asking for permissions to specific record types or API endpoints. We expect most apps to use the higher-level \"permission sets\" when they become available, which will provide more accessible language about the permissions being granted.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/scopes/en.mdx:15
+#, no-wrap
+msgid ""
+"The minimal set of OAuth permissions that a third-party AT application should request to sign in with Bluesky are:\n"
+"- `atproto`\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/scopes/en.mdx:18
+#, no-wrap
+msgid ""
+"If you are making use of Bluesky profile information, you may also need:\n"
+"- `rpc:app.bsky.actor.getProfile?aud=did:web:api.bsky.app#bsky_appview`\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/scopes/en.mdx:21
+#, no-wrap
+msgid ""
+"If you need to link any uploaded images or videos to the records (posts) you create, you will also need:\n"
+"- `blob:*/*`\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/scopes/en.mdx:23
+#, no-wrap
+msgid "The ergonomics of OAuth scopes in AT Protocol are still evolving. This minimal set is designed to provide a known-good starting point for app developers that does not grant unnecessary permissions. While we finalize granular permission scopes, we are also supporting a set of temporary coarse-grained scopes called the \"transition scopes\". There are currently no plans to deprecate either the transition scopes or the use of App Passwords. For an overview of these transition scopes, and more in-depth information on OAuth, see [Authorization Scopes](/specs/oauth#authorization-scopes). For the granular permission scopes, see [Permissions](/specs/permission).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/scopes/en.mdx:25
+#, no-wrap
+msgid "## Clients\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/scopes/en.mdx:27
+#, no-wrap
+msgid "OAuth client software is identified by a globally unique `client_id`. Distinct variants of client software may have distinct `client_id` values; for example the browser app and Android (mobile OS) variants of the same software might have different `client_id` values. The `client_id` must be a fully-qualified web URL from which the client-metadata JSON document can be fetched. For example, `https://app.example.com/oauth-client-metadata.json`. Some more about the `client_id`:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/scopes/en.mdx:31
+#, no-wrap
+msgid ""
+"- it must be a well-formed URL, following the W3C URL specification\n"
+"- the schema must be `https://`, and there must not be a port number included. Note that there is a [special exception](/specs/oauth#localhost-client-development) for `http://localhost` `client_id` values for development.\n"
+"- the path does not need to include `oauth-client-metadata.json`, but it is helpful convention.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/scopes/en.mdx:35
+#, no-wrap
+msgid ""
+"<Note>\n"
+"If you have been using `client-metadata.json` rather than `oauth-client-metadata.json`, you can make this change to have your domain display on the auth flow page, rather than a URL string.\n"
+"</Note>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/scopes/en.mdx:39
+#, fuzzy, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={oauthdomain} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
+"</Container>\n"
+msgstr "<Container> <Image src={image1} alt=\"\" className=\"w-full dark:invert max-w-md mx-auto\" /> </Container>"
+
+#. type: Plain text
+#: src/guides/scopes/en.mdx:41
+#, no-wrap
+msgid "The auth flow page will display all the relevent permissions being granted. This is true both for apps using [granular permissions](/specs/permission), and for those using the [transitional](/specs/oauth#authorization-scopes) OAuth scopes.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/scopes/en.mdx:43
+#, no-wrap
+msgid "Client Apps should be sure to check which auth scopes were actually approved during the auth flow. In particular, when requesting permission to read an account email address (`account:email`), the user might decline that permission while granting others. In theory, any individual permission might be denied while the overall request is granted.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/scopes/en.mdx:50
+#, no-wrap
+msgid ""
+"- [Auth](/guides/auth)\n"
+"- [SDK authentication](/guides/sdk-auth)\n"
+"- [OAuth patterns](/guides/oauth-patterns)\n"
+"- [OAuth spec](/specs/oauth)\n"
+"- [Permissions spec](/specs/permission)\n"
+msgstr ""

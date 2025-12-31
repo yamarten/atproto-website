@@ -1,0 +1,359 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Bluesky Social PBC
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:21
+#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:64
+#: src/guides/streaming-data/en.mdx:60 src/guides/video-handling/en.mdx:39
+#: src/guides/account-migration/en.mdx:74 src/guides/feeds/en.mdx:105
+#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:52
+#: src/guides/scopes/en.mdx:45 src/guides/subscriptions/en.mdx:78
+#: src/guides/writing-data/en.mdx:181 src/guides/creating-a-labeler/en.mdx:56
+#: src/guides/labels/en.mdx:110 src/guides/sdk-auth/en.mdx:145
+#: src/guides/sync/en.mdx:51 src/guides/auth/en.mdx:41
+#: src/guides/lexicon/en.mdx:128 src/guides/publishing-lexicons/en.mdx:53
+#: src/guides/backfilling/en.mdx:60 src/guides/reading-data/en.mdx:165
+#: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
+#, no-wrap
+msgid "## Further Reading and Resources\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reading-data/en.mdx:5
+#, no-wrap
+msgid ""
+"export const header = {\n"
+"  title: 'Reading Data',\n"
+"  description: 'Read AT Protocol Records',\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reading-data/en.mdx:7
+#, no-wrap
+msgid "## Listing Records\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reading-data/en.mdx:16
+#, no-wrap
+msgid ""
+"<TabGroup defaultValue=\"ts\">\n"
+"  <TabList>\n"
+"    <Tab value=\"ts\">TypeScript</Tab>\n"
+"    <Tab value=\"go\">Go</Tab>\n"
+"  </TabList>\n"
+"  <TabPanels>\n"
+"    <TabPanel value=\"ts\">\n"
+"    You can read records from a user's data repository with `client.list()`:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reading-data/en.mdx:23
+#, no-wrap
+msgid ""
+"    ```tsx\n"
+"    const posts = await client.list(app.bsky.feed.post, {\n"
+"      limit: 10,\n"
+"      repo: 'alex.bsky.team',\n"
+"    })\n"
+"    ```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reading-data/en.mdx:28
+#, no-wrap
+msgid ""
+"    Each Lexicon will have its own parameters; for `app.bsky.feed.post`, you can specify the `repo` (a user's handle or [DID](#did-resolution)) and a `limit` on the number of posts to return. \n"
+"    </TabPanel>\n"
+"    <TabPanel value=\"go\">\n"
+"    You can read posts from a user's data repository with `RepoListRecords()`:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reading-data/en.mdx:37
+#, no-wrap
+msgid ""
+"    ```go\n"
+"    resp, _ := comatproto.RepoListRecords(ctx, client,\n"
+"        \"app.bsky.feed.post\",  // lexicon\n"
+"        \"\",                    // cursor\n"
+"        10,                    // limit\n"
+"        \"alex.bsky.team\",      // handle or DID\n"
+"        false,                 // reverse\n"
+"    )\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reading-data/en.mdx:45
+#, no-wrap
+msgid ""
+"    for _, record := range resp.Records {\n"
+"        fmt.Printf(\"Record: %s\\n\", record.Uri)\n"
+"    }\n"
+"    ```\n"
+"    </TabPanel>\n"
+"  </TabPanels>\n"
+"</TabGroup>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reading-data/en.mdx:47
+#, no-wrap
+msgid "Refer to [`app.bsky.feed.post`](https://docs.bsky.app/docs/api/app-bsky-feed-get-posts) for this complete Lexicon.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reading-data/en.mdx:49
+#, no-wrap
+msgid "## Getting Records\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reading-data/en.mdx:58
+#, no-wrap
+msgid ""
+"<TabGroup defaultValue=\"ts\">\n"
+"  <TabList>\n"
+"    <Tab value=\"ts\">TypeScript</Tab>\n"
+"    <Tab value=\"go\">Go</Tab>\n"
+"  </TabList>\n"
+"  <TabPanels>\n"
+"    <TabPanel value=\"ts\">\n"
+"    You can use `client.get()` to read an individual record by its [`rkey`](/specs/record-key):\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reading-data/en.mdx:67
+#, no-wrap
+msgid ""
+"    ```tsx\n"
+"    const post = await client.get(app.bsky.feed.post, {\n"
+"      rkey: '3jxf7z2k3q2',\n"
+"    })\n"
+"    ```\n"
+"    </TabPanel>\n"
+"    <TabPanel value=\"go\">\n"
+"    You can use `RepoGetRecord()` to read an individual record by its [`rkey`](/specs/record-key):\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reading-data/en.mdx:75
+#, no-wrap
+msgid ""
+"  ```go\n"
+"  resp, _ := comatproto.RepoGetRecord(ctx, client, \n"
+"      \"\",                    // cid (empty for latest)\n"
+"      \"app.bsky.feed.post\",  // lexicon\n"
+"      \"alex.bsky.team\",      // handle or DID\n"
+"      \"3mbl5xdw4yk2r\",       // rkey\n"
+"  )\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reading-data/en.mdx:82
+#, no-wrap
+msgid ""
+"  fmt.Printf(\"URI: %s\\n\", resp.Uri)\n"
+"  // resp.Value contains the record data\n"
+"  ```\n"
+"    </TabPanel>\n"
+"  </TabPanels>\n"
+"</TabGroup>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reading-data/en.mdx:85
+#, no-wrap
+msgid "## DID Resolution\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reading-data/en.mdx:87
+#, no-wrap
+msgid "In AT, user data is resolved through [DIDs](/guides/sync#data-repositories), also known as [Decentralized Identifiers](https://en.wikipedia.org/wiki/Decentralized_identifier). Most AT Protocol applications use [`did:plc` DIDs](/guides/the-at-stack#did-plc) when registering user accounts.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reading-data/en.mdx:89
+#, no-wrap
+msgid "You can resolve a known username to a DID using the `com.atproto.identity.resolveHandle` endpoint. This means that you can just visit this address in a browser with a `handle=` arugment to look up your DID:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reading-data/en.mdx:93
+#, no-wrap
+msgid ""
+"```\n"
+"https://bsky.social/xrpc/com.atproto.identity.resolveHandle?handle=youraccount.bsky.social\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reading-data/en.mdx:99
+#, no-wrap
+msgid ""
+"```\n"
+"{\n"
+"did: \"did:plc:3vekukmab2djjeengw2o3wln\"\n"
+"}\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reading-data/en.mdx:101
+#, no-wrap
+msgid "The Typescript SDK also provides the DID of the currently-authenticated as `client.did`:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reading-data/en.mdx:105
+#, no-wrap
+msgid ""
+"```tsx\n"
+"const your_did = client.did\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reading-data/en.mdx:107
+#, no-wrap
+msgid "## Unauthenticated Reads\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reading-data/en.mdx:109
+#, no-wrap
+msgid "Some API endpoints can be accessed without authentication. You can create an unauthenticated client by passing a public API URL to a new `Client`:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reading-data/en.mdx:120
+#, no-wrap
+msgid ""
+"<TabGroup defaultValue=\"ts\">\n"
+"  <TabList>\n"
+"    <Tab value=\"ts\">TypeScript</Tab>\n"
+"    <Tab value=\"go\">Go</Tab>\n"
+"  </TabList>\n"
+"  <TabPanels>\n"
+"    <TabPanel value=\"ts\">\n"
+"    ```tsx\n"
+"    import { Client } from '@atproto/lex'\n"
+"    import * as app from './lexicons/app.js'\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reading-data/en.mdx:123
+#, no-wrap
+msgid ""
+"    const client = new Client('https://public.api.bsky.app')\n"
+"    ```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reading-data/en.mdx:125 src/guides/reading-data/en.mdx:148
+#, no-wrap
+msgid "    As with an authenticated client, you can `.get()` any public records, like a user's profile:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reading-data/en.mdx:129
+#, no-wrap
+msgid ""
+"    ```tsx\n"
+"    const profile = await client.get(app.bsky.actor.profile)\n"
+"    ```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reading-data/en.mdx:139
+#, no-wrap
+msgid ""
+"    You can make API calls to any Lexicon using the same SDK client pattern. For more examples, refer to [the SDK documentation](https://www.npmjs.com/package/@atproto/lex).\n"
+"    </TabPanel>\n"
+"    <TabPanel value=\"go\">\n"
+"```go\n"
+"import (\n"
+"\t\"context\"\n"
+"\tappbsky \"github.com/bluesky-social/indigo/api/bsky\"\n"
+"\t\"github.com/bluesky-social/indigo/xrpc\"\n"
+")\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reading-data/en.mdx:141
+#, no-wrap
+msgid "ctx := context.Background()\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reading-data/en.mdx:146
+#, no-wrap
+msgid ""
+"client := &xrpc.Client{\n"
+"  Host: \"https://public.api.bsky.app\", // public API endpoint\n"
+"}\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reading-data/en.mdx:151
+#, no-wrap
+msgid ""
+"    ```go\n"
+"profile, _ := appbsky.ActorGetProfile(ctx, client, \"alex.bsky.team\")\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reading-data/en.mdx:156
+#, no-wrap
+msgid ""
+"fmt.Printf(\"Handle: %s\\n\", profile.Handle)\n"
+"fmt.Printf(\"Display Name: %s\\n\", *profile.DisplayName)\n"
+"fmt.Printf(\"Followers: %d\\n\", *profile.FollowersCount)\n"
+"    ```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reading-data/en.mdx:161
+#, no-wrap
+msgid ""
+"    You can make API calls to any Lexicon using the same SDK client pattern. For more examples, refer to [the Go SDK libraries](https://pkg.go.dev/github.com/bluesky-social/indigo).\n"
+"    </TabPanel>\n"
+"  </TabPanels>\n"
+"</TabGroup>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reading-data/en.mdx:163
+#, no-wrap
+msgid "Next, you might try [writing](/guides/writing-data) to a user's data repository.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reading-data/en.mdx:171
+#, no-wrap
+msgid ""
+"- [Reads and Writes](/guides/reads-and-writes)\n"
+"- [Writing data](/guides/writing-data)\n"
+"- [Accounts and deletions](/guides/writing-data)\n"
+"- [Social graph](/guides/social-graph)\n"
+"- [Record Key spec](/specs/record-key)\n"
+"- [URI scheme](/specs/at-uri-scheme)\n"
+msgstr ""

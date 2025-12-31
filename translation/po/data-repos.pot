@@ -1,0 +1,136 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Bluesky Social PBC
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: src/guides/sync/en.mdx:17 src/guides/data-repos/en.mdx:12
+#, no-wrap
+msgid "A data repository is a collection of data published by a single user. Repositories are self-authenticating data structures, meaning each update is signed and can be verified by anyone.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/data-repos/en.mdx:2 src/guides/identity/en.mdx:2
+#, no-wrap
+msgid "import {DescriptionList, Description} from '@/components/DescriptionList'\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/data-repos/en.mdx:8
+#, no-wrap
+msgid ""
+"export const header = {\n"
+"  title: 'Personal Data Repositories',\n"
+"  description:\n"
+"    'A guide to the AT Protocol repo structure.',\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/data-repos/en.mdx:10
+#, no-wrap
+msgid "# Data Repositories\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/data-repos/en.mdx:14
+#, no-wrap
+msgid "They are described in more depth in the [Repository specification](/specs/repository).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/data-repos/en.mdx:16
+#, no-wrap
+msgid "## Data Layout\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/data-repos/en.mdx:18
+#, no-wrap
+msgid "The content of a repository is laid out in a [Merkle Search Tree (MST)](https://hal.inria.fr/hal-02303490/document) which reduces the state to a single root hash. It can be visualized as the following layout:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/data-repos/en.mdx:32
+#, no-wrap
+msgid ""
+"```\n"
+"┌────────────────┐\n"
+"│     Commit     │  (Signed Root)\n"
+"└───────┬────────┘\n"
+"        ↓\n"
+"┌────────────────┐\n"
+"│   Tree Nodes   │\n"
+"└───────┬────────┘\n"
+"        ↓\n"
+"┌────────────────┐\n"
+"│     Record     │\n"
+"└────────────────┘\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/data-repos/en.mdx:34
+#, no-wrap
+msgid "Every node is an [IPLD](https://ipld.io/) object ([dag-cbor](https://ipld.io/docs/codecs/known/dag-cbor/)) which is referenced by a [CID](https://github.com/multiformats/cid) hash. The arrows in the diagram above represent a CID reference.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/data-repos/en.mdx:36
+#, no-wrap
+msgid "This layout is reflected in the [AT URIs](/specs/at-uri-scheme):\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/data-repos/en.mdx:42
+#, no-wrap
+msgid ""
+"```\n"
+"Root       | at://alice.com\n"
+"Collection | at://alice.com/app.bsky.feed.post\n"
+"Record     | at://alice.com/app.bsky.feed.post/1234\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/data-repos/en.mdx:44
+#, no-wrap
+msgid "A “commit” to a data repository is simply a keypair signature over a Root node’s CID. Each mutation to the repository produces a new Commit node.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/data-repos/en.mdx:46
+#, no-wrap
+msgid "## Identifier Types\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/data-repos/en.mdx:48
+#, no-wrap
+msgid "Multiple types of identifiers are used within a Personal Data Repository.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/data-repos/en.mdx:54
+#, no-wrap
+msgid ""
+"<DescriptionList>\n"
+"  <Description title=\"DIDs\">[Decentralized IDs (DIDs)](https://w3c.github.io/did/) identify data repositories. They are broadly used as user IDs, but since every user has one data repository then a DID can be considered a reference to a data repository. The format of a DID varies by the “DID method” used but all DIDs ultimately resolve to a keypair and a list of service providers. This keypair can sign commits to the data repository.</Description>\n"
+"  <Description title=\"CIDs\">[Content IDs (CIDs)](https://github.com/multiformats/cid) identify content using a fingerprint hash. They are used throughout the repository to reference the objects (nodes) within it. When a node in the repository changes, its CID also changes. Parents which reference the node must then update their reference, which in turn changes the parent’s CID as well. This chains all the way to the Commit node, which is then signed.</Description>\n"
+"  <Description title=\"NSIDs\">[Namespaced Identifiers (NSIDs)](/specs/nsid) identify the Lexicon type for groups of records within a repository.</Description>\n"
+"  <Description title=\"rkey\">[Record Keys (\"rkeys\")](/specs/record-key) identify individual records within a collection in a given repository. The format is specified by the collection Lexicon, with some collections having only a single record with a key like \"self\", and other collections having many records, with keys using a base32-encoded timestamp called a Timestamp Identifier (TID).</Description>\n"
+"</DescriptionList>\n"
+msgstr ""

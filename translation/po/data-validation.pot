@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Bluesky Social PBC
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: src/guides/data-validation/en.mdx:6
+#, no-wrap
+msgid ""
+"export const metadata = {\n"
+"  title: 'Data Validation',\n"
+"  description:\n"
+"    'Expectations around recommended data limits and validation',\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/data-validation/en.mdx:8
+#, no-wrap
+msgid "# Data Validation\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/data-validation/en.mdx:10
+#, no-wrap
+msgid "Some software does not need to worry much about Bluesky or atproto schema validation. For example, client apps and bots can generally assume that data they receive from the Bluesky API is valid, and when they try to create records the PDS is responsible for double-checking schema validation.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/data-validation/en.mdx:12
+#, no-wrap
+msgid "Software which consumes directly from the event stream (firehose) should be more careful. And developers designing new tools or clever hacks should be aware of some expectations and hard limits around data validation.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/data-validation/en.mdx:14
+#, no-wrap
+msgid "If an individual record fails to validate for any reason, the entire record should be ignored, but other records from the same repository should be processed. If there is a problem with the repository commit data or repository structure (\"MST\"), the repository should be marked as invalid, but old content does not need to be de-indexed or purged. As soon as a new valid commit is received, the repository should be marked valid again. This logic is mostly relevant to feed generators, AppViews, and moderation services, all of which may be consuming from the firehose.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/data-validation/en.mdx:17
+#, no-wrap
+msgid "## Recommended Data Limits\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/data-validation/en.mdx:19
+#, no-wrap
+msgid "The following are informal guidelines, mostly to communicate order-of-magnitude expectations, and are likely to evolve over time. They are not part of the atproto specification, but if you are pushing the limits here, you may encounter interoperability issues now or in the future.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/data-validation/en.mdx:21
+#, no-wrap
+msgid "**CBOR Record Size:** try to keep individual records to a few dozen KBytes. If you need to store more data, even text data, consider using a blob instead. A reasonable maximum record size limit (`MAX_CBOR_RECORD_SIZE`) is 1 MiByte (1 mebibyte, or 1,048,576 bytes). Note that as of August 2025, the `subscribeRepos` Lexicon limits `#commit` message block size to 2,000,000 bytes (not mebibytes), so only a single 1 MiByte record can be created or updated per commit.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/data-validation/en.mdx:23
+#, no-wrap
+msgid "Note that event stream (firehose) \"frames\" may consist of multiple records, and larger limits are recommended for CBOR parsing in general, on the order of 4-5 MBytes.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/data-validation/en.mdx:25
+#, no-wrap
+msgid "**JSON Record Size:** the CBOR encoding is \"canonical\" for records, so focusing only on that encoding would make sense. But sometimes it is good to also have a limit on JSON encoding size. A reasonable limit (`MAX_JSON_RECORD_SIZE`) is 2 MiByte (2,097,152 bytes).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/data-validation/en.mdx:27
+#, no-wrap
+msgid "**General string length:** an overall length limit on strings within a record, including both those with and without Lexicon-specified string lengths. Measured as bytes (UTF-8 encoded). Should try to keep these to tens of KBytes at most. For an upper-bound limit (`MAX_RECORD_STRING_LEN`), reasonable to just rely on the overall CBOR record size limit. Notably, some early implementations had a 8 KByte (8192 bytes) limit.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/data-validation/en.mdx:29
+#, no-wrap
+msgid "**General `bytes` length:** same as the string limit, but for binary data (`MAX_RECORD_BYTES_LEN`). Recommend relying on the overall CBOR record size limit. As with record size overall, if more than a few dozen KBytes are needed, recommendation is to use blobs.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/data-validation/en.mdx:31
+#, no-wrap
+msgid "**CID binary encoding size:** recommend an overall limit (`MAX_CID_BYTES`) of 100 bytes.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/data-validation/en.mdx:33
+#, no-wrap
+msgid "**Container nesting depth:** for example, how many layers of map inside an array inside an array, etc. If your CBOR or JSON parsing library supports a limit, the default is probably fine. A reasonable limit (`MAX_CBOR_NESTED_LEVELS`) is 32 levels of nesting.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/data-validation/en.mdx:35
+#, no-wrap
+msgid "**Container element count:** for example, how many keys in a map, or elements in an array. If your CBOR or JSON parsing library supports a limit, the default is probably fine. A reasonable limit (`MAX_CBOR_CONTAINER_LEN`) is 128 x 1024 = 131,072 elements.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/data-validation/en.mdx:37
+#, no-wrap
+msgid "**Object key string length:** for example, how many bytes (UTF-8 encoded) are allowed in any key of an object. If your CBOR or JSON parsing library supports a limit, the default is probably fine. A reasonable limit (`MAX_CBOR_OBJECT_KEY_LEN`) is 8 KByte (8192).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/data-validation/en.mdx:39
+#, no-wrap
+msgid "**Integers:** as mentioned [in the atproto specification](https://atproto.com/specs/data-model#data-types), it is a strongly recommended best practice to keep integer values \"64-bit float safe\", meaning restricting them to 53 bits of precision. This ensures compatibility with JavaScript without loss of numeric precision. The specific values are `MAX_SAFE_INTEGER: 9007199254740991` and `MIN_SAFE_INTEGER: -9007199254740991`.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/data-validation/en.mdx:42
+#, no-wrap
+msgid "## Validation Without Schema\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/data-validation/en.mdx:44
+#, no-wrap
+msgid "The [atproto Lexicon system](https://atproto.com/specs/lexicon) describes a data model and schema language for validating data against a known schema. But what if you are processing data where the schema isn't known or present?\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/data-validation/en.mdx:46
+#, no-wrap
+msgid "Here are some guidelines, by data type:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/data-validation/en.mdx:54
+#, no-wrap
+msgid ""
+"- `integer`: should have values within safe limits (discussed in limits section)\n"
+"- `string`: must be valid UTF-8 encoding. No particular Unicode normalization is expected or required. Empty strings are allowed, but it is preferred to take advantage of nullable or optional fields if possible.\n"
+"- `bytes`: may be empty (length 0)\n"
+"- `cid-link`: as discussed in the protocol specification: must be CIDv1; multibase should be raw in CBOR encoding (type `0x00`); multicodec should be `dag-cbor` (`0x71`) or `raw` (`0x55`); and multihash type SHA-256 is encouraged (but not strictly required)\n"
+"- `array`: may have elements of heterogeneous type, because of the flexibility Lexicon unions provide.\n"
+"- `object`: key must all be strings, and follow similar data requirements to `string` fields. Empty key strings are not allowed. Key names starting with `$` are reserved for protocol use (for example, `$bytes` and `$type`)\n"
+"- `blob`: the `ref` must be a valid `cid-link`, and have `raw` multicodec (not `dag-cbor`). `size` may not be negative. `mimeType` can not be an empty string. The \"legacy\" blob format should be supported for reading, but new records created must be the regular blob format. Note that supprting additional reference types (eg, alternative multicodecs or hash types) are a likely evolution and extension point for the protocol in the future, but the current version of the repository and data model is narrowly defined.\n"
+msgstr ""

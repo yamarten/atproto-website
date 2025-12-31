@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Bluesky Social PBC
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:21
+#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:64
+#: src/guides/streaming-data/en.mdx:60 src/guides/video-handling/en.mdx:39
+#: src/guides/account-migration/en.mdx:74 src/guides/feeds/en.mdx:105
+#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:52
+#: src/guides/scopes/en.mdx:45 src/guides/subscriptions/en.mdx:78
+#: src/guides/writing-data/en.mdx:181 src/guides/creating-a-labeler/en.mdx:56
+#: src/guides/labels/en.mdx:110 src/guides/sdk-auth/en.mdx:145
+#: src/guides/sync/en.mdx:51 src/guides/auth/en.mdx:41
+#: src/guides/lexicon/en.mdx:128 src/guides/publishing-lexicons/en.mdx:53
+#: src/guides/backfilling/en.mdx:60 src/guides/reading-data/en.mdx:165
+#: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
+#, no-wrap
+msgid "## Further Reading and Resources\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/social-graph/en.mdx:5
+#, no-wrap
+msgid ""
+"export const header = {\n"
+"  title: 'Social graph',\n"
+"  description: 'Working with AT Protocol Social Graphs',\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/social-graph/en.mdx:7
+#, no-wrap
+msgid "## Querying social graphs\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/social-graph/en.mdx:9
+#, no-wrap
+msgid "AT Protocol records are public...\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/social-graph/en.mdx:11
+#, no-wrap
+msgid "See [Exploring AT Protocol with Python](https://davidgasquez.com/exploring-atproto-python/) for another example of this approach.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/social-graph/en.mdx:13
+#, no-wrap
+msgid "## Backlinks\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/social-graph/en.mdx:15
+#, no-wrap
+msgid "One of the most powerful ways to get social graph data from AT Protocol is through the use of **backlinks**. Querying backlinks lets you resolve all of the records linking *to* any given record, *or* identity.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/social-graph/en.mdx:17
+#, no-wrap
+msgid "Because all AT Protocol records are openly available and addressible via an `at://` URI, this makes it possible to encode nested API queries into individual URLs. The community project [pds.ls](https://pdsls.dev/at://did:plc:vmt7o7y6titkqzzxav247zrn/app.bsky.feed.post/3mbaxebcd6s2f) does this, for example.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/social-graph/en.mdx:19
+#, no-wrap
+msgid "[Microcosm](https://constellation.microcosm.blue) provides a set of resources for working with backlinks.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/social-graph/en.mdx:27
+#, no-wrap
+msgid ""
+"- [Reads and Writes](/guides/reads-and-writes)\n"
+"- [Reading data](/guides/reading-data)\n"
+"- [Writing data](/guides/writing-data)\n"
+"- [Accounts and deletions](/guides/writing-data)\n"
+"- [Record Key spec](/specs/record-key)\n"
+"- [URI scheme](/specs/at-uri-scheme)\n"
+msgstr ""

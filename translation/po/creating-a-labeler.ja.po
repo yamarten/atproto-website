@@ -1,0 +1,155 @@
+# Japanese translations for PACKAGE package
+# Copyright (C) 2026 Bluesky Social PBC
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"PO-Revision-Date: 2026-01-07 19:40+0900\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. type: Plain text
+#: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:21
+#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:64
+#: src/guides/streaming-data/en.mdx:60 src/guides/video-handling/en.mdx:39
+#: src/guides/account-migration/en.mdx:74 src/guides/feeds/en.mdx:105
+#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:52
+#: src/guides/scopes/en.mdx:45 src/guides/subscriptions/en.mdx:78
+#: src/guides/writing-data/en.mdx:181 src/guides/creating-a-labeler/en.mdx:56
+#: src/guides/labels/en.mdx:110 src/guides/sdk-auth/en.mdx:145
+#: src/guides/sync/en.mdx:51 src/guides/auth/en.mdx:41
+#: src/guides/lexicon/en.mdx:128 src/guides/publishing-lexicons/en.mdx:53
+#: src/guides/backfilling/en.mdx:60 src/guides/reading-data/en.mdx:165
+#: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
+#, no-wrap
+msgid "## Further Reading and Resources\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/creating-a-labeler/en.mdx:3
+#, no-wrap
+msgid ""
+"import {Container} from \"@/components/Container\"\n"
+"import ozone from \"./ozone.png\"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/creating-a-labeler/en.mdx:8
+#, fuzzy, no-wrap
+msgid ""
+"export const header = {\n"
+"  title: 'Creating a Labeler',\n"
+"  description: 'Run your own modular moderation service',\n"
+"}\n"
+msgstr "import {Heading} from '@/components/Heading' export const header = { title: 'プロトコルの概要', description: 'AT プロトコルの概要。', }"
+
+#. type: Plain text
+#: src/guides/creating-a-labeler/en.mdx:10
+#, no-wrap
+msgid "## Declaring a labeler\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/creating-a-labeler/en.mdx:12
+#, no-wrap
+msgid "Labelers publish an `/app.bsky.labeler.service/self` record to declare that they are a labeler and publish their policies. That record looks like this:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/creating-a-labeler/en.mdx:36
+#, no-wrap
+msgid ""
+"```json\n"
+"{\n"
+"  \"$type\": \"app.bsky.labeler.service\",\n"
+"  \"policies\": {\n"
+"    \"labelValues\": [\"porn\", \"spider\"],\n"
+"    \"labelValueDefinitions\": [\n"
+"      {\n"
+"        \"identifier\": \"spider\",\n"
+"        \"severity\": \"alert\",\n"
+"        \"blurs\": \"media\",\n"
+"        \"defaultSetting\": \"warn\",\n"
+"        \"locales\": [\n"
+"          {\"lang\": \"en\", \"name\": \"Spider Warning\", \"description\": \"Spider!!!\"}\n"
+"        ]\n"
+"      }\n"
+"    ]\n"
+"  },\n"
+"  \"subjectTypes\": [\"record\"],\n"
+"  \"subjectCollections\": [\"app.bsky.feed.post\", \"app.bsky.actor.profile\"],\n"
+"  \"reasonTypes\": [\"com.atproto.moderation.defs#reasonOther\"],\n"
+"  \"createdAt\": \"2024-03-03T05:31:08.938Z\"\n"
+"}\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/creating-a-labeler/en.mdx:38
+#, no-wrap
+msgid "The `labelValues` declares what to expect from the Labeler. It may include global and custom label values.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/creating-a-labeler/en.mdx:40
+#, no-wrap
+msgid "The `labelValueDefinitions` defines the custom labels. It includes the `locales` field for specifying human-readable copy in various languages. If the user's language is not found, it will use the first set of strings in the array.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/creating-a-labeler/en.mdx:42
+#, no-wrap
+msgid "`subjectTypes`, `subjectCollections`, and `reasonTypes` declare what type of moderation reports are reviewed by the Labeler. `subjectTypes` can include `record` for individual pieces of content, and `account` for overall accounts. `subjectCollections` is a list of NSIDs of record types; if not defined, any record type is allowed. `reasonTypes` is a list of report reason codes (Lexicon references).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/creating-a-labeler/en.mdx:44
+#, no-wrap
+msgid "## Ozone\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/creating-a-labeler/en.mdx:46
+#, no-wrap
+msgid "[Ozone](https://github.com/bluesky-social/ozone) is our reference labeling service for Atmosphere apps, and includes a web interface for triaging and actioning moderation reports.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/creating-a-labeler/en.mdx:50
+#, fuzzy, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={ozone} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
+"</Container>\n"
+msgstr "<Container> <Image src={image1} alt=\"\" className=\"w-full dark:invert max-w-md mx-auto\" /> </Container>"
+
+#. type: Plain text
+#: src/guides/creating-a-labeler/en.mdx:52
+#, no-wrap
+msgid "Self-hosting Ozone enables you to participate as a labeler in the AT stackable moderation architecture. The Ozone service consists of a web UI, a backend, and a Postgres database. \n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/creating-a-labeler/en.mdx:54
+#, no-wrap
+msgid "Before setting up your Ozone service you should create a *new* account on the network, separate from your main account. This is the account that subscribers to your labeler will interact with: accounts for labelers will appear differently in app interfaces than normal accounts. Refer to the [Ozone User Guide](https://github.com/bluesky-social/ozone/blob/main/docs/userguide.md) for more.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/creating-a-labeler/en.mdx:61
+#, no-wrap
+msgid ""
+"- [Moderation](/guides/moderation)\n"
+"- [Labels](/guides/labels)\n"
+"- [Subscriptions](/guides/subscriptions)\n"
+"- [Using Ozone](/guides/using-ozone)\n"
+"- [Label Specs](/specs/label)\n"
+msgstr ""

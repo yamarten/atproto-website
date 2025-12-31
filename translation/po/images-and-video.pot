@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Bluesky Social PBC
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:21
+#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:64
+#: src/guides/streaming-data/en.mdx:60 src/guides/video-handling/en.mdx:39
+#: src/guides/account-migration/en.mdx:74 src/guides/feeds/en.mdx:105
+#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:52
+#: src/guides/scopes/en.mdx:45 src/guides/subscriptions/en.mdx:78
+#: src/guides/writing-data/en.mdx:181 src/guides/creating-a-labeler/en.mdx:56
+#: src/guides/labels/en.mdx:110 src/guides/sdk-auth/en.mdx:145
+#: src/guides/sync/en.mdx:51 src/guides/auth/en.mdx:41
+#: src/guides/lexicon/en.mdx:128 src/guides/publishing-lexicons/en.mdx:53
+#: src/guides/backfilling/en.mdx:60 src/guides/reading-data/en.mdx:165
+#: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
+#, no-wrap
+msgid "## Further Reading and Resources\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/images-and-video/en.mdx:5
+#, no-wrap
+msgid ""
+"export const header = {\n"
+"  title: 'Images and Video',\n"
+"  description: 'Working with image and video blobs',\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/images-and-video/en.mdx:7
+#, no-wrap
+msgid "## Blob objects\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/images-and-video/en.mdx:9
+#, no-wrap
+msgid "\"Blobs\" are media files stored alongside an account's repository. They include images, video, and audio, but could also include any other file format. Blobs are referenced by individual records by the **`blob`** lexicon datatype, which includes a content hash (CID) for the blob.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/images-and-video/en.mdx:11
+#, no-wrap
+msgid "Blob files are uploaded and distributed separately from records. Blobs are authoritatively stored by the account's PDS instance, but views are commonly served by CDNs associated with individual applications (\"AppViews\"), to reduce traffic on the PDS. CDNs may serve transformed (resized, transcoded, etc) versions of the original blob.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/images-and-video/en.mdx:13
+#, no-wrap
+msgid "While blobs are universally content addressed (by CID), they are always referenced and managed in the context of an individual account (DID).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/images-and-video/en.mdx:15
+#, no-wrap
+msgid "The empty blob (zero bytes) is valid in general, though it may be disallowed by individual Lexicons/applications.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/images-and-video/en.mdx:17
+#, no-wrap
+msgid "Creating blobs requires the permission scope **`blob:*/*` .**\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/images-and-video/en.mdx:19
+#, no-wrap
+msgid "It is generally recommended to use an object storage implementation for working with blobs if you are hosting your own PDS. See [going to production](/guides/going-to-production#object-storage) for more.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/images-and-video/en.mdx:26
+#, no-wrap
+msgid ""
+"- [Blob lifecycle](/guides/blob-lifecycle)\n"
+"- [Blob security](/guides/blob-security)\n"
+"- [Video handling](/guides/video-handling)\n"
+"- [Blob Specs](/specs/blob)\n"
+"- [Streamplace](https://stream.place/docs/) provides an implementation and related Lexicon for video streaming on ATProto.\n"
+msgstr ""

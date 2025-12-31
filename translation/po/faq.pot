@@ -1,0 +1,165 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Bluesky Social PBC
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: src/guides/faq/en.mdx:6
+#, no-wrap
+msgid ""
+"export const header = {\n"
+"  title: 'FAQ',\n"
+"  description:\n"
+"    'Frequently Asked Questions about AT Protocol.',\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/faq/en.mdx:8
+#, no-wrap
+msgid "# FAQ\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/faq/en.mdx:10
+#, no-wrap
+msgid "Frequently Asked Questions about the Authenticated Transfer Protocol (AT Proto). For FAQ about Bluesky, visit [here](https://bsky.social/about/faq).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/faq/en.mdx:12
+#, no-wrap
+msgid "## Is the AT Protocol a blockchain?\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/faq/en.mdx:14
+#, no-wrap
+msgid "No. The AT Protocol is a [federated protocol](https://en.wikipedia.org/wiki/Federation_(information_technology)). It's not a blockchain nor does it use a blockchain.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/faq/en.mdx:16
+#, no-wrap
+msgid "## Why not use ActivityPub?\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/faq/en.mdx:18
+#, no-wrap
+msgid "[ActivityPub](https://en.wikipedia.org/wiki/ActivityPub) is a federated social networking technology popularized by [Mastodon](https://joinmastodon.org/).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/faq/en.mdx:20
+#, no-wrap
+msgid "Account portability is a major reason why we chose to build a separate protocol. We consider portability to be crucial because it protects users from sudden bans, server shutdowns, and policy disagreements. Our solution for portability requires both [signed data repositories](/guides/data-repos) and [DIDs](/guides/identity), neither of which are easy to retrofit into ActivityPub. The migration tools for ActivityPub are comparatively limited; they require the original server to provide a redirect and cannot migrate the user's previous data.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/faq/en.mdx:22
+#, no-wrap
+msgid "Another major reason is scalability. ActivityPub depends heavily on delivering messages between a wide network of small-to-medium sized nodes, which can cause individual nodes to be flooded with traffic and generally struggles to provide global views of activity. The AT Protocol uses aggregating applications to merge activity from the users' hosts, reducing the overall traffic and dramatically reducing the load on individual hosts.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/faq/en.mdx:24
+#, no-wrap
+msgid "Other smaller differences include: a different viewpoint about how schemas should be handled, a preference for domain usernames over AP's double-@ email usernames, and the goal of having large scale search and algorithmic feeds.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/faq/en.mdx:26
+#, no-wrap
+msgid "## Why create Lexicon instead of using JSON-LD or RDF?\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/faq/en.mdx:28
+#, no-wrap
+msgid "Atproto exchanges data and RPC commands across organizations. For the data and RPC to be useful, the software needs to correctly handle schemas created by separate teams. This is the purpose of [Lexicon](/guides/lexicon).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/faq/en.mdx:30
+#, no-wrap
+msgid "We want engineers to feel comfortable using and creating new schemas, and we want developers to enjoy the DX of the system. Lexicon helps us produce strongly typed APIs which are extremely familiar to developers and which provides a variety of runtime correctness checks.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/faq/en.mdx:32
+#, no-wrap
+msgid "[RDF](https://en.wikipedia.org/wiki/Resource_Description_Framework) is intended for extremely general cases in which the systems share very little infrastructure. It's conceptually elegant but difficult to use, often adding a lot of syntax which devs don't understand. JSON-LD simplifies the task of consuming RDF vocabularies, but it does so by hiding the underlying concepts, not by making RDF more legible.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/faq/en.mdx:34
+#, no-wrap
+msgid "We looked very closely at using RDF but just didn't love the developer experience (DX) or the tooling it offered.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/faq/en.mdx:36
+#, no-wrap
+msgid "## What is “XRPC,” and why not use ___?\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/faq/en.mdx:38
+#, no-wrap
+msgid "[XRPC](/specs/xrpc) is HTTP with some added conventions. We're aiming to retire the term \"XRPC\" and just refer to it as the ATProto usage of HTTP.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/faq/en.mdx:40
+#, no-wrap
+msgid "XRPC uses [Lexicon](/guides/lexicon) to describe HTTP calls and maps them to `/xrpc/{methodId}`. For example, this API call:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/faq/en.mdx:47
+#, no-wrap
+msgid ""
+"```typescript\n"
+"await api.com.atproto.repo.listRecords({\n"
+"  user: 'alice.com',\n"
+"  collection: 'app.bsky.feed.post'\n"
+"})\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/faq/en.mdx:49
+#, no-wrap
+msgid "...maps to:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/faq/en.mdx:55
+#, no-wrap
+msgid ""
+"```text\n"
+"GET /xrpc/com.atproto.repo.listRecords\n"
+"  ?user=alice.com\n"
+"  &collection=app.bsky.feed.post\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/faq/en.mdx:56
+#, no-wrap
+msgid "Lexicon establishes a shared method id (`com.atproto.repo.listRecords`) and the expected query params, input body, and output body. By using Lexicon we get runtime checks on the inputs and outputs of the call, and can generate typed code like the API call example above.\n"
+msgstr ""

@@ -1,0 +1,187 @@
+# Japanese translations for PACKAGE package
+# Copyright (C) 2026 Bluesky Social PBC
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"PO-Revision-Date: 2026-01-07 19:40+0900\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. type: Plain text
+#: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:21
+#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:64
+#: src/guides/streaming-data/en.mdx:60 src/guides/video-handling/en.mdx:39
+#: src/guides/account-migration/en.mdx:74 src/guides/feeds/en.mdx:105
+#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:52
+#: src/guides/scopes/en.mdx:45 src/guides/subscriptions/en.mdx:78
+#: src/guides/writing-data/en.mdx:181 src/guides/creating-a-labeler/en.mdx:56
+#: src/guides/labels/en.mdx:110 src/guides/sdk-auth/en.mdx:145
+#: src/guides/sync/en.mdx:51 src/guides/auth/en.mdx:41
+#: src/guides/lexicon/en.mdx:128 src/guides/publishing-lexicons/en.mdx:53
+#: src/guides/backfilling/en.mdx:60 src/guides/reading-data/en.mdx:165
+#: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
+#, no-wrap
+msgid "## Further Reading and Resources\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/streaming-data/en.mdx:5
+#, fuzzy, no-wrap
+msgid ""
+"export const header = {\n"
+"  title: 'Streaming Data',\n"
+"  description: 'Working with the Firehose and Jetstream',\n"
+"}\n"
+msgstr "export const header = { title: 'Identity', description: 'AT プロトコルがユーザー ID を処理する方法。', }"
+
+#. type: Plain text
+#: src/guides/streaming-data/en.mdx:7
+#, no-wrap
+msgid "## Streaming data\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/streaming-data/en.mdx:9
+#, no-wrap
+msgid "One of the core primitives of the AT Protocol is the *firehose*. It is an authenticated stream of events used to efficiently sync user updates (posts, likes, follows, handle changes, etc).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/streaming-data/en.mdx:11
+#, no-wrap
+msgid "Many AT applications that need to stream incoming data will utilize the firehose — from feed generators to labelers, to bots and search engines. In the AT ecosystem, there are many different endpoints that seed these firehose APIs. Each PDS serves a stream of all of the activity on the repos it is responsible for. From there, Relays aggregate the streams of each participating PDS into a single unified stream — the firehose.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/streaming-data/en.mdx:13
+#, no-wrap
+msgid "## Firehose\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/streaming-data/en.mdx:15
+#, no-wrap
+msgid "Anyone can connect to the firehose without authentication — this is a core feature of the protocol. To get started, open a WebSocket connection to any provider of the `com.atproto.sync.subscribeRepos` endpoint:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/streaming-data/en.mdx:19
+#, no-wrap
+msgid ""
+"```shell \n"
+"$ websocat wss://bsky.network/xrpc/com.atproto.sync.subscribeRepos\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/streaming-data/en.mdx:21
+#, no-wrap
+msgid "From here, you would need to read each message as it comes in, and decode the associated data. Our [Go](https://github.com/bluesky-social/indigo) SDK is currently the most feature-complete for interacting with the firehose directly.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/streaming-data/en.mdx:23
+#, no-wrap
+msgid "Bear in mind that firehose output format is one of the more complex parts of AT, involving decoding binary [CBOR](/specs/data-model) data and [CAR](/specs/repository#car-file-serialization) files. Additionally, the volume of data has increased rapidly as the network has grown. The full synchronization firehose is core network infrastructure, but for end users such as [feed developers](/guides/feeds), we provide an alternative streaming solution called **Jetstream.**\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/streaming-data/en.mdx:25
+#, no-wrap
+msgid "## Jetstream\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/streaming-data/en.mdx:27
+#, no-wrap
+msgid "Jetstream has a few key advantages:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/streaming-data/en.mdx:31
+#, no-wrap
+msgid ""
+"- simple JSON encoding\n"
+"- reduced bandwidth, and compression\n"
+"- ability to filter by collection (NSID) or repo (DID)\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/streaming-data/en.mdx:33
+#, no-wrap
+msgid "A Jetstream server consumes from the firehose and fans out to many subscribers. It is [open source](https://github.com/bluesky-social/jetstream), implemented in Go, simple to self-host. There is an official client library included (in Go), and [community client libraries](https://skyware.js.org/guides/jetstream/introduction/getting-started/) have been developed.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/streaming-data/en.mdx:35
+#, no-wrap
+msgid "You can work with Jetstream like any other websocket. Just provide a Jetstream endpoint like `wss://jetstream2.us-east.bsky.network/subscribe`, and a `wantedCollections` parameter, like `?wantedCollections=app.bsky.feed.post`.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/streaming-data/en.mdx:37
+#, no-wrap
+msgid "Here is a Python example:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/streaming-data/en.mdx:41
+#, no-wrap
+msgid ""
+"```python\n"
+"import asyncio\n"
+"import websockets\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/streaming-data/en.mdx:43
+#, no-wrap
+msgid "uri = \"wss://jetstream2.us-east.bsky.network/subscribe?wantedCollections=app.bsky.feed.post\"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/streaming-data/en.mdx:55
+#, no-wrap
+msgid ""
+"async def listen_to_websocket():\n"
+"  async with websockets.connect(uri) as websocket:\n"
+"    while True:\n"
+"      try:\n"
+"        message = await websocket.recv()\n"
+"        print(message)\n"
+"      except websockets.ConnectionClosed as e:\n"
+"        print(f\"Connection closed: {e}\")\n"
+"        break\n"
+"      except Exception as e:\n"
+"        print(f\"Error: {e}\")\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/streaming-data/en.mdx:58
+#, no-wrap
+msgid ""
+"asyncio.get_event_loop().run_until_complete(listen_to_websocket())\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/streaming-data/en.mdx:67
+#, no-wrap
+msgid ""
+"- [Sync](/guides/sync)\n"
+"- [Backfilling](/guides/backfilling)\n"
+"- [Feeds](/guides/feeds)\n"
+"- [Repository spec](/specs/repository)\n"
+"- [Event Stream spec](/specs/event-stream)\n"
+"- [Sync spec](/specs/sync)\n"
+"- The [Microcosm](https://www.microcosm.blue/) community project maintains tools for working with AT records at scale without local mirroring.\n"
+msgstr ""

@@ -1,0 +1,333 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Bluesky Social PBC
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: src/docs/en.mdx:13
+#, no-wrap
+msgid ""
+"import { Guides } from '@/components/Guides'\n"
+"import { Specs } from '@/components/Specs'\n"
+"import { HeroPattern } from '@/components/HeroPattern'\n"
+"import { Firehose } from '@/components/Firehose'\n"
+"import { CodeCard } from '@/components/CodeCard'\n"
+"import { ImageCard } from '@/components/ImageCard'\n"
+"import { ArticleSummary, ArticleSummarySmall } from '@/components/ArticleSummary'\n"
+"import { UserIcon } from '@/components/icons/UserIcon'\n"
+"import WebWithoutWallsPng from '@/images/media/web-without-walls.png'\n"
+"import DotMediaInterviewPng from '@/images/media/dotmedia-interview.png'\n"
+"import WhitepaperPng from '@/images/media/whitepaper.png'\n"
+"import HowDoesBlueskyWorkBlogpostPng from '@/images/media/how-does-bsky-work-blogpost.png'\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:19
+#, no-wrap
+msgid ""
+"export const header = {\n"
+"  title: 'AT Protocol',\n"
+"  description:\n"
+"    'The AT Protocol is an open, decentralized, and high-performance network for building social applications.',\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:21
+#, no-wrap
+msgid "export const sections = []\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:23
+#, no-wrap
+msgid "<HeroPattern />\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:25
+#, no-wrap
+msgid "# Welcome to the Atmosphere\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:27
+#, no-wrap
+msgid "The AT Protocol is an open, decentralized network for building social applications. {{ className: 'lead' }}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:36
+#, no-wrap
+msgid ""
+"<div className=\"not-prose mb-16 mt-6 flex gap-3\">\n"
+"  <Button href=\"/guides/applications\" arrow=\"right\">\n"
+"    <>Quickstart</>\n"
+"  </Button>\n"
+"  <Button href=\"/sdks\" variant=\"outline\">\n"
+"    <>Explore SDKs</>\n"
+"  </Button>\n"
+"</div>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:45
+#, no-wrap
+msgid ""
+"{/* TODO <Row>\n"
+"  <Col>\n"
+"      <Firehose />\n"
+"  </Col>\n"
+"  <Col>\n"
+"    <CodeCard description=\"Single Sign-On in 5 minutes.\" href=\"/todo\" icon={UserIcon}>\n"
+"      ```js {{containerClassName: 'rounded-t-none !my-0 border-t border-zinc-900/7.5 dark:border-white/10 !ring-0'}}\n"
+"      import { BrowserOAuthClient } from '@atproto/oauth-client-browser'\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:57
+#, no-wrap
+msgid ""
+"      const client = new BrowserOAuthClient()\n"
+"      await client.signIn('my.handle.com', {\n"
+"        state: 'some value needed later',\n"
+"        prompt: 'none', // Attempt to sign in without user interaction (SSO)\n"
+"        ui_locales: 'fr-CA fr en', // Only supported by some OAuth servers (requires OpenID Connect support + i18n support)\n"
+"        signal: new AbortController().signal, // Optional, allows to cancel the sign in (and destroy the pending authorization, for better security)\n"
+"      })\n"
+"      ```\n"
+"    </CodeCard>\n"
+"  </Col>\n"
+"</Row> */}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:59
+#, no-wrap
+msgid "<Guides />\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:61
+#, no-wrap
+msgid "<Specs />\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:63
+#, no-wrap
+msgid ""
+"{/* TODO\n"
+"---\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:66
+#, no-wrap
+msgid "## A Web of Data {{className: 'text-2xl mt-2 scroll-mt-32'}}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:68
+#, no-wrap
+msgid "The Atmosphere is a web of interconnected data. It is the porous membrane through which posts, profiles, and comments flow.  It is a network of databases working in conjunction to provide one global database - a tool for people to communicate with each other through data.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:70
+#, no-wrap
+msgid "The purpose of the Atmosphere is to run social applications at scale. It's designed for real-world applications with hundreds of millions of users. The Bluesky app has 6mm registered users and 500k DAU, and runs at roughly the same cost-efficiency as traditional applications.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:72
+#, no-wrap
+msgid "The vision and mission of the Atmosphere is to make it easy for people to build. Whether you're a weekend hacker or building a startup, you should have access to a social network to build upon. The joy of social programming should be available to everyone.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:76
+#, no-wrap
+msgid ""
+"<Button href=\"/quickstart\" arrow=\"right\">\n"
+"  <>Keep reading</>\n"
+"</Button> */}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:78
+#, no-wrap
+msgid "## Learn more\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:80
+#, no-wrap
+msgid "<div className=\"xl:grid grid-cols-2 gap-12 xl:max-w-none border-t border-zinc-900/5 dark:border-zinc-700 pt-10 mt-4\">\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:84
+#, no-wrap
+msgid ""
+"<ArticleSummary tag=\"Guide\" title=\"Glossary of terms\" href=\"/guides/glossary\" >\n"
+"What's a PDS? an AppView? a DID? If you're feeling a little bowled over by new concepts, give this glossary a look.\n"
+"</ArticleSummary>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:88
+#, no-wrap
+msgid ""
+"<ArticleSummary tag=\"Guide\" title=\"The fast intro to building on ATProto\" href=\"/guides/applications\" >\n"
+"In this guide, we build a simple multi-user app that publishes your current \"status\" as an emoji.\n"
+"</ArticleSummary>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:92
+#, no-wrap
+msgid ""
+"{/* TODO <ArticleSummary tag=\"Article\" title=\"What happens when I like a post?\" href=\"/articles/todo\" >\n"
+"To get started, create a new application in your [developer settings](#), then read about how to make requests for the resources you need to access using our HTTP APIs or dedicated client SDKs. When your integration is ready to go live, publish it to our [integrations directory](#) to reach the Protocol community.\n"
+"</ArticleSummary> */}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:96
+#, no-wrap
+msgid ""
+"<ArticleSummary tag=\"Article\" title=\"ATProto for distributed systems engineers\" href=\"/articles/atproto-for-distsys-engineers\" >\n"
+"In this article we explore AT Proto from the perspective of distributed backend engineering.\n"
+"</ArticleSummary>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:100
+#, no-wrap
+msgid ""
+"{/* <ArticleSummary tag=\"Guide\" title=\"How do user identities work?\" href=\"/guides/identity\" >\n"
+"What are DIDs and handles? How are domain names involved? How do the identities get resolved to user data? This guide will introduce all these concepts and explain how identity works in the Atmosphere.\n"
+"</ArticleSummary> */}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:104
+#, no-wrap
+msgid ""
+"<ArticleSummary tag=\"Guide\" title=\"What is Lexicon, and how do I use it to make a schema?\" href=\"/guides/lexicon\" >\n"
+"This guide will introduce you to Lexicon and get you started with building your own schemas.\n"
+"</ArticleSummary>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:108
+#, no-wrap
+msgid ""
+"<ArticleSummary tag=\"Article\" title=\"ATProto Ethos\" href=\"/articles/atproto-ethos\" >\n"
+"A deep dive into the philosophical and aesthetic principles underlying the design of AT Protocol.\n"
+"</ArticleSummary>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:110 src/docs/en.mdx:124
+#, no-wrap
+msgid "</div>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:112
+#, no-wrap
+msgid "<div className=\"flex flex-col xl:grid grid-cols-3 gap-12 xl:max-w-none border-t border-zinc-900/5 dark:border-zinc-700 pt-10 mt-4\">\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:114
+#, no-wrap
+msgid "<ImageCard image={WebWithoutWallsPng} href=\"https://www.youtube.com/watch?v=F1sJW6nTP6E\" title=\"Web Without Walls - Talk at React Universe 2024\" tag=\"Talk\" description=\"An introduction to the AT Protocol presented by Dan Abramov at React Universe Conf 2024\" />\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:116
+#, no-wrap
+msgid "<ImageCard image={DotMediaInterviewPng} href=\"https://flipboard.video/w/ophhJTECuL7fcBNbUitV3q\" title=\"Make Identity Central Again, with Bluesky's Jay Graber\" tag=\"Interview\" description=\"An interview between Jay Graber and Flipboard CEO Mike McCue about making social more like the Web.\" />\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:118
+#, no-wrap
+msgid "<ImageCard image={WhitepaperPng} href=\"https://arxiv.org/abs/2402.03239\" title=\"Bluesky and the AT Protocol: Usable Decentralized Social Media\" tag=\"Whitepaper\" description=\"A whitepaper authored by Martin Kleppman and the AT Protocol team.\" />\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:120
+#, no-wrap
+msgid "{/* <ImageCard image={TbdIntervewJpg} href=\"https://www.youtube.com/live/D5WVK7KfTAk\" title=\"Building the Social Internet with Bluesky's AT Protocol\" tag=\"Interview\" description=\"An interview between Dan Abramov and TBD about how the dotmedia Protocol works.png\" /> */}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:122
+#, no-wrap
+msgid "{/* <ImageCard image={HowDoesBlueskyWorkBlogpostPng} href=\"https://steveklabnik.com/writing/how-does-bluesky-work/\" title=\"How does Bluesky work?\" tag=\"Community Blogpost\" description=\"A blog post by Steve Klabnik describing how Bluesky and ATProto work at a high level.\" /> */}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:126
+#, no-wrap
+msgid "{/* ## Community\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:128
+#, no-wrap
+msgid "<div className=\"xl:grid grid-cols-3 gap-12 xl:max-w-none border-t border-zinc-900/5 dark:border-zinc-700 pt-10 mt-4\">\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:132
+#, no-wrap
+msgid ""
+"<ArticleSummarySmall href=\"https://steveklabnik.com/writing/how-does-bluesky-work/\" title=\"How does Bluesky work?\">\n"
+"by Steve Klabnik\n"
+"</ArticleSummarySmall>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:136
+#, no-wrap
+msgid ""
+"<ArticleSummarySmall href=\"https://bolsonism.blogspot.com/2024/08/local-development-with-at-proto-pds.html\" title=\"Local Development with a PDS\">\n"
+"Using docker and curl to interact with a local PDS.\n"
+"</ArticleSummarySmall>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:138
+#, no-wrap
+msgid "</div> */}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:140
+#, no-wrap
+msgid "## Looking for the Bluesky API docs?\n"
+msgstr ""
+
+#. type: Plain text
+#: src/docs/en.mdx:141
+#, no-wrap
+msgid "Go to [docs.bsky.app](https://docs.bsky.app) for Bluesky-specific documentation.\n"
+msgstr ""
