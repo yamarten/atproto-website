@@ -534,7 +534,7 @@ if (
 
 <Heading level={2} id="step-7-listing-the-latest-statuses">ステップ7. 最新のステータスを一覧表示する</Heading>
 
-SQLiteにステータスが取り込まれたので、ユーザーによるステータス更新のタイムラインを作成できます。また、[DID](https://atproto.com/specs/did)からハンドルへのリゾルバも使用して、ステータスとともに適切なユーザー名を表示できるようにします:
+SQLiteにステータスが取り込まれたので、ユーザーによるステータス更新のタイムラインを作成できます。また、[DID](https://atproto.com/specs/did)からハンドルへのリゾルバも使用して、ステータスとともに適切なユーザー名を表示できるようにします。
 
 ```typescript
 /** src/routes.ts **/
@@ -598,7 +598,7 @@ ${statuses.map((status, i) => {
 
 これは、ユーザーがアプリの使用中に自分の変更を確認できるようにするため、重要な最適化です。最終的にイベントがファイアホースから到着すると、すでにローカルに保存されているため、それを破棄します。
 
-これを行うには、SQLite DBへの追加の書き込みを含めるように`POST /status`を更新するだけです:
+これを行うには、SQLite DBへの追加の書き込みを含めるように`POST /status`を更新するだけです。
 
 ```typescript
 /** src/routes.ts **/

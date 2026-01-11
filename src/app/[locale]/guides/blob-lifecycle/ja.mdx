@@ -2,7 +2,7 @@ import {Heading} from '@/components/Heading'
 
 export const header = {
   title: 'blobライフサイクル',
-  description: 'How blobs are uploaded, referenced, and deleted',
+  description: 'blobのアップロード、参照、削除の方法',
 }
 
 <Heading level={2} id="uploading-blob">blobのアップロード</Heading>
@@ -24,7 +24,7 @@ const { data } = await agent.uploadBlob(convertDataURIToUint8Array(image), {
 
 <Heading level={2} id="garbage-collection">ガベージコレクション</Heading>
 
-アップロードに成功した後、blobは一時ストレージに配置されます。この状態では、ダウンロードや配送はできません。サーバーは適切な時間経過後に、参照されていない一時blobを「ガベージコレクション」(削除)すべきです（後述の実装ガイドラインを参照）。一時ストレージのblobは **`listBlobs`** の出力に含められません。
+アップロードに成功した後、blobは一時ストレージに配置されます。この状態では、ダウンロードや配送はできません。サーバーは適切な時間経過後に、参照されていない一時blobを「ガベージコレクション」（削除）すべきです（後述の実装ガイドラインを参照）。一時ストレージのblobは **`listBlobs`** の出力に含められません。
 
 <Heading level={2} id="referencing-blobs">blobの参照</Heading>
 
