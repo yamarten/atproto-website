@@ -1,0 +1,630 @@
+# Japanese translations for PACKAGE package
+# Copyright (C) 2026 Bluesky Social PBC
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-01-11 22:40+0900\n"
+"PO-Revision-Date: 2026-01-11 22:40+0900\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. type: Plain text
+#: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:21
+#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:73
+#: src/guides/streaming-data/en.mdx:60 src/guides/video-handling/en.mdx:39
+#: src/guides/account-migration/en.mdx:74 src/guides/feeds/en.mdx:111
+#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:52
+#: src/guides/scopes/en.mdx:45 src/guides/subscriptions/en.mdx:78
+#: src/guides/writing-data/en.mdx:181 src/guides/creating-a-labeler/en.mdx:56
+#: src/guides/labels/en.mdx:110 src/guides/sdk-auth/en.mdx:145
+#: src/guides/sync/en.mdx:51 src/guides/auth/en.mdx:41
+#: src/guides/lexicon/en.mdx:128 src/guides/publishing-lexicons/en.mdx:53
+#: src/guides/backfilling/en.mdx:60 src/guides/reading-data/en.mdx:165
+#: src/guides/social-graph/en.mdx:21 src/guides/permission-sets/en.mdx:214
+#: src/guides/using-ozone/en.mdx:134
+#, no-wrap
+msgid "## Further Reading and Resources\n"
+msgstr "<Heading level={2} id=\"further-reading-and-resources\">関連・参考資料</Heading>\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:6
+#, no-wrap
+msgid ""
+"import {Container} from \"@/components/Container\"\n"
+"import oauth from \"./oauth-only.png\"\n"
+"import skyblur from \"./skyblur-oauth.png\"\n"
+"import granular from \"./skyblur-granular.png\"\n"
+"import lexicon from \"./skyblur-lexicon.png\"\n"
+msgstr ""
+"import {Container} from \"@/components/Container\"\n"
+"import {Heading} from \"@/components/Heading\"\n"
+"import oauth from \"./oauth-only.png\"\n"
+"import skyblur from \"./skyblur-oauth.png\"\n"
+"import granular from \"./skyblur-granular.png\"\n"
+"import lexicon from \"./skyblur-lexicon.png\"\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:12
+#, no-wrap
+msgid ""
+"export const header = {\n"
+"  title: 'Permission Requests',\n"
+"  description:\n"
+"    'A permissions guide for app developers and Lexicon designers',\n"
+"}\n"
+msgstr ""
+"export const header = {\n"
+"  title: '権限リクエスト',\n"
+"  description:\n"
+"    'アプリ開発者とLexicon設計者のための権限ガイド',\n"
+"}\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:14
+#, no-wrap
+msgid "## For app developers\n"
+msgstr "<Heading level={2} id=\"for-app-developers\">アプリ開発者向け</Heading>\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:16
+#, no-wrap
+msgid "This guide describes how to request permissions for your AT Proto application. [OAuth](/guides/auth) is used to authorize third-party applications to access users' social graphs, and is a prerequisite for the concepts described here.\n"
+msgstr "このガイドでは、ATプロトコルアプリケーションの権限リクエスト方法を説明します。[OAuth](/guides/auth)はサードパーティーアプリにユーザーのソーシャルグラフへのアクセス権を与えるために使用され、ここで説明する概念の前提条件です。\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:18
+#, no-wrap
+msgid "Control over AT Proto resources is described and granted using [permissions](/specs/permission). A group of a permissions related to a specific Lexicon namespace (record types and API endpoints) can be bundled together as a \"permission set\". Both are used in the context of [OAuth](/specs/auth) to grant client software access to account resources on a PDS: For example, the ability to write records of specific types to the user's public repository, or make authenticated API requests to remote services. Developers declare the permissions their app requires to function, and end users are shown the permissions when granting access to the app.\n"
+msgstr "ATプロトコルリソースの制御は[権限](/specs/permission)で説明され、付与されます。特定のLexicon名前空間（レコード型とAPIエンドポイント）に関連する権限のグループは「権限セット」としてまとめられます。どちらも[OAuth](/specs/auth)の文脈で使われ、PDS上のアカウントリソースへのクライアントアクセスを付与します。例えば、ユーザーの公開リポジトリに特定の型のレコードを書き込む権限や、リモートサービスへの認証付きAPIリクエストを行う権限です。開発者はアプリが動作に必要な権限を宣言し、エンドユーザーはアプリへのアクセス許可時にその権限を確認します。\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:20
+#, no-wrap
+msgid "In general, it is best to use existing permission sets for cleaner UI, but you can also request individual permissions and define your own permission sets as needed. Refer to the [for users](#for-users) section for how these requests appear in the OAuth flow.\n"
+msgstr "一般的には、UIをすっきりさせるために既存の権限セットを使うのが最善ですが、必要に応じて個別の権限を要求したり独自の権限セットを定義することもできます。これらのリクエストがOAuthフローでどのように表示されるかは、[利用者むけ](#for-users)セクションを参照してください。\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:22
+#, no-wrap
+msgid "## Requesting permissions\n"
+msgstr "<Heading level={2} id=\"requesting-permissions\">権限の要求</Heading>\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:24
+#, no-wrap
+msgid "When your app initiates an OAuth flow with an ATProto identity provider, it can request specific permission sets by including them in the `scope` parameter of the authorization request. This should be supplied as a *space-separated list* in the [`oauth-client-metadata.json` file](/specs/oauth#clients) when registering your OAuth client:\n"
+msgstr "アプリがATプロトコルのIDプロバイダーでOAuthフローを開始する際、認可リクエストの`scope`パラメーターに含めることで特定の権限セットを要求できます。これはOAuthクライアント登録時に[`oauth-client-metadata.json`ファイル](/specs/oauth#clients)へ*スペース区切りのリスト*として指定します。\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:31
+#, no-wrap
+msgid ""
+"```\n"
+"{\n"
+"scope: \"atproto rpc:app.bsky.feed.searchPosts?aud=* blob:*/*\",\n"
+"...\n"
+"}\n"
+"```\n"
+msgstr ""
+"```\n"
+"{\n"
+"scope: \"atproto rpc:app.bsky.feed.searchPosts?aud=* blob:*/*\",\n"
+"...\n"
+"}\n"
+"```\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:33
+#, no-wrap
+msgid "OAuth in AT uses [Pushed Authorization Requests](https://auth0.com/blog/what-are-oauth-push-authorization-requests-par/) (PAR). The client metadata file will be fetched dynamically during the session lifecycle, and the `scope` parameter in `oauth-client-metadata.json` *needs to match* the actual authorization HTTP request made by your app:\n"
+msgstr "ATにおけるOAuthは[Pushed Authorization Requests](https://auth0.com/blog/what-are-oauth-push-authorization-requests-par/)（PAR）を使用します。クライアントメタデータファイルはセッションライフサイクル中に動的に取得され、`oauth-client-metadata.json`の`scope`パラメーターはアプリが実際に行う認可HTTPリクエストと*一致している必要があります*。\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:43
+#, no-wrap
+msgid ""
+"```\n"
+"https://your-authorization-server.com/authorize?\n"
+"    client_id=1234567890&\n"
+"    redirect_uri=https://your-app/callback&\n"
+"    scope=atproto rpc:app.bsky.feed.searchPosts?aud=* blob:*/*\n"
+"    response_type=code&\n"
+"    audience=https://myapi&\n"
+"    state=1234567890\n"
+"```\n"
+msgstr ""
+"```\n"
+"https://your-authorization-server.com/authorize?\n"
+"    client_id=1234567890&\n"
+"    redirect_uri=https://your-app/callback&\n"
+"    scope=atproto rpc:app.bsky.feed.searchPosts?aud=* blob:*/*\n"
+"    response_type=code&\n"
+"    audience=https://myapi&\n"
+"    state=1234567890\n"
+"```\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:45
+#, no-wrap
+msgid "You should try to only request enough permissions to cover the features your app needs. [Transition scopes](/specs/oauth#authorization-scopes) appear to grant permissions to create, update, or delete any of a user's AT records, including posts from other applications. In general, these broad permission requests should be avoided. This helps build trust with your users, and minimizes friction during the authorization process.\n"
+msgstr "アプリに必要な機能を満たす最小限の権限だけを要求するようにしてください。[移行スコープ](/specs/oauth#authorization-scopes)は、他アプリの投稿を含むユーザーのATレコードを作成・更新・削除する権限を付与します。一般に、こうした広範な権限要求は避けるべきです。そうすることでユーザーとの信頼関係を築き、認可プロセスの摩擦を最小化します。\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:47
+#, no-wrap
+msgid "From a user experience perspective, it's best to keep the number of requested permission sets low. Each additional permission set adds more information to the authorization dialog, which can lead to decision fatigue. It is possible to allow users to grant only a subset of requested permissions, but this can lead to edge cases.\n"
+msgstr "ユーザー体験の観点では、要求する権限セットの数は少なく保つのが望ましいです。権限セットが追加されるたびに認可ダイアログの情報量が増え、判断疲れにつながる可能性があります。ユーザーに要求権限の一部のみを付与させることもできますが、エッジケースを生む場合があります。\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:49
+#, no-wrap
+msgid "## Permission types\n"
+msgstr "<Heading level={2} id=\"permission-types\">権限の種類</Heading>\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:51
+#, no-wrap
+msgid "Permissions relate to user owned resources on PDS instances are are represented by five types:\n"
+msgstr "PDSインスタンス上のユーザー所有リソースに関わる権限は、次の5種類で表されます。\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:57
+#, no-wrap
+msgid ""
+"- `repo`: Public Repository (records and collections)\n"
+"- `rpc`: Service Authentication (API calls to external services)\n"
+"- `blob`: uploaded media files\n"
+"- `identity`: DID and handle\n"
+"- `account`: hosting status, email address\n"
+msgstr ""
+"- `repo`：公開リポジトリ（レコードとコレクション）\n"
+"- `rpc`：サービス認証（外部サービスへのAPI呼び出し）\n"
+"- `blob`：アップロードされたメディアファイル\n"
+"- `identity`：DIDとハンドル\n"
+"- `account`：ホスティング状態、メールアドレス\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:59
+#, no-wrap
+msgid "Wildcards (*) are allowed in scope string syntax, and grants access to all records — the most common example being `blob:*/*`, for working with images and video. Partial wildcards are *not* supported — for example, `app.bsky.*` is not a valid scope string. If you wanted to request multiple permissions from a particular namespace or Lexicon, you would need to list them out individually, or use a [permission set](#for-lexicon-designers). This is intentional, to avoid overbroad permission requests.\n"
+msgstr "スコープ文字列の構文ではワイルドカード（*）が許可され、すべてのレコードへのアクセスが付与されます。最も一般的な例は、画像や動画の取り扱い向けの`blob:*/*`です。部分的なワイルドカードはサポート*されません*。例えば、`app.bsky.*`は有効なスコープ文字列ではありません。特定の名前空間やLexiconから複数の権限を要求したい場合は、個別に列挙するか、[権限セット](#for-lexicon-designers)を使用する必要があります。これは過剰に広い権限要求を避けるための意図的な設計です。\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:61
+#, no-wrap
+msgid "Permission sets are themselves Lexicon schemas and are namespaced like other Lexicons. Unlike other Lexicons, permission sets are prefixed with `include:` in the scope string, and are dynamic; they can be updated.\n"
+msgstr "権限セット自体もLexiconスキーマであり、他のLexiconと同様に名前空間が付いています。他のLexiconと異なり、権限セットはスコープ文字列で`include:`のプレフィックスが付き、動的に更新できます。\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:63
+#, no-wrap
+msgid "## Rolling out changes\n"
+msgstr "<Heading level={2} id=\"rolling-out-changes\">変更の展開</Heading>\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:65
+#, no-wrap
+msgid "When you update your app to use new permission sets, it's important to coordinate the software release with the permission-set updates. If you add new permission sets that require user approval, users will need to re-authorize your app to grant these new permissions.\n"
+msgstr "アプリを新しい権限セットに対応させる際は、ソフトウェアのリリースと権限セットの更新を同期させることが重要です。ユーザーの承認が必要な新しい権限セットを追加すると、ユーザーは新しい権限を付与するためにアプリを再認可する必要があります。\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:67
+#, no-wrap
+msgid "Your release and deployment process for the [client metadata document](/specs/oauth#clients) may be separate from your app's code deployment process. Make sure to plan accordingly — an updated `oauth-client-metadata.json` that requests new permissions must be live before a version of your app that requires those permissions.\n"
+msgstr "[クライアントメタデータドキュメント](/specs/oauth#clients)のリリース/デプロイの手順は、アプリのコードデプロイ手順とは別である場合があります。適切に計画してください。新しい権限を要求する更新済みの`oauth-client-metadata.json`は、その権限を必要とするアプリのバージョンより先に公開されている必要があります。\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:69
+#, no-wrap
+msgid "## For Lexicon designers\n"
+msgstr "<Heading level={2} id=\"for-lexicon-designers\">Lexicon設計者向け</Heading>\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:71
+#, no-wrap
+msgid "Lexicons are authored in JSON — you can find examples in the [Lexicon Guide](/guides/lexicon). Atmosphere HTTP API methods each scope and implement a particular set of Lexicons, so Lexicons must include valid query parameters, request bodies, and response bodies as appropriate. Each Lexicon, in turn, becomes a permission scope — in other words, `app.bsky.feed.post` is an AT record format, a web endpoint, and a granular permission all at once.\n"
+msgstr "LexiconはJSONで作成されます。例は[Lexiconガイド](/guides/lexicon)で確認できます。AtmosphereのHTTP APIメソッドは、それぞれ特定のLexiconセットをスコープし実装するため、Lexiconには適切なクエリパラメーター、リクエストボディ、レスポンスボディが含まれている必要があります。各Lexiconは権限スコープにもなります。つまり、`app.bsky.feed.post`はATレコード形式であり、ウェブエンドポイントであり、粒度の細かい権限でもあります。\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:73
+#, no-wrap
+msgid "Lexicon schemas are published publicly as records in ATProto Lexicon repositories. Refer to [Lexicon Publication and Resolution](/specs/lexicon#lexicon-publication-and-resolution) for technical details.\n"
+msgstr "LexiconスキーマはATプロトコルLexiconリポジトリのレコードとして公開されます。技術的な詳細は[Lexiconの発行と解決](/specs/lexicon#lexicon-publication-and-resolution)を参照してください。\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:75
+#, no-wrap
+msgid "## Permission Set design\n"
+msgstr "<Heading level={2} id=\"permission-set-design\">権限セットの設計</Heading>\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:77
+#, no-wrap
+msgid "Full-featured client apps require a large number of granular permissions to function: dozens or even hundreds of individual permissions. To simplify permission management, Lexicon designers can define \"sets\" of permissions as part of the schemas they publish. These permission sets are themselves Lexicon schemas and are referred to by namespace ID, such as `com.example.authBasicFeatures`.\n"
+msgstr "フル機能のクライアントアプリは、多数の細かな権限（数十、場合によっては数百）を必要とします。権限管理を簡素化するために、Lexicon設計者は公開するスキーマの一部として権限の「セット」を定義できます。これらの権限セット自体もLexiconスキーマであり、`com.example.authBasicFeatures`のような名前空間IDで参照されます。\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:79
+#, no-wrap
+msgid "For example, your application could request a permission set like `include:com.example.authBasicFeatures?aud=did:web:api.example.com%23svc_appview`. This would resolve to a Lexicon that defines a set of permissions required for the app to function:\n"
+msgstr "例えば、アプリケーションは`include:com.example.authBasicFeatures?aud=did:web:api.example.com%23svc_appview`のような権限セットtを要求できます。これはアプリの動作に必要な権限の集まりを定義するLexiconに解決されます。\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:110
+#, no-wrap
+msgid ""
+"```\n"
+"{\n"
+"  \"lexicon\": 1,\n"
+"  \"id\": \"com.example.authBasicFeatures\",\n"
+"  \"defs\": {\n"
+"    \"main\": {\n"
+"      \"type\": \"permission-set\",\n"
+"      \"title\": \"Basic App Functionality\",\n"
+"      \"detail\": \"Creation of posts and interactions\",\n"
+"      \"permissions\": [\n"
+"        {\n"
+"          \"type\": \"permission\",\n"
+"          \"resource\": \"repo\",\n"
+"          \"collection\": [\"app.example.post\"]\n"
+"        },\n"
+"        {\n"
+"          \"type\": \"permission\",\n"
+"          \"resource\": \"rpc\",\n"
+"          \"inheritAud\": true,\n"
+"          \"lxm\": [\n"
+"            \"app.example.getFeed\"\n"
+"            \"app.example.getProfile\",\n"
+"            ...\n"
+"          ]\n"
+"        },\n"
+"      ]\n"
+"    }\n"
+"  }\n"
+"}\n"
+"```\n"
+msgstr ""
+"```\n"
+"{\n"
+"  \"lexicon\": 1,\n"
+"  \"id\": \"com.example.authBasicFeatures\",\n"
+"  \"defs\": {\n"
+"    \"main\": {\n"
+"      \"type\": \"permission-set\",\n"
+"      \"title\": \"Basic App Functionality\",\n"
+"      \"detail\": \"Creation of posts and interactions\",\n"
+"      \"permissions\": [\n"
+"        {\n"
+"          \"type\": \"permission\",\n"
+"          \"resource\": \"repo\",\n"
+"          \"collection\": [\"app.example.post\"]\n"
+"        },\n"
+"        {\n"
+"          \"type\": \"permission\",\n"
+"          \"resource\": \"rpc\",\n"
+"          \"inheritAud\": true,\n"
+"          \"lxm\": [\n"
+"            \"app.example.getFeed\"\n"
+"            \"app.example.getProfile\",\n"
+"            ...\n"
+"          ]\n"
+"        },\n"
+"      ]\n"
+"    }\n"
+"  }\n"
+"}\n"
+"```\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:112
+#, no-wrap
+msgid "Note the `auth` prefix in the `app.example.feed.authOnlyPost` and `com.example.authBasicFeatures` examples. This is a naming convention to indicate that the Lexicon is designed for use as a permission set.\n"
+msgstr "`app.example.feed.authOnlyPost`や`com.example.authBasicFeatures`の例にある`auth`プレフィックスに注目してください。これは、そのLexiconが権限セットとして使われるよう設計されていることを示す命名規則です。\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:114
+#, no-wrap
+msgid "Permission sets are limited to expressing permissions that reference resources under the same NSID namespace as the set itself. For example, the set `app.example.feed.authOnlyPost` could include permissions to `app.example.feed.post` records and making `app.example.feed.getPostThread` API endpoint requests to remote services. But it could not grant permissions to `app.example.actor.profile`. A permission set `app.example.authFull`, which is a level up in the hierarchy, could include permissions to all these resources.\n"
+msgstr "権限セットは、そのセット自身と同じNSID名前空間下のリソースを参照する権限のみを表現できます。例えば、`app.example.feed.authOnlyPost`というセットには、`app.example.feed.post`レコードへの権限や、リモートサービスへの`app.example.feed.getPostThread` APIエンドポイントのリクエスト権限を含めることができます。しかし、`app.example.actor.profile`への権限は付与できません。階層が一段上の`app.example.authFull`のような権限セットであれば、これらすべてのリソースへの権限を含められます。\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:116
+#, no-wrap
+msgid "The `title` and `details` fields are descriptive, and will be displayed as part of the OAuth flow; see the [for users](#for-users) section for an example. Internationalization of these descriptive fields is supported — refer to [the permission sets spec](/specs/permission#permission-sets).\n"
+msgstr "`title`と`details`フィールドは説明用で、OAuthフローの一部として表示されます。例は[利用者向け](#for-users)セクションを参照してください。これらの説明フィールドは国際化にも対応しています。詳細は[権限セット仕様](/specs/permission#permission-sets)を参照してください。\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:118
+#, no-wrap
+msgid "The use of `inheritAud` in the `rpc` permission allows you to [control inheritance behavior](/specs/permission#rpc).\n"
+msgstr "`rpc`権限における`inheritAud`の使用により、[継承の挙動](/specs/permission#rpc)を制御できます。\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:120
+#, no-wrap
+msgid "The `blob:*/*` permission for image/video handling cannot be included in permission sets and must always be requested separately.\n"
+msgstr "画像/動画の取り扱い用の`blob:*/*`権限は権限セットに含めることができず、常に個別に要求する必要があります。\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:122
+#, no-wrap
+msgid "## Linting and validating\n"
+msgstr "<Heading level={2} id=\"linting-and-validating\">リントとバリデーション</Heading>\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:124
+#, no-wrap
+msgid "You can use [`goat`](https://github.com/bluesky-social/goat) to create and publish Lexicons. Before publishing, `goat` can also be used to lint and validate your Lexicon. For example, pulling and linting `app.bsky.feed.post`:\n"
+msgstr "[`goat`](https://github.com/bluesky-social/goat)を使ってLexiconを作成・公開できます。公開前に`goat`でLexiconのリントとバリデーションも行えます。例えば、`app.bsky.feed.post`の取得とリントは以下のように行えます。\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:128
+#, no-wrap
+msgid ""
+"```bash\n"
+"$ goat lex pull app.bsky.feed.post\n"
+" 🟢 app.bsky.feed.post\n"
+msgstr ""
+"```bash\n"
+"$ goat lex pull app.bsky.feed.post\n"
+" 🟢 app.bsky.feed.post\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:135
+#, no-wrap
+msgid ""
+"$ goat lex lint lexicons/app/bsky/feed/post.json\n"
+" 🟡 lexicons/app/bsky/feed/post.json\n"
+"    [unlimited-string]: no max length\n"
+"    [unlimited-string]: no max length\n"
+"error: linting issues detected\n"
+"```\n"
+msgstr ""
+"$ goat lex lint lexicons/app/bsky/feed/post.json\n"
+" 🟡 lexicons/app/bsky/feed/post.json\n"
+"    [unlimited-string]: no max length\n"
+"    [unlimited-string]: no max length\n"
+"error: linting issues detected\n"
+"```\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:137
+#, no-wrap
+msgid "Nobody's perfect 😊\n"
+msgstr "誰しも完璧ではありません😊\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:139
+#, no-wrap
+msgid "You can create a new Lexicon record with `goat lex new record`:\n"
+msgstr "`goat lex new record`を使って新しいLexiconレコードを作成できます。\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:143
+#, no-wrap
+msgid ""
+"```bash\n"
+"$ goat lex new record dev.project.thing\n"
+"```\n"
+msgstr ""
+"```bash\n"
+"$ goat lex new record dev.project.thing\n"
+"```\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:145
+#, no-wrap
+msgid "Develop your Lexicon following the [style guide](/guides/lexicon-style-guide), and then eventually publish it with `goat lex publish`:\n"
+msgstr "[スタイルガイド](/guides/lexicon-style-guide)に従ってLexiconを作成し、最後に`goat lex publish`で公開します。\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:150
+#, no-wrap
+msgid ""
+"```bash\n"
+"$ goat lex publish\n"
+" 🟢 dev.project.thing\n"
+"```\n"
+msgstr ""
+"```bash\n"
+"$ goat lex publish\n"
+" 🟢 dev.project.thing\n"
+"```\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:152
+#, no-wrap
+msgid "After publishing a new Lexicon, you can verify that it is live with `goat lex resolve`:\n"
+msgstr "新しいLexiconを公開したら、`goat lex resolve`で公開されたか確認できます。\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:155
+#, no-wrap
+msgid ""
+"```bash\n"
+"$ goat lex resolve app.bsky.feed.post\n"
+msgstr ""
+"```bash\n"
+"$ goat lex resolve app.bsky.feed.post\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:174
+#, no-wrap
+msgid ""
+"{\n"
+"  \"$type\": \"com.atproto.lexicon.schema\",\n"
+"  \"defs\": {\n"
+"    \"entity\": {\n"
+"      \"description\": \"Deprecated: use facets instead.\",\n"
+"      \"properties\": {\n"
+"        \"index\": {\n"
+"          \"ref\": \"#textSlice\",\n"
+"          \"type\": \"ref\"\n"
+"        },\n"
+"        \"type\": {\n"
+"          \"description\": \"Expected values are 'mention' and 'link'.\",\n"
+"          \"type\": \"string\"\n"
+"        },\n"
+"        \"value\": {\n"
+"          \"type\": \"string\"\n"
+"...\n"
+"```\n"
+msgstr ""
+"{\n"
+"  \"$type\": \"com.atproto.lexicon.schema\",\n"
+"  \"defs\": {\n"
+"    \"entity\": {\n"
+"      \"description\": \"Deprecated: use facets instead.\",\n"
+"      \"properties\": {\n"
+"        \"index\": {\n"
+"          \"ref\": \"#textSlice\",\n"
+"          \"type\": \"ref\"\n"
+"        },\n"
+"        \"type\": {\n"
+"          \"description\": \"Expected values are 'mention' and 'link'.\",\n"
+"          \"type\": \"string\"\n"
+"        },\n"
+"        \"value\": {\n"
+"          \"type\": \"string\"\n"
+"...\n"
+"```\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:176
+#, no-wrap
+msgid "## Revising Permission Sets\n"
+msgstr "<Heading level={2} id=\"revising-permission-sets\">権限セットの改訂</Heading>\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:178
+#, no-wrap
+msgid "Permission sets can be revised, but removing them or making destructive changes can break existing applications. In general, permission sets should be closely tied to the applications they are designed for, but not necessarily 1:1. Remember that AT Proto applications can utilize multiple different Lexicons.\n"
+msgstr "権限セットは改訂できますが、削除したり破壊的変更を行うと既存アプリケーションが壊れる可能性があります。一般に、権限セットは設計対象のアプリケーションに密接に結びつけるべきですが、必ずしも1:1である必要はありません。ATプロトコルアプリケーションは複数の異なるLexiconを利用できることを覚えておいてください。\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:180
+#, no-wrap
+msgid "## OAuth flow examples\n"
+msgstr "<Heading level={2} id=\"oauth-flow-examples\">OAuthフローの例</Heading>\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:182
+#, no-wrap
+msgid "Apps that are using ATProto identity providers *solely* for authentication [only need to request the `atproto` permission](/guides/scopes). This provides the same OAuth flow that you might expect from other identity providers; no features of the Atmosphere social graph are used, and no additional permissions are required:\n"
+msgstr "ATProtoのIDプロバイダーを認証*のみ*に利用するアプリは、[`atproto`権限を要求するだけで十分](/guides/scopes)です。これにより、他のIDプロバイダーで期待するのと同じOAuthフローが提供されます。Atmosphereのソーシャルグラフ機能は使われず、追加の権限も不要です。\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:186
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={oauth} alt=\"\" className=\"w-full max-w-md mx-auto\"/>\n"
+"</Container>\n"
+msgstr ""
+"<Container>\n"
+"  <Image src={oauth} alt=\"\" className=\"w-full max-w-md mx-auto\"/>\n"
+"</Container>\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:188
+#, no-wrap
+msgid "This is a fully usable Atmosphere integration, and many applications will use this as a starting point. Note that it produces a straightforward, readable \"Authorize\" flow. The URL of the requesting app is clearly visible, and the permissions dialog states that the app \"wants to uniquely identify you,\" but nothing else.\n"
+msgstr "これは十分に実用的なAtmosphere連携で、多くのアプリが出発点として利用します。ここでは明快で読みやすい「Authorize」フローが提示されます。要求元アプリのURLが明確に表示され、権限ダイアログにはアプリが「あなたを一意に識別したい」とだけ示され、それ以外はありません。\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:190
+#, no-wrap
+msgid "Next, consider a more complex integration, that requests additional permissions. By default, these will be presented in a summarized view:\n"
+msgstr "次に、追加の権限を要求する、より複雑な連携を考えます。デフォルトでは、これらは要約で提示されます。\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:194
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={skyblur} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
+"</Container>\n"
+msgstr ""
+"<Container>\n"
+"  <Image src={skyblur} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
+"</Container>\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:196
+#, no-wrap
+msgid "In this image, note that there are two different Lexicon groupings: *Bluesky* permissions, and *Skyblur* permissions. Each Lexicon defines its own permission sets, as well as its own grouping and presentation of those permissions.\n"
+msgstr "この画像では、*Bluesky*権限と*Skyblur*権限という2つの異なるLexiconのグループがあることに注目してください。各Lexiconは独自の権限セットを定義し、それらのグループと表示方法も独自に定義します。\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:198
+#, no-wrap
+msgid "You can click through on the **?** icons to see the details of each permission set:\n"
+msgstr "**?**アイコンをクリックすると、各権限セットの詳細を確認できます。\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:202
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={granular} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
+"</Container>\n"
+msgstr ""
+"<Container>\n"
+"  <Image src={granular} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
+"</Container>\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:204
+#, no-wrap
+msgid "From the expanded ATProto and Bluesky permissions, you might recognize `atproto` (for OAuth login), `blob:*/*` (for image and video handling), and several other `app.bsky.*` permissions for profile and social graph interactions.\n"
+msgstr "展開されたATプロトコルとBlueskyの権限には、OAuthログイン用の`atproto`、画像・動画の取り扱い用の`blob:*/*`、そしてプロフィールやソーシャルグラフ操作のための複数の`app.bsky.*`権限が含まれていることが分かるでしょう。\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:206
+#, no-wrap
+msgid "The *Skyblur* Lexicon permissions are defined and summarized differently:\n"
+msgstr "*Skyblur*のLexicon権限は、異なる方法で定義・要約されています:\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:210
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={lexicon} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
+"</Container>\n"
+msgstr ""
+"<Container>\n"
+"  <Image src={did} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
+"</Container>\n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:212
+#, no-wrap
+msgid "This is all at the discretion of app developers and Lexicon designers. We provide a model for using different Lexicons side by side, and for each Lexicon to define its own permission sets and presentation. \n"
+msgstr "これらはすべてアプリ開発者とLexicon設計者の裁量に委ねられています。私たちは、異なるLexiconを並行して利用し、各Lexiconが独自の権限セットと表示を定義するためのモデルを提供しています。 \n"
+
+#. type: Plain text
+#: src/guides/permission-sets/en.mdx:220
+#, no-wrap
+msgid ""
+"- [Auth](/guides/auth)\n"
+"- [SDK authentication](/guides/sdk-auth)\n"
+"- [OAuth patterns](/guides/oauth-patterns)\n"
+"- [Scopes](/guides/scopes)\n"
+"- [OAuth spec](/specs/oauth)\n"
+"- [Permissions spec](/specs/permission)\n"
+msgstr ""
+"- [認証](/guides/auth)\n"
+"- [SDKによる認証](/guides/sdk-auth)\n"
+"- [OAuthパターン](/guides/oauth-patterns)\n"
+"- [スコープ](/guides/scopes)\n"
+"- [OAuth仕様](/specs/oauth)\n"
+"- [権限仕様](/specs/permission)\n"

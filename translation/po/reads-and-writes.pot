@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"POT-Creation-Date: 2026-01-11 22:17+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,9 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:21
-#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:64
+#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:73
 #: src/guides/streaming-data/en.mdx:60 src/guides/video-handling/en.mdx:39
-#: src/guides/account-migration/en.mdx:74 src/guides/feeds/en.mdx:105
+#: src/guides/account-migration/en.mdx:74 src/guides/feeds/en.mdx:111
 #: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:52
 #: src/guides/scopes/en.mdx:45 src/guides/subscriptions/en.mdx:78
 #: src/guides/writing-data/en.mdx:181 src/guides/creating-a-labeler/en.mdx:56
@@ -149,25 +149,44 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/reads-and-writes/en.mdx:57
+#: src/guides/reads-and-writes/en.mdx:58
 #, no-wrap
 msgid ""
 "  ctx := context.Background()\n"
 "  ```\n"
+"    Import the SDK libraries and go directly to [making requests](/guides/reading-data)!\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/reads-and-writes/en.mdx:62
+#: src/guides/reads-and-writes/en.mdx:61
 #, no-wrap
 msgid ""
-"    Import the SDK libraries and go directly to [making requests](/guides/reading-data)!\n"
+"<Note>\n"
+"Note that you'll need to [blank import](https://www.oreilly.com/library/view/the-go-programming/9780134190570/ebook_split_100.html) the `bsky` and `util` libraries if you aren't using them directly, due to the way Go imports work:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reads-and-writes/en.mdx:67
+#, no-wrap
+msgid ""
+"```go\n"
+"_ \"github.com/bluesky-social/indigo/api/bsky\"\n"
+"_ \"github.com/bluesky-social/indigo/lex/util\"\n"
+"```\n"
+"</Note>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reads-and-writes/en.mdx:71
+#, no-wrap
+msgid ""
 "    </TabPanel>\n"
 "  </TabPanels>\n"
 "</TabGroup>\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/reads-and-writes/en.mdx:70
+#: src/guides/reads-and-writes/en.mdx:79
 #, no-wrap
 msgid ""
 "- [Reading data](/guides/reading-data)\n"

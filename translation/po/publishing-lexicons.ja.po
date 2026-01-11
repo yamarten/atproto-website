@@ -177,7 +177,7 @@ msgstr "新しいLexiconを作成する際は、[Lexiconスタイルガイド](/
 #: src/guides/publishing-lexicons/en.mdx:49
 #, no-wrap
 msgid "## Lexhub\n"
-msgstr "## Lexhub<Heading level={2} id=\"lexhub\">Lexhub</Heading>\n"
+msgstr "<Heading level={2} id=\"lexhub\">Lexhub</Heading>\n"
 
 #. type: Plain text
 #: src/guides/publishing-lexicons/en.mdx:51

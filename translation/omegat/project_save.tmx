@@ -70,6 +70,14 @@ curl -X POST http://localhost:2480/repos/add \
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg># FAQ</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg># FAQ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg># Glossary of terms</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260111T070347Z">
@@ -149,6 +157,14 @@ websocat ws://localhost:2480/channel</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260104T061221Z" creationid="yamarten" creationdate="20260104T061221Z">
         <seg>&lt;Heading level={2} id="label-values"&gt;ラベル値&lt;/Heading&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>## A Web of Data {{className: 'text-2xl mt-2 scroll-mt-32'}}</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>## A Web of Data {{className: 'text-2xl mt-2 scroll-mt-32'}}</seg>
       </tuv>
     </tu>
     <tu>
@@ -361,6 +377,14 @@ websocat ws://localhost:2480/channel</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>## Atproto at the intersection of three movements</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>## Atproto at the intersection of three movements</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>## Backlinks</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260108T133235Z" creationid="yamarten" creationdate="20260108T133235Z">
@@ -441,6 +465,14 @@ websocat ws://localhost:2480/channel</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>## Conclusion</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>## Conclusion</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>## Configuring Ozone</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260106T144238Z" creationid="yamarten" creationdate="20260106T144238Z">
@@ -461,6 +493,14 @@ websocat ws://localhost:2480/channel</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260105T121954Z" creationid="yamarten" creationdate="20260105T121954Z">
         <seg>&lt;Heading level={2} id="creating-a-client"&gt;クライアントの生成&lt;/Heading&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>## Creating a New Account</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T132935Z" creationid="yamarten" creationdate="20260111T132935Z">
+        <seg>&lt;Heading level={2} id="creating-a-new-account"&gt;新規アカウント作成&lt;/Heading&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -617,6 +657,14 @@ websocat ws://localhost:2480/channel</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>## Feed Feedback</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T133308Z" creationid="yamarten" creationdate="20260111T133308Z">
+        <seg>&lt;Heading level={2} id="feed-feedback"&gt;フィードのフィードバック&lt;/Heading&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>## Feed Generator Templates</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260103T110919Z" creationid="yamarten" creationdate="20260103T110804Z">
@@ -645,6 +693,22 @@ websocat ws://localhost:2480/channel</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260106T133017Z" creationid="yamarten" creationdate="20260106T133017Z">
         <seg>&lt;Heading level={2} id="firehose"&gt;firehose&lt;/Heading&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>## For Lexicon designers</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T140347Z" creationid="yamarten" creationdate="20260111T140347Z">
+        <seg>&lt;Heading level={2} id="for-lexicon-designers"&gt;Lexicon設計者向け&lt;/Heading&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>## For app developers</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T135813Z" creationid="yamarten" creationdate="20260111T135525Z">
+        <seg>&lt;Heading level={2} id="for-app-developers"&gt;アプリ開発者向け&lt;/Heading&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -785,6 +849,14 @@ websocat ws://localhost:2480/channel</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>## Innovations</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>## Innovations</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>## Installing Ozone</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260106T143516Z" creationid="yamarten" creationdate="20260106T143516Z">
@@ -849,10 +921,18 @@ websocat ws://localhost:2480/channel</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>## Learn more</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>## Learn more</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>## Lexhub</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260104T105522Z" creationid="yamarten" creationdate="20260104T105522Z">
-        <seg>## Lexhub&lt;Heading level={2} id="lexhub"&gt;Lexhub&lt;/Heading&gt;</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T133655Z" creationid="yamarten" creationdate="20260104T105522Z">
+        <seg>&lt;Heading level={2} id="lexhub"&gt;Lexhub&lt;/Heading&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -869,6 +949,14 @@ websocat ws://localhost:2480/channel</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260104T081441Z" creationid="yamarten" creationdate="20260104T081441Z">
         <seg>&lt;Heading level={2} id="lexicon-evolition"&gt;Lexiconの進化&lt;/Heading&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>## Linting and validating</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T140427Z" creationid="yamarten" creationdate="20260111T140427Z">
+        <seg>&lt;Heading level={2} id="linting-and-validating"&gt;リントとバリデーション&lt;/Heading&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -953,10 +1041,26 @@ websocat ws://localhost:2480/channel</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>## OAuth flow examples</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T140516Z" creationid="yamarten" creationdate="20260111T140516Z">
+        <seg>&lt;Heading level={2} id="oauth-flow-examples"&gt;OAuthフローの例&lt;/Heading&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>## Object storage</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260103T123826Z" creationid="yamarten" creationdate="20260103T123826Z">
         <seg>&lt;Heading level={2} id="object-storage"&gt;オブジェクトストレージ&lt;/Heading&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>## Opinionated takes</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>## Opinionated takes</seg>
       </tuv>
     </tu>
     <tu>
@@ -1029,6 +1133,22 @@ websocat ws://localhost:2480/channel</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260105T123012Z" creationid="yamarten" creationdate="20260105T123012Z">
         <seg>&lt;Heading level={2} id="password-authentication"&gt;パスワード認証&lt;/Heading&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>## Permission Set design</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T140404Z" creationid="yamarten" creationdate="20260111T140404Z">
+        <seg>&lt;Heading level={2} id="permission-set-design"&gt;権限セットの設計&lt;/Heading&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>## Permission types</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T140030Z" creationid="yamarten" creationdate="20260111T140030Z">
+        <seg>&lt;Heading level={2} id="permission-types"&gt;権限の種類&lt;/Heading&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -1118,6 +1238,30 @@ websocat ws://localhost:2480/channel</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260110T053415Z" creationid="yamarten" creationdate="20260106T135940Z">
         <seg>&lt;Heading level={2} id="reporting"&gt;報告&lt;/Heading&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>## Requesting permissions</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T140010Z" creationid="yamarten" creationdate="20260111T140010Z">
+        <seg>&lt;Heading level={2} id="requesting-permissions"&gt;権限の要求&lt;/Heading&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>## Revising Permission Sets</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T140440Z" creationid="yamarten" creationdate="20260111T140440Z">
+        <seg>&lt;Heading level={2} id="revising-permission-sets"&gt;権限セットの改訂&lt;/Heading&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>## Rolling out changes</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T140156Z" creationid="yamarten" creationdate="20260111T140156Z">
+        <seg>&lt;Heading level={2} id="rolling-out-changes"&gt;変更の展開&lt;/Heading&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -1451,6 +1595,14 @@ websocat ws://localhost:2480/channel</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>### Data-intensive distributed systems</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>### Data-intensive distributed systems</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>### Example: Hosting service</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260111T111524Z">
@@ -1467,10 +1619,86 @@ websocat ws://localhost:2480/channel</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>### Generic hosting, Centralized product development</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>### Generic hosting, Centralized product development</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>### Identity-based authority</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>### Identity-based authority</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>### Lazy trust</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>### Lazy trust</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>### Peer-to-peer</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>### Peer-to-peer</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>### Structure gives freedom</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>### Structure gives freedom</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>### Synthesis
+Atproto is situated as the synthesis of these three movements.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>### Synthesis
+Atproto is situated as the synthesis of these three movements.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>### The web</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>### The web</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>### TypeScript</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260104T134429Z" creationid="yamarten" creationdate="20260104T134331Z">
         <seg>&lt;Heading level={3} id="typescript"&gt;TypeScript&lt;/Heading&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>$ goat lex lint lexicons/app/bsky/feed/post.json
+ 🟡 lexicons/app/bsky/feed/post.json
+    [unlimited-string]: no max length
+    [unlimited-string]: no max length
+error: linting issues detected
+```</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T143713Z" creationid="yamarten" creationdate="20260111T143713Z">
+        <seg>$ goat lex lint lexicons/app/bsky/feed/post.json
+ 🟡 lexicons/app/bsky/feed/post.json
+    [unlimited-string]: no max length
+    [unlimited-string]: no max length
+error: linting issues detected
+```</seg>
       </tuv>
     </tu>
     <tu>
@@ -1679,6 +1907,22 @@ websocat ws://localhost:2480/channel</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260107T131802Z" creationid="yamarten" creationdate="20260107T131802Z">
         <seg>**Ozoneをインストールする**には、[Ozone GitHubリポジトリ](https://github.com/bluesky-social/ozone)の[HOSTING.md](https://github.com/bluesky-social/ozone/blob/main/HOSTING.md)を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>*Sep 3, 2024*</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>*Sep 3, 2024*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>*This post is a blogpost version of a [recent talk](https://www.youtube.com/watch?v=1A-0k58TfPo) that Daniel Holmgren gave at AtmosphereConf (March 2025).*</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>*This post is a blogpost version of a [recent talk](https://www.youtube.com/watch?v=1A-0k58TfPo) that Daniel Holmgren gave at AtmosphereConf (March 2025).*</seg>
       </tuv>
     </tu>
     <tu>
@@ -2288,6 +2532,24 @@ websocat ws://localhost:2480/channel</seg>
     <tu>
       <tuv lang="en-US">
         <seg>- [Auth](/guides/auth)
+- [OAuth patterns](/guides/oauth-patterns)
+- [Scopes](/guides/scopes)
+- [Permission requests](/guides/permission-sets)
+- [OAuth spec](/specs/oauth)
+- [Permissions spec](/specs/permission)</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T133951Z" creationid="yamarten" creationdate="20260111T133951Z">
+        <seg>- [認証](/guides/auth)
+- [OAuthパターン](/guides/oauth-patterns)
+- [スコープ](/guides/scopes)
+- [権限リクエスト](/guides/permission-sets)
+- [OAuth仕様](/specs/oauth)
+- [権限仕様](/specs/permission)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>- [Auth](/guides/auth)
 - [SDK authentication](/guides/sdk-auth)
 - [OAuth patterns](/guides/oauth-patterns)
 - [OAuth spec](/specs/oauth)
@@ -2305,6 +2567,42 @@ websocat ws://localhost:2480/channel</seg>
       <tuv lang="en-US">
         <seg>- [Auth](/guides/auth)
 - [SDK authentication](/guides/sdk-auth)
+- [OAuth patterns](/guides/oauth-patterns)
+- [Permission requests](/guides/permission-sets)
+- [OAuth spec](/specs/oauth)
+- [Permissions spec](/specs/permission)</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T133919Z" creationid="yamarten" creationdate="20260111T133919Z">
+        <seg>- [認証](/guides/auth)
+- [SDKによる認証](/guides/sdk-auth)
+- [OAuthパターン](/guides/oauth-patterns)
+- [権限リクエスト](/guides/permission-sets)
+- [OAuth仕様](/specs/oauth)
+- [権限仕様](/specs/permission)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>- [Auth](/guides/auth)
+- [SDK authentication](/guides/sdk-auth)
+- [OAuth patterns](/guides/oauth-patterns)
+- [Scopes](/guides/scopes)
+- [OAuth spec](/specs/oauth)
+- [Permissions spec](/specs/permission)</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T144538Z" creationid="yamarten" creationdate="20260111T144538Z">
+        <seg>- [認証](/guides/auth)
+- [SDKによる認証](/guides/sdk-auth)
+- [OAuthパターン](/guides/oauth-patterns)
+- [スコープ](/guides/scopes)
+- [OAuth仕様](/specs/oauth)
+- [権限仕様](/specs/permission)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>- [Auth](/guides/auth)
+- [SDK authentication](/guides/sdk-auth)
 - [Scopes](/guides/scopes)
 - [OAuth spec](/specs/oauth)
 - [Permissions spec](/specs/permission)</seg>
@@ -2313,6 +2611,24 @@ websocat ws://localhost:2480/channel</seg>
         <seg>- [認証](/guides/auth)
 - [SDKによる認証](/guides/sdk-auth)
 - [スコープ](/guides/scopes)
+- [OAuth仕様](/specs/oauth)
+- [権限仕様](/specs/permission)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>- [Auth](/guides/auth)
+- [SDK authentication](/guides/sdk-auth)
+- [Scopes](/guides/scopes)
+- [Permission requests](/guides/permission-sets)
+- [OAuth spec](/specs/oauth)
+- [Permissions spec](/specs/permission)</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T133634Z" creationid="yamarten" creationdate="20260111T133634Z">
+        <seg>- [認証](/guides/auth)
+- [SDKによる認証](/guides/sdk-auth)
+- [スコープ](/guides/scopes)
+- [権限リクエスト](/guides/permission-sets)
 - [OAuth仕様](/specs/oauth)
 - [権限仕様](/specs/permission)</seg>
       </tuv>
@@ -2703,6 +3019,24 @@ websocat ws://localhost:2480/channel</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>- [SDK authentication](/guides/sdk-auth)
+- [OAuth patterns](/guides/oauth-patterns)
+- [Scopes](/guides/scopes)
+- [Permission requests](/guides/permission-sets)
+- [OAuth spec](/specs/oauth)
+- [Permissions spec](/specs/permission)</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T133203Z" creationid="yamarten" creationdate="20260111T133203Z">
+        <seg>- [SDKによる認証](/guides/sdk-auth)
+- [OAuthパターン](/guides/oauth-patterns)
+- [スコープ](/guides/scopes)
+- [権限リクエスト](/guides/permission-sets)
+- [OAuth仕様](/specs/oauth)
+- [権限仕様](/specs/permission)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>- [Simple Method](https://tangled.sh/strings/did:plc:p2cp5gopk7mgjegy6wadk3ep/3lw74be4dr422)
 - [Video Service](https://tangled.sh/strings/did:plc:p2cp5gopk7mgjegy6wadk3ep/3lw743ejno722)</seg>
       </tuv>
@@ -2889,6 +3223,22 @@ websocat ws://localhost:2480/channel</seg>
       </tuv>
     </tu>
     <tu>
+      <tuv lang="en-US">
+        <seg>- `repo`: Public Repository (records and collections)
+- `rpc`: Service Authentication (API calls to external services)
+- `blob`: uploaded media files
+- `identity`: DID and handle
+- `account`: hosting status, email address</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T142803Z" creationid="yamarten" creationdate="20260111T142803Z">
+        <seg>- `repo`：公開リポジトリ（レコードとコレクション）
+- `rpc`：サービス認証（外部サービスへのAPI呼び出し）
+- `blob`：アップロードされたメディアファイル
+- `identity`：DIDとハンドル
+- `account`：ホスティング状態、メールアドレス</seg>
+      </tuv>
+    </tu>
+    <tu>
       <note>ここでのusuallyは、bskyの用にハンドル管理をPDSではなくentrywayがやる場合があることを意図していると思われる
 デフォルトハンドルを割り当てないPDSも技術的には可能なはず</note>
       <tuv lang="en-US">
@@ -3055,6 +3405,14 @@ websocat ws://localhost:2480/channel</seg>
 - 単一のGoバイナリ
 - SQLiteまたはPostgresバックエンド
 - 中規模スケール向け（数百万のリポジトリ、毎秒3万件超のイベント）</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>...</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>...</seg>
       </tuv>
     </tu>
     <tu>
@@ -3434,6 +3792,42 @@ await agent.com.atproto.repo.putRecord({
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>// Write the 
+await agent.com.atproto.repo.putRecord({
+  repo: agent.assertDid,                 // The user
+  collection: 'xyz.statusphere.status',  // The collection
+  rkey,                                  // The record key
+  record: {                              // The record value
+    status: "👍",
+    createdAt: new Date().toISOString()
+  }
+})
+```</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>// 書き込み
+await agent.com.atproto.repo.putRecord({
+  repo: agent.assertDid,                // ユーザー
+  collection: 'xyz.statusphere.status', // コレクション
+  rkey,                                 // レコードキー
+  record: {                             // レコード値
+    status: "👍",
+    createdAt: new Date().toISOString()
+  }
+})
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>1. **From the web:** an open, permissionless, and universal network of interconnected content.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>1. **From the web:** an open, permissionless, and universal network of interconnected content.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>1. Each user has a data repository.
 2. Each repository has collections.
 3. Each collection is an ordered K/V store of JSON documents.</seg>
@@ -3474,6 +3868,14 @@ await agent.com.atproto.repo.putRecord({
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>2. **From peer-to-peer:** location-independent data, self-certifying data, and skepticism of centralized control of any aspect of the user’s experience.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>2. **From peer-to-peer:** location-independent data, self-certifying data, and skepticism of centralized control of any aspect of the user’s experience.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>24 hours</seg>
       </tuv>
       <tuv lang="ja">
@@ -3490,6 +3892,14 @@ await agent.com.atproto.repo.putRecord({
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>3. **From data-intensive distributed systems:** a splitting of read and write load, application-aware secondary indices to facilitate high-throughput and low latency, streaming canonical data, and the decomposition of monoliths into microservices.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>3. **From data-intensive distributed systems:** a splitting of read and write load, application-aware secondary indices to facilitate high-throughput and low latency, streaming canonical data, and the decomposition of monoliths into microservices.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>30 days</seg>
       </tuv>
       <tuv lang="ja">
@@ -3502,6 +3912,34 @@ await agent.com.atproto.repo.putRecord({
       </tuv>
       <tuv lang="ja">
         <seg>7日</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>&lt;/TabPanel&gt;
+  &lt;/TabPanels&gt;
+&lt;/TabGroup&gt;</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T133851Z" creationid="yamarten" creationdate="20260111T133851Z">
+        <seg>&lt;/TabPanel&gt;
+  &lt;/TabPanels&gt;
+&lt;/TabGroup&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>&lt;/div&gt;</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>&lt;/div&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>&lt;/div&gt; */}</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>&lt;/div&gt; */}</seg>
       </tuv>
     </tu>
     <tu>
@@ -3765,6 +4203,18 @@ by Steve Klabnik
       <tuv lang="ja" changeid="yamarten" changedate="20260111T053854Z">
         <seg>&lt;Container&gt;
   &lt;Image src={feeds} alt="" className="w-full max-w-md mx-auto" /&gt;
+&lt;/Container&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>&lt;Container&gt;
+  &lt;Image src={granular} alt="" className="w-full max-w-md mx-auto" /&gt;
+&lt;/Container&gt;</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T144435Z" creationid="yamarten" creationdate="20260111T144435Z">
+        <seg>&lt;Container&gt;
+  &lt;Image src={granular} alt="" className="w-full max-w-md mx-auto" /&gt;
 &lt;/Container&gt;</seg>
       </tuv>
     </tu>
@@ -4071,6 +4521,18 @@ by Steve Klabnik
     <tu>
       <tuv lang="en-US">
         <seg>&lt;Container&gt;
+  &lt;Image src={lexicon} alt="" className="w-full max-w-md mx-auto" /&gt;
+&lt;/Container&gt;</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T144500Z" creationid="yamarten" creationdate="20260111T144500Z">
+        <seg>&lt;Container&gt;
+  &lt;Image src={did} alt="" className="w-full max-w-md mx-auto" /&gt;
+&lt;/Container&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>&lt;Container&gt;
   &lt;Image src={login} alt="" className="w-full max-w-md mx-auto" /&gt;
 &lt;/Container&gt;</seg>
       </tuv>
@@ -4101,6 +4563,18 @@ by Steve Klabnik
       <tuv lang="ja" changeid="yamarten" changedate="20260104T143542Z" creationid="yamarten" creationdate="20260104T143542Z">
         <seg>&lt;Container&gt;
   &lt;Image src={oauthdomain} alt="" className="w-full max-w-md mx-auto" /&gt;
+&lt;/Container&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>&lt;Container&gt;
+  &lt;Image src={oauth} alt="" className="w-full max-w-md mx-auto"/&gt;
+&lt;/Container&gt;</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T144229Z" creationid="yamarten" creationdate="20260111T144229Z">
+        <seg>&lt;Container&gt;
+  &lt;Image src={oauth} alt="" className="w-full max-w-md mx-auto"/&gt;
 &lt;/Container&gt;</seg>
       </tuv>
     </tu>
@@ -4179,6 +4653,18 @@ by Steve Klabnik
     <tu>
       <tuv lang="en-US">
         <seg>&lt;Container&gt;
+  &lt;Image src={skyblur} alt="" className="w-full max-w-md mx-auto" /&gt;
+&lt;/Container&gt;</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T144335Z" creationid="yamarten" creationdate="20260111T144335Z">
+        <seg>&lt;Container&gt;
+  &lt;Image src={skyblur} alt="" className="w-full max-w-md mx-auto" /&gt;
+&lt;/Container&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>&lt;Container&gt;
   &lt;Image src={welcome} alt="" className="w-full max-w-md mx-auto" /&gt;
 &lt;/Container&gt;</seg>
       </tuv>
@@ -4251,6 +4737,14 @@ by Steve Klabnik
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260111T071854Z">
         <seg>&lt;Guides lang="ja" /&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>&lt;HeroPattern /&gt;</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>&lt;HeroPattern /&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -4411,6 +4905,16 @@ If you have been using `client-metadata.json` rather than `oauth-client-metadata
         <seg>&lt;Note&gt;
 もし`oauth-client-metadata.json`の代わりに`client-metadata.json`を使用している場合、この変更により認可フローのページでURL文字列ではなくドメインを表示させることができます。
 &lt;/Note&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>&lt;Note&gt;
+Note that you'll need to [blank import](https://www.oreilly.com/library/view/the-go-programming/9780134190570/ebook_split_100.html) the `bsky` and `util` libraries if you aren't using them directly, due to the way Go imports work:</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T133842Z" creationid="yamarten" creationdate="20260111T133842Z">
+        <seg>&lt;Note&gt;
+Goインポートの仕組み上、`bsky`ライブラリと`util`ライブラリを直接使用していない場合は、これらを[空インポート](https://www.oreilly.com/library/view/the-go-programming/9780134190570/ebook_split_100.html)する必要があることに注意してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4813,6 +5317,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>&lt;div className="flex flex-col xl:grid grid-cols-3 gap-12 xl:max-w-none border-t border-zinc-900/5 dark:border-zinc-700 pt-10 mt-4"&gt;</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>&lt;div className="flex flex-col xl:grid grid-cols-3 gap-12 xl:max-w-none border-t border-zinc-900/5 dark:border-zinc-700 pt-10 mt-4"&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>&lt;div className="not-prose mb-16 mt-6 flex gap-3"&gt;
   &lt;Button href="/guides/applications" arrow="right"&gt;
     &lt;&gt;Quickstart&lt;/&gt;
@@ -4831,6 +5343,22 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     &lt;&gt;SDKを調べる&lt;/&gt;
   &lt;/Button&gt;
 &lt;/div&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>&lt;div className="xl:grid grid-cols-2 gap-12 xl:max-w-none border-t border-zinc-900/5 dark:border-zinc-700 pt-10 mt-4"&gt;</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>&lt;div className="xl:grid grid-cols-2 gap-12 xl:max-w-none border-t border-zinc-900/5 dark:border-zinc-700 pt-10 mt-4"&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>&lt;div className="xl:grid grid-cols-3 gap-12 xl:max-w-none border-t border-zinc-900/5 dark:border-zinc-700 pt-10 mt-4"&gt;</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>&lt;div className="xl:grid grid-cols-3 gap-12 xl:max-w-none border-t border-zinc-900/5 dark:border-zinc-700 pt-10 mt-4"&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -5101,6 +5629,22 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260104T070021Z" creationid="yamarten" creationdate="20260104T070021Z">
         <seg>APIエラー名：`UpperCamelCase`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>AT Protocol (or atproto) is a protocol for creating decentralized social applications. {{className: 'lead'}}</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>AT Protocol (or atproto) is a protocol for creating decentralized social applications. {{className: 'lead'}}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>AT Protocol builds on the philosophy of the web with the technology of peer-to-peer protocols and the practices of data-intensive distributed systems.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>AT Protocol builds on the philosophy of the web with the technology of peer-to-peer protocols and the practices of data-intensive distributed systems.</seg>
       </tuv>
     </tu>
     <tu>
@@ -5772,6 +6316,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>After publishing a new Lexicon, you can verify that it is live with `goat lex resolve`:</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T144047Z" creationid="yamarten" creationdate="20260111T144047Z">
+        <seg>新しいLexiconを公開したら、`goat lex resolve`で公開されたか確認できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Age Assurance</seg>
       </tuv>
       <tuv lang="ja">
@@ -5840,6 +6392,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       </tuv>
       <tuv lang="ja">
         <seg>すべての言語</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>All of these factors required new tools and architectures for building services. An overview of these techniques is maybe best captured in Martin Kleppman's book “Designing Data Intensive Applications”. While no two platforms are built exactly the same and there are many competing tools and methodologies, we can still sum up the general trends.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>All of these factors required new tools and architectures for building services. An overview of these techniques is maybe best captured in Martin Kleppman's book “Designing Data Intensive Applications”. While no two platforms are built exactly the same and there are many competing tools and methodologies, we can still sum up the general trends.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6244,6 +6804,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>And we approach the design of this network erring on the side of structure and hoping to take advantage of high-trust environments where possible, but always allowing for credible exit if that relationship turns sour.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>And we approach the design of this network erring on the side of structure and hoping to take advantage of high-trust environments where possible, but always allowing for credible exit if that relationship turns sour.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Animal sexual abuse</seg>
       </tuv>
       <tuv lang="ja">
@@ -6546,6 +7114,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Apps that are using ATProto identity providers *solely* for authentication [only need to request the `atproto` permission](/guides/scopes). This provides the same OAuth flow that you might expect from other identity providers; no features of the Atmosphere social graph are used, and no additional permissions are required:</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T144224Z" creationid="yamarten" creationdate="20260111T144224Z">
+        <seg>ATProtoのIDプロバイダーを認証*のみ*に利用するアプリは、[`atproto`権限を要求するだけで十分](/guides/scopes)です。これにより、他のIDプロバイダーで期待するのと同じOAuthフローが提供されます。Atmosphereのソーシャルグラフ機能は使われず、追加の権限も不要です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Archived from {0}</seg>
       </tuv>
       <tuv lang="ja">
@@ -6690,6 +7266,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>As well, unlike p2p networks, users maintain a relationship with a persistent backend (the PDS) that hosts their data and information about their identity. Most notably (while not a hard requirement in atproto), we made the decision to move signing keys up to the backend. This prevents the complex key management UX issues that come with client-side keys. However, there is an obvious loss in user-control by doing so. This is mitigated once again by lazy trust. Trust is moved a layer up into the identity system such that a user can hold a recovery key for their identity that allows them to migrate away from a bad PDS.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>As well, unlike p2p networks, users maintain a relationship with a persistent backend (the PDS) that hosts their data and information about their identity. Most notably (while not a hard requirement in atproto), we made the decision to move signing keys up to the backend. This prevents the complex key management UX issues that come with client-side keys. However, there is an obvious loss in user-control by doing so. This is mitigated once again by lazy trust. Trust is moved a layer up into the identity system such that a user can hold a recovery key for their identity that allows them to migrate away from a bad PDS.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>As with Web search engines, users are free to select their aggregators. Feeds, labelers, and search indices can be provided by independent third parties, with requests routed by the PDS, based on client app configuration. Client apps may be tied to specific services, such as App Views or mandatory labelers.</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260111T114842Z">
@@ -6774,6 +7358,22 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260111T104049Z">
         <seg>ATプロトコルは組織間でデータとRPCコマンドを交換します。データとRPCが有用であるためには、ソフトウェアが別のチームによって作成されたスキーマを正しく処理する必要があります。これが[Lexicon](/guides/lexicon)の目的です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Atproto is a multi-party, low-coordination network. Services can join permissionlessly and operate under their own policies. While coordination pains are to some degree inevitable, atproto tries to head off the worst of it by being a very structured protocol. You'll see this reflected in many design decisions in the protocol: records encoded as canonical cbor, multiformats everywhere, a unicit (deterministic insertion-order-independent construction) data structure in the repository, a constrained set of allowed dids/hash functions, even things like requiring DPoP in OAuth.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>Atproto is a multi-party, low-coordination network. Services can join permissionlessly and operate under their own policies. While coordination pains are to some degree inevitable, atproto tries to head off the worst of it by being a very structured protocol. You'll see this reflected in many design decisions in the protocol: records encoded as canonical cbor, multiformats everywhere, a unicit (deterministic insertion-order-independent construction) data structure in the repository, a constrained set of allowed dids/hash functions, even things like requiring DPoP in OAuth.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Atproto takes a middle approach that we sometimes refer to as “lazy trust”. Like p2p networks, trust is imbued into the data. However most often when browsing the network, users are seeing computed views not the canonical data. When viewing a timeline for instance, clients are likely not checking the signatures on every post that comes down. This is mitigated by the fact that the canonical data is always at hand. Therefore the service that offers these computed views is *staking its reputation* on every view that it serves. If a service starts serving invalid views, this can be verifiably proven. And since the data is locked open, users can migrate to another service that is better behaved.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>Atproto takes a middle approach that we sometimes refer to as “lazy trust”. Like p2p networks, trust is imbued into the data. However most often when browsing the network, users are seeing computed views not the canonical data. When viewing a timeline for instance, clients are likely not checking the signatures on every post that comes down. This is mitigated by the fact that the canonical data is always at hand. Therefore the service that offers these computed views is *staking its reputation* on every view that it serves. If a service starts serving invalid views, this can be verifiably proven. And since the data is locked open, users can migrate to another service that is better behaved.</seg>
       </tuv>
     </tu>
     <tu>
@@ -6934,6 +7534,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260102T102722Z" creationid="yamarten" creationdate="20260102T102722Z">
         <seg>ID操作はセンシティブなため、追加の『因子』としてセキュリティトークンが必要です。トークンは旧PDS上の`com.atproto.identity.requestPlcOperationSignature`を通じて要求でき、デフォルトではアカウントの確認済みメールアドレスに電子メールで配信されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Because these platforms are so read heavy, generally they split apart read and write load so they can scale separately. A simple version of this is to introduce read replicas of a database. While there is still a single “leader” database, many replicas can help serve the outsized read load.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>Because these platforms are so read heavy, generally they split apart read and write load so they can scale separately. A simple version of this is to introduce read replicas of a database. While there is still a single “leader” database, many replicas can help serve the outsized read load.</seg>
       </tuv>
     </tu>
     <tu>
@@ -8706,6 +9314,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Control over AT Proto resources is described and granted using [permissions](/specs/permission). A group of a permissions related to a specific Lexicon namespace (record types and API endpoints) can be bundled together as a "permission set". Both are used in the context of [OAuth](/specs/auth) to grant client software access to account resources on a PDS: For example, the ability to write records of specific types to the user's public repository, or make authenticated API requests to remote services. Developers declare the permissions their app requires to function, and end users are shown the permissions when granting access to the app.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T135736Z" creationid="yamarten" creationdate="20260111T135736Z">
+        <seg>ATプロトコルリソースの制御は[権限](/specs/permission)で説明され、付与されます。特定のLexicon名前空間（レコード型とAPIエンドポイント）に関連する権限のグループは「権限セット」としてまとめられます。どちらも[OAuth](/specs/auth)の文脈で使われ、PDS上のアカウントリソースへのクライアントアクセスを付与します。例えば、ユーザーの公開リポジトリに特定の型のレコードを書き込む権限や、リモートサービスへの認証付きAPIリクエストを行う権限です。開発者はアプリが動作に必要な権限を宣言し、エンドユーザーはアプリへのアクセス許可時にその権限を確認します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Conventions for `permission-set` schema naming has not be established yet, but probably has “auth” prefix (eg, `authBasic`)</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260104T071019Z" creationid="yamarten" creationdate="20260104T071019Z">
@@ -9690,6 +10306,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Develop your Lexicon following the [style guide](/guides/lexicon-style-guide), and then eventually publish it with `goat lex publish`:</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T144022Z" creationid="yamarten" creationdate="20260111T144022Z">
+        <seg>[スタイルガイド](/guides/lexicon-style-guide)に従ってLexiconを作成し、最後に`goat lex publish`で公開します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Developer mode disabled</seg>
       </tuv>
       <tuv lang="ja">
@@ -10105,6 +10729,20 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     You can read posts from a user's data repository with `RepoListRecords()`:</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260111T062643Z" creationid="yamarten" creationdate="20260108T130015Z">
+        <seg>各Lexiconには独自のパラメータがあります。`app.bsky.feed.post`では、`repo`（ユーザーのハンドルまたは[DID](#did-resolution)）と、返す投稿数の上限を表す`limit`を指定できます。
+    &lt;/TabPanel&gt;
+    &lt;TabPanel value="go"&gt;
+    `RepoListRecords()`を使用してユーザーのデータリポジトリから投稿を読み出すことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Each Lexicon will have its own parameters; for `app.bsky.feed.post`, you can specify the `repo` (a user's handle or [DID](#did-resolution)) and a `limit` on the number of posts to return. 
+    &lt;/TabPanel&gt;
+    &lt;TabPanel value="go"&gt;
+    You can read posts from a user's data repository with `RepoListRecords()`:</seg>
+      </tuv>
+      <tuv lang="ja">
         <seg>各Lexiconには独自のパラメータがあります。`app.bsky.feed.post`では、`repo`（ユーザーのハンドルまたは[DID](#did-resolution)）と、返す投稿数の上限を表す`limit`を指定できます。
     &lt;/TabPanel&gt;
     &lt;TabPanel value="go"&gt;
@@ -10717,6 +11355,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       </tuv>
       <tuv lang="ja">
         <seg>エラー：{error}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Even though product development is centralized, the underlying data and identity remain open and universally accessible as a result of building on atproto. Put another way, ownership is clear for the evolution of a given application, but since the data is open, it can be reused, remixed, or extended by anyone else in the network.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>Even though product development is centralized, the underlying data and identity remain open and universally accessible as a result of building on atproto. Put another way, ownership is clear for the evolution of a given application, but since the data is open, it can be reused, remixed, or extended by anyone else in the network.</seg>
       </tuv>
     </tu>
     <tu>
@@ -11417,6 +12063,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Feed generators can also implement the `app.bsky.feed.sendInteractions` endpoint to receive input from users. These include likes, reposts, shares, and other interactions. See the [the app.bsky.feed Lexicon](https://github.com/bluesky-social/atproto/blob/main/lexicons/app/bsky/feed/defs.json#L247) for a complete list.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T133438Z" creationid="yamarten" creationdate="20260111T133438Z">
+        <seg>フィードジェネレーターは`app.bsky.feed.sendInteractions`エンドポイントを実装することでユーザーからの入力を受け取ることができます。これにはいいね、リポスト、共有などのインタラクションが含まれます。完全な一覧は[app.bsky.feed Lexicon](https://github.com/bluesky-social/atproto/blob/main/lexicons/app/bsky/feed/defs.json#L247)を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Feed identifier</seg>
       </tuv>
       <tuv lang="ja">
@@ -12057,6 +12711,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>For example, your application could request a permission set like `include:com.example.authBasicFeatures?aud=did:web:api.example.com%23svc_appview`. This would resolve to a Lexicon that defines a set of permissions required for the app to function:</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T143417Z" creationid="yamarten" creationdate="20260111T143417Z">
+        <seg>例えば、アプリケーションは`include:com.example.authBasicFeatures?aud=did:web:api.example.com%23svc_appview`のような権限セットtを要求できます。これはアプリの動作に必要な権限の集まりを定義するLexiconに解決されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>For guidance on PLC mirroring, refer to [this developer blog](https://dholms.leaflet.pub/3m6zswymcqk2p).</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260111T053422Z" creationid="yamarten" creationdate="20260111T053422Z">
@@ -12265,6 +12927,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>From a user experience perspective, it's best to keep the number of requested permission sets low. Each additional permission set adds more information to the authorization dialog, which can lead to decision fatigue. It is possible to allow users to grant only a subset of requested permissions, but this can lead to edge cases.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T142729Z" creationid="yamarten" creationdate="20260111T142729Z">
+        <seg>ユーザー体験の観点では、要求する権限セットの数は少なく保つのが望ましいです。権限セットが追加されるたびに認可ダイアログの情報量が増え、判断疲れにつながる可能性があります。ユーザーに要求権限の一部のみを付与させることもできますが、エッジケースを生む場合があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>From another perspective, Osprey is a Python library for processing actions through human written rules and outputting labels, webhooks back to an API and other sinks. It evaluates events using structured logic, user-defined functions, and external signals to assign labels, verdicts, and actions. It can make use of fine-tuned LLMs and other classifiers that expose their own web endpoints to Osprey. LLMs can be a useful tool for surfacing moderation reports; these reports can be acted on automatically and/or manually depending on your configuration.</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260104T101434Z" creationid="yamarten" creationdate="20260104T101434Z">
@@ -12297,10 +12967,34 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>From the expanded ATProto and Bluesky permissions, you might recognize `atproto` (for OAuth login), `blob:*/*` (for image and video handling), and several other `app.bsky.*` permissions for profile and social graph interactions.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T144453Z" creationid="yamarten" creationdate="20260111T144453Z">
+        <seg>展開されたATプロトコルとBlueskyの権限には、OAuthログイン用の`atproto`、画像・動画の取り扱い用の`blob:*/*`、そしてプロフィールやソーシャルグラフ操作のための複数の`app.bsky.*`権限が含まれていることが分かるでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>From there, the event gets sent to any view services that are listening &amp;mdash; including our own!</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260111T102944Z">
         <seg>そこから、イベントはリッスンしているすべてのビューサービスに送信されます。これには、私たち自身のサービスも含まれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>From this basis, atproto adds two core innovations: identity-based authority and the separation of data hosting from the rich applications built on top of it.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>From this basis, atproto adds two core innovations: identity-based authority and the separation of data hosting from the rich applications built on top of it.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Full-featured client apps require a large number of granular permissions to function: dozens or even hundreds of individual permissions. To simplify permission management, Lexicon designers can define "sets" of permissions as part of the schemas they publish. These permission sets are themselves Lexicon schemas and are referred to by namespace ID, such as `com.example.authBasicFeatures`.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T143343Z" creationid="yamarten" creationdate="20260111T143343Z">
+        <seg>フル機能のクライアントアプリは、多数の細かな権限（数十、場合によっては数百）を必要とします。権限管理を簡素化するために、Lexicon設計者は公開するスキーマの一部として権限の「セット」を定義できます。これらの権限セット自体もLexiconスキーマであり、`com.example.authBasicFeatures`のような名前空間IDで参照されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13193,6 +13887,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>However, the sheer volume of data and the compute required to support these platforms cannot be handled by a single machine. Therefore even within a given platform's deployment, work must be split up across many machines. A common pattern is to peel off pieces of the application into smaller “micro-services” that can call into one another and then compose these micro-services into the larger platform. By isolating the concerns of each subsystem, teams can scale each according to its particular needs. For example, feed generation looks very different from video transcoding, and these workloads can benefit from being hosted on machines tailored to their workload.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>However, the sheer volume of data and the compute required to support these platforms cannot be handled by a single machine. Therefore even within a given platform's deployment, work must be split up across many machines. A common pattern is to peel off pieces of the application into smaller “micro-services” that can call into one another and then compose these micro-services into the larger platform. By isolating the concerns of each subsystem, teams can scale each according to its particular needs. For example, feed generation looks very different from video transcoding, and these workloads can benefit from being hosted on machines tailored to their workload.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Human trafficking</seg>
       </tuv>
       <tuv lang="ja">
@@ -13241,6 +13943,22 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Identities are long-lived and untethered from any location where they may currently be housed. The primacy that data has in p2p networks is moved up the stack to identity. Identities exist independent of any given host or application and can move between them fluidly. Data in the network then flows from these identities with a well-defined mechanism of how to resolve the identity to some set of data and receive real time updates as new content is created.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>Identities are long-lived and untethered from any location where they may currently be housed. The primacy that data has in p2p networks is moved up the stack to identity. Identities exist independent of any given host or application and can move between them fluidly. Data in the network then flows from these identities with a well-defined mechanism of how to resolve the identity to some set of data and receive real time updates as new content is created.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Identities themselves resolve to key material that can verify the authenticity of that identity's data as well as a particular host that consumers can reach out to to get the canonical current state of the identity's data. These canonical hosts of user data are known as Personal Data Servers (PDSs).</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>Identities themselves resolve to key material that can verify the authenticity of that identity's data as well as a particular host that consumers can reach out to to get the canonical current state of the identity's data. These canonical hosts of user data are known as Personal Data Servers (PDSs).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>If a lexicon must change a previously-published constraint, it should be published as a new lexicon under a new NSID.</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260104T094929Z" creationid="yamarten" creationdate="20260104T094851Z">
@@ -13285,6 +14003,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260103T122823Z" creationid="yamarten" creationdate="20260103T122823Z">
         <seg>必要に応じて、デプロイメントからコンテナまたはポッドをクリーンアップするときに、このスクリプトがSIGTERMでも実行されるようにしてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>If this sounds exciting to you, you can dive in further by checking out the [protocol specs](https://atproto.com/specs/atp), or getting hands on with the [Statusphere](https://github.com/bluesky-social/statusphere-example-app) example app built on the protocol.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>If this sounds exciting to you, you can dive in further by checking out the [protocol specs](https://atproto.com/specs/atp), or getting hands on with the [Statusphere](https://github.com/bluesky-social/statusphere-example-app) example app built on the protocol.</seg>
       </tuv>
     </tu>
     <tu>
@@ -13585,6 +14311,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Implementing Feed Feedback is optional, but can help improve user experience.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T133526Z" creationid="yamarten" creationdate="20260111T133526Z">
+        <seg>フィードフィードバックの実装は任意ですが、ユーザー体験の向上に役立つことがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Import Contacts</seg>
       </tuv>
       <tuv lang="ja">
@@ -13678,6 +14412,15 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       </tuv>
     </tu>
     <tu>
+      <note>for usersは存在しない。書きかけ？</note>
+      <tuv lang="en-US">
+        <seg>In general, it is best to use existing permission sets for cleaner UI, but you can also request individual permissions and define your own permission sets as needed. Refer to the [for users](#for-users) section for how these requests appear in the OAuth flow.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T135819Z" creationid="yamarten" creationdate="20260111T135807Z">
+        <seg>一般的には、UIをすっきりさせるために既存の権限セットを使うのが最善ですが、必要に応じて個別の権限を要求したり独自の権限セットを定義することもできます。これらのリクエストがOAuthフローでどのように表示されるかは、[利用者むけ](#for-users)セクションを参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
       <tuv lang="en-US">
         <seg>In most situations, including versioned references between records, the string format is recommended.</seg>
       </tuv>
@@ -13717,6 +14460,22 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260111T082904Z">
         <seg>このガイドでは、「ステータス」を絵文字として公開するシンプルなマルチユーザーアプリを構築します。アプリケーションは以下の画像のようになります。{{className: 'lead'}}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>In this image, note that there are two different Lexicon groupings: *Bluesky* permissions, and *Skyblur* permissions. Each Lexicon defines its own permission sets, as well as its own grouping and presentation of those permissions.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T144403Z" creationid="yamarten" creationdate="20260111T144403Z">
+        <seg>この画像では、*Bluesky*権限と*Skyblur*権限という2つの異なるLexiconのグループがあることに注目してください。各Lexiconは独自の権限セットを定義し、それらのグループと表示方法も独自に定義します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>In this post, we'll distill that ethos. First, we look at the movements in technology that have most directly influenced atproto.Then, we pull out the core innovations that atproto brought to the table. Finally, we highlight some opinionated ways of thinking that influenced the design. {{className: 'lead'}}</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>In this post, we'll distill that ethos. First, we look at the movements in technology that have most directly influenced atproto.Then, we pull out the core innovations that atproto brought to the table. Finally, we highlight some opinionated ways of thinking that influenced the design. {{className: 'lead'}}</seg>
       </tuv>
     </tu>
     <tu>
@@ -13837,6 +14596,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       </tuv>
       <tuv lang="ja">
         <seg>メールで送られたコードを入力</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Instead of sending content and interactions to some coordinating backend service, users of social media platforms would send relevant data directly from their device to another device. If two users follow one another and one of them posts, the other would receive the post through a direct connection with the former's device. Of course, this requires that both parties are online at the same time for any data transfer to happen. P2p systems sought to get around this by allowing data to be replicated across many devices. Therefore a user may receive a post from the posting user or they could receive it from another friend that's currently online and in possession of the post.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>Instead of sending content and interactions to some coordinating backend service, users of social media platforms would send relevant data directly from their device to another device. If two users follow one another and one of them posts, the other would receive the post through a direct connection with the former's device. Of course, this requires that both parties are online at the same time for any data transfer to happen. P2p systems sought to get around this by allowing data to be replicated across many devices. Therefore a user may receive a post from the posting user or they could receive it from another friend that's currently online and in possession of the post.</seg>
       </tuv>
     </tu>
     <tu>
@@ -14102,6 +14869,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       </tuv>
       <tuv lang="ja">
         <seg>今はあなただけ！上で検索してスターターパックにより多くのユーザーを追加してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>It's not the first protocol with that aim to exist. In the history of decentralized social media protocols, atproto takes a unique approach which is still deeply influenced by technologies and movements that came before it. {{className: 'lead'}}</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>It's not the first protocol with that aim to exist. In the history of decentralized social media protocols, atproto takes a unique approach which is still deeply influenced by technologies and movements that came before it. {{className: 'lead'}}</seg>
       </tuv>
     </tu>
     <tu>
@@ -14586,6 +15361,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Lexhub is our resource for discovering and browsing Lexicons! TK</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>Lexhub is our resource for discovering and browsing Lexicons! TK</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Lexicon establishes a shared method id (`com.atproto.repo.listRecords`) and the expected query params, input body, and output body. By using Lexicon we get runtime checks on the inputs and outputs of the call, and can generate typed code like the API call example above.</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260111T104459Z">
@@ -14610,6 +15393,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Lexicon schemas are published publicly as records in ATProto Lexicon repositories. Refer to [Lexicon Publication and Resolution](/specs/lexicon#lexicon-publication-and-resolution) for technical details.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T143318Z" creationid="yamarten" creationdate="20260111T143318Z">
+        <seg>LexiconスキーマはATプロトコルLexiconリポジトリのレコードとして公開されます。技術的な詳細は[Lexiconの発行と解決](/specs/lexicon#lexicon-publication-and-resolution)を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Lexicon schemas enable code generation with types and validation. Our SDKs each install a `lex` tool that lets you generate a type-safe client that knows which parameters each AT endpoint expects.</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260103T134410Z">
@@ -14622,6 +15413,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260111T105153Z">
         <seg>Lexiconの唯一の目的は、開発者が互換性のあるソフトウェアを構築できるようにすることです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Lexicons are authored in JSON — you can find examples in the [Lexicon Guide](/guides/lexicon). Atmosphere HTTP API methods each scope and implement a particular set of Lexicons, so Lexicons must include valid query parameters, request bodies, and response bodies as appropriate. Each Lexicon, in turn, becomes a permission scope — in other words, `app.bsky.feed.post` is an AT record format, a web endpoint, and a granular permission all at once.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T143238Z" creationid="yamarten" creationdate="20260111T143238Z">
+        <seg>LexiconはJSONで作成されます。例は[Lexiconガイド](/guides/lexicon)で確認できます。AtmosphereのHTTP APIメソッドは、それぞれ特定のLexiconセットをスコープし実装するため、Lexiconには適切なクエリパラメーター、リクエストボディ、レスポンスボディが含まれている必要があります。各Lexiconは権限スコープにもなります。つまり、`app.bsky.feed.post`はATレコード形式であり、ウェブエンドポイントであり、粒度の細かい権限でもあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16059,6 +16858,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Next, consider a more complex integration, that requests additional permissions. By default, these will be presented in a summarized view:</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T144332Z" creationid="yamarten" creationdate="20260111T144332Z">
+        <seg>次に、追加の権限を要求する、より複雑な連携を考えます。デフォルトでは、これらは要約で提示されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Next, navigate to a post you wish to report, and select "Report Post":</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260106T145426Z" creationid="yamarten" creationdate="20260106T145323Z">
@@ -16403,6 +17210,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Nobody's perfect 😊</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T143926Z" creationid="yamarten" creationdate="20260111T143926Z">
+        <seg>誰しも完璧ではありません😊</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Non-consensual intimate imagery</seg>
       </tuv>
       <tuv lang="ja">
@@ -16463,6 +17278,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260103T100812Z" creationid="yamarten" creationdate="20260103T100812Z">
         <seg>イベントストリーム（firehose）の"フレーム"は複数のレコードで構成される可能性があり、一般的なCBOR解析には4～5MBytes程度のより大きな制限が推奨されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Note the `auth` prefix in the `app.example.feed.authOnlyPost` and `com.example.authBasicFeatures` examples. This is a naming convention to indicate that the Lexicon is designed for use as a permission set.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T143443Z" creationid="yamarten" creationdate="20260111T143443Z">
+        <seg>`app.example.feed.authOnlyPost`や`com.example.authBasicFeatures`の例にある`auth`プレフィックスに注目してください。これは、そのLexiconが権限セットとして使われるよう設計されていることを示す命名規則です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16667,6 +17490,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>OAuth in AT uses [Pushed Authorization Requests](https://auth0.com/blog/what-are-oauth-push-authorization-requests-par/) (PAR). The client metadata file will be fetched dynamically during the session lifecycle, and the `scope` parameter in `oauth-client-metadata.json` *needs to match* the actual authorization HTTP request made by your app:</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T142414Z" creationid="yamarten" creationdate="20260111T142414Z">
+        <seg>ATにおけるOAuthは[Pushed Authorization Requests](https://auth0.com/blog/what-are-oauth-push-authorization-requests-par/)（PAR）を使用します。クライアントメタデータファイルはセッションライフサイクル中に動的に取得され、`oauth-client-metadata.json`の`scope`パラメーターはアプリが実際に行う認可HTTPリクエストと*一致している必要があります*。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>OAuth is an authorization framework that lets developers request access to an account without requiring users to hand over their password. Without OAuth, if someone wanted to authorize a 3rd party app to access their account, their only option would be to type their username and password into that app. This is bad for all sorts of reasons, the first being that a 3rd party app gets to see, and likely save, passwords. And once an app has a username and password, the app would have _full_ access to their account.</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260103T063325Z" creationid="yamarten" creationdate="20260103T062659Z">
@@ -16703,6 +17534,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       </tuv>
       <tuv lang="ja">
         <seg>OTA ステータス：利用可能なものはありません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Of course the abstraction doesn't always work perfectly, and this new topology brought with it a host of problems - most notably data availability and discovery. As noted earlier, if the poster of some data is not online, you need to find that data from another device in the network. Discovering which device can serve you some data is a hard problem, especially with devices routinely coming on and offline at different addresses. And it may be the case that there is not a single online device that can send you the data that you're looking for! Even if everything is functioning well, these systems have to lean in hard to eventual consistency since network partitions are much more common and there is no service in the network that can purport to have a “global view” of all data.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>Of course the abstraction doesn't always work perfectly, and this new topology brought with it a host of problems - most notably data availability and discovery. As noted earlier, if the poster of some data is not online, you need to find that data from another device in the network. Discovering which device can serve you some data is a hard problem, especially with devices routinely coming on and offline at different addresses. And it may be the case that there is not a single online device that can send you the data that you're looking for! Even if everything is functioning well, these systems have to lean in hard to eventual consistency since network partitions are much more common and there is no service in the network that can purport to have a “global view” of all data.</seg>
       </tuv>
     </tu>
     <tu>
@@ -17260,6 +18099,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Operating in a trusted manner is by nature more efficient than operating trustlessly. Generally, this speaks to a philosophy of atproto which is to take advantage of the performance and UX gains that come with operating in a high-trust manner. However, when doing so always maintain the ability for credible exit and a system of checks and balances to hedge against bad actors and shoddy service providers.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>Operating in a trusted manner is by nature more efficient than operating trustlessly. Generally, this speaks to a philosophy of atproto which is to take advantage of the performance and UX gains that come with operating in a high-trust manner. However, when doing so always maintain the ability for credible exit and a system of checks and balances to hedge against bad actors and shoddy service providers.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Optional `boolean` fields should be phrased such that `false` is the default and expected value</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260104T081040Z" creationid="yamarten" creationdate="20260104T081040Z">
@@ -17527,6 +18374,22 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>P2p data is often addressed by the hash of the data and signed by a private key that the posting user holds. With this, content can be arbitrarily redistributed while maintaining full authority that it came from the user that posted it. Therefore a client can simply reach out to “the network” in the abstract to find some content with a known hash. When functioning well, content-addressed networks have this beautiful quality where the data seems to “just exist”, somewhere out there in this mesh of cooperating devices. Unlike the traditional location-addressed web where the data you receive is contingent on the service that you talk to, data in p2p systems has this essential quality to it - the data, not the location, is in primacy.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>P2p data is often addressed by the hash of the data and signed by a private key that the posting user holds. With this, content can be arbitrarily redistributed while maintaining full authority that it came from the user that posted it. Therefore a client can simply reach out to “the network” in the abstract to find some content with a known hash. When functioning well, content-addressed networks have this beautiful quality where the data seems to “just exist”, somewhere out there in this mesh of cooperating devices. Unlike the traditional location-addressed web where the data you receive is contingent on the service that you talk to, data in p2p systems has this essential quality to it - the data, not the location, is in primacy.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>P2p networks took a different approach that was radically trust-less. You have to trust your client device of course, but that's it. Because the software runs on your client and the trust is imbued into the data, no trust in any other service or actor in the network is required.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>P2p networks took a different approach that was radically trust-less. You have to trust your client device of course, but that's it. Because the software runs on your client and the trust is imbued into the data, no trust in any other service or actor in the network is required.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>PDS emits an `#account` event, with `active` false and status `deactivated`.</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260102T075420Z" creationid="yamarten" creationdate="20260102T075420Z">
@@ -17695,10 +18558,42 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Permission sets are limited to expressing permissions that reference resources under the same NSID namespace as the set itself. For example, the set `app.example.feed.authOnlyPost` could include permissions to `app.example.feed.post` records and making `app.example.feed.getPostThread` API endpoint requests to remote services. But it could not grant permissions to `app.example.actor.profile`. A permission set `app.example.authFull`, which is a level up in the hierarchy, could include permissions to all these resources.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T143521Z" creationid="yamarten" creationdate="20260111T143450Z">
+        <seg>権限セットは、そのセット自身と同じNSID名前空間下のリソースを参照する権限のみを表現できます。例えば、`app.example.feed.authOnlyPost`というセットには、`app.example.feed.post`レコードへの権限や、リモートサービスへの`app.example.feed.getPostThread` APIエンドポイントのリクエスト権限を含めることができます。しかし、`app.example.actor.profile`への権限は付与できません。階層が一段上の`app.example.authFull`のような権限セットであれば、これらすべてのリソースへの権限を含められます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Permission sets are themselves Lexicon schemas and are namespaced like other Lexicons. Unlike other Lexicons, permission sets are prefixed with `include:` in the scope string, and are dynamic; they can be updated.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T143004Z" creationid="yamarten" creationdate="20260111T143004Z">
+        <seg>権限セット自体もLexiconスキーマであり、他のLexiconと同様に名前空間が付いています。他のLexiconと異なり、権限セットはスコープ文字列で`include:`のプレフィックスが付き、動的に更新できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Permission sets can be revised, but removing them or making destructive changes can break existing applications. In general, permission sets should be closely tied to the applications they are designed for, but not necessarily 1:1. Remember that AT Proto applications can utilize multiple different Lexicons.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T144147Z" creationid="yamarten" creationdate="20260111T144113Z">
+        <seg>権限セットは改訂できますが、削除したり破壊的変更を行うと既存アプリケーションが壊れる可能性があります。一般に、権限セットは設計対象のアプリケーションに密接に結びつけるべきですが、必ずしも1:1である必要はありません。ATプロトコルアプリケーションは複数の異なるLexiconを利用できることを覚えておいてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Permission to access your photo library was denied. Please enable it in your system settings.</seg>
       </tuv>
       <tuv lang="ja">
         <seg>写真ライブラリへのアクセスが拒否されました。システム設定で有効にしてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Permissions relate to user owned resources on PDS instances are are represented by five types:</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T143046Z" creationid="yamarten" creationdate="20260111T142734Z">
+        <seg>PDSインスタンス上のユーザー所有リソースに関わる権限は、次の5種類で表されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -21456,6 +22351,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Simply processing the data is not enough, as these platforms are very read heavy. For every piece of content that is created, platforms may have to serve hundreds or thousands of requests to other users. As these platforms became more encompassing, user expectations increased as well in regards to their availability and latency. Downtime and degradation of services became less tolerated and could cost companies millions of dollars.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>Simply processing the data is not enough, as these platforms are very read heavy. For every piece of content that is created, platforms may have to serve hundreds or thousands of requests to other users. As these platforms became more encompassing, user expectations increased as well in regards to their availability and latency. Downtime and degradation of services became less tolerated and could cost companies millions of dollars.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Since the data repositories can be hosted by anybody, we need to give them [URLs](/specs/at-uri-scheme).</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260111T102714Z">
@@ -22272,6 +23175,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Taking all of this into account, we can see a general shape for a protocol and network emerge.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>Taking all of this into account, we can see a general shape for a protocol and network emerge.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Tap below to allow Bluesky to access your GPS location. We will then use that data to more accurately determine the content and features available in your region.</seg>
       </tuv>
       <tuv lang="ja">
@@ -22561,6 +23472,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>The *Skyblur* Lexicon permissions are defined and summarized differently:</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T144458Z" creationid="yamarten" creationdate="20260111T144458Z">
+        <seg>*Skyblur*のLexicon権限は、異なる方法で定義・要約されています:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>The *simplest* type of app is one where the OAuth session is established directly between the user's device and the PDS, as demonstrated in the [cookbook/vanillajs-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/vanillajs-oauth-web-app#readme) example. It's simple because it doesn't require a dedicated backend service, only hosting static resources.</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260104T103313Z" creationid="yamarten" creationdate="20260104T103313Z">
@@ -22701,6 +23620,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260103T110401Z" creationid="yamarten" creationdate="20260103T110401Z">
         <seg>AppViewがフィードジェネレーターのDIDドキュメントで宣言されたサービスエンドポイントにgetFeedSkeletonリクエストを送信します</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>The Atmosphere is a web of interconnected data. It is the porous membrane through which posts, profiles, and comments flow.  It is a network of databases working in conjunction to provide one global database - a tool for people to communicate with each other through data.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>The Atmosphere is a web of interconnected data. It is the porous membrane through which posts, profiles, and comments flow.  It is a network of databases working in conjunction to provide one global database - a tool for people to communicate with each other through data.</seg>
       </tuv>
     </tu>
     <tu>
@@ -22889,6 +23816,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>The `blob:*/*` permission for image/video handling cannot be included in permission sets and must always be requested separately.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T143624Z" creationid="yamarten" creationdate="20260111T143624Z">
+        <seg>画像/動画の取り扱い用の`blob:*/*`権限は権限セットに含めることができず、常に個別に要求する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>The `com.atproto.server.createSession` API endpoint called by `agent.login()` returns a session object containing two API tokens: * `accessJwt`: an access token which is used to authenticate requests but expires after a few minutes * `refreshJwt`: a refresh token which lasts longer and is used only to update the session with a new access token</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260105T124432Z" creationid="yamarten" creationdate="20260105T124432Z">
@@ -22931,6 +23866,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260103T093026Z" creationid="yamarten" creationdate="20260103T093026Z">
         <seg>`labelValues`はラベラーから何が期待できるかを宣言します。グローバルまたはカスタムラベル値が含まれます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>The `title` and `details` fields are descriptive, and will be displayed as part of the OAuth flow; see the [for users](#for-users) section for an example. Internationalization of these descriptive fields is supported — refer to [the permission sets spec](/specs/permission#permission-sets).</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T143553Z" creationid="yamarten" creationdate="20260111T143553Z">
+        <seg>`title`と`details`フィールドは説明用で、OAuthフローの一部として表示されます。例は[利用者向け](#for-users)セクションを参照してください。これらの説明フィールドは国際化にも対応しています。詳細は[権限セット仕様](/specs/permission#permission-sets)を参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23015,6 +23958,38 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>The content on these platforms isn't just documents that can be served statically. Rather these platforms process billions of interactions every day. These interactions in turn are composed into rich and dynamic views to serve to users: profile pages, news feeds, threads, like counts, and more.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>The content on these platforms isn't just documents that can be served statically. Rather these platforms process billions of interactions every day. These interactions in turn are composed into rich and dynamic views to serve to users: profile pages, news feeds, threads, like counts, and more.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>The data model (the repository) that PDSs adhere to is generic. The PDS as a whole actually has a very simple job: host the users data and manage their account/identity. This simplicity is intentional and important to keeping the data layer resilient and locked open. If a PDS becomes overloaded with application-specific logic or expensive indexing behavior, it runs the risk of warping incentives towards vendor lock-in and centralization.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>The data model (the repository) that PDSs adhere to is generic. The PDS as a whole actually has a very simple job: host the users data and manage their account/identity. This simplicity is intentional and important to keeping the data layer resilient and locked open. If a PDS becomes overloaded with application-specific logic or expensive indexing behavior, it runs the risk of warping incentives towards vendor lock-in and centralization.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>The data model of atproto is very similar to that of p2p networks. The major difference is that rather than being simply content-addressed, a layer of indirection is added to make the data identity-addressed. Therefore an at-uri looks like `at://username/record-type/record-key`.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>The data model of atproto is very similar to that of p2p networks. The major difference is that rather than being simply content-addressed, a layer of indirection is added to make the data identity-addressed. Therefore an at-uri looks like `at://username/record-type/record-key`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>The data that an identity outputs takes the form of a repository of “records”. Each record is a piece of structured data - a post, a like, a follow, a profile, etc. In the web, the primary object is the document and documents are linked together through hyperlinks. In atproto, the primary object is the record, and records are linked together through at-uri references.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>The data that an identity outputs takes the form of a repository of “records”. Each record is a piece of structured data - a post, a like, a follow, a profile, etc. In the web, the primary object is the document and documents are linked together through hyperlinks. In atproto, the primary object is the record, and records are linked together through at-uri references.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>The empty blob (zero bytes) is valid in general, though it may be disallowed by individual Lexicons/applications.</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260103T134337Z" creationid="yamarten" creationdate="20260103T131948Z">
@@ -23023,10 +23998,26 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>The end result is that products built on these p2p protocols often feel spotty - posts and interactions are missing, global algorithms are impossible to create, and running these applications takes a noticeable hit on the battery life and resource usage of the devices they run on. In short, it doesn't seem tractable to replicate the seamless dynamic feel of the massive platforms of the modern web.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>The end result is that products built on these p2p protocols often feel spotty - posts and interactions are missing, global algorithms are impossible to create, and running these applications takes a noticeable hit on the battery life and resource usage of the devices they run on. In short, it doesn't seem tractable to replicate the seamless dynamic feel of the massive platforms of the modern web.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>The ergonomics of OAuth scopes in AT Protocol are still evolving. This minimal set is designed to provide a known-good starting point for app developers that does not grant unnecessary permissions. While we finalize granular permission scopes, we are also supporting a set of temporary coarse-grained scopes called the "transition scopes". There are currently no plans to deprecate either the transition scopes or the use of App Passwords. For an overview of these transition scopes, and more in-depth information on OAuth, see [Authorization Scopes](/specs/oauth#authorization-scopes). For the granular permission scopes, see [Permissions](/specs/permission).</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260104T142614Z" creationid="yamarten" creationdate="20260104T142614Z">
         <seg>ATプロトコルにおけるOAuthスコープの使い心地はまだ発展途上です。この最小セットは、不要な権限を与えずにアプリ開発者が使える出発点を提供するよう設計されています。詳細な権限スコープを最終決定するまで、暫定的な粗い粒度のスコープ（「移行スコープ」）もサポートしています。現時点では、移行スコープまたはアプリパスワードの使用を廃止する計画はありません。これら移行スコープの概要やOAuthの詳細については[認可スコープ](/specs/oauth#authorization-scopes)を、細かな権限スコープについては[権限](/specs/permission)を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>The evolution of the document-based web into the modern web should not be seen as a failure of the web. Rather, it's a testament to its success. The idea, ethos, and primitives that the web was built on were powerful and flexible enough to facilitate the creation of essentially a second layer to the web. However, in this evolution, we also lost something.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>The evolution of the document-based web into the modern web should not be seen as a failure of the web. Rather, it's a testament to its success. The idea, ethos, and primitives that the web was built on were powerful and flexible enough to facilitate the creation of essentially a second layer to the web. However, in this evolution, we also lost something.</seg>
       </tuv>
     </tu>
     <tu>
@@ -23043,6 +24034,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       </tuv>
       <tuv lang="ja">
         <seg>フィードはDiscoverと置き換えられました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>The first and most obvious influence on atproto is the web itself.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>The first and most obvious influence on atproto is the web itself.</seg>
       </tuv>
     </tu>
     <tu>
@@ -23127,6 +24126,22 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>The introduction of distributed systems also introduces distributed problems. Decomposed micro-services give up on the idea of maintaining a strongly consistent view of all the data on the platform. In some cases this means the use of eventually consistent databases tailored to high throughput, such as Scylla (which we use at Bluesky). Databases like Scylla give up the ACID guarantees and support for rich dynamic queries that more traditional SQL databases offer. Rather they require the indices and access patterns of the data to be known ahead of time.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>The introduction of distributed systems also introduces distributed problems. Decomposed micro-services give up on the idea of maintaining a strongly consistent view of all the data on the platform. In some cases this means the use of eventually consistent databases tailored to high throughput, such as Scylla (which we use at Bluesky). Databases like Scylla give up the ACID guarantees and support for rich dynamic queries that more traditional SQL databases offer. Rather they require the indices and access patterns of the data to be known ahead of time.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>The introduction of new database technologies and the general trend of micro-services brought even more problems. Micro-services often need access to the same data. If a micro-service goes down for a period of time, it needs a mechanism to catch up with everything that happened. And applications need a way to create new indices even over past data. An approach of stream processing helped to answer many of these issues. In a stream processing architecture - most prominently exemplified by Kafka - you maintain an event log of all events that flow through a system. Many consumers tap into this event log. If a consumer goes offline, when it comes back it can pick back up where it left off. And if a new index needs to be created, the entire event log can simply be replayed. These stream processing tools serve as a “backbone” of canonical data that enable the platform to coalesce around a single source of truth.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>The introduction of new database technologies and the general trend of micro-services brought even more problems. Micro-services often need access to the same data. If a micro-service goes down for a period of time, it needs a mechanism to catch up with everything that happened. And applications need a way to create new indices even over past data. An approach of stream processing helped to answer many of these issues. In a stream processing architecture - most prominently exemplified by Kafka - you maintain an event log of all events that flow through a system. Many consumers tap into this event log. If a consumer goes offline, when it comes back it can pick back up where it left off. And if a new index needs to be created, the entire event log can simply be replayed. These stream processing tools serve as a “backbone” of canonical data that enable the platform to coalesce around a single source of truth.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>The laws in your location require you to verify you're an adult to access certain features. Tap to learn more.</seg>
       </tuv>
       <tuv lang="ja">
@@ -23162,6 +24177,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>The modern web mostly takes place on a few large platforms like Facebook or Youtube where users have accounts and post content or view and interact with content from other accounts. These interactions and content often don't look like “documents” in the traditional sense. The content is all still deeply interconnected, but those connections are generally restricted to the boundaries of the platform that they are created through.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>The modern web mostly takes place on a few large platforms like Facebook or Youtube where users have accounts and post content or view and interact with content from other accounts. These interactions and content often don't look like “documents” in the traditional sense. The content is all still deeply interconnected, but those connections are generally restricted to the boundaries of the platform that they are created through.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>The name is also a play on the "@" symbol, aka the "at" symbol, since atproto is designed for social systems.</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260111T104643Z">
@@ -23178,10 +24201,58 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>The other major issue with these systems is that the rich social media sites that users had become accustomed to in the modern web rely on large compute and storage intensive indices. Getting servers out of the mix meant that all of that resource usage moved onto users' devices. Timeline generation, thread construction, aggregating interaction counts, social graph queries, and more all had to be done on relatively underpowered end user devices.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>The other major issue with these systems is that the rich social media sites that users had become accustomed to in the modern web rely on large compute and storage intensive indices. Getting servers out of the mix meant that all of that resource usage moved onto users' devices. Timeline generation, thread construction, aggregating interaction counts, social graph queries, and more all had to be done on relatively underpowered end user devices.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>The other side of moving application-specific details out of the PDS is that it also gives applications the liberty to experiment and rapidly iterate on application semantics. Product development can occur in a centralized way. This centralization is critical to the ability to build new products in the network. We took a mentality of “no steps backwards” when it came to product development. Projects should be able to use modern tooling and product/application development patterns. Products benefit from the ability to rapidly iterate which requires clear ownership of application domains.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>The other side of moving application-specific details out of the PDS is that it also gives applications the liberty to experiment and rapidly iterate on application semantics. Product development can occur in a centralized way. This centralization is critical to the ability to build new products in the network. We took a mentality of “no steps backwards” when it came to product development. Projects should be able to use modern tooling and product/application development patterns. Products benefit from the ability to rapidly iterate which requires clear ownership of application domains.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>The peer-to-peer (p2p) movement was in many ways a reaction to the emergence of the massive platforms that came to dominate the modern web. Idealistic and radical (sometimes to a fault), the p2p movement asked if we could remove backend applications from the mix entirely.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>The peer-to-peer (p2p) movement was in many ways a reaction to the emergence of the massive platforms that came to dominate the modern web. Idealistic and radical (sometimes to a fault), the p2p movement asked if we could remove backend applications from the mix entirely.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>The permissionlessness of the web requires distributed authority of content. That is, there isn't a central authority that decides what is included in the web or if some content is “legitimate” or not. Rather, each computer that publishes and hosts a document is the authority for that document. This authority is **location-based**, meaning you can find out what the document hosted at a given site is by talking to that site and receiving the document. This sounds a little obvious when spelled out, but it's actually a radical idea. There's no need for distributors, document certifiers or central registries of documents.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>The permissionlessness of the web requires distributed authority of content. That is, there isn't a central authority that decides what is included in the web or if some content is “legitimate” or not. Rather, each computer that publishes and hosts a document is the authority for that document. This authority is **location-based**, meaning you can find out what the document hosted at a given site is by talking to that site and receiving the document. This sounds a little obvious when spelled out, but it's actually a radical idea. There's no need for distributors, document certifiers or central registries of documents.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>The phrase “atproto ethos” often comes up during our protocol design discussions. It's a fuzzy term, but we use it to refer to the philosophical and aesthetic principles that underlie the design of the network. {{className: 'lead'}}</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>The phrase “atproto ethos” often comes up during our protocol design discussions. It's a fuzzy term, but we use it to refer to the philosophical and aesthetic principles that underlie the design of the network. {{className: 'lead'}}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>The post you're replying to was marked as being written in {suggestedLanguageName} by its author. Would you like to reply in &lt;0&gt;{suggestedLanguageName}&lt;/0&gt;?</seg>
       </tuv>
       <tuv lang="ja">
         <seg>返信先の投稿は{suggestedLanguageName}で書かれていると投稿者に設定されています。&lt;0&gt;{suggestedLanguageName}&lt;/0&gt;で返信しますか？</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>The purpose of the Atmosphere is to run social applications at scale. It's designed for real-world applications with hundreds of millions of users. The Bluesky app has 6mm registered users and 500k DAU, and runs at roughly the same cost-efficiency as traditional applications.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>The purpose of the Atmosphere is to run social applications at scale. It's designed for real-world applications with hundreds of millions of users. The Bluesky app has 6mm registered users and 500k DAU, and runs at roughly the same cost-efficiency as traditional applications.</seg>
       </tuv>
     </tu>
     <tu>
@@ -23339,6 +24410,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>The use of `inheritAud` in the `rpc` permission allows you to [control inheritance behavior](/specs/permission#rpc).</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T143611Z" creationid="yamarten" creationdate="20260111T143559Z">
+        <seg>`rpc`権限における`inheritAud`の使用により、[継承の挙動](/specs/permission#rpc)を制御できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>The user can activate their account on the new PDS with a call to `com.atproto.server.activateAccount`, and deactivate their account on the old PDS with `com.atproto.server.deactivateAccount`.</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260102T104327Z" creationid="yamarten" creationdate="20260102T104327Z">
@@ -23371,10 +24450,42 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>The vision and mission of the Atmosphere is to make it easy for people to build. Whether you're a weekend hacker or building a startup, you should have access to a social network to build upon. The joy of social programming should be available to everyone.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>The vision and mission of the Atmosphere is to make it easy for people to build. Whether you're a weekend hacker or building a startup, you should have access to a social network to build upon. The joy of social programming should be available to everyone.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>The way custom feeds work is straightforward: the server receives a request from a user's server and returns a list of post URIs with some optional metadata attached. Those posts are then hydrated into full views by the requesting server and sent back to the client.</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260103T105857Z" creationid="yamarten" creationdate="20260103T105714Z">
         <seg>カスタムフィードの仕組みは単純です。サーバーはユーザーのサーバーからリクエストを受け取り、オプションのメタデータが付加された投稿URIのリストを返します。これらの投稿はリクエスト元のサーバーによって完全なビューに変換され、クライアントに送り返されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>The web described here, the document-based web, is commonly referred to as Web 1.0. But Web 2.0, the web that we've been living with for the last 20 years, is quite different in its shape and function.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>The web described here, the document-based web, is commonly referred to as Web 1.0. But Web 2.0, the web that we've been living with for the last 20 years, is quite different in its shape and function.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>The web is an information system for publishing and accessing documents over the internet. It's permissionless to join and interact with. This guarantee is predicated on similar guarantees in the underlying internet. However, if the internet is functioning properly and you have a computer, an internet connection, and an IP address you can host a document on the web.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>The web is an information system for publishing and accessing documents over the internet. It's permissionless to join and interact with. This guarantee is predicated on similar guarantees in the underlying internet. However, if the internet is functioning properly and you have a computer, an internet connection, and an IP address you can host a document on the web.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>The web requires a fair bit of trust with the services you interact with. While the transport layer is secured, the data that you receive from a given server is attested to solely by the fact that you received it from that server. If you load a post from a friend on Facebook for instance, you have to trust Facebook that they're serving you the correct post text. Similarly you have to trust Facebook to be a good custodian of your account and your data.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>The web requires a fair bit of trust with the services you interact with. While the transport layer is secured, the data that you receive from a given server is attested to solely by the fact that you received it from that server. If you load a post from a friend on Facebook for instance, you have to trust Facebook that they're serving you the correct post text. Similarly you have to trust Facebook to be a good custodian of your account and your data.</seg>
       </tuv>
     </tu>
     <tu>
@@ -23983,10 +25094,26 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>This guide describes how to request permissions for your AT Proto application. [OAuth](/guides/auth) is used to authorize third-party applications to access users' social graphs, and is a prerequisite for the concepts described here.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T135602Z" creationid="yamarten" creationdate="20260111T135602Z">
+        <seg>このガイドでは、ATプロトコルアプリケーションの権限リクエスト方法を説明します。[OAuth](/guides/auth)はサードパーティーアプリにユーザーのソーシャルグラフへのアクセス権を与えるために使用され、ここで説明する概念の前提条件です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>This handle is reserved. Please try a different one.</seg>
       </tuv>
       <tuv lang="ja">
         <seg>このハンドルは予約されています。他のものをお試しください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>This identity-addressing of data is an inversion of the web-based model of location-addressed data. In the traditional web, the location (or the server) is the primary object; in atproto, the user is the primary object.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>This identity-addressing of data is an inversion of the web-based model of location-addressed data. In the traditional web, the location (or the server) is the primary object; in atproto, the user is the primary object.</seg>
       </tuv>
     </tu>
     <tu>
@@ -24003,6 +25130,22 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260103T075929Z" creationid="yamarten" creationdate="20260103T075929Z">
         <seg>これはかなり大量のデータ（執筆時点で数百GB）であり、リソースの点でやや要求が厳しいものになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>This is a fully usable Atmosphere integration, and many applications will use this as a starting point. Note that it produces a straightforward, readable "Authorize" flow. The URL of the requesting app is clearly visible, and the permissions dialog states that the app "wants to uniquely identify you," but nothing else.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T144310Z" creationid="yamarten" creationdate="20260111T144310Z">
+        <seg>これは十分に実用的なAtmosphere連携で、多くのアプリが出発点として利用します。ここでは明快で読みやすい「Authorize」フローが提示されます。要求元アプリのURLが明確に表示され、権限ダイアログにはアプリが「あなたを一意に識別したい」とだけ示され、それ以外はありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>This is all at the discretion of app developers and Lexicon designers. We provide a model for using different Lexicons side by side, and for each Lexicon to define its own permission sets and presentation.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T144513Z" creationid="yamarten" creationdate="20260111T144513Z">
+        <seg>これらはすべてアプリ開発者とLexicon設計者の裁量に委ねられています。私たちは、異なるLexiconを並行して利用し、各Lexiconが独自の権限セットと表示を定義するためのモデルを提供しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -24151,6 +25294,22 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>This new web is significantly easier to participate in — you don't need to know how to run a server or have a static IP address in order to publish  content on the web. You can simply create an account. Perhaps most importantly, the modern web is capable of supporting richer and more dynamic content and interactions: real time conversations, global views of everything happening in a network, and algorithms that direct users' attention through these vast networks of data.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>This new web is significantly easier to participate in — you don't need to know how to run a server or have a static IP address in order to publish  content on the web. You can simply create an account. Perhaps most importantly, the modern web is capable of supporting richer and more dynamic content and interactions: real time conversations, global views of everything happening in a network, and algorithms that direct users' attention through these vast networks of data.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>This ownership is reflected in the schema language for the atproto network where the notion of ownership is baked into the IDs of schemas. The owner of those schemas is free to iterate and evolve the data model for the application. Similarly, application owners are free to build their backends in whichever way they see fit. There is a boundary to the “weirdness” of the atproto network. Once identities and data cross that threshold, it is the application's decision how to index it and present it to the user.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>This ownership is reflected in the schema language for the atproto network where the notion of ownership is baked into the IDs of schemas. The owner of those schemas is free to iterate and evolve the data model for the application. Similarly, application owners are free to build their backends in whichever way they see fit. There is a boundary to the “weirdness” of the atproto network. Once identities and data cross that threshold, it is the application's decision how to index it and present it to the user.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>This post claims to have been created on &lt;0&gt;{0}&lt;/0&gt;, but was first seen by Bluesky on &lt;1&gt;{1}&lt;/1&gt;.</seg>
       </tuv>
       <tuv lang="ja">
@@ -24275,6 +25434,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       </tuv>
       <tuv lang="ja">
         <seg>これには数分かかるはずです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>This structure is probably best exemplified by the schema language of atproto: Lexicon. Unlike other approaches to interoperation which attempt to create a generalized way of expressing properties on data (RDF) or to translate data between different domains to facilitate interoperation (lenses), Lexicon provides a way to determine if two things are speaking the same language, and to give a very structured mechanism for ensuring that the data is formatted properly.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>This structure is probably best exemplified by the schema language of atproto: Lexicon. Unlike other approaches to interoperation which attempt to create a generalized way of expressing properties on data (RDF) or to translate data between different domains to facilitate interoperation (lenses), Lexicon provides a way to determine if two things are speaking the same language, and to give a very structured mechanism for ensuring that the data is formatted properly.</seg>
       </tuv>
     </tu>
     <tu>
@@ -26228,6 +27395,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>We also provide a [TypeScript library](https://www.npmjs.com/package/@atproto/tap) for working with Tap. For more information, refer to [The AT Stack](/guides/the-at-stack#tap) and the [tap repository](https://github.com/bluesky-social/indigo/tree/main/cmd/tap).</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T145342Z">
+        <seg>Tapを使うための[TypeScriptライブラリ](https://www.npmjs.com/package/@atproto/tap)も提供しています。詳細については、[The AT Stack](/guides/the-at-stack#tap)および[tapリポジトリ](https://github.com/bluesky-social/indigo/tree/main/cmd/tap)を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>We also provide a quick start guide for [deploying Tap](https://github.com/bluesky-social/indigo/blob/main/cmd/tap/RAILWAY_DEPLOY.md) to [Railway](https://railway.com/).</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260106T125916Z" creationid="yamarten" creationdate="20260106T125916Z">
@@ -26344,6 +27519,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       </tuv>
       <tuv lang="ja">
         <seg>別の確認コードを&lt;0&gt;{0}&lt;/0&gt;へ送りました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>We hold identity in primacy and center it in the protocol design. Canonical user data exists in a fluid and commoditized hosting network that allows rich applications to be built on it.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>We hold identity in primacy and center it in the protocol design. Canonical user data exists in a fluid and commoditized hosting network that allows rich applications to be built on it.</seg>
       </tuv>
     </tu>
     <tu>
@@ -26900,6 +28083,22 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>When you update your app to use new permission sets, it's important to coordinate the software release with the permission-set updates. If you add new permission sets that require user approval, users will need to re-authorize your app to grant these new permissions.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T143034Z" creationid="yamarten" creationdate="20260111T143034Z">
+        <seg>アプリを新しい権限セットに対応させる際は、ソフトウェアのリリースと権限セットの更新を同期させることが重要です。ユーザーの承認が必要な新しい権限セットを追加すると、ユーザーは新しい権限を付与するためにアプリを再認可する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>When your app initiates an OAuth flow with an ATProto identity provider, it can request specific permission sets by including them in the `scope` parameter of the authorization request. This should be supplied as a *space-separated list* in the [`oauth-client-metadata.json` file](/specs/oauth#clients) when registering your OAuth client:</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T142328Z" creationid="yamarten" creationdate="20260111T142328Z">
+        <seg>アプリがATプロトコルのIDプロバイダーでOAuthフローを開始する際、認可リクエストの`scope`パラメーターに含めることで特定の権限セットを要求できます。これはOAuthクライアント登録時に[`oauth-client-metadata.json`ファイル](/specs/oauth#clients)へ*スペース区切りのリスト*として指定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Which languages would you like to see in your algorithmic feeds?</seg>
       </tuv>
       <tuv lang="ja">
@@ -26924,10 +28123,42 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>While peer-to-peer technology was being explored, the platforms that make up the modern web continued to grow in size. As the barriers to participating in the web lowered, millions and eventually billions of people started participating in and generating content on the web.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>While peer-to-peer technology was being explored, the platforms that make up the modern web continued to grow in size. As the barriers to participating in the web lowered, millions and eventually billions of people started participating in and generating content on the web.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>While the Web exchanges documents, the AT Protocol exchanges schematic and semantic information, enabling the software from different organizations to understand each others' data. This gives atproto clients freedom to produce user interfaces independently of the servers, and removes the need to exchange rendering code (HTML/JS/CSS) while browsing content.</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260111T114203Z">
         <seg>ウェブがドキュメントを交換する一方で、ATプロトコルはスキーマ情報とセマンティック情報を交換し、異なる組織のソフトウェアが互いのデータを理解できるようにします。これにより、atprotoクライアントはサーバーから独立してユーザーインターフェイスを自由に作成でき、コンテンツを閲覧する際にレンダリングコード（HTML/JS/CSS）を交換する必要がなくなります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>While there is a canonical host for every identity, the data that comes out of that host is self-certifying and self-describing. This means that it can be arbitrarily rebroadcast out into the network. Consumers of user data do not ever need to reach out to the canonical host of the data. Instead, they can rely on external services that crawl the canonical data hosts and output a stream of updates for some well-defined set of the network.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>While there is a canonical host for every identity, the data that comes out of that host is self-certifying and self-describing. This means that it can be arbitrarily rebroadcast out into the network. Consumers of user data do not ever need to reach out to the canonical host of the data. Instead, they can rely on external services that crawl the canonical data hosts and output a stream of updates for some well-defined set of the network.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>While there's something empowering about the idea of being able to do *anything*, it's also easy for this to fall into the tyranny of structurelessness - a collapse in coordination that prevents anything from actually getting done. Without structure in the network, energy that could go into novel development gets redirected into facilitating interoperation, fixing edgecases between implementations, building up defenses to bad actors or security issues from other parties, and trying to coordinate evolution without a clear leader.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>While there's something empowering about the idea of being able to do *anything*, it's also easy for this to fall into the tyranny of structurelessness - a collapse in coordination that prevents anything from actually getting done. Without structure in the network, energy that could go into novel development gets redirected into facilitating interoperation, fixing edgecases between implementations, building up defenses to bad actors or security issues from other parties, and trying to coordinate evolution without a clear leader.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>While this openness is the defining governance feature of the web, the defining product feature is the hyperlink. A hyperlink is a link in a document that navigates you to another document. Notably, these hyperlinks can link *across authorities* without permission of the other authority. The result of this is that the web is not just a collection of unrelated documents published in isolation. Rather, documents on the web form a vast integrated network of interconnected data.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>While this openness is the defining governance feature of the web, the defining product feature is the hyperlink. A hyperlink is a link in a document that navigates you to another document. Notably, these hyperlinks can link *across authorities* without permission of the other authority. The result of this is that the web is not just a collection of unrelated documents published in isolation. Rather, documents on the web form a vast integrated network of interconnected data.</seg>
       </tuv>
     </tu>
     <tu>
@@ -27076,6 +28307,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Wildcards (*) are allowed in scope string syntax, and grants access to all records — the most common example being `blob:*/*`, for working with images and video. Partial wildcards are *not* supported — for example, `app.bsky.*` is not a valid scope string. If you wanted to request multiple permissions from a particular namespace or Lexicon, you would need to list them out individually, or use a [permission set](#for-lexicon-designers). This is intentional, to avoid overbroad permission requests.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T142931Z" creationid="yamarten" creationdate="20260111T142931Z">
+        <seg>スコープ文字列の構文ではワイルドカード（*）が許可され、すべてのレコードへのアクセスが付与されます。最も一般的な例は、画像や動画の取り扱い向けの`blob:*/*`です。部分的なワイルドカードはサポート*されません*。例えば、`app.bsky.*`は有効なスコープ文字列ではありません。特定の名前空間やLexiconから複数の権限を要求したい場合は、個別に列挙するか、[権限セット](#for-lexicon-designers)を使用する必要があります。これは過剰に広い権限要求を避けるための意図的な設計です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>With each step we'll explain how our Web app taps into the Atmosphere. Refer to the codebase for more detailed code &amp;mdash; again, this tutorial is going to keep it light and quick to digest.</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260111T084127Z">
@@ -27104,6 +28343,22 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260102T104054Z" creationid="yamarten" creationdate="20260102T104054Z">
         <seg>IDが正常に更新されると、新PDSはネットワーク全体でそのアカウントの「現行」ホストになります。これは新規サービスのID解決には即座に反映されます。firehoseを消費している既存サービスには`#identity`イベントで通知されます。古いIDメタデータのキャッシュを持つサービスは、キャッシュの期限切れ時に更新するか、署名失敗などのエラーに遭遇した際にキャッシュを更新します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>With this, atproto avoids the gray area of “we're sort of talking about the same thing but not really” and forces applications into the discrete choice that if you're talking about the same thing then you're talking about the *exact* same thing. Instead of trying to posit universality of semantics, atproto facilitates specific semantics and then allows for collaboration and extension of those semantics.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>With this, atproto avoids the gray area of “we're sort of talking about the same thing but not really” and forces applications into the discrete choice that if you're talking about the same thing then you're talking about the *exact* same thing. Instead of trying to posit universality of semantics, atproto facilitates specific semantics and then allows for collaboration and extension of those semantics.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>With this, p2p moved away from the traditional location-based authority model of the web and towards “self-certifying data”. Data could come from a device that didn't originally create that data, and even if the content is coming from the canonical device, that device probably doesn't have a static IP associated with the account. Therefore p2p protocols moved the authority of data from the location of the data to the data itself.</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>With this, p2p moved away from the traditional location-based authority model of the web and towards “self-certifying data”. Data could come from a device that didn't originally create that data, and even if the content is coming from the canonical device, that device probably doesn't have a static IP associated with the account. Therefore p2p protocols moved the authority of data from the location of the data to the data itself.</seg>
       </tuv>
     </tu>
     <tu>
@@ -27444,10 +28699,26 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>You can click through on the **?** icons to see the details of each permission set:</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T144431Z" creationid="yamarten" creationdate="20260111T144431Z">
+        <seg>**?**アイコンをクリックすると、各権限セットの詳細を確認できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>You can continue ongoing conversations regardless of which setting you choose.</seg>
       </tuv>
       <tuv lang="ja">
         <seg>どの設定を選択しても進行中の会話は続けることができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>You can create a new Lexicon record with `goat lex new record`:</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T143950Z" creationid="yamarten" creationdate="20260111T143950Z">
+        <seg>`goat lex new record`を使って新しいLexiconレコードを作成できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -27624,6 +28895,14 @@ import (
       </tuv>
       <tuv lang="ja">
         <seg>これは設定画面から後で変更できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>You can use [`goat`](https://github.com/bluesky-social/goat) to create and publish Lexicons. Before publishing, `goat` can also be used to lint and validate your Lexicon. For example, pulling and linting `app.bsky.feed.post`:</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T143708Z" creationid="yamarten" creationdate="20260111T143708Z">
+        <seg>[`goat`](https://github.com/bluesky-social/goat)を使ってLexiconを作成・公開できます。公開前に`goat`でLexiconのリントとバリデーションも行えます。例えば、`app.bsky.feed.post`の取得とリントは以下のように行えます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -28040,6 +29319,14 @@ import (
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260103T125933Z" creationid="yamarten" creationdate="20260103T125933Z">
         <seg>PDSのモデレーション（プライベートアカウント情報が表示される）とスタンドアロンAppView用に、通常は個別のOzoneインスタンスを実行する必要がありますが、実際に両方をモデレーションしている単一の管理組織がある場合は別です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>You should try to only request enough permissions to cover the features your app needs. [Transition scopes](/specs/oauth#authorization-scopes) appear to grant permissions to create, update, or delete any of a user's AT records, including posts from other applications. In general, these broad permission requests should be avoided. This helps build trust with your users, and minimizes friction during the authorization process.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T142648Z" creationid="yamarten" creationdate="20260111T142451Z">
+        <seg>アプリに必要な機能を満たす最小限の権限だけを要求するようにしてください。[移行スコープ](/specs/oauth#authorization-scopes)は、他アプリの投稿を含むユーザーのATレコードを作成・更新・削除する権限を付与します。一般に、こうした広範な権限要求は避けるべきです。そうすることでユーザーとの信頼関係を築き、認可プロセスの摩擦を最小化します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -28560,6 +29847,14 @@ import (
       </tuv>
       <tuv lang="ja">
         <seg>あなたのプロフィール、投稿、フィード、そしてリストは他のBlueskyユーザーに見えなくなります。ログインすることでいつでもアカウントを再有効化できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Your release and deployment process for the [client metadata document](/specs/oauth#clients) may be separate from your app's code deployment process. Make sure to plan accordingly — an updated `oauth-client-metadata.json` that requests new permissions must be live before a version of your app that requires those permissions.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T143129Z" creationid="yamarten" creationdate="20260111T143129Z">
+        <seg>[クライアントメタデータドキュメント](/specs/oauth#clients)のリリース/デプロイの手順は、アプリのコードデプロイ手順とは別である場合があります。適切に計画してください。新しい権限を要求する更新済みの`oauth-client-metadata.json`は、その権限を必要とするアプリのバージョンより先に公開されている必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -29194,6 +30489,14 @@ import (
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>```</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>```
 GET /xrpc/com.example.getProfile
 ```</seg>
@@ -29311,6 +30614,96 @@ https://bsky.social/xrpc/com.atproto.identity.resolveHandle?handle=youraccount.b
     <tu>
       <tuv lang="en-US">
         <seg>```
+https://your-authorization-server.com/authorize?
+    client_id=1234567890&amp;
+    redirect_uri=https://your-app/callback&amp;
+    scope=atproto rpc:app.bsky.feed.searchPosts?aud=* blob:*/*
+    response_type=code&amp;
+    audience=https://myapi&amp;
+    state=1234567890
+```</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T140119Z" creationid="yamarten" creationdate="20260111T140119Z">
+        <seg>```
+https://your-authorization-server.com/authorize?
+    client_id=1234567890&amp;
+    redirect_uri=https://your-app/callback&amp;
+    scope=atproto rpc:app.bsky.feed.searchPosts?aud=* blob:*/*
+    response_type=code&amp;
+    audience=https://myapi&amp;
+    state=1234567890
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```
+{
+  "lexicon": 1,
+  "id": "com.example.authBasicFeatures",
+  "defs": {
+    "main": {
+      "type": "permission-set",
+      "title": "Basic App Functionality",
+      "detail": "Creation of posts and interactions",
+      "permissions": [
+        {
+          "type": "permission",
+          "resource": "repo",
+          "collection": ["app.example.post"]
+        },
+        {
+          "type": "permission",
+          "resource": "rpc",
+          "inheritAud": true,
+          "lxm": [
+            "app.example.getFeed"
+            "app.example.getProfile",
+            ...
+          ]
+        },
+      ]
+    }
+  }
+}
+```</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T143420Z" creationid="yamarten" creationdate="20260111T143420Z">
+        <seg>```
+{
+  "lexicon": 1,
+  "id": "com.example.authBasicFeatures",
+  "defs": {
+    "main": {
+      "type": "permission-set",
+      "title": "Basic App Functionality",
+      "detail": "Creation of posts and interactions",
+      "permissions": [
+        {
+          "type": "permission",
+          "resource": "repo",
+          "collection": ["app.example.post"]
+        },
+        {
+          "type": "permission",
+          "resource": "rpc",
+          "inheritAud": true,
+          "lxm": [
+            "app.example.getFeed"
+            "app.example.getProfile",
+            ...
+          ]
+        },
+      ]
+    }
+  }
+}
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```
 {
   "uri": "at://did:plc:u5cwb2mwiv2bfq53cjufe6yn/app.bsky.feed.post/3k4duaz5vfs2b",
   "cid": "bafyreibjifzpqj6o6wcq3hejh7y4z4z2vmiklkvykc57tw3pcbx3kxifpm"
@@ -29338,6 +30731,24 @@ did: "did:plc:3vekukmab2djjeengw2o3wln"
         <seg>```
 {
 did: "did:plc:3vekukmab2djjeengw2o3wln"
+}
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```
+{
+scope: "atproto rpc:app.bsky.feed.searchPosts?aud=* blob:*/*",
+...
+}
+```</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T140112Z" creationid="yamarten" creationdate="20260111T140112Z">
+        <seg>```
+{
+scope: "atproto rpc:app.bsky.feed.searchPosts?aud=* blob:*/*",
+...
 }
 ```</seg>
       </tuv>
@@ -29550,6 +30961,54 @@ https://bsky.social/xrpc/com.atproto.identity.resolveHandle?handle=youraccount.b
     &lt;/TabPanel&gt;
     &lt;TabPanel value="go"&gt;
     ATデータを扱う最初のステップは認証です。任意の[OAuth](/guides/auth)プロバイダを使用して認証することもできますし、SDKのパスワード認証を使用することもできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```bash
+$ goat lex new record dev.project.thing
+```</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T144005Z" creationid="yamarten" creationdate="20260111T144005Z">
+        <seg>```bash
+$ goat lex new record dev.project.thing
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```bash
+$ goat lex publish
+ 🟢 dev.project.thing
+```</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T144024Z" creationid="yamarten" creationdate="20260111T144024Z">
+        <seg>```bash
+$ goat lex publish
+ 🟢 dev.project.thing
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```bash
+$ goat lex pull app.bsky.feed.post
+ 🟢 app.bsky.feed.post</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T143710Z" creationid="yamarten" creationdate="20260111T143710Z">
+        <seg>```bash
+$ goat lex pull app.bsky.feed.post
+ 🟢 app.bsky.feed.post</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```bash
+$ goat lex resolve app.bsky.feed.post</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T144051Z" creationid="yamarten" creationdate="20260111T144051Z">
+        <seg>```bash
+$ goat lex resolve app.bsky.feed.post</seg>
       </tuv>
     </tu>
     <tu>
@@ -29844,6 +31303,42 @@ npm install @atproto/lex @atproto/api
       "alex.bsky.team",      // handle or DID
       "3mbl5xdw4yk2r",       // rkey
   )</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```go
+  resp, _ := comatproto.RepoGetRecord(ctx, client, 
+      "",                    // cid (empty for latest)
+      "app.bsky.feed.post",  // lexicon
+      "alex.bsky.team",      // handle or DID
+      "3mbl5xdw4yk2r",       // rkey
+  )</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>```go
+  resp, _ := comatproto.RepoGetRecord(ctx, client, 
+      "",                    // cid (empty for latest)
+      "app.bsky.feed.post",  // lexicon
+      "alex.bsky.team",      // handle or DID
+      "3mbl5xdw4yk2r",       // rkey
+  )</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```go
+_ "github.com/bluesky-social/indigo/api/bsky"
+_ "github.com/bluesky-social/indigo/lex/util"
+```
+&lt;/Note&gt;</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T133847Z" creationid="yamarten" creationdate="20260111T133847Z">
+        <seg>```go
+_ "github.com/bluesky-social/indigo/api/bsky"
+_ "github.com/bluesky-social/indigo/lex/util"
+```
+&lt;/Note&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -30480,6 +31975,18 @@ go run ./cmd/tap run --disable-acks=true
     <tu>
       <tuv lang="en-US">
         <seg>```shell
+$ websocat wss://bsky.network/xrpc/com.atproto.sync.subscribeRepos
+```</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260107T130821Z" creationid="yamarten" creationdate="20260107T130821Z">
+        <seg>```shell
+$ websocat wss://bsky.network/xrpc/com.atproto.sync.subscribeRepos
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```shell
 brew install goat
 ```</seg>
       </tuv>
@@ -30491,12 +31998,12 @@ brew install goat
     </tu>
     <tu>
       <tuv lang="en-US">
-        <seg>```shell
+        <seg>```shell 
 $ websocat wss://bsky.network/xrpc/com.atproto.sync.subscribeRepos
 ```</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260107T130821Z" creationid="yamarten" creationdate="20260107T130821Z">
-        <seg>```shell
+      <tuv lang="ja">
+        <seg>```shell 
 $ websocat wss://bsky.network/xrpc/com.atproto.sync.subscribeRepos
 ```</seg>
       </tuv>
@@ -31870,6 +33377,14 @@ await agent.login({
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>const router = new LexRouter({ upgradeWebSocket })</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>const router = new LexRouter({ upgradeWebSocket })</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>const server = await serve(router, { port: 3000 })
       console.log('Server listening on port 3000')
       ```
@@ -31888,12 +33403,32 @@ await agent.login({
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>ctx := context.Background()</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>ctx := context.Background()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>ctx := context.Background()
   ```</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260111T062759Z" creationid="yamarten" creationdate="20260107T130108Z">
         <seg>ctx := context.Background()
   ```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>ctx := context.Background()
+  ```
+    Import the SDK libraries and go directly to [making requests](/guides/reading-data)!</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T133750Z" creationid="yamarten" creationdate="20260111T133724Z">
+        <seg>ctx := context.Background()
+  ```
+    SDKライブラリをインポートしたら、そのまま[リクエストの作成](/guides/reading-data)に進みましょう！</seg>
       </tuv>
     </tu>
     <tu>
@@ -32154,6 +33689,24 @@ export const header = {
   title: 'アカウントと削除',
   description:
     'ATプロトコルでアカウントのライフサイクルと削除がどのように機能するか',
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>export const header = {
+  title: 'Atproto Ethos',
+  description:
+    'A deep dive into the philosophical and aesthetic principles underlying the design of AT Protocol.',
+    date: 'Apr 4, 2025'
+}</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>export const header = {
+  title: 'Atproto Ethos',
+  description:
+    'A deep dive into the philosophical and aesthetic principles underlying the design of AT Protocol.',
+    date: 'Apr 4, 2025'
 }</seg>
       </tuv>
     </tu>
@@ -32425,6 +33978,22 @@ export const header = {
         <seg>export const header = {
   title: 'OAuthパターン集',
   description: 'OAuthの実装例',
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>export const header = {
+  title: 'Permission Requests',
+  description:
+    'A permissions guide for app developers and Lexicon designers',
+}</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T135432Z" creationid="yamarten" creationdate="20260111T135358Z">
+        <seg>export const header = {
+  title: '権限リクエスト',
+  description:
+    'アプリ開発者とLexicon設計者のための権限ガイド',
 }</seg>
       </tuv>
     </tu>
@@ -32712,6 +34281,14 @@ export const metadata = {
   description:
     '推奨されるデータ制限とバリデーションに期待するもの',
 }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>export const sections = []</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>export const sections = []</seg>
       </tuv>
     </tu>
     <tu>
@@ -33122,6 +34699,23 @@ import moderation from "./moderation.png"</seg>
     <tu>
       <tuv lang="en-US">
         <seg>import {Container} from "@/components/Container"
+import oauth from "./oauth-only.png"
+import skyblur from "./skyblur-oauth.png"
+import granular from "./skyblur-granular.png"
+import lexicon from "./skyblur-lexicon.png"</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T134156Z" creationid="yamarten" creationdate="20260111T134146Z">
+        <seg>import {Container} from "@/components/Container"
+import {Heading} from "@/components/Heading"
+import oauth from "./oauth-only.png"
+import skyblur from "./skyblur-oauth.png"
+import granular from "./skyblur-granular.png"
+import lexicon from "./skyblur-lexicon.png"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>import {Container} from "@/components/Container"
 import oauthdomain from "./oauth-domain.jpg"</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260107T130209Z" creationid="yamarten" creationdate="20260107T130209Z">
@@ -33357,6 +34951,40 @@ import {Heading} from "@/components/Heading"</seg>
     }</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260111T092517Z">
+        <seg>let uri
+    try {
+    // ステータスレコードをユーザーのリポジトリに書き込みます
+    const res = await agent.com.atproto.repo.putRecord({
+      repo: agent.assertDid,
+      collection: 'xyz.statusphere.status',
+      rkey: TID.nextStr(),
+      record,
+    })
+    uri = res.uri
+    } catch (err) {
+      logger.warn({ err }, 'failed to write record')
+      return res.status(500).json({ error: 'Failed to write record' })
+    }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>let uri
+    try {
+      // Write the status record to the user's repository
+      const res = await agent.com.atproto.repo.putRecord({
+        repo: agent.assertDid, 
+        collection: 'xyz.statusphere.status',
+        rkey: TID.nextStr(),
+        record,
+      })
+      uri = res.uri
+    } catch (err) {
+      logger.warn({ err }, 'failed to write record')
+      return res.status(500).json({ error: 'Failed to write record' })
+    }</seg>
+      </tuv>
+      <tuv lang="ja">
         <seg>let uri
     try {
     // ステータスレコードをユーザーのリポジトリに書き込みます
@@ -33806,6 +35434,48 @@ import {Heading} from "@/components/Heading"</seg>
     <tu>
       <tuv lang="en-US">
         <seg>try {
+      // Optimistically update our SQLite &lt;-- HERE!
+      await db
+        .insertInto('status')
+        .values({
+          uri,
+          authorDid: agent.assertDid, 
+          status: record.status,
+          createdAt: record.createdAt,
+          indexedAt: new Date().toISOString(),
+        })
+        .execute()
+    } catch (err) {
+      logger.warn(
+        { err },
+        'failed to update computed view; ignoring as it should be caught by the firehose'
+      )
+    }</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>try {
+      // SQLite を楽観的に更新します &lt;-- ここ!
+      await db
+        .insertInto('status')
+        .values({
+          uri,
+          authorDid: agent.assertDid,
+          status: record.status,
+          createdAt: record.createdAt,
+          indexedAt: new Date().toISOString(),
+        })
+        .execute()
+    } catch (err) {
+      logger.warn(
+        { err },
+        'failed to update computed view; ignoring as it should be caught by the firehose'
+      )
+    }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>try {
       // Write the status record to the user's repository
       await agent.com.atproto.repo.putRecord({
         repo: agent.assertDid,
@@ -33831,6 +35501,44 @@ import {Heading} from "@/components/Heading"</seg>
       logger.warn({ err }, 'failed to write record')
       return res.status(500).type('html').send('&lt;h1&gt;Error: Failed to write record&lt;/h1&gt;')
     }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>try {
+      // Write the status record to the user's repository
+      await agent.com.atproto.repo.putRecord({
+        repo: agent.assertDid, 
+        collection: 'xyz.statusphere.status',
+        rkey: TID.nextStr(),
+        record,
+      })
+    } catch (err) {
+      logger.warn({ err }, 'failed to write record')
+      return res.status(500).type('html').send('&lt;h1&gt;Error: Failed to write record&lt;/h1&gt;')
+    }</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>try {
+      // ステータス レコードをユーザーのリポジトリに書き込みます
+      await agent.com.atproto.repo.putRecord({
+        repo: agent.assertDid,
+        collection: 'xyz.statusphere.status',
+        rkey: TID.nextStr(),
+        record,
+      })
+    } catch (err) {
+      logger.warn({ err }, 'failed to write record')
+      return res.status(500).type('html').send('&lt;h1&gt;Error: Failed to write record&lt;/h1&gt;')
+    }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>uri = "wss://jetstream2.us-east.bsky.network/subscribe?wantedCollections=app.bsky.feed.post"</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>uri = "wss://jetstream2.us-east.bsky.network/subscribe?wantedCollections=app.bsky.feed.post"</seg>
       </tuv>
     </tu>
     <tu>
@@ -33912,6 +35620,56 @@ import {Heading} from "@/components/Heading"</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260104T082041Z" creationid="yamarten" creationdate="20260104T082041Z">
         <seg>後方互換性を変更したり、V2スキーマを使ったりせずに、スキーマに新しい`optional`フィールドを追加できますが、新しい`required`フィールドを追加することはできません</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>{
+  "$type": "com.atproto.lexicon.schema",
+  "defs": {
+    "entity": {
+      "description": "Deprecated: use facets instead.",
+      "properties": {
+        "index": {
+          "ref": "#textSlice",
+          "type": "ref"
+        },
+        "type": {
+          "description": "Expected values are 'mention' and 'link'.",
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+...
+```</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T144102Z" creationid="yamarten" creationdate="20260111T144102Z">
+        <seg>{
+  "$type": "com.atproto.lexicon.schema",
+  "defs": {
+    "entity": {
+      "description": "Deprecated: use facets instead.",
+      "properties": {
+        "index": {
+          "ref": "#textSlice",
+          "type": "ref"
+        },
+        "type": {
+          "description": "Expected values are 'mention' and 'link'.",
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+...
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>{/* ## Community</seg>
+      </tuv>
+      <tuv lang="ja">
+        <seg>{/* ## Community</seg>
       </tuv>
     </tu>
     <tu>

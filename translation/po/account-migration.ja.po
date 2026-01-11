@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"POT-Creation-Date: 2026-01-11 22:17+0900\n"
 "PO-Revision-Date: 2026-01-07 19:40+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -18,9 +18,9 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:21
-#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:64
+#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:73
 #: src/guides/streaming-data/en.mdx:60 src/guides/video-handling/en.mdx:39
-#: src/guides/account-migration/en.mdx:74 src/guides/feeds/en.mdx:105
+#: src/guides/account-migration/en.mdx:74 src/guides/feeds/en.mdx:111
 #: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:52
 #: src/guides/scopes/en.mdx:45 src/guides/subscriptions/en.mdx:78
 #: src/guides/writing-data/en.mdx:181 src/guides/creating-a-labeler/en.mdx:56
@@ -60,8 +60,8 @@ msgstr "この文書は[アカウントホスティング](/specs/account]仕様
 #. type: Plain text
 #: src/guides/account-migration/en.mdx:10
 #, no-wrap
-msgid "## Creating New Account\n"
-msgstr "<Heading level={2} id=\"creating-new-account\">新規アカウント作成</Heading>\n"
+msgid "## Creating a New Account\n"
+msgstr "<Heading level={2} id=\"creating-a-new-account\">新規アカウント作成</Heading>\n"
 
 #. type: Plain text
 #: src/guides/account-migration/en.mdx:12
