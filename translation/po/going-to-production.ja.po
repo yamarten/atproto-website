@@ -142,7 +142,7 @@ msgid ""
 "- `PDS_RECOVERY_DID_KEY`: a public key that is added to the users DID. The corresponding private key **must be** stored in a safe place and can be used to recover user accounts in case of a catastrophic loss of data including the `PDS_PLC_ROTATION_KEY_K256_PRIVATE_KEY_HEX`.\n"
 msgstr ""
 "- `PDS_PLC_ROTATION_KEY_K256_PRIVATE_KEY_HEX`：PDSサービスがユーザーアカウントの復旧を含むPLC上の操作を実行するために使用されます。AWSを使用している場合、これは[AWS KMS](https://aws.amazon.com/kms/) で`PDS_PLC_ROTATION_KEY_KMS_KEY_ID`を使用して構成可能です。\n"
-"- PDS_RECOVERY_DID_KEY`：ユーザーDIDに追加される公開鍵。対応する秘密鍵は安全な場所に保存**されなければならず**、`PDS_PLC_ROTATION_KEY_K256_PRIVATE_KEY_HEX`を含むデータの壊滅的な損失の場合にユーザーアカウントを復旧するために使用できます。\n"
+"- `PDS_RECOVERY_DID_KEY`：ユーザーDIDに追加される公開鍵。対応する秘密鍵は安全な場所に保存**されなければならず**、`PDS_PLC_ROTATION_KEY_K256_PRIVATE_KEY_HEX`を含むデータの壊滅的な損失の場合にユーザーアカウントを復旧するために使用できます。\n"
 
 #. type: Plain text
 #: src/guides/going-to-production/en.mdx:45

@@ -65,7 +65,7 @@ msgstr "ATプロトコルは、ウェブの基本的な構成要素を用いて�
 #: src/guides/reads-and-writes/en.mdx:11
 #, no-wrap
 msgid "For more context, see [ATProto for distributed systems engineers](/articles/atproto-for-distsys-engineers) and [The ATProto Ethos](/articles/atproto-ethos).\n"
-msgstr "詳しい背景は、[ATProto for distributed systems engineers](/articles/atproto-for-distsys-engineers) と [The ATProto Ethos](/articles/atproto-ethos) を参照してください。\n"
+msgstr "詳しい背景は、[分散システムエンジニアのためのATプロトコル](/articles/atproto-for-distsys-engineers) と [The ATProto Ethos](/articles/atproto-ethos) を参照してください。\n"
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:13
@@ -242,7 +242,7 @@ msgid ""
 "- [Record Key spec](/specs/record-key)\n"
 "- [URI scheme](/specs/at-uri-scheme)\n"
 msgstr ""
-"- [Reading data](/guides/reading-data)\n"
+"- [データ読み取り](/guides/reading-data)\n"
 "- [データ書き込み](/guides/writing-data)\n"
 "- [アカウントと削除](/guides/writing-data)\n"
 "- [ソーシャルグラフ](/guides/social-graph)\n"

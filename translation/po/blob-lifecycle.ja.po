@@ -29,7 +29,7 @@ msgstr ""
 "\n"
 "export const header = {\n"
 "  title: 'blobライフサイクル',\n"
-"  description: 'How blobs are uploaded, referenced, and deleted',\n"
+"  description: 'blobのアップロード、参照、削除の方法',\n"
 "}\n"
 
 #. type: Plain text
@@ -90,7 +90,7 @@ msgstr "<Heading level={2} id=\"garbage-collection\">ガベージコレクショ
 #: src/guides/blob-lifecycle/en.mdx:26
 #, no-wrap
 msgid "After a successful upload, blobs are placed in temporary storage. They are not accessible for download or distribution while in this state. Servers should \"garbage collect\" (delete) un-referenced temporary blobs after an appropriate time span (see implementation guidelines below). Blobs which are in temporary storage should not be included in the **`listBlobs`** output.\n"
-msgstr "アップロードに成功した後、blobは一時ストレージに配置されます。この状態では、ダウンロードや配送はできません。サーバーは適切な時間経過後に、参照されていない一時blobを「ガベージコレクション」(削除)すべきです（後述の実装ガイドラインを参照）。一時ストレージのblobは **`listBlobs`** の出力に含められません。\n"
+msgstr "アップロードに成功した後、blobは一時ストレージに配置されます。この状態では、ダウンロードや配送はできません。サーバーは適切な時間経過後に、参照されていない一時blobを「ガベージコレクション」（削除）すべきです（後述の実装ガイドラインを参照）。一時ストレージのblobは **`listBlobs`** の出力に含められません。\n"
 
 #. type: Plain text
 #: src/guides/blob-lifecycle/en.mdx:28

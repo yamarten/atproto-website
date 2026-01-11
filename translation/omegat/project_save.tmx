@@ -2304,11 +2304,11 @@ error: linting issues detected
 - The https://github.com/bluesky-social/atproto repository contains most of our TypeScript tooling, including the code for the [PDS](https://github.com/bluesky-social/atproto/tree/main/packages/pds) and the TypeScript SDK.
 - There are many other community tools that we use every day. For example, the [Microcosm](https://www.microcosm.blue/) tooling, written in Rust, provides a set of APIs to help build query layers without requiring dedicated AppViews! Refer to https://constellation.microcosm.blue/ for details.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T055637Z" creationid="yamarten" creationdate="20260111T055637Z">
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T173520Z" creationid="yamarten" creationdate="20260111T055637Z">
         <seg>- [indigo](https://github.com/bluesky-social/indigo)リポジトリには、[リレー](https://github.com/bluesky-social/indigo/blob/main/cmd/relay/README.md)のコードとGo SDKを含む、私たちのGoツールの大半が含まれています。
 - 他にも私たちのGo製ATコマンドラインツールである https://github.com/bluesky-social/goat があります。
 - https://github.com/bluesky-social/atproto リポジトリには、[PDS](https://github.com/bluesky-social/atproto/tree/main/packages/pds)のコードとTypeScript SDKを含む、TypeScriptツールの大半が含まれています。
-- 私たちが日常的に使うコミュニティツールも多数あります。例えば、Rustで書かれた[Microcosm](https://www.microcosm.blue/)のツール群は、専用のAppViewを必要とせずにクエリ層を構築するためのAPI群を提供します。詳細はhttps://constellation.microcosm.blue/を参照してください。</seg>
+- 私たちが日常的に使うコミュニティツールも多数あります。例えば、Rustで書かれた[Microcosm](https://www.microcosm.blue/)のツール群は、専用のAppViewを必要とせずにクエリ層を構築するためのAPI群を提供します。詳細は https://constellation.microcosm.blue/ を参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2466,17 +2466,18 @@ error: linting issues detected
       </tuv>
     </tu>
     <tu>
+      <note>日本語フォントが太字対応してないかも</note>
       <tuv lang="en-US">
         <seg>- [**Decentralized IDs (DIDs)**](https://w3c.github.io/did/) identify data repositories. They are broadly used as user IDs, but since every user has one data repository then a DID can be considered a reference to a data repository.
 - [**Namespaced Identifiers (NSIDs)**](/specs/nsid) identify the Lexicon type for groups of records within a repository.
 - [**Record Keys**](/specs/record-key) ("rkeys") identify individual records within a collection in a given repository. The format is specified by the collection Lexicon.
 - [**Content IDs (CIDs)**](https://github.com/multiformats/cid) identify content using a fingerprint hash. They are used throughout the repository to reference the objects (nodes) within it.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T095108Z" creationid="yamarten" creationdate="20260107T131359Z">
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T171538Z" creationid="yamarten" creationdate="20260107T131359Z">
         <seg>- [**分散型識別子（DID）**](https://w3c.github.io/did/)はデータリポジトリを識別します。これは広くユーザーIDとして使用されますが、すべてのユーザーが1つのデータリポジトリを持っているため、DIDはデータリポジトリへの参照として見なすことができます。
 - [**名前空間識別子（NSID）**](/specs/nsid)は、リポジトリ内のレコード群に対するLexicon型を識別します。
 - [**レコードキー**](/specs/record-key)（rkey）は、特定のリポジトリ内のコレクションに含まれる個々のレコードを識別します。形式はコレクションのLexicon（`record`型）によって指定されます。
-- [コンテンツID（CID）](https://github.com/multiformats/cid)は、フィンガープリントハッシュを使用してコンテンツを識別します。これはリポジトリ全体で使用され、リポジトリ内のオブジェクト（ノード）を参照します。</seg>
+- [**コンテンツID（CID）**](https://github.com/multiformats/cid)は、フィンガープリントハッシュを使用してコンテンツを識別します。これはリポジトリ全体で使用され、リポジトリ内のオブジェクト（ノード）を参照します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2758,8 +2759,8 @@ error: linting issues detected
 - [Lexicon Style Guide](/guides/lexicon-style-guide)
 - [Lexicon Specs](/specs/lexicon)</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T063818Z" creationid="yamarten" creationdate="20260107T124825Z">
-        <seg>- [Installing Lexicons](/guides/installing-lexicons)
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T172244Z" creationid="yamarten" creationdate="20260107T124825Z">
+        <seg>- [Lexiconのインストール](/guides/installing-lexicons)
 - [Lexiconの公開](/guides/publishing-lexicons)
 - [Lexiconスタイルガイド](/guides/lexicon-style-guide)
 - [Lexicon仕様](/specs/lexicon)</seg>
@@ -2896,6 +2897,7 @@ error: linting issues detected
       </tuv>
     </tu>
     <tu>
+      <note>Accounts and deletionsがリンク間違い</note>
       <tuv lang="en-US">
         <seg>- [Reading data](/guides/reading-data)
 - [Writing data](/guides/writing-data)
@@ -2904,8 +2906,8 @@ error: linting issues detected
 - [Record Key spec](/specs/record-key)
 - [URI scheme](/specs/at-uri-scheme)</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260107T130155Z" creationid="yamarten" creationdate="20260107T130155Z">
-        <seg>- [Reading data](/guides/reading-data)
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T170710Z" creationid="yamarten" creationdate="20260107T130155Z">
+        <seg>- [データ読み取り](/guides/reading-data)
 - [データ書き込み](/guides/writing-data)
 - [アカウントと削除](/guides/writing-data)
 - [ソーシャルグラフ](/guides/social-graph)
@@ -2914,6 +2916,7 @@ error: linting issues detected
       </tuv>
     </tu>
     <tu>
+      <note>Accounts and deletionsが自分へのリンクになっている</note>
       <tuv lang="en-US">
         <seg>- [Reads and Writes](/guides/reads-and-writes)
 - [Reading data](/guides/reading-data)
@@ -2922,9 +2925,9 @@ error: linting issues detected
 - [Record Key spec](/specs/record-key)
 - [URI scheme](/specs/at-uri-scheme)</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260107T132221Z" creationid="yamarten" creationdate="20260107T132221Z">
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T170702Z" creationid="yamarten" creationdate="20260107T132221Z">
         <seg>- [読み取りと書き込み](/guides/reads-and-writes)
-- [データ読み出し](/guides/reading-data)
+- [データ読み取り](/guides/reading-data)
 - [アカウントと削除](/guides/writing-data)
 - [ソーシャルグラフ](/guides/social-graph)
 - [レコードキー仕様](/specs/record-key)
@@ -2940,9 +2943,9 @@ error: linting issues detected
 - [Record Key spec](/specs/record-key)
 - [URI scheme](/specs/at-uri-scheme)</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260108T133824Z" creationid="yamarten" creationdate="20260108T133824Z">
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T170650Z" creationid="yamarten" creationdate="20260108T133824Z">
         <seg>- [読み取りと書き込み](/guides/reads-and-writes)
-- [データ読み出し](/guides/reading-data)
+- [データ読み取り](/guides/reading-data)
 - [データ書き込み](/guides/writing-data)
 - [アカウントと削除](/guides/writing-data)
 - [レコードキー仕様](/specs/record-key)
@@ -2958,9 +2961,9 @@ error: linting issues detected
 - [Record Key spec](/specs/record-key)
 - [URI scheme](/specs/at-uri-scheme)</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260107T113616Z" creationid="yamarten" creationdate="20260107T113450Z">
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T170525Z" creationid="yamarten" creationdate="20260107T113450Z">
         <seg>- [読み取りと書き込み](/guides/reads-and-writes)
-- [データ読み出し](/guides/reading-data)
+- [データ読み取り](/guides/reading-data)
 - [データ書き込み](/guides/writing-data)
 - [ソーシャルグラフ](/guides/social-graph)
 - [レコードキー仕様](/specs/record-key)
@@ -2968,6 +2971,7 @@ error: linting issues detected
       </tuv>
     </tu>
     <tu>
+      <note>Accounts and deletionsがリンク間違い</note>
       <tuv lang="en-US">
         <seg>- [Reads and Writes](/guides/reads-and-writes)
 - [Writing data](/guides/writing-data)
@@ -3150,9 +3154,9 @@ error: linting issues detected
         <seg>- `PDS_PLC_ROTATION_KEY_K256_PRIVATE_KEY_HEX`: used by the PDS service to perform operations on the PLC including recovering user accounts. If you are using AWS, this is configurable with the [AWS Key Management Service](https://aws.amazon.com/kms/), using `PDS_PLC_ROTATION_KEY_KMS_KEY_ID`.
 - `PDS_RECOVERY_DID_KEY`: a public key that is added to the users DID. The corresponding private key **must be** stored in a safe place and can be used to recover user accounts in case of a catastrophic loss of data including the `PDS_PLC_ROTATION_KEY_K256_PRIVATE_KEY_HEX`.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260107T121935Z" creationid="yamarten" creationdate="20260107T121935Z">
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T173647Z" creationid="yamarten" creationdate="20260107T121935Z">
         <seg>- `PDS_PLC_ROTATION_KEY_K256_PRIVATE_KEY_HEX`：PDSサービスがユーザーアカウントの復旧を含むPLC上の操作を実行するために使用されます。AWSを使用している場合、これは[AWS KMS](https://aws.amazon.com/kms/) で`PDS_PLC_ROTATION_KEY_KMS_KEY_ID`を使用して構成可能です。
-- PDS_RECOVERY_DID_KEY`：ユーザーDIDに追加される公開鍵。対応する秘密鍵は安全な場所に保存**されなければならず**、`PDS_PLC_ROTATION_KEY_K256_PRIVATE_KEY_HEX`を含むデータの壊滅的な損失の場合にユーザーアカウントを復旧するために使用できます。</seg>
+- `PDS_RECOVERY_DID_KEY`：ユーザーDIDに追加される公開鍵。対応する秘密鍵は安全な場所に保存**されなければならず**、`PDS_PLC_ROTATION_KEY_K256_PRIVATE_KEY_HEX`を含むデータの壊滅的な損失の場合にユーザーアカウントを復旧するために使用できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4524,9 +4528,9 @@ by Steve Klabnik
   &lt;Image src={lexicon} alt="" className="w-full max-w-md mx-auto" /&gt;
 &lt;/Container&gt;</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T144500Z" creationid="yamarten" creationdate="20260111T144500Z">
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T165659Z" creationid="yamarten" creationdate="20260111T144500Z">
         <seg>&lt;Container&gt;
-  &lt;Image src={did} alt="" className="w-full max-w-md mx-auto" /&gt;
+  &lt;Image src={lexicon} alt="" className="w-full max-w-md mx-auto" /&gt;
 &lt;/Container&gt;</seg>
       </tuv>
     </tu>
@@ -4947,9 +4951,9 @@ The behavior of downstream services is a recurring theme throughout this guide. 
 This will post using the currently-authenticated user session. If you want to post as another user, reuse [`ServerCreateSession()`](/guides/sdk-auth#creating-a-client) to get a new user session.
 &lt;/Note&gt;</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260107T132111Z" creationid="yamarten" creationdate="20260107T132111Z">
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T155321Z" creationid="yamarten" creationdate="20260107T132111Z">
         <seg>&lt;Note&gt;
-これはその時点で認証しているユーザーセッションで投稿します。別のユーザーとして投稿したい場合、再度[`ServerCreateSession()`](/guides/sdk#creating-a-client)を呼んで新規セッションを取得してください。
+これはその時点で認証しているユーザーセッションで投稿します。別のユーザーとして投稿したい場合、再度[`ServerCreateSession()`](/guides/sdk-auth#creating-a-client)を呼んで新規セッションを取得してください。
 &lt;/Note&gt;</seg>
       </tuv>
     </tu>
@@ -5166,7 +5170,7 @@ Pythonの例ではSDKを使用していません！[OAuthクライアント実�
     &lt;TabPanel value="ts"&gt;
     You can read records from a user's data repository with `client.list()`:</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260108T130426Z" creationid="yamarten" creationdate="20260108T125807Z">
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T170636Z" creationid="yamarten" creationdate="20260108T125807Z">
         <seg>&lt;TabGroup defaultValue="ts"&gt;
   &lt;TabList&gt;
     &lt;Tab value="ts"&gt;TypeScript&lt;/Tab&gt;
@@ -5174,7 +5178,7 @@ Pythonの例ではSDKを使用していません！[OAuthクライアント実�
   &lt;/TabList&gt;
   &lt;TabPanels&gt;
     &lt;TabPanel value="ts"&gt;
-    `client.list()`を使用してユーザーのテータリポジトリからレコードを読み出すことができます。</seg>
+    `client.list()`を使用してユーザーのテータリポジトリからレコードを読み取ることができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6302,8 +6306,8 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       <tuv lang="en-US">
         <seg>After a successful upload, blobs are placed in temporary storage. They are not accessible for download or distribution while in this state. Servers should "garbage collect" (delete) un-referenced temporary blobs after an appropriate time span (see implementation guidelines below). Blobs which are in temporary storage should not be included in the **`listBlobs`** output.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T064212Z" creationid="yamarten" creationdate="20260103T082316Z">
-        <seg>アップロードに成功した後、blobは一時ストレージに配置されます。この状態では、ダウンロードや配送はできません。サーバーは適切な時間経過後に、参照されていない一時blobを「ガベージコレクション」(削除)すべきです（後述の実装ガイドラインを参照）。一時ストレージのblobは **`listBlobs`** の出力に含められません。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T172635Z" creationid="yamarten" creationdate="20260103T082316Z">
+        <seg>アップロードに成功した後、blobは一時ストレージに配置されます。この状態では、ダウンロードや配送はできません。サーバーは適切な時間経過後に、参照されていない一時blobを「ガベージコレクション」（削除）すべきです（後述の実装ガイドラインを参照）。一時ストレージのblobは **`listBlobs`** の出力に含められません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10742,11 +10746,11 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     &lt;TabPanel value="go"&gt;
     You can read posts from a user's data repository with `RepoListRecords()`:</seg>
       </tuv>
-      <tuv lang="ja">
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T170643Z">
         <seg>各Lexiconには独自のパラメータがあります。`app.bsky.feed.post`では、`repo`（ユーザーのハンドルまたは[DID](#did-resolution)）と、返す投稿数の上限を表す`limit`を指定できます。
     &lt;/TabPanel&gt;
     &lt;TabPanel value="go"&gt;
-    `RepoListRecords()`を使用してユーザーのデータリポジトリから投稿を読み出すことができます。</seg>
+    `RepoListRecords()`を使用してユーザーのデータリポジトリから投稿を読み取ることができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12745,8 +12749,8 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       <tuv lang="en-US">
         <seg>For more context, see [ATProto for distributed systems engineers](/articles/atproto-for-distsys-engineers) and [The ATProto Ethos](/articles/atproto-ethos).</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260104T133307Z" creationid="yamarten" creationdate="20260104T133307Z">
-        <seg>詳しい背景は、[ATProto for distributed systems engineers](/articles/atproto-for-distsys-engineers) と [The ATProto Ethos](/articles/atproto-ethos) を参照してください。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T170416Z" creationid="yamarten" creationdate="20260104T133307Z">
+        <seg>詳しい背景は、[分散システムエンジニアのためのATプロトコル](/articles/atproto-for-distsys-engineers) と [The ATProto Ethos](/articles/atproto-ethos) を参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14416,8 +14420,8 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       <tuv lang="en-US">
         <seg>In general, it is best to use existing permission sets for cleaner UI, but you can also request individual permissions and define your own permission sets as needed. Refer to the [for users](#for-users) section for how these requests appear in the OAuth flow.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T135819Z" creationid="yamarten" creationdate="20260111T135807Z">
-        <seg>一般的には、UIをすっきりさせるために既存の権限セットを使うのが最善ですが、必要に応じて個別の権限を要求したり独自の権限セットを定義することもできます。これらのリクエストがOAuthフローでどのように表示されるかは、[利用者むけ](#for-users)セクションを参照してください。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T170256Z" creationid="yamarten" creationdate="20260111T135807Z">
+        <seg>一般的には、UIをすっきりさせるために既存の権限セットを使うのが最善ですが、必要に応じて個別の権限を要求したり独自の権限セットを定義することもできます。これらのリクエストがOAuthフローでどのように表示されるかは、[利用者向け](#for-users)セクションを参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15357,14 +15361,6 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260111T091124Z">
         <seg>このコードを使用して、`POST /status`ルートを改善してみましょう。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="en-US">
-        <seg>Lexhub is our resource for discovering and browsing Lexicons! TK</seg>
-      </tuv>
-      <tuv lang="ja">
-        <seg>Lexhub is our resource for discovering and browsing Lexicons! TK</seg>
       </tuv>
     </tu>
     <tu>
@@ -17388,8 +17384,8 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       <tuv lang="en-US">
         <seg>Now that we have statuses populating our SQLite, we can produce a timeline of status updates by users. We also use a [DID](https://atproto.com/specs/did)-to-handle resolver so we can show a nice username with the statuses:</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T091844Z">
-        <seg>SQLiteにステータスが取り込まれたので、ユーザーによるステータス更新のタイムラインを作成できます。また、[DID](https://atproto.com/specs/did)からハンドルへのリゾルバも使用して、ステータスとともに適切なユーザー名を表示できるようにします:</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T173209Z">
+        <seg>SQLiteにステータスが取り込まれたので、ユーザーによるステータス更新のタイムラインを作成できます。また、[DID](https://atproto.com/specs/did)からハンドルへのリゾルバも使用して、ステータスとともに適切なユーザー名を表示できるようにします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17645,8 +17641,8 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       <tuv lang="en-US">
         <seg>One of the core primitives of the AT Protocol is the *firehose*. It is an authenticated stream of events used to efficiently sync user updates (posts, likes, follows, handle changes, etc).</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260106T132201Z" creationid="yamarten" creationdate="20260106T132201Z">
-        <seg>ATプロトコルのコアプリミティブの一つは*firehose*です。これは、ユーザーの更新（投稿、いいね、フォロー、ハンドル変更など）を効率的に同期するために使用される認証済イベントストリームです。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T171754Z" creationid="yamarten" creationdate="20260106T132201Z">
+        <seg>ATプロトコルのコアプリミティブの一つは*firehose*です。これは、ユーザーの更新（投稿、いいね、フォロー、ハンドル変更など）を効率的に同期するために使用される認証付きイベントストリームです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23474,8 +23470,8 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       <tuv lang="en-US">
         <seg>The *Skyblur* Lexicon permissions are defined and summarized differently:</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T144458Z" creationid="yamarten" creationdate="20260111T144458Z">
-        <seg>*Skyblur*のLexicon権限は、異なる方法で定義・要約されています:</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T170003Z" creationid="yamarten" creationdate="20260111T144458Z">
+        <seg>*Skyblur*のLexicon権限は、異なる方法で定義・要約されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23522,8 +23518,8 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       <tuv lang="en-US">
         <seg>The AT Protocol (Authenticated Transfer Protocol) is a standard for public conversation and an open-source framework for building social apps.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260108T134937Z" creationid="yamarten" creationdate="20260108T134937Z">
-        <seg>ATプロトコル(Authenticated Transferプロトコル)は公開会話の標準であり、ソーシャルアプリを構築するためのオープンソースフレームワークです。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T173421Z" creationid="yamarten" creationdate="20260108T134937Z">
+        <seg>ATプロトコル（Authenticated Transferプロトコル）は公開会話の標準であり、ソーシャルアプリを構築するためのオープンソースフレームワークです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23586,8 +23582,8 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       <tuv lang="en-US">
         <seg>The App View communicates the current state of its indices by setting the `Atproto-Repo-Rev` response header. This is set by the `rev` of the most recent commit that's been indexed from the requesting user's repository. If the PDS sees this header on a response, it will search for all records that it has locally that are more recent than the provided rev and determine if they affect the App View's response.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T102340Z">
-        <seg>AppView は`Atproto-Repo-Rev`応答ヘッダーを設定することで、現在のインデックス状況を伝えます。これは、要求元のユーザーのリポジトリからインデックスされた最新のコミットの`rev`に設定されます。PDSは応答でこのヘッダーを検出すると、提示されたリビジョンよりも新しいローカルに存在するすべてのレコードを検索し、それらがAppViewの応答に影響を与えるかどうかを判断します。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T171024Z">
+        <seg>AppViewは`Atproto-Repo-Rev`応答ヘッダーを設定することで、現在のインデックス状況を伝えます。これは、要求元のユーザーのリポジトリからインデックスされた最新のコミットの`rev`に設定されます。PDSは応答でこのヘッダーを検出すると、提示されたリビジョンよりも新しいローカルに存在するすべてのレコードを検索し、それらがAppViewの応答に影響を与えるかどうかを判断します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -25708,8 +25704,8 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       <tuv lang="en-US">
         <seg>To do this, we just update `POST /status` to include an additional write to our SQLite DB:</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T092300Z">
-        <seg>これを行うには、SQLite DBへの追加の書き込みを含めるように`POST /status`を更新するだけです:</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T173151Z">
+        <seg>これを行うには、SQLite DBへの追加の書き込みを含めるように`POST /status`を更新するだけです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -28309,8 +28305,8 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       <tuv lang="en-US">
         <seg>Wildcards (*) are allowed in scope string syntax, and grants access to all records — the most common example being `blob:*/*`, for working with images and video. Partial wildcards are *not* supported — for example, `app.bsky.*` is not a valid scope string. If you wanted to request multiple permissions from a particular namespace or Lexicon, you would need to list them out individually, or use a [permission set](#for-lexicon-designers). This is intentional, to avoid overbroad permission requests.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T142931Z" creationid="yamarten" creationdate="20260111T142931Z">
-        <seg>スコープ文字列の構文ではワイルドカード（*）が許可され、すべてのレコードへのアクセスが付与されます。最も一般的な例は、画像や動画の取り扱い向けの`blob:*/*`です。部分的なワイルドカードはサポート*されません*。例えば、`app.bsky.*`は有効なスコープ文字列ではありません。特定の名前空間やLexiconから複数の権限を要求したい場合は、個別に列挙するか、[権限セット](#for-lexicon-designers)を使用する必要があります。これは過剰に広い権限要求を避けるための意図的な設計です。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T165911Z" creationid="yamarten" creationdate="20260111T142931Z">
+        <seg>スコープ文字列の構文ではワイルドカード（\*）が許可され、すべてのレコードへのアクセスが付与されます。最も一般的な例は、画像や動画の取り扱い向けの`blob:*/*`です。部分的なワイルドカードはサポート*されません*。例えば、`app.bsky.*`は有効なスコープ文字列ではありません。特定の名前空間やLexiconから複数の権限を要求したい場合は、個別に列挙するか、[権限セット](#for-lexicon-designers)を使用する必要があります。これは過剰に広い権限要求を避けるための意図的な設計です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -28701,8 +28697,8 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       <tuv lang="en-US">
         <seg>You can click through on the **?** icons to see the details of each permission set:</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T144431Z" creationid="yamarten" creationdate="20260111T144431Z">
-        <seg>**?**アイコンをクリックすると、各権限セットの詳細を確認できます。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T165758Z" creationid="yamarten" creationdate="20260111T144431Z">
+        <seg>「**?**」アイコンをクリックすると、各権限セットの詳細を確認できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -33747,12 +33743,12 @@ export const header = {
   description: 'How blobs are uploaded, referenced, and deleted',
 }</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260103T080432Z" creationid="yamarten" creationdate="20260103T080116Z">
+      <tuv lang="ja" changeid="yamarten" changedate="20260111T172611Z" creationid="yamarten" creationdate="20260103T080116Z">
         <seg>import {Heading} from '@/components/Heading'
 
 export const header = {
   title: 'blobライフサイクル',
-  description: 'How blobs are uploaded, referenced, and deleted',
+  description: 'blobのアップロード、参照、削除の方法',
 }</seg>
       </tuv>
     </tu>

@@ -75,7 +75,7 @@ msgstr ""
 "  </TabList>\n"
 "  <TabPanels>\n"
 "    <TabPanel value=\"ts\">\n"
-"    `client.list()`を使用してユーザーのテータリポジトリからレコードを読み出すことができます。\n"
+"    `client.list()`を使用してユーザーのテータリポジトリからレコードを読み取ることができます。\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:23
@@ -107,7 +107,7 @@ msgstr ""
 "    各Lexiconには独自のパラメータがあります。`app.bsky.feed.post`では、`repo`（ユーザーのハンドルまたは[DID](#did-resolution)）と、返す投稿数の上限を表す`limit`を指定できます。\n"
 "    </TabPanel>\n"
 "    <TabPanel value=\"go\">\n"
-"    `RepoListRecords()`を使用してユーザーのデータリポジトリから投稿を読み出すことができます。\n"
+"    `RepoListRecords()`を使用してユーザーのデータリポジトリから投稿を読み取ることができます。\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:37

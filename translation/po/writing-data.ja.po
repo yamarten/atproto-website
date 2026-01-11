@@ -207,7 +207,7 @@ msgid ""
 "</Note>\n"
 msgstr ""
 "<Note>\n"
-"これはその時点で認証しているユーザーセッションで投稿します。別のユーザーとして投稿したい場合、再度[`ServerCreateSession()`](/guides/sdk#creating-a-client)を呼んで新規セッションを取得してください。\n"
+"これはその時点で認証しているユーザーセッションで投稿します。別のユーザーとして投稿したい場合、再度[`ServerCreateSession()`](/guides/sdk-auth#creating-a-client)を呼んで新規セッションを取得してください。\n"
 "</Note>\n"
 
 #. type: Plain text
@@ -280,7 +280,7 @@ msgstr "アプリケーションからのすべてのリクエストはユーザ
 #: src/guides/writing-data/en.mdx:91
 #, no-wrap
 msgid "The App View communicates the current state of its indices by setting the `Atproto-Repo-Rev` response header. This is set by the `rev` of the most recent commit that's been indexed from the requesting user's repository. If the PDS sees this header on a response, it will search for all records that it has locally that are more recent than the provided rev and determine if they affect the App View's response.\n"
-msgstr "AppView は`Atproto-Repo-Rev`応答ヘッダーを設定することで、現在のインデックス状況を伝えます。これは、要求元のユーザーのリポジトリからインデックスされた最新のコミットの`rev`に設定されます。PDSは応答でこのヘッダーを検出すると、提示されたリビジョンよりも新しいローカルに存在するすべてのレコードを検索し、それらがAppViewの応答に影響を与えるかどうかを判断します。\n"
+msgstr "AppViewは`Atproto-Repo-Rev`応答ヘッダーを設定することで、現在のインデックス状況を伝えます。これは、要求元のユーザーのリポジトリからインデックスされた最新のコミットの`rev`に設定されます。PDSは応答でこのヘッダーを検出すると、提示されたリビジョンよりも新しいローカルに存在するすべてのレコードを検索し、それらがAppViewの応答に影響を与えるかどうかを判断します。\n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:93
@@ -504,7 +504,7 @@ msgid ""
 "- [URI scheme](/specs/at-uri-scheme)\n"
 msgstr ""
 "- [読み取りと書き込み](/guides/reads-and-writes)\n"
-"- [データ読み出し](/guides/reading-data)\n"
+"- [データ読み取り](/guides/reading-data)\n"
 "- [アカウントと削除](/guides/writing-data)\n"
 "- [ソーシャルグラフ](/guides/social-graph)\n"
 "- [レコードキー仕様](/specs/record-key)\n"

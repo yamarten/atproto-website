@@ -76,7 +76,7 @@ msgstr "<Heading level={2} id=\"the-authenticated-transfer-protocol\">Authentica
 #: src/guides/the-at-stack/en.mdx:15
 #, no-wrap
 msgid "The AT Protocol (Authenticated Transfer Protocol) is a standard for public conversation and an open-source framework for building social apps.\n"
-msgstr "ATプロトコル(Authenticated Transferプロトコル)は公開会話の標準であり、ソーシャルアプリを構築するためのオープンソースフレームワークです。\n"
+msgstr "ATプロトコル（Authenticated Transferプロトコル）は公開会話の標準であり、ソーシャルアプリを構築するためのオープンソースフレームワークです。\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:17
@@ -406,4 +406,4 @@ msgstr ""
 "- [indigo](https://github.com/bluesky-social/indigo)リポジトリには、[リレー](https://github.com/bluesky-social/indigo/blob/main/cmd/relay/README.md)のコードとGo SDKを含む、私たちのGoツールの大半が含まれています。\n"
 "- 他にも私たちのGo製ATコマンドラインツールである https://github.com/bluesky-social/goat があります。\n"
 "- https://github.com/bluesky-social/atproto リポジトリには、[PDS](https://github.com/bluesky-social/atproto/tree/main/packages/pds)のコードとTypeScript SDKを含む、TypeScriptツールの大半が含まれています。\n"
-"- 私たちが日常的に使うコミュニティツールも多数あります。例えば、Rustで書かれた[Microcosm](https://www.microcosm.blue/)のツール群は、専用のAppViewを必要とせずにクエリ層を構築するためのAPI群を提供します。詳細はhttps://constellation.microcosm.blue/を参照してください。\n"
+"- 私たちが日常的に使うコミュニティツールも多数あります。例えば、Rustで書かれた[Microcosm](https://www.microcosm.blue/)のツール群は、専用のAppViewを必要とせずにクエリ層を構築するためのAPI群を提供します。詳細は https://constellation.microcosm.blue/ を参照してください。\n"

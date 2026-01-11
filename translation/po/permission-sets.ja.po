@@ -89,7 +89,7 @@ msgstr "ATプロトコルリソースの制御は[権限](/specs/permission)で�
 #: src/guides/permission-sets/en.mdx:20
 #, no-wrap
 msgid "In general, it is best to use existing permission sets for cleaner UI, but you can also request individual permissions and define your own permission sets as needed. Refer to the [for users](#for-users) section for how these requests appear in the OAuth flow.\n"
-msgstr "一般的には、UIをすっきりさせるために既存の権限セットを使うのが最善ですが、必要に応じて個別の権限を要求したり独自の権限セットを定義することもできます。これらのリクエストがOAuthフローでどのように表示されるかは、[利用者むけ](#for-users)セクションを参照してください。\n"
+msgstr "一般的には、UIをすっきりさせるために既存の権限セットを使うのが最善ですが、必要に応じて個別の権限を要求したり独自の権限セットを定義することもできます。これらのリクエストがOAuthフローでどのように表示されるかは、[利用者向け](#for-users)セクションを参照してください。\n"
 
 #. type: Plain text
 #: src/guides/permission-sets/en.mdx:22
@@ -195,7 +195,7 @@ msgstr ""
 #: src/guides/permission-sets/en.mdx:59
 #, no-wrap
 msgid "Wildcards (*) are allowed in scope string syntax, and grants access to all records — the most common example being `blob:*/*`, for working with images and video. Partial wildcards are *not* supported — for example, `app.bsky.*` is not a valid scope string. If you wanted to request multiple permissions from a particular namespace or Lexicon, you would need to list them out individually, or use a [permission set](#for-lexicon-designers). This is intentional, to avoid overbroad permission requests.\n"
-msgstr "スコープ文字列の構文ではワイルドカード（*）が許可され、すべてのレコードへのアクセスが付与されます。最も一般的な例は、画像や動画の取り扱い向けの`blob:*/*`です。部分的なワイルドカードはサポート*されません*。例えば、`app.bsky.*`は有効なスコープ文字列ではありません。特定の名前空間やLexiconから複数の権限を要求したい場合は、個別に列挙するか、[権限セット](#for-lexicon-designers)を使用する必要があります。これは過剰に広い権限要求を避けるための意図的な設計です。\n"
+msgstr "スコープ文字列の構文ではワイルドカード（\\*）が許可され、すべてのレコードへのアクセスが付与されます。最も一般的な例は、画像や動画の取り扱い向けの`blob:*/*`です。部分的なワイルドカードはサポート*されません*。例えば、`app.bsky.*`は有効なスコープ文字列ではありません。特定の名前空間やLexiconから複数の権限を要求したい場合は、個別に列挙するか、[権限セット](#for-lexicon-designers)を使用する必要があります。これは過剰に広い権限要求を避けるための意図的な設計です。\n"
 
 #. type: Plain text
 #: src/guides/permission-sets/en.mdx:61
@@ -567,7 +567,7 @@ msgstr "この画像では、*Bluesky*権限と*Skyblur*権限という2つの�
 #: src/guides/permission-sets/en.mdx:198
 #, no-wrap
 msgid "You can click through on the **?** icons to see the details of each permission set:\n"
-msgstr "**?**アイコンをクリックすると、各権限セットの詳細を確認できます。\n"
+msgstr "「**?**」アイコンをクリックすると、各権限セットの詳細を確認できます。\n"
 
 #. type: Plain text
 #: src/guides/permission-sets/en.mdx:202
@@ -591,7 +591,7 @@ msgstr "展開されたATプロトコルとBlueskyの権限には、OAuthログ�
 #: src/guides/permission-sets/en.mdx:206
 #, no-wrap
 msgid "The *Skyblur* Lexicon permissions are defined and summarized differently:\n"
-msgstr "*Skyblur*のLexicon権限は、異なる方法で定義・要約されています:\n"
+msgstr "*Skyblur*のLexicon権限は、異なる方法で定義・要約されています。\n"
 
 #. type: Plain text
 #: src/guides/permission-sets/en.mdx:210
@@ -602,7 +602,7 @@ msgid ""
 "</Container>\n"
 msgstr ""
 "<Container>\n"
-"  <Image src={did} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
+"  <Image src={lexicon} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
 "</Container>\n"
 
 #. type: Plain text

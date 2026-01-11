@@ -1372,7 +1372,7 @@ msgstr "<Heading level={2} id=\"step-7-listing-the-latest-statuses\">ステッ�
 #: src/guides/applications/en.mdx:537
 #, no-wrap
 msgid "Now that we have statuses populating our SQLite, we can produce a timeline of status updates by users. We also use a [DID](https://atproto.com/specs/did)-to-handle resolver so we can show a nice username with the statuses:\n"
-msgstr "SQLiteにステータスが取り込まれたので、ユーザーによるステータス更新のタイムラインを作成できます。また、[DID](https://atproto.com/specs/did)からハンドルへのリゾルバも使用して、ステータスとともに適切なユーザー名を表示できるようにします:\n"
+msgstr "SQLiteにステータスが取り込まれたので、ユーザーによるステータス更新のタイムラインを作成できます。また、[DID](https://atproto.com/specs/did)からハンドルへのリゾルバも使用して、ステータスとともに適切なユーザー名を表示できるようにします。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:545
@@ -1520,7 +1520,7 @@ msgstr "これは、ユーザーがアプリの使用中に自分の変更を確
 #: src/guides/applications/en.mdx:601
 #, no-wrap
 msgid "To do this, we just update `POST /status` to include an additional write to our SQLite DB:\n"
-msgstr "これを行うには、SQLite DBへの追加の書き込みを含めるように`POST /status`を更新するだけです:\n"
+msgstr "これを行うには、SQLite DBへの追加の書き込みを含めるように`POST /status`を更新するだけです。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:609

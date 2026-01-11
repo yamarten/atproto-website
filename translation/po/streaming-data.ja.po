@@ -59,7 +59,7 @@ msgstr "<Heading level={2} id=\"streaming-data\">データストリーミング<
 #: src/guides/streaming-data/en.mdx:9
 #, no-wrap
 msgid "One of the core primitives of the AT Protocol is the *firehose*. It is an authenticated stream of events used to efficiently sync user updates (posts, likes, follows, handle changes, etc).\n"
-msgstr "ATプロトコルのコアプリミティブの一つは*firehose*です。これは、ユーザーの更新（投稿、いいね、フォロー、ハンドル変更など）を効率的に同期するために使用される認証済イベントストリームです。\n"
+msgstr "ATプロトコルのコアプリミティブの一つは*firehose*です。これは、ユーザーの更新（投稿、いいね、フォロー、ハンドル変更など）を効率的に同期するために使用される認証付きイベントストリームです。\n"
 
 #. type: Plain text
 #: src/guides/streaming-data/en.mdx:11
