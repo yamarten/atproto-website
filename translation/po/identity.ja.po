@@ -35,18 +35,16 @@ msgid ""
 "}\n"
 msgstr ""
 "export const header = {\n"
-"title: 'Identity',\n"
-"description:\n"
-"'AT プロトコルがユーザー ID を処理する方法。',\n"
+"  title: 'Identity',\n"
+"  description:\n"
+"    'ATプロトコルがユーザーIDを処理する方法',\n"
 "}\n"
-"\n"
-"# Identity\n"
 
 #. type: Plain text
 #: src/guides/identity/en.mdx:10
 #, no-wrap
 msgid "The atproto identity system has a number of requirements:\n"
-msgstr "atproto ID システムには、いくつかの要件があります。\n"
+msgstr "atprotoのIDシステムには、いくつかの要件があります。\n"
 
 #. type: Plain text
 #: src/guides/identity/en.mdx:17
@@ -59,18 +57,18 @@ msgid ""
 "* **Usability.** Users should have human-readable and memorable names.\n"
 "* **Portability.** Identities should be portable across services. Changing a provider should not cause a user to lose their identity, social graph, or content.\n"
 msgstr ""
-"* **ID プロビジョニング。** ユーザーは、サービス間で安定したグローバル ID を作成できる必要があります。これらの ID は、コンテンツへのリンクが安定していることを保証するために、ほとんど変更されない必要があります。\n"
-"* **公開キーの配布。** 分散システムは、データの信頼性を証明し、エンドツーエンドのプライバシーを提供するために暗号化に依存しています。ID システムは、強力なセキュリティで公開キーを公開する必要があります。\n"
-"* **キーのローテーション。** ユーザーは、ID を中断することなくキー マテリアルをローテーションできる必要があります。\n"
-"* **サービスの検出。** ユーザーと対話するには、アプリケーションは、特定のユーザーが使用しているサービスを検出できる必要があります。\n"
-"* **使いやすさ。** ユーザーの名前は、人間が読みやすく、覚えやすいものにする必要があります。\n"
-"* **移植性。** ID はサービス間で移植可能である必要があります。プロバイダーを変更しても、ユーザーが ID、ソーシャル グラフ、またはコンテンツを失うことはありません。\n"
+"* **IDプロビジョニング**。ユーザーは、サービス間で安定したグローバルIDを作成できる必要があります。これらのIDは、コンテンツへのリンクが安定していることを保証するために、ほとんど変更されない必要があります。\n"
+"* **公開鍵の配布**。分散システムは、データの信頼性を証明し、エンドツーエンドのプライバシーを提供するために暗号化に依存しています。IDシステムは、強力なセキュリティで公開鍵を公開する必要があります。\n"
+"* **鍵のローテーション**。ユーザーは、IDを中断することなく鍵マテリアルをローテーションできる必要があります。\n"
+"* **サービスの検出**。ユーザーと対話するには、アプリケーションは、特定のユーザーが使用しているサービスを検出できる必要があります。\n"
+"* **使いやすさ**。ユーザーの名前は、人間が読みやすく、覚えやすいものにする必要があります。\n"
+"* **移植性**。IDはサービス間で移植可能である必要があります。プロバイダーを変更しても、ユーザーがID、ソーシャルグラフ、またはコンテンツを失うことはありません。\n"
 
 #. type: Plain text
 #: src/guides/identity/en.mdx:19
 #, no-wrap
 msgid "Using the atproto identity system gives applications the tools for end-to-end encryption, signed user data, service sign-in, and general interoperation.\n"
-msgstr "このシステムを採用すると、エンドツーエンドの暗号化、署名されたユーザー データ、サービス サインイン、および一般的な相互運用のためのツールがアプリケーションに提供されるはずです。\n"
+msgstr "このシステムを採用すると、エンドツーエンドの暗号化、署名されたユーザーデータ、サービスサインイン、および一般的な相互運用のためのツールがアプリケーションに提供されるはずです。\n"
 
 #. type: Plain text
 #: src/guides/identity/en.mdx:21
@@ -82,13 +80,13 @@ msgstr "<Heading level={2} id=\"identifiers\">識別子</Heading>\n"
 #: src/guides/identity/en.mdx:23
 #, no-wrap
 msgid "We use two interrelated forms of identifiers: _handles_ and _DIDs_. Handles are DNS names while DIDs are a [W3C standard](https://www.w3.org/TR/did-core/) with multiple implementations which provide secure & stable IDs. AT Protocol supports the DID PLC and DID Web variants.\n"
-msgstr "私たちは、_ハンドル_ と _DID_ という 2 つの相互に関連する識別子形式を使用します。ハンドルは DNS 名ですが、DID は安全で安定した ID として機能する [新しい W3C 標準](https://www.w3.org/TR/did-core/) です。\n"
+msgstr "私たちは、*ハンドル*と*DID*という2つの相互に関連する識別子形式を使用します。ハンドルはDNS名ですが、DIDは安全で安定したIDとして機能する[新しいW3C標準](https://www.w3.org/TR/did-core/)です。\n"
 
 #. type: Plain text
 #: src/guides/identity/en.mdx:25
 #, no-wrap
 msgid "The following are all valid user identifiers:\n"
-msgstr "以下はすべて有効なユーザー識別子です:\n"
+msgstr "以下はすべて有効なユーザー識別子です。\n"
 
 #. type: Plain text
 #: src/guides/identity/en.mdx:31
@@ -103,14 +101,14 @@ msgstr ""
 "```\n"
 "alice.host.com\n"
 "at://alice.host.com\n"
-"at://did:plc:bv6ggog3tya2z3vxsub7hnal\n"
+"did:plc:bv6ggog3tya2z3vxsub7hnal\n"
 "```\n"
 
 #. type: Plain text
 #: src/guides/identity/en.mdx:33
 #, no-wrap
 msgid "The relationship between them can be visualized as:\n"
-msgstr "これらの関係は次のように視覚化できます:\n"
+msgstr "これらの関係は次のように視覚化できます。\n"
 
 #. type: Plain text
 #: src/guides/identity/en.mdx:48
@@ -150,7 +148,7 @@ msgstr ""
 #: src/guides/identity/en.mdx:50
 #, no-wrap
 msgid "The DNS handle is a user-facing identifier — it should be displayed in user interfaces and promoted as a way to find users. Applications resolve handles to DIDs and then use the DID as the canonical identifier for accounts. Any DID can be rapidly resolved to a DID document which includes public keys and user services.\n"
-msgstr "DNS ハンドルはユーザー向けの識別子です。UI に表示され、ユーザーを見つける方法として宣伝される必要があります。アプリケーションはハンドルを DID に解決し、DID を安定した正規の識別子として使用します。その後、DID は、公開キーとユーザー サービスを含む DID ドキュメントに安全に解決できます。\n"
+msgstr "DNSハンドルはユーザー向けの識別子です。UIに表示され、ユーザーを見つける方法として宣伝される必要があります。アプリケーションはハンドルをDIDに解決し、DIDを安定した正規の識別子として使用します。その後、DID は公開鍵とユーザーサービスを含むDIDドキュメントに安全に解決できます。\n"
 
 #. type: Plain text
 #: src/guides/identity/en.mdx:63
@@ -170,29 +168,29 @@ msgid ""
 "</DescriptionList>\n"
 msgstr ""
 "<DescriptionList>\n"
-"<Description title=\"Handles\">ハンドルは DNS 名です。これらは `com.atproto.identity.resolveHandle` XRPC メソッドを使用して解決され、DID ドキュメント内の一致するエントリによって確認される必要があります。詳細は <a href=\"/specs/handle\">ハンドル仕様</a> をご覧ください。</Description>\n"
-"<Description title=\"DID\">DID は、安定した安全な ID を提供するための新しい <a href=\"https://www.w3.org/TR/did-core/\">W3C 標準</a> です。これらは、ユーザーの安定した正規 ID として使用されます。AT プロトコルでの使用方法の詳細については、<a href=\"/specs/did\">DID 仕様</a> をご覧ください。</Description>\n"
-"<Description title=\"DID ドキュメント\">\n"
-"DID ドキュメントは、DID レジストリによってホストされる標準化されたオブジェクトです。これらには次の情報が含まれます:\n"
-"<ul>\n"
-"<li>DID に関連付けられたハンドル。</li>\n"
-"<li>署名キー。</li>\n"
-"<li>ユーザーの PDS の URL。</li>\n"
-"</ul>\n"
-"</Description>\n"
+"  <Description title=\"ハンドル\">ハンドルはDNS名です。これらは`com.atproto.identity.resolveHandle` XRPCメソッドを使用して解決され、DIDドキュメント内の一致するエントリによって確認される必要があります。詳細は<a href=\"/specs/handle\">ハンドル仕様</a>をご覧ください。</Description>\n"
+"  <Description title=\"DID\">DIDは、安定した安全なIDを提供するための新しい<a href=\"https://www.w3.org/TR/did-core/\">W3C標準</a>です。これは、ユーザーの安定した正規IDとして使用されます。ATプロトコルでの使用方法の詳細については、<a href=\"/specs/did\">DID仕様</a>をご覧ください。</Description>\n"
+"  <Description title=\"DIDドキュメント\">\n"
+"    DIDドキュメントは、DIDレジストリによってホストされる標準化されたオブジェクトです。これらには次の情報が含まれます。\n"
+"    <ul>\n"
+"      <li>DIDに関連付けられたハンドル</li>\n"
+"      <li>署名鍵</li>\n"
+"      <li>ユーザーのPDSのURL</li>\n"
+"    </ul>\n"
+"  </Description>\n"
 "</DescriptionList>\n"
 
 #. type: Plain text
 #: src/guides/identity/en.mdx:66
 #, no-wrap
 msgid "## DID Methods\n"
-msgstr "<Heading level={2} id=\"did-methods\">DID メソッド</Heading>\n"
+msgstr "<Heading level={2} id=\"did-methods\">DIDメソッド</Heading>\n"
 
 #. type: Plain text
 #: src/guides/identity/en.mdx:68
 #, no-wrap
 msgid "The [DID standard](https://www.w3.org/TR/did-core/) describes a framework for different \"methods\" of publishing and resolving DIDs to the [DID Document](https://www.w3.org/TR/did-core/#core-properties), instead of specifying a single mechanism. A variety of existing methods [have been registered](https://w3c.github.io/did-spec-registries/#did-methods), with different features and properties. We established the following criteria for use with atproto:\n"
-msgstr "[DID 標準](https://www.w3.org/TR/did-core/) は、DID を [DID ドキュメント](https://www.w3.org/TR/did-core/#core-properties) に公開および解決するカスタム「メソッド」をサポートしています。さまざまな既存のメソッドが [公開](https://w3c.github.io/did-spec-registries/#did-methods) されているため、この提案に含めるための基準を確立する必要があります:\n"
+msgstr "[DID標準](https://www.w3.org/TR/did-core/)は、DIDを公開し、[DIDドキュメント](https://www.w3.org/TR/did-core/#core-properties)に解決するカスタム「メソッド」をサポートしています。さまざまな既存のメソッドが[公開](https://w3c.github.io/did-spec-registries/#did-methods)されているため、この提案に含めるための基準を確立する必要があります。\n"
 
 #. type: Plain text
 #: src/guides/identity/en.mdx:76
@@ -206,19 +204,19 @@ msgid ""
 "- **Key rotation**. Users must be able to rotate keypairs without losing their identity.\n"
 "- **Decentralized governance**. The network should not be governed by a single stakeholder; it must be an open network or a consortium of providers.\n"
 msgstr ""
-"- **強力な一貫性。** 特定の DID に対して、解決クエリによって生成される有効なドキュメントは常に 1 つだけである必要があります。 (一部のネットワークでは、これは確率的なトランザクションの最終性に左右される可能性があります。)\n"
+"- **強力な一貫性**。特定のDIDに対して、解決クエリによって生成される有効なドキュメントは常に1つだけである必要があります。（一部のネットワークでは、これは確率的なトランザクションの最終性に左右される可能性があります。）\n"
 "- **高可用性**。解決クエリは確実に成功する必要があります。\n"
-"- **オンライン API**。クライアントは、標準 API を介して新しい DID ドキュメントを公開できる必要があります。\n"
+"- **オンラインAPI**。クライアントは、標準APIを介して新しいDIDドキュメントを公開できる必要があります。\n"
 "- **安全**。ネットワークは、オペレーター、MITM、およびその他のユーザーからの攻撃から保護する必要があります。\n"
-"- **低コスト**。DID ドキュメントの作成と更新は、サービスとユーザーにとって手頃な価格である必要があります。\n"
-"- **キー ローテーション**。ユーザーは、ID を失うことなくキー ペアをローテーションできる必要があります。\n"
-"- **分散型ガバナンス**。ネットワークは単一の利害関係者によって管理されるべきではなく、オープン ネットワークまたはプロバイダーのコンソーシアムである必要があります。\n"
+"- **低コスト**。DIDドキュメントの作成と更新は、サービスとユーザーにとって手頃な価格である必要があります。\n"
+"- **鍵ローテーション**。ユーザーは、IDを失うことなく鍵ペアをローテーションできる必要があります。\n"
+"- **分散型ガバナンス**。ネットワークは単一の利害関係者によって管理されるべきではなく、オープンネットワークまたはプロバイダーのコンソーシアムである必要があります。\n"
 
 #. type: Plain text
 #: src/guides/identity/en.mdx:78
 #, no-wrap
 msgid "When we started the project, none of the existing DID methods met all of these criteria. Therefore, we chose to support both the existing [did-web](https://w3c-ccg.github.io/did-method-web/) method (which is simple), and a novel method we created called [DID PLC](https://github.com/bluesky-social/did-method-plc).\n"
-msgstr "プロジェクト開始時点で、DID 方式のいずれも当社の基準を完全に満たしていませんでした。 **そのため、私たちは[did-web](https://w3c-ccg.github.io/did-method-web/)と、私たちが作成した[DID PLC](https://github.com/bluesky-social/did-method-plc)という新規の方法をサポートすることを選択しました。**\n"
+msgstr "プロジェクト開始時点で、DIDメソッドのいずれも当社の基準を完全には満たしていませんでした。そのため、私たちは[did-web](https://w3c-ccg.github.io/did-method-web/)と、私たちが作成した[DID PLC](https://github.com/bluesky-social/did-method-plc)という新規メソッドをサポートすることを選択しました。\n"
 
 #. type: Plain text
 #: src/guides/identity/en.mdx:80
@@ -230,37 +228,25 @@ msgstr "<Heading level={2} id=\"handle-resolution\">ハンドル解決</Heading>
 #: src/guides/identity/en.mdx:82
 #, no-wrap
 msgid "Handles in atproto are domain names which resolve to a DID, which in turn resolves to a DID Document containing the user's signing key and hosting service.\n"
-msgstr "atproto のハンドルは、DID に解決されるドメイン名です。DID は、ユーザーの署名公開鍵とホスティング サービスを含む DID ドキュメントに解決されます。\n"
+msgstr "atprotoのハンドルは、DIDに解決されるドメイン名です。DIDは、ユーザーの署名公開鍵とホスティングサービスを含むDIDドキュメントに解決されます。\n"
 
 #. type: Plain text
 #: src/guides/identity/en.mdx:84
 #, no-wrap
 msgid "Handle resolution uses either a DNS TXT record, or an HTTPS well-known endpoint. Details can be found in the [Handle specification](/specs/handle).\n"
-msgstr ""
-"ハンドル解決では、`com.atproto.identity.resolveHandle` XRPC メソッドを使用します。メソッド呼び出しは、ハンドルによって識別されるサーバーに送信され、ハンドルはパラメーターとして渡される必要があります。\n"
-"\n"
-"疑似 TypeScript でのアルゴリズムは次のとおりです:\n"
-"\n"
-"```typescript\n"
-"async function resolveHandle(handle: string) {\n"
-"  const origin = `https://${handle}`\n"
-"  const res = await xrpc(origin, 'com.atproto.identity.resolveHandle', {handle})\n"
-"  assert(typeof res?.did === 'string' && res.did.startsWith('did:'))\n"
-"  return res.did\n"
-"}\n"
-"```\n"
+msgstr "ハンドル解決には、DNSのTXTレコードか、HTTPSのwell-knownエンドポイントを利用します。詳細は[ハンドル仕様](/specs/handle)を参照してください。\n"
 
 #. type: Plain text
 #: src/guides/identity/en.mdx:87
 #, no-wrap
 msgid "### Example: Hosting service\n"
-msgstr "<Heading level={3} id=\"example-hosting-service\">例: ホスティング サービス</Heading>\n"
+msgstr "<Heading level={3} id=\"example-hosting-service\">例：ホスティングサービス</Heading>\n"
 
 #. type: Plain text
 #: src/guides/identity/en.mdx:89
 #, no-wrap
 msgid "Consider a scenario where a hosting service is using PLC and is providing the handle for the user as a subdomain:\n"
-msgstr "ホスティング サービスが PLC を使用していて、ユーザーのハンドルをサブドメインとして提供しているシナリオを考えてみましょう:\n"
+msgstr "ホスティングサービスがPLCを使用していて、ユーザーのハンドルをサブドメインとして提供しているシナリオを考えてみましょう。\n"
 
 #. type: Plain text
 #: src/guides/identity/en.mdx:93
@@ -270,26 +256,21 @@ msgid ""
 "- The DID: `did:plc:12345`\n"
 "- The hosting service: `https://pds.com`\n"
 msgstr ""
-"- ハンドル: `alice.pds.com`\n"
-"- DID: `did:plc:12345`\n"
-"- ホスティング サービス: `https://pds.com`\n"
+"- ハンドル：`alice.pds.com`\n"
+"- DID：`did:plc:12345`\n"
+"- ホスティングサービス：`https://pds.com`\n"
 
 #. type: Plain text
 #: src/guides/identity/en.mdx:95
 #, no-wrap
 msgid "At first, all we know is `alice.pds.com`, so we look up the DNS TXT record `_atproto.alice.pds.com`. This tells us the DID: `did:plc:12345`.\n"
-msgstr ""
-"まず、わかっているのは`alice.pds.com` なので、`alice.pds.com` で `com.atproto.identity.resolveHandle()` を呼び出します。これにより、DID がわかります。\n"
-"\n"
-"```typescript\n"
-"await xrpc.service('https://alice.pds.com').com.atproto.identity.resolveHandle() // => {did: 'did:plc:12345'}\n"
-"```\n"
+msgstr "まず、わかっているのは`alice.pds.com`なので、`_atproto.alice.pds.com`のDNS TXTレコードを見てみます。これにより、DIDが`did:plc:12345`であるとわかります。\n"
 
 #. type: Plain text
 #: src/guides/identity/en.mdx:97
 #, no-wrap
 msgid "Next we query the PLC directory for the DID, so that we can learn the hosting service's endpoint and the user's key material.\n"
-msgstr "次に、返された DID で PLC 解決メソッドを呼び出し、ホスティング サービスのエンドポイントとユーザーのキー マテリアルを確認します。\n"
+msgstr "次に、返されたDIDでPLCディレクトリに問い合わせ、ホスティングサービスのエンドポイントとユーザーの鍵マテリアルを確認します。\n"
 
 #. type: Plain text
 #: src/guides/identity/en.mdx:106
@@ -308,7 +289,7 @@ msgstr ""
 "await didPlc.resolve('did:plc:12345') /* => {\n"
 "  id: 'did:plc:12345',\n"
 "  alsoKnownAs: `https://alice.pds.com`,\n"
-"  verifyMethod: [...],\n"
+"  verificationMethod: [...],\n"
 "  service: [{serviceEndpoint: 'https://pds.com', ...}]\n"
 "}*/\n"
 "```\n"
@@ -317,47 +298,19 @@ msgstr ""
 #: src/guides/identity/en.mdx:108
 #, no-wrap
 msgid "We can now communicate with `https://pds.com` to access Alice's data.\n"
-msgstr ""
-"これで、`https://pds.com` と通信して Alice のデータにアクセスできるようになりました。\n"
-"\n"
-"<Heading level={3} id=\"example-hosting-service-with-different-domain-name\">例: 別のドメイン名を持つホスティング サービス</Heading>\n"
-"\n"
-"ユーザーが独自のドメイン名を指定していることを除いて、前と同じシナリオがあるとします:\n"
-"\n"
-"- ハンドル: `alice.com` (これは前とは異なります)\n"
-"- DID: `did:plc:12345`\n"
-"- ホスティング サービス: `https://pds.com`\n"
-"\n"
-"`alice.com` で `com.atproto.identity.resolveHandle()` を呼び出して、DID を取得します。\n"
-"\n"
-"```typescript\n"
-"await xrpc.service('https://alice.com').com.atproto.identity.resolveHandle() // => {did: 'did:plc:12345'}\n"
-"```\n"
-"\n"
-"次に、前と同じように DID を解決します:\n"
-"\n"
-"```typescript\n"
-"await didPlc.resolve('did:plc:12345') /* => {\n"
-"  id: 'did:plc:12345',\n"
-"  alsoKnownAs: `https://alice.com`,\n"
-"  verifyMethod: [...],\n"
-"  service: [{serviceEndpoint: 'https://pds.com', ...}]\n"
-"}*/\n"
-"```\n"
-"\n"
-"これで、`https://pds.com` と通信して Alice のデータにアクセスできます。`https://alice.com` エンドポイントは、`com.atproto.identity.resolveHandle()` 呼び出しを処理するためだけに機能します。実際のユーザー データは `pds.com` にあります。\n"
+msgstr "これで、`https://pds.com`と通信してAliceのデータにアクセスできるようになりました。\n"
 
 #. type: Plain text
 #: src/guides/identity/en.mdx:110
 #, no-wrap
 msgid "### Example: Self-hosted\n"
-msgstr "<Heading level={3} id=\"example-self-hosting\">例: セルフ ホスト</Heading>\n"
+msgstr "<Heading level={3} id=\"example-self-hosting\">例：セルフホスト</Heading>\n"
 
 #. type: Plain text
 #: src/guides/identity/en.mdx:112
 #, no-wrap
 msgid "Let's consider a self-hosting scenario. If it's using `did:plc`, it would look something like:\n"
-msgstr "セルフ ホスティングのシナリオを考えてみましょう。`did:plc` を使用している場合は、次のようになります。\n"
+msgstr "セルフホストのシナリオを考えてみましょう。`did:plc`を使用している場合は、次のようになります。\n"
 
 #. type: Plain text
 #: src/guides/identity/en.mdx:116
@@ -367,15 +320,15 @@ msgid ""
 "- The DID: `did:plc:12345`\n"
 "- The hosting service: `https://alice.com`\n"
 msgstr ""
-"- ハンドル: `alice.com`\n"
-"- DID: `did:plc:12345`\n"
-"- ホスティング サービス: `https://alice.com`\n"
+"- ハンドル：`alice.com`\n"
+"- DID：`did:plc:12345`\n"
+"- ホスティング サービス：`https://alice.com`\n"
 
 #. type: Plain text
 #: src/guides/identity/en.mdx:118
 #, no-wrap
 msgid "However, **if the self-hoster is confident they will retain ownership of the domain name**, they can use `did:web` instead of `did:plc`:\n"
-msgstr "ただし、**セルフ ホスティング側がドメイン名の所有権を保持できると確信している場合**、`did:plc` ではなく `did:web` を使用できます。\n"
+msgstr "ただし、**セルフホストする人がドメイン名の所有権を保持し続けられると確信している場合**、`did:plc`ではなく`did:web`を使用できます。\n"
 
 #. type: Plain text
 #: src/guides/identity/en.mdx:122
@@ -385,26 +338,21 @@ msgid ""
 "- The DID: `did:web:alice.com`\n"
 "- The hosting service: `https://alice.com`\n"
 msgstr ""
-"- ハンドル: `alice.com`\n"
-"- DID: `did:web:alice.com`\n"
-"- ホスティング サービス: `https://alice.com`\n"
+"- ハンドル：`alice.com`\n"
+"- DID：`did:web:alice.com`\n"
+"- ホスティングサービス：`https://alice.com`\n"
 
 #. type: Plain text
 #: src/guides/identity/en.mdx:124
 #, no-wrap
 msgid "We can resolve the handle the same way, resolving `_atproto.alice.com`, which returns the DID: `did:web:alice.com`\n"
-msgstr ""
-"DID を取得するには、`alice.com` で `com.atproto.identity.resolveHandle()` を呼び出します。\n"
-"\n"
-"```typescript\n"
-"await xrpc.service('https://alice.com').com.atproto.identity.resolveHandle() // => {did: 'did:web:alice.com'}\n"
-"```\n"
+msgstr "解決方法は同じく`_atproto.alice.com`で、DIDとして`did:web:alice.com`が得られます。\n"
 
 #. type: Plain text
 #: src/guides/identity/en.mdx:126
 #, no-wrap
 msgid "Which we then resolve:\n"
-msgstr "次に、`did:web` を使用して解決します:\n"
+msgstr "これを解決すると以下のようになります。\n"
 
 #. type: Plain text
 #: src/guides/identity/en.mdx:134
@@ -423,7 +371,7 @@ msgstr ""
 "await didWeb.resolve('did:web:alice.com') /* => {\n"
 "  id: 'did:web:alice.com',\n"
 "  alsoKnownAs: `https://alice.com`,\n"
-"  verifyMethod: [...],\n"
+"  verificationMethod: [...],\n"
 "  service: [{serviceEndpoint: 'https://alice.com', ...}]\n"
 "}*/\n"
 "```\n"

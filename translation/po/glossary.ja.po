@@ -29,9 +29,9 @@ msgstr ""
 "import {Heading} from '@/components/Heading'\n"
 "\n"
 "export const header = {\n"
-"title: '用語集',\n"
-"description:\n"
-"'AT プロトコルで使用される用語とその定義のコレクション。',\n"
+"  title: '用語集',\n"
+"  description:\n"
+"    'ATプロトコルで使用される用語とその定義のコレクション',\n"
 "}\n"
 
 #. type: Plain text
@@ -44,7 +44,7 @@ msgstr "# 用語集\n"
 #: src/guides/glossary/en.mdx:10
 #, no-wrap
 msgid "The AT Protocol uses a lot of terms that may not be immediately familiar. This page gives a quick reference to these terms and includes some links to more information. {{className: 'lead'}}\n"
-msgstr "AT プロトコルでは、すぐには馴染みのない用語が多数使用されています。このページでは、これらの用語を簡単に参照でき、移動情報へのリンクもいくつか含まれています。 {{className: 'lead'}}\n"
+msgstr "ATプロトコルでは、すぐには馴染みのない用語が多数使用されています。このページでは、これらの用語を簡単に参照でき、追加情報へのリンクも含まれています。 {{className: 'lead'}}\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:12
@@ -56,43 +56,43 @@ msgstr "<Heading level={2} id=\"atmosphere\">Atmosphere</Heading>\n"
 #: src/guides/glossary/en.mdx:14
 #, no-wrap
 msgid "The \"Atmosphere\" is the term we use to describe the ecosystem around the [AT Protocol](#at-protocol).\n"
-msgstr "「Atmosphere」は、[AT プロトコル](#at-protocol) のエコシステムを説明するために使用する用語です。\n"
+msgstr "「Atmosphere」は、[ATプロトコル](#at-protocol)のエコシステムを説明するために使用する用語です。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:16
 #, no-wrap
 msgid "## AT Protocol\n"
-msgstr "<Heading level={2} id=\"at-protocol\">AT プロトコル</Heading>\n"
+msgstr "<Heading level={2} id=\"at-protocol\">ATプロトコル</Heading>\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:18
 #, no-wrap
 msgid "The AT Protocol stands for \"Authenticated Transfer Protocol,\" and is frequently shortened to \"atproto.\" The name is in reference to the fact that all user-data is signed by the authoring users, which makes it possible to broadcast the data through many services and prove it's real without having to speak directly to the originating server.\n"
-msgstr "AT プロトコルは、「Authenticated Transfer Protocol」の略です。この名前は、すべてのユーザー データが作成ユーザーによって署名されているという事実に由来しています。これにより、多くのサービスを通じてデータをブロードキャストし、発信元サーバーと直接通信しなくても、データが本物であることを証明できます。\n"
+msgstr "ATプロトコルは、「Authenticated Transfer Protocol」の略です。この名前は、すべてのユーザーデータが作成ユーザーによって署名されているという事実に由来しています。これにより、多くのサービスを通じてデータをブロードキャストし、発信元サーバーと直接通信しなくても、データが本物であることを証明できます。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:20
 #, no-wrap
 msgid "The name is also a play on the \"@\" symbol, aka the \"at\" symbol, since atproto is designed for social systems.\n"
-msgstr "この名前は、atproto がソーシャル システム向けに設計されているため、「@」記号、別名「at」記号をもじったものです。\n"
+msgstr "この名前は、atprotoがソーシャルシステム向けに設計されているため、「@」記号、別名「at」記号をもじったものです。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:22
 #, no-wrap
 msgid "## PDS (Personal Data Server)\n"
-msgstr "<Heading level={2} id=\"pds-personal-data-server\">PDS (パーソナル データ サーバー)</Heading>\n"
+msgstr "<Heading level={2} id=\"pds-personal-data-server\">PDS（パーソナルデータサーバー）</Heading>\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:24
 #, no-wrap
 msgid "A PDS, or Personal Data Server, is a server that hosts a user. A PDS will always store the user's [data repo](#data-repo) and signing keys. It may also assign the user a [handle](#handle) and a [DID](#did-decentralized-id). Many PDSes will host multiple users.\n"
-msgstr "PDS (パーソナル データ サーバー) は、ユーザーをホストするサーバーです。PDS は常にユーザーの [データ リポジトリ](#data-repo) と署名キーを保存します。また、ユーザーに [ハンドル](#handle) と [DID](#did-分散-id) を割り当てることもあります。多くの PDS は複数のユーザーをホストします。\n"
+msgstr "PDS（パーソナルデータサーバー）は、ユーザーをホストするサーバーです。PDSは常にユーザーの[データリポジトリ](#data-repo)と署名鍵を保存します。また、ユーザーに[ハンドル](#handle)と[DID](#did-decentralized-id)を割り当てることもあります。多くのPDSは複数のユーザーをホストします。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:26
 #, no-wrap
 msgid "A PDS communicates with [AppViews](#app-view) to run applications. A PDS doesn't typically run any applications itself, though it will have general account management interfaces such as the OAuth login screen. PDSes actively sync their [data repos](#data-repo) with [Relays](#relay).\n"
-msgstr "PDS は [AppViews](#appview) と通信してアプリケーションを実行します。PDS は通常、それ自体ではアプリケーションを実行しませんが、OAuth ログイン画面などの一般的なアカウント管理インターフェイスを備えています。PDS は [データ リポジトリ](#data-repo) を [リレー](#relay) と積極的に同期します。\n"
+msgstr "PDSは[AppView](#appview)と通信してアプリケーションを実行します。PDSは通常、それ自体ではアプリケーションを実行しませんが、OAuthログイン画面などの一般的なアカウント管理インターフェイスを備えています。PDSは[データリポジトリ](#data-repo)を[リレー](#relay)と積極的に同期します。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:28
@@ -104,13 +104,13 @@ msgstr "<Heading level={2} id=\"app-view\">AppView</Heading>\n"
 #: src/guides/glossary/en.mdx:30
 #, no-wrap
 msgid "An AppView is an application in the [Atmosphere](#atmosphere). It's called an \"AppView\" because it's just one view of the network. The canonical data lives in [data repos](#data-repo) which is hosted by [PDSes](#pds-personal-data-server), and that data can be viewed many different ways.\n"
-msgstr "AppView は [Atmosphere](#atmosphere) 内のアプリケーションです。ネットワークの 1 つのビューにすぎないため、「AppView」と呼ばれます。正規データは、[PDS](#pds-personal-data-server) によってホストされる [データ リポジトリ](#data-repo) に保存され、そのデータはさまざまな方法で表示できます。\n"
+msgstr "AppViewは[Atmosphere](#atmosphere)内のアプリケーションです。ネットワークの一つのビューにすぎないため、「AppView」と呼ばれます。正規データは、[PDS](#pds-personal-data-server)によってホストされる[データリポジトリ](#data-repo)に保存され、そのデータはさまざまな方法で表示できます。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:32
 #, no-wrap
 msgid "AppViews function a bit like search engines on the Web: they aggregate data from across the Atmosphere to produce their UIs. The difference is that AppViews also communicate with users' [PDSes](#pds) to publish information on their [repos](#data-repo), forming the full application model. This communication is established as a part of the OAuth login flow.\n"
-msgstr "AppView は Web 上の検索エンジンに少し似ています。Atmosphere 全体からデータを集約して UI を生成します。違いは、AppView がユーザーの [PDS](#pds) とも通信して [リポジトリ](#data-repo) に情報を公開し、完全なアプリケーション モデルを形成することです。この通信は、OAuth ログイン フローの一部として確立されます。\n"
+msgstr "AppViewはウェブ上の検索エンジンに少し似ています。Atmosphere全体からデータを集約してUIを生成します。違いは、AppViewがユーザーの[PDS](#pds)とも通信して[リポジトリ](#data-repo)に情報を公開し、完全なアプリケーションモデルを形成することです。この通信は、OAuthログインフローの一部として確立されます。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:34
@@ -122,13 +122,13 @@ msgstr "<Heading level={2} id=\"relay\">リレー</Heading>\n"
 #: src/guides/glossary/en.mdx:36
 #, no-wrap
 msgid "A Relay is an aggregator of [data repos](#data-repo) from across the [Atmosphere](#atmosphere). They sync the repos from [PDSes](#pds) and produce a firehose of change events. [AppViews](#app-view) use a Relay to fetch user data.\n"
-msgstr "リレーは、[Atmosphere](#atmosphere) 全体からの [データ リポジトリ](#data-repo) の集約機能です。[PDS](#pds) からリポジトリを同期し、変更イベントのファイアホースを生成します。[AppView](#appview) はリレーを使用してユーザー データを取得します。\n"
+msgstr "リレーは、[Atmosphere](#atmosphere)全体からの[データリポジトリ](#data-repo)の集約機能です。[PDS](#pds)からリポジトリを同期し、変更イベントのfirehoseを生成します。[AppView](#appview)はリレーを使用してユーザーデータを取得します。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:38
 #, no-wrap
 msgid "Relays are an optimization and are not strictly necessary. An [AppView](#app-view) could communicate directly with [PDSes](#pds) (in fact, this is encouraged if needed). The Relay serves to reduce the number of connections that are needed in the network.\n"
-msgstr "リレーは最適化であり、厳密には必要ではありません。[AppView](#appview) は [PDS](#pds) と直接通信できます (実際、必要な場合はこれが推奨されます)。リレーは、ネットワークで必要な接続の数を減らすのに役立ちます。\n"
+msgstr "リレーは最適化用途であり、厳密には必要ではありません。[AppView](#appview)は[PDS](#pds)と直接通信できます（実際、それが推奨されることもあります）。リレーは、ネットワークで必要な接続の数を減らすのに役立ちます。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:40
@@ -140,13 +140,13 @@ msgstr "<Heading level={2} id=\"lexicon\">Lexicon</Heading>\n"
 #: src/guides/glossary/en.mdx:42
 #, no-wrap
 msgid "Lexicon is a schema language. It's used in the [Atmosphere](#atmosphere) to describe [data records](#record) and HTTP APIs. Functionally it's very similar to [JSON-Schema](https://json-schema.org/) and [OpenAPI](https://www.openapis.org/).\n"
-msgstr "Lexicon はスキーマ言語です。[Atmosphere](#atmosphere) で [データ レコード](#record) と HTTP API を記述するために使用されます。機能的には、[JSON-Schema](https://json-schema.org/) や [OpenAPI](https://www.openapis.org/) と非常によく似ています。\n"
+msgstr "Lexiconはスキーマ言語です。[Atmosphere](#atmosphere)で[データ レコード](#record)とHTTP APIを記述するために使用されます。機能的には、[JSON-Schema](https://json-schema.org/)や[OpenAPI](https://www.openapis.org/)と非常によく似ています。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:44
 #, no-wrap
 msgid "Lexicon's sole purpose is to help developers build compatible software.\n"
-msgstr "Lexicon の唯一の目的は、開発者が互換性のあるソフトウェアを構築できるようにすることです。\n"
+msgstr "Lexiconの唯一の目的は、開発者が互換性のあるソフトウェアを構築できるようにすることです。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:47
@@ -155,26 +155,26 @@ msgid ""
 "- [An introduction to Lexicon](/guides/lexicon)\n"
 "- [Lexicon spec](/specs/lexicon)\n"
 msgstr ""
-"- [Lexicon の紹介](/guides/lexicon)\n"
-"- [Lexicon の仕様](/specs/lexicon)\n"
+"- [Lexiconの紹介](/guides/lexicon)\n"
+"- [Lexicon仕様](/specs/lexicon)\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:49
 #, no-wrap
 msgid "## Data Repo\n"
-msgstr "<Heading level={2} id=\"data-repo\">データ リポジトリ</Heading>\n"
+msgstr "<Heading level={2} id=\"data-repo\">データリポジトリ</Heading>\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:51
 #, no-wrap
 msgid "The \"data repository\" or \"repo\" is the public dataset which represents a user. It is comprised of [collections](#collection) of JSON [records](#record) and unstructured [blobs](#blob). Every repo is assigned a single permanent [DID](#did-decentralized-id) which identifies it. Repos may also have any number of [domain handles](#handle) which act as human-readable names.\n"
-msgstr "「データ リポジトリ」または「リポジトリ」は、ユーザーを表すパブリック データセットです。これは、JSON [レコード](#record) と非構造化 [blob](#blob) の [コレクション](#collection) で構成されています。すべてのリポジトリには、それを識別する 1 つの永続的な [DID](#did-分散-id) が割り当てられます。リポジトリには、人間が読める名前として機能する [ドメイン ハンドル](#handle) をいくつでも持つことができます。\n"
+msgstr "「データリポジトリ」または「リポジトリ」は、ユーザーを表すパブリックデータセットです。これは、JSON[レコード](#record)と非構造化[blob](#blob)の[コレクション](#collection)で構成されています。すべてのリポジトリには、それを識別する1つの永続的な[DID](#did-decentralized-id)が割り当てられます。リポジトリには、人間が読める名前として機能する[ドメインハンドル](#handle)をいくつでも持つことができます。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:53
 #, no-wrap
 msgid "Data repositories are signed merkle trees. Their signatures can be verified against the key material published under the repo's [did](#did-decentralized-id).\n"
-msgstr "データ リポジトリは、署名されたマークル ツリーです。その署名は、リポジトリの [did](#did-分散-id) で公開されたキー マテリアルに対して検証できます。\n"
+msgstr "データリポジトリは、署名されたマークルツリーです。その署名は、リポジトリの[did](#did-decentralized-id)で公開された鍵マテリアルに対して検証できます。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:56
@@ -183,7 +183,7 @@ msgid ""
 "- [An introduction to data repos](/guides/data-repos)\n"
 "- [Repository spec](/specs/repository)\n"
 msgstr ""
-"- [データ リポジトリの概要](/guides/data-repos)\n"
+"- [データリポジトリの紹介](/guides/data-repos)\n"
 "- [リポジトリ仕様](/specs/repository)\n"
 
 #. type: Plain text
@@ -196,7 +196,7 @@ msgstr "<Heading level={2} id=\"collection\">コレクション</Heading>\n"
 #: src/guides/glossary/en.mdx:60
 #, no-wrap
 msgid "The \"collection\" is a bucket of JSON [records](#record) in a [data repository](#data-repo). They support ordered list operations. Every collection is identified by an [NSID](#nsid-namespaced-id) which is expected to map to a [Lexicon](#lexicon) schema.\n"
-msgstr "「コレクション」は、[データ リポジトリ](#data-repo) 内の JSON [レコード](#record) のバケットです。順序付きリスト操作をサポートします。すべてのコレクションは、[NSID](#nsid-名前空間-id) によって識別され、[Lexicon](#lexicon) スキーマにマップされることが想定されています。\n"
+msgstr "「コレクション」は、[データ リポジトリ](#data-repo)内のJSON[レコード](#record)のバケツです。順序付きリスト操作をサポートします。すべてのコレクションは、[NSID](#nsid-namespace-id)によって識別され、[Lexicon](#lexicon)スキーマにマップされることが想定されています。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:62
@@ -208,25 +208,25 @@ msgstr "<Heading level={2} id=\"record\">レコード</Heading>\n"
 #: src/guides/glossary/en.mdx:64
 #, no-wrap
 msgid "A \"record\" is a JSON document inside a [repo](#data-repo) [collection](#collection). The type of a record is identified by the `$type` field, which is expected to map to a [Lexicon](#lexicon) schema. The type is also expected to match the [collection](#collection) which contains it.\n"
-msgstr "「レコード」は、[repo](#data-repo) [collection](#collection) 内の JSON ドキュメントです。レコードのタイプは `$type` フィールドによって識別され、[Lexicon](#lexicon) スキーマにマッピングされることが期待されます。また、タイプは、それを含む [collection](#collection) と一致することが期待されます。\n"
+msgstr "「レコード」は、[リポジトリ](#data-repo)の[collection](#collection)内のJSONドキュメントです。レコードの型は`$type`フィールドによって識別され、[Lexicon](#lexicon)スキーマにマッピングされることが期待されます。また、型はそのレコードを含む[collection](#collection)と一致することが期待されます。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:66
 #, no-wrap
 msgid "- [Record key spec](/specs/record-key)\n"
-msgstr "- [レコード キー仕様](/specs/record-key)\n"
+msgstr "- [レコードキー仕様](/specs/record-key)\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:68
 #, no-wrap
 msgid "## Blob\n"
-msgstr "<Heading level={2} id=\"blob\">BLOB</Heading>\n"
+msgstr "<Heading level={2} id=\"blob\">blob</Heading>\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:70
 #, no-wrap
 msgid "Blobs are unstructured data stored inside a [repo](#data-repo). They are most commonly used to store media such as images and video.\n"
-msgstr "BLOB は、[repo](#data-repo) 内に格納される非構造化データです。画像や動画などのメディアを格納するために最もよく使用されます。\n"
+msgstr "blobは、[リポジトリ](#data-repo)内に格納される非構造化データです。画像や動画などのメディアを格納するために最もよく使用されます。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:72
@@ -238,7 +238,7 @@ msgstr "<Heading level={2} id=\"label\">ラベル</Heading>\n"
 #: src/guides/glossary/en.mdx:74
 #, no-wrap
 msgid "Labels are metadata objects which are attached to accounts ([DIDs](#did-decentralized-id)) and [records](#record). They are typically referenced by their values, such as \"nudity\" or \"graphic-media,\" which identify the meaning of the label. Labels are primarily used by applications for moderation, but they can be used for other purposes.\n"
-msgstr "ラベルは、[repos](#data-repo) および [records](#record) に添付されるメタデータ オブジェクトです。通常、ラベルの意味を識別する「nudity」や「graphic-media」などの値によって参照されます。ラベルは主にアプリケーションによってモデレーションに使用されますが、他の目的にも使用できます。\n"
+msgstr "ラベルは、[リポジトリ](#data-repo)および[レコード](#record)に付与されるメタデータオブジェクトです。通常、ラベルの意味を識別する「nudity」や「graphic-media」などの値によって参照されます。ラベルは主にアプリケーションによってモデレーションに使用されますが、他の目的にも使用できます。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:76
@@ -256,7 +256,7 @@ msgstr "<Heading level={2} id=\"handle\">ハンドル</Heading>\n"
 #: src/guides/glossary/en.mdx:80
 #, no-wrap
 msgid "Handles are domain names which are used to identify [data repos](#data-repo). More than one handle may be assigned to a repo. Handles may be used in `at://` URIs in the domain segment.\n"
-msgstr "ハンドルは、[データ リポジトリ](#data-repo) を識別するために使用されるドメイン名です。リポジトリには複数のハンドルを割り当てることができます。ハンドルは、ドメイン セグメントの `at://` URI で使用できます。\n"
+msgstr "ハンドルは、[データリポジトリ](#data-repo)を識別するために使用されるドメイン名です。リポジトリには複数のハンドルを割り当てることができます。ハンドルは、ドメインセグメントの`at://` URIで使用できます。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:83
@@ -266,79 +266,79 @@ msgid ""
 "- [URI Scheme spec](/specs/at-uri-scheme)\n"
 msgstr ""
 "- [ハンドル仕様](/specs/handle)\n"
-"- [URI スキーム仕様](/specs/at-uri-scheme)\n"
+"- [URIスキーム仕様](/specs/at-uri-scheme)\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:85
 #, no-wrap
 msgid "## DID (Decentralized ID)\n"
-msgstr "<Heading level={2} id=\"did-decentralized-id\">DID (分散 ID)</Heading>\n"
+msgstr "<Heading level={2} id=\"did-decentralized-id\">DID（分散型識別子）</Heading>\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:87
 #, no-wrap
 msgid "DIDs, or Decentralized IDentifiers, are universally-unique identifiers which represent [data repos](#data-repo). They are permanent and non-human-readable. DIDs are a [W3C specification](https://www.w3.org/TR/did-core/). The AT Protocol currently supports `did:web` and `did:plc`, two different DID methods.\n"
-msgstr "DID (分散 ID) は、[データ リポジトリ](#data-repo) を表す、ユニバーサルに一意な識別子です。これらは永続的で、人間が判読することはできません。DID は [W3C 仕様](https://www.w3.org/TR/did-core/) です。AT プロトコルは現在、2 つの異なる DID メソッドである `did:web` と `did:plc` をサポートしています。\n"
+msgstr "DID（分散型識別子）は、[データリポジトリ](#data-repo)を表す、ユニバーサルに一意な識別子です。これは永続的で、人間可読性は求められません。DIDは[W3C仕様](https://www.w3.org/TR/did-core/)です。ATプロトコルは現在、2つの異なるDIDメソッド`did:web`と`did:plc`をサポートしています。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:89
 #, no-wrap
 msgid "DIDs resolve to documents which contain metadata about a [repo](#data-repo), including the address of the repo's [PDS](#pds), the repo's [handles](#handle), and the public signing keys.\n"
-msgstr "DID は、[リポジトリ](#data-repo) に関するメタデータ (リポジトリの [PDS](#pds) のアドレス、リポジトリの [ハンドル](#handle)、公開署名キーなど) を含むドキュメントに解決されます。\n"
+msgstr "DIDは、[リポジトリ](#data-repo)に関するメタデータ（リポジトリの[PDS](#pds)のアドレス、リポジトリの[ハンドル](#handle)、公開署名鍵など）を含むドキュメントに解決されます。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:91
 #, no-wrap
 msgid "- [DID spec](/specs/did)\n"
-msgstr "- [DID 仕様](/specs/did)\n"
+msgstr "- [DID仕様](/specs/did)\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:93
 #, no-wrap
 msgid "## NSID (Namespaced ID)\n"
-msgstr "<Heading level={2} id=\"nsid-namespaced-id\">NSID (名前空間 ID)</Heading>\n"
+msgstr "<Heading level={2} id=\"nsid-namespaced-id\">NSID（名前空間ID）</Heading>\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:95
 #, no-wrap
 msgid "NSIDs, or Namespaced IDentifiers, are an identifier format used in the [Atmosphere](#atmosphere) to identify [Lexicon](#lexicon) schemas. They follow a reverse DNS format such as `app.bsky.feed.post`. They were chosen because they give clear schema governance via the domain ownership. The reverse-DNS format was chosen to avoid confusion with domains in URIs.\n"
-msgstr "NSID (名前空間 ID) は、[Atmosphere](#atmosphere) で [Lexicon](#lexicon) スキーマを識別するために使用される識別子形式です。これらは、`app.bsky.feed.post` などの逆 DNS 形式に従います。これらは、ドメイン所有権を介して明確なスキーマ ガバナンスを提供するため選択されました。逆 DNS 形式は、URI 内のドメインとの混乱を避けるために選択されました。\n"
+msgstr "NSID（名前空間ID）は、[Atmosphere](#atmosphere)で[Lexicon](#lexicon)スキーマを識別するために使用される識別子形式です。これらは、`app.bsky.feed.post`などの逆DNS形式に従います。これらは、ドメイン所有権を介して明確なスキーマガバナンスを提供するため選択されました。逆DNS形式は、URI内のドメインとの混乱を避けるために選択されました。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:97
 #, no-wrap
 msgid "- [NSID spec](/specs/nsid)\n"
-msgstr "- [NSID 仕様](/specs/nsid)\n"
+msgstr "- [NSID仕様](/specs/nsid)\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:99
 #, no-wrap
 msgid "## TID (Timestamp ID)\n"
-msgstr "<Heading level={2} id=\"tid-timestamp-id\">TID (タイムスタンプ ID)</Heading>\n"
+msgstr "<Heading level={2} id=\"tid-timestamp-id\">TID（タイムスタンプID）</Heading>\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:101
 #, no-wrap
 msgid "TIDs, or Timestamp IDentifiers, are an identifier format used for [record](#record) keys. They are derived from the current time and designed to avoid collisions, maintain a lexicographic sort, and efficiently balance the [data repository's](#data-repo) internal data structures.\n"
-msgstr "TID (タイムスタンプ ID) は、[レコード](#record) キーに使用される識別子形式です。これらは現在の時刻から派生し、衝突を回避し、辞書式ソートを維持し、[データ リポジトリ](#data-repo) の内部データ構造を効率的にバランスさせるように設計されています。\n"
+msgstr "TID（タイムスタンプID）は、[レコード](#record)キーに使用される識別子形式です。これらは現在の時刻から派生し、衝突を回避し、辞書順ソートを維持し、[データリポジトリ](#data-repo)の内部データ構造を効率的にバランスさせるように設計されています。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:103
 #, no-wrap
 msgid "- [Record keys spec](/specs/record-key)\n"
-msgstr "- [レコード キー仕様](/specs/record-key)\n"
+msgstr "- [レコードキー仕様](/specs/record-key)\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:105
 #, no-wrap
 msgid "## CID (Content ID)\n"
-msgstr "<Heading level={2} id=\"cid-content-id\">CID (コンテンツ ID)</Heading>\n"
+msgstr "<Heading level={2} id=\"cid-content-id\">CID（コンテンツID）</Heading>\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:107
 #, no-wrap
 msgid "CIDs, or Content Identifiers, are cryptographic hashes of [records](#record). They are used to track specific versions of records.\n"
-msgstr "CID またはコンテンツ識別子は、[レコード](#record) の暗号化ハッシュです。レコードの特定のバージョンを追跡するために使用されます。\n"
+msgstr "CIDまたはコンテンツ識別子は、[レコード](#record)の暗号化ハッシュです。レコードの特定のバージョンを追跡するために使用されます。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:109
@@ -350,13 +350,13 @@ msgstr "<Heading level={2} id=\"dag-cbor\">DAG-CBOR</Heading>\n"
 #: src/guides/glossary/en.mdx:111
 #, no-wrap
 msgid "DAG-CBOR is a serialization format used by [atproto](#at-protocol). It was chosen because it provides a reliable canonical form, which is important for cryptographic verification.\n"
-msgstr "DAG-CBOR は、[atproto](#at-protocol) で使用されるシリアル化形式です。暗号検証に重要な信頼性の高い標準形式を提供するため、この形式が選択されました。\n"
+msgstr "DAG-CBORは、[atproto](#at-protocol)で使用されるシリアル化形式です。暗号検証に重要な信頼性の高い標準形式を提供するため、この形式が選択されました。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:113
 #, no-wrap
 msgid "- [Data model spec](/specs/data-model)\n"
-msgstr "- [データ モデル仕様](/specs/data-model)\n"
+msgstr "- [データモデル仕様](/specs/data-model)\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:115
@@ -368,10 +368,10 @@ msgstr "<Heading level={2} id=\"xrpc\">XRPC</Heading>\n"
 #: src/guides/glossary/en.mdx:117
 #, no-wrap
 msgid "XRPC is [atproto's](#at-protocol) HTTP API. It stands for \"Cross-organizational Remote Procedure Calls\" and is a thin wrapper around standard HTTPS. XRPC uses [Lexicon](#lexicon) schemas to define the valid parameters and responses for each API endpoint.\n"
-msgstr "XRPC は非推奨の用語ですが、歴史的には [atproto](#at-protocol) の HTTP 使用法を説明するために使用されていました。これは「組織間リモート プロシージャ コール」の略語ですが、実際には HTTP を使用しているだけなので、この用語を発明したことを後悔しています。\n"
+msgstr "XRPCは非推奨の用語ですが、歴史的には[atproto](#at-protocol)のHTTP用法を説明するために使用されていました。これは「Cross-organizational Remote Procedure Calls」の略語ですが、実際にはHTTPを使用しているだけなので、この用語を発明したことを後悔しています。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:118
 #, no-wrap
 msgid "- [HTTP API spec](/specs/xrpc)\n"
-msgstr "- [HTTP API 仕様](/specs/xrpc)\n"
+msgstr "- [HTTP API仕様](/specs/xrpc)\n"

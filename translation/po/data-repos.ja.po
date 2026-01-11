@@ -41,34 +41,34 @@ msgid ""
 "}\n"
 msgstr ""
 "export const header = {\n"
-"title: '個人データ リポジトリ',\n"
+"title: '個人データリポジトリ',\n"
 "description:\n"
-"'AT プロトコル リポジトリ構造のガイド。',\n"
+"'ATプロトコルのリポジトリ構造のガイド',\n"
 "}\n"
 
 #. type: Plain text
 #: src/guides/data-repos/en.mdx:10
 #, no-wrap
 msgid "# Data Repositories\n"
-msgstr "# データ リポジトリ\n"
+msgstr "# データリポジトリ\n"
 
 #. type: Plain text
 #: src/guides/data-repos/en.mdx:14
 #, no-wrap
 msgid "They are described in more depth in the [Repository specification](/specs/repository).\n"
-msgstr "[リポジトリ仕様](/specs/repository) で詳細に説明されています。\n"
+msgstr "[リポジトリ仕様](/specs/repository)で詳細に説明されています。\n"
 
 #. type: Plain text
 #: src/guides/data-repos/en.mdx:16
 #, no-wrap
 msgid "## Data Layout\n"
-msgstr "<Heading level={2} id=\"data-layout\">データ レイアウト</Heading>\n"
+msgstr "<Heading level={2} id=\"data-layout\">データレイアウト</Heading>\n"
 
 #. type: Plain text
 #: src/guides/data-repos/en.mdx:18
 #, no-wrap
 msgid "The content of a repository is laid out in a [Merkle Search Tree (MST)](https://hal.inria.fr/hal-02303490/document) which reduces the state to a single root hash. It can be visualized as the following layout:\n"
-msgstr "リポジトリの内容は [Merkle 検索ツリー (MST)](https://hal.inria.fr/hal-02303490/document) にレイアウトされ、状態が単一のルート ハッシュに縮小されます。これは次のレイアウトとして視覚化できます:\n"
+msgstr "リポジトリの内容は[Merkle探索木（MST）](https://hal.inria.fr/hal-02303490/document)にレイアウトされ、状態が単一のルートハッシュに縮小されます。これは次のレイアウトとして視覚化できます。\n"
 
 #. type: Plain text
 #: src/guides/data-repos/en.mdx:32
@@ -106,13 +106,13 @@ msgstr ""
 #: src/guides/data-repos/en.mdx:34
 #, no-wrap
 msgid "Every node is an [IPLD](https://ipld.io/) object ([dag-cbor](https://ipld.io/docs/codecs/known/dag-cbor/)) which is referenced by a [CID](https://github.com/multiformats/cid) hash. The arrows in the diagram above represent a CID reference.\n"
-msgstr "すべてのノードは [IPLD](https://ipld.io/) オブジェクト ([dag-cbor](https://ipld.io/docs/codecs/known/dag-cbor/)) であり、[CID](https://github.com/multiformats/cid) ハッシュによって参照されます。上の図の矢印は CID 参照を表します。\n"
+msgstr "すべてのノードは[IPLD](https://ipld.io/)オブジェクト（[dag-cbor](https://ipld.io/docs/codecs/known/dag-cbor/)）であり、[CID](https://github.com/multiformats/cid)ハッシュによって参照されます。上の図の矢印はCID参照を表します。\n"
 
 #. type: Plain text
 #: src/guides/data-repos/en.mdx:36
 #, no-wrap
 msgid "This layout is reflected in the [AT URIs](/specs/at-uri-scheme):\n"
-msgstr "このレイアウトは、[AT URI](/specs/at-uri-scheme) に反映されています:\n"
+msgstr "このレイアウトは、[AT URI](/specs/at-uri-scheme)に反映されています。\n"
 
 #. type: Plain text
 #: src/guides/data-repos/en.mdx:42
@@ -125,16 +125,16 @@ msgid ""
 "```\n"
 msgstr ""
 "```\n"
-"ルート | at://alice.com\n"
+"ルート       | at://alice.com\n"
 "コレクション | at://alice.com/app.bsky.feed.post\n"
-"レコード | at://alice.com/app.bsky.feed.post/1234\n"
+"レコード     | at://alice.com/app.bsky.feed.post/1234\n"
 "```\n"
 
 #. type: Plain text
 #: src/guides/data-repos/en.mdx:44
 #, no-wrap
 msgid "A “commit” to a data repository is simply a keypair signature over a Root node’s CID. Each mutation to the repository produces a new Commit node.\n"
-msgstr "データ リポジトリへの「コミット」は、ルート ノードの CID に対するキーペア署名にすぎません。リポジトリが変更されるたびに、新しいコミット ノードが生成されます。\n"
+msgstr "データリポジトリへの「コミット」は、ルートノードのCIDに対する鍵ペア署名にすぎません。リポジトリが変更されるたびに、新しいコミットノードが生成されます。\n"
 
 #. type: Plain text
 #: src/guides/data-repos/en.mdx:46
@@ -146,7 +146,7 @@ msgstr "<Heading level={2} id=\"identifier-types\">識別子の種類</Heading>\
 #: src/guides/data-repos/en.mdx:48
 #, no-wrap
 msgid "Multiple types of identifiers are used within a Personal Data Repository.\n"
-msgstr "個人データ リポジトリ内では、複数の種類の識別子が使用されます。\n"
+msgstr "個人データリポジトリ内では、複数の種類の識別子が使用されます。\n"
 
 #. type: Plain text
 #: src/guides/data-repos/en.mdx:54
@@ -160,8 +160,8 @@ msgid ""
 "</DescriptionList>\n"
 msgstr ""
 "<DescriptionList>\n"
-"<Description title=\"DIDs\"><a href=\"https://w3c.github.io/did/\">分散 ID (DID)</a> は、データ リポジトリを識別します。これらはユーザー ID として広く使用されていますが、すべてのユーザーには 1 つのデータ リポジトリがあるため、DID はデータ リポジトリへの参照と見なすことができます。DID の形式は使用される「DID 方式」によって異なりますが、すべての DID は最終的にキー ペアとサービス プロバイダーのリストに解決されます。このキー ペアは、データ リポジトリへのコミットに署名できます。</Description>\n"
-"<Description title=\"CIDs\"><a href=\"https://github.com/multiformats/cid\">コンテンツ ID (CID)</a> は、フィンガープリント ハッシュを使用してコンテンツを識別します。これらはリポジトリ全体で使用され、リポジトリ内のオブジェクト (ノード) を参照します。リポジトリ内のノードが変更されると、その CID も変更されます。ノードを参照する親は参照を更新する必要があり、その結果、親の CID も変更されます。これはコミット ノードまで連鎖し、その後コミット ノードが署名されます。</Description>\n"
-"<Description title=\"NSIDs\"><a href=\"/specs/nsid\">名前空間識別子 (NSID)</a> は、リポジトリ内のレコード グループの Lexicon タイプを識別します。</Description>\n"
-"<Description title=\"rkey\"><a href=\"/specs/record-key\">レコード キー</a> (\"rkeys\") は、特定のリポジトリ内のコレクション内の個々のレコードを識別します。形式はコレクション Lexicon によって指定され、一部のコレクションには \"self\" などのキーを持つレコードが 1 つだけ含まれ、他のコレクションには多数のレコードがあり、キーにはタイムスタンプ識別子 (TID) と呼ばれる base32 エンコードされたタイムスタンプが使用されます。</Description>\n"
+"<Description title=\"DID\">[分散型識別子（DID）](https://w3c.github.io/did/)はデータリポジトリを識別します。これは広くユーザーIDとして使用されますが、すべてのユーザーが1つのデータリポジトリを持っているため、DIDはデータリポジトリへの参照と見なすことができます。DIDの形式は使用される「DIDメソッド」によって異なりますが、すべてのDIDは最終的に鍵ペアとサービスプロバイダーのリストに解決されます。この鍵ペアは、データ リポジトリへのコミットに署名できます。</Description>\n"
+"<Description title=\"CID\">[コンテンツID（CID）](https://github.com/multiformats/cid)は、フィンガープリントハッシュを使用してコンテンツを識別します。これはリポジトリ全体で使用され、リポジトリ内のオブジェクト（ノード）を参照します。リポジトリ内のノードが変更されると、そのCIDも変更されます。ノードを参照する親は参照を更新する必要があり、その結果、親のCIDも変更されます。これはコミットノードまで連鎖し、その後コミットノードが署名されます。</Description>\n"
+"<Description title=\"NSID\">[名前空間識別子（NSID）](/specs/nsid)は、リポジトリ内のレコードグループのLexiconタイプを識別します。</Description>\n"
+"<Description title=\"rkey\">[レコードキー（rkey）](specs/record-key)は、特定のリポジトリ内のコレクションに含まれる個々のレコードを識別します。形式はコレクションのLexiconによって指定されます。レコードを一つだけ持つコレクションは\"self\"などのキーでレコードを持ったり、多数のレコードを持つコレクションではキーにタイムスタンプ識別子（TID）と呼ばれるbase32エンコードされたタイムスタンプが使用されたりします。</Description>\n"
 "</DescriptionList>\n"

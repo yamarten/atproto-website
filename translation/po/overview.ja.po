@@ -29,22 +29,22 @@ msgstr ""
 "import {Heading} from '@/components/Heading'\n"
 "\n"
 "export const header = {\n"
-"title: 'プロトコルの概要',\n"
-"description:\n"
-"'AT プロトコルの概要。',\n"
+"  title: 'プロトコル概要',\n"
+"  description:\n"
+"    'ATプロトコルの紹介',\n"
 "}\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:8
 #, no-wrap
 msgid "# Protocol Overview\n"
-msgstr "# プロトコルの概要\n"
+msgstr "# プロトコル概要\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:10
 #, no-wrap
 msgid "The **Authenticated Transfer Protocol**, aka **atproto**, is a decentralized protocol for large-scale social web applications. This document will introduce you to the ideas behind the AT Protocol.\n"
-msgstr "**認証転送プロトコル** (別名 **atproto**) は、大規模な分散型ソーシャル アプリケーション用のフェデレーション プロトコルです。このドキュメントでは、AT プロトコルの背後にある考え方を紹介します。\n"
+msgstr "**Authenticated Transferプロトコル**（別名 **atproto**）は、大規模な分散型ソーシャルアプリケーション用のフェデレーションプロトコルです。このドキュメントでは、ATプロトコルの背後にある考え方を紹介します。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:12
@@ -56,7 +56,7 @@ msgstr "<Heading level={2} id=\"identity\">アイデンティティ</Heading>\n"
 #: src/guides/overview/en.mdx:14
 #, no-wrap
 msgid "Users in AT Protocol have permanent decentralized identifiers (DIDs) for their accounts. They also have a configurable domain name, which acts as a human-readable handle. Identities include a reference to the user's current hosting provider and cryptographic keys.\n"
-msgstr "ユーザーは、AT プロトコル上のドメイン名で識別されます。これらのドメインは、ユーザーのアカウントとそのデータを保護する暗号化 URL にマップされます。\n"
+msgstr "ATプロトコルユーザーは、自分のアカウントに対して永続的な分散型識別子（DID）を持ちます。また、人間可読なハンドルとして機能する構成可能なドメイン名も持っています。 IDにはユーザーの現在のホスティングプロバイダーと暗号鍵への参照が含まれます。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:16 src/guides/sync/en.mdx:15
@@ -68,31 +68,31 @@ msgstr "<Heading level={2} id=\"data-repositories\">データリポジトリ</He
 #: src/guides/overview/en.mdx:18
 #, no-wrap
 msgid "User data is exchanged in [signed data repositories](/guides/data-repos). These repositories are collections of records which include posts, comments, likes, follows, etc.\n"
-msgstr "ユーザー データは、[署名済みデータ リポジトリ](/guides/data-repos) で交換されます。これらのリポジトリは、投稿、コメント、いいね、フォロー、メディア BLOB などを含むレコードのコレクションです。\n"
+msgstr "ユーザーデータは、[署名付きデータリポジトリ](/guides/data-repos)で交換されます。これらのリポジトリは、投稿、コメント、いいね、フォローなどを含むレコードのコレクションです。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:20
 #, no-wrap
 msgid "## Network Architecture\n"
-msgstr "<Heading level={2} id=\"network-architecture\">フェデレーション</Heading>\n"
+msgstr "<Heading level={2} id=\"network-architecture\">ネットワークアーキテクチャ</Heading>\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:22
 #, no-wrap
 msgid "The AT Protocol has a federated network architecture, meaning that account data is stored on host servers, as opposed to a peer-to-peer model between end devices. Federation was chosen to ensure the network is convenient to use and reliably available. Repository data is synchronized between servers over standard web technologies ([HTTP](/specs/xrpc) and [WebSockets](/specs/event-stream)).\n"
-msgstr "AT プロトコルは、フェデレーション ネットワーク モデルでリポジトリを同期します。フェデレーションは、ネットワークが使いやすく、確実に利用できるようにするために選択されました。リポジトリ データは、標準の Web テクノロジー ([HTTP](/specs/xrpc) および [WebSocket](/specs/event-stream)) を介してサーバー間で同期されます。\n"
+msgstr "ATプロトコルにはフェデレーションネットワークアーキテクチャがあり、エンドデバイス間のピアツーピアモデルではなく、アカウントデータがホストサーバーに保存されます。フェデレーションは、ネットワークが使いやすく、確実に利用できるようにするために選択されました。リポジトリデータは、標準ウェブテクノロジー（[HTTP](/specs/xrpc)および[WebSocket](/specs/event-stream)）を介してサーバー間で同期されます。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:24
 #, no-wrap
 msgid "The three core services in our network are Personal Data Servers (PDS), Relays, and App Views. There are also supporting services such as feed generators and labelers.\n"
-msgstr "ネットワークの 3 つのコア サービスは、パーソナル データ サーバー (PDS)、リレー、およびアプリ ビューです。フィード ジェネレーターとラベラーにも取り組んでいます。\n"
+msgstr "ネットワークの3つのコアサービスは、パーソナルデータサーバー（PDS）、リレー、およびAppViewです。フィード ジェネレーターとラベラーにも取り組んでいます。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:26
 #, no-wrap
 msgid "The lower-level primitives that can get stacked together differently are the repositories, lexicons, and DIDs. We published an overview of our technical decisions around federation architecture [on our blog](https://bsky.social/about/blog/5-5-2023-federation-architecture).\n"
-msgstr "さまざまな方法でスタックできる下位レベルのプリミティブは、リポジトリ、レキシコン、および DID です。フェデレーション アーキテクチャに関する技術的な決定の概要を [ブログ](https://bsky.social/about/blog/5-5-2023-federation-architecture) で公開しました。\n"
+msgstr "さまざまな方法でスタックできる下位レベルのプリミティブは、リポジトリ、レキシコン、およびDIDです。フェデレーションアーキテクチャに関する技術的な決定の概要を[ブログ](https://bsky.social/about/blog/5-5-2023-federation-architecture)で公開しました。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:28
@@ -104,13 +104,13 @@ msgstr "<Heading level={2} id=\"interoperation\">相互運用</Heading>\n"
 #: src/guides/overview/en.mdx:30
 #, no-wrap
 msgid "A global schemas network called [Lexicon](/specs/lexicon) is used to unify the names and behaviors of the calls across the servers. Servers implement \"lexicons\" to support featuresets, including the core `com.atproto.*` lexicons for syncing user repositories and the `app.bsky.*` lexicons to provide basic social behaviors.\n"
-msgstr "[Lexicon](/specs/lexicon) と呼ばれるグローバル スキーマ ネットワークは、サーバー間での呼び出しの名前と動作を統一するために使用されます。サーバーは、ユーザー リポジトリを同期するためのコア `com.atproto.*` レキシコンや、基本的なソーシャル動作を提供する `app.bsky.*` レキシコンなどの機能セットをサポートするために「レキシコン」を実装します。\n"
+msgstr "[Lexicon](/specs/lexicon)と呼ばれるグローバルスキーマネットワークは、サーバー間での呼び出しの名前と動作を統一するために使用されます。サーバーは、ユーザーリポジトリを同期するためのコア`com.atproto.*` Lexiconや、基本的なソーシャル動作を提供する`app.bsky.*` Lexiconなどの機能セットをサポートするためにLexiconを実装します。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:32
 #, no-wrap
 msgid "While the Web exchanges documents, the AT Protocol exchanges schematic and semantic information, enabling the software from different organizations to understand each others' data. This gives atproto clients freedom to produce user interfaces independently of the servers, and removes the need to exchange rendering code (HTML/JS/CSS) while browsing content.\n"
-msgstr "Web がドキュメントを交換する一方で、AT プロトコルは図式情報とセマンティック情報を交換し、異なる組織のソフトウェアが互いのデータを理解できるようにします。これにより、atproto クライアントはサーバーから独立してユーザー インターフェイスを自由に作成でき、コンテンツを閲覧する際にレンダリング コード (HTML/JS/CSS) を交換する必要がなくなります。\n"
+msgstr "ウェブがドキュメントを交換する一方で、ATプロトコルはスキーマ情報とセマンティック情報を交換し、異なる組織のソフトウェアが互いのデータを理解できるようにします。これにより、atprotoクライアントはサーバーから独立してユーザーインターフェイスを自由に作成でき、コンテンツを閲覧する際にレンダリングコード（HTML/JS/CSS）を交換する必要がなくなります。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:34
@@ -122,25 +122,25 @@ msgstr "<Heading level={2} id=\"achieving-scale\">スケールの実現</Heading
 #: src/guides/overview/en.mdx:36
 #, no-wrap
 msgid "Personal Data Servers are your home in the cloud. They host your data, distribute it, manage your identity, and orchestrate requests to other services to give you your views.\n"
-msgstr "個人データ サーバーは、クラウド内のホームです。データをホストし、配布し、ID を管理し、他のサービスへのリクエストを調整してビューを提供します。\n"
+msgstr "パーソナルデータサーバーは、クラウドにおけるあなたのホームです。データをホストし、配布し、IDを管理し、他のサービスへのリクエストを調整してビューを提供してくれます。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:38
 #, no-wrap
 msgid "Relays collect data updates from many servers in to a single firehose.\n"
-msgstr "リレーは、大規模なメトリック (いいね、再投稿、フォロワー) の取得、コンテンツの検出 (アルゴリズム)、ユーザー検索など、すべてのイベントを処理します。\n"
+msgstr "リレーはデータの更新情報を多くのサーバーから収集し、一つのfirehoseにまとめます。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:40
 #, no-wrap
 msgid "App Views provide aggregated application data for the entire network. They support large-scale metrics (likes, reposts, followers), content discovery (algorithms), and user search.\n"
-msgstr " \n"
+msgstr "AppViewはネットワーク全体のアプリケーションデータの集計値を提供します。広域的な指標（いいね数、リポスト数、フォロワー数）やコンテンツ発見（アルゴリズム）、ユーザー検索に対応します。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:42
 #, no-wrap
 msgid "This separation of roles is intended to provide users with choice between multiple interoperable providers, while also scaling to large network sizes.\n"
-msgstr "この区別は、スケールと高度なユーザー選択を実現することを目的としています。\n"
+msgstr "この役割の分離は、ユーザーが複数の相互運用可能なプロバイダーの中から選択できるようにすると同時に、大規模なネットワークサイズにもスケールできるようにすることを目的としています。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:44
@@ -152,7 +152,7 @@ msgstr "<Heading level={2} id=\"algorithmic-choice\">アルゴリズムの選択
 #: src/guides/overview/en.mdx:46
 #, no-wrap
 msgid "As with Web search engines, users are free to select their aggregators. Feeds, labelers, and search indices can be provided by independent third parties, with requests routed by the PDS, based on client app configuration. Client apps may be tied to specific services, such as App Views or mandatory labelers.\n"
-msgstr "Web 検索エンジンと同様に、ユーザーはアグリゲータを自由に選択できます。フィード、アプリ ビュー、検索インデックスは独立したサードパーティによって提供され、リクエストはユーザー構成に基づいて PDS によってルーティングされます。\n"
+msgstr "ウェブ検索エンジンと同様に、ユーザーはアグリゲータを自由に選択できます。フィード、ラベラー、検索インデックスは独立したサードパーティによって提供され、リクエストはクライアント設定に基づいてPDSによってルーティングされます。クライアントアプリは、AppViewや必須ラベラーなど特定のサービスに紐付けられている場合があります。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:48
@@ -164,19 +164,19 @@ msgstr "<Heading level={2} id=\"account-portability\">アカウントの移植�
 #: src/guides/overview/en.mdx:50
 #, no-wrap
 msgid "We assume that a Personal Data Server may fail at any time, either by going offline in its entirety, or by ceasing service for specific users. The goal of the AT Protocol is to ensure that a user can migrate their account to a new PDS without the server's involvement.\n"
-msgstr "個人データ サーバーは、完全にオフラインになるか、特定のユーザーに対するサービスが停止するかのいずれかによって、いつでも失敗する可能性があると想定しています。AT プロトコルの目的は、ユーザーがサーバーの関与なしに自分のアカウントを新しい PDS に移行できるようにすることです。\n"
+msgstr "パーソナルデータサーバーは、完全にオフラインになるか、特定のユーザーに対するサービスを停止するかのいずれかによって、いつでも失敗する可能性があると想定しています。ATプロトコルの目的は、ユーザーがサーバーの関与なしに自分のアカウントを新しいPDSに移行できるようにすることです。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:52
 #, no-wrap
 msgid "User data is stored in [signed data repositories](/guides/data-repos) and authenticated by [DIDs](/guides/identity). Signed data repositories are like Git repos but for database records, and DIDs provide a directory of cryptographic keys, similar in some ways to the TLS certificate system. Identities are expected to be secure, reliable, and independent of the user's PDS.\n"
-msgstr "ユーザー データは [署名済みデータ リポジトリ](/guides/data-repos) に保存され、[DID](/guides/identity) によって検証されます。署名済みデータ リポジトリは Git リポジトリに似ていますが、データベース レコード用です。DID は基本的にユーザー証明書のレジストリであり、いくつかの点で TLS 証明書システムに似ています。これらは、安全で信頼性が高く、ユーザーの PDS から独立していることが期待されています。\n"
+msgstr "ユーザーデータは[署名付きデータリポジトリ](/guides/data-repos)に保存され、[DID](/guides/identity)によって検証されます。名付きデータリポジトリはデータベースレコード用のGitリポジトリに似たもので、DIDはTLS証明書システムのようなユーザー証明書のレジストリと喩えられます。これらは安全で信頼性が高く、ユーザーのPDSから独立していることが期待されます。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:54
 #, no-wrap
 msgid "Most DID documents publish two types of public keys: a signing key and rotation keys.\n"
-msgstr "各 DID ドキュメントは、署名キーと回復キーの 2 つの公開キーを公開します。\n"
+msgstr "各DIDドキュメントは、署名鍵とローテーション鍵の2つの公開鍵を公開します。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:57
@@ -185,21 +185,20 @@ msgid ""
 "* **Signing key**: Validates the user's data repository. All DIDs include such a key.\n"
 "* **Rotation keys**: Asserts changes to the DID Document itself. The PLC DID method includes this, while the DID Web method does not.\n"
 msgstr ""
-"* **署名キー**: DID ドキュメントとユーザーのデータ リポジトリへの変更をアサートします。\n"
-"\n"
-"* **回復キー**: DID ドキュメントへの変更をアサートします。72 時間以内に署名キーを上書きできます。\n"
+"* **署名鍵**: ユーザーのデータリポジトリを検証します。全てのDIDに含まれています。\n"
+"* **ローテーション鍵**: DIDドキュメントへの変更をアサートします。PLC DIDメソッドにはありますが、DID Webメソッドにはありません。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:59
 #, no-wrap
 msgid "The signing key is entrusted to the PDS so that it can manage the user's data, but rotation keys can be controlled by the user, e.g. as a paper key. This makes it possible for the user to update their account to a new PDS without the original host's help.\n"
-msgstr "署名キーは PDS に委託され、ユーザーのデータを管理できるようにしますが、回復キーはユーザーが保存します (紙のキーなど)。これにより、ユーザーは元のホストの助けを借りずにアカウントを新しい PDS に更新できます。\n"
+msgstr "署名鍵はPDSに委託され、ユーザーのデータを管理できるようにしますが、ローテーション鍵はユーザーが保存することもできます（紙に印刷するなど）。これにより、ユーザーは元のホストの助けを借りずにアカウントを新しいPDSに更新できます。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:61
 #, no-wrap
 msgid "A backup of the user’s data could be persistently synced to a user's own device as a backup (contingent on the disk space available), or mirrored by a third-party service. In the event their PDS disappears without notice, the user should be able to migrate to a new provider by updating their DID Document and uploading their data backup.\n"
-msgstr "ユーザーのデータのバックアップは、バックアップとしてクライアントに永続的に同期されます (使用可能なディスク領域によって異なります)。PDS が予告なく消えた場合、ユーザーは DID ドキュメントを更新してバックアップをアップロードすることで、新しいプロバイダーに移行できる必要があります。\n"
+msgstr "ユーザーデータのバックアップは、バックアップとしてクライアントに永続的に同期することができます（使用可能なディスク領域によって異なります）。PDSが予告なく消えた場合、ユーザーはDIDドキュメントを更新してバックアップをアップロードすることで、新しいプロバイダーに移行できます。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:63
@@ -211,13 +210,13 @@ msgstr "<Heading level={2} id=\"speech-reach-and-moderation\">スピーチ、リ
 #: src/guides/overview/en.mdx:65
 #, no-wrap
 msgid "AT Protocol's model is that _speech_ and _reach_ should be two separate layers, built to work with each other. The “speech” layer should remain permissive, distributing authority and designed to ensure everyone has a voice. The “reach” layer lives on top, built for flexibility and designed to scale.\n"
-msgstr "Atproto のモデルでは、_スピーチ_ と _リーチ_ は 2 つの別々のレイヤーとして構築され、互いに連携するように構築されます。「スピーチ」レイヤーは、権限を分散し、誰もが発言権を持つように設計されている必要があります。「リーチ」レイヤーは、その上にあり、柔軟性と拡張性を考慮して構築されています。\n"
+msgstr "ATプロトコルのモデルでは、*スピーチ*と*リーチ*は2つの別々のレイヤーとして構築され、は別個の層として設計され、相互に連携して動作します。スピーチ層は寛容で権限を分散し、誰もが発言できることを重視します。リーチ層はその上に位置し、柔軟性とスケーラビリティのために設計されています。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:67
 #, no-wrap
 msgid "The base layer of atproto (personal data repositories and federated networking) creates a common space for speech where everyone is free to participate, analogous to the Web where anyone can put up a website. The indexing services then enable reach by aggregating content from the network, analogous to a search engine.\n"
-msgstr "atproto の基本レイヤー (個人データ リポジトリとフェデレーション ネットワーク) は、誰もが自由に参加できるスピーチのための共通スペースを作成します。これは、誰でも Web サイトを作成できる Web に似ています。次に、インデックス サービスがネットワークからコンテンツを集約してリーチを有効にします。これは、検索エンジンに似ています。\n"
+msgstr "atprotoの基本レイヤー（パーソナルデータリポジトリとフェデレーションネットワーク）は、誰もが自由に参加できるスピーチのための共通スペースを作成します。これは、誰でもサイトを作成できるウェブに似ています。次に、インデックスサービスがネットワークからコンテンツを集約してリーチを有効にします。これは、検索エンジンに似ています。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:69
@@ -229,7 +228,7 @@ msgstr "<Heading level={2} id=\"specifications\">仕様</Heading>\n"
 #: src/guides/overview/en.mdx:71
 #, no-wrap
 msgid "Some of the primary specifications comprising the initial version of the AT Protocol are:\n"
-msgstr "主要な仕様の一部は次のとおりです。AT プロトコルの初期バージョンには次のものが含まれています:\n"
+msgstr "主要な仕様の一部は次のとおりです。ATプロトコルの初期バージョンには次のものが含まれています。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:76
@@ -241,10 +240,8 @@ msgid ""
 "- [Lexicon](/specs/lexicon)\n"
 "- [HTTP API (XRPC)](/specs/xrpc) and [Event Streams](/specs/event-stream)\n"
 msgstr ""
-"- [認証転送プロトコル](/specs/atp)\n"
-"- [DID](/specs/did) と [ハンドル](/specs/handle)\n"
-"- [リポジトリ](/specs/repository) と [データ モデル](/specs/data-model)\n"
+"- [ATプロトコル](/specs/atp)\n"
+"- [DID](/specs/did)と[ハンドル](/specs/handle)\n"
+"- [リポジトリ](/specs/repository)と[データモデル](/specs/data-model)\n"
 "- [用語集](/specs/lexicon)\n"
-"- [HTTP API (XRPC)](/specs/xrpc) と [イベント ストリーム](/specs/event-stream)\n"
-"\n"
-"ここから、[ガイドと仕様](/) を読み進めることができます。\n"
+"- [HTTP API（XRPC）](/specs/xrpc)と[イベントストリーム](/specs/event-stream)\n"

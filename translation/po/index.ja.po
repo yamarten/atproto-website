@@ -36,6 +36,7 @@ msgstr ""
 "import { Guides } from '@/components/Guides'\n"
 "import { Specs } from '@/components/Specs'\n"
 "import { HeroPattern } from '@/components/HeroPattern'\n"
+"import { Heading } from '@/components/Heading'\n"
 "import { Firehose } from '@/components/Firehose'\n"
 "import { CodeCard } from '@/components/CodeCard'\n"
 "import { ImageCard } from '@/components/ImageCard'\n"
@@ -57,9 +58,9 @@ msgid ""
 "}\n"
 msgstr ""
 "export const header = {\n"
-"  title: 'AT Protocol',\n"
+"  title: 'ATプロトコル',\n"
 "  description:\n"
-"    'The AT Protocol is an open, decentralized, and high-performance network for building social applications.',\n"
+"    'ATプロトコルは、ソーシャルアプリケーションを構築するためのオープンで分散型の高性能ネットワークです。',\n"
 "}\n"
 
 #. type: Plain text
@@ -78,13 +79,13 @@ msgstr "<HeroPattern />\n"
 #: src/docs/en.mdx:25
 #, no-wrap
 msgid "# Welcome to the Atmosphere\n"
-msgstr "# Atmosphere へようこそ\n"
+msgstr "# Atmosphereへようこそ\n"
 
 #. type: Plain text
 #: src/docs/en.mdx:27
 #, no-wrap
 msgid "The AT Protocol is an open, decentralized network for building social applications. {{ className: 'lead' }}\n"
-msgstr "AT プロトコルは、ソーシャル アプリケーションを構築するためのオープンな分散型ネットワークです。 {{ className: 'lead' }}\n"
+msgstr "ATプロトコルは、ソーシャルアプリケーションを構築するためのオープンな分散型ネットワークです。{{ className: 'lead' }}\n"
 
 #. type: Plain text
 #: src/docs/en.mdx:36
@@ -237,7 +238,7 @@ msgid ""
 "</ArticleSummary>\n"
 msgstr ""
 "<ArticleSummary tag=\"Guide\" title=\"用語集\" href=\"/guides/glossary\" >\n"
-"PDS とは何ですか? AppView とは何ですか? DID とは何ですか? 新しい概念に少し戸惑っている場合は、この用語集をご覧ください。\n"
+"PDSとは何ですか？AppViewとは？DIDとは？新しい概念に少し戸惑っている場合は、この用語集をご覧ください。\n"
 "</ArticleSummary>\n"
 
 #. type: Plain text
@@ -248,8 +249,8 @@ msgid ""
 "In this guide, we build a simple multi-user app that publishes your current \"status\" as an emoji.\n"
 "</ArticleSummary>\n"
 msgstr ""
-"<ArticleSummary tag=\"Guide\" title=\"ATProto での構築の簡単な入門\" href=\"/guides/applications\" >\n"
-"このガイドでは、現在の「ステータス」を絵文字として公開するシンプルなマルチユーザー アプリを構築します。\n"
+"<ArticleSummary tag=\"Guide\" title=\"ATプロトコルでの構築の簡単な入門\" href=\"/guides/applications\" >\n"
+"このガイドでは、「ステータス」を絵文字として公開するシンプルなマルチユーザーアプリを構築します。\n"
 "</ArticleSummary>\n"
 
 #. type: Plain text
@@ -272,8 +273,8 @@ msgid ""
 "In this article we explore AT Proto from the perspective of distributed backend engineering.\n"
 "</ArticleSummary>\n"
 msgstr ""
-"<ArticleSummary tag=\"Article\" title=\"分散システムエンジニア向け ATProto\" href=\"/articles/atproto-for-distsys-engineers\" >\n"
-"この記事では、分散バックエンド エンジニアリングの観点から AT Proto について説明します。\n"
+"<ArticleSummary tag=\"Article\" title=\"分散システムエンジニアのためのATプロトコル\" href=\"/articles/atproto-for-distsys-engineers\" >\n"
+"この記事では、分散バックエンドエンジニアリングの観点からATプロトコルについて説明します。\n"
 "</ArticleSummary>\n"
 
 #. type: Plain text
@@ -296,8 +297,8 @@ msgid ""
 "This guide will introduce you to Lexicon and get you started with building your own schemas.\n"
 "</ArticleSummary>\n"
 msgstr ""
-"<ArticleSummary tag=\"Guide\" title=\"Lexicon とは何ですか? また、Lexicon を使用してスキーマを作成する方法を教えてください。\" href=\"/guides/lexicon\" >\n"
-"このガイドでは、Lexicon を紹介し、独自のスキーマの構築方法を説明します。\n"
+"<ArticleSummary tag=\"Guide\" title=\"Lexiconとは何ですか？また、Lexiconを使用してスキーマを作成する方法を教えてください。\" href=\"/guides/lexicon\" >\n"
+"このガイドでは、Lexiconを紹介し、独自のスキーマの構築方法を説明します。\n"
 "</ArticleSummary>\n"
 
 #. type: Plain text
@@ -307,7 +308,10 @@ msgid ""
 "<ArticleSummary tag=\"Article\" title=\"ATProto Ethos\" href=\"/articles/atproto-ethos\" >\n"
 "A deep dive into the philosophical and aesthetic principles underlying the design of AT Protocol.\n"
 "</ArticleSummary>\n"
-msgstr " \n"
+msgstr ""
+"<ArticleSummary tag=\"Article\" title=\"ATプロトコルの理念\" href=\"/articles/atproto-ethos\" >\n"
+"ATプロトコルの設計の基礎となる哲学および美学を深く掘り下げます。\n"
+"</ArticleSummary>\n"
 
 #. type: Plain text
 #: src/docs/en.mdx:110 src/docs/en.mdx:124
@@ -325,31 +329,31 @@ msgstr "<div className=\"flex flex-col xl:grid grid-cols-3 gap-12 xl:max-w-none 
 #: src/docs/en.mdx:114
 #, no-wrap
 msgid "<ImageCard image={WebWithoutWallsPng} href=\"https://www.youtube.com/watch?v=F1sJW6nTP6E\" title=\"Web Without Walls - Talk at React Universe 2024\" tag=\"Talk\" description=\"An introduction to the AT Protocol presented by Dan Abramov at React Universe Conf 2024\" />\n"
-msgstr "<ImageCard image={WebWithoutWallsPng} href=\"https://www.youtube.com/watch?v=F1sJW6nTP6E\" title=\"壁のないウェブ - React Universe 2024 での講演\" tag=\"Talk\" description=\"React Universe Conf 2024 で Dan Abramov が発表した AT プロトコルの紹介\" />\n"
+msgstr "<ImageCard image={WebWithoutWallsPng} href=\"https://www.youtube.com/watch?v=F1sJW6nTP6E\" title=\"壁のないウェブ - React Universe 2024での講演\" tag=\"Talk\" description=\"React Universe Conf 2024でDan Abramovが発表したATプロトコルの紹介\" />\n"
 
 #. type: Plain text
 #: src/docs/en.mdx:116
 #, no-wrap
 msgid "<ImageCard image={DotMediaInterviewPng} href=\"https://flipboard.video/w/ophhJTECuL7fcBNbUitV3q\" title=\"Make Identity Central Again, with Bluesky's Jay Graber\" tag=\"Interview\" description=\"An interview between Jay Graber and Flipboard CEO Mike McCue about making social more like the Web.\" />\n"
-msgstr "<ImageCard image={DotMediaInterviewPng} href=\"https://flipboard.video/w/ophhJTECuL7fcBNbUitV3q\" title=\"Bluesky の Jay Graber 氏とともに、アイデンティティを再び中心に据える\" tag=\"Interview\" description=\"ジェイ・グレーバー氏とFlipboard CEOのマイク・マッキュー氏による、ソーシャルをWebに近づけることについてのインタビュー。\" />\n"
+msgstr "<ImageCard image={DotMediaInterviewPng} href=\"https://flipboard.video/w/ophhJTECuL7fcBNbUitV3q\" title=\"BlueskyのJay Graber氏とともに、アイデンティティを再び中心に据える\" tag=\"Interview\" description=\"Jay Graber氏とFlipboard CEOのMike McCue氏による、ソーシャルをウェブに近づけることについてのインタビュー。\" />\n"
 
 #. type: Plain text
 #: src/docs/en.mdx:118
 #, no-wrap
 msgid "<ImageCard image={WhitepaperPng} href=\"https://arxiv.org/abs/2402.03239\" title=\"Bluesky and the AT Protocol: Usable Decentralized Social Media\" tag=\"Whitepaper\" description=\"A whitepaper authored by Martin Kleppman and the AT Protocol team.\" />\n"
-msgstr "<ImageCard image={WhitepaperPng} href=\"https://arxiv.org/abs/2402.03239\" title=\"Bluesky と AT プロトコル: 使いやすい分散型ソーシャル メディア\" tag=\"Whitepaper\" description=\"Martin Kleppmann と AT プロトコル チームが執筆したホワイト ペーパー。\" />\n"
+msgstr "<ImageCard image={WhitepaperPng} href=\"https://arxiv.org/abs/2402.03239\" title=\"BlueskyとATプロトコル：使いやすい分散型ソーシャルメディア\" tag=\"Whitepaper\" description=\"Martin KleppmannとATプロトコルチームが執筆したホワイトペーパー。\" />\n"
 
 #. type: Plain text
 #: src/docs/en.mdx:120
 #, no-wrap
 msgid "{/* <ImageCard image={TbdIntervewJpg} href=\"https://www.youtube.com/live/D5WVK7KfTAk\" title=\"Building the Social Internet with Bluesky's AT Protocol\" tag=\"Interview\" description=\"An interview between Dan Abramov and TBD about how the dotmedia Protocol works.png\" /> */}\n"
-msgstr "{/* <ImageCard image={TbdInterviewJpg} href=\"https://www.youtube.com/live/D5WVK7KfTAk\" title=\"Bluesky の AT プロトコルでソーシャル インターネットを構築する\" tag=\"Interview\" description=\"AT プロトコルの仕組みに関する Dan Abramov 氏と TBD 氏によるインタビュー。このトピックを初めて知る人にとっては素晴らしい入門書です。\" /> */}\n"
+msgstr "{/* <ImageCard image={TbdInterviewJpg} href=\"https://www.youtube.com/live/D5WVK7KfTAk\" title=\"BlueskyのATプロトコルでソーシャルインターネットを構築する\" tag=\"Interview\" description=\"ATプロトコルの仕組みに関するDan Abramov氏とTB 氏によるインタビュー。このトピックを初めて知る人にとっては素晴らしい入門書です。\" /> */}\n"
 
 #. type: Plain text
 #: src/docs/en.mdx:122
 #, no-wrap
 msgid "{/* <ImageCard image={HowDoesBlueskyWorkBlogpostPng} href=\"https://steveklabnik.com/writing/how-does-bluesky-work/\" title=\"How does Bluesky work?\" tag=\"Community Blogpost\" description=\"A blog post by Steve Klabnik describing how Bluesky and ATProto work at a high level.\" /> */}\n"
-msgstr "{/* <ImageCard image={HowDoesBlueskyWorkBlogpostPng} href=\"https://steveklabnik.com/writing/how-does-bluesky-work/\" title=\"Bluesky はどのように機能しますか?\" tag=\"Community Blogpost\" description=\"Bluesky と ATProto が高レベルでどのように機能するかを説明する Steve Klabnik のブログ投稿。\" /> */}\n"
+msgstr "{/* <ImageCard image={HowDoesBlueskyWorkBlogpostPng} href=\"https://steveklabnik.com/writing/how-does-bluesky-work/\" title=\"Blueskyはどのように機能しますか？\" tag=\"Community Blogpost\" description=\"BlueskyとATプロトコルが高レベルでどのように機能するかを説明するSteve Klabnikのブログ投稿。\" /> */}\n"
 
 #. type: Plain text
 #: src/docs/en.mdx:126
@@ -397,10 +401,10 @@ msgstr "</div> */}\n"
 #: src/docs/en.mdx:140
 #, no-wrap
 msgid "## Looking for the Bluesky API docs?\n"
-msgstr "## Bluesky API ドキュメントをお探しですか?\n"
+msgstr "<Heading level={2} id=\"looking-for-the-bluesky-api-docs\">Bluesky APIドキュメントをお探しですか？</Heading>\n"
 
 #. type: Plain text
 #: src/docs/en.mdx:141
 #, no-wrap
 msgid "Go to [docs.bsky.app](https://docs.bsky.app) for Bluesky-specific documentation.\n"
-msgstr "Bluesky 固有のドキュメントについては、[docs.bsky.app](https://docs.bsky.app) にアクセスしてください。\n"
+msgstr "Bluesky固有のドキュメントについては、[docs.bsky.app](https://docs.bsky.app)にアクセスしてください。\n"
