@@ -50,7 +50,7 @@ ATProto をすぐに理解できるように、ここでは簡単な内容に留
 
 <Heading level={2} id="introduction">はじめに</Heading>
 
-Atmosphere のデータは、ユーザーの個人リポジトリに保存されます。各ユーザーが独自の Web サイトを持っているようなものです。目標は、ユーザーからのデータを SQLite DB に集約することです。
+Atmosphere のデータは、ユーザーの個人リポジトリに保存されます。各ユーザーが独自の Web サイトを持っているようなものです。目標は、ユーザーからのデータを SQLite DB に集約することです。 
 
 私たちのアプリを Google のようなものだと考えてください。Google の仕事が、各 Web サイトの `/status.json` の下にどの絵文字があるかを伝えることだったとしたら、次のような表示になります。
 
@@ -261,7 +261,7 @@ router.get(
 await agent.com.atproto.repo.getRecord({
   repo: agent.assertDid, // ユーザー
   collection: 'app.bsky.actor.profile', // コレクション
-  rkey: 'self', // レコードkey
+  rkey: 'self', // レコード キー
 })
 ```
 
@@ -466,7 +466,7 @@ new Firehose({
     if (evt.event === 'create' || evt.event === 'update') {
     const record = evt.record
 
-    // 書き込みが有効なステータス更新である場合
+      // 書き込みが有効なステータス更新である場合
     if (
       evt.collection === 'xyz.statusphere.status' &&
       Status.isRecord(record) &&
