@@ -96,6 +96,12 @@ export const header = {
 
 `getFeedSkeleton`にリクエストを送信する際、クライアントは`Accept-Language` HTTP ヘッダーにカンマ区切りのBCP-47言語コード（例：`en`、`pr-BR`）を含めることが推奨されます。フィードジェネレーターはこの言語コンテキストを使用して投稿をフィルタリングまたはランク付けできます。言語フィルタリングが適用される場合、フィードジェネレーターはパースされた言語コードを示す`Content-Language`レスポンスヘッダーを使用する必要があります。
 
+<Heading level={2} id="feed-feedback">フィードのフィードバック</Heading>
+
+フィードジェネレーターは`app.bsky.feed.sendInteractions`エンドポイントを実装することでユーザーからの入力を受け取ることができます。これにはいいね、リポスト、共有などのインタラクションが含まれます。完全な一覧は[app.bsky.feed Lexicon](https://github.com/bluesky-social/atproto/blob/main/lexicons/app/bsky/feed/defs.json#L247)を参照してください。
+
+フィードフィードバックの実装は任意ですが、ユーザー体験の向上に役立つことがあります。
+
 <Heading level={2} id="example-feeds">フィードの例</Heading>
 
 - コミュニティフィード：そのコミュニティ内のDIDのリストをコンパイルし、そのリスト内のユーザーからのすべての投稿についてfirehoseをフィルタリングします。

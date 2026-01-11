@@ -56,8 +56,17 @@ ATデータリポジトリの読み書きには認証済みのクライアント
 
   ctx := context.Background()
   ```
+    SDKライブラリをインポートしたら、そのまま[リクエストの作成](/guides/reading-data)に進みましょう！
 
-    SDK ライブラリをインポートしたら、そのまま[リクエストの作成](/guides/reading-data)に進みましょう！
+<Note>
+Goインポートの仕組み上、`bsky`ライブラリと`util`ライブラリを直接使用していない場合は、これらを[空インポート](https://www.oreilly.com/library/view/the-go-programming/9780134190570/ebook_split_100.html)する必要があることに注意してください。
+
+```go
+_ "github.com/bluesky-social/indigo/api/bsky"
+_ "github.com/bluesky-social/indigo/lex/util"
+```
+</Note>
+
     </TabPanel>
   </TabPanels>
 </TabGroup>
