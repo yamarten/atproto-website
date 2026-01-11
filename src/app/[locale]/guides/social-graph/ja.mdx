@@ -1,0 +1,29 @@
+import {Heading} from '@/components/Heading'
+
+export const header = {
+  title: 'ソーシャルグラフ',
+  description: 'ATプロトコルのソーシャルグラフの操作',
+}
+
+<Heading level={2} id="querying-social-graphs">ソーシャルグラフの取得</Heading>
+
+ATプロトコルのレコードは公開情報です。
+
+このアプローチの別の例として、[『Exploring AT Protocol with Python」](https://davidgasquez.com/exploring-atproto-python/)も参照してください。
+
+<Heading level={2} id="backlinks">バックリンク</Heading>
+
+ATプロトコルからソーシャルグラフデータを取得する強力な方法として、**バックリンク**があります。バックリンクを取得すると、特定のレコード*や*ID*に*リンクしているすべてのレコードを解決できます。
+
+ATプロトコルのレコードは全て誰でも取得可能で、`at://` URIで指定可能なため、これによりネストされたAPIクエリを個別のURLにエンコードできるようになります。一例として、コミュニティプロジェクト[pds.ls](https://pdsls.dev/at://did:plc:vmt7o7y6titkqzzxav247zrn/app.bsky.feed.post/3mbaxebcd6s2f)はこれを行います。
+
+[Microcosm](https://constellation.microcosm.blue)はバックリンクを操作するための一連のリソースを提供します。
+
+<Heading level={2} id="further-reading-and-resources">関連・参考資料</Heading>
+
+- [読み取りと書き込み](/guides/reads-and-writes)
+- [データ読み出し](/guides/reading-data)
+- [データ書き込み](/guides/writing-data)
+- [アカウントと削除](/guides/writing-data)
+- [レコードキー仕様](/specs/record-key)
+- [URIスキーム](/specs/at-uri-scheme)
