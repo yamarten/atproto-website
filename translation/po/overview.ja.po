@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -18,7 +18,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:6
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "export const header = {\n"
 "  title: 'Protocol Overview',\n"
@@ -27,6 +27,7 @@ msgid ""
 "}\n"
 msgstr ""
 "import {Heading} from '@/components/Heading'\n"
+"\n"
 "export const header = {\n"
 "title: 'プロトコルの概要',\n"
 "description:\n"
@@ -35,207 +36,204 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:8
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# Protocol Overview\n"
 msgstr "# プロトコルの概要\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:10
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "The **Authenticated Transfer Protocol**, aka **atproto**, is a decentralized protocol for large-scale social web applications. This document will introduce you to the ideas behind the AT Protocol.\n"
 msgstr "**認証転送プロトコル** (別名 **atproto**) は、大規模な分散型ソーシャル アプリケーション用のフェデレーション プロトコルです。このドキュメントでは、AT プロトコルの背後にある考え方を紹介します。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:12
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Identity\n"
 msgstr "<Heading level={2} id=\"identity\">アイデンティティ</Heading>\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:14
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Users in AT Protocol have permanent decentralized identifiers (DIDs) for their accounts. They also have a configurable domain name, which acts as a human-readable handle. Identities include a reference to the user's current hosting provider and cryptographic keys.\n"
 msgstr "ユーザーは、AT プロトコル上のドメイン名で識別されます。これらのドメインは、ユーザーのアカウントとそのデータを保護する暗号化 URL にマップされます。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:16 src/guides/sync/en.mdx:15
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Data Repositories\n"
-msgstr ""
-"#-#-#-#-#  overview.ja.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"<Heading level={2} id=\"data-repositories\">データ リポジトリ</Heading>\n"
-"#-#-#-#-#  sync.ja.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"<Heading level={2} id=\"data-repositories\">データ リポジトリ</Heading>"
+msgstr "<Heading level={2} id=\"data-repositories\">データリポジトリ</Heading>\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:18
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "User data is exchanged in [signed data repositories](/guides/data-repos). These repositories are collections of records which include posts, comments, likes, follows, etc.\n"
 msgstr "ユーザー データは、[署名済みデータ リポジトリ](/guides/data-repos) で交換されます。これらのリポジトリは、投稿、コメント、いいね、フォロー、メディア BLOB などを含むレコードのコレクションです。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:20
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Network Architecture\n"
 msgstr "<Heading level={2} id=\"network-architecture\">フェデレーション</Heading>\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:22
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "The AT Protocol has a federated network architecture, meaning that account data is stored on host servers, as opposed to a peer-to-peer model between end devices. Federation was chosen to ensure the network is convenient to use and reliably available. Repository data is synchronized between servers over standard web technologies ([HTTP](/specs/xrpc) and [WebSockets](/specs/event-stream)).\n"
 msgstr "AT プロトコルは、フェデレーション ネットワーク モデルでリポジトリを同期します。フェデレーションは、ネットワークが使いやすく、確実に利用できるようにするために選択されました。リポジトリ データは、標準の Web テクノロジー ([HTTP](/specs/xrpc) および [WebSocket](/specs/event-stream)) を介してサーバー間で同期されます。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:24
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "The three core services in our network are Personal Data Servers (PDS), Relays, and App Views. There are also supporting services such as feed generators and labelers.\n"
 msgstr "ネットワークの 3 つのコア サービスは、パーソナル データ サーバー (PDS)、リレー、およびアプリ ビューです。フィード ジェネレーターとラベラーにも取り組んでいます。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:26
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "The lower-level primitives that can get stacked together differently are the repositories, lexicons, and DIDs. We published an overview of our technical decisions around federation architecture [on our blog](https://bsky.social/about/blog/5-5-2023-federation-architecture).\n"
 msgstr "さまざまな方法でスタックできる下位レベルのプリミティブは、リポジトリ、レキシコン、および DID です。フェデレーション アーキテクチャに関する技術的な決定の概要を [ブログ](https://bsky.social/about/blog/5-5-2023-federation-architecture) で公開しました。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:28
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Interoperation\n"
 msgstr "<Heading level={2} id=\"interoperation\">相互運用</Heading>\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:30
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "A global schemas network called [Lexicon](/specs/lexicon) is used to unify the names and behaviors of the calls across the servers. Servers implement \"lexicons\" to support featuresets, including the core `com.atproto.*` lexicons for syncing user repositories and the `app.bsky.*` lexicons to provide basic social behaviors.\n"
 msgstr "[Lexicon](/specs/lexicon) と呼ばれるグローバル スキーマ ネットワークは、サーバー間での呼び出しの名前と動作を統一するために使用されます。サーバーは、ユーザー リポジトリを同期するためのコア `com.atproto.*` レキシコンや、基本的なソーシャル動作を提供する `app.bsky.*` レキシコンなどの機能セットをサポートするために「レキシコン」を実装します。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:32
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "While the Web exchanges documents, the AT Protocol exchanges schematic and semantic information, enabling the software from different organizations to understand each others' data. This gives atproto clients freedom to produce user interfaces independently of the servers, and removes the need to exchange rendering code (HTML/JS/CSS) while browsing content.\n"
 msgstr "Web がドキュメントを交換する一方で、AT プロトコルは図式情報とセマンティック情報を交換し、異なる組織のソフトウェアが互いのデータを理解できるようにします。これにより、atproto クライアントはサーバーから独立してユーザー インターフェイスを自由に作成でき、コンテンツを閲覧する際にレンダリング コード (HTML/JS/CSS) を交換する必要がなくなります。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:34
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Achieving Scale\n"
 msgstr "<Heading level={2} id=\"achieving-scale\">スケールの実現</Heading>\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:36
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Personal Data Servers are your home in the cloud. They host your data, distribute it, manage your identity, and orchestrate requests to other services to give you your views.\n"
 msgstr "個人データ サーバーは、クラウド内のホームです。データをホストし、配布し、ID を管理し、他のサービスへのリクエストを調整してビューを提供します。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:38
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Relays collect data updates from many servers in to a single firehose.\n"
 msgstr "リレーは、大規模なメトリック (いいね、再投稿、フォロワー) の取得、コンテンツの検出 (アルゴリズム)、ユーザー検索など、すべてのイベントを処理します。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:40
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "App Views provide aggregated application data for the entire network. They support large-scale metrics (likes, reposts, followers), content discovery (algorithms), and user search.\n"
-msgstr "App Views provide aggregated application data for the entire network. They support large-scale metrics (likes, reposts, followers), content discovery (algorithms), and user search.\n"
+msgstr " \n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:42
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "This separation of roles is intended to provide users with choice between multiple interoperable providers, while also scaling to large network sizes.\n"
 msgstr "この区別は、スケールと高度なユーザー選択を実現することを目的としています。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:44
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Algorithmic choice\n"
 msgstr "<Heading level={2} id=\"algorithmic-choice\">アルゴリズムの選択</Heading>\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:46
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "As with Web search engines, users are free to select their aggregators. Feeds, labelers, and search indices can be provided by independent third parties, with requests routed by the PDS, based on client app configuration. Client apps may be tied to specific services, such as App Views or mandatory labelers.\n"
 msgstr "Web 検索エンジンと同様に、ユーザーはアグリゲータを自由に選択できます。フィード、アプリ ビュー、検索インデックスは独立したサードパーティによって提供され、リクエストはユーザー構成に基づいて PDS によってルーティングされます。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:48
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Account portability\n"
 msgstr "<Heading level={2} id=\"account-portability\">アカウントの移植性</Heading>\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:50
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "We assume that a Personal Data Server may fail at any time, either by going offline in its entirety, or by ceasing service for specific users. The goal of the AT Protocol is to ensure that a user can migrate their account to a new PDS without the server's involvement.\n"
 msgstr "個人データ サーバーは、完全にオフラインになるか、特定のユーザーに対するサービスが停止するかのいずれかによって、いつでも失敗する可能性があると想定しています。AT プロトコルの目的は、ユーザーがサーバーの関与なしに自分のアカウントを新しい PDS に移行できるようにすることです。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:52
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "User data is stored in [signed data repositories](/guides/data-repos) and authenticated by [DIDs](/guides/identity). Signed data repositories are like Git repos but for database records, and DIDs provide a directory of cryptographic keys, similar in some ways to the TLS certificate system. Identities are expected to be secure, reliable, and independent of the user's PDS.\n"
 msgstr "ユーザー データは [署名済みデータ リポジトリ](/guides/data-repos) に保存され、[DID](/guides/identity) によって検証されます。署名済みデータ リポジトリは Git リポジトリに似ていますが、データベース レコード用です。DID は基本的にユーザー証明書のレジストリであり、いくつかの点で TLS 証明書システムに似ています。これらは、安全で信頼性が高く、ユーザーの PDS から独立していることが期待されています。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:54
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Most DID documents publish two types of public keys: a signing key and rotation keys.\n"
 msgstr "各 DID ドキュメントは、署名キーと回復キーの 2 つの公開キーを公開します。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:57
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "* **Signing key**: Validates the user's data repository. All DIDs include such a key.\n"
 "* **Rotation keys**: Asserts changes to the DID Document itself. The PLC DID method includes this, while the DID Web method does not.\n"
 msgstr ""
 "* **署名キー**: DID ドキュメントとユーザーのデータ リポジトリへの変更をアサートします。\n"
+"\n"
 "* **回復キー**: DID ドキュメントへの変更をアサートします。72 時間以内に署名キーを上書きできます。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:59
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "The signing key is entrusted to the PDS so that it can manage the user's data, but rotation keys can be controlled by the user, e.g. as a paper key. This makes it possible for the user to update their account to a new PDS without the original host's help.\n"
 msgstr "署名キーは PDS に委託され、ユーザーのデータを管理できるようにしますが、回復キーはユーザーが保存します (紙のキーなど)。これにより、ユーザーは元のホストの助けを借りずにアカウントを新しい PDS に更新できます。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:61
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "A backup of the user’s data could be persistently synced to a user's own device as a backup (contingent on the disk space available), or mirrored by a third-party service. In the event their PDS disappears without notice, the user should be able to migrate to a new provider by updating their DID Document and uploading their data backup.\n"
 msgstr "ユーザーのデータのバックアップは、バックアップとしてクライアントに永続的に同期されます (使用可能なディスク領域によって異なります)。PDS が予告なく消えた場合、ユーザーは DID ドキュメントを更新してバックアップをアップロードすることで、新しいプロバイダーに移行できる必要があります。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:63
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Speech, reach, and moderation\n"
 msgstr "<Heading level={2} id=\"speech-reach-and-moderation\">スピーチ、リーチ、モデレーション</Heading>\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:65
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "AT Protocol's model is that _speech_ and _reach_ should be two separate layers, built to work with each other. The “speech” layer should remain permissive, distributing authority and designed to ensure everyone has a voice. The “reach” layer lives on top, built for flexibility and designed to scale.\n"
 msgstr "Atproto のモデルでは、_スピーチ_ と _リーチ_ は 2 つの別々のレイヤーとして構築され、互いに連携するように構築されます。「スピーチ」レイヤーは、権限を分散し、誰もが発言権を持つように設計されている必要があります。「リーチ」レイヤーは、その上にあり、柔軟性と拡張性を考慮して構築されています。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:67
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "The base layer of atproto (personal data repositories and federated networking) creates a common space for speech where everyone is free to participate, analogous to the Web where anyone can put up a website. The indexing services then enable reach by aggregating content from the network, analogous to a search engine.\n"
 msgstr "atproto の基本レイヤー (個人データ リポジトリとフェデレーション ネットワーク) は、誰もが自由に参加できるスピーチのための共通スペースを作成します。これは、誰でも Web サイトを作成できる Web に似ています。次に、インデックス サービスがネットワークからコンテンツを集約してリーチを有効にします。これは、検索エンジンに似ています。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:69
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Specifications\n"
 msgstr "<Heading level={2} id=\"specifications\">仕様</Heading>\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:71
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Some of the primary specifications comprising the initial version of the AT Protocol are:\n"
 msgstr "主要な仕様の一部は次のとおりです。AT プロトコルの初期バージョンには次のものが含まれています:\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:76
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "- [Authenticated Transfer Protocol](/specs/atp)\n"
 "- [DIDs](/specs/did) and [Handles](/specs/handle)\n"
@@ -248,3 +246,5 @@ msgstr ""
 "- [リポジトリ](/specs/repository) と [データ モデル](/specs/data-model)\n"
 "- [用語集](/specs/lexicon)\n"
 "- [HTTP API (XRPC)](/specs/xrpc) と [イベント ストリーム](/specs/event-stream)\n"
+"\n"
+"ここから、[ガイドと仕様](/) を読み進めることができます。\n"

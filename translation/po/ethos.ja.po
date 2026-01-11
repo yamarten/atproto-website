@@ -19,18 +19,9 @@ msgstr ""
 #. type: Plain text
 #: src/guides/applications/en.mdx:677 src/articles/atproto-ethos/en.mdx:147
 #: src/articles/atproto-for-distsys-engineers/en.mdx:232
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<FooterCTA href=\"/\" title=\"Ready to learn more?\" description=\"Specs, guides, and SDKs can be found here.\" />\n"
-msgstr ""
-"#-#-#-#-#  ethos.ja.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"#-#-#-#-#  distsys.ja.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"<FooterCTA href=\"/\" title=\"詳細を知りたいですか?\" description=\"仕様、ガイド、SDK は、こちらでご覧いただけます。\" />\n"
-"#-#-#-#-#  applications.ja.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"<FooterCTA href=\"/\" title=\"さらに学習する準備はできましたか?\" description=\"仕様、ガイド、SDK はここにあります。\" />\n"
-"#-#-#-#-#  distsys.ja.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"<FooterCTA href=\"/\" title=\"詳細を知りたいですか?\" description=\"仕様、ガイド、SDK は、こちらでご覧いただけます。\" />\n"
-"#-#-#-#-#  applications.ja.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"<FooterCTA href=\"/\" title=\"さらに学習する準備はできましたか?\" description=\"仕様、ガイド、SDK はここにあります。\" />\n"
+msgstr "<FooterCTA href=\"/\" title=\"さらに学習する準備はできましたか?\" description=\"仕様、ガイド、SDK はここにあります。\" />\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:2

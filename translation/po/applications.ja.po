@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -18,7 +18,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:13
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "import Link from 'next/link'\n"
 "import {FooterCTA} from \"@/components/FooterCTA\"\n"
@@ -50,7 +50,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:19
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "export const header = {\n"
 "  title: 'Quick start guide to building applications on AT Protocol',\n"
@@ -66,13 +66,13 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:21
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "# Quick start guide to building applications on AT Protocol\n"
 msgstr "# AT プロトコルでアプリケーションを構築するためのクイック スタート ガイド\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:35
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<Link href=\"https://github.com/bluesky-social/statusphere-example-app\" className=\"not-prose flex items-center gap-2 bg-blue-100 dark:bg-blue-950 dark:text-white px-4 py-3 text-base rounded-lg hover:underline\">\n"
 "  <svg viewBox=\"0 0 20 20\" aria-hidden=\"true\" className=\"h-6 dark:text-white\">\n"
@@ -104,25 +104,25 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:37
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "In this guide, we're going to build a simple multi-user app that publishes your current \"status\" as an emoji. Our application will look like this: {{className: 'lead'}}\n"
 msgstr "このガイドでは、現在の「ステータス」を絵文字として公開するシンプルなマルチユーザー アプリを構築します。アプリケーションは次のようになります: {{className: 'lead'}}\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:39
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<Image alt=\"A screenshot of our example application\" src={AppScreenshot} />\n"
 msgstr "<Image alt=\"サンプル アプリケーションのスクリーンショット\" src={AppScreenshot} />\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:41
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "We will cover how to: {{className: 'lead'}}\n"
 msgstr "次の方法について説明します: {{className: 'lead'}}\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:46
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "- Signin via OAuth {{className: 'lead'}}\n"
 "- Fetch information about users (profiles) {{className: 'lead'}}\n"
@@ -136,31 +136,31 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:48
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "We're going to keep this light so you can quickly wrap your head around ATProto. There will be links with more information about each step. {{className: 'lead'}}\n"
 msgstr "ATProto をすぐに理解できるように、ここでは簡単な内容に留めます。各ステップについて、詳細情報へのリンクがあります。 {{className: 'lead'}}\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:50
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Introduction\n"
 msgstr "<Heading level={2} id=\"introduction\">はじめに</Heading>\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:52
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Data in the Atmosphere is stored on users' personal repos. It's almost like each user has their own website. Our goal is to aggregate data from the users into our SQLite DB. \n"
-msgstr "Atmosphere のデータは、ユーザーの個人リポジトリに保存されます。各ユーザーが独自の Web サイトを持っているようなものです。目標は、ユーザーからのデータを SQLite DB に集約することです。\n"
+msgstr "Atmosphere のデータは、ユーザーの個人リポジトリに保存されます。各ユーザーが独自の Web サイトを持っているようなものです。目標は、ユーザーからのデータを SQLite DB に集約することです。 \n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:54
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Think of our app like a Google. If Google's job was to say which emoji each website had under `/status.json`, then it would show something like:\n"
 msgstr "私たちのアプリを Google のようなものだと考えてください。Google の仕事が、各 Web サイトの `/status.json` の下にどの絵文字があるかを伝えることだったとしたら、次のような表示になります。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:58
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "- `nytimes.com` is feeling 📰 according to `https://nytimes.com/status.json`\n"
 "- `bsky.app` is feeling 🦋 according to `https://bsky.app/status.json`\n"
@@ -172,31 +172,31 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:60
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "The Atmosphere works the same way, except we're going to check `at://` instead of `https://`. Each user has a data repo under an `at://` URL. We'll crawl all the user data repos in the Atmosphere for all the  \"status.json\" records and aggregate them into our SQLite database.\n"
 msgstr "Atmosphere も同様に動作しますが、`https://` ではなく `at://` をチェックします。各ユーザーには `at://` URL の下にデータ リポジトリがあります。Atmosphere 内のすべてのユーザー データ リポジトリをクロールして、すべての \"status.json\" レコードを取得し、それらを SQLite データベースに集約します。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:62
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "> `at://` is the URL scheme of the AT Protocol. Under the hood it uses common tech like HTTP and DNS, but it adds all of the features we'll be using in this tutorial.\n"
 msgstr "> `at://` は AT プロトコルの URL スキームです。内部的には HTTP や DNS などの一般的な技術を使用していますが、このチュートリアルで使用するすべての機能が追加されています。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:64
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Step 1. Starting with our ExpressJS app\n"
 msgstr "<Heading level={2} id=\"step-1-starting-with-our-expressjs-app\">ステップ 1. ExpressJS アプリから始める</Heading>\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:66
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Start by cloning the repo and installing packages.\n"
 msgstr "まず、リポジトリをクローンしてパッケージをインストールします。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:75
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "```bash\n"
 "git clone https://github.com/bluesky-social/statusphere-example-app.git\n"
@@ -218,19 +218,19 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:77
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Our repo is a regular Web app. We're rendering our HTML server-side like it's 1999. We also have a SQLite database that we're managing with [Kysely](https://kysely.dev/).\n"
 msgstr "リポジトリは通常の Web アプリです。1999 年のように HTML サーバー側をレンダリングしています。また、[Kysely](https://kysely.dev/) で管理している SQLite データベースもあります。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:79
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Our starting stack:\n"
 msgstr "開始スタック:\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:84
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "- Typescript\n"
 "- NodeJS web server ([express](https://expressjs.com/))\n"
@@ -244,55 +244,55 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:86
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "With each step we'll explain how our Web app taps into the Atmosphere. Refer to the codebase for more detailed code &mdash; again, this tutorial is going to keep it light and quick to digest.\n"
 msgstr "各ステップで、Web アプリが Atmosphere を活用する方法を説明します。詳細なコードについては、コードベースを参照してください。繰り返しますが、このチュートリアルでは、わかりやすく簡潔に説明します。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:88
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Step 2. Signing in with OAuth\n"
 msgstr "<Heading level={2} id=\"step-2-signing-in-with-oauth\">ステップ 2. OAuth でサインイン</Heading>\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:90
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "When somebody logs into our app, they'll give us read & write access to their personal `at://` repo. We'll use that to write the status json record.\n"
 msgstr "誰かがアプリにログインすると、その人の個人用 `at://` リポジトリへの読み取りおよび書き込みアクセス権が付与されます。これを使用して、ステータス json レコードを書き込みます。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:92
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "We're going to accomplish this using OAuth ([spec](https://github.com/bluesky-social/proposals/tree/main/0004-oauth)). Most of the OAuth flows are going to be handled for us using the [@atproto/oauth-client-node](https://github.com/bluesky-social/atproto/tree/main/packages/oauth/oauth-client-node) library. This is the arrangement we're aiming toward:\n"
 msgstr "これを OAuth ([spec](https://github.com/bluesky-social/proposals/tree/main/0004-oauth)) を使用して実現します。 OAuth フローのほとんどは、[@atproto/oauth-client-node](https://github.com/bluesky-social/atproto/tree/main/packages/oauth/oauth-client-node) ライブラリを使用して処理されます。これが私たちが目指している構成です:\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:94
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<Image alt=\"A diagram of the OAuth elements\" src={DiagramOauth} />\n"
 msgstr "<Image alt=\"OAuth 要素の図\" src={DiagramOauth} />\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:96
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "When the user logs in, the OAuth client will create a new session with their repo server and give us read/write access along with basic user info.\n"
 msgstr "ユーザーがログインすると、OAuth クライアントはリポジトリ サーバーとの新しいセッションを作成し、基本的なユーザー情報とともに読み取り/書き込みアクセスを付与します。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:98
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<Image alt=\"A screenshot of the login UI\" src={AppLogin} />\n"
 msgstr "<Image alt=\"ログイン UI のスクリーンショット\" src={AppLogin} />\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:100
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Our login page just asks the user for their \"handle,\" which is the domain name associated with their account. For [Bluesky](https://bsky.app) users, these tend to look like `alice.bsky.social`, but they can be any kind of domain (eg `alice.com`).\n"
 msgstr "ログイン ページでは、ユーザーに「ハンドル」を尋ねるだけです。これは、アカウントに関連付けられたドメイン名です。[Bluesky](https://bsky.app) ユーザーの場合、これらは `alice.bsky.social` のように見えますが、任意の種類のドメイン (例 `alice.com`) にすることができます。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:113
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "```html\n"
 "<!-- src/pages/login.ts -->\n"
@@ -322,13 +322,13 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:115
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "When they submit the form, we tell our OAuth client to initiate the authorization flow and then redirect the user to their server to complete the process.\n"
 msgstr "ユーザーがフォームを送信すると、OAuth クライアントに認証フローを開始するように指示し、ユーザーをサーバーにリダイレクトしてプロセスを完了します。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:131
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "```typescript\n"
 "/** src/routes.ts **/\n"
@@ -364,19 +364,19 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:133
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "This is the same kind of SSO flow that Google or GitHub uses. The user will be asked for their password, then asked to confirm the session with your application.\n"
 msgstr "これは、Google や GitHub が使用するのと同じ種類の SSO フローです。ユーザーはパスワードを求められ、次にアプリケーションとのセッションを確認するように求められます。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:135
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "When that finishes, the user will be sent back to `/oauth/callback` on our Web app. The OAuth client will store the access tokens for the user's server, and then we attach their account's [DID](https://atproto.com/specs/did) to the cookie-session.\n"
 msgstr "それが完了すると、ユーザーは Web アプリの `/oauth/callback` に送り返されます。 OAuth クライアントはユーザーのサーバーのアクセス トークンを保存し、その後、アカウントの [DID](https://atproto.com/specs/did) を Cookie セッションに添付します。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:144
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "```typescript\n"
 "/** src/routes.ts **/\n"
@@ -398,7 +398,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:149
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "    // Attach the account DID to our user via a cookie\n"
 "    const cookieSession = await getIronSession(req, res)\n"
@@ -412,7 +412,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:155
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "    // Send them back to the app\n"
 "    return res.redirect('/')\n"
@@ -428,25 +428,25 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:157
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "With that, we're in business! We now have a session with the user's repo server and can use that to access their data.\n"
 msgstr "これで準備完了です!これで、ユーザーのリポジトリ サーバーとのセッションが確立され、それを使用してユーザーのデータにアクセスできます。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:159
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Step 3. Fetching the user's profile\n"
 msgstr "<Heading level={2} id=\"step-3-fetching-the-users-profile\">ステップ 3. ユーザーのプロファイルを取得する</Heading>\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:161
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Why don't we learn something about our user? In [Bluesky](https://bsky.app), users publish a \"profile\" record which looks like this:\n"
 msgstr "ユーザーについて何か調べてみましょう。[Bluesky](https://bsky.app) では、ユーザーは次のような「プロファイル」レコードを公開します。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:172
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "```typescript\n"
 "interface ProfileRecord {\n"
@@ -472,19 +472,19 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:174
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "You can examine this record directly using [atproto-browser.vercel.app](https://atproto-browser.vercel.app). For instance, [this is the profile record for @bsky.app](https://atproto-browser.vercel.app/at?u=at://did:plc:z72i7hdynmk6r22z27h6tvur/app.bsky.actor.profile/self).\n"
 msgstr "[atproto-browser.vercel.app](https://atproto-browser.vercel.app) を使用して、このレコードを直接調べることができます。たとえば、[これは @bsky.app のプロファイル レコードです](https://atproto-browser.vercel.app/at?u=at://did:plc:z72i7hdynmk6r22z27h6tvur/app.bsky.actor.profile/self)。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:176
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "We're going to use the [Agent](https://github.com/bluesky-social/atproto/tree/main/packages/api) associated with the user's OAuth session to fetch this record.\n"
 msgstr "このレコードを取得するには、ユーザーの OAuth セッションに関連付けられた [エージェント](https://github.com/bluesky-social/atproto/tree/main/packages/api) を使用します。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:184 src/guides/applications/en.mdx:265
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "```typescript\n"
 "await agent.com.atproto.repo.getRecord({\n"
@@ -494,7 +494,6 @@ msgid ""
 "})\n"
 "```\n"
 msgstr ""
-"#-#-#-#-#  src/guides/applications/ja.mdx:186 (type Plain text)  #-#-#-#-#\n"
 "```typescript\n"
 "await agent.com.atproto.repo.getRecord({\n"
 "  repo: agent.assertDid, // ユーザー\n"
@@ -502,25 +501,16 @@ msgstr ""
 "  rkey: 'self', // レコード キー\n"
 "})\n"
 "```\n"
-"\n"
-"#-#-#-#-#  src/guides/applications/ja.mdx:267 (type: Plain text)  #-#-#-#-#\n"
-"```typescript\n"
-"await agent.com.atproto.repo.getRecord({\n"
-"  repo: agent.assertDid, // ユーザー\n"
-"  collection: 'app.bsky.actor.profile', // コレクション\n"
-"  rkey: 'self', // レコードkey\n"
-"})\n"
-"```\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:186
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "When asking for a record, we provide three pieces of information.\n"
 msgstr "レコードを要求するときは、3 つの情報を提供します。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:190
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "- **repo** The [DID](https://atproto.com/specs/did) which identifies the user,\n"
 "- **collection** The collection name, and\n"
@@ -532,19 +522,19 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:192
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "We'll explain the collection name shortly. Record keys are strings with [some restrictions](https://atproto.com/specs/record-key#record-key-syntax) and a couple of common patterns. The `\"self\"` pattern is used when a collection is expected to only contain one record which describes the user.\n"
 msgstr "コレクション名については後ほど説明します。レコード キーは、[いくつかの制限](https://atproto.com/specs/record-key#record-key-syntax) といくつかの一般的なパターンを含む文字列です。`\"self\"` パターンは、コレクションにユーザーを説明するレコードが 1 つだけ含まれていると予想される場合に使用されます。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:194
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Let's update our homepage to fetch this profile record:\n"
 msgstr "このプロフィール レコードを取得するためにホームページを更新しましょう:\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:203
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "```typescript\n"
 "/** src/routes.ts **/\n"
@@ -566,7 +556,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:208
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "    if (!agent) {\n"
 "      // Serve the logged-out view\n"
@@ -580,7 +570,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:215
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "    // Fetch additional information about the logged-in user\n"
 "    const { data: profileRecord } = await agent.com.atproto.repo.getRecord({\n"
@@ -598,7 +588,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:223
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "    // Serve the logged-in view\n"
 "    return res\n"
@@ -618,19 +608,19 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:225
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "With that data, we can give a nice personalized welcome banner for our user:\n"
 msgstr "このデータを使用して、ユーザー向けにパーソナライズされた素敵なウェルカム バナーを表示できます:\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:227
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<Image alt=\"A screenshot of the banner image\" src={AppBanner} />\n"
 msgstr "<Image alt=\"バナー画像のスクリーンショット\" src={AppBanner} />\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:249
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "```html\n"
 "<!-- pages/home.ts -->\n"
@@ -678,37 +668,37 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:251
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Step 4. Reading & writing records\n"
 msgstr "<Heading level={2} id=\"step-4-reading-writing-records\">ステップ 4. レコードの読み取りと書き込み</Heading>\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:253
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "You can think of the user repositories as collections of JSON records:\n"
 msgstr "ユーザー リポジトリは、JSON レコードのコレクションと考えることができます:\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:255
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<Image alt=\"A diagram of a repository\" src={DiagramRepo} />\n"
 msgstr "<Image alt=\"リポジトリの図\" src={DiagramRepo} />\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:257
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Let's look again at how we read the \"profile\" record:\n"
 msgstr "「プロファイル」レコードの読み取り方法をもう一度見てみましょう:\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:267
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "We write records using a similar API. Since our goal is to write \"status\" records, let's look at how that will happen:\n"
 msgstr "同様の API を使用してレコードを書き込みます。目標は「ステータス」レコードを書き込むことなので、その方法を見てみましょう:\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:271
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "```typescript\n"
 "// Generate a time-based key for our record\n"
@@ -720,7 +710,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:283
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "// Write the \n"
 "await agent.com.atproto.repo.putRecord({\n"
@@ -748,13 +738,13 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:285
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Our `POST /status` route is going to use this API to publish the user's status to their repo.\n"
 msgstr "`POST /status` ルートでは、この API を使用してユーザーのステータスをリポジトリに公開します。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:297
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "```typescript\n"
 "/** src/routes.ts **/\n"
@@ -782,7 +772,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:304
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "    // Construct their status record\n"
 "    const record = {\n"
@@ -800,7 +790,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:317
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "    try {\n"
 "      // Write the status record to the user's repository\n"
@@ -830,7 +820,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:322 src/guides/applications/en.mdx:648
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "    res.status(200).json({})\n"
 "  })\n"
@@ -844,13 +834,13 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:324
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Now in our homepage we can list out the status buttons:\n"
 msgstr "これで、ホームページにステータス ボタンを一覧表示できます:\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:335
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "```html\n"
 "<!-- src/pages/home.ts -->\n"
@@ -876,37 +866,37 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:337
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "And here we are!\n"
 msgstr "これで完了です!\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:339
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<Image alt=\"A screenshot of the app's status options\" src={AppStatusOptions} />\n"
 msgstr "<Image alt=\"アプリのステータス オプションのスクリーンショット\" src={AppStatusOptions} />\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:341
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Step 5. Creating a custom \"status\" schema\n"
 msgstr "<Heading level={2} id=\"step-5-creating-a-custom-status-schema\">ステップ 5. カスタムの「ステータス」スキーマの作成</Heading>\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:343
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Repo collections are typed, meaning that they have a defined schema. The `app.bsky.actor.profile` type definition [can be found here](https://github.com/bluesky-social/atproto/blob/main/lexicons/app/bsky/actor/profile.json).\n"
 msgstr "リポジトリ コレクションは型指定されており、スキーマが定義されています。`app.bsky.actor.profile` 型定義は [こちら](https://github.com/bluesky-social/atproto/blob/main/lexicons/app/bsky/actor/profile.json) にあります。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:345
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Anybody can create a new schema using the [Lexicon](https://atproto.com/specs/lexicon) language, which is very similar to [JSON-Schema](http://json-schema.org/). The schemas use [reverse-DNS IDs](https://atproto.com/specs/nsid) which indicate ownership. In this demo app we're going to use `xyz.statusphere` which we registered specifically for this project (aka statusphere.xyz).\n"
 msgstr "[JSON-Schema](http://json-schema.org/) に非常によく似た [Lexicon](https://atproto.com/specs/lexicon) 言語を使用して、誰でも新しいスキーマを作成できます。スキーマは、所有権を示す [逆 DNS ID](https://atproto.com/specs/nsid) を使用します。このデモ アプリでは、このプロジェクト専用に登録した `xyz.statusphere` (別名 statusphere.xyz) を使用します。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:349
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "> ### Why create a schema?\n"
 ">\n"
@@ -918,13 +908,13 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:351
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Let's create our schema in the `/lexicons` folder of our codebase. You can [read more about how to define schemas here](https://atproto.com/guides/lexicon).\n"
 msgstr "コードベースの `/lexicons` フォルダーにスキーマを作成しましょう。[スキーマの定義方法の詳細については、こちら](https://atproto.com/guides/lexicon) をご覧ください。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:381
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "```json\n"
 "/** lexicons/status.json **/\n"
@@ -988,13 +978,13 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:383
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Now let's run some code-generation using our schema:\n"
 msgstr "では、スキーマを使用してコード生成を実行してみましょう:\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:387
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "```bash\n"
 "./node_modules/.bin/lex gen-server ./src/lexicon ./lexicons/*\n"
@@ -1006,13 +996,13 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:389
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "This will produce Typescript interfaces as well as runtime validation functions that we can use in our app. Here's what that generated code looks like:\n"
 msgstr "これにより、アプリで使用できる Typescript インターフェースとランタイム検証関数が生成されます。生成されたコードは次のようになります:\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:397
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "```typescript\n"
 "/** src/lexicon/types/xyz/statusphere/status.ts **/\n"
@@ -1032,7 +1022,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:405
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "export function isRecord(v: unknown): v is Record {\n"
 "  return (\n"
@@ -1052,7 +1042,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:410
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "export function validateRecord(v: unknown): ValidationResult {\n"
 "  return lexicons.validate('xyz.statusphere.status#main', v)\n"
@@ -1066,13 +1056,13 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:412
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Let's use that code to improve the `POST /status` route:\n"
 msgstr "このコードを使用して、`POST /status` ルートを改善してみましょう:\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:422
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "```typescript\n"
 "/** src/routes.ts **/\n"
@@ -1096,7 +1086,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:432
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "    // Construct & validate their status record\n"
 "    const record = {\n"
@@ -1120,7 +1110,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:437 src/guides/applications/en.mdx:563
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "    // ...\n"
 "  })\n"
@@ -1134,19 +1124,19 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:439
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Step 6. Listening to the firehose\n"
 msgstr "<Heading level={2} id=\"step-6-listening-to-the-firehose\">ステップ 6. ファイアホースをリッスン</Heading>\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:441
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "So far, we have:\n"
 msgstr "ここまでで、次の操作を実行しました。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:445
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "- Logged in via OAuth\n"
 "- Created a custom schema\n"
@@ -1158,31 +1148,31 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:447
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Now we want to fetch the status records from other users.\n"
 msgstr "次に、他のユーザーからステータス レコードを取得します。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:449
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Remember how we referred to our app as being like Google, crawling around the repos to get their records? One advantage we have in the AT Protocol is that each repo publishes an event log of their updates.\n"
 msgstr "私たちのアプリを、リポジトリをクロールしてレコードを取得する Google のようなものだと言ったことを覚えていますか? AT プロトコルの利点の 1 つは、各リポジトリが更新のイベント ログを公開することです。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:451
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<Image alt=\"A diagram of the event stream\" src={DiagramEventStream} />\n"
 msgstr "<Image alt=\"イベント ストリームの図\" src={DiagramEventStream} />\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:453
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Using a [Relay service](https://docs.bsky.app/docs/advanced-guides/federation-architecture#relay) we can listen to an aggregated firehose of these events across all users in the network. In our case what we're looking for are valid `xyz.statusphere.status` records.\n"
 msgstr "[リレー サービス](https://docs.bsky.app/docs/advanced-guides/federation-architecture#relay) を使用すると、ネットワーク内のすべてのユーザーにわたるこれらのイベントの集約されたファイアホースをリッスンできます。この場合、探しているのは有効な `xyz.statusphere.status` レコードです。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:459
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "```typescript\n"
 "/** src/ingester.ts **/\n"
@@ -1198,7 +1188,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:466
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "new Firehose({\n"
 "  filterCollections: ['xyz.statusphere.status'],\n"
@@ -1216,7 +1206,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:480
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "      // If the write is a valid status update\n"
 "      if (\n"
@@ -1232,7 +1222,7 @@ msgid ""
 "})\n"
 "```\n"
 msgstr ""
-"    // 書き込みが有効なステータス更新である場合\n"
+"      // 書き込みが有効なステータス更新である場合\n"
 "    if (\n"
 "      evt.collection === 'xyz.statusphere.status' &&\n"
 "      Status.isRecord(record) &&\n"
@@ -1248,13 +1238,13 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:482
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Let's create a SQLite table to store these statuses:\n"
 msgstr "これらのステータスを保存するための SQLite テーブルを作成しましょう:\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:495
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "```typescript\n"
 "/** src/db.ts **/\n"
@@ -1284,13 +1274,13 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:497
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Now we can write these statuses into our database as they arrive from the firehose:\n"
 msgstr "これで、ファイアホースから到着したステータスをデータベースに書き込むことができます:\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:525
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "```typescript\n"
 "/** src/ingester.ts **/\n"
@@ -1350,44 +1340,44 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:527
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "You can almost think of information flowing in a loop:\n"
 msgstr "ほぼ、情報がループで流れていると考えることができます。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:529 src/guides/applications/en.mdx:593
 #: src/guides/applications/en.mdx:665
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<Image alt=\"A diagram of the flow of information\" src={DiagramInfoFlow} />\n"
 msgstr "<Image alt=\"情報の流れの図\" src={DiagramInfoFlow} />\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:531
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Applications write to the repo. The write events are then emitted on the firehose where they're caught by the apps and ingested into their databases.\n"
 msgstr "アプリケーションはリポジトリに書き込みます。書き込みイベントはその後、ファイアホースに発行され、アプリによってキャッチされてデータベースに取り込まれます。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:533
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Why sync from the event log like this? Because there are other apps in the network that will write the records we're interested in. By subscribing to the event log, we ensure that we catch all the data we're interested in &mdash; including data published by other apps!\n"
 msgstr "このようにイベント ログから同期する理由は、ネットワーク内に、関心のあるレコードを書き込む他のアプリがあるためです。イベント ログをサブスクライブすることで、他のアプリによって公開されたデータを含む、関心のあるすべてのデータをキャッチできます。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:535
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Step 7. Listing the latest statuses\n"
 msgstr "<Heading level={2} id=\"step-7-listing-the-latest-statuses\">ステップ 7. 最新のステータスを一覧表示する</Heading>\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:537
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Now that we have statuses populating our SQLite, we can produce a timeline of status updates by users. We also use a [DID](https://atproto.com/specs/did)-to-handle resolver so we can show a nice username with the statuses:\n"
 msgstr "SQLite にステータスが取り込まれたので、ユーザーによるステータス更新のタイムラインを作成できます。また、[DID](https://atproto.com/specs/did) からハンドルへのリゾルバも使用して、ステータスとともに適切なユーザー名を表示できるようにします:\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:545
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "```typescript\n"
 "/** src/routes.ts **/\n"
@@ -1407,7 +1397,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:553
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "    // Fetch data stored in our SQLite\n"
 "    const statuses = await db\n"
@@ -1427,7 +1417,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:558
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "    // Map user DIDs to their domain-name handles\n"
 "    const didHandleMap = await resolver.resolveDidsToHandles(\n"
@@ -1441,13 +1431,13 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:565
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Our HTML can now list these status records:\n"
 msgstr "HTML で次のステータス レコードを一覧表示できるようになりました:\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:583
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "```html\n"
 "<!-- src/pages/home.ts -->\n"
@@ -1487,55 +1477,55 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:585
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<Image alt=\"A screenshot of the app status timeline\" src={AppStatusHistory} />\n"
 msgstr "<Image alt=\"アプリ ステータス タイムラインのスクリーンショット\" src={AppStatusHistory} />\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:587
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Step 8. Optimistic updates\n"
 msgstr "<Heading level={2} id=\"step-8-optimistic-updates\">ステップ 8. 楽観的更新</Heading>\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:589
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "As a final optimization, let's introduce \"optimistic updates.\"\n"
 msgstr "最後の最適化として、「楽観的更新」を導入しましょう。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:591
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Remember the information flow loop with the repo write and the event log?\n"
 msgstr "リポジトリ書き込みとイベント ログによる情報フロー ループを覚えていますか?\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:595
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Since we're updating our users' repos locally, we can short-circuit that flow to our own database:\n"
 msgstr "ユーザーのリポジトリをローカルで更新しているので、そのフローを独自のデータベースに短絡できます。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:597
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<Image alt=\"A diagram illustrating optimistic updates\" src={DiagramOptimisticUpdate} />\n"
 msgstr "<Image alt=\"楽観的更新を示す図\" src={DiagramOptimisticUpdate} />\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:599
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "This is an important optimization to make, because it ensures that the user sees their own changes while using your app. When the event eventually arrives from the firehose, we just discard it since we already have it saved locally.\n"
 msgstr "これは、ユーザーがアプリの使用中に自分の変更を確認できるようにするため、重要な最適化です。最終的にイベントがファイアホースから到着すると、すでにローカルに保存されているため、それを破棄します。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:601
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "To do this, we just update `POST /status` to include an additional write to our SQLite DB:\n"
 msgstr "これを行うには、SQLite DB への追加の書き込みを含めるように `POST /status` を更新するだけです:\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:609
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "```typescript\n"
 "/** src/routes.ts **/\n"
@@ -1555,7 +1545,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:624
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "    let uri\n"
 "    try {\n"
@@ -1589,7 +1579,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:643
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "    try {\n"
 "      // Optimistically update our SQLite <-- HERE!\n"
@@ -1631,31 +1621,31 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:650
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "You'll notice this code looks almost exactly like what we're doing in `ingester.ts`.\n"
 msgstr "このコードは、`ingester.ts` で行っていることとほとんど同じであることがわかります。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:652
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Thinking in AT Proto\n"
 msgstr "<Heading level={2} id=\"thinking-in-at-proto\">AT Proto で考える</Heading>\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:654
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "In this tutorial we've covered the key steps to building an atproto app. Data is published in its canonical form on users' `at://` repos and then aggregated into apps' databases to produce views of the network.\n"
 msgstr "このチュートリアルでは、atproto アプリを構築するための重要な手順について説明しました。データは、ユーザーの `at://` リポジトリに正規の形式で公開され、その後、アプリのデータベースに集約されてネットワークのビューが生成されます。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:656
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "When building your app, think in these four key steps:\n"
 msgstr "アプリを構築するときは、次の 4 つの重要な手順について考えます。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:661
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "- Design the [Lexicon](#) schemas for the records you'll publish into the Atmosphere.\n"
 "- Create a database for aggregating the records into useful views.\n"
@@ -1663,41 +1653,40 @@ msgid ""
 "- Listen to the firehose to aggregate data across the network.\n"
 msgstr ""
 "- Atmosphere に公開するレコードの [Lexicon](#) スキーマを設計します。\n"
+"\n"
 "- レコードを便利なビューに集約するためのデータベースを作成します。\n"
+"\n"
 "- ユーザーのリポジトリにレコードを書き込むアプリケーションを構築します。\n"
+"\n"
 "- ネットワーク全体のデータを集約するために、firehose をリッスンします。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:663
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Remember this flow of information throughout:\n"
 msgstr "この情報の流れを常に覚えておいてください。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:667
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "This is how every app in the Atmosphere works, including the [Bluesky social app](https://bsky.app).\n"
 msgstr "[Bluesky ソーシャル アプリ](https://bsky.app) を含む、Atmosphere のすべてのアプリはこのように動作します。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:669 src/guides/using-ozone/en.mdx:128
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Next steps\n"
-msgstr ""
-"#-#-#-#-#  applications.ja.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"<Heading level={2} id=\"next-steps\">次のステップ</Heading>\n"
-"#-#-#-#-#  using-ozone.ja.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"<Heading level={2} id=\"next-steps\">次のステップ</Heading>"
+msgstr "<Heading level={2} id=\"next-steps\">次のステップ</Heading>\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:671
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "If you want to practice what you've learned, here are some additional challenges you could try:\n"
 msgstr "学習した内容を実践したい場合は、次の追加の課題に挑戦してみてください:\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:676
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "- Sync the profile records of all users so that you can show their display names instead of their handles.\n"
 "- Count the number of each status used and display the total counts.\n"
@@ -1712,15 +1701,6 @@ msgstr ""
 #. type: Plain text
 #: src/guides/applications/en.mdx:677 src/articles/atproto-ethos/en.mdx:147
 #: src/articles/atproto-for-distsys-engineers/en.mdx:232
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "<FooterCTA href=\"/\" title=\"Ready to learn more?\" description=\"Specs, guides, and SDKs can be found here.\" />\n"
-msgstr ""
-"#-#-#-#-#  ethos.ja.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"#-#-#-#-#  distsys.ja.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"<FooterCTA href=\"/\" title=\"詳細を知りたいですか?\" description=\"仕様、ガイド、SDK は、こちらでご覧いただけます。\" />\n"
-"#-#-#-#-#  applications.ja.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"<FooterCTA href=\"/\" title=\"さらに学習する準備はできましたか?\" description=\"仕様、ガイド、SDK はここにあります。\" />\n"
-"#-#-#-#-#  distsys.ja.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"<FooterCTA href=\"/\" title=\"詳細を知りたいですか?\" description=\"仕様、ガイド、SDK は、こちらでご覧いただけます。\" />\n"
-"#-#-#-#-#  applications.ja.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"<FooterCTA href=\"/\" title=\"さらに学習する準備はできましたか?\" description=\"仕様、ガイド、SDK はここにあります。\" />\n"
+msgstr "<FooterCTA href=\"/\" title=\"さらに学習する準備はできましたか?\" description=\"仕様、ガイド、SDK はここにあります。\" />\n"
