@@ -21,48 +21,55 @@ msgstr ""
 #: src/guides/self-hosting/en.mdx:10 src/guides/the-at-stack/en.mdx:35
 #, no-wrap
 msgid "## PDS\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"pds\">PDS</Heading>\n"
 
 #. type: Plain text
 #: src/guides/self-hosting/en.mdx:6
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "export const header = {\n"
 "  title: 'Self-hosting',\n"
 "  description:\n"
 "    'Resources for self-hosting various components of the Atmosphere stack',\n"
 "}\n"
-msgstr "import {Heading} from '@/components/Heading' export const header = { title: 'プロトコルの概要', description: 'AT プロトコルの概要。', }"
+msgstr ""
+"import {Heading} from '@/components/Heading'\n"
+"\n"
+"export const header = {\n"
+"  title: 'セルフホスティング',\n"
+"  description:\n"
+"    'Atmosphere スタックの各コンポーネントをセルフホストするためのリソース',\n"
+"}\n"
 
 #. type: Plain text
 #: src/guides/self-hosting/en.mdx:8
 #, no-wrap
 msgid "Most parts of the Atmosphere stack have supported deployments. Some components are easier to self-host than others, depending on whether you are providing application-level infrastructure (like an AppView or Relay) or data-level infrastructure (like a PDS).\n"
-msgstr ""
+msgstr "Atmosphereスタックのほとんどの部分はデプロイメントがサポートされています。アプリケーションレベルのインフラ（AppViewやリレーといったもの）を提供するか、データレベルのインフラ（PDSやそれに推するもの）を提供するかによって、セルフホストの難易度は異なります。\n"
 
 #. type: Plain text
 #: src/guides/self-hosting/en.mdx:12
 #, no-wrap
 msgid "Resources for self-hosting a PDS, including install steps, Docker images and Frequently Asked Questions, are available from the [PDS](https://github.com/bluesky-social/pds) Github repo. Start here if you want to host your own PDS!\n"
-msgstr ""
+msgstr "インストール手順、Dockerイメージ、FAQを含むPDSのセルフホスティング用リソースは、[PDS](https://github.com/bluesky-social/pds)のGitHubリポジトリで入手できます。自分のPDSをホストしたい場合はここから始めてください！\n"
 
 #. type: Plain text
 #: src/guides/self-hosting/en.mdx:14
 #, no-wrap
 msgid "The PDS Docker image includes [goat](https://github.com/bluesky-social/goat), our command line tool for performing admin functions.\n"
-msgstr ""
+msgstr "PDSのDockerイメージには、管理機能を実行するためのコマンドラインツール[goat](https://github.com/bluesky-social/goat)が含まれています。\n"
 
 #. type: Plain text
 #: src/guides/self-hosting/en.mdx:16
 #, no-wrap
 msgid "If you are moving your account from one PDS (such as a Bluesky-hosted PDS) to another, refer to [Account Migration](/guides/account-migration).\n"
-msgstr ""
+msgstr "アカウントをあるPDS（例：BlueskyがホストするPDS）から別のPDSに移行する場合は、[アカウント移行](/guides/account-migration)を参照してください。\n"
 
 #. type: Plain text
 #: src/guides/self-hosting/en.mdx:18
 #, no-wrap
 msgid "If you need to change the *domain name* of a self-hosted PDS, you need to:\n"
-msgstr ""
+msgstr "セルフホストしたPDSの*ドメイン名*を変更する必要がある場合は、次の操作を行ってください。\n"
 
 #. type: Plain text
 #: src/guides/self-hosting/en.mdx:21
@@ -71,18 +78,20 @@ msgid ""
 "- Change the PLC entries for *each* of your hosted accounts. You can use community-maintained interfaces like [boat](https://boat.kelinci.net/plc-applicator) for this.\n"
 "- Update your DNS configuration as you would for any other server, then change the domain name in `pds.env`.\n"
 msgstr ""
+"- ホストしている*各*アカウントのPLCエントリを変更してください。[boat](https://boat.kelinci.net/plc-applicator)のようなコミュニティ製のインターフェースを利用できます。\n"
+"- 他のサーバーでやるようにDNS設定を更新し、その後`pds.env`内のドメイン名を変更してください。\n"
 
 #. type: Plain text
 #: src/guides/self-hosting/en.mdx:23
 #, no-wrap
 msgid "For guidance on scaling and hardening a PDS, refer to [Going to Production](/guides/going-to-production).\n"
-msgstr ""
+msgstr "PDSのスケーリングやセキュリティ強化に関する指針については、[本番環境への移行](/guides/going-to-production)を参照してください。\n"
 
 #. type: Plain text
 #: src/guides/self-hosting/en.mdx:25
 #, no-wrap
 msgid "Bluesky runs many PDSs with an “entryway” in front of them. For information on this implementation, refer to [Entryway](https://docs.bsky.app/docs/advanced-guides/entryway).\n"
-msgstr ""
+msgstr "Blueskyは多くのPDSの前に「entryway」を置いて運用しています。この実装に関する情報は[entryway](https://docs.bsky.app/docs/advanced-guides/entryway)を参照してください。\n"
 
 #. type: Plain text
 #: src/guides/self-hosting/en.mdx:29
@@ -92,69 +101,72 @@ msgid ""
 "- [Tranquil PDS](https://tangled.org/lewis.moe/bspds-sandbox), written in Rust.\n"
 "- [Cocoon](https://tangled.org/hailey.at/cocoon), written in Go.\n"
 msgstr ""
+"コミュニティによるPDS実装もあります！例えば、以下があります。\n"
+"- [Tranquil PDS](https://tangled.org/lewis.moe/bspds-sandbox)（Rust）\n"
+"- [Cocoon](https://tangled.org/hailey.at/cocoon)（Go）\n"
 
 #. type: Plain text
 #: src/guides/self-hosting/en.mdx:31 src/guides/the-at-stack/en.mdx:68
 #, no-wrap
 msgid "## Tap\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"tap\">Tap</Heading>\n"
 
 #. type: Plain text
 #: src/guides/self-hosting/en.mdx:33
 #, no-wrap
 msgid "Tap is used for syncing existing records from the AT network and then continuing to receive new records from the firehose. For a guide to deploying Tap, refer to the [Tap readme](https://github.com/bluesky-social/indigo/blob/main/cmd/tap/README.md#distribution--deployment).\n"
-msgstr ""
+msgstr "TapはATネットワークから既存のレコードを同期し、その後firehoseから新しいレコードを継続的に受信するために使用されます。Tapのデプロイ方法については[Tapのreadme](https://github.com/bluesky-social/indigo/blob/main/cmd/tap/README.md#distribution--deployment)を参照してください。\n"
 
 #. type: Plain text
 #: src/guides/self-hosting/en.mdx:35
 #, no-wrap
 msgid "We also provide a quick start guide for [deploying Tap](https://github.com/bluesky-social/indigo/blob/main/cmd/tap/RAILWAY_DEPLOY.md) to [Railway](https://railway.com/).\n"
-msgstr ""
+msgstr "また、[Railway](https://railway.com/)向けの[Tapデプロイのクイックスタートガイド](https://github.com/bluesky-social/indigo/blob/main/cmd/tap/RAILWAY_DEPLOY.md) も提供しています。\n"
 
 #. type: Plain text
 #: src/guides/self-hosting/en.mdx:37
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## AppViews or Relays\n"
-msgstr "<Heading level={2} id=\"app-view\">AppView</Heading>"
+msgstr "<Heading level={2} id=\"appviews-or-relays\">AppViewおよびリレー</Heading>\n"
 
 #. type: Plain text
 #: src/guides/self-hosting/en.mdx:39
 #, no-wrap
 msgid "Hosting your own AppView or Relay is possible, but resource intensive. Compared with hosting your own PDS, which is a way of personally controlling access to your own data repository, hosting an AppView or Relay is something that you would only do to provide application-level infrastructure. Generally, the first thing you would need to do here is replicate all of the data in the network for the Lexicons that your application handles. Refer to the [Sync](/guides/sync) docs for a starting point.\n"
-msgstr ""
+msgstr "独自のAppViewやリレーをホスティングすることは可能ですが、リソースを大量に消費します。自身のデータリポジトリへのアクセスを個人的に制御する手段であるPDSのホスティングと比較すると、AppViewやリレーのホスティングはアプリケーションレベルのインフラを提供するために行うものです。通常は必要なLexiconに関するネットワーク上の全データを複製することが最初の作業になります。始めるには[同期](/guides/sync)のドキュメントを参照してください。\n"
 
 #. type: Plain text
 #: src/guides/self-hosting/en.mdx:41
 #, no-wrap
 msgid "There are lots of other decisions that will go into designing and running your own Atmosphere apps! This will not be a comprehensive list of recommendations.\n"
-msgstr ""
+msgstr "Atmosphereアプリを設計・運用する際には他にも多くの判断事項があります！このガイドは推奨事項の包括的なリストではありません。\n"
 
 #. type: Plain text
 #: src/guides/self-hosting/en.mdx:43
 #, no-wrap
 msgid "- For your app's signup flow, you will need users to log in or create an account. We generally recommend hosting your own PDS alongside your app to allow first-time users of the Atmosphere — who may not yet be aware of the concept of a PDS — to sign up directly within your application. Your PDS and AppView should have [different domain names](/going-to-production#domain-names).\n"
-msgstr ""
+msgstr "- アプリのサインアップフローでは、ユーザーがログインまたはアカウント作成を行う必要があります。Atmosphereを初めて利用するユーザー（まだPDSの概念を知らない可能性がある）に対してアプリ内で直接サインアップさせるため、アプリと一緒にPDSもホストすることを一般的に推奨します。PDSとAppViewは[異なるドメイン名](/going-to-production#domain-names)を使用してください。\n"
 
 #. type: Plain text
 #: src/guides/self-hosting/en.mdx:45
 #, no-wrap
 msgid "## Ozone and Osprey\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"ozone-and-osprey\">OzoneとOsprey</Heading>\n"
 
 #. type: Plain text
 #: src/guides/self-hosting/en.mdx:47
 #, no-wrap
 msgid "Refer to the [Osprey](https://github.com/bluesky-social/osprey-atproto) and [Ozone](https://github.com/bluesky-social/ozone/blob/main/HOSTING.md) Github repos for self-hosting guidance.\n"
-msgstr ""
+msgstr "セルフホスティングのガイダンスについては、[Osprey](https://github.com/bluesky-social/osprey-atproto)と[Ozone](https://github.com/bluesky-social/ozone/blob/main/HOSTING.md)のGitHubリポジトリを参照してください。\n"
 
 #. type: Plain text
 #: src/guides/self-hosting/en.mdx:49
 #, no-wrap
 msgid "## Deploy Recipes\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"deploy-recipes\">デプロイレシピ</Heading>\n"
 
 #. type: Plain text
 #: src/guides/self-hosting/en.mdx:50
 #, no-wrap
 msgid "For community-contributed deployment solutions that do not use our official tooling, and may support different environments, refer to the [deploy-recipes](https://github.com/bluesky-social/deploy-recipes) Github repo. Contributions are welcome!\n"
-msgstr ""
+msgstr "公式ツールを使用しない、または異なる環境をサポートするコミュニティ提供のデプロイソリューションについては、[deploy-recipes](https://github.com/bluesky-social/deploy-recipes)のGitHubリポジトリを参照してください。貢献は歓迎します！\n"

@@ -31,59 +31,65 @@ msgstr ""
 #: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
 #, no-wrap
 msgid "## Further Reading and Resources\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"further-reading-and-resources\">関連・参考資料</Heading>\n"
 
 #. type: Plain text
 #: src/guides/backfilling/en.mdx:5
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "export const header = {\n"
 "  title: 'Backfilling',\n"
 "  description: 'Replicating the network',\n"
 "}\n"
-msgstr "import {Heading} from '@/components/Heading' export const header = { title: 'プロトコルの概要', description: 'AT プロトコルの概要。', }"
+msgstr ""
+"import {Heading} from '@/components/Heading'\n"
+"\n"
+"export const header = {\n"
+"  title: 'バックフィル',\n"
+"  description: 'ネットワークを複製する',\n"
+"}\n"
 
 #. type: Plain text
 #: src/guides/backfilling/en.mdx:7
 #, no-wrap
 msgid "## About backfilling\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"about-backfilling\">バックフィルとは</Heading>\n"
 
 #. type: Plain text
 #: src/guides/backfilling/en.mdx:9
 #, no-wrap
 msgid "Backfilling is the process of syncing all the data in the network from scratch. You may want to do this if you're running a service that requires a complete copy of the data in the network. This is not generally necessary for running feed generators, labelers, or bots, as most of the time they are fine handling live data off of the firehose. However, backfilling may be of interest if you want to perform large-scale data analysis.\n"
-msgstr ""
+msgstr "バックフィルは、ネットワーク内のすべてのデータをゼロから同期する処理です。ネットワーク内の全データの完全なコピーが必要なサービスを動かすなら、これを行いたい場合があるでしょう。フィードジェネレーター、ラベラー、またはボットを実行する場合、大抵はfirehoseからのライブデータだけで十分なため、これは一般に必要ありません。ただし、大規模なデータ分析を実行したい場合は、バックフィリングに関心を持つかもしれません。\n"
 
 #. type: Plain text
 #: src/guides/backfilling/en.mdx:11
 #, no-wrap
 msgid "For the entire network to be backfillable by third parties at all is a novel concept for AT. Other, monolithic social networks generally only offer an large-scale event stream (like our firehose) from the current date and time, making it difficult to perform longitudinal data analysis without additional data vendors. With the AT Protocol and adequate resources, you can *always* backfill the entire network on your own. This, in turn, benefits researchers and other forms of data analysis — if you can provision enough storage, you can have your own local copy of the entire Atmosphere.\n"
-msgstr ""
+msgstr "ネットワーク全体が第三者によってバックフィル可能であることは、ATの画期的なコンセプトです。他のモノリシックなソーシャルネットワークは、一般にその時点からの大規模なイベントストリーム（firehoseのようなもの）のみを提供するため、追加のデータベンダーなしで縦断的なデータ分析を実行することが困難です。ATプロトコルと十分なリソースがあれば、*いつでも*ネットワーク全体を自分でバックフィルできます。これはさらに研究者やその他のデータ分析に利益をもたらします。十分なストレージを用意できれば、Atmosphere全体の独自のローカルコピーを持つことができます。\n"
 
 #. type: Plain text
 #: src/guides/backfilling/en.mdx:13
 #, no-wrap
 msgid "When backfilling, you generally need to maintain 'up to date' replica of the data, which requires a cutover to streaming firehose data once the backfill is complete. We created `tap` to streamline this process.\n"
-msgstr ""
+msgstr "バックフィルを行うのは、一般にデータの「最新」レプリカを維持する必要がある場合なので、バックフィルが完了したらfirehoseデータのストリーミングへの切り替えが必要です。このプロセスを簡素化するために`tap`を作成しました。\n"
 
 #. type: Plain text
 #: src/guides/backfilling/en.mdx:15
 #, no-wrap
 msgid "## Using tap\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"using-tap\">tapの利用</Heading>\n"
 
 #. type: Plain text
 #: src/guides/backfilling/en.mdx:17
 #, no-wrap
 msgid "`tap` simplifies AT sync by handling the firehose connection, verification, backfill, and filtering. Your application connects to a Tap and receives simple JSON events for only the repos and collections you care about, no need to worry about binary formats for validating cryptographic signatures.\n"
-msgstr ""
+msgstr "`tap`はfirehose接続、検証、バックフィル、フィルタリングを処理することでAT同期を簡素化します。アプリケーションはTapに接続し、あなたが関心のあるリポジトリとコレクションのみのシンプルなJSONイベントを受け取ります。署名検証のためのバイナリ形式について心配する必要はありません。\n"
 
 #. type: Plain text
 #: src/guides/backfilling/en.mdx:19
 #, no-wrap
 msgid "Tap can be run from the command line:\n"
-msgstr ""
+msgstr "Tapはコマンドラインから実行できます。\n"
 
 #. type: Plain text
 #: src/guides/backfilling/en.mdx:24
@@ -94,6 +100,10 @@ msgid ""
 "go run ./cmd/tap run --disable-acks=true\n"
 "# By default, the service uses SQLite at `./tap.db` and binds to port `:2480`.\n"
 msgstr ""
+"```shell\n"
+"# tapを実行する\n"
+"go run ./cmd/tap run --disable-acks=true\n"
+"# デフォルトでは、サービスは`./tap.db`のSQLiteと`:2480`ポートを使用します。\n"
 
 #. type: Plain text
 #: src/guides/backfilling/en.mdx:27
@@ -102,6 +112,8 @@ msgid ""
 "# In a separate terminal, connect to receive events:\n"
 "websocat ws://localhost:2480/channel\n"
 msgstr ""
+"# 別のターミナルでイベントを受け取るために接続\n"
+"websocat ws://localhost:2480/channel\n"
 
 #. type: Plain text
 #: src/guides/backfilling/en.mdx:33
@@ -113,12 +125,17 @@ msgid ""
 "  -d '{\"dids\": [\"did:plc:ewvi7nxzyoun6zhxrhs64oiz\"]}' # @atproto.com repo\n"
 "```\n"
 msgstr ""
+"# リポジトリを追跡対象に追加\n"
+"curl -X POST http://localhost:2480/repos/add \\\n"
+"  -H \"Content-Type: application/json\" \\\n"
+"  -d '{\"dids\": [\"did:plc:ewvi7nxzyoun6zhxrhs64oiz\"]}' # @atproto.com のリポジトリ\n"
+"```\n"
 
 #. type: Plain text
 #: src/guides/backfilling/en.mdx:35
 #, no-wrap
 msgid "When a repo is added, tap provides:\n"
-msgstr ""
+msgstr "リポジトリが追加されると、tapは以下を提供します。\n"
 
 #. type: Plain text
 #: src/guides/backfilling/en.mdx:41
@@ -130,24 +147,29 @@ msgid ""
 "4. Cutover: After historical events complete, buffered live events are drained\n"
 "5. Live streaming: New firehose events are delivered immediately (marked live: true)\n"
 msgstr ""
+"1. 履歴バックフィル：Tapはcom.atproto.sync.getRepoを使用して、対象アカウントのPDSから完全なリポジトリをフェッチします。\n"
+"2. ライブイベントバッファリング：バックフィル中のこのリポジトリのfirehoseイベントはメモリに保持されます。\n"
+"3. 順序保証：履歴イベント（live: false）が先に配送されます。\n"
+"4. 切り替え：履歴イベントが完了した後、バッファされたライブイベントが排出されます。\n"
+"5. ライブストリーミング：新しいfirehoseイベント（live: true）が即座に配信されます。\n"
 
 #. type: Plain text
 #: src/guides/backfilling/en.mdx:43
 #, no-wrap
 msgid "Tap is also available as a [TypeScript library](https://www.npmjs.com/package/@atproto/tap). For more information, refer to [The AT Stack](/guides/the-at-stack#tap) and the [tap repository](https://github.com/bluesky-social/atproto/blob/main/packages/tap/README.md).\n"
-msgstr ""
+msgstr "Tapは[TypeScriptライブラリ](https://www.npmjs.com/package/@atproto/tap)としても利用できます。詳細については、[The AT Stack](/guides/the-at-stack#tap)および[tapリポジトリ](https://github.com/bluesky-social/atproto/blob/main/packages/tap/README.md)を参照してください。\n"
 
 #. type: Plain text
 #: src/guides/backfilling/en.mdx:45
 #, no-wrap
 msgid "## How backfilling works\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"how-backfilling-works\">バックフィルの仕組み</Heading>\n"
 
 #. type: Plain text
 #: src/guides/backfilling/en.mdx:47
 #, no-wrap
 msgid "If you are implementing backfilling on your own, the general process is:\n"
-msgstr ""
+msgstr "バックフィルを自分で実装する場合、一般的なプロセスは次のとおりです。\n"
 
 #. type: Plain text
 #: src/guides/backfilling/en.mdx:53
@@ -159,12 +181,17 @@ msgid ""
 "- The checkpoint will contain a rev value that you can use to skip any buffered events that have already been included in said checkpoint.\n"
 "- For each buffered event, if the rev is less than the current rev you have, you can safely skip it.\n"
 msgstr ""
+"- DIDが与えられた場合、そのDIDの現在のリビジョンを確認します（リポジトリへのすべての変更は、辞書順でソート可能なタイムスタンプである「rev」文字列でタグされます）。\n"
+"- そのリポジトリのrevがない場合は、`com.atproto.sync.getRepo`エンドポイントからユーザーのリポジトリチェックポイントをダウンロードして処理します。\n"
+"- その間、チェックポイント以降に通過するリポジトリイベントをバッファします。\n"
+"- チェックポイントにはrevが含まれており、そのチェックポイントに既にあるイベントをバッファからスキップするのに使用できます。\n"
+"- バッファされた各イベントについて、そのイベントのrevが現在のrevより小さい場合、安全にスキップできます。\n"
 
 #. type: Plain text
 #: src/guides/backfilling/en.mdx:55
 #, no-wrap
 msgid "Do the above process for each repo and you will end up with a complete replica of the network. To get a list of all the repos, you can use the `com.atproto.sync.listRepos` endpoint on the relay, or on each PDS.\n"
-msgstr ""
+msgstr "各リポジトリに対して上記のプロセスを実行すると、ネットワークの完全なレプリカが得られます。すべてのリポジトリのリストを取得するには、リレーや各PDSで`com.atproto.sync.listRepos`エンドポイントを使用できます。\n"
 
 #. type: Plain text
 #: src/guides/backfilling/en.mdx:58
@@ -173,6 +200,8 @@ msgid ""
 "- This is a fairly large amount of data (hundreds of GBs at the time of writing), and will be somewhat demanding in terms of resources.\n"
 "- Be careful not to get rate limited. You will be making one call to `getRepo` per user. It is recommended to implement client side rate limiting to prevent your requests from getting blocked by firewalls on the PDS or relay you are requesting data from.\n"
 msgstr ""
+"- これはかなり大量のデータ（執筆時点で数百GB）であり、リソースの点でやや要求が厳しいものになります。\n"
+"- レート制限を受けないように注意してください。ユーザー毎に`getRepo`呼び出しを1回行うことになります。データをリクエストされるPDSまたはリレーのファイアウォールによってリクエストがブロックされるのを防ぐために、クライアント側のレート制限を実装することをお勧めします。\n"
 
 #. type: Plain text
 #: src/guides/backfilling/en.mdx:67
@@ -186,3 +215,10 @@ msgid ""
 "- [Sync spec](/specs/sync)\n"
 "- The [Microcosm](https://www.microcosm.blue/) community project maintains tools for working with AT records at scale without local mirroring.\n"
 msgstr ""
+"- [同期](/guides/sync)\n"
+"- [データストリーミング](/guides/streaming-data)\n"
+"- [フィード](/guides/feeds)\n"
+"- [リポジトリ仕様](/specs/repository)\n"
+"- [イベントストリーム仕様](/specs/event-stream)\n"
+"- [同期仕様](/specs/sync)\n"
+"- [Microcosm](https://www.microcosm.blue/)コミュニティプロジェクトは、ローカルミラーリングなしでATレコードを大規模に操作するためのツールを保守しています。\n"

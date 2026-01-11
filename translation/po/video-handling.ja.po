@@ -31,41 +31,47 @@ msgstr ""
 #: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
 #, no-wrap
 msgid "## Further Reading and Resources\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"further-reading-and-resources\">関連・参考資料</Heading>\n"
 
 #. type: Plain text
 #: src/guides/video-handling/en.mdx:5
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "export const header = {\n"
 "  title: 'Video Handling',\n"
 "  description: 'Handling video uploads and processing',\n"
 "}\n"
-msgstr "export const header = { title: 'Identity', description: 'AT プロトコルがユーザー ID を処理する方法。', }"
+msgstr ""
+"import {Heading} from '@/components/Heading'\n"
+"\n"
+"export const header = {\n"
+"  title: '動画の取り扱い',\n"
+"  description: '動画のアップロードと処理',\n"
+"}\n"
 
 #. type: Plain text
 #: src/guides/video-handling/en.mdx:7
 #, no-wrap
 msgid "## Video uploads\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"video-uploads\">動画のアップロード</Heading>\n"
 
 #. type: Plain text
 #: src/guides/video-handling/en.mdx:9
 #, no-wrap
 msgid "Video uploads differ slightly from image uploads, since they are typically much larger files and have a significantly long processing time. Individual Atmosphere apps or CDNs may impose additional limits on video uploads.\n"
-msgstr ""
+msgstr "動画のアップロードは画像のアップロードとは少し異なり、通常はファイルがとても大きく、処理時間も大幅に長くなります。個々のAtmosphereアプリやCDNは、動画のアップロードに追加の制限を課す場合があります。\n"
 
 #. type: Plain text
 #: src/guides/video-handling/en.mdx:11
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Aspect ratios\n"
-msgstr "<Heading level={2} id=\"specifications\">仕様</Heading>"
+msgstr "<Heading level={2} id=\"Aspect-ratios\">アスペクト比</Heading>\n"
 
 #. type: Plain text
 #: src/guides/video-handling/en.mdx:13
 #, no-wrap
 msgid "Depending on the requirements of your application, you may need to supply an aspect ratio along with video uploads. This metadata can be tricky to compute. If you're developing in a browser, you can load the video into a `<video>` and observe the dimensions when loaded. If you're in a native app, you'll most likely be able to get it via the media picker APIs. Alternatively, you can use a tool like `ffprobe` :\n"
-msgstr ""
+msgstr "アプリケーションの要件に応じて、動画のアップロード時にアスペクト比の提供が必要な場合があります。このメタデータは計算が厄介かもしれません。ブラウザで開発している場合は、動画を`<video>`に読み込み、読み込まれたときの寸法を観察できます。ネイティブアプリの場合は、メディアピッカーAPIを介して取得できる可能性が高いです。代わりに、`ffprobe`のようなツールを使用することもできます。\n"
 
 #. type: Plain text
 #: src/guides/video-handling/en.mdx:16
@@ -74,6 +80,8 @@ msgid ""
 "```jsx\n"
 "import { ffprobe } from \"https://deno.land/x/fast_forward@0.1.6/ffprobe.ts\";\n"
 msgstr ""
+"```jsx\n"
+"import { ffprobe } from \"https://deno.land/x/fast_forward@0.1.6/ffprobe.ts\";\n"
 
 #. type: Plain text
 #: src/guides/video-handling/en.mdx:26
@@ -89,30 +97,39 @@ msgid ""
 "}\n"
 "```\n"
 msgstr ""
+"export async function getAspectRatio(fileName: string) {\n"
+"  const { streams } = await ffprobe(fileName, {});\n"
+"  const videoSteam = streams.find((stream) => stream.codec_type === \"video\");\n"
+"  return {\n"
+"    width: videoSteam.width,\n"
+"    height: videoSteam.height,\n"
+"  };\n"
+"}\n"
+"```\n"
 
 #. type: Plain text
 #: src/guides/video-handling/en.mdx:28
 #, no-wrap
 msgid "## Transcoding\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"transcoding\">トランスコーディング</Heading>\n"
 
 #. type: Plain text
 #: src/guides/video-handling/en.mdx:30
 #, no-wrap
 msgid "Videos will need time to transcode using a tool like `ffmpeg` on the server side before they are available from the firehose. This can lead to UX gaps — if a video blob is accompanying a new post, the video service only knows about the video once the post appears in the firehose. This means that people will be able to see the post before processing is complete, which will show a missing video for several seconds.\n"
-msgstr ""
+msgstr "動画は、サーバー側で`ffmpeg`のようなツールを使用してトランスコードするのに時間がかかります。これによりUXのギャップが生じる可能性があります。新しい投稿に動画のblobが付随している場合、動画サービスは投稿がfirehoseに現れるまで動画について知ることができません。つまり、処理が完了する前に投稿を見ることができ、その間に数秒間動画が表示されないことになります。\n"
 
 #. type: Plain text
 #: src/guides/video-handling/en.mdx:32
 #, no-wrap
 msgid "It is possible to design an application endpoint to allow submitting videos to a separate microservice for processing before creating a post. This method also allows for better UX, since you can show the processing state to the user and let them know if the processing job fails.\n"
-msgstr ""
+msgstr "アプリケーションエンドポイントを設計して、投稿を作成する前に動画を別のマイクロサービスに送信して処理することが可能です。この方法は、処理状態をユーザーに表示し、処理ジョブが失敗した場合に知らせることができるため、より良いUXを提供します。\n"
 
 #. type: Plain text
 #: src/guides/video-handling/en.mdx:34
 #, no-wrap
 msgid "There are client-side code samples for both methods here:\n"
-msgstr ""
+msgstr "以下に両方の方法のクライアント側のコードサンプルがあります。\n"
 
 #. type: Plain text
 #: src/guides/video-handling/en.mdx:37
@@ -121,6 +138,8 @@ msgid ""
 "- [Simple Method](https://tangled.sh/strings/did:plc:p2cp5gopk7mgjegy6wadk3ep/3lw74be4dr422)\n"
 "- [Video Service](https://tangled.sh/strings/did:plc:p2cp5gopk7mgjegy6wadk3ep/3lw743ejno722)\n"
 msgstr ""
+"- [簡単な方法](https://tangled.sh/strings/did:plc:p2cp5gopk7mgjegy6wadk3ep/3lw74be4dr422)\n"
+"- [ビデオサービスを使う方法](https://tangled.sh/strings/did:plc:p2cp5gopk7mgjegy6wadk3ep/3lw743ejno722)\n"
 
 #. type: Plain text
 #: src/guides/video-handling/en.mdx:44
@@ -132,3 +151,8 @@ msgid ""
 "- [Blob Specs](/specs/blob)\n"
 "- [Streamplace](https://stream.place/docs/) provides an implementation and related Lexicon for video streaming on ATProto.\n"
 msgstr ""
+"- [画像と動画](/guides/images-and-video)\n"
+"- [blobライフサイクル](/guides/blob-lifecycle)\n"
+"- [blobのセキュリティ](/guides/blob-security)\n"
+"- [blob仕様](/specs/blob)\n"
+"- [Streamplace](https://stream.place/docs/)はATプロトコル上の動画ストリーミングの実装および関連Lexiconを提供します。\n"

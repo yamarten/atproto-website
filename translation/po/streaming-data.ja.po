@@ -31,47 +31,53 @@ msgstr ""
 #: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
 #, no-wrap
 msgid "## Further Reading and Resources\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"further-reading-and-resources\">関連・参考資料</Heading>\n"
 
 #. type: Plain text
 #: src/guides/streaming-data/en.mdx:5
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "export const header = {\n"
 "  title: 'Streaming Data',\n"
 "  description: 'Working with the Firehose and Jetstream',\n"
 "}\n"
-msgstr "export const header = { title: 'Identity', description: 'AT プロトコルがユーザー ID を処理する方法。', }"
+msgstr ""
+"import {Heading} from '@/components/Heading'\n"
+"\n"
+"export const header = {\n"
+"  title: 'データストリーミング',\n"
+"  description: 'firehoseとJetstreamの使用',\n"
+"}\n"
 
 #. type: Plain text
 #: src/guides/streaming-data/en.mdx:7
 #, no-wrap
 msgid "## Streaming data\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"streaming-data\">データストリーミング</Heading>\n"
 
 #. type: Plain text
 #: src/guides/streaming-data/en.mdx:9
 #, no-wrap
 msgid "One of the core primitives of the AT Protocol is the *firehose*. It is an authenticated stream of events used to efficiently sync user updates (posts, likes, follows, handle changes, etc).\n"
-msgstr ""
+msgstr "ATプロトコルのコアプリミティブの一つは*firehose*です。これは、ユーザーの更新（投稿、いいね、フォロー、ハンドル変更など）を効率的に同期するために使用される認証済イベントストリームです。\n"
 
 #. type: Plain text
 #: src/guides/streaming-data/en.mdx:11
 #, no-wrap
 msgid "Many AT applications that need to stream incoming data will utilize the firehose — from feed generators to labelers, to bots and search engines. In the AT ecosystem, there are many different endpoints that seed these firehose APIs. Each PDS serves a stream of all of the activity on the repos it is responsible for. From there, Relays aggregate the streams of each participating PDS into a single unified stream — the firehose.\n"
-msgstr ""
+msgstr "ストリーミングデータ受信を必要とする多くのATアプリケーションは、フィードジェネレーターからラベラー、ボット、検索エンジンに至るまで、firehoseを利用します。ATエコシステムには、これらのfirehose APIを提供する多くの異なるエンドポイントがあります。各PDSは、担当するリポジトリ上のすべてのアクティビティのストリームを提供します。そこから、リレーは参加している各PDSのストリームを単一の統合ストリーム（firehose）に集約します。\n"
 
 #. type: Plain text
 #: src/guides/streaming-data/en.mdx:13
 #, no-wrap
 msgid "## Firehose\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"firehose\">firehose</Heading>\n"
 
 #. type: Plain text
 #: src/guides/streaming-data/en.mdx:15
 #, no-wrap
 msgid "Anyone can connect to the firehose without authentication — this is a core feature of the protocol. To get started, open a WebSocket connection to any provider of the `com.atproto.sync.subscribeRepos` endpoint:\n"
-msgstr ""
+msgstr "誰でも認証なしでfirehoseに接続できます。これはプロトコルのコア機能です。開始するには、`com.atproto.sync.subscribeRepos`エンドポイントのプロバイダーへのWebSocket接続を開きます。\n"
 
 #. type: Plain text
 #: src/guides/streaming-data/en.mdx:19
@@ -81,30 +87,33 @@ msgid ""
 "$ websocat wss://bsky.network/xrpc/com.atproto.sync.subscribeRepos\n"
 "```\n"
 msgstr ""
+"```shell \n"
+"$ websocat wss://bsky.network/xrpc/com.atproto.sync.subscribeRepos\n"
+"```\n"
 
 #. type: Plain text
 #: src/guides/streaming-data/en.mdx:21
 #, no-wrap
 msgid "From here, you would need to read each message as it comes in, and decode the associated data. Our [Go](https://github.com/bluesky-social/indigo) SDK is currently the most feature-complete for interacting with the firehose directly.\n"
-msgstr ""
+msgstr "ここから、入ってくる各メッセージを読み込み、関連するデータをデコードする必要があります。当社の[Go](https://github.com/bluesky-social/indigo) SDKは、現在firehoseと直接対話するには最も機能が揃っています。\n"
 
 #. type: Plain text
 #: src/guides/streaming-data/en.mdx:23
 #, no-wrap
 msgid "Bear in mind that firehose output format is one of the more complex parts of AT, involving decoding binary [CBOR](/specs/data-model) data and [CAR](/specs/repository#car-file-serialization) files. Additionally, the volume of data has increased rapidly as the network has grown. The full synchronization firehose is core network infrastructure, but for end users such as [feed developers](/guides/feeds), we provide an alternative streaming solution called **Jetstream.**\n"
-msgstr ""
+msgstr "firehose出力形式はATの特に複雑な部分の一つであり、バイナリ[CBOR](/specs/data-model)データと[CAR](/specs/repository#car-file-serialization)ファイルのデコードが含まれることに注意してください。さらに、ネットワークが成長するにつれてデータの量は急速に増加しています。完全な同期firehoseはコアネットワークインフラストラクチャですが、[フィード開発者](/guides/feeds)などのエンドユーザーのために、**Jetstream**という代替ストリーミングソリューションを提供しています。\n"
 
 #. type: Plain text
 #: src/guides/streaming-data/en.mdx:25
 #, no-wrap
 msgid "## Jetstream\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"jetstream\">Jetstream</Heading>\n"
 
 #. type: Plain text
 #: src/guides/streaming-data/en.mdx:27
 #, no-wrap
 msgid "Jetstream has a few key advantages:\n"
-msgstr ""
+msgstr "Jetstreamにはいくつかの大きな利点があります。\n"
 
 #. type: Plain text
 #: src/guides/streaming-data/en.mdx:31
@@ -114,24 +123,27 @@ msgid ""
 "- reduced bandwidth, and compression\n"
 "- ability to filter by collection (NSID) or repo (DID)\n"
 msgstr ""
+"- シンプルなJSONエンコーディング\n"
+"- 帯域幅の削減と圧縮\n"
+"- コレクション（NSID）またはリポジトリ（DID）でフィルタリングする機能\n"
 
 #. type: Plain text
 #: src/guides/streaming-data/en.mdx:33
 #, no-wrap
 msgid "A Jetstream server consumes from the firehose and fans out to many subscribers. It is [open source](https://github.com/bluesky-social/jetstream), implemented in Go, simple to self-host. There is an official client library included (in Go), and [community client libraries](https://skyware.js.org/guides/jetstream/introduction/getting-started/) have been developed.\n"
-msgstr ""
+msgstr "Jetstreamサーバーはfirehoseを受け取り、多くの利用者に配信します。[オープンソース](https://github.com/bluesky-social/jetstream)で、Goで実装されており、セルフホストが簡単です。公式Goクライアントライブラリがあり、[コミュニティクライアントライブラリ](https://skyware.js.org/guides/jetstream/introduction/getting-started/)も開発されています。\n"
 
 #. type: Plain text
 #: src/guides/streaming-data/en.mdx:35
 #, no-wrap
 msgid "You can work with Jetstream like any other websocket. Just provide a Jetstream endpoint like `wss://jetstream2.us-east.bsky.network/subscribe`, and a `wantedCollections` parameter, like `?wantedCollections=app.bsky.feed.post`.\n"
-msgstr ""
+msgstr "Jetstreamは他のWebSocketと同じように操作できます。`wss://jetstream2.us-east.bsky.network/subscribe`のようなJetstreamエンドポイントと、`?wantedCollections=app.bsky.feed.post`のような`wantedCollections`パラメータを指定するだけです。\n"
 
 #. type: Plain text
 #: src/guides/streaming-data/en.mdx:37
 #, no-wrap
 msgid "Here is a Python example:\n"
-msgstr ""
+msgstr "Pythonの例を次に示します。\n"
 
 #. type: Plain text
 #: src/guides/streaming-data/en.mdx:41
@@ -141,12 +153,15 @@ msgid ""
 "import asyncio\n"
 "import websockets\n"
 msgstr ""
+"```python\n"
+"import asyncio\n"
+"import websockets\n"
 
 #. type: Plain text
 #: src/guides/streaming-data/en.mdx:43
 #, no-wrap
 msgid "uri = \"wss://jetstream2.us-east.bsky.network/subscribe?wantedCollections=app.bsky.feed.post\"\n"
-msgstr ""
+msgstr "uri = \"wss://jetstream2.us-east.bsky.network/subscribe?wantedCollections=app.bsky.feed.post\"\n"
 
 #. type: Plain text
 #: src/guides/streaming-data/en.mdx:55
@@ -164,6 +179,17 @@ msgid ""
 "      except Exception as e:\n"
 "        print(f\"Error: {e}\")\n"
 msgstr ""
+"async def listen_to_websocket():\n"
+"  async with websockets.connect(uri) as websocket:\n"
+"    while True:\n"
+"      try:\n"
+"        message = await websocket.recv()\n"
+"        print(message)\n"
+"      except websockets.ConnectionClosed as e:\n"
+"        print(f\"Connection closed: {e}\")\n"
+"        break\n"
+"      except Exception as e:\n"
+"        print(f\"Error: {e}\")\n"
 
 #. type: Plain text
 #: src/guides/streaming-data/en.mdx:58
@@ -172,6 +198,8 @@ msgid ""
 "asyncio.get_event_loop().run_until_complete(listen_to_websocket())\n"
 "```\n"
 msgstr ""
+"asyncio.get_event_loop().run_until_complete(listen_to_websocket())\n"
+"```\n"
 
 #. type: Plain text
 #: src/guides/streaming-data/en.mdx:67
@@ -185,3 +213,10 @@ msgid ""
 "- [Sync spec](/specs/sync)\n"
 "- The [Microcosm](https://www.microcosm.blue/) community project maintains tools for working with AT records at scale without local mirroring.\n"
 msgstr ""
+"- [同期](/guides/sync)\n"
+"- [バックフィル](/guides/backfilling)\n"
+"- [フィード](/guides/feeds)\n"
+"- [リポジトリ仕様](/specs/repository)\n"
+"- [イベントストリーム仕様](/specs/event-stream)\n"
+"- [同期仕様](/specs/sync)\n"
+"- [Microcosm](https://www.microcosm.blue/)コミュニティプロジェクトは、ローカルミラーリングなしでATレコードを大規模に操作するためのツールを保守しています。\n"

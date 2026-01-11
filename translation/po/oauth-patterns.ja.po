@@ -31,13 +31,13 @@ msgstr ""
 #: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
 #, no-wrap
 msgid "## Further Reading and Resources\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"further-reading-and-resources\">関連・参考資料</Heading>\n"
 
 #. type: Plain text
 #: src/guides/installing-lexicons/en.mdx:11 src/guides/oauth-patterns/en.mdx:9
 #, no-wrap
 msgid "## TypeScript\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"typescript\">TypeScript</Heading>\n"
 
 #. type: Plain text
 #: src/guides/oauth-patterns/en.mdx:2 src/guides/subscriptions/en.mdx:2
@@ -46,16 +46,22 @@ msgstr ""
 #, no-wrap
 msgid "import {Container} from \"@/components/Container\"\n"
 msgstr ""
+"import {Container} from \"@/components/Container\"\n"
+"import {Heading} from \"@/components/Heading\"\n"
 
 #. type: Plain text
 #: src/guides/oauth-patterns/en.mdx:7
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "export const header = {\n"
 "  title: 'OAuth Patterns',\n"
 "  description: 'OAuth implementation examples',\n"
 "}\n"
-msgstr "import {Heading} from '@/components/Heading' export const header = { title: 'プロトコルの概要', description: 'AT プロトコルの概要。', }"
+msgstr ""
+"export const header = {\n"
+"  title: 'OAuthパターン集',\n"
+"  description: 'OAuthの実装例',\n"
+"}\n"
 
 #. type: Plain text
 #: src/guides/oauth-patterns/en.mdx:14
@@ -66,30 +72,34 @@ msgid ""
 "- [@atproto/oauth-client-expo](https://github.com/bluesky-social/atproto/tree/main/packages/oauth/oauth-client-expo#readme) ([npmjs](https://www.npmjs.com/package/@atproto/oauth-client-expo)) - For use in React Native projects (e.g. mobile apps)\n"
 "- [@atproto/oauth-client](https://github.com/bluesky-social/atproto/tree/main/packages/oauth/oauth-client#readme) ([npmjs](https://www.npmjs.com/package/@atproto/oauth-client)) (This is the core implementation on which the above three libraries depend)\n"
 msgstr ""
+"- [@atproto/oauth-client-browser](https://github.com/bluesky-social/atproto/tree/main/packages/oauth/oauth-client-browser#readme)（[npmjs](https://www.npmjs.com/package/@atproto/oauth-client-browser)）- フロントエンドのみのアプリケーション（例：SPA）に適しています。\n"
+"- [@atproto/oauth-client-node](https://github.com/bluesky-social/atproto/tree/main/packages/oauth/oauth-client-node#readme)（[npmjs](https://www.npmjs.com/package/@atproto/oauth-client-node)）- Electronデスクトップアプリやサーバーサイドデプロイメントに適しています。\n"
+"- [@atproto/oauth-client-expo](https://github.com/bluesky-social/atproto/tree/main/packages/oauth/oauth-client-expo#readme)（[npmjs](https://www.npmjs.com/package/@atproto/oauth-client-expo)）- React Nativeプロジェクト（例：モバイルアプリ）で使用するためのものです。\n"
+"- [@atproto/oauth-client](https://github.com/bluesky-social/atproto/tree/main/packages/oauth/oauth-client#readme)（[npmjs](https://www.npmjs.com/package/@atproto/oauth-client)）（上記3つのライブラリが依存するコア実装です）\n"
 
 #. type: Plain text
 #: src/guides/oauth-patterns/en.mdx:16
 #, no-wrap
 msgid "## Go\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"go\">Go</Heading>\n"
 
 #. type: Plain text
 #: src/guides/oauth-patterns/en.mdx:18
 #, no-wrap
 msgid "- [Indigo](https://github.com/bluesky-social/indigo/tree/main/atproto/auth/oauth) ([Online API Docs](https://pkg.go.dev/github.com/bluesky-social/indigo/atproto/auth/oauth)) - Suitable for native apps or server-side deployments\n"
-msgstr ""
+msgstr "- [Indigo](https://github.com/bluesky-social/indigo/tree/main/atproto/auth/oauth)（[APIドキュメント](https://pkg.go.dev/github.com/bluesky-social/indigo/atproto/auth/oauth)）- ネイティブアプリまたはサーバーサイドデプロイメントに適しています\n"
 
 #. type: Plain text
 #: src/guides/oauth-patterns/en.mdx:20
 #, no-wrap
 msgid "## ATProto OAuth Example Apps\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"atproto-oauth-example-apps\">ATプロトコルOAuthサンプルアプリ</Heading>\n"
 
 #. type: Plain text
 #: src/guides/oauth-patterns/en.mdx:22
 #, no-wrap
 msgid "These simple example apps demonstrate usage of their respective SDKs.\n"
-msgstr ""
+msgstr "これらのシンプルなサンプルアプリは、各SDKの使用方法を示しています。\n"
 
 #. type: Plain text
 #: src/guides/oauth-patterns/en.mdx:30
@@ -103,6 +113,13 @@ msgid ""
 "| [cookbook/go-oauth-cli-app](https://github.com/bluesky-social/cookbook/tree/main/go-oauth-cli-app#readme) | Go | indigo | Native CLI | No | No (requires hosted client metadata) |\n"
 "| [cookbook/python-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/python-oauth-web-app#readme) | Python | None | Web BFF | Optionally | Optionally |\n"
 msgstr ""
+"| サンプルアプリ | 言語 | SDK | アーキテクチャ | 機密クライアントか？ | [ローカルホスト開発クライアントID？](https://atproto.com/specs/oauth#localhost-client-development) |\n"
+"| --- | --- | --- | --- | --- | --- |\n"
+"| [cookbook/react-native-oauth](https://github.com/bluesky-social/cookbook/tree/main/react-native-oauth#readme) | TypeScript | @atproto/oauth-client-expo | モバイルアプリ（バックエンドなし） | いいえ | いいえ（ホストされたクライアントメタデータが必要） |\n"
+"| [cookbook/vanillajs-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/vanillajs-oauth-web-app#readme) | JavaScript | @atproto/oauth-client-browser | Web SPA（バックエンドなし） | いいえ | オプション |\n"
+"| [cookbook/go-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/go-oauth-web-app#readme) | Go | indigo | Web BFF | オプション | オプション |\n"
+"| [cookbook/go-oauth-cli-app](https://github.com/bluesky-social/cookbook/tree/main/go-oauth-cli-app#readme) | Go | indigo | ネイティブCLI | いいえ | いいえ（ホストされたクライアントメタデータが必要） |\n"
+"| [cookbook/python-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/python-oauth-web-app#readme) | Python | なし | Web BFF | オプション | オプション |\n"
 
 #. type: Plain text
 #: src/guides/oauth-patterns/en.mdx:34
@@ -112,36 +129,39 @@ msgid ""
 "The Python example does not use an SDK! It may be useful as reference when building an OAuth SDK from scratch, alongside the advanced [OAuth client implementation guide](https://docs.bsky.app/docs/advanced-guides/oauth-client)\n"
 "</Note>\n"
 msgstr ""
+"<Note>\n"
+"Pythonの例ではSDKを使用していません！[OAuthクライアント実装ガイド](https://docs.bsky.app/docs/advanced-guides/oauth-client)と共に、OAuth SDKを一から構築する際の参考として役立つかもしれません\n"
+"</Note>\n"
 
 #. type: Plain text
 #: src/guides/oauth-patterns/en.mdx:36
 #, no-wrap
 msgid "## Types of App\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"types-of-app\">アプリケーションの種類</Heading>\n"
 
 #. type: Plain text
 #: src/guides/oauth-patterns/en.mdx:38
 #, no-wrap
 msgid "The *simplest* type of app is one where the OAuth session is established directly between the user's device and the PDS, as demonstrated in the [cookbook/vanillajs-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/vanillajs-oauth-web-app#readme) example. It's simple because it doesn't require a dedicated backend service, only hosting static resources.\n"
-msgstr ""
+msgstr "*最もシンプル*な種類のアプリケーションは、[cookbook/vanillajs-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/vanillajs-oauth-web-app#readme)の例に示されているように、ユーザーのデバイスとPDSの間でOAuthセッションが直接確立されるものです。専用のバックエンドサービスが不要で、静的リソースをホストするだけでよいため、シンプルです。\n"
 
 #. type: Plain text
 #: src/guides/oauth-patterns/en.mdx:40
 #, no-wrap
 msgid "If your app doesn't need long-lived sessions, then this approach is completely fine. But for other use cases, session lifetime will be limited because the app is a \"public client\", as opposed to a \"confidential client\". Becoming a confidential client involves establishing a secret key, bound to the client ID. If the client is publicly available and runs on the user's own device, it cannot protect a client secret. Thus, implementing a confidential client necessitates hosting some backend infrastructure, which the [cookbook/go-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/go-oauth-web-app#readme) and [cookbook/python-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/python-oauth-web-app#readme) examples demonstrate (both using the \"BFF\" pattern, see below).\n"
-msgstr ""
+msgstr "アプリケーションが長期のセッションを必要としない場合は、このアプローチで問題ありません。ただし、他のユースケースでは、アプリケーションが「機密クライアント」ではなく「パブリッククライアント」であるせいで、セッションの有効期限が制限されます。機密クライアントになるには、クライアントIDに紐付けられた秘密鍵を用意する必要があります。クライアントが公開されていてユーザーのデバイスで実行される場合、クライアントシークレットを保護することができません。したがって、機密クライアントの実装には、[cookbook/go-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/go-oauth-web-app#readme)や[cookbook/python-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/python-oauth-web-app#readme)の例（両方とも後述の\"BFF\"パターンを使用しています）で示されているバックエンドインフラをホストする必要があります。\n"
 
 #. type: Plain text
 #: src/guides/oauth-patterns/en.mdx:42
 #, no-wrap
 msgid "See [Types of Clients](/specs/oauth#types-of-clients) for more technical details on confidential vs. public clients.\n"
-msgstr ""
+msgstr "機密クライアントとパブリッククライアントの詳細な技術情報については、[クライアントの種類](/specs/oauth#types-of-clients)を参照してください。\n"
 
 #. type: Plain text
 #: src/guides/oauth-patterns/en.mdx:44
 #, no-wrap
 msgid "There are several design strategies that can be used to \"upgrade\" a public client into a confidential client:\n"
-msgstr ""
+msgstr "パブリッククライアントを機密クライアントにアップグレードするために使用できるいくつかの設計手法があります。\n"
 
 #. type: Plain text
 #: src/guides/oauth-patterns/en.mdx:48
@@ -151,12 +171,15 @@ msgid ""
 "- [Token-Mediating Backend (TMB)](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps#name-token-mediating-backend): Similar to the BFF pattern, except the backend passes OAuth access tokens to the frontend once the session has been established, allowing the frontend to make direct requests to the PDS.\n"
 "- [Client Assertion Backend](https://github.com/bluesky-social/proposals/tree/main/0010-client-assertion-backend): A proposed alternative to the TMB pattern with simplified server-side logic.\n"
 msgstr ""
+" - [Backend For Frontend（BFF）](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps#name-backend-for-frontend-bff)：OAuthセッションはアプリケーションのバックエンドサーバーとPDSの間で確立されます。このサーバーサイドセッションは、セッションクッキーなどのメカニズムを介してユーザーのフロントエンドセッションと関連付けられます。フロントエンドはバックエンドを通じてリクエストをプロキシすることでPDSに対してリクエストを行い、バックエンドがOAuth認可を処理します。\n"
+"- [Token-Mediating Backend（TMB）](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps#name-token-mediating-backend)：BFFパターンに似ていますが、セッションが確立されると、バックエンドがOAuthアクセストークンをフロントエンドに渡し、フロントエンドがPDSに直接リクエストを行うことができます。\n"
+"- [Client Assertion Backend](https://github.com/bluesky-social/proposals/tree/main/0010-client-assertion-backend)：サーバーサイドロジックを簡略化したTMBパターンの代替案です。\n"
 
 #. type: Plain text
 #: src/guides/oauth-patterns/en.mdx:50
 #, no-wrap
 msgid "Of these three, the BFF pattern is the currently recommended approach for building confidential-client applications. This is demonstrated in the [cookbook/go-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/go-oauth-web-app#readme) and [cookbook/python-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/python-oauth-web-app#readme) examples.\n"
-msgstr ""
+msgstr "この3つのうち、BFFパターンが機密クライアントアプリケーションを構築するための現在推奨されているアプローチです。これは[cookbook/go-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/go-oauth-web-app#readme)と[cookbook/python-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/python-oauth-web-app#readme)の例で示されています。\n"
 
 #. type: Plain text
 #: src/guides/oauth-patterns/en.mdx:57
@@ -168,3 +191,8 @@ msgid ""
 "- [OAuth spec](/specs/oauth)\n"
 "- [Permissions spec](/specs/permission)\n"
 msgstr ""
+"- [認証](/guides/auth)\n"
+"- [SDKによる認証](/guides/sdk-auth)\n"
+"- [スコープ](/guides/scopes)\n"
+"- [OAuth仕様](/specs/oauth)\n"
+"- [権限仕様](/specs/permission)\n"

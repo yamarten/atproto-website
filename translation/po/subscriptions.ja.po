@@ -31,7 +31,7 @@ msgstr ""
 #: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
 #, no-wrap
 msgid "## Further Reading and Resources\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"further-reading-and-resources\">関連・参考資料</Heading>\n"
 
 #. type: Plain text
 #: src/guides/oauth-patterns/en.mdx:2 src/guides/subscriptions/en.mdx:2
@@ -40,34 +40,40 @@ msgstr ""
 #, no-wrap
 msgid "import {Container} from \"@/components/Container\"\n"
 msgstr ""
+"import {Container} from \"@/components/Container\"\n"
+"import {Heading} from \"@/components/Heading\"\n"
 
 #. type: Plain text
 #: src/guides/subscriptions/en.mdx:7
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "export const header = {\n"
 "  title: 'Subscriptions',\n"
 "  description: 'Subscribing to a labeler service',\n"
 "}\n"
-msgstr "export const header = { title: 'Identity', description: 'AT プロトコルがユーザー ID を処理する方法。', }"
+msgstr ""
+"export const header = {\n"
+"  title: '登録',\n"
+"  description: 'ラベラーサービスの登録',\n"
+"}\n"
 
 #. type: Plain text
 #: src/guides/subscriptions/en.mdx:9
 #, no-wrap
 msgid "## Labeler Subscriptions\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"labeler-subscriptions\">ラベラー登録</Heading>\n"
 
 #. type: Plain text
 #: src/guides/subscriptions/en.mdx:11
 #, no-wrap
 msgid "Labeler services each have a service identity, meaning a DID document. This is the DID that appears in the label source (**`src`**) field.\n"
-msgstr ""
+msgstr "ラベラーサービスはそれぞれサービスIDを持ち、DIDドキュメントを意味します。これはラベルのソース（**`src`**）フィールドに表示されるDIDです。\n"
 
 #. type: Plain text
 #: src/guides/subscriptions/en.mdx:13
 #, no-wrap
 msgid "To include labels from a given labeler, set the `atproto-accept-labelers` header on an XRPC request to a comma-separated list of the DIDs of the labelers you want to include, like so:\n"
-msgstr ""
+msgstr "特定のラベラーからのラベルを含めるには、XRPCリクエストの`atproto-accept-labelers`ヘッダーを、含めたいラベラーのDIDのカンマ区切りリストに設定します。\n"
 
 #. type: Plain text
 #: src/guides/subscriptions/en.mdx:17
@@ -77,12 +83,15 @@ msgid ""
 "curl -H \"atproto-accept-labelers: did:plc:vmt7o7y6titkqzzxav247zrn, did:plc:vmt7o7y6titkqzzxav247zrn\"\n"
 "```\n"
 msgstr ""
+"```bash\n"
+"curl -H \"atproto-accept-labelers: did:plc:vmt7o7y6titkqzzxav247zrn, did:plc:vmt7o7y6titkqzzxav247zrn\"\n"
+"```\n"
 
 #. type: Plain text
 #: src/guides/subscriptions/en.mdx:19
 #, no-wrap
 msgid "You can also add labelers using the TypeScript SDK:\n"
-msgstr ""
+msgstr "TypeScript SDKを使用してラベラーを追加することもできます。\n"
 
 #. type: Plain text
 #: src/guides/subscriptions/en.mdx:22
@@ -91,6 +100,8 @@ msgid ""
 "```tsx\n"
 "import { Client } from '@atproto/lex'\n"
 msgstr ""
+"```tsx\n"
+"import { Client } from '@atproto/lex'\n"
 
 #. type: Plain text
 #: src/guides/subscriptions/en.mdx:27
@@ -101,6 +112,10 @@ msgid ""
 "  appLabelers: ['did:plc:labeler1', 'did:plc:labeler2'],\n"
 "})\n"
 msgstr ""
+"// アプリレベルのグローバルなラベラー\n"
+"Client.configure({\n"
+"  appLabelers: ['did:plc:labeler1', 'did:plc:labeler2'],\n"
+"})\n"
 
 #. type: Plain text
 #: src/guides/subscriptions/en.mdx:32
@@ -111,6 +126,10 @@ msgid ""
 "  labelers: ['did:plc:labeler3'],\n"
 "})\n"
 msgstr ""
+"// Clientインスタンス固有のラベラー\n"
+"const client = new Client(session, {\n"
+"  labelers: ['did:plc:labeler3'],\n"
+"})\n"
 
 #. type: Plain text
 #: src/guides/subscriptions/en.mdx:35
@@ -119,6 +138,8 @@ msgid ""
 "// Add labelers dynamically\n"
 "client.addLabelers(['did:plc:labeler4'])\n"
 msgstr ""
+"// ラベラーを動的に追加\n"
+"client.addLabelers(['did:plc:labeler4'])\n"
 
 #. type: Plain text
 #: src/guides/subscriptions/en.mdx:38
@@ -127,6 +148,8 @@ msgid ""
 "// Replace all labelers\n"
 "client.setLabelers(['did:plc:labeler5'])\n"
 msgstr ""
+"// すべてのラベラーを置き換える\n"
+"client.setLabelers(['did:plc:labeler5'])\n"
 
 #. type: Plain text
 #: src/guides/subscriptions/en.mdx:42
@@ -136,18 +159,21 @@ msgid ""
 "client.clearLabelers()\n"
 "```\n"
 msgstr ""
+"// ラベラーをクリア\n"
+"client.clearLabelers()\n"
+" ```\n"
 
 #. type: Plain text
 #: src/guides/subscriptions/en.mdx:44
 #, no-wrap
 msgid "## Use labels in your app\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"use-labelers-in-your-app\">アプリでラベルを使う</Heading>\n"
 
 #. type: Plain text
 #: src/guides/subscriptions/en.mdx:46
 #, no-wrap
 msgid "Labels may be placed on accounts or records. Apps can interprets targets in different ways:\n"
-msgstr ""
+msgstr "ラベルはアカウントやレコードに紐付けられます。アプリはターゲットを異なる方法で解釈できます。\n"
 
 #. type: Plain text
 #: src/guides/subscriptions/en.mdx:50
@@ -157,24 +183,27 @@ msgid ""
 "- On a profile: affects only the profile record (e.g. user avatar) and never hides any content, including the account in listings.\n"
 "- On content: affects the content specifically (a post record, a list, a feed, etc.)\n"
 msgstr ""
+"- アカウントに対して：アカウント全体に影響があります。\n"
+"- プロフィールに対して：プロフィールレコード（例：ユーザーアバター）にのみ影響し、一覧からアカウントを隠すことはありません。\n"
+"- コンテンツに対して：コンテンツ毎に固有の影響があります（投稿レコード、リスト、フィードなど）。\n"
 
 #. type: Plain text
 #: src/guides/subscriptions/en.mdx:52
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Reporting\n"
-msgstr "<Heading level={2} id=\"record\">レコード</Heading>"
+msgstr "<Heading level={2} id=\"reporting\">報告</Heading>\n"
 
 #. type: Plain text
 #: src/guides/subscriptions/en.mdx:54
 #, no-wrap
 msgid "To send a report to a Labeler, use the `com.atproto.moderation.createReport` procedure. Users may send reports to any of their labelers.\n"
-msgstr ""
+msgstr "ラベラーに報告を送信するには、`com.atproto.moderation.createReport`を使用します。ユーザーはどのラベラーにでも報告を送信できます。\n"
 
 #. type: Plain text
 #: src/guides/subscriptions/en.mdx:56
 #, no-wrap
 msgid "To specify which labeler should receive the label, set the `atproto-proxy` header with the DID of the labeler and the service key of `atproto_labeler`. In the TypeScript SDK, it looks like this:\n"
-msgstr ""
+msgstr "どのラベラーがラベルを受け取るべきかを指定するには、ラベラーのDIDと`atproto_labeler`サービスキーを`atproto-proxy`ヘッダーを設定します。TypeScript SDKでは、次のようになります。\n"
 
 #. type: Plain text
 #: src/guides/subscriptions/en.mdx:59
@@ -183,6 +212,8 @@ msgid ""
 "```typescript\n"
 "import { AtpAgent } from '@atproto/api'\n"
 msgstr ""
+"```typescript\n"
+"import { AtpAgent } from '@atproto/api'\n"
 
 #. type: Plain text
 #: src/guides/subscriptions/en.mdx:67
@@ -196,6 +227,13 @@ msgid ""
 "    password: 'your-app-password'\n"
 "})\n"
 msgstr ""
+"const agent = new AtpAgent({\n"
+"    service: 'https://bsky.social'\n"
+"})\n"
+"await agent.login({\n"
+"    identifier: 'alex.bsky.team',\n"
+"    password: 'your-app-password'\n"
+"})\n"
 
 #. type: Plain text
 #: src/guides/subscriptions/en.mdx:76
@@ -210,6 +248,14 @@ msgid ""
 "  })\n"
 "```\n"
 msgstr ""
+"agent\n"
+"  .withProxy('atproto_labeler', 'did:web:my-labeler.com')\n"
+"  .createModerationReport({\n"
+"    reasonType: 'com.atproto.moderation.defs#reasonViolation',\n"
+"    reason: 'They were being such a jerk to me!',\n"
+"    subject: { did: 'did:web:bob.com' },\n"
+"  })\n"
+"```\n"
 
 #. type: Plain text
 #: src/guides/subscriptions/en.mdx:83
@@ -221,3 +267,8 @@ msgid ""
 "- [Label Specs](/specs/label)\n"
 "- [Using Ozone](/guides/using-ozone)\n"
 msgstr ""
+"- [モデレーション](/guides/moderation)\n"
+"- [ラベル](/guides/labels)\n"
+"- [ラベラーの作成](/guides/creating-a-labeler)\n"
+"- [ラベル仕様](/specs/label)\n"
+"- [Ozoneの使用](/guides/using-ozone)\n"

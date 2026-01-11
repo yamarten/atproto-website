@@ -31,7 +31,7 @@ msgstr ""
 #: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
 #, no-wrap
 msgid "## Further Reading and Resources\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"further-reading-and-resources\">関連・参考資料</Heading>\n"
 
 #. type: Plain text
 #: src/guides/oauth-patterns/en.mdx:2 src/guides/subscriptions/en.mdx:2
@@ -40,34 +40,40 @@ msgstr ""
 #, no-wrap
 msgid "import {Container} from \"@/components/Container\"\n"
 msgstr ""
+"import {Container} from \"@/components/Container\"\n"
+"import {Heading} from \"@/components/Heading\"\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:7
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "export const header = {\n"
 "  title: 'Auth',\n"
 "  description: 'Auth for AT Protocol application developers',\n"
 "}\n"
-msgstr "export const header = { title: 'Identity', description: 'AT プロトコルがユーザー ID を処理する方法。', }"
+msgstr ""
+"export const header = {\n"
+"  title: '認証',\n"
+"  description: 'ATプロトコルアプリケーション開発者向けの認証ガイド',\n"
+"}\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:9
 #, no-wrap
 msgid "## About authentication\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"about-authentication\">認証について</Heading>\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:11
 #, no-wrap
 msgid "**Authentication is the first part of our docs for a reason!** You don't always need to be authenticated to [read data](/reading-data#unauthenticated-reads) from AT Protocol records or even to [stream data from the firehose](/guides/streaming-data). But if you're looking to build an application that integrates with the Atmosphere of ATProto apps in some way, you'll begin with authentication. You might start out by just using AT Protocol identities as an OAuth source — though you'll find that there's lots more you can do by building on top of the ATProto [social graph](/guides/social-graph).\n"
-msgstr ""
+msgstr "**認証が最初のドキュメントであることには理由があります**！ATプロトコルのレコードから[データを読む](/reading-data#unauthenticated-reads)ために常に認証が必要というわけではありませんし、[firehose からデータをストリーム](/guides/streaming-data)する場合も同じです。ただしATプロトコルアプリの環境（Atmosphere）に何らかの形で統合されるアプリケーションを構築したい場合は、認証から始めることになります。まずATプロトコルのIDをOAuthソースとして使うだけから始めるかもしれませんが、ATプロトコルの[ソーシャルグラフ](/guides/social-graph)上でさらに多くのことができることに気付くでしょう。\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:13
 #, no-wrap
 msgid "This section is aimed at developers building applications on AT Protocol. Applications with their own end-user login flow should implement [OAuth](#what-is-oauth) for authentication. Single-purpose applications such as bots or command line tools may use [password authentication](/guides/sdk-auth) instead.\n"
-msgstr ""
+msgstr "このセクションはATプロトコルでアプリケーションを構築している開発者を対象としています。独自のログインフローを持つアプリケーションは認証に[OAuth](#what-is-oauth)を実装すべきです。ボットやコマンドラインツールなどの単一目的のアプリケーションは[パスワード認証](/guides/sdk-auth)を使うこともできます。\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:17
@@ -77,78 +83,81 @@ msgid ""
 "We also support the use of [App Passwords](/specs/xrpc#app-passwords). Accounts can create and revoke app passwords separate from their primary password. This way, you do not need to supply your primary password to applications that use password auth.\n"
 "</Note>\n"
 msgstr ""
+"<Note>\n"
+"私たちは[アプリパスワード](/specs/xrpc#app-passwords)の使用もサポートしています。アカウントは主パスワードとは別にアプリパスワードの作成・取消しができます。これにより、パスワード認証を使うアプリケーションに主パスワードを渡す必要がありません。\n"
+"</Note>\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:19
 #, no-wrap
 msgid "To implement OAuth in your application, refer to [OAuth patterns](/guides/oauth-patterns) for common use cases, and the [Scopes](/guides/scopes) guide for understanding permission models. If you're building your own protocol implementation or OAuth Client SDK, refer to the [OAuth spec](/specs/oauth).\n"
-msgstr ""
+msgstr "アプリケーションにOAuthを実装するには、一般的なユースケースについては[OAuthパターン](/guides/oauth-patterns)を、権限モデルの理解については [スコープガイド](/guides/scopes) を参照してください。独自のプロトコル実装または OAuth Client SDK を構築している場合は、[OAuth 仕様](/specs/oauth) を参照してください。\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:21
 #, no-wrap
 msgid "## What *is* OAuth?\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"what-is-oauth\">OAuthとは？</Heading>\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:23
 #, no-wrap
 msgid "OAuth is an authorization framework that lets developers request access to an account without requiring users to hand over their password. Without OAuth, if someone wanted to authorize a 3rd party app to access their account, their only option would be to type their username and password into that app. This is bad for all sorts of reasons, the first being that a 3rd party app gets to see, and likely save, passwords. And once an app has a username and password, the app would have _full_ access to their account.\n"
-msgstr ""
+msgstr "OAuthは、ユーザーがパスワードを渡すことなく、開発者がアカウントへのアクセスをリクエストできるようにする認可フレームワークです。OAuthがなければ、サードパーティアプリケーションにアカウントへのアクセスを許可したい場合、ユーザー名とパスワードをそのアプリケーションに入力するしかありません。これはさまざまな理由で問題があり、一番の理由はサードパーティアプリケーションがパスワードを見て、ともすれば保存してしまうという点です。アプリケーションがユーザー名とパスワードを持つと、アプリケーションはアカウントへの*完全な*アクセスを持つことになります。\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:25
 #, no-wrap
 msgid "OAuth aims to solve these problems with a family of open specifications for managing secure authorization without requiring a person's username and password. If you've ever used a \"Sign in with...\" button or link on the web, you've used OAuth.\n"
-msgstr ""
+msgstr "OAuthはこれらの問題を、個人のユーザー名とパスワードを必要とせずに安全な認可を管理するオープン仕様群によって解決することを目指しています。ウェブ上で「…でサインイン」ボタンやリンクを使用したことがあれば、OAuthを使用したことがあるということです。\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:27
 #, no-wrap
 msgid "As a developer, you can request limited access to a person's account, meaning if you only need to post a message to someone's public timeline, you don't also need to request access to read their private messages. This is great for your app because you don't have to worry about managing data you don't need, and it's great for the person using your app because they don't need to worry about their DMs being compromised.\n"
-msgstr ""
+msgstr "開発者からすると、個人のアカウントへの限定的なアクセスをリクエストできます。つまり、誰かのパブリックタイムラインにメッセージを投稿するだけでよい場合、プライベートメッセージの閲覧まで要求する必要はありません。これはあなたのアプリケーションにとって素晴らしいことです。なぜなら、必要のないデータを管理することについて心配する必要がないからです。また、あなたのアプリケーションを使う人にとっても素晴らしいことです。なぜなら、DMが漏洩することについて心配する必要がないからです。\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:29
 #, no-wrap
 msgid "## How is OAuth Different in AT Protocol?\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"how-is-oauth-different-in-at-protocol\">ATプロトコルのOAuthは何が違う？</Heading>\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:31
 #, no-wrap
 msgid "ATProto [specifies](/specs/oauth) a particular \"profile\" of the OAuth standards, using [OAuth 2.1](https://www.ietf.org/archive/id/draft-ietf-oauth-v2-1-13.html) as the foundation.\n"
-msgstr ""
+msgstr "ATプロトコルは[OAuth仕様](/specs/oauth)でOAuth標準の特定の「プロファイル」を指定し、[OAuth 2.1](https://www.ietf.org/archive/id/draft-ietf-oauth-v2-1-13.html)を基礎としています。\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:33
 #, no-wrap
 msgid "There are a few details that might catch you off guard if you're used to using other OAuth systems.\n"
-msgstr ""
+msgstr "他のOAuthシステムを使っている場合は細かい部分で意外に感じるかもしれません。\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:35
 #, no-wrap
 msgid "- **ATProto is distributed**: Usually, when an app has a \"sign in with...\" button, it provides a choice of which authorities it allows to authenticate users (usually one of a few big corporations). With ATProto OAuth, the app has no prior relationship with the authentication provider: a user's [PDS](/guides/the-at-stack#pds). This is also the reason why ATProto OAuth is not compatible with OIDC, which requires a pre-established relationship.\n"
-msgstr ""
+msgstr "- **ATプロトコルは分散しています**：通常、アプリに「…でサインイン」ボタンがある場合、ユーザーの認証を許可する権限を選択できます（大抵は少数の大企業のどれか）。ATプロトコルのOAuth では、アプリは認証プロバイダー、つまりユーザーの[PDS](/guides/the-at-stack#pds)との事前の関係がありません。これは、ATプロトコルのOAuthが、事前に確立された関係を必要とするOIDCと互換性がない理由でもあります。\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:37
 #, no-wrap
 msgid "- **Migration**: ATProto users can migrate their accounts between servers ([PDSes](/guides/glossary#pds-personal-data-server)) over time. To facilitate this ATProto has a flexible [Identity](/guides/identity) layer, which allows usernames ([handles](/specs/handle)) to be resolved to a static user ID ([DID](/specs/did)), which in turn can be resolved to locate the user's PDS. When a user logs in to an app, the OAuth client dynamically resolves these relationships.\n"
-msgstr ""
+msgstr "- **移行**：ATプロトコルユーザーはアカウントをサーバー（[PDS](/guides/glossary#pds-personal-data-server)）間で移行できます。これを促進するため、ATプロトコルは柔軟な[ID](/guides/identity)レイヤーを持っており、ユーザー名（[ハンドル](/specs/handle)）を不変のユーザーID（[DID](/specs/did)）に解決でき、さらにそれを解決してユーザーのPDSを見つけることができます。ユーザーがアプリケーションにログインすると、OAuthクライアントはこれらの関係を動的に解決します。\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:39
 #, no-wrap
 msgid "- **Client IDs**: In other OAuth ecosystems, it is often necessary for client apps to pre-register themselves with the resource server. This is not viable in a decentralized system (with many clients and many resource servers), so ATProto addresses this using [Client ID Metadata Documents](/specs/oauth#client-id-metadata-document).\n"
-msgstr ""
+msgstr "- **クライアントID**： 他のOAuthエコシステムでは、クライアントアプリケーションがリソースサーバーに事前登録が必要なことがよくあります。これは分散型システム（多数のクライアントと多数のリソースサーバーがある）では実行できないため、ATプロトコルは[Client ID Metadata Documents](/specs/oauth#client-id-metadata-document)を使用してこれに対処しています。\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:43
 #, no-wrap
 msgid "Begin by reading [SDK authentication](/guides/sdk-auth). To implement OAuth in your application, refer to [OAuth patterns](/guides/oauth-patterns) for common use cases, and the [Scopes](/guides/scopes) guide for understanding permission models.\n"
-msgstr ""
+msgstr "まずは[SDKによる認証](/guides/sdk-auth)を読んでください。アプリケーションにOAuthを実装するには、一般的なユースケースについては[OAuthパターン](/guides/oauth-patterns)を、権限モデルを理解するには[スコープガイド](/guides/scopes)を参照してください。\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:48
@@ -160,3 +169,8 @@ msgid ""
 "- [OAuth spec](/specs/oauth)\n"
 "- [Permissions spec](/specs/permission)\n"
 msgstr ""
+"- [SDKによる認証](/guides/sdk-auth)\n"
+"- [OAuthパターン](/guides/oauth-patterns)\n"
+"- [スコープ](/guides/scopes)\n"
+"- [OAuth仕様](/specs/oauth)\n"
+"- [権限仕様](/specs/permission)\n"

@@ -31,59 +31,65 @@ msgstr ""
 #: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
 #, no-wrap
 msgid "## Further Reading and Resources\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"further-reading-and-resources\">関連・参考資料</Heading>\n"
 
 #. type: Plain text
 #: src/guides/images-and-video/en.mdx:5
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "export const header = {\n"
 "  title: 'Images and Video',\n"
 "  description: 'Working with image and video blobs',\n"
 "}\n"
-msgstr "export const header = { title: 'Identity', description: 'AT プロトコルがユーザー ID を処理する方法。', }"
+msgstr ""
+"import {Heading} from '@/components/Heading'\n"
+"\n"
+"export const header = {\n"
+"  title: '画像と動画',\n"
+"  description: '画像と動画blobの活用',\n"
+"}\n"
 
 #. type: Plain text
 #: src/guides/images-and-video/en.mdx:7
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Blob objects\n"
-msgstr "<Heading level={2} id=\"blob\">BLOB</Heading>"
+msgstr "<Heading level={2} id=\"blob-object\">blobオブジェクト</Heading>\n"
 
 #. type: Plain text
 #: src/guides/images-and-video/en.mdx:9
 #, no-wrap
 msgid "\"Blobs\" are media files stored alongside an account's repository. They include images, video, and audio, but could also include any other file format. Blobs are referenced by individual records by the **`blob`** lexicon datatype, which includes a content hash (CID) for the blob.\n"
-msgstr ""
+msgstr "「blob」はアカウントのリポジトリと共に保存されるメディアファイルです。これらは画像、動画、音声データを含みますが、他のファイル形式も含むことができます。blobは個別のレコードからLexiconの **`blob`** データ型によって参照され、blobのコンテンツハッシュ（CID）を含みます。\n"
 
 #. type: Plain text
 #: src/guides/images-and-video/en.mdx:11
 #, no-wrap
 msgid "Blob files are uploaded and distributed separately from records. Blobs are authoritatively stored by the account's PDS instance, but views are commonly served by CDNs associated with individual applications (\"AppViews\"), to reduce traffic on the PDS. CDNs may serve transformed (resized, transcoded, etc) versions of the original blob.\n"
-msgstr ""
+msgstr "blobファイルはレコードとは別にアップロードおよび配布されます。blobはアカウントのPDSインスタンスによって統合的に保存されますが、ビューは通常、PDSトラフィックを削減するために個別のアプリケーション（AppView）に関連付けられたCDNによって提供されます。CDNは元のblobの変換版（リサイズ、トランスコード等）を提供することがあります。\n"
 
 #. type: Plain text
 #: src/guides/images-and-video/en.mdx:13
 #, no-wrap
 msgid "While blobs are universally content addressed (by CID), they are always referenced and managed in the context of an individual account (DID).\n"
-msgstr ""
+msgstr "blobは（CIDによって）ユニバーサルにコンテンツアドレス指定されていますが、常に個別のアカウント（DID）のコンテキストで参照および管理されます。\n"
 
 #. type: Plain text
 #: src/guides/images-and-video/en.mdx:15
 #, no-wrap
 msgid "The empty blob (zero bytes) is valid in general, though it may be disallowed by individual Lexicons/applications.\n"
-msgstr ""
+msgstr "空のblob（ゼロバイト）は一般的に有効ですが、個別のLexiconやアプリケーションによっては禁止される場合があります。\n"
 
 #. type: Plain text
 #: src/guides/images-and-video/en.mdx:17
 #, no-wrap
 msgid "Creating blobs requires the permission scope **`blob:*/*` .**\n"
-msgstr ""
+msgstr "blobを作成するには権限スコープ **`blob:*/*`** が必要です。\n"
 
 #. type: Plain text
 #: src/guides/images-and-video/en.mdx:19
 #, no-wrap
 msgid "It is generally recommended to use an object storage implementation for working with blobs if you are hosting your own PDS. See [going to production](/guides/going-to-production#object-storage) for more.\n"
-msgstr ""
+msgstr "自分自身のPDSをホストしている場合、blobを操作するにはオブジェクトストレージ実装の利用を一般的にお勧めします。詳細は[本番環境への移行](/guides/going-to-production#object-storage)を参照してください。\n"
 
 #. type: Plain text
 #: src/guides/images-and-video/en.mdx:26
@@ -95,3 +101,8 @@ msgid ""
 "- [Blob Specs](/specs/blob)\n"
 "- [Streamplace](https://stream.place/docs/) provides an implementation and related Lexicon for video streaming on ATProto.\n"
 msgstr ""
+"- [blobライフサイクル](/guides/blob-lifecycle)\n"
+"- [blobのセキュリティ](/guides/blob-security)\n"
+"- [動画の取り扱い](/guides/video-handling)\n"
+"- [blob仕様](/specs/blob)\n"
+"- [Streamplace](https://stream.place/docs/)はATプロトコル上の動画ストリーミングの実装および関連Lexiconを提供します。\n"

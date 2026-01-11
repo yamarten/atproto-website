@@ -31,41 +31,47 @@ msgstr ""
 #: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
 #, no-wrap
 msgid "## Further Reading and Resources\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"further-reading-and-resources\">関連・参考資料</Heading>\n"
 
 #. type: Plain text
 #: src/guides/lexicon/en.mdx:5
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "export const header = {\n"
 "  title: 'Lexicons',\n"
 "  description: 'A schema-driven interoperability framework',\n"
 "}\n"
-msgstr "export const header = { title: 'Identity', description: 'AT プロトコルがユーザー ID を処理する方法。', }"
+msgstr ""
+"import {Heading} from '@/components/Heading'\n"
+"\n"
+"export const header = {\n"
+"  title: 'Lexicon',\n"
+"  description: 'スキーマによる相互運用性フレームワーク',\n"
+"}\n"
 
 #. type: Plain text
 #: src/guides/lexicon/en.mdx:7
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## About lexicons\n"
-msgstr "<Heading level={2} id=\"lexicon\">Lexicon</Heading>"
+msgstr "<Heading level={2} id=\"about-lexicons\">Lexiconとは</Heading>\n"
 
 #. type: Plain text
 #: src/guides/lexicon/en.mdx:9
 #, no-wrap
 msgid "Lexicon is a schema system used to define RPC methods and record types. Every Lexicon schema is written in JSON, in a format similar to [JSON-Schema](https://json-schema.org/) for defining constraints.\n"
-msgstr ""
+msgstr "Lexiconはデータ型とRPCメソッドを定義するためのスキーマシステムです。すべてのLexiconスキーマはJSONで書かれており、[JSON-Schema](https://json-schema.org/)に近い形式で制約を定義します。\n"
 
 #. type: Plain text
 #: src/guides/lexicon/en.mdx:11
 #, no-wrap
 msgid "**Lexicons provide Interoperability.** AT applications need a way to declare their own behaviors and semantics. Lexicon solves this while making it straightforward for developers to introduce new schemas.\n"
-msgstr ""
+msgstr "**Lexiconは相互運用性を提供します**。ATアプリケーションには、各自の振る舞いとセマンティクスを宣言する方法が必要です。Lexiconはこれを解決しながら、開発者が新しいスキーマを導入するのを簡単にします。\n"
 
 #. type: Plain text
 #: src/guides/lexicon/en.mdx:13
 #, no-wrap
 msgid "The schemas are identified using [NSIDs](/specs/nsid), a reverse-DNS format. Here are some example API endpoints:\n"
-msgstr ""
+msgstr "スキーマは[NSID](/specs/nsid)を使用して識別されます。これは逆ドメイン名形式です。以下にAPI エンドポイントの例を示します。\n"
 
 #. type: Plain text
 #: src/guides/lexicon/en.mdx:20
@@ -78,12 +84,18 @@ msgid ""
 "app.bsky.notification.listNotifications\n"
 "```\n"
 msgstr ""
+"```\n"
+"com.atproto.repo.getRecord\n"
+"com.atproto.identity.resolveHandle\n"
+"app.bsky.feed.getPostThread\n"
+"app.bsky.notification.listNotifications\n"
+"```\n"
 
 #. type: Plain text
 #: src/guides/lexicon/en.mdx:22
 #, no-wrap
 msgid "And here are some example record types:\n"
-msgstr ""
+msgstr "レコード型の例を以下に示します。\n"
 
 #. type: Plain text
 #: src/guides/lexicon/en.mdx:29
@@ -96,24 +108,30 @@ msgid ""
 "app.bsky.graph.follow\n"
 "```\n"
 msgstr ""
+"```\n"
+"app.bsky.feed.post\n"
+"app.bsky.feed.like\n"
+"app.bsky.actor.profile\n"
+"app.bsky.graph.follow\n"
+"```\n"
 
 #. type: Plain text
 #: src/guides/lexicon/en.mdx:31
 #, no-wrap
 msgid "The schema types, definition language, and validation constraints are described in the [Lexicon specification](/specs/lexicon), and representations in JSON and CBOR are described in the [Data Model specification](/specs/data-model).\n"
-msgstr ""
+msgstr "スキーマの種類、定義言語、および制約検証は[Lexicon仕様](/specs/lexicon)で説明されており、JSONおよびCBORでの表現は[データモデル仕様](/specs/data-model)で説明されています。\n"
 
 #. type: Plain text
 #: src/guides/lexicon/en.mdx:33
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## HTTP API methods\n"
-msgstr "<Heading level={2} id=\"did-methods\">DID メソッド</Heading>"
+msgstr "<Heading level={2} id=\"http-api-methods\">HTTP APIメソッド</Heading>\n"
 
 #. type: Plain text
 #: src/guides/lexicon/en.mdx:35
 #, no-wrap
 msgid "Atmosphere HTTP API methods each scope and implement a particular set of Lexicons. The AT Protocol's API system, [XRPC](/specs/xrpc), is essentially a thin wrapper around HTTPS. For example, a call to:\n"
-msgstr ""
+msgstr "AtmosphereのHTTP APIメソッドは、それぞれ特定のLexiconセットに対して実装します。ATプロトコルのAPIシステムである[XRPC](/specs/xrpc)は、本質的にHTTPSの薄いラッパーです。例えば、次の呼び出しは、\n"
 
 #. type: Plain text
 #: src/guides/lexicon/en.mdx:39
@@ -123,12 +141,15 @@ msgid ""
 "client.call(app.bsky.actor.getProfile, {})\n"
 "```\n"
 msgstr ""
+"```tsx\n"
+"client.call(app.bsky.actor.getProfile, {})\n"
+"```\n"
 
 #. type: Plain text
 #: src/guides/lexicon/en.mdx:41
 #, no-wrap
 msgid "is actually just an HTTP request:\n"
-msgstr ""
+msgstr "実質的にただのHTTPリクエストです。\n"
 
 #. type: Plain text
 #: src/guides/lexicon/en.mdx:45
@@ -138,16 +159,19 @@ msgid ""
 "GET /xrpc/com.example.getProfile\n"
 "```\n"
 msgstr ""
+"```\n"
+"GET /xrpc/com.example.getProfile\n"
+"```\n"
 
 #. type: Plain text
 #: src/guides/lexicon/en.mdx:47
 #, no-wrap
 msgid "The schemas establish valid query parameters, request bodies, and response bodies.\n"
-msgstr ""
+msgstr "スキーマは有効なクエリパラメータ、リクエストボディ、およびレスポンスボディを規定します。\n"
 
 #. type: Plain text
 #: src/guides/lexicon/en.mdx:77
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "```json\n"
 "{\n"
@@ -180,27 +204,27 @@ msgid ""
 "```\n"
 msgstr ""
 "```json\n"
-"/** lexicons/status.json **/\n"
 "{\n"
 "  \"lexicon\": 1,\n"
-"  \"id\": \"xyz.statusphere.status\",\n"
+"  \"id\": \"com.example.getProfile\",\n"
 "  \"defs\": {\n"
 "    \"main\": {\n"
-"      \"type\": \"record\",\n"
-"      \"key\": \"tid\",\n"
-"      \"record\": {\n"
-"        \"type\": \"object\",\n"
-"        \"required\": [\"status\", \"createdAt\"],\n"
-"        \"properties\": {\n"
-"          \"status\": {\n"
-"            \"type\": \"string\",\n"
-"            \"minLength\": 1,\n"
-"            \"maxGraphemes\": 1,\n"
-"            \"maxLength\": 32\n"
-"          },\n"
-"          \"createdAt\": {\n"
-"            \"type\": \"string\",\n"
-"            \"format\": \"datetime\"\n"
+"      \"type\": \"query\",\n"
+"      \"parameters\": {\n"
+"        \"type\": \"params\",\n"
+"        \"required\": [\"user\"],\n"
+"        \"properties\": { \"user\": { \"type\": \"string\" } }\n"
+"      },\n"
+"      \"output\": {\n"
+"        \"encoding\": \"application/json\",\n"
+"        \"schema\": {\n"
+"          \"type\": \"object\",\n"
+"          \"required\": [\"did\", \"name\"],\n"
+"          \"properties\": {\n"
+"            \"did\": { \"type\": \"string\" },\n"
+"            \"name\": { \"type\": \"string\" },\n"
+"            \"displayName\": { \"type\": \"string\", \"maxLength\": 64 },\n"
+"            \"description\": { \"type\": \"string\", \"maxLength\": 256 }\n"
 "          }\n"
 "        }\n"
 "      }\n"
@@ -211,21 +235,21 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/lexicon/en.mdx:79
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Record types\n"
-msgstr "<Heading level={2} id=\"record\">レコード</Heading>"
+msgstr "<Heading level={2} id=\"record-types\">レコード型</Heading>\n"
 
 #. type: Plain text
 #: src/guides/lexicon/en.mdx:81
 #, no-wrap
 msgid "Schemas define the possible values of a record. Every record has a “type” which maps to a schema and also establishes the URL of a record.\n"
-msgstr ""
+msgstr "スキーマはレコードが取りうる値を定義します。すべてのレコードは\"type\"を持っており、これはスキーマにマップされ、レコードのURLも決めます。\n"
 
 #. type: Plain text
 #: src/guides/lexicon/en.mdx:83
 #, no-wrap
 msgid "For instance, this “follow” record:\n"
-msgstr ""
+msgstr "例えば、以下のようなfollowレコードについて考えます。\n"
 
 #. type: Plain text
 #: src/guides/lexicon/en.mdx:91
@@ -239,12 +263,19 @@ msgid ""
 "}\n"
 "```\n"
 msgstr ""
+"```json\n"
+"{\n"
+"  \"$type\": \"com.example.follow\",\n"
+"  \"subject\": \"at://did:plc:12345\",\n"
+"  \"createdAt\": \"2022-10-09T17:51:55.043Z\"\n"
+"}\n"
+"```\n"
 
 #. type: Plain text
 #: src/guides/lexicon/en.mdx:93
 #, no-wrap
 msgid "…would have a URL like:\n"
-msgstr ""
+msgstr "これは次のようなURLを持ちます。\n"
 
 #. type: Plain text
 #: src/guides/lexicon/en.mdx:97
@@ -254,16 +285,19 @@ msgid ""
 "at://bob.com/com.example.follow/12345\n"
 "```\n"
 msgstr ""
+"```\n"
+"at://bob.com/com.example.follow/12345\n"
+"```\n"
 
 #. type: Plain text
 #: src/guides/lexicon/en.mdx:99
 #, no-wrap
 msgid "…and a schema like:\n"
-msgstr ""
+msgstr "また、スキーマは以下のようになります。\n"
 
 #. type: Plain text
 #: src/guides/lexicon/en.mdx:120
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "```json\n"
 "{\n"
@@ -287,28 +321,19 @@ msgid ""
 "```\n"
 msgstr ""
 "```json\n"
-"/** lexicons/status.json **/\n"
 "{\n"
 "  \"lexicon\": 1,\n"
-"  \"id\": \"xyz.statusphere.status\",\n"
+"  \"id\": \"com.example.follow\",\n"
 "  \"defs\": {\n"
 "    \"main\": {\n"
 "      \"type\": \"record\",\n"
-"      \"key\": \"tid\",\n"
+"      \"description\": \"A social follow\",\n"
 "      \"record\": {\n"
 "        \"type\": \"object\",\n"
-"        \"required\": [\"status\", \"createdAt\"],\n"
+"        \"required\": [\"subject\", \"createdAt\"],\n"
 "        \"properties\": {\n"
-"          \"status\": {\n"
-"            \"type\": \"string\",\n"
-"            \"minLength\": 1,\n"
-"            \"maxGraphemes\": 1,\n"
-"            \"maxLength\": 32\n"
-"          },\n"
-"          \"createdAt\": {\n"
-"            \"type\": \"string\",\n"
-"            \"format\": \"datetime\"\n"
-"          }\n"
+"          \"subject\": { \"type\": \"string\" },\n"
+"          \"createdAt\": { \"type\": \"string\", \"format\": \"datetime\" }\n"
 "        }\n"
 "      }\n"
 "    }\n"
@@ -320,25 +345,25 @@ msgstr ""
 #: src/guides/lexicon/en.mdx:122
 #, no-wrap
 msgid "## Versioning\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"versioning\">バージョニング</Heading>\n"
 
 #. type: Plain text
 #: src/guides/lexicon/en.mdx:124
 #, no-wrap
 msgid "Once a Lexicon is published, it can never change its constraints. Loosening a constraint (adding possible values) will cause old software to fail validation for new data, and tightening a constraint (removing possible values) will cause new software to fail validation for old data. As a consequence, lexicons may only add optional constraints to previously unconstrained fields.\n"
-msgstr ""
+msgstr "Lexiconが発行されたら、その制約を変更することはできません。制約を緩和（取りうる値を追加）すると、古いソフトウェアが新しいデータの検証に失敗し、制約を厳しく（取りうる値を削減）すると、新しいソフトウェアが古いデータの検証に失敗します。その結果、Lexiconsはそれまで制約が無かったフィールドにはオプションの制約しか追加できません。\n"
 
 #. type: Plain text
 #: src/guides/lexicon/en.mdx:126
 #, no-wrap
 msgid "If a lexicon must change a previously-published constraint, it should be published as a new lexicon under a new NSID.\n"
-msgstr ""
+msgstr "Lexiconで以前に発行された制約を変更する必要がある場合は、新しいNSIDの下で新しいLexiconとして発行する必要があります。\n"
 
 #. type: Plain text
 #: src/guides/lexicon/en.mdx:130
 #, no-wrap
 msgid "Lexicons can be [installed locally](/guides/installing-lexicons) for each of our SDKs from our Lexicon registry. You can also [publish your own Lexicons](/guides/publishing-lexicons) following our [Style Guide](/guides/lexicon-style-guide).\n"
-msgstr ""
+msgstr "Lexiconは、Lexiconレジストリから各SDK用に[ローカルにインストール](/guides/installing-lexicons)できます。また、[スタイルガイド](/guides/lexicon-style-guide)に従って[独自のLexiconsを公開](/guides/publishing-lexicons)することもできます。\n"
 
 #. type: Plain text
 #: src/guides/lexicon/en.mdx:134
@@ -349,3 +374,7 @@ msgid ""
 "- [Lexicon Style Guide](/guides/lexicon-style-guide)\n"
 "- [Lexicon Specs](/specs/lexicon)\n"
 msgstr ""
+"- [Installing Lexicons](/guides/installing-lexicons)\n"
+"- [Lexiconの公開](/guides/publishing-lexicons)\n"
+"- [Lexiconスタイルガイド](/guides/lexicon-style-guide)\n"
+"- [Lexicon仕様](/specs/lexicon)\n"

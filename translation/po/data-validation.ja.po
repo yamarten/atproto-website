@@ -18,128 +18,135 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/data-validation/en.mdx:6
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "export const metadata = {\n"
 "  title: 'Data Validation',\n"
 "  description:\n"
 "    'Expectations around recommended data limits and validation',\n"
 "}\n"
-msgstr "import {Heading} from '@/components/Heading' export const header = { title: '用語集', description: 'AT プロトコルで使用される用語とその定義のコレクション。', }"
+msgstr ""
+"import {Heading} from '@/components/Heading'\n"
+"\n"
+"export const metadata = {\n"
+"  title: 'データバリデーション',\n"
+"  description:\n"
+"    '推奨されるデータ制限とバリデーションに期待するもの',\n"
+"}\n"
 
 #. type: Plain text
 #: src/guides/data-validation/en.mdx:8
 #, no-wrap
 msgid "# Data Validation\n"
-msgstr ""
+msgstr "# データ検証\n"
 
 #. type: Plain text
 #: src/guides/data-validation/en.mdx:10
 #, no-wrap
 msgid "Some software does not need to worry much about Bluesky or atproto schema validation. For example, client apps and bots can generally assume that data they receive from the Bluesky API is valid, and when they try to create records the PDS is responsible for double-checking schema validation.\n"
-msgstr ""
+msgstr "一部のソフトウェアはBlueskyやatprotoのスキーマ検証についてあまり心配する必要はありません。例えば、クライアントアプリやボットは通常、Bluesky APIから受け取るデータが正しいと見なすことができ、レコードの作成時にはPDSがスキーマ検証を二重チェックする責任があります。\n"
 
 #. type: Plain text
 #: src/guides/data-validation/en.mdx:12
 #, no-wrap
 msgid "Software which consumes directly from the event stream (firehose) should be more careful. And developers designing new tools or clever hacks should be aware of some expectations and hard limits around data validation.\n"
-msgstr ""
+msgstr "イベントストリーム（firehose）から直接データを消費するソフトウェアはもう少し慎重である必要があります。新しいツールやイカしたハックを設計する開発者は、データバリデーションに関するいくつかの期待と制限を認識すべきです。\n"
 
 #. type: Plain text
 #: src/guides/data-validation/en.mdx:14
 #, no-wrap
 msgid "If an individual record fails to validate for any reason, the entire record should be ignored, but other records from the same repository should be processed. If there is a problem with the repository commit data or repository structure (\"MST\"), the repository should be marked as invalid, but old content does not need to be de-indexed or purged. As soon as a new valid commit is received, the repository should be marked valid again. This logic is mostly relevant to feed generators, AppViews, and moderation services, all of which may be consuming from the firehose.\n"
-msgstr ""
+msgstr "個別のレコードが何らかの理由でバリデーションに失敗した場合、レコード全体は無視されるべきですが、同じリポジトリの他のレコードは処理される必要があります。リポジトリのコミットデータまたはリポジトリ構造（MST）に問題がある場合、リポジトリは無効としてマークされるべきですが、古いコンテンツはインデックスからの除外や削除をする必要はありません。新しい有効なコミットが受け取られたら、リポジトリはすぐに有効としてマークされます。このロジックはフィードジェネレーター、AppView、およびモデレーションサービスといったfirehose利用者に主に関連しています。\n"
 
 #. type: Plain text
 #: src/guides/data-validation/en.mdx:17
 #, no-wrap
 msgid "## Recommended Data Limits\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"recommended-data-limits\">推奨データ制限</Heading>\n"
 
 #. type: Plain text
 #: src/guides/data-validation/en.mdx:19
 #, no-wrap
 msgid "The following are informal guidelines, mostly to communicate order-of-magnitude expectations, and are likely to evolve over time. They are not part of the atproto specification, but if you are pushing the limits here, you may encounter interoperability issues now or in the future.\n"
-msgstr ""
+msgstr "以下は非公式なガイドラインであり、主に大まかな期待を伝えるためのものであり、時間の経過とともに進化する可能性があります。これらはatproto仕様の一部ではありませんが、この制限を超えている場合、現在または将来の相互運用性の問題に遭遇する可能性があります。\n"
 
 #. type: Plain text
 #: src/guides/data-validation/en.mdx:21
 #, no-wrap
 msgid "**CBOR Record Size:** try to keep individual records to a few dozen KBytes. If you need to store more data, even text data, consider using a blob instead. A reasonable maximum record size limit (`MAX_CBOR_RECORD_SIZE`) is 1 MiByte (1 mebibyte, or 1,048,576 bytes). Note that as of August 2025, the `subscribeRepos` Lexicon limits `#commit` message block size to 2,000,000 bytes (not mebibytes), so only a single 1 MiByte record can be created or updated per commit.\n"
-msgstr ""
+msgstr "**CBORレコードサイズ：**個別のレコードを数十キロバイト程度に抑えるようにしてください。テキストデータを含め、より大きなデータを保存する必要がある場合は、代わりにblobの使用を検討してください。合理的な最大レコードサイズ制限（`MAX_CBOR_RECORD_SIZE`）は1 MiByte（1メビバイト、または1,048,576バイト）です。2025年8月の時点では、`subscribeRepos`のLexiconは`#commit`メッセージブロックサイズを2,000,000バイト（メビバイトではない）に制限しているため、コミットごとに1 MiByteレコードは1つだけ作成または更新できます。\n"
 
 #. type: Plain text
 #: src/guides/data-validation/en.mdx:23
 #, no-wrap
 msgid "Note that event stream (firehose) \"frames\" may consist of multiple records, and larger limits are recommended for CBOR parsing in general, on the order of 4-5 MBytes.\n"
-msgstr ""
+msgstr "イベントストリーム（firehose）の\"フレーム\"は複数のレコードで構成される可能性があり、一般的なCBOR解析には4～5MBytes程度のより大きな制限が推奨されます。\n"
 
 #. type: Plain text
 #: src/guides/data-validation/en.mdx:25
 #, no-wrap
 msgid "**JSON Record Size:** the CBOR encoding is \"canonical\" for records, so focusing only on that encoding would make sense. But sometimes it is good to also have a limit on JSON encoding size. A reasonable limit (`MAX_JSON_RECORD_SIZE`) is 2 MiByte (2,097,152 bytes).\n"
-msgstr ""
+msgstr "**JSONレコードサイズ：**CBORエンコーディングはレコードの正規形であるため、そのエンコーディングのみに焦点を当てることは理にかなっています。ただし、JSONエンコーディングのサイズに制限を設けることが良い場合もあります。合理的な制限（`MAX_JSON_RECORD_SIZE`）は2 MiByte（2,097,152バイト）です。\n"
 
 #. type: Plain text
 #: src/guides/data-validation/en.mdx:27
 #, no-wrap
 msgid "**General string length:** an overall length limit on strings within a record, including both those with and without Lexicon-specified string lengths. Measured as bytes (UTF-8 encoded). Should try to keep these to tens of KBytes at most. For an upper-bound limit (`MAX_RECORD_STRING_LEN`), reasonable to just rely on the overall CBOR record size limit. Notably, some early implementations had a 8 KByte (8192 bytes) limit.\n"
-msgstr ""
+msgstr "**一般的な文字列長：**Lexiconによる文字列長指定の有無を問わない、レコード内の文字列全般に対する長さ制限。バイト（UTF-8エンコード）で測定されます。これらは最大でも数十キロバイト程度に保つようにしてください。上限（`MAX_RECORD_STRING_LEN`）については、全体的なCBORレコードサイズ制限に従うのが妥当でしょう。なお、初期の一部実装では8キロバイト（8192バイト）の制限を持っていました。\n"
 
 #. type: Plain text
 #: src/guides/data-validation/en.mdx:29
 #, no-wrap
 msgid "**General `bytes` length:** same as the string limit, but for binary data (`MAX_RECORD_BYTES_LEN`). Recommend relying on the overall CBOR record size limit. As with record size overall, if more than a few dozen KBytes are needed, recommendation is to use blobs.\n"
-msgstr ""
+msgstr "**一般的な`bytes`長：**文字列制限と同じですが、バイナリデータ（`MAX_RECORD_BYTES_LEN`）の場合。CBORレコード全体のサイズ制限に従うことをお勧めします。レコードサイズと同様に、数十キロバイト以上が必要な場合、推奨はblobを使用することです。\n"
 
 #. type: Plain text
 #: src/guides/data-validation/en.mdx:31
 #, no-wrap
 msgid "**CID binary encoding size:** recommend an overall limit (`MAX_CID_BYTES`) of 100 bytes.\n"
-msgstr ""
+msgstr "**CIDバイナリエンコーディングサイズ：**全体で100バイトの制限（`MAX_CID_BYTES`）を推奨します。\n"
 
 #. type: Plain text
 #: src/guides/data-validation/en.mdx:33
 #, no-wrap
 msgid "**Container nesting depth:** for example, how many layers of map inside an array inside an array, etc. If your CBOR or JSON parsing library supports a limit, the default is probably fine. A reasonable limit (`MAX_CBOR_NESTED_LEVELS`) is 32 levels of nesting.\n"
-msgstr ""
+msgstr "**コンテナネストの深さ：**例えば、配列内の配列内のマップが何層あるかなど。CBORまたはJSONパースライブラリが制限をサポートしている場合、おそらくデフォルトで問題ありません。合理的な制限（`MAX_CBOR_NESTED_LEVELS`）は32レベルのネストです。\n"
 
 #. type: Plain text
 #: src/guides/data-validation/en.mdx:35
 #, no-wrap
 msgid "**Container element count:** for example, how many keys in a map, or elements in an array. If your CBOR or JSON parsing library supports a limit, the default is probably fine. A reasonable limit (`MAX_CBOR_CONTAINER_LEN`) is 128 x 1024 = 131,072 elements.\n"
-msgstr ""
+msgstr "**コンテナ要素数：**例えば、マップ内のキーの数、または配列内の要素の数。CBORまたはJSONパースライブラリが制限をサポートしている場合、おそらくデフォルトで問題ありません。合理的な制限（`MAX_CBOR_CONTAINER_LEN`）は128 x 1024 = 131,072要素です。\n"
 
 #. type: Plain text
 #: src/guides/data-validation/en.mdx:37
 #, no-wrap
 msgid "**Object key string length:** for example, how many bytes (UTF-8 encoded) are allowed in any key of an object. If your CBOR or JSON parsing library supports a limit, the default is probably fine. A reasonable limit (`MAX_CBOR_OBJECT_KEY_LEN`) is 8 KByte (8192).\n"
-msgstr ""
+msgstr "**オブジェクトキー文字列長：**例えば、オブジェクトのキーで許可されるバイト数（UTF-8エンコード）。CBORまたはJSONパーシングライブラリが制限をサポートしている場合、おそらくデフォルトで問題ありません。合理的な制限（`MAX_CBOR_OBJECT_KEY_LEN`）は8キロバイト（8192）です。\n"
 
 #. type: Plain text
 #: src/guides/data-validation/en.mdx:39
 #, no-wrap
 msgid "**Integers:** as mentioned [in the atproto specification](https://atproto.com/specs/data-model#data-types), it is a strongly recommended best practice to keep integer values \"64-bit float safe\", meaning restricting them to 53 bits of precision. This ensures compatibility with JavaScript without loss of numeric precision. The specific values are `MAX_SAFE_INTEGER: 9007199254740991` and `MIN_SAFE_INTEGER: -9007199254740991`.\n"
-msgstr ""
+msgstr "**整数：**[atproto仕様](https://atproto.com/specs/data-model#data-types)で述べられているように、整数値を\"64ビットフロートセーフ\"に保つこと、つまり53ビットの精度に制限することは強く推奨されるベストプラクティスです。これにより、精度の損失なくJavaScriptとの互換性が保証されます。具体的な値としては`MAX_SAFE_INTEGER: 9007199254740991`および`MIN_SAFE_INTEGER: -9007199254740991`です。\n"
 
 #. type: Plain text
 #: src/guides/data-validation/en.mdx:42
 #, no-wrap
 msgid "## Validation Without Schema\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"validation-without-schema\">スキーマ無しのバリデーション</Heading>\n"
 
 #. type: Plain text
 #: src/guides/data-validation/en.mdx:44
 #, no-wrap
 msgid "The [atproto Lexicon system](https://atproto.com/specs/lexicon) describes a data model and schema language for validating data against a known schema. But what if you are processing data where the schema isn't known or present?\n"
-msgstr ""
+msgstr "[atprotoのLexiconシステム](https://atproto.com/specs/lexicon)は、既知のスキーマに対してデータを検証するためのデータモデルとスキーマ言語について説明しています。しかし、スキーマが不明または存在しないデータを処理している場合はどうでしょうか？\n"
 
 #. type: Plain text
 #: src/guides/data-validation/en.mdx:46
 #, no-wrap
 msgid "Here are some guidelines, by data type:\n"
-msgstr ""
+msgstr "以下は、データ型別のガイドラインです。\n"
 
 #. type: Plain text
 #: src/guides/data-validation/en.mdx:54
@@ -153,3 +160,11 @@ msgid ""
 "- `object`: key must all be strings, and follow similar data requirements to `string` fields. Empty key strings are not allowed. Key names starting with `$` are reserved for protocol use (for example, `$bytes` and `$type`)\n"
 "- `blob`: the `ref` must be a valid `cid-link`, and have `raw` multicodec (not `dag-cbor`). `size` may not be negative. `mimeType` can not be an empty string. The \"legacy\" blob format should be supported for reading, but new records created must be the regular blob format. Note that supprting additional reference types (eg, alternative multicodecs or hash types) are a likely evolution and extension point for the protocol in the future, but the current version of the repository and data model is narrowly defined.\n"
 msgstr ""
+"- `integer`：制限内の値を持つべきです（制限セクションで説明）\n"
+"- `string`：有効なUTF-8エンコーディングである必要があります。特定のUnicode正規化は期待も要求もされません。空の文字列は許可されていますが、可能であればnullableまたはオプションフィールドを活用することが推奨されます。\n"
+"- `bytes`：空（長さ0）を許します\n"
+"- `cid-link`：プロトコル仕様で説明されている通りです。CIDv1である必要があります。multibaseではCBORエンコーディングはraw（type `0x00`）です。multicodecは`dag-cbor`（`0x71`）または`raw`（`0x55`）である必要があります。multihashはSHA-256が推奨されています（ただし厳密には必須ではありません）。\n"
+"- `array`：Lexiconの共用体が提供する柔軟性のため、型が異なる要素を持つ可能性があります。\n"
+"- `object`：キーはすべて文字列である必要があり、`string`フィールドと同様の要件に従います。空のキー文字列は許可されていません。`$`で始まるキー名はプロトコル使用のために予約されています（例えば、`$bytes`および`$type`）\n"
+"- `blob`：`ref`は有効な`cid-link`である必要があり、`raw` multicodec（`dag-cbor`ではない）を持つ必要があります。`size`は負の値であってはいけません。`mimeType`は空の文字列であってはいけません。レガシーblob形式は読み取りでサポートされるべきですが、作成される新しいレコードは通常のblob形式である必要があります。追加の参照形式（例えば、別のmulticodecまたはハッシュタイプ）をサポートすることは、将来のプロトコルの進化と拡張の可能性としてありえますが、現在のバージョンではリポジトリとデータモデルは狭く定義されています。\n"
+"\n"

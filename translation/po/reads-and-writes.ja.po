@@ -31,59 +31,65 @@ msgstr ""
 #: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
 #, no-wrap
 msgid "## Further Reading and Resources\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"further-reading-and-resources\">関連・参考資料</Heading>\n"
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:5
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "export const header = {\n"
 "  title: 'Reads and Writes',\n"
 "  description: 'Read and Write AT Protocol Records',\n"
 "}\n"
-msgstr "export const header = { title: '個人データ リポジトリ', description: 'AT プロトコル リポジトリ構造のガイド。', }"
+msgstr ""
+"import {Heading} from '@/components/Heading'\n"
+"\n"
+"export const header = {\n"
+"  title: '読み取りと書き込み',\n"
+"  description: 'ATプロトコルレコードを読み書きする',\n"
+"}\n"
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:7
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## AT Records\n"
-msgstr "<Heading level={2} id=\"record\">レコード</Heading>"
+msgstr "<Heading level={2} id=\"at-records\">ATレコード</Heading>\n"
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:9
 #, no-wrap
 msgid "The AT Protocol distributes user data across different nodes of your network, using the core building blocks of the web. The AT Protocol interconnects applications so that their backends share state, including user accounts and content, in individual data repositories. Many operations you'll perform when working with AT apps involve reading and writing these data repositories.\n"
-msgstr ""
+msgstr "ATプロトコルは、ウェブの基本的な構成要素を用いてネットワークの異なるノードにユーザーデータを分散します。ATプロトコルはアプリケーションを相互接続し、各バックエンドが個々のデータリポジトリに含まれるアカウントやコンテンツなどの状態を共有します。ATアプリで行う操作の多くは、これらのデータリポジトリの読み書きを伴います。\n"
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:11
 #, no-wrap
 msgid "For more context, see [ATProto for distributed systems engineers](/articles/atproto-for-distsys-engineers) and [The ATProto Ethos](/articles/atproto-ethos).\n"
-msgstr ""
+msgstr "詳しい背景は、[ATProto for distributed systems engineers](/articles/atproto-for-distsys-engineers) と [The ATProto Ethos](/articles/atproto-ethos) を参照してください。\n"
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:13
 #, no-wrap
 msgid "## Prerequisites\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"prerequisites\">前提条件</Heading>\n"
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:15
 #, no-wrap
 msgid "Reading and writing AT data repositories requires an authenticated client. You can authenticate with [password authentication](/guides/sdk-auth) or [OAuth](/guides/oauth-patterns). The guides in this section assume you have already set up an authenticated client.\n"
-msgstr ""
+msgstr "ATデータリポジトリの読み書きには認証済みのクライアントが必要です。[パスワード](/guides/sdk-auth)または[OAuth](/guides/oauth-patterns)で認証できます。このセクションのガイドは、既に認証済みクライアントを設定していることを前提としています。\n"
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:17
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## API Methods\n"
-msgstr "<Heading level={2} id=\"did-methods\">DID メソッド</Heading>"
+msgstr "<Heading level={2} id=\"api-methods\">APIメソッド</Heading>\n"
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:19
 #, no-wrap
 msgid "After [authenticating](/guides/sdk-auth#creating-a-client), you'll be able to make other API requests.\n"
-msgstr ""
+msgstr "[認証](/guides/sdk-auth#creating-a-client)後に、他のAPIリクエストを実行できるようになります。\n"
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:28
@@ -98,12 +104,20 @@ msgid ""
 "    <TabPanel value=\"ts\">\n"
 "    To make API requests, you'll need to specify a particular [Lexicon](/guides/lexicon). For example, Bluesky posts are available under the `app.bsky.feed.post` Lexicon.\n"
 msgstr ""
+"<TabGroup defaultValue=\"ts\">\n"
+"  <TabList>\n"
+"    <Tab value=\"ts\">TypeScript</Tab>\n"
+"    <Tab value=\"go\">Go</Tab>\n"
+"  </TabList>\n"
+"  <TabPanels>\n"
+"    <TabPanel value=\"ts\">\n"
+"    APIリクエストを行うには、特定の[Lexicon](/guides/lexicon)を指定する必要があります。例えば、Blueskyの投稿は`app.bsky.feed.post` Lexicon で提供されます。\n"
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:30
 #, no-wrap
 msgid "    Use `lex` to install the `app.bsky.feed.post` and `app.bsky.actor.profile` Lexicons as described in [Installing Lexicons](/guides/installing-lexicons):\n"
-msgstr ""
+msgstr "    [Lexiconのインストール](/guides/installing-lexicons)に記載の通り、`lex`を使って`app.bsky.feed.post`と`app.bsky.actor.profile`のLexiconをインストールしてください。\n"
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:36
@@ -115,12 +129,17 @@ msgid ""
 "    lex build\n"
 "    ```\n"
 msgstr ""
+"    ```bash\n"
+"    npm install -g @atproto/lex\n"
+"    lex install app.bsky.feed.post app.bsky.actor.profile\n"
+"    lex build\n"
+"    ```\n"
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:38
 #, no-wrap
 msgid "    This will generate TypeScript types for the Lexicons in your project. You can use this `import` statement to access all installed Lexicons:\n"
-msgstr ""
+msgstr "    これによりプロジェクト内にLexicon用のTypeScriptの型が生成されます。インストールしたLexiconには`import`文でアクセスできます。\n"
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:42
@@ -130,6 +149,9 @@ msgid ""
 "    import * as app from './lexicons/app.js'\n"
 "    ```\n"
 msgstr ""
+"    ```tsx\n"
+"    import * as app from './lexicons/app.js'\n"
+"    ```\n"
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:54
@@ -147,6 +169,17 @@ msgid ""
 "    \"github.com/bluesky-social/indigo/xrpc\"\n"
 "  )\n"
 msgstr ""
+"    これによりLexiconのAPIメソッドにアクセスできるようになります。これで[リクエストを行う](/guides/reading-data)準備が整いました！\n"
+"    </TabPanel>\n"
+"    <TabPanel value=\"go\">\n"
+"  ```go\n"
+"  import (\n"
+"    \"context\"\n"
+"    appbsky \"github.com/bluesky-social/indigo/api/bsky\"\n"
+"    comatproto \"github.com/bluesky-social/indigo/api/atproto\"\n"
+"    lexutil \"github.com/bluesky-social/indigo/lex/util\"\n"
+"    \"github.com/bluesky-social/indigo/xrpc\"\n"
+"  )\n"
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:57
@@ -155,6 +188,8 @@ msgid ""
 "  ctx := context.Background()\n"
 "  ```\n"
 msgstr ""
+"  ctx := context.Background()\n"
+"  ```\n"
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:62
@@ -165,6 +200,10 @@ msgid ""
 "  </TabPanels>\n"
 "</TabGroup>\n"
 msgstr ""
+"    SDK ライブラリをインポートしたら、そのまま[リクエストの作成](/guides/reading-data)に進みましょう！\n"
+"    </TabPanel>\n"
+"  </TabPanels>\n"
+"</TabGroup>\n"
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:70
@@ -177,3 +216,9 @@ msgid ""
 "- [Record Key spec](/specs/record-key)\n"
 "- [URI scheme](/specs/at-uri-scheme)\n"
 msgstr ""
+"- [Reading data](/guides/reading-data)\n"
+"- [データ書き込み](/guides/writing-data)\n"
+"- [アカウントと削除](/guides/writing-data)\n"
+"- [ソーシャルグラフ](/guides/social-graph)\n"
+"- [レコードキー仕様](/specs/record-key)\n"
+"- [URIスキーム](/specs/at-uri-scheme)\n"

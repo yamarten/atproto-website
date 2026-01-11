@@ -31,29 +31,35 @@ msgstr ""
 #: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
 #, no-wrap
 msgid "## Further Reading and Resources\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"further-reading-and-resources\">関連・参考資料</Heading>\n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:5
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "export const header = {\n"
 "  title: 'Writing Data',\n"
 "  description: 'Write AT Protocol Records',\n"
 "}\n"
-msgstr "export const header = { title: 'Identity', description: 'AT プロトコルがユーザー ID を処理する方法。', }"
+msgstr ""
+"import {Heading} from '@/components/Heading'\n"
+"\n"
+"export const header = {\n"
+"  title: 'データ書き込み',\n"
+"  description: 'ATプロトコルレコードを書き込む',\n"
+"}\n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:7
 #, no-wrap
 msgid "## Writing Data\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"writing-data\">データ書き込み</Heading>\n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:9
 #, no-wrap
 msgid "Writing data — for example, by posting to a Bluesky feed — works similarly to [reading data](/guides/reading-data), but with different methods.\n"
-msgstr ""
+msgstr "Blueskyフィードに投稿するなどのデータ書き込みは、[読み取り](/guides/reading-data)に似ていますが、少しやり方が変わります。\n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:18
@@ -68,6 +74,14 @@ msgid ""
 "    <TabPanel value=\"ts\">\n"
 "To create a new record, call `client.create()` with an imported Lexicon, along with any required fields:\n"
 msgstr ""
+"<TabGroup defaultValue=\"ts\">\n"
+"  <TabList>\n"
+"    <Tab value=\"ts\">TypeScript</Tab>\n"
+"    <Tab value=\"go\">Go</Tab>\n"
+"  </TabList>\n"
+"  <TabPanels>\n"
+"    <TabPanel value=\"ts\">\n"
+"新しいレコードの作成には、Lexiconをインポートした`client.create()`に必要なフィールドを添えて呼び出します。\n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:21 src/guides/writing-data/en.mdx:112
@@ -77,6 +91,8 @@ msgid ""
 "```tsx\n"
 "import * as app from './lexicons/app.js'\n"
 msgstr ""
+"```tsx\n"
+"import * as app from './lexicons/app.js'\n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:27
@@ -88,12 +104,17 @@ msgid ""
 "})\n"
 "```\n"
 msgstr ""
+"const result = await client.create(app.bsky.feed.post, {\n"
+"  text: 'Hello, world!',\n"
+"  createdAt: new Date().toISOString(),\n"
+"})\n"
+"```\n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:29
 #, no-wrap
 msgid "`text` and `createdAt` are required values under the [`app.bsky.feed.post` Lexicon](https://atproto.blue/en/latest/atproto/atproto_client.models.app.bsky.feed.post.html).\n"
-msgstr ""
+msgstr "`text`と`createdAt`は[`app.bsky.feed.post` Lexicon](https://atproto.blue/en/latest/atproto/atproto_client.models.app.bsky.feed.post.html)において必須の値です。\n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:33
@@ -103,12 +124,15 @@ msgid ""
 "This will post using the currently-authenticated user session. If you want to post as another user, reuse [`agent.login()`](/guides/reads-and-writes#creating-a-client) to get a new user session.\n"
 "</Note>\n"
 msgstr ""
+"<Note>\n"
+"これはその時点で認証しているユーザーセッションで投稿します。別のユーザーとして投稿したい場合、再度[`agent.login()`](/guides/reads-and-writes#creating-a-client)を呼んで新規セッションを取得してください。\n"
+"</Note>\n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:35 src/guides/writing-data/en.mdx:65
 #, no-wrap
 msgid "The API will respond with the `at://` URI of the post and a content hash of the post as the `cid`:\n"
-msgstr ""
+msgstr "このAPIは応答に投稿の`at://` URIと`cid`形式のコンテンツハッシュを持ちます。\n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:43
@@ -122,6 +146,13 @@ msgid ""
 "    <TabPanel value=\"go\">\n"
 "To create a new record, call `RepoCreateRecord()` with your target Lexicon and any required fields:\n"
 msgstr ""
+"```tsx\n"
+"console.log(result.uri) // at://did:plc:...\n"
+"console.log(result.cid)\n"
+"```\n"
+"    </TabPanel>\n"
+"    <TabPanel value=\"go\">\n"
+"新しいレコードの作成には、`RepoCreateRecord()`に必要なフィールドを添えて、対象のLexiconに対して呼び出します。\n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:46
@@ -130,6 +161,8 @@ msgid ""
 "```go\n"
 "now := time.Now().UTC().Format(time.RFC3339)\n"
 msgstr ""
+"```go\n"
+"now := time.Now().UTC().Format(time.RFC3339)\n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:51
@@ -140,6 +173,10 @@ msgid ""
 "    CreatedAt: now,\n"
 "}\n"
 msgstr ""
+"post := &appbsky.FeedPost{\n"
+"    Text:      \"Hello from Go!\",\n"
+"    CreatedAt: now,\n"
+"}\n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:59
@@ -153,6 +190,13 @@ msgid ""
 "```\n"
 "`Text` and `CreatedAt` are required values under the [`app.bsky.feed.post` Lexicon](https://atproto.blue/en/latest/atproto/atproto_client.models.app.bsky.feed.post.html).\n"
 msgstr ""
+"  resp, _ := comatproto.RepoCreateRecord(ctx, client, &comatproto.RepoCreateRecord_Input{\n"
+"    Repo:       client.Auth.Did,         // handle or DID\n"
+"    Collection: \"app.bsky.feed.post\",    // lexicon\n"
+"    Record:     &lexutil.LexiconTypeDecoder{Val: post},\n"
+"})\n"
+"```\n"
+"`Text`と`CreatedAt`は[`app.bsky.feed.post` Lexicon](https://atproto.blue/en/latest/atproto/atproto_client.models.app.bsky.feed.post.html)において必須の値です。\n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:63
@@ -162,6 +206,9 @@ msgid ""
 "This will post using the currently-authenticated user session. If you want to post as another user, reuse [`ServerCreateSession()`](/guides/sdk-auth#creating-a-client) to get a new user session.\n"
 "</Note>\n"
 msgstr ""
+"<Note>\n"
+"これはその時点で認証しているユーザーセッションで投稿します。別のユーザーとして投稿したい場合、再度[`ServerCreateSession()`](/guides/sdk#creating-a-client)を呼んで新規セッションを取得してください。\n"
+"</Note>\n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:72
@@ -174,6 +221,12 @@ msgid ""
 "  </TabPanels>\n"
 "</TabGroup>    \n"
 msgstr ""
+"```go\n"
+"fmt.Printf(\"Created post: %s (CID: %s)\\n\", resp.Uri, resp.Cid)\n"
+"```\n"
+"    </TabPanel>\n"
+"  </TabPanels>\n"
+"</TabGroup>    \n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:79
@@ -186,54 +239,60 @@ msgid ""
 "}\n"
 "```\n"
 msgstr ""
+"```\n"
+"{\n"
+"  \"uri\": \"at://did:plc:u5cwb2mwiv2bfq53cjufe6yn/app.bsky.feed.post/3k4duaz5vfs2b\",\n"
+"  \"cid\": \"bafyreibjifzpqj6o6wcq3hejh7y4z4z2vmiklkvykc57tw3pcbx3kxifpm\"\n"
+"}\n"
+"```\n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:81
 #, no-wrap
 msgid "If you are building a client or another interface that both reads and writes data, it is important to ensure that you read your own writes using this response. \n"
-msgstr ""
+msgstr "データの読み書き両方を行うクライアント等のインターフェースを構築している場合は、この応答を使用して書き込んだものを確実に読み取ることが重要です。 \n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:83
 #, no-wrap
 msgid "## Read-after-Write\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"read-after-write\">read-after-write</Heading>\n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:85
 #, no-wrap
 msgid "Depending on how an AT app frontend is designed, a user may take some action (such as updating their profile), rapidly refresh the view, and find that their recent change is not immediately reflected in the updated response.\n"
-msgstr ""
+msgstr "ATアプリフロントエンドの設計によっては、ユーザーが何らかのアクション（プロフィールの更新など）を実行し、ビューを迅速に更新すると、直近の変更が更新後の応答にすぐに反映されないことがあります。\n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:87
 #, no-wrap
 msgid "This is because services such as the App View do not have transactional writes from a user's PDS. Therefore the views that they calculate are eventually consistent. In other words, a user may have created a record on their PDS that is not yet reflected in the API responses provided by the App View.\n"
-msgstr ""
+msgstr "これは、AppViewなどのサービスにユーザーのPDSからのトランザクション書き込みがないためです。したがって、計算されたビューは結果整合性を持ちます。言い換えれば、ユーザーはAppViewによって提供されるAPI応答にまだ反映されていないレコードをPDS上に作成していることがあります。\n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:89
 #, no-wrap
 msgid "Because all requests from the application are sent to the user's PDS, the PDS is in a position to smooth over this behavior. [Our PDS distribution](https://github.com/bluesky-social/pds) provides some basic read-after-write behaviors by looking at response headers from the App View, determining if there are any new records that are not in the response, and modifying the response to reflect those new records.\n"
-msgstr ""
+msgstr "アプリケーションからのすべてのリクエストはユーザーのPDSに送信されるため、PDSはこの動作をスムーズに処理できる立場にあります。[BlueskyのPDSディストリビューション](https://github.com/bluesky-social/pds) は、AppViewから応答ヘッダーを確認し、応答にない新しいレコードがあるかどうかを判断し、それらの新しいレコードを反映するように応答を書き換えることにより、いくつかの基本的なread-after-write動作を提供します。\n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:91
 #, no-wrap
 msgid "The App View communicates the current state of its indices by setting the `Atproto-Repo-Rev` response header. This is set by the `rev` of the most recent commit that's been indexed from the requesting user's repository. If the PDS sees this header on a response, it will search for all records that it has locally that are more recent than the provided rev and determine if they affect the App View's response.\n"
-msgstr ""
+msgstr "AppView は`Atproto-Repo-Rev`応答ヘッダーを設定することで、現在のインデックス状況を伝えます。これは、要求元のユーザーのリポジトリからインデックスされた最新のコミットの`rev`に設定されます。PDSは応答でこのヘッダーを検出すると、提示されたリビジョンよりも新しいローカルに存在するすべてのレコードを検索し、それらがAppViewの応答に影響を与えるかどうかを判断します。\n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:93
 #, no-wrap
 msgid "This read-after-write behavior *only* applies to records from the user making the request. Records from other users that happen to be on the same PDS will not affect the requesting user's response.\n"
-msgstr ""
+msgstr "このread-after-write動作は、リクエストを行ったユーザーからのレコードに*のみ*適用されます。偶然同じPDS上に存在するだけの他のユーザーからのレコードは、要求側ユーザーの応答に影響を与えません。\n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:95
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Updating Records\n"
-msgstr "<Heading level={2} id=\"record\">レコード</Heading>"
+msgstr "<Heading level={2} id=\"updating-records\">レコードの更新</Heading>\n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:104
@@ -248,6 +307,14 @@ msgid ""
 "    <TabPanel value=\"ts\">\n"
 "To update an existing record, like a user's profile, use `client.put()`:\n"
 msgstr ""
+"<TabGroup defaultValue=\"ts\">\n"
+"  <TabList>\n"
+"    <Tab value=\"ts\">TypeScript</Tab>\n"
+"    <Tab value=\"go\">Go</Tab>\n"
+"  </TabList>\n"
+"  <TabPanels>\n"
+"    <TabPanel value=\"ts\">\n"
+"ユーザーのプロフィールなど既存のレコードを更新するには、`client.put()`を使用します。\n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:109
@@ -258,6 +325,10 @@ msgid ""
 "lex build\n"
 "```\n"
 msgstr ""
+"```bash\n"
+"lex install app.bsky.actor.profile\n"
+"lex build\n"
+"```\n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:121
@@ -272,6 +343,14 @@ msgid ""
 "    <TabPanel value=\"go\">\n"
 "To update an existing record, like a user's profile, use `RepoPutRecord()`:\n"
 msgstr ""
+"await client.put(app.bsky.actor.profile, {\n"
+"  displayName: 'New Name',\n"
+"  description: 'Updated bio',\n"
+"})\n"
+"```\n"
+"    </TabPanel>\n"
+"    <TabPanel value=\"go\">\n"
+"ユーザーのプロフィールなど既存のレコードを更新するには、`RepoPutRecord()`を使用します。\n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:127
@@ -283,10 +362,15 @@ msgid ""
 "  Description: ptrString(\"Updated bio\"),\n"
 "}\n"
 msgstr ""
+"```go\n"
+"newProfile := &appbsky.ActorProfile{\n"
+"  DisplayName: ptrString(\"New Display Name\"),\n"
+"  Description: ptrString(\"Updated bio\"),\n"
+"}\n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:134
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "resp, _ := comatproto.RepoPutRecord(ctx, client, &comatproto.RepoPutRecord_Input{\n"
 "  Repo:       client.Auth.Did,                // handle or DID\n"
@@ -295,23 +379,12 @@ msgid ""
 "  Record:     &lexutil.LexiconTypeDecoder{Val: newProfile},\n"
 "})\n"
 msgstr ""
-"#-#-#-#-#  src/guides/applications/ja.mdx:186 (type Plain text)  #-#-#-#-#\n"
-"```typescript\n"
-"await agent.com.atproto.repo.getRecord({\n"
-"  repo: agent.assertDid, // ユーザー\n"
-"  collection: 'app.bsky.actor.profile', // コレクション\n"
-"  rkey: 'self', // レコード キー\n"
+"resp, _ := comatproto.RepoPutRecord(ctx, client, &comatproto.RepoPutRecord_Input{\n"
+"  Repo:       client.Auth.Did,                // handle or DID\n"
+"  Collection: \"app.bsky.actor.profile\",       // lexicon\n"
+"  Rkey:       \"self\",                         // rkey\n"
+"  Record:     &lexutil.LexiconTypeDecoder{Val: newProfile},\n"
 "})\n"
-"```\n"
-"\n"
-"#-#-#-#-#  src/guides/applications/ja.mdx:267 (type: Plain text)  #-#-#-#-#\n"
-"```typescript\n"
-"await agent.com.atproto.repo.getRecord({\n"
-"  repo: agent.assertDid, // ユーザー\n"
-"  collection: 'app.bsky.actor.profile', // コレクション\n"
-"  rkey: 'self', // レコードkey\n"
-"})\n"
-"```\n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:137
@@ -320,6 +393,8 @@ msgid ""
 "fmt.Printf(\"Updated: %s (CID: %s)\\n\", resp.Uri, resp.Cid)\n"
 "```\n"
 msgstr ""
+"fmt.Printf(\"Updated: %s (CID: %s)\\n\", resp.Uri, resp.Cid)\n"
+"```\n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:142
@@ -330,12 +405,16 @@ msgid ""
 "  </TabPanels>\n"
 "</TabGroup>\n"
 msgstr ""
+"    `RepoPutRecord`は冪等です。レコードが存在しない場合は作成し、存在する場合は上書きします。\n"
+"    </TabPanel>\n"
+"  </TabPanels>\n"
+"</TabGroup>\n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:144
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Deleting Records\n"
-msgstr "<Heading level={2} id=\"record\">レコード</Heading>"
+msgstr "<Heading level={2} id=\"deleting-records\">レコードの削除</Heading>\n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:153
@@ -350,6 +429,14 @@ msgid ""
 "    <TabPanel value=\"ts\">\n"
 "To delete a record, like an individual post, use `client.delete()`:\n"
 msgstr ""
+"<TabGroup defaultValue=\"ts\">\n"
+"  <TabList>\n"
+"    <Tab value=\"ts\">TypeScript</Tab>\n"
+"    <Tab value=\"go\">Go</Tab>\n"
+"  </TabList>\n"
+"  <TabPanels>\n"
+"    <TabPanel value=\"ts\">\n"
+"個々の投稿などのレコードを削除するには、`client.delete()`を使用します。\n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:158
@@ -360,6 +447,10 @@ msgid ""
 "lex build\n"
 "```\n"
 msgstr ""
+"```bash\n"
+"lex install app.bsky.actor.post\n"
+"lex build\n"
+"```\n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:179
@@ -383,6 +474,23 @@ msgid ""
 "  </TabPanels>\n"
 "</TabGroup>\n"
 msgstr ""
+"await client.delete(app.bsky.feed.post, {\n"
+"  rkey: '3jxf7z2k3q2',\n"
+"})\n"
+"```\n"
+"    </TabPanel>\n"
+"    <TabPanel value=\"go\">\n"
+"    個々の投稿などのレコードを削除するには、`RepoDeleteRecord()`を使用します。\n"
+"```go\n"
+"comatproto.RepoDeleteRecord(ctx, client, &comatproto.RepoDeleteRecord_Input{\n"
+"    Repo:       client.Auth.Did,      // handle or DID\n"
+"    Collection: \"app.bsky.feed.post\", // lexicon\n"
+"    Rkey:       \"3mbl5xdw4yk2r\",      // rkey\n"
+"})\n"
+"```\n"
+"    </TabPanel>\n"
+"  </TabPanels>\n"
+"</TabGroup>\n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:187
@@ -395,3 +503,9 @@ msgid ""
 "- [Record Key spec](/specs/record-key)\n"
 "- [URI scheme](/specs/at-uri-scheme)\n"
 msgstr ""
+"- [読み取りと書き込み](/guides/reads-and-writes)\n"
+"- [データ読み出し](/guides/reading-data)\n"
+"- [アカウントと削除](/guides/writing-data)\n"
+"- [ソーシャルグラフ](/guides/social-graph)\n"
+"- [レコードキー仕様](/specs/record-key)\n"
+"- [URIスキーム](/specs/at-uri-scheme)\n"

@@ -20,20 +20,20 @@ msgstr ""
 #: src/guides/feeds/en.mdx:66 src/guides/the-at-stack/en.mdx:117
 #, no-wrap
 msgid "A Feed Generator service can host one or more algorithms. The service itself is identified by DID, while each algorithm that it hosts is declared by a record in the repo of the account that created it. For instance, feeds offered by Bluesky will likely be declared in `@bsky.app`'s repo. Therefore, a given algorithm is identified by the at-uri of the declaration record. This declaration record includes a pointer to the service's DID along with some profile information for the feed.\n"
-msgstr ""
+msgstr "フィードジェネレーターサービスは1つ以上のアルゴリズムをホストできます。サービス自体はDIDで識別され、ホストする各アルゴリズムはそれを作成したアカウントのリポジトリ内のレコードで宣言されます。例えば、Blueskyが提供するフィードは`@bsky.app`のリポジトリで宣言されるでしょう。したがって、特定のアルゴリズムは宣言レコードのat-uriで識別されます。この宣言レコードには、サービスのDIDへのポインターとフィードのプロフィール情報が含まれます。\n"
 
 #. type: Plain text
 #: src/guides/sync/en.mdx:45 src/guides/going-to-production/en.mdx:12
 #: src/guides/self-hosting/en.mdx:10 src/guides/the-at-stack/en.mdx:35
 #, no-wrap
 msgid "## PDS\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"pds\">PDS</Heading>\n"
 
 #. type: Plain text
 #: src/guides/self-hosting/en.mdx:31 src/guides/the-at-stack/en.mdx:68
 #, no-wrap
 msgid "## Tap\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"tap\">Tap</Heading>\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:5
@@ -44,113 +44,129 @@ msgid ""
 "import did from \"./did.png\"\n"
 "import feeds from \"./feeds.png\"\n"
 msgstr ""
+"import {Container} from \"@/components/Container\"\n"
+"import {Heading} from \"@/components/Heading\"\n"
+"import crawling from \"./crawling.png\"\n"
+"import did from \"./did.png\"\n"
+"import feeds from \"./feeds.png\"\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:11
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "export const header = {\n"
 "  title: 'The AT Stack',\n"
 "  description:\n"
 "    'Components of the AT Protocol Stack',\n"
 "}\n"
-msgstr "import {Heading} from '@/components/Heading' export const header = { title: 'プロトコルの概要', description: 'AT プロトコルの概要。', }"
+msgstr ""
+"export const header = {\n"
+"  title: 'ATスタック',\n"
+"  description:\n"
+"    'ATプロトコルスタックを構成するもの',\n"
+"}\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:13
 #, no-wrap
 msgid "## The Authenticated Transfer Protocol\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"the-authenticated-transfer-protocol\">Authenticated Transferプロトコル</Heading>\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:15
 #, no-wrap
 msgid "The AT Protocol (Authenticated Transfer Protocol) is a standard for public conversation and an open-source framework for building social apps.\n"
-msgstr ""
+msgstr "ATプロトコル(Authenticated Transferプロトコル)は公開会話の標準であり、ソーシャルアプリを構築するためのオープンソースフレームワークです。\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:17
 #, no-wrap
 msgid "It creates a standard format for user identity, follows, and data on social apps, allowing apps to interoperate and users to move across them freely. It is a federated network with account portability.\n"
-msgstr ""
+msgstr "ソーシャルアプリ上のユーザーID、フォロー、データの標準形式を作成し、アプリの相互運用とユーザーの自由なアプリ間移動を可能にします。これは、アカウントのポータビリティを備えたフェデレーションネットワークです。\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:19
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Decentralized Architecture\n"
-msgstr "<Heading level={2} id=\"network-architecture\">フェデレーション</Heading>\n"
+msgstr "<Heading level={2} id=\"decentralized-architecture\">分散アーキテクチャ</Heading>\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:21
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "AT syncs repositories in a federated networking model. Federation ensures the network is convenient to use and reliably available. Repository data is synchronized between servers over standard web technologies (HTTP and WebSockets).\n"
-msgstr "AT プロトコルは、フェデレーション ネットワーク モデルでリポジトリを同期します。フェデレーションは、ネットワークが使いやすく、確実に利用できるようにするために選択されました。リポジトリ データは、標準の Web テクノロジー ([HTTP](/specs/xrpc) および [WebSocket](/specs/event-stream)) を介してサーバー間で同期されます。\n"
+msgstr "ATはフェデレーションネットワークモデルでリポジトリを同期します。フェデレーションにより、ネットワークが使いやすく、確実に利用できることが保証されます。リポジトリデータは、標準のウェブテクノロジー（HTTPおよびWebSocket）を介してサーバー間で同期されます。\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:23
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "[**Personal data servers**, or PDSes](/guides/the-at-stack#pds), are your home in the cloud. They host your data, distribute it, manage your identity, and orchestrate requests to other services to give you your views.\n"
-msgstr "個人データ サーバーは、クラウド内のホームです。データをホストし、配布し、ID を管理し、他のサービスへのリクエストを調整してビューを提供します。\n"
+msgstr "[**パーソナルデータサーバー**（PDS）](/guides/the-at-stack#pds)は、クラウドにおけるあなたのホームです。データをホストし、配布し、IDを管理し、他のサービスへのリクエストを調整してビューを提供してくれます。\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:25
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "**Relays** handle all of your events, like retrieving large-scale metrics (likes, reposts, followers), content discovery (algorithms), and user search.\n"
-msgstr "App Views provide aggregated application data for the entire network. They support large-scale metrics (likes, reposts, followers), content discovery (algorithms), and user search.\n"
+msgstr "**リレー**は広域的な指標（いいね数、リポスト数、フォロワー数）の取得、コンテンツ発見（アルゴリズム）、ユーザー検索など、すべてのイベントを処理します。\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:29
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<Container>\n"
 "  <Image src={crawling} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
 "</Container>\n"
-msgstr "<Container> <Image src={image1} alt=\"\" className=\"w-full dark:invert max-w-md mx-auto\" /> </Container>"
+msgstr ""
+"<Container>\n"
+"  <Image src={crawling} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
+"</Container>\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:31
 #, no-wrap
 msgid "The AT Protocol is architected in a “big world with small world fallbacks” way, modeled after the open web itself. With the web, individual computers upload content to the network, and then all of that content is then broadcasted back to other computers. Similarly, with the AT Protocol, we're sending messages to a much smaller number of big aggregators, which then broadcast that data to personal data servers across the network.\n"
-msgstr ""
+msgstr "ATプロトコルは、オープンウェブそのものをモデルにした「小さな世界のフォールバックを伴う大きな世界」という設計です。ウェブでは、個々のコンピューターがコンテンツをネットワークにアップロードし、そのすべてのコンテンツが他のコンピューターへブロードキャストされます。同様に、ATプロトコルでは、少数の大規模アグリゲーターにメッセージを送り、ネットワーク全体のパーソナルデータサーバーへデータをブロードキャストします。\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:33
 #, no-wrap
 msgid "Technically, you can implement an AT application with just a single PDS — Relays are not a necessary part of the specification. They enable the ecosystem to scale for big-world social networks.\n"
-msgstr ""
+msgstr "技術的には、単一のPDSだけでATアプリケーションを実装できます。リレーは仕様上必須の要素ではありませんが、大規模なソーシャルネットワーク向けにエコシステムをスケールさせます。\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:37
 #, no-wrap
 msgid "PDS instances host accounts for users, which require account management and lifecycle controls similar to any network server. While AT identities (DIDs and handles) can in theory be entirely separate from the PDS, in practice the PDS is expected to help manage the user's identity. \n"
-msgstr ""
+msgstr "PDSインスタンスはユーザーのアカウントをホストし、他のネットワークサーバーが行うようなアカウント管理とライフサイクル制御を求められます。ATのID（DIDとハンドル）は理論上PDSから完全に分離できますが、実用上はPDSがユーザーのID管理を支援することが期待されています。 \n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:39
 #, no-wrap
 msgid "You can [host your own PDS](/guides/self-hosting).\n"
-msgstr ""
+msgstr "[自分のPDSをホスト](/guides/self-hosting)できます。\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:41
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "User data is stored in signed data repositories and verified by DIDs. Signed data repositories are like Git repos but for database records, and DIDs are essentially registries of user certificates, similar in some ways to the TLS certificate system. They are expected to be secure, reliable, and independent of the user's PDS.\n"
-msgstr "ユーザー データは [署名済みデータ リポジトリ](/guides/data-repos) に保存され、[DID](/guides/identity) によって検証されます。署名済みデータ リポジトリは Git リポジトリに似ていますが、データベース レコード用です。DID は基本的にユーザー証明書のレジストリであり、いくつかの点で TLS 証明書システムに似ています。これらは、安全で信頼性が高く、ユーザーの PDS から独立していることが期待されています。\n"
+msgstr "ユーザーデータは署名付きデータリポジトリに保存され、DIDによって検証されます。署名付きデータリポジトリはデータベースレコード用のGitリポジトリに似たもので、DIDはTLS証明書システムのようなユーザー証明書のレジストリと喩えられます。これらは安全で信頼性が高く、ユーザーのPDSから独立していることが期待されます。\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:45
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<Container>\n"
 "  <Image src={did} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
 "</Container>\n"
-msgstr "<Container> <Image src={image1} alt=\"\" className=\"w-full dark:invert max-w-md mx-auto\" /> </Container>"
+msgstr ""
+"<Container>\n"
+"  <Image src={did} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
+"</Container>\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:47
 #, no-wrap
 msgid "The PDS handles:\n"
-msgstr ""
+msgstr "PDSは以下を担います。\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:59
@@ -168,12 +184,23 @@ msgid ""
 "- usually the ability to manage a default handle namespace (base domain)\n"
 "- OAuth client flows, including web sign-in pages, and optional MFA\n"
 msgstr ""
+"- アカウントのライフサイクル：登録、削除、移行\n"
+"- アカウントのセキュリティ：メール認証、パスワードリセットフロー、メールアドレス変更フロー\n"
+"- ATのID解決：DID、ハンドル。ID解決の仕組みについて[詳しくはこちら](https://fusectore.dev/2025/01/04/atproto-identity.html)。\n"
+"- 設定とプライベート状態の保存\n"
+"- アカウントの公開停止または凍結の実行と、モデレーション連絡の対応\n"
+"- 秘密鍵管理：AT署名鍵とPLCローテーション鍵\n"
+"- [PLC](https://web.plc.directory/)のID操作とエンドポイント：ハンドル変更、PLC操作の検証・署名・送信\n"
+"- メール配信：リセットフローおよびモデレーションメールの転送用\n"
+"- リポジトリのイベントストリームで`#identity`と`#account`（近日追加）イベントを出力\n"
+"- デフォルトのハンドル名前空間（ベースドメイン）を管理（例外あり）\n"
+"- OAuthクライアントフロー（サインインページや任意のMFAを含む）\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:61
 #, no-wrap
 msgid "You can migrate an individual account's data repository freely from one PDS to another. This involves the import and export of repositories as CAR files. There are some community tools that make this easier:\n"
-msgstr ""
+msgstr "個々のアカウントのデータリポジトリは、PDS間を自由に移行できます。これには、リポジトリをCARファイルとしてインポート/エクスポートすることが含まれます。これを容易にするコミュニティツールがいくつかあります。\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:66
@@ -184,18 +211,22 @@ msgid ""
 "- https://boat.kelinci.net/, a set of interfaces for repository import and export\n"
 "- https://github.com/bluesky-social/goat, our Go AT command-line tool.\n"
 msgstr ""
+"- https://pdsls.dev/, 自分のリポジトリに保存されたすべてのデータ（現在どのPDSにホストされているか）を閲覧できる\n"
+"- https://pdsmoover.com/, PDS移行のためのツール集\n"
+"- https://boat.kelinci.net/, リポジトリのインポート/エクスポート用インターフェース群\n"
+"- https://github.com/bluesky-social/goat, 私たちのGo製ATコマンドラインツール。\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:70
 #, no-wrap
 msgid "Tap is used for syncing existing records from the AT network and then continuing to receive new records from the firehose.\n"
-msgstr ""
+msgstr "TapはATネットワークから既存のレコードを同期し、その後firehoseから新しいレコードを継続的に受信するために使用されます。\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:72
 #, no-wrap
 msgid "Tap simplifies AT sync by handling the firehose connection, verification, backfill, and filtering. Your application connects to a Tap and receives simple JSON events for only the repos and collections you care about, no need to worry about binary formats for validating cryptographic signatures. Tap features:\n"
-msgstr ""
+msgstr "Tapはfirehose接続、検証、バックフィル、フィルタリングを処理することでAT同期を簡素化します。アプリケーションはTapに接続し、あなたが関心のあるリポジトリとコレクションのみのシンプルなJSONイベントを受け取ります。署名検証のためのバイナリ形式について心配する必要はありません。Tapは以下の特徴を持ちます。\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:81
@@ -210,147 +241,158 @@ msgid ""
 "- SQLite or Postgres backend\n"
 "- designed for moderate scale (millions of repos, 30k+ events/sec)\n"
 msgstr ""
+"- リポジトリ構造、MST整合性、ID署名を検証\n"
+"- 自動バックフィル：新しいリポジトリ追加時にPDSから全履歴を取得\n"
+"- フィルタ出力：DIDリスト単位、コレクション単位、全ネットワーク\n"
+"- 順序保証：ライブイベントは履歴バックフィル完了まで待機\n"
+"- 配信モード：ack付きWebSocket、fire-and-forget、webhook\n"
+"- 単一のGoバイナリ\n"
+"- SQLiteまたはPostgresバックエンド\n"
+"- 中規模スケール向け（数百万のリポジトリ、毎秒3万件超のイベント）\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:83
 #, no-wrap
 msgid "There is a Typescript library for working with Tap at [@atproto/tap](https://www.npmjs.com/package/@atproto/tap).\n"
-msgstr ""
+msgstr "Tapを扱うためのTypescriptライブラリは[@atproto/tap](https://www.npmjs.com/package/@atproto/tap)にあります。\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:85
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## App Views and Relay\n"
-msgstr "<Heading level={2} id=\"app-view\">AppView</Heading>"
+msgstr "<Heading level={2} id=\"app-views-and-relay\">AppViewとリレー</Heading>\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:87
 #, no-wrap
 msgid "**Relays** handle all of your events, like retrieving large-scale metrics (likes, reposts, followers), content discovery (algorithms), and user search. The Relay also handles [rate limiting](https://docs.bsky.app/docs/advanced-guides/rate-limits) of individual PDSes to ensure that content can be indexed from across the network.\n"
-msgstr ""
+msgstr "**リレー**は広域的な指標（いいね数、リポスト数、フォロワー数）の取得、コンテンツ発見（アルゴリズム）、ユーザー検索など、すべてのイベントを処理します。リレーは個々のPDSの[レート制限](https://docs.bsky.app/docs/advanced-guides/rate-limits)も処理し、ネットワーク全体からコンテンツをインデックスできるようにします。\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:89
 #, no-wrap
 msgid "An App View is the piece that actually assembles your feed and all the other data you see in the app, and is downstream from a Relay's firehose of data. This is a semantically-aware service that produces aggregations across the network and views over some subset of the network. For example, the Relay might crawl to grab data such as a certain post's likes and reposts, and the app view will output the count of those metrics.\n"
-msgstr ""
+msgstr "AppViewは、アプリで見るフィードやその他すべてのデータを実際に組み立てる部分で、リレーのfirehoseデータの下流に位置します。これはセマンティクスに基づくサービスで、ネットワーク全体にわたる集計や、ネットワークの一部に対するビューを生成します。例えば、リレーが特定の投稿のいいねやリポストなどのデータをクロールして取得し、AppViewがそれらの指標のカウントを出力します。\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:91
 #, no-wrap
 msgid "There can be an ecosystem of App Views for each lexicon deployed on the network. For example, *Bluesky* currently supports a micro-blogging mode: the `app.bsky` Lexicon. Developers who create new lexicons could deploy a corresponding App View that understands their Lexicon to service their users. Other lexicons could include [video](https://stream.place/), or [long-form blogging](https://leaflet.pub/), or [collaborative coding](https://tangled.org/). By bootstrapping off of an existing Relay, data collation will already be taken care of for these new applications. They can benefit from the critical mass of users already posting on Bluesky and populating their repositories with other Lexicons; they only need to provide the indexing behaviors necessary for their application.\n"
-msgstr ""
+msgstr "ネットワークに展開された各Lexiconごとに、AppViewのエコシステムが存在し得ます。例えば、*Bluesky*は現在マイクロブログの側面、つまり`app.bsky` Lexiconをサポートしています。新しいLexiconを作成する開発者は、ユーザーに提供するために、そのLexiconを理解するAppViewをデプロイできます。他のLexiconの例としては、[動画](https://stream.place/)や[長文ブログ](https://leaflet.pub/)や[共同コーディング](https://tangled.org/)などが挙げられます。既存のリレーでブートストラップすることで、新しいアプリケーションのためのデータ収集が行われている状態から始められます。これにより、Blueskyに投稿し、他のLexiconでリポジトリを使っているクリティカルマスの既存ユーザーから恩恵を受けることができます。必要なのは、自分のアプリケーションに必要なインデックス処理を提供することだけです。\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:93
 #, no-wrap
 msgid "App Views and Relays are both application-level tooling, rather than inherent parts of the AT protocol. Our App View implementation responds to [XRPC](/specs/xrpc) calls — our HTTP API.\n"
-msgstr ""
+msgstr "AppViewとリレーはいずれもATプロトコルに固有の部品ではなく、アプリケーションレベルのツールです。私たちのAppView実装は[XRPC](/specs/xrpc)呼び出し（私たちのHTTP API）に応答します。\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:95
 #, no-wrap
 msgid "You can find a well-documented example of other App View and Relay implementations in [The Blacksky Architecture](https://blackskyweb.xyz/overview/#blacksky-architecture). Different Atmosphere applications may make different implementation choices.\n"
-msgstr ""
+msgstr "他のAppViewとリレー実装のよく文書化された例は、[The Blacksky Architecture](https://blackskyweb.xyz/overview/#blacksky-architecture)で見つけられます。各Atmosphereアプリケーションによって実装上の判断が異なる場合があります。\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:97
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## DID PLC\n"
-msgstr "<Heading level={2} id=\"did-methods\">DID メソッド</Heading>\n"
+msgstr "<Heading level={2} id=\"did-plc\">DID PLC</Heading>\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:99
 #, no-wrap
 msgid "[DID PLC](https://web.plc.directory/) is a self-authenticating DID which is strongly-consistent, recoverable, and allows for key rotation. Each identity is made up of a series of signed operations that each reference the preceding operation in a chain back to the genesis operation. Any observer can verify the chain of operations in order to verify the current state of the identity.\n"
-msgstr ""
+msgstr "[DID PLC](https://web.plc.directory/)は自己認証型のDIDで、強い一貫性があり、復旧可能で、鍵のローテーションを可能にします。各IDは、前のオペレーションを連鎖的に参照する署名付きオペレーションの系列で構成され、ID作成オペレーションまで遡ります。任意の観測者はオペレーションの連鎖を検証することで、IDの現在の状態を検証できます。\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:101
 #, no-wrap
 msgid "PLC operations are stored in a directory (currently run at [plc.directory](http://plc.directory)) which is a centralized service that validates operations, stores them, and serves those operations as well as computed views of the identities derived from the operations. The trust model for the directory is fairly limited as it is unable to modify identities without a signed operation on their behalf.\n"
-msgstr ""
+msgstr "PLCオペレーションはディレクトリ（現在は[plc.directory](http://plc.directory)で運用）に保存されます。このディレクトリはオペレーションを検証・保存し、オペレーションそのものと、オペレーションから導出されたIDのビューを提供する中央集権型サービスです。ディレクトリは署名付きのオペレーションがなければIDを変更できないため、信頼モデルは比較的限定的です。\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:103
 #, no-wrap
 msgid "For guidance on PLC mirroring, refer to [this developer blog](https://dholms.leaflet.pub/3m6zswymcqk2p).\n"
-msgstr ""
+msgstr "PLCミラーリングのガイダンスは[この開発者ブログ](https://dholms.leaflet.pub/3m6zswymcqk2p)を参照してください。\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:105
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Feeds\n"
-msgstr "<Heading level={3} id=\"example-self-hosting\">例: セルフ ホスト</Heading>"
+msgstr "<Heading level={2} id=\"feeds\">フィード</Heading>\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:107
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "As with Web search engines, users are free to select their aggregators. Feeds, search indices, and entire app views can be provided by independent third parties, with requests routed by the PDS based on user configuration.\n"
-msgstr "Web 検索エンジンと同様に、ユーザーはアグリゲータを自由に選択できます。フィード、アプリ ビュー、検索インデックスは独立したサードパーティによって提供され、リクエストはユーザー構成に基づいて PDS によってルーティングされます。\n"
+msgstr "ウェブ検索エンジンがそうであるように、ユーザーはアグリゲーターを自由に選べます。フィード、検索インデックス、そしてアプリビュー全体を独立した第三者が提供でき、リクエストはユーザー設定に基づきPDSによってルーティングされます。\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:111
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<Container>\n"
 "  <Image src={feeds} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
 "</Container>\n"
-msgstr "<Container> <Image src={image1} alt=\"\" className=\"w-full dark:invert max-w-md mx-auto\" /> </Container>"
+msgstr ""
+"<Container>\n"
+"  <Image src={feeds} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
+"</Container>\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:113
 #, no-wrap
 msgid "Custom feeds, or feed generators, are services that provide custom algorithms to users through the AT Protocol. This allows users to choose their own timelines, whether it's an algorithmic For You page or a feed of entirely cat photos.\n"
-msgstr ""
+msgstr "カスタムフィード（フィードジェネレーター）は、ATプロトコルを通じてユーザーにカスタムアルゴリズムを提供するサービスです。これにより、ユーザーはアルゴリズムによるFor Youページや猫の写真だけのフィード等、自分のタイムラインを選択できます。\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:115
 #, no-wrap
 msgid "Custom feeds work straightforwardly: the server receives a request from a user's server and returns a list of post URIs with some optional metadata attached. Those posts are then hydrated into full views by the requesting server and sent back to the client.\n"
-msgstr ""
+msgstr "カスタムフィードの仕組みは単純です。サーバーはユーザーのサーバーからリクエストを受け取り、オプションのメタデータが付加された投稿URIのリストを返します。これらの投稿はリクエスト元のサーバーによって完全なビューに変換され、クライアントに送り返されます。\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:119
 #, no-wrap
 msgid "[Browse](https://blueskydirectory.com/feeds/all) custom feeds.\n"
-msgstr ""
+msgstr "[カスタムフィードを探す](https://blueskydirectory.com/feeds/all)\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:121
 #, no-wrap
 msgid "## Osprey and Ozone\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"osprey-and-ozone\">OspreyとOzone</Heading>\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:123
 #, no-wrap
 msgid "Moderation is handled by two parts of our stack: [*Osprey*](https://github.com/bluesky-social/osprey-atproto), an event stream decisions engine and analysis UI designed to investigate and take automatic action; and [*Ozone*](https://github.com/bluesky-social/ozone), a labeling service and web frontend for making moderation decisions.\n"
-msgstr ""
+msgstr "モデレーションはスタックの2箇所で処理されます。[*Osprey*](https://github.com/bluesky-social/osprey-atproto)はイベントストリームの判定エンジンと分析用UIで、自動的な調査と措置の実行を目的としています。[*Ozone*](https://github.com/bluesky-social/ozone)はラベリングサービスとモデレーション判断のためのウェブフロントエンドです。\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:125
 #, no-wrap
 msgid "Osprey is written in Python, and was designed and open sourced in collaboration with Discord. Osprey is a library for processing actions through human written rules and outputting labels, webhooks back to an API and other sinks. It evaluates events using structured logic, user-defined functions, and external signals to assign labels, verdicts, and actions. Some of these, such as our Toxrank model for toxicity detection, make use of fine-tuned LLMs and other classifiers that expose their own web endpoints to Osprey. We also utilize image OCR and hashing to create actionable moderation metadata, which can be automatically actioned, surfaced to moderators via Ozone, and in turn helps shape our Discover feed algorithms.\n"
-msgstr ""
+msgstr "OspreyはPythonで書かれており、Discordとの協働で設計・オープンソース化されました。Ospreyは人間が記述したルールを通じてアクションを処理し、ラベルを発行したりAPIへのwebhookを出力したりするためのPythonライブラリです。構造化されたロジック、ユーザー定義関数、外部シグナルを用いてイベントを評価し、ラベル・判定・アクションを割り当てます。これらの一部、例えば毒性検出のToxrankモデルは、Osprey向けに独自のウェブエンドポイントを公開するファインチューニング済みLLMやその他の分類器を利用しています。私たちは画像OCRとハッシュ化も活用して、実行可能なモデレーションメタデータを作成し、それを自動的にアクション化したり、Ozoneを通じてモデレーターに提示したり、結果的にDiscoverフィードのアルゴリズム形成に役立てたりしています。\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:127
 #, no-wrap
 msgid "Although some of our internal heuristics are private, Osprey and Ozone are designed to be deployed and run by other app hosts with their own custom rules and moderation practices, whether they are reimplementing the Bluesky Lexicon and feature set or running a different kind of Atmosphere app with a different set of content.\n"
-msgstr ""
+msgstr "内部のヒューリスティックの一部は非公開ですが、OspreyとOzoneは、Bluesky Lexiconと機能セットを再実装する場合でも、別種のAtmosphereアプリとして異なるコンテンツセットで運用する場合でも、独自のルールとモデレーション運用を持つ他のアプリホストが導入・運用できるように設計されています。\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:129
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Tools and SDKs\n"
-msgstr "<Heading level={2} id=\"handle\">ハンドル</Heading>"
+msgstr "<Heading level={2} id=\"tools-and-sdks\">ツールとSDK</Heading>\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:131
 #, no-wrap
 msgid "Most AT tooling is implemented in Go and TypeScript.\n"
-msgstr ""
+msgstr "ATの主要なツール群はGoとTypeScriptで実装されています。\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:135
@@ -361,3 +403,7 @@ msgid ""
 "- The https://github.com/bluesky-social/atproto repository contains most of our TypeScript tooling, including the code for the [PDS](https://github.com/bluesky-social/atproto/tree/main/packages/pds) and the TypeScript SDK.\n"
 "- There are many other community tools that we use every day. For example, the [Microcosm](https://www.microcosm.blue/) tooling, written in Rust, provides a set of APIs to help build query layers without requiring dedicated AppViews! Refer to https://constellation.microcosm.blue/ for details.\n"
 msgstr ""
+"- [indigo](https://github.com/bluesky-social/indigo)リポジトリには、[リレー](https://github.com/bluesky-social/indigo/blob/main/cmd/relay/README.md)のコードとGo SDKを含む、私たちのGoツールの大半が含まれています。\n"
+"- 他にも私たちのGo製ATコマンドラインツールである https://github.com/bluesky-social/goat があります。\n"
+"- https://github.com/bluesky-social/atproto リポジトリには、[PDS](https://github.com/bluesky-social/atproto/tree/main/packages/pds)のコードとTypeScript SDKを含む、TypeScriptツールの大半が含まれています。\n"
+"- 私たちが日常的に使うコミュニティツールも多数あります。例えば、Rustで書かれた[Microcosm](https://www.microcosm.blue/)のツール群は、専用のAppViewを必要とせずにクエリ層を構築するためのAPI群を提供します。詳細はhttps://constellation.microcosm.blue/を参照してください。\n"

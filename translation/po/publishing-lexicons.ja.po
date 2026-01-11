@@ -31,35 +31,41 @@ msgstr ""
 #: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
 #, no-wrap
 msgid "## Further Reading and Resources\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"further-reading-and-resources\">関連・参考資料</Heading>\n"
 
 #. type: Plain text
 #: src/guides/publishing-lexicons/en.mdx:5
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "export const header = {\n"
 "  title: 'Publishing Lexicons',\n"
 "  description: 'Sharing your lexicons with the world',\n"
 "}\n"
-msgstr "import {Heading} from '@/components/Heading' export const header = { title: 'プロトコルの概要', description: 'AT プロトコルの概要。', }"
+msgstr ""
+"import {Heading} from '@/components/Heading'\n"
+"\n"
+"export const header = {\n"
+"  title: 'Lexiconの公開',\n"
+"  description: 'Lexiconを世界と共有する',\n"
+"}\n"
 
 #. type: Plain text
 #: src/guides/publishing-lexicons/en.mdx:7
 #, no-wrap
 msgid "## Using goat\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"using-goat\">goatの利用</Heading>\n"
 
 #. type: Plain text
 #: src/guides/publishing-lexicons/en.mdx:9
 #, no-wrap
 msgid "Lexicons are designed to be machine-readable and network-accessible. While it is not currently *required* that a lexicon is available on the network, it is strongly advised to publish lexicon so that a single canonical & authoritative representation is available to consumers of the method.\n"
-msgstr ""
+msgstr "Lexiconは機械可読かつネットワークアクセス可能なよう設計されています。現時点ではレキシコンがネットワーク上で利用可能であることは*必須*ではありませんが、利用者が単一の正規かつ信頼できる表現にアクセスできるよう、レキシコンを公開することを強く推奨します。\n"
 
 #. type: Plain text
 #: src/guides/publishing-lexicons/en.mdx:11
 #, no-wrap
 msgid "You can use [`goat`](https://github.com/bluesky-social/goat), our command line tool, for creating and publishing Lexicons. The Lexicon-related features are available under [`goat lex`](https://github.com/bluesky-social/goat?tab=readme-ov-file#lexicon-development) :\n"
-msgstr ""
+msgstr "コマンドラインツール[`goat`](https://github.com/bluesky-social/goat)を使って、Lexiconを作成・公開できます。Lexicon関連の機能は[`goat lex`](https://github.com/bluesky-social/goat?tab=readme-ov-file#lexicon-development)にあります。\n"
 
 #. type: Plain text
 #: src/guides/publishing-lexicons/en.mdx:14
@@ -68,12 +74,14 @@ msgid ""
 "- publishing schemas to and synchronizing from the AT network\n"
 "- diffing, linting, and verifying schema evolution rules\n"
 msgstr ""
+"- スキーマを公開してATネットワークと同期する\n"
+"- スキーマの差分比較、lint、およびスキーマ進化ルールの検証\n"
 
 #. type: Plain text
 #: src/guides/publishing-lexicons/en.mdx:16
 #, no-wrap
 msgid "`goat` can be installed from [Homebrew](https://formulae.brew.sh/formula/goat) on macOS and Linux:\n"
-msgstr ""
+msgstr "`goat`はmacOSとLinuxで[Homebrew](https://formulae.brew.sh/formula/goat)からインストールできます。\n"
 
 #. type: Plain text
 #: src/guides/publishing-lexicons/en.mdx:20
@@ -83,12 +91,15 @@ msgid ""
 "brew install goat\n"
 "```\n"
 msgstr ""
+"```shell\n"
+"brew install goat\n"
+"```\n"
 
 #. type: Plain text
 #: src/guides/publishing-lexicons/en.mdx:22
 #, no-wrap
 msgid "In a project directory, you can download some existing Lexicons, which will get saved as JSON files in `./lexicons/`:\n"
-msgstr ""
+msgstr "プロジェクトディレクトリで既存のLexiconをダウンロードすると、`./lexicons/`にJSONファイルとして保存されます。\n"
 
 #. type: Plain text
 #: src/guides/publishing-lexicons/en.mdx:30
@@ -102,12 +113,19 @@ msgid ""
 " 🟢 app.bsky.actor.profile\n"
 "```\n"
 msgstr ""
+"```markdown\n"
+"$ goat lex pull com.atproto.repo.strongRef com.atproto.moderation. app.bsky.actor.profile\n"
+" 🟢 com.atproto.repo.strongRef\n"
+" 🟢 com.atproto.moderation.defs\n"
+" 🟢 com.atproto.moderation.createReport\n"
+" 🟢 app.bsky.actor.profile\n"
+"```\n"
 
 #. type: Plain text
 #: src/guides/publishing-lexicons/en.mdx:32
 #, no-wrap
 msgid "You can also create a new Lexicon record with `goat lex new record`:\n"
-msgstr ""
+msgstr "`goat lex new record`を使って新しいLexiconレコードを作成できます。\n"
 
 #. type: Plain text
 #: src/guides/publishing-lexicons/en.mdx:35
@@ -116,6 +134,8 @@ msgid ""
 "```markdown\n"
 "$ goat lex new record dev.project.thing\n"
 msgstr ""
+"```markdown\n"
+"$ goat lex new record dev.project.thing\n"
 
 #. type: Plain text
 #: src/guides/publishing-lexicons/en.mdx:38
@@ -124,12 +144,14 @@ msgid ""
 "$ open ./lexicons/dev/project/thing.json\n"
 "```\n"
 msgstr ""
+"$ open ./lexicons/dev/project/thing.json\n"
+"```\n"
 
 #. type: Plain text
 #: src/guides/publishing-lexicons/en.mdx:40
 #, no-wrap
 msgid "And eventually publish it with `goat lex publish`:\n"
-msgstr ""
+msgstr "最後に`goat lex publish`で公開します。\n"
 
 #. type: Plain text
 #: src/guides/publishing-lexicons/en.mdx:45
@@ -140,30 +162,37 @@ msgid ""
 " 🟢 dev.project.thing\n"
 "```\n"
 msgstr ""
+"```markdown\n"
+"$ goat lex publish\n"
+" 🟢 dev.project.thing\n"
+"```\n"
 
 #. type: Plain text
 #: src/guides/publishing-lexicons/en.mdx:47
 #, no-wrap
 msgid "Refer to the [Lexicon Style Guide](/guides/lexicon-style-guide) for guidance on creating new Lexicons.\n"
-msgstr ""
+msgstr "新しいLexiconを作成する際は、[Lexiconスタイルガイド](/guides/lexicon-style-guide)を参照してください。\n"
 
 #. type: Plain text
 #: src/guides/publishing-lexicons/en.mdx:49
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Lexhub\n"
-msgstr "<Heading level={2} id=\"lexicon\">Lexicon</Heading>"
+msgstr "## Lexhub<Heading level={2} id=\"lexhub\">Lexhub</Heading>\n"
 
 #. type: Plain text
 #: src/guides/publishing-lexicons/en.mdx:51
 #, no-wrap
 msgid "Lexhub is our resource for discovering and browsing Lexicons! TK\n"
-msgstr ""
+msgstr "Lexhub is our resource for discovering and browsing Lexicons! TK\n"
 
 #. type: Plain text
 #: src/guides/publishing-lexicons/en.mdx:56
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "- [Lexicons](/guides/lexicon)\n"
 "- [Lexicon Style Guide](/guides/lexicon-style-guide)\n"
 "- [Lexicon Specs](/specs/lexicon)\n"
-msgstr "- [Lexicon の紹介](/guides/lexicon)  - [Lexicon の仕様](/specs/lexicon)"
+msgstr ""
+"- [Lexicon](/guides/lexicon)\n"
+"- [Lexiconスタイルガイド](/guides/lexicon-style-guide)\n"
+"- [Lexicon仕様](/specs/lexicon)\n"

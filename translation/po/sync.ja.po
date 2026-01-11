@@ -31,33 +31,35 @@ msgstr ""
 #: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
 #, no-wrap
 msgid "## Further Reading and Resources\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"further-reading-and-resources\">関連・参考資料</Heading>\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:16 src/guides/sync/en.mdx:15
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Data Repositories\n"
-msgstr ""
-"#-#-#-#-#  overview.ja.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"<Heading level={2} id=\"data-repositories\">データ リポジトリ</Heading>\n"
-"#-#-#-#-#  sync.ja.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"<Heading level={2} id=\"data-repositories\">データ リポジトリ</Heading>"
+msgstr "<Heading level={2} id=\"data-repositories\">データリポジトリ</Heading>\n"
 
 #. type: Plain text
 #: src/guides/sync/en.mdx:5
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "export const header = {\n"
 "  title: 'Sync',\n"
 "  description: 'Synchronizing AT Protocol data',\n"
 "}\n"
-msgstr "import {Heading} from '@/components/Heading' export const header = { title: 'プロトコルの概要', description: 'AT プロトコルの概要。', }"
+msgstr ""
+"import {Heading} from '@/components/Heading'\n"
+"\n"
+"export const header = {\n"
+"  title: '同期',\n"
+"  description: 'ATプロトコルデータの同期',\n"
+"}\n"
 
 #. type: Plain text
 #: src/guides/sync/en.mdx:7
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Handles and DIDs\n"
-msgstr "<Heading level={2} id=\"handle\">ハンドル</Heading>"
+msgstr "<Heading level={2} id=\"handles-and-dids\">ハンドルとDID</Heading>\n"
 
 #. type: Plain text
 #: src/guides/sync/en.mdx:11
@@ -67,28 +69,28 @@ msgid ""
 "- `did:web`, which is based on the W3C DID standard.\n"
 "- `did:plc`, which is a DID method developed and implemented by Bluesky. See the [did-method-plc](https://github.com/did-method-plc/did-method-plc) repository for details.\n"
 msgstr ""
+"ATでは、ハンドルは[DID](/specs/did)（[分散型識別子](https://en.wikipedia.org/wiki/Decentralized_identifier)）を通じて解決されます。現在、2つの異なるDIDプレフィックスがサポートされています。\n"
+"- `did:web`（W3C DID標準に基づく）\n"
+"- `did:plc`（Blueskyによって開発および実装されたDIDメソッド）\n"
+"詳細については[did-method-plc](https://github.com/did-method-plc/did-method-plc)リポジトリを参照してください。\n"
 
 #. type: Plain text
 #: src/guides/sync/en.mdx:13
 #, no-wrap
 msgid "When you sign up for a new account using an Atmosphere app, that app will communicate with a PDS to register a new handle for you, using its domain name (for example, `*.bsky.social`).\n"
-msgstr ""
+msgstr "Atmosphereアプリを使用して新しいアカウントを登録すると、そのアプリはPDSと通信し、PDS管理下のドメイン名（例：`*.bsky.social`）を使用して新しいハンドルを登録します。\n"
 
 #. type: Plain text
 #: src/guides/sync/en.mdx:17 src/guides/data-repos/en.mdx:12
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "A data repository is a collection of data published by a single user. Repositories are self-authenticating data structures, meaning each update is signed and can be verified by anyone.\n"
-msgstr ""
-"#-#-#-#-#  data-repos.ja.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"データ リポジトリは、単一のユーザーによって公開されたデータのコレクションです。リポジトリは自己認証データ構造であり、各更新は署名されており、誰でも検証できます。\n"
-"#-#-#-#-#  sync.ja.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"データ リポジトリは、単一のユーザーによって公開されたデータのコレクションです。リポジトリは自己認証データ構造であり、各更新は署名されており、誰でも検証できます。"
+msgstr "データリポジトリは、単一のユーザーによって公開されたデータのコレクションです。リポジトリは自己認証データ構造であり、各更新は署名され、誰でも検証できます。\n"
 
 #. type: Plain text
 #: src/guides/sync/en.mdx:19
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Multiple types of identifiers are used within a data repository:\n"
-msgstr "個人データ リポジトリ内では、複数の種類の識別子が使用されます。"
+msgstr "データリポジトリ内では複数の種類の識別子が使用されます。\n"
 
 #. type: Plain text
 #: src/guides/sync/en.mdx:24
@@ -99,12 +101,16 @@ msgid ""
 "- [**Record Keys**](/specs/record-key) (\"rkeys\") identify individual records within a collection in a given repository. The format is specified by the collection Lexicon.\n"
 "- [**Content IDs (CIDs)**](https://github.com/multiformats/cid) identify content using a fingerprint hash. They are used throughout the repository to reference the objects (nodes) within it.\n"
 msgstr ""
+"- [**分散型識別子（DID）**](https://w3c.github.io/did/)はデータリポジトリを識別します。これは広くユーザーIDとして使用されますが、すべてのユーザーが1つのデータリポジトリを持っているため、DIDはデータリポジトリへの参照として見なすことができます。\n"
+"- [**名前空間識別子（NSID）**](/specs/nsid)は、リポジトリ内のレコード群に対するLexicon型を識別します。\n"
+"- [**レコードキー**](/specs/record-key)（rkey）は、特定のリポジトリ内のコレクションに含まれる個々のレコードを識別します。形式はコレクションのLexicon（`record`型）によって指定されます。\n"
+"- [コンテンツID（CID）](https://github.com/multiformats/cid)は、フィンガープリントハッシュを使用してコンテンツを識別します。これはリポジトリ全体で使用され、リポジトリ内のオブジェクト（ノード）を参照します。\n"
 
 #. type: Plain text
 #: src/guides/sync/en.mdx:26
 #, no-wrap
 msgid "Take, for example, a single AT record:\n"
-msgstr ""
+msgstr "例えば、一つのATレコードを見てみましょう。\n"
 
 #. type: Plain text
 #: src/guides/sync/en.mdx:30
@@ -114,18 +120,21 @@ msgid ""
 "at://did:plc:vmt7o7y6titkqzzxav247zrn/app.bsky.feed.post/3m72rq2hgss2a\n"
 "```\n"
 msgstr ""
+"```\n"
+"at://did:plc:vmt7o7y6titkqzzxav247zrn/app.bsky.feed.post/3m72rq2hgss2a\n"
+"```\n"
 
 #. type: Plain text
 #: src/guides/sync/en.mdx:32
 #, no-wrap
 msgid "This can be broken down as `at://DID/NSID/rkey` , or `at://repository/collection/record`. It has a corresponding CID of `bafyreidgbehqwweghrrddfu6jgj7lyr6fwhzgazhirnszdb5lvr7iynkiy`.\n"
-msgstr ""
+msgstr "これは`at://DID/NSID/rkey`または`at://repository/collection/record`に分解できます。対応するCIDは`bafyreidgbehqwweghrrddfu6jgj7lyr6fwhzgazhirnszdb5lvr7iynkiy`です。\n"
 
 #. type: Plain text
 #: src/guides/sync/en.mdx:34
 #, no-wrap
 msgid "When making a write request to an AT API endpoint — such as when creating a new post — this full repository path will be returned as a response:\n"
-msgstr ""
+msgstr "AT APIエンドポイントに書き込みリクエストを行うとき（新しい投稿を作成する場合など）、この完全なリポジトリパスが応答として返されます。\n"
 
 #. type: Plain text
 #: src/guides/sync/en.mdx:41
@@ -138,37 +147,43 @@ msgid ""
 "}\n"
 "```\n"
 msgstr ""
+"```json\n"
+"{\n"
+"  \"uri\": \"at://did:plc:u5cwb2mwiv2bfq53cjufe6yn/app.bsky.feed.post/3k4duaz5vfs2b\",\n"
+"  \"cid\": \"bafyreibjifzpqj6o6wcq3hejh7y4z4z2vmiklkvykc57tw3pcbx3kxifpm\"\n"
+"}\n"
+"```\n"
 
 #. type: Plain text
 #: src/guides/sync/en.mdx:43
 #, no-wrap
 msgid "This is how individual records are uniquely identified and stored within AT data repositories.\n"
-msgstr ""
+msgstr "これが、個々のレコードがATデータリポジトリ内で一意に識別され、保存される方法です。\n"
 
 #. type: Plain text
 #: src/guides/sync/en.mdx:45 src/guides/going-to-production/en.mdx:12
 #: src/guides/self-hosting/en.mdx:10 src/guides/the-at-stack/en.mdx:35
 #, no-wrap
 msgid "## PDS\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"pds\">PDS</Heading>\n"
 
 #. type: Plain text
 #: src/guides/sync/en.mdx:47
 #, no-wrap
 msgid "A PDS, or Personal Data Server, is a server that hosts users' individual data repositories, such as posts, followers, and profile information. The PDS handles account lifecycle features, identity management, and key resolution for hosted user accounts.\n"
-msgstr ""
+msgstr "PDS（パーソナルデータサーバー）は、ユーザー個々人のデータリポジトリ（投稿、フォロワー、プロフィール情報など）をホストするサーバーです。PDSは、ホストされたユーザーアカウントのアカウントライフサイクル機能、アイデンティティ管理、および鍵解決を処理します。\n"
 
 #. type: Plain text
 #: src/guides/sync/en.mdx:49
 #, no-wrap
 msgid "You can [host your own PDS](/guides/self-hosting), and [migrate individual accounts](/guides/account-migration) from one PDS to another. Refer to [The AT Stack](/guides/the-at-stack#pds) for more information.\n"
-msgstr ""
+msgstr "[自分のPDSをホスト](/guides/self-hosting)したり、あるPDSから別のPDSに[アカウントを移行](/guides/account-migration)したりできます。詳細については[ATスタック](/guides/the-at-stack#pds)を参照してください。\n"
 
 #. type: Plain text
 #: src/guides/sync/en.mdx:53
 #, no-wrap
 msgid "There are many ways of synchronizing and streaming AT data. You can use [Jetstream](/guides/streaming-data) to stream real-time updates, or locally [Backfill](/guides/backfilling) the data that already exists on the network.\n"
-msgstr ""
+msgstr "ATデータを同期およびストリーミングする方法は多数あります。[Jetstream](/guides/streaming-data)を使ってリアルタイムの更新をストリーミングしたり、ネットワーク上に既に存在するデータをローカルに[バックフィル](/guides/backfilling)したりできます。\n"
 
 #. type: Plain text
 #: src/guides/sync/en.mdx:60
@@ -182,3 +197,10 @@ msgid ""
 "- [Sync spec](/specs/sync)\n"
 "- The [Microcosm](https://www.microcosm.blue/) community project maintains tools for working with AT records at scale without local mirroring.\n"
 msgstr ""
+"- [データストリーミング](/guides/streaming-data)\n"
+"- [バックフィル](/guides/backfilling)\n"
+"- [フィード](/guides/feeds)\n"
+"- [リポジトリ仕様](/specs/repository)\n"
+"- [イベントストリーム仕様](/specs/event-stream)\n"
+"- [同期仕様](/specs/sync)\n"
+"- [Microcosm](https://www.microcosm.blue/)コミュニティプロジェクトは、ローカルミラーリングなしでATレコードを大規模に操作するためのツールを保守しています。\n"

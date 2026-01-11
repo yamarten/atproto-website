@@ -31,23 +31,29 @@ msgstr ""
 #: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
 #, no-wrap
 msgid "## Further Reading and Resources\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"further-reading-and-resources\">関連・参考資料</Heading>\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:5
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "export const header = {\n"
 "  title: 'Reading Data',\n"
 "  description: 'Read AT Protocol Records',\n"
 "}\n"
-msgstr "export const header = { title: 'Identity', description: 'AT プロトコルがユーザー ID を処理する方法。', }"
+msgstr ""
+"import {Heading} from '@/components/Heading'\n"
+"\n"
+"export const header = {\n"
+"  title: 'データ読み取り',\n"
+"  description: 'ATプロトコルレコードを読み取る',\n"
+"}\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:7
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Listing Records\n"
-msgstr "<Heading level={2} id=\"record\">レコード</Heading>"
+msgstr "<Heading level={2} id=\"listing-records\">レコードの列挙</Heading>\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:16
@@ -62,6 +68,14 @@ msgid ""
 "    <TabPanel value=\"ts\">\n"
 "    You can read records from a user's data repository with `client.list()`:\n"
 msgstr ""
+"<TabGroup defaultValue=\"ts\">\n"
+"  <TabList>\n"
+"    <Tab value=\"ts\">TypeScript</Tab>\n"
+"    <Tab value=\"go\">Go</Tab>\n"
+"  </TabList>\n"
+"  <TabPanels>\n"
+"    <TabPanel value=\"ts\">\n"
+"    `client.list()`を使用してユーザーのテータリポジトリからレコードを読み出すことができます。\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:23
@@ -74,6 +88,12 @@ msgid ""
 "    })\n"
 "    ```\n"
 msgstr ""
+"    ```tsx\n"
+"    const posts = await client.list(app.bsky.feed.post, {\n"
+"      limit: 10,\n"
+"      repo: 'alex.bsky.team',\n"
+"    })\n"
+"    ```\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:28
@@ -84,6 +104,10 @@ msgid ""
 "    <TabPanel value=\"go\">\n"
 "    You can read posts from a user's data repository with `RepoListRecords()`:\n"
 msgstr ""
+"    各Lexiconには独自のパラメータがあります。`app.bsky.feed.post`では、`repo`（ユーザーのハンドルまたは[DID](#did-resolution)）と、返す投稿数の上限を表す`limit`を指定できます。\n"
+"    </TabPanel>\n"
+"    <TabPanel value=\"go\">\n"
+"    `RepoListRecords()`を使用してユーザーのデータリポジトリから投稿を読み出すことができます。\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:37
@@ -98,6 +122,14 @@ msgid ""
 "        false,                 // reverse\n"
 "    )\n"
 msgstr ""
+"    ```go\n"
+"    resp, _ := comatproto.RepoListRecords(ctx, client,\n"
+"        \"app.bsky.feed.post\",  // lexicon\n"
+"        \"\",                    // cursor\n"
+"        10,                    // limit\n"
+"        \"alex.bsky.team\",      // handle or DID\n"
+"        false,                 // reverse\n"
+"    )\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:45
@@ -111,18 +143,25 @@ msgid ""
 "  </TabPanels>\n"
 "</TabGroup>\n"
 msgstr ""
+"    for _, record := range resp.Records {\n"
+"        fmt.Printf(\"Record: %s\\n\", record.Uri)\n"
+"    }\n"
+"    ```\n"
+"    </TabPanel>\n"
+"  </TabPanels>\n"
+"</TabGroup>\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:47
 #, no-wrap
 msgid "Refer to [`app.bsky.feed.post`](https://docs.bsky.app/docs/api/app-bsky-feed-get-posts) for this complete Lexicon.\n"
-msgstr ""
+msgstr "完全なLexiconについては[`app.bsky.feed.post`](https://docs.bsky.app/docs/api/app-bsky-feed-get-posts)を参照してください。\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:49
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Getting Records\n"
-msgstr "<Heading level={2} id=\"record\">レコード</Heading>"
+msgstr "<Heading level={2} id=\"getting-records\">レコードの取得</Heading>\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:58
@@ -137,6 +176,14 @@ msgid ""
 "    <TabPanel value=\"ts\">\n"
 "    You can use `client.get()` to read an individual record by its [`rkey`](/specs/record-key):\n"
 msgstr ""
+"<TabGroup defaultValue=\"ts\">\n"
+"  <TabList>\n"
+"    <Tab value=\"ts\">TypeScript</Tab>\n"
+"    <Tab value=\"go\">Go</Tab>\n"
+"  </TabList>\n"
+"  <TabPanels>\n"
+"    <TabPanel value=\"ts\">\n"
+"    `client.get()`を使用して、[`rkey`](/specs/record-key)で個別レコードを読み取ることができます。\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:67
@@ -151,6 +198,14 @@ msgid ""
 "    <TabPanel value=\"go\">\n"
 "    You can use `RepoGetRecord()` to read an individual record by its [`rkey`](/specs/record-key):\n"
 msgstr ""
+"    ```tsx\n"
+"    const post = await client.get(app.bsky.feed.post, {\n"
+"      rkey: '3jxf7z2k3q2',\n"
+"    })\n"
+"    ```\n"
+"    </TabPanel>\n"
+"    <TabPanel value=\"go\">\n"
+"    `RepoGetRecord()`を使用して、[`rkey`](/specs/record-key)で個別レコードを読み取ることができます。\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:75
@@ -164,6 +219,13 @@ msgid ""
 "      \"3mbl5xdw4yk2r\",       // rkey\n"
 "  )\n"
 msgstr ""
+"  ```go\n"
+"  resp, _ := comatproto.RepoGetRecord(ctx, client, \n"
+"      \"\",                    // cid (empty for latest)\n"
+"      \"app.bsky.feed.post\",  // lexicon\n"
+"      \"alex.bsky.team\",      // handle or DID\n"
+"      \"3mbl5xdw4yk2r\",       // rkey\n"
+"  )\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:82
@@ -176,24 +238,30 @@ msgid ""
 "  </TabPanels>\n"
 "</TabGroup>\n"
 msgstr ""
+"  fmt.Printf(\"URI: %s\\n\", resp.Uri)\n"
+"  // resp.Valueにレコードデータが含まれています\n"
+"  ```\n"
+"    </TabPanel>\n"
+"  </TabPanels>\n"
+"</TabGroup>\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:85
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## DID Resolution\n"
-msgstr "<Heading level={2} id=\"handle-resolution\">ハンドル解決</Heading>"
+msgstr "<Heading level={2} id=\"did-resolition\">DID解決</Heading>\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:87
 #, no-wrap
 msgid "In AT, user data is resolved through [DIDs](/guides/sync#data-repositories), also known as [Decentralized Identifiers](https://en.wikipedia.org/wiki/Decentralized_identifier). Most AT Protocol applications use [`did:plc` DIDs](/guides/the-at-stack#did-plc) when registering user accounts.\n"
-msgstr ""
+msgstr "ATでは、ユーザーデータは[DID](/guides/sync#data-repositories)(別名[分散型識別子](https://en.wikipedia.org/wiki/Decentralized_identifier))を通じて解決されます。ほとんどのATプロトコルアプリケーションはユーザーアカウント登録時に[`did:plc` DID](/guides/the-at-stack#did-plc)を使用します。\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:89
 #, no-wrap
 msgid "You can resolve a known username to a DID using the `com.atproto.identity.resolveHandle` endpoint. This means that you can just visit this address in a browser with a `handle=` arugment to look up your DID:\n"
-msgstr ""
+msgstr "`com.atproto.identity.resolveHandle`エンドポイントを使用して、既知のユーザー名をDIDに解決できます。これは、ブラウザで`handle=`引数を使用してこのアドレスにアクセスしてDIDを調べることができることを意味します。\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:93
@@ -203,6 +271,9 @@ msgid ""
 "https://bsky.social/xrpc/com.atproto.identity.resolveHandle?handle=youraccount.bsky.social\n"
 "```\n"
 msgstr ""
+"```\n"
+"https://bsky.social/xrpc/com.atproto.identity.resolveHandle?handle=youraccount.bsky.social\n"
+"```\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:99
@@ -214,12 +285,17 @@ msgid ""
 "}\n"
 "```\n"
 msgstr ""
+"```\n"
+"{\n"
+"did: \"did:plc:3vekukmab2djjeengw2o3wln\"\n"
+"}\n"
+"```\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:101
 #, no-wrap
 msgid "The Typescript SDK also provides the DID of the currently-authenticated as `client.did`:\n"
-msgstr ""
+msgstr "Typescript SDKは、現在認証されているユーザーのDIDを`client.did`として提供します。\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:105
@@ -229,18 +305,21 @@ msgid ""
 "const your_did = client.did\n"
 "```\n"
 msgstr ""
+"```tsx\n"
+"const your_did = client.did\n"
+"```\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:107
 #, no-wrap
 msgid "## Unauthenticated Reads\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"unauthenticated-reads\">認証無しの読み取り</Heading>\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:109
 #, no-wrap
 msgid "Some API endpoints can be accessed without authentication. You can create an unauthenticated client by passing a public API URL to a new `Client`:\n"
-msgstr ""
+msgstr "一部のAPIエンドポイントは認証無しでアクセスできます。公開APIのURLを新しい`Client`に渡して、認証無しのクライアントを作成できます。\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:120
@@ -257,6 +336,16 @@ msgid ""
 "    import { Client } from '@atproto/lex'\n"
 "    import * as app from './lexicons/app.js'\n"
 msgstr ""
+"<TabGroup defaultValue=\"ts\">\n"
+"  <TabList>\n"
+"    <Tab value=\"ts\">TypeScript</Tab>\n"
+"    <Tab value=\"go\">Go</Tab>\n"
+"  </TabList>\n"
+"  <TabPanels>\n"
+"    <TabPanel value=\"ts\">\n"
+"    ```tsx\n"
+"    import { Client } from '@atproto/lex'\n"
+"    import * as app from './lexicons/app.js'\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:123
@@ -265,12 +354,14 @@ msgid ""
 "    const client = new Client('https://public.api.bsky.app')\n"
 "    ```\n"
 msgstr ""
+"    const client = new Client('https://public.api.bsky.app')\n"
+"    ```\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:125 src/guides/reading-data/en.mdx:148
 #, no-wrap
 msgid "    As with an authenticated client, you can `.get()` any public records, like a user's profile:\n"
-msgstr ""
+msgstr "    認証済みクライアントと同様に、ユーザープロフィールなどの公開レコードを`.get()`できます。\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:129
@@ -280,6 +371,9 @@ msgid ""
 "    const profile = await client.get(app.bsky.actor.profile)\n"
 "    ```\n"
 msgstr ""
+"    ```tsx\n"
+"    const profile = await client.get(app.bsky.actor.profile)\n"
+"    ```\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:139
@@ -295,12 +389,21 @@ msgid ""
 "\t\"github.com/bluesky-social/indigo/xrpc\"\n"
 ")\n"
 msgstr ""
+"    同様のSDKクライアントパターンを使用して、任意のLexiconにAPI呼び出しを行うことができます。その他の例については、[SDKドキュメント](https://www.npmjs.com/package/@atproto/lex)を参照してください。\n"
+"    </TabPanel>\n"
+"    <TabPanel value=\"go\">\n"
+"```go\n"
+"import (\n"
+"\t\"context\"\n"
+"\tappbsky \"github.com/bluesky-social/indigo/api/bsky\"\n"
+"\t\"github.com/bluesky-social/indigo/xrpc\"\n"
+")\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:141
 #, no-wrap
 msgid "ctx := context.Background()\n"
-msgstr ""
+msgstr "ctx := context.Background()\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:146
@@ -311,6 +414,10 @@ msgid ""
 "}\n"
 "```\n"
 msgstr ""
+"client := &xrpc.Client{\n"
+"  Host: \"https://public.api.bsky.app\", // public API endpoint\n"
+"}\n"
+"```\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:151
@@ -319,6 +426,8 @@ msgid ""
 "    ```go\n"
 "profile, _ := appbsky.ActorGetProfile(ctx, client, \"alex.bsky.team\")\n"
 msgstr ""
+"    ```go\n"
+"profile, _ := appbsky.ActorGetProfile(ctx, client, \"alex.bsky.team\")\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:156
@@ -329,6 +438,10 @@ msgid ""
 "fmt.Printf(\"Followers: %d\\n\", *profile.FollowersCount)\n"
 "    ```\n"
 msgstr ""
+"fmt.Printf(\"Handle: %s\\n\", profile.Handle)\n"
+"fmt.Printf(\"Display Name: %s\\n\", *profile.DisplayName)\n"
+"fmt.Printf(\"Followers: %d\\n\", *profile.FollowersCount)\n"
+"    ```\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:161
@@ -339,12 +452,16 @@ msgid ""
 "  </TabPanels>\n"
 "</TabGroup>\n"
 msgstr ""
+"    同様のSDKクライアントパターンを使用して、任意のLexiconにAPI呼び出しを行うことができます。その他の例については、[Go SDKライブラリ](https://pkg.go.dev/github.com/bluesky-social/indigo)を参照してください。\n"
+"    </TabPanel>\n"
+"  </TabPanels>\n"
+"</TabGroup>\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:163
 #, no-wrap
 msgid "Next, you might try [writing](/guides/writing-data) to a user's data repository.\n"
-msgstr ""
+msgstr "次は、ユーザーのデータリポジトリに[書き込み](/guides/writing-data)を試してみるとよいでしょう。\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:171
@@ -357,3 +474,9 @@ msgid ""
 "- [Record Key spec](/specs/record-key)\n"
 "- [URI scheme](/specs/at-uri-scheme)\n"
 msgstr ""
+"- [読み取りと書き込み](/guides/reads-and-writes)\n"
+"- [データ書き込み](/guides/writing-data)\n"
+"- [アカウントと削除](/guides/writing-data)\n"
+"- [ソーシャルグラフ](/guides/social-graph)\n"
+"- [レコードキー仕様](/specs/record-key)\n"
+"- [URIスキーム](/specs/at-uri-scheme)\n"

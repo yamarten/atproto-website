@@ -31,7 +31,7 @@ msgstr ""
 #: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
 #, no-wrap
 msgid "## Further Reading and Resources\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"further-reading-and-resources\">関連・参考資料</Heading>\n"
 
 #. type: Plain text
 #: src/guides/oauth-patterns/en.mdx:2 src/guides/subscriptions/en.mdx:2
@@ -40,22 +40,28 @@ msgstr ""
 #, no-wrap
 msgid "import {Container} from \"@/components/Container\"\n"
 msgstr ""
+"import {Container} from \"@/components/Container\"\n"
+"import {Heading} from \"@/components/Heading\"\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:7
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "export const header = {\n"
 "  title: 'SDK authentication',\n"
 "  description: 'Authenticating with the SDKs',\n"
 "}\n"
-msgstr "import {Heading} from '@/components/Heading' export const header = { title: 'プロトコルの概要', description: 'AT プロトコルの概要。', }"
+msgstr ""
+"export const header = {\n"
+"  title: 'SDK認証',\n"
+"  description: 'SDKでの認証',\n"
+"}\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:9
 #, no-wrap
 msgid "## Creating a Client\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"creating-a-client\">クライアントの生成</Heading>\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:18
@@ -70,12 +76,20 @@ msgid ""
 "    <TabPanel value=\"ts\">\n"
 "    The first step when working with AT data is authenticating. You can authenticate using any [OAuth](/guides/auth) provider, or with [PasswordAgent](https://github.com/bluesky-social/atproto/tree/main/packages/lex/lex-password-agent) from our SDK if you are using password auth.\n"
 msgstr ""
+"<TabGroup defaultValue=\"ts\">\n"
+"  <TabList>\n"
+"    <Tab value=\"ts\">TypeScript</Tab>\n"
+"    <Tab value=\"go\">Go</Tab>\n"
+"  </TabList>\n"
+"  <TabPanels>\n"
+"    <TabPanel value=\"ts\">\n"
+"    ATデータを扱う最初のステップは認証です。任意の[OAuth](/guides/auth)プロバイダを使用して認証することもできますし、パスワードを使う場合はSDKの[PasswordAgent](https://github.com/bluesky-social/atproto/tree/main/packages/lex/lex-password-agent)を使用して認証することもできます。\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:20 src/guides/sdk-auth/en.mdx:29
 #, no-wrap
 msgid "    Begin by installing the ATProto SDK packages:\n"
-msgstr ""
+msgstr "    まずATプロトコルSDKパッケージをインストールしてください。\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:27
@@ -88,6 +102,12 @@ msgid ""
 "    <TabPanel value=\"go\">\n"
 "    The first step when working with AT data is authenticating. You can authenticate using any [OAuth](/guides/auth) provider, or with password authentication from our SDK.\n"
 msgstr ""
+"    ```bash\n"
+"    npm install @atproto/lex @atproto/lex-password-agent\n"
+"    ```\n"
+"    </TabPanel>\n"
+"    <TabPanel value=\"go\">\n"
+"    ATデータを扱う最初のステップは認証です。任意の[OAuth](/guides/auth)プロバイダを使用して認証することもできますし、SDKのパスワード認証を使用することもできます。\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:36
@@ -100,24 +120,30 @@ msgid ""
 "  </TabPanels>\n"
 "</TabGroup>\n"
 msgstr ""
+"    ```bash\n"
+"    go get github.com/bluesky-social/indigo\n"
+"    ```\n"
+"    </TabPanel>\n"
+"  </TabPanels>\n"
+"</TabGroup>\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:38
 #, no-wrap
 msgid "Because AT uses regular HTTP verbs and HTTP endpoints, you can also follow this guide by using a CLI tool like cURL to make HTTP requests following the [HTTP Reference](https://docs.bsky.app/docs/category/http-reference) endpoints. Most users will want to use an SDK.\n"
-msgstr ""
+msgstr "ATは通常のHTTPメソッドとエンドポイントを使用するため、cURLのようなCLIツールで[HTTPリファレンス](https://docs.bsky.app/docs/category/http-reference)に従ってHTTPリクエストを行うことでこのガイドに従うこともできます。ほとんどのユーザーはSDKを使用したいでしょう。\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:40
 #, no-wrap
 msgid "## Password Authentication\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"password-authentication\">パスワード認証</Heading>\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:42
 #, no-wrap
 msgid "If you are using password auth, you should generate an [app password](/specs/xrpc#app-passwords) for your account rather than using your main account password. If you are using Bluesky as an auth provider, you can generate an app password in your [account settings](https://bsky.app/settings/app-passwords).\n"
-msgstr ""
+msgstr "パスワード認証を使用している場合は、メインのアカウントパスワードではなく[アプリパスワード](/specs/xrpc#app-passwords) を生成するべきです。Blueskyを認証プロバイダとして使用している場合は、[アカウント設定](https://bsky.app/settings/app-passwords)でアプリパスワードを生成できます。\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:51
@@ -132,6 +158,14 @@ msgid ""
 "    <TabPanel value=\"ts\">\n"
 "    Start by importing `PasswordAgent`, providing credentials to `PasswordAgent.login()`, and creating an `agent`:\n"
 msgstr ""
+"<TabGroup defaultValue=\"ts\">\n"
+"  <TabList>\n"
+"    <Tab value=\"ts\">TypeScript</Tab>\n"
+"    <Tab value=\"go\">Go</Tab>\n"
+"  </TabList>\n"
+"  <TabPanels>\n"
+"    <TabPanel value=\"ts\">\n"
+"    `PasswordAgent`をインポートし、`PasswordAgent.login()`に資格情報を与えて`agent`を作るところから始めましょう。\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:54
@@ -140,6 +174,8 @@ msgid ""
 "    ```tsx\n"
 "    import { PasswordAgent } from '@atproto/lex-password-agent'\n"
 msgstr ""
+"    ```tsx\n"
+"    import { PasswordAgent } from '@atproto/lex-password-agent'\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:60
@@ -151,6 +187,11 @@ msgid ""
 "      password: 'your-app-password',\n"
 "    })\n"
 msgstr ""
+"    const result = await PasswordAgent.login({\n"
+"      service: 'https://bsky.social', // or your PDS host\n"
+"      identifier: 'your-handle.bsky.social',\n"
+"      password: 'your-app-password',\n"
+"    })\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:65
@@ -161,6 +202,10 @@ msgid ""
 "    }\n"
 "    ```\n"
 msgstr ""
+"    if (result.success) {\n"
+"        const agent = result.value\n"
+"    }\n"
+"    ```\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:70
@@ -171,6 +216,10 @@ msgid ""
 "    <TabPanel value=\"go\">\n"
 "    Start by importing the `atproto` and `xrpc` libraries, creating an `&xrpc.Client{}`, and providing credentials to call `ServerCreateSession()`:\n"
 msgstr ""
+"    エンドユーザーログインフローを備えるアプリケーションは、アプリパスワードセッションではなく[OAuth](/guides/auth)認証を使用しましょう。パスワード認証はボットやコマンドラインツールに適しています。どちらの方法でも同じ認証済み`agent`が生成されます。\n"
+"    </TabPanel>\n"
+"    <TabPanel value=\"go\">\n"
+"    `atproto`と`xrpc`ライブラリをインポートし、`&xrpc.Client{}`を作って`ServerCreateSession()`に資格情報を与えるところから始めましょう。\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:77
@@ -183,6 +232,12 @@ msgid ""
 "      \"github.com/bluesky-social/indigo/xrpc\"\n"
 "    )\n"
 msgstr ""
+"    ```go\n"
+"    import (\n"
+"      \"context\"\n"
+"      comatproto \"github.com/bluesky-social/indigo/api/atproto\"\n"
+"      \"github.com/bluesky-social/indigo/xrpc\"\n"
+"    )\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:80
@@ -191,6 +246,8 @@ msgid ""
 "    func main() {\n"
 "      ctx := context.Background()\n"
 msgstr ""
+"    func main() {\n"
+"      ctx := context.Background()\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:84
@@ -200,6 +257,9 @@ msgid ""
 "        Host: \"https://bsky.social\", // or your PDS host\n"
 "      }\n"
 msgstr ""
+"      client := &xrpc.Client{\n"
+"        Host: \"https://bsky.social\", // or your PDS host\n"
+"      }\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:94
@@ -215,12 +275,21 @@ msgid ""
 "  </TabPanels>\n"
 "</TabGroup>\n"
 msgstr ""
+"      session, _ := comatproto.ServerCreateSession(ctx, client, &comatproto.ServerCreateSession_Input{\n"
+"        Identifier: \"your-handle.bsky.social\",\n"
+"        Password:   \"your-app-password\",\n"
+"      })\n"
+"    }\n"
+"    ```\n"
+"    </TabPanel>\n"
+"  </TabPanels>\n"
+"</TabGroup>\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:96
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Client Sessions\n"
-msgstr "<Heading level={2} id=\"collection\">コレクション</Heading>"
+msgstr "<Heading level={2} id=\"client-sessions\">クライアントセッション</Heading>\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:105
@@ -235,6 +304,14 @@ msgid ""
 "    <TabPanel value=\"ts\">\n"
 "    Once you have a logged-in `agent`, you can create a `Client` instance to read and write data:\n"
 msgstr ""
+"<TabGroup defaultValue=\"ts\">\n"
+"  <TabList>\n"
+"    <Tab value=\"ts\">TypeScript</Tab>\n"
+"    <Tab value=\"go\">Go</Tab>\n"
+"  </TabList>\n"
+"  <TabPanels>\n"
+"    <TabPanel value=\"ts\">\n"
+"    ログインした`agent`が取得できたら、`Client`インスタンスを作成してデータの読み書きができます。\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:109
@@ -244,6 +321,9 @@ msgid ""
 "    import { Client } from '@atproto/lex'\n"
 "    const client = new Client(agent)\n"
 msgstr ""
+"    ```tsx\n"
+"    import { Client } from '@atproto/lex'\n"
+"    const client = new Client(agent)\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:116
@@ -256,6 +336,12 @@ msgid ""
 "    <TabPanel value=\"go\">\n"
 "    Once you have an authed `client`, you can store auth info and make API calls:\n"
 msgstr ""
+"    // 認証付きでAPIを呼び出す\n"
+"    console.log('Logged in as:', agent.did)\n"
+"    ```\n"
+"    </TabPanel>\n"
+"    <TabPanel value=\"go\">\n"
+"    ログインした`client`が取得できたら、認証情報を入力してAPIを呼び出します。\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:125
@@ -270,6 +356,14 @@ msgid ""
 "      Did:        session.Did,\n"
 "    }\n"
 msgstr ""
+"    ```go\n"
+"    // 後続のリクエストのために認証情報をクライアントに保存します\n"
+"    client.Auth = &xrpc.AuthInfo{\n"
+"      AccessJwt:  session.AccessJwt,\n"
+"      RefreshJwt: session.RefreshJwt,\n"
+"      Handle:     session.Handle,\n"
+"      Did:        session.Did,\n"
+"    }\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:131
@@ -281,24 +375,29 @@ msgid ""
 "  </TabPanels>\n"
 "</TabGroup>\n"
 msgstr ""
+"    fmt.Printf(\"Logged in as: %s (%s)\\n\", session.Handle, session.Did)\n"
+"    ```\n"
+"    </TabPanel>\n"
+"  </TabPanels>\n"
+"</TabGroup>\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:133
 #, no-wrap
 msgid "From here, you can go directly to [making API requests](/guides/reads-and-writes).\n"
-msgstr ""
+msgstr "ここから直接[APIリクエストの作成](/guides/reads-and-writes)に進めます。\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:135
 #, no-wrap
 msgid "## API Tokens\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"api-tokens\">APIトークン</Heading>\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:137
 #, no-wrap
 msgid "Rate limits for logging in are generally lower than for other API operations. Calling the login method multiple times in a short period may trigger rate limits. You only need to call the login method once per session to authenticate your agent.\n"
-msgstr ""
+msgstr "ログインのレート制限は一般的に他のAPI操作よりも低く設定されています。短期間に何度もログインメソッドを呼び出すとレート制限が発動する可能性があります。セッションを認証するためにログインメソッドを呼ぶのはセッション毎に一度だけで十分です。\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:141
@@ -308,12 +407,15 @@ msgid ""
 "* `accessJwt`: an access token which is used to authenticate requests but expires after a few minutes\n"
 "* `refreshJwt`: a refresh token which lasts longer and is used only to update the session with a new access token\n"
 msgstr ""
+"ログインメソッドが呼ぶ`com.atproto.server.createSession` APIエンドポイントは、2つのAPIトークンを含むセッションオブジェクトを返します。\n"
+"* `accessJwt`：数分で期限が切れる、リクエストを認証するために使用されるアクセストークン\n"
+"* `refreshJwt`：期限が長く、アクセストークンを更新するためだけに使用されるリフレッシュトークン\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:143
 #, no-wrap
 msgid "The SDK stores this session information for you, and will include it in the headers of its requests.\n"
-msgstr ""
+msgstr "SDKはこのセッション情報を保存し、リクエストのヘッダに含めます。\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:150
@@ -325,3 +427,8 @@ msgid ""
 "- [OAuth spec](/specs/oauth)\n"
 "- [Permissions spec](/specs/permission)\n"
 msgstr ""
+"- [認証](/guides/auth)\n"
+"- [OAuthパターン](/guides/oauth-patterns)\n"
+"- [スコープ](/guides/scopes)\n"
+"- [OAuth仕様](/specs/oauth)\n"
+"- [権限仕様](/specs/permission)\n"

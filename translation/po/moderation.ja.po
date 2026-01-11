@@ -31,7 +31,7 @@ msgstr ""
 #: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
 #, no-wrap
 msgid "## Further Reading and Resources\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"further-reading-and-resources\">関連・参考資料</Heading>\n"
 
 #. type: Plain text
 #: src/guides/moderation/en.mdx:3
@@ -40,79 +40,89 @@ msgid ""
 "import {Container} from \"@/components/Container\"\n"
 "import moderation from \"./moderation.png\"\n"
 msgstr ""
+"import {Container} from \"@/components/Container\"\n"
+"import {Heading} from \"@/components/Heading\"\n"
+"import moderation from \"./moderation.png\"\n"
 
 #. type: Plain text
 #: src/guides/moderation/en.mdx:8
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "export const header = {\n"
 "  title: 'Moderation',\n"
 "  description: 'Moderation in the Atmosphere',\n"
 "}\n"
-msgstr "import {Heading} from '@/components/Heading' export const header = { title: 'プロトコルの概要', description: 'AT プロトコルの概要。', }"
+msgstr ""
+"export const header = {\n"
+"  title: 'モデレーション',\n"
+"  description: 'Atmosphereのモデレーション',\n"
+"}\n"
 
 #. type: Plain text
 #: src/guides/moderation/en.mdx:10
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## About moderation\n"
-msgstr "<Heading level={2} id=\"interoperation\">相互運用</Heading>"
+msgstr "<Heading level={2} id=\"about-moderation\">モデレーションについて</Heading>\n"
 
 #. type: Plain text
 #: src/guides/moderation/en.mdx:12
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "The AT Proto model is that *speech* and *reach* should be two separate layers, built to work with each other. The “speech” layer should remain permissive, distributing authority and designed to ensure everyone has a voice. The “reach” layer lives on top, built for flexibility and designed to scale. AT Proto moderation is implemented using [Labels](/guides/labels).\n"
-msgstr "Atproto のモデルでは、_スピーチ_ と _リーチ_ は 2 つの別々のレイヤーとして構築され、互いに連携するように構築されます。「スピーチ」レイヤーは、権限を分散し、誰もが発言権を持つように設計されている必要があります。「リーチ」レイヤーは、その上にあり、柔軟性と拡張性を考慮して構築されています。"
+msgstr "ATプロトコルのモデルでは、*スピーチ*と*リーチ*は別個の層として設計され、相互に連携して動作します。スピーチ層は寛容で権限を分散し、誰もが発言できることを重視します。リーチ層はその上に位置し、柔軟性とスケーラビリティのために設計されています。ATプロトコルのモデレーションは [ラベル](/guides/labels) を用いて実装されています。\n"
 
 #. type: Plain text
 #: src/guides/moderation/en.mdx:16
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<Container>\n"
 "  <Image src={moderation} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
 "</Container>\n"
-msgstr "<Container> <Image src={image1} alt=\"\" className=\"w-full dark:invert max-w-md mx-auto\" /> </Container>"
+msgstr ""
+"<Container>\n"
+"  <Image src={moderation} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
+"</Container>\n"
 
 #. type: Plain text
 #: src/guides/moderation/en.mdx:18
 #, no-wrap
 msgid "Our moderation architecture is provided by two services: [*Osprey*](#algorithmic-moderation), an event stream decisions engine and analysis UI designed to investigate and take automatic action; and [*Ozone*](#using-ozone), a labeling service and web frontend for making moderation decisions.\n"
-msgstr ""
+msgstr "私たちのモデレーションアーキテクチャは2つのサービスによって提供されています。[*Osprey*](#algorithmic-moderation)はイベントストリームの判定エンジンと分析用UIで、自動的な調査と措置の実行を目的としています。[*Ozone*](#using-ozone)はラベリングサービスとモデレーション判断のためのウェブフロントエンドです。\n"
 
 #. type: Plain text
 #: src/guides/moderation/en.mdx:20
 #, no-wrap
 msgid "[Read more](https://docs.bsky.app/blog/blueskys-moderation-architecture) about moderation on our blog.\n"
-msgstr ""
+msgstr "当社のブログでモデレーションに関する[詳細な解説](https://docs.bsky.app/blog/blueskys-moderation-architecture)をご覧ください。\n"
 
 #. type: Plain text
 #: src/guides/moderation/en.mdx:22
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Algorithmic moderation\n"
-msgstr "<Heading level={2} id=\"algorithmic-choice\">アルゴリズムの選択</Heading>"
+msgstr "<Heading level={2} id=\"algorithmic-moderation\">アルゴリズムによるモデレーション</Heading>\n"
 
 #. type: Plain text
 #: src/guides/moderation/en.mdx:24
 #, no-wrap
 msgid "[Osprey](https://github.com/bluesky-social/osprey-atproto) is an event stream decisions engine and analysis UI designed to investigate and take automatic action, to enable sustainable at-scale moderation. It makes use of [Kafka](https://kafka.apache.org/) with its own [rules engine](https://github.com/roostorg/osprey/blob/main/docs/rules.md).\n"
-msgstr ""
+msgstr "[Osprey](https://github.com/bluesky-social/osprey-atproto)は、持続可能な大規模モデレーションを可能にするために調査と自動対応を行う、イベントストリーム判定エンジンおよび分析用UIです。内部で[Kafka](https://kafka.apache.org/)と独自の[ルールエンジン](https://github.com/roostorg/osprey/blob/main/docs/rules.md)を利用します。\n"
 
 #. type: Plain text
 #: src/guides/moderation/en.mdx:26
 #, no-wrap
 msgid "From another perspective, Osprey is a Python library for processing actions through human written rules and outputting labels, webhooks back to an API and other sinks. It evaluates events using structured logic, user-defined functions, and external signals to assign labels, verdicts, and actions. It can make use of fine-tuned LLMs and other classifiers that expose their own web endpoints to Osprey. LLMs can be a useful tool for surfacing moderation reports; these reports can be acted on automatically and/or manually depending on your configuration. \n"
-msgstr ""
+msgstr "別の見方をすれば、Ospreyは人間が記述したルールを通じてアクションを処理し、ラベルを発行したりAPIへのwebhookを出力したりするためのPythonライブラリです。構造化されたロジック、ユーザー定義関数、外部シグナルを用いてイベントを評価し、ラベル・判定・アクションを割り当てます。微調整されたLLMや他の分類器をOspreyのエンドポイントとして利用することも可能で、モデレーション報告の抽出に役立ちます。これらの報告は設定に従って自動または手動で処理されます。 \n"
 
 #. type: Plain text
 #: src/guides/moderation/en.mdx:28
 #, no-wrap
 msgid "Refer to the [Osprey](https://github.com/bluesky-social/osprey-atproto) Github repository for further guidance.\n"
-msgstr ""
+msgstr "詳細については[Osprey](https://github.com/bluesky-social/osprey-atproto)のGitHubリポジトリを参照してください。\n"
 
 #. type: Plain text
 #: src/guides/moderation/en.mdx:32
 #, no-wrap
 msgid "Learn all about the types and format of moderation [labels](/guides/labels). Then, you can [subscribe](/guides/subscriptions) to moderation labelers to have their labels applied in your application. You can also [create your own labeler](/guides/creating-a-labeler) to publish labels. If you need to moderate content manually, you can use [Ozone](/guides/using-ozone) as a web interface for labeling content.\n"
-msgstr ""
+msgstr "モデレーション用[ラベル](/guides/labels)の種類と形式について詳しく学んでください。その後、モデレーションラベラーを[登録](/guides/subscriptions)して、アプリにラベルを適用できます。また、ラベルを発行するために[独自のラベラーを作成](/guides/creating-a-labeler)することも可能です。コンテンツを手動でモデレーションする必要がある場合は、ラベリング用のウェブインターフェースとして[Ozone](/guides/using-ozone)を使用できます。\n"
 
 #. type: Plain text
 #: src/guides/moderation/en.mdx:37
@@ -124,3 +134,8 @@ msgid ""
 "- [Label Specs](/specs/label)\n"
 "- [Using Ozone](/guides/using-ozone)\n"
 msgstr ""
+"- [ラベル](/guides/labels)\n"
+"- [ラベラーの作成](/guides/creating-a-labeler)\n"
+"- [サブスクリプション](/guides/subscriptions)\n"
+"- [ラベル仕様](/specs/label)\n"
+"- [Ozoneの使用](/guides/using-ozone)\n"

@@ -31,7 +31,7 @@ msgstr ""
 #: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
 #, no-wrap
 msgid "## Further Reading and Resources\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"further-reading-and-resources\">関連・参考資料</Heading>\n"
 
 #. type: Plain text
 #: src/guides/scopes/en.mdx:3
@@ -40,28 +40,35 @@ msgid ""
 "import {Container} from \"@/components/Container\"\n"
 "import oauthdomain from \"./oauth-domain.jpg\"\n"
 msgstr ""
+"import {Container} from \"@/components/Container\"\n"
+"import {Heading} from \"@/components/Heading\"\n"
+"import oauthdomain from \"./oauth-domain.jpg\"\n"
 
 #. type: Plain text
 #: src/guides/scopes/en.mdx:8
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "export const header = {\n"
 "  title: 'Scopes',\n"
 "  description: 'OAuth permission scopes and sets',\n"
 "}\n"
-msgstr "export const header = { title: 'Identity', description: 'AT プロトコルがユーザー ID を処理する方法。', }"
+msgstr ""
+"export const header = {\n"
+"  title: 'スコープ',\n"
+"  description: 'OAuthの権限と権限セット',\n"
+"}\n"
 
 #. type: Plain text
 #: src/guides/scopes/en.mdx:10
 #, no-wrap
 msgid "## Implementing OAuth Scopes\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"implementing-oauth-scopes\">OAuthスコープの実装</Heading>\n"
 
 #. type: Plain text
 #: src/guides/scopes/en.mdx:12
 #, no-wrap
 msgid "The OAuth flow requires permission \"scopes\" which describe the level of access granted with the session. For now, granular permissions have been implemented on the `bsky.social` hosting service, and the [self-hosted PDS distribution](/guides/self-hosting). Work on permission sets (including lexicon resolution) is in progress. Developers may start to implement more granular permissions -- for example, apps only asking for permissions to specific record types or API endpoints. We expect most apps to use the higher-level \"permission sets\" when they become available, which will provide more accessible language about the permissions being granted.\n"
-msgstr ""
+msgstr "OAuthフローはセッションで付与されるアクセスのレベルを表す「スコープ」を必要とします。現時点では、権限の粒度は`bsky.social`ホスティングサービスや[セルフホスト型PDSディストリビューション](/guides/self-hosting)上に実装されています。権限セットに関する作業（レキシコン解決を含む）は進行中です。開発者はより細かい権限（例えば特定のレコード種別やAPIエンドポイントの権限のみを要求するアプリ）を実装できるようになるでしょう。多くのアプリは、利用できるようになったら、より分かりやすい言語で権限を示す高レベルの「権限セット」を使用すると予想されます。\n"
 
 #. type: Plain text
 #: src/guides/scopes/en.mdx:15
@@ -70,6 +77,8 @@ msgid ""
 "The minimal set of OAuth permissions that a third-party AT application should request to sign in with Bluesky are:\n"
 "- `atproto`\n"
 msgstr ""
+"BlueskyでサインインするためにサードパーティのATアプリが要求すべき最小限のOAuth権限は次のとおりです。\n"
+"- `atproto`\n"
 
 #. type: Plain text
 #: src/guides/scopes/en.mdx:18
@@ -78,6 +87,8 @@ msgid ""
 "If you are making use of Bluesky profile information, you may also need:\n"
 "- `rpc:app.bsky.actor.getProfile?aud=did:web:api.bsky.app#bsky_appview`\n"
 msgstr ""
+"Blueskyのプロフィール情報を利用したいなら、以下も必要になることがあります。\n"
+"- `rpc:app.bsky.actor.getProfile?aud=did:web:api.bsky.app#bsky_appview`\n"
 
 #. type: Plain text
 #: src/guides/scopes/en.mdx:21
@@ -86,24 +97,26 @@ msgid ""
 "If you need to link any uploaded images or videos to the records (posts) you create, you will also need:\n"
 "- `blob:*/*`\n"
 msgstr ""
+"アップロードした画像や動画を作成するレコード（投稿）に紐づける必要がある場合、以下も必要です。\n"
+"- `blob:*/*`\n"
 
 #. type: Plain text
 #: src/guides/scopes/en.mdx:23
 #, no-wrap
 msgid "The ergonomics of OAuth scopes in AT Protocol are still evolving. This minimal set is designed to provide a known-good starting point for app developers that does not grant unnecessary permissions. While we finalize granular permission scopes, we are also supporting a set of temporary coarse-grained scopes called the \"transition scopes\". There are currently no plans to deprecate either the transition scopes or the use of App Passwords. For an overview of these transition scopes, and more in-depth information on OAuth, see [Authorization Scopes](/specs/oauth#authorization-scopes). For the granular permission scopes, see [Permissions](/specs/permission).\n"
-msgstr ""
+msgstr "ATプロトコルにおけるOAuthスコープの使い心地はまだ発展途上です。この最小セットは、不要な権限を与えずにアプリ開発者が使える出発点を提供するよう設計されています。詳細な権限スコープを最終決定するまで、暫定的な粗い粒度のスコープ（「移行スコープ」）もサポートしています。現時点では、移行スコープまたはアプリパスワードの使用を廃止する計画はありません。これら移行スコープの概要やOAuthの詳細については[認可スコープ](/specs/oauth#authorization-scopes)を、細かな権限スコープについては[権限](/specs/permission)を参照してください。\n"
 
 #. type: Plain text
 #: src/guides/scopes/en.mdx:25
 #, no-wrap
 msgid "## Clients\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"clients\">クライアント</Heading>\n"
 
 #. type: Plain text
 #: src/guides/scopes/en.mdx:27
 #, no-wrap
 msgid "OAuth client software is identified by a globally unique `client_id`. Distinct variants of client software may have distinct `client_id` values; for example the browser app and Android (mobile OS) variants of the same software might have different `client_id` values. The `client_id` must be a fully-qualified web URL from which the client-metadata JSON document can be fetched. For example, `https://app.example.com/oauth-client-metadata.json`. Some more about the `client_id`:\n"
-msgstr ""
+msgstr "OAuthクライアントソフトウェアはグローバルに一意な`client_id`で識別されます。クライアントソフトウェアの各バリアントは異なる`client_id`を持つことがあります。例えば同じソフトウェアのブラウザ版とAndroid（モバイル）版は異なる`client_id`を持つかもしれません。`client_id`は、クライアントメタデータJSONドキュメントが取得できる完全修飾のウェブURLでなければなりません。例えば`https://app.example.com/oauth-client-metadata.json`のようなものです。`client_id`に関する追加情報：\n"
 
 #. type: Plain text
 #: src/guides/scopes/en.mdx:31
@@ -113,6 +126,9 @@ msgid ""
 "- the schema must be `https://`, and there must not be a port number included. Note that there is a [special exception](/specs/oauth#localhost-client-development) for `http://localhost` `client_id` values for development.\n"
 "- the path does not need to include `oauth-client-metadata.json`, but it is helpful convention.\n"
 msgstr ""
+"- W3CのURL仕様に従った正しい形式のURLである必要があります\n"
+"- スキーマは`https://`でなければならず、ポート番号を含めてはいけません。開発用には`http://localhost`の`client_id`に対する[特別な例外](/specs/oauth#localhost-client-development)がある点に注意してください。\n"
+"- パスに`oauth-client-metadata.json`を含める必要はありませんが、慣例としては役立ちます。\n"
 
 #. type: Plain text
 #: src/guides/scopes/en.mdx:35
@@ -122,27 +138,33 @@ msgid ""
 "If you have been using `client-metadata.json` rather than `oauth-client-metadata.json`, you can make this change to have your domain display on the auth flow page, rather than a URL string.\n"
 "</Note>\n"
 msgstr ""
+"<Note>\n"
+"もし`oauth-client-metadata.json`の代わりに`client-metadata.json`を使用している場合、この変更により認可フローのページでURL文字列ではなくドメインを表示させることができます。\n"
+"</Note>\n"
 
 #. type: Plain text
 #: src/guides/scopes/en.mdx:39
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "<Container>\n"
 "  <Image src={oauthdomain} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
 "</Container>\n"
-msgstr "<Container> <Image src={image1} alt=\"\" className=\"w-full dark:invert max-w-md mx-auto\" /> </Container>"
+msgstr ""
+"<Container>\n"
+"  <Image src={oauthdomain} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
+"</Container>\n"
 
 #. type: Plain text
 #: src/guides/scopes/en.mdx:41
 #, no-wrap
 msgid "The auth flow page will display all the relevent permissions being granted. This is true both for apps using [granular permissions](/specs/permission), and for those using the [transitional](/specs/oauth#authorization-scopes) OAuth scopes.\n"
-msgstr ""
+msgstr "認可フローのページは付与される関連権限をすべて表示します。これは[細分化されたスコープ](/specs/permission)を使うアプリでも、[移行スコープ](/specs/oauth#authorization-scopes)を使うものでも同様です。\n"
 
 #. type: Plain text
 #: src/guides/scopes/en.mdx:43
 #, no-wrap
 msgid "Client Apps should be sure to check which auth scopes were actually approved during the auth flow. In particular, when requesting permission to read an account email address (`account:email`), the user might decline that permission while granting others. In theory, any individual permission might be denied while the overall request is granted.\n"
-msgstr ""
+msgstr "クライアントアプリは認可フロー中に実際に承認された認可スコープを必ず確認してください。特にアカウントのメールアドレス読み取り権限（`account:email`）を要求した場合、ユーザーはその権限だけを拒否して他の権限を承認する可能性があります。理論上は個別の権限が拒否された上で、リクエスト全体としては承認されることがあり得ます。\n"
 
 #. type: Plain text
 #: src/guides/scopes/en.mdx:50
@@ -154,3 +176,8 @@ msgid ""
 "- [OAuth spec](/specs/oauth)\n"
 "- [Permissions spec](/specs/permission)\n"
 msgstr ""
+"- [認証](/guides/auth)\n"
+"- [SDKによる認証](/guides/sdk-auth)\n"
+"- [OAuthパターン](/guides/oauth-patterns)\n"
+"- [OAuth仕様](/specs/oauth)\n"
+"- [権限仕様](/specs/permission)\n"

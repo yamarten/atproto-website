@@ -18,32 +18,39 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/lexicon-style-guide/en.mdx:6
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "export const header = {\n"
 "  title: 'Lexicon Style Guide',\n"
 "  description:\n"
 "    'A style guide for creating new ATProto Lexicons',\n"
 "}\n"
-msgstr "export const header = { title: '個人データ リポジトリ', description: 'AT プロトコル リポジトリ構造のガイド。', }"
+msgstr ""
+"import {Heading} from '@/components/Heading'\n"
+"\n"
+"export const header = {\n"
+"  title: 'Lexiconスタイルガイド',\n"
+"  description:\n"
+"    'ATプロトコルのLexicon作成のためのスタイルガイド',\n"
+"}\n"
 
 #. type: Plain text
 #: src/guides/lexicon-style-guide/en.mdx:8
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Overview\n"
-msgstr "# プロトコルの概要"
+msgstr "<Heading level={2} id=\"overview\">概要</Heading>\n"
 
 #. type: Plain text
 #: src/guides/lexicon-style-guide/en.mdx:10
 #, no-wrap
 msgid "Here are some recommended conventions and best practices for designing Lexicon schemas.\n"
-msgstr ""
+msgstr "Lexiconスキーマの設計に関する推奨される慣例とベストプラクティスを紹介します。\n"
 
 #. type: Plain text
 #: src/guides/lexicon-style-guide/en.mdx:12
 #, no-wrap
 msgid "Name casing conventions:\n"
-msgstr ""
+msgstr "名前の大文字小文字の慣例\n"
 
 #. type: Plain text
 #: src/guides/lexicon-style-guide/en.mdx:16
@@ -53,12 +60,15 @@ msgid ""
 "- API error names: `UpperCamelCase`\n"
 "- Fixed strings (eg `knownValues`): `kebab-case`\n"
 msgstr ""
+"- スキーマと属性：スキーマと名前には`lowerCamelCase`を使用してください（`UpperCamelCase`、`snake_case`、`ALL_CAPS`などではなく）。\n"
+"- APIエラー名：`UpperCamelCase`\n"
+"- 文字列定数（例：`knownValues`）：`kebab-case`\n"
 
 #. type: Plain text
 #: src/guides/lexicon-style-guide/en.mdx:18
 #, no-wrap
 msgid "Acceptable characters:\n"
-msgstr ""
+msgstr "許可される文字\n"
 
 #. type: Plain text
 #: src/guides/lexicon-style-guide/en.mdx:22
@@ -68,12 +78,15 @@ msgid ""
 "    - Exceptions may be justifiable in some situations, such as preservation of names in existing external schemas\n"
 "    - Data objects should never contain schema-specified field names starting with `$` at any level of nesting; these are reserved for future protocol-level extensions\n"
 msgstr ""
+"- フィールド名はスキーマ名（NSIDの名前セグメント）と同じ文字セットに従う必要があります。すなわち、ASCII英数字、最初の文字は数字ではない、ハイフンなし、大文字小文字を区別\n"
+"    - 既存の外部スキーマの名前を保持する場合など、例外が正当化されることもあります\n"
+"    - データオブジェクトはネストのいかなるレベルでも`$`で始まるフィールド名を含むようなスキーマを指定してはいけません。これらは将来のプロトコルレベルの拡張用に予約されています。\n"
 
 #. type: Plain text
 #: src/guides/lexicon-style-guide/en.mdx:24
 #, no-wrap
 msgid "## Naming conventions\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"naming-conventions\">命名規則</Heading>\n"
 
 #. type: Plain text
 #: src/guides/lexicon-style-guide/en.mdx:38
@@ -93,12 +106,25 @@ msgid ""
 "- Avoid generic names which conflict with popular programming language conventions\n"
 "    - eg, avoid using `default` or `length` as schema names\n"
 msgstr ""
+"- `record`スキーマには単数形の名詞を使用してください\n"
+"    - 例：`post`、`like`、`profile`\n"
+"- `query`と`procedure`エンドポイントには動詞と名詞を使用してください\n"
+"    - 例：`getPost`、`listLikes`、`putProfile`\n"
+"    - `query`エンドポイントの一般的な動詞：`get`、`list`、`search`（全文検索用）、`query`（柔軟なマッチングやフィルタリング用）\n"
+"    - `procedure`エンドポイントの一般的な動詞：`create`、`update`、`delete`、`upsert`、`put`\n"
+"- `subscription`には「subscribe-複数形名詞」を使用してください\n"
+"    - 例：`subscribeLabels`\n"
+"- `permission-set`スキーマの命名規則はまだ確立されていませんが、おそらく「auth」プレフィックスが付くでしょう（例：`authBasic`）\n"
+"-  エンドポイントが実験的、不安定、または相互運用を意図していない場合は、NSID名に示してください\n"
+"    - 例：NSIDの階層に`.temp.`または`.unspecced.`を含める\n"
+"- 一般的なプログラミング言語の慣例と衝突する一般的な名前を避けてください\n"
+"    - 例：スキーマ名に`default`や`length`を使わない\n"
 
 #. type: Plain text
 #: src/guides/lexicon-style-guide/en.mdx:40
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Documentation\n"
-msgstr "<Heading level={2} id=\"collection\">コレクション</Heading>"
+msgstr "<Heading level={2} id=\"documentation\">ドキュメンテーション</Heading>\n"
 
 #. type: Plain text
 #: src/guides/lexicon-style-guide/en.mdx:44
@@ -108,12 +134,15 @@ msgid ""
 "    - for API endpoints, mention in the description if authentication is required, and whether responses will be personalized if authentication is optional\n"
 "- Add descriptions to potentially ambiguous fields and properties. This is particularly important for fields with generic names like `uri` or `cid`: CID of what?\n"
 msgstr ""
+"- すべての`main`スキーマ定義（レコード、APIエンドポイントなど）にdescriptionを追加してください\n"
+"    - APIエンドポイントの場合、descriptionに認証が必須かどうか、認証がオプションの場合にレスポンスがパーソナライズされるかどうかを記載してください\n"
+"- 曖昧性のあるフィールドとプロパティにdescriptionを追加してください。これは`uri`や`cid`のような一般的な名前を持つフィールドに特に重要です（何のCIDですか？）。\n"
 
 #. type: Plain text
 #: src/guides/lexicon-style-guide/en.mdx:46
 #, no-wrap
 msgid "NSID namespace grouping:\n"
-msgstr ""
+msgstr "NSID名前空間グループ化\n"
 
 #. type: Plain text
 #: src/guides/lexicon-style-guide/en.mdx:56
@@ -129,12 +158,21 @@ msgid ""
 "    - eg `app.bsky.feed.post#main` vs `app.bsky.feed.post.main`, or `com.example.record#foo` and `com.example.record.foo`\n"
 "    - or defining both `app.bsky.feed` (as a record) and `app.bsky.feed.post` (with `app.bsky.feed` as a group)\n"
 msgstr ""
+"- 多くのアプリケーションやプロジェクトは複数の異なる機能を持つため、どのタイプのスキーマもNSIDの階層でグループを表現できます\n"
+"    - 例：`app.bsky.feed.*`、`app.bsky.graph.*`\n"
+"- 非常に単純なアプリケーションであれば、すべてのエンドポイントを単一のNSIDグループに含めることができます-\n"
+"-  同じ名前空間内の複数のスキーマまたはサードパーティによって再利用される可能性がある定義には、`.defs`スキーマを使用してください\n"
+"    - 例：`app.bsky.feed.defs`\n"
+"    - 個別のスキーマファイルに切り出すと、他のスキーマファイルの廃止や削除が再利用に影響しなくなります\n"
+"- グループ、名前、および定義間の競合や混同を避けてください\n"
+"    - 例：`app.bsky.feed.post#main`に対する`app.bsky.feed.post.main`や、`com.example.record#foo`と`com.example.record.foo`の共存\n"
+"    - または`app.bsky.feed`（レコード）と`app.bsky.feed.post`（`app.bsky.feed`はグループ）の両方を定義すること\n"
 
 #. type: Plain text
 #: src/guides/lexicon-style-guide/en.mdx:58
 #, no-wrap
 msgid "## Other guidelines\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"other-guidelines\">その他のガイドライン</Heading>\n"
 
 #. type: Plain text
 #: src/guides/lexicon-style-guide/en.mdx:79
@@ -161,36 +199,56 @@ msgid ""
 "    - In most situations, including versioned references between records, the string format is recommended.\n"
 "    - Binary encoding is mostly used for protocol-level mechanisms, such as the firehose.\n"
 msgstr ""
+"- 使えるなら文字列フィールドの形式（format）を指定してください\n"
+"- レコード内の文字列フィールドは、形式指定がない場合、ほとんどにおいて最大長を持つべきです\n"
+"    - 形式と長さ制限で重複する指定をしないでください\n"
+"    - 意味的または視覚的な理由で文字列の長さを制限する場合、書記素制限を使用して言語間である程度の一貫性を確保するべきです。この場合、データサイズ（バイト）の制限も追加してください。1書記素あたり10〜20バイトの比率が推奨されます。\n"
+"- レコードにおける文字列型とバイト型は、データサイズ制約が強い用途向けです。より大きなサイズのテキストまたはバイナリデータの場合、blob参照を使用してください。これには、長文テキストや構造化データも含まれます。\n"
+"- 列挙セットは「閉じている」ため、スキーマ進化ルールを破らずに更新または拡張することはできません。このため、ほとんどの場合で避けるべきです。\n"
+"    - 文字列の場合、`knownValues`はより柔軟な代替案を提供します\n"
+"- 文字列の`knownValues`には単純な文字列定数が含まれるか、`token`へのスキーマ参照が含まれる場合があります（例：`\"com.example.defs#tokenOne\"`という文字列）\n"
+"    - トークンは拡張メカニズムを提供し、主観的な定義を持つ値や時間とともに拡張される可能性のある値に適しています\n"
+"    - 例えば`com.atproto.moderation.defs#reasonType`と`com.atproto.sync.defs#hostStatus`を見比べると、前者の方が柔軟で、後者はより制約が強いです\n"
+"- `com.atproto.repo.strongRef`（レコードへのバージョン指定参照）や`com.atproto.label.defs#label`（配列内のハイドレートされたラベル）などの再利用可能な定義を活用してください\n"
+"- アカウント識別子を引数（例：クエリパラメータ）として受け取るAPIエンドポイントは、ハンドルしかない場合でもクライアントが`resolveHandle`を呼び出さなくていいように、`at-identifier`を使用するべきです\n"
+"- レコードスキーマは、他のアカウントへのリファレンスに対して、常にハンドルではなく永続的な識別子（DID）を使用すべきです\n"
+"- APIエンドポイントは、意味のあるレスポンスデータがない場合でも、常に`encoding`付きの`output`を指定すべきです\n"
+"    - 良いデフォルトは`application/json`で、スキーマはプロパティ定義のないオブジェクトです\n"
+"- オプションの`boolean`フィールドは、`false`がデフォルト値および期待値となるように表現すべきです\n"
+"    - 例えば、エンドポイントが「foo」と「bar」の混合を返すことができ、一般的な動作は「foo」を含めるが「bar」を含めない場合、制御パラメータは`excludeFoo`（デフォルト`false`）と`includeBar`（デフォルト`false`）という名前にして、`excludeBar`（デフォルト`true`）は使いません\n"
+"- コンテンツハッシュ（CID）は文字列型の形式またはバイナリエンコーディング（`cid-link`）で表現できます\n"
+"    - レコード間のバージョン付き参照を含むほとんどの状況では、文字列形式が推奨されます。\n"
+"    - バイナリエンコーディングは主にfirehoseなどのプロトコルレベルのメカニズムに使用されます。\n"
 
 #. type: Plain text
 #: src/guides/lexicon-style-guide/en.mdx:81
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "## Lexicon evolution\n"
-msgstr "<Heading level={2} id=\"lexicon\">Lexicon</Heading>"
+msgstr "<Heading level={2} id=\"lexicon-evolition\">Lexiconの進化</Heading>\n"
 
 #. type: Plain text
 #: src/guides/lexicon-style-guide/en.mdx:83
 #, no-wrap
 msgid "All Lexcions should be flexible to extension and evolution over time, without breaking the Lexicon schema evolution rules. This is particularly true for record schemas. Given the distributed storage model of atproto, developers do not have a reliable mechanism to update all data records in the network. Extensions could come from the original designer, or other developers and projects.\n"
-msgstr ""
+msgstr "すべてのLexiconはスキーマの進化ルールを破らない範囲で拡張と進化に柔軟であるべきです。これは特にレコードスキーマに当てはまります。atprotoの分散ストレージモデルを考えると、開発者はネットワーク内のすべてのデータレコードを更新するための確実なメカニズムを持ちません。拡張は元の設計者または他の開発者やプロジェクトから来ることがあります。\n"
 
 #. type: Plain text
 #: src/guides/lexicon-style-guide/en.mdx:85
 #, no-wrap
 msgid "Experimental schemas and projects can use variant NSIDs (eg, including `.temp.` in the name hierarchy) to develop in the live network without committing to a stable record data schemas.\n"
-msgstr ""
+msgstr "実験的なスキーマとプロジェクトは、バリアントNSID（例：名前の階層に`.temp.`を含める）を使用することで、安定したレコードデータスキーマにコミットすることなく、動作中のネットワークで開発できます。\n"
 
 #. type: Plain text
 #: src/guides/lexicon-style-guide/en.mdx:87
 #, no-wrap
 msgid "Major non-backwards-compatible schema changes are possible by declaring a new schema. The current naming convention is to append “V2” to the original name (or “V3”, etc).\n"
-msgstr ""
+msgstr "新しいスキーマを宣言することで、大規模な後方互換性のないスキーマ変更が可能です。現在の命名規則は、元の名前に「V2」（または「V3」など）を追加することです。\n"
 
 #. type: Plain text
 #: src/guides/lexicon-style-guide/en.mdx:89
 #, no-wrap
 msgid "Design recommendations to make schemas flexible to future evolution and extension:\n"
-msgstr ""
+msgstr "スキーマを将来の進化と拡張に柔軟にするための設計推奨事項\n"
 
 #. type: Plain text
 #: src/guides/lexicon-style-guide/en.mdx:97
@@ -204,12 +262,19 @@ msgid ""
 "- make unions “open” in almost all situations, to allow future addition of types or values\n"
 "    - open unions can be an extension mechanism for third parties to include self-defined data types\n"
 msgstr ""
+"- データフィールドまたはAPIパラメータが機能に真に必須でない限り、`required`としてマークしないでください\n"
+"    - `required`フィールドは進化ルールの下では、オプション化または廃止することはできません\n"
+"- 後方互換性を変更したり、V2スキーマを使ったりせずに、スキーマに新しい`optional`フィールドを追加できますが、新しい`required`フィールドを追加することはできません\n"
+"- 配列でアトミックデータ型の代わりに、単一の要素/フィールドを含むオブジェクト型を使用して、将来追加のコンテキストを含めることを許可してください\n"
+"    - 例えば、アカウント（DID）を一覧するAPIレスポンスでは、文字列の配列の代わりに、DID用の`account`フィールドを持つオブジェクトの配列を返してください\n"
+"- ほぼすべての状況で共用体を「open」にして、将来的な型や値の追加を許可してください\n"
+"    - オープンな共用体は、サードパーティが自己定義されたデータ型を含めるための拡張メカニズムです\n"
 
 #. type: Plain text
 #: src/guides/lexicon-style-guide/en.mdx:99
 #, no-wrap
 msgid "## Design Patterns\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"desugn-paterns\">デザインパターン</Heading>\n"
 
 #. type: Plain text
 #: src/guides/lexicon-style-guide/en.mdx:127
@@ -244,3 +309,31 @@ msgid ""
 "    - Backfill services can enumerate all accounts in the network with the given signaling record, and also process deletion of that record as deactivation of that modality.\n"
 "    - This design pattern is strongly recommended for new app modalities.\n"
 msgstr ""
+"- `query` APIエンドポイントのページネーションの基本的な慣例\n"
+"    - クエリパラメータにはオプションの`limit`（整数）とオプションの`cursor`（文字列）が含まれます\n"
+"    - 出力のボディには、オプションの`cursor`（文字列）と、必須のレスポンスオブジェクト配列（コンテキスト固有の複数形フィールド名を持つ）が含まれます\n"
+"    - クライアントによる最初のリクエストでは`cursor`を定義しません。レスポンスに`cursor`が含まれている場合はより多くの結果が利用可能であり、クライアントは新しい`cursor`でクエリを再度実行して追加の結果を取得します\n"
+"    - `limit`値は上限であり、より多くの結果が利用可能だとしても、レスポンスには少ない（またはゼロの）結果が含まれる可能性があります。ページネーションの完了を示すのは、レスポンスに`cursor`がないことです。レスポンスからは、削除が示されている場合や他の方法でフィルタリングされた場合、項目が取り除かれることがあります。\n"
+"- 「シーケンシング」とバックフィルカーソルをサポートするサブスクリプションエンドポイントの慣例\n"
+"    - エンドポイントにはオプションの`cursor`クエリパラメータ（整数）があります\n"
+"    - すべてのコアメッセージタイプに`seq`フィールド（整数）が含まれます。メッセージの`seq`は単調に増加しますが、ギャップがある場合があります。\n"
+"    - `cursor`が提供されない場合、サーバーはその時点以降のメッセージを返し始めます\n"
+"    - `cursor`が提供されている場合、サーバーは一致する`seq`で始まる履歴メッセージを返し、現在のストリームまで続きます\n"
+"    - `cursor`が未来を指す場合（現在のシーケンスより高い）、エラーが返され、接続が閉じられます\n"
+"    - `cursor`が最も古い利用可能なメッセージより古い場合（または0の場合）、サーバーは`OutdatedCursor`という名前のメッセージを返した後、最も古い利用可能なものからメッセージを返します\n"
+"-  APIレスポンスのよくあるパターンは、データレコードの「ハイドレートされたビュー」を含めることです。例えば、アカウントのプロフィールを表示する場合、レスポンスにはメディアファイルのCDNまたはサムネイルURL、モデレーションラベル、グローバルな集計値、およびビューア固有のソーシャルグラフコンテキストが含まれる場合があります。\n"
+"    - 詳細ビューの場合、フィールドのスーパーセットを持つ新しいスキーマを定義する代わりに、元のレコードをそのまま含めることがベストプラクティスです。これはメンテナンスが簡単で（フィールドの更新漏れはありえません）、スキーマ外の拡張データまで含まれることを保証します。\n"
+"    - 閲覧者依存のメタデータはオプションであり、descriptionで示されているか、サブオブジェクトの下にグループ化される必要があります。これにより、スキーマが「公開」ビューと「ログイン」ビューの間で再利用可能になり、どの情報がいつ利用可能かが明確になります。\n"
+"    - アプリケーション開発者にとって有用なパターンは、レコードへの参照（例：AT URIまたは同等のもの、および複数の参照）を受け入れるAPIエンドポイントがあり、ハイドレートされたデータオブジェクトを返すことです。\n"
+"- `app.bsky.richtext.facet`システムは、フル機能のマークアップ言語よりも単純で安全な方法で短い文字列を装飾するために使用できます\n"
+"    - 詳細については、[『Why RichText facets in Bluesky』](https://www.pfrazee.com/blog/why-facets)を参照してください\n"
+"    - この機能の型システムは、追加の型で拡張できるオープンな共用体です\n"
+"    - Markdownのような強力なシステムは、長文テキストに適しています\n"
+"- レコードを拡張または補足するための一つのパターンは、同じリポジトリに同じレコードキーで異なる型（コレクション）を持つ「サイドカー」レコードを定義することです。\n"
+"    - サイドカーレコードは、元のLexicon設計者または別の開発者によって定義および管理できます。\n"
+"    - サイドカーレコードは、元のレコードへの強い参照を壊さずに更新（変更）できます。\n"
+"    - サイドカーコンテキストはAPIレスポンスに含めることができます。\n"
+"- atprotoアカウントはネットワーク内のあらゆるアプリケーションと柔軟に使用できるため、どのアカウントが特定のアプリケーションに参加しているかは曖昧な場合があります。モダリティを示す既知の代表的なレコード型があり、クライアントが活動中のアカウントにそのようなレコードを作成するなら、これを明確にすることができます。このレコードを削除することで、ユーザーがアクティブでなくなったと示せます。レコードの既知インスタンスが唯一（固定レコードキー）である場合に、この手法は特に機能します。\n"
+"    - 例えば、アプリ固有の「プロフィール」または「宣言」レコードは、たとえ空であっても存在していれば、アカウントが関連アプリに一度はログインしたことを示すことができます。\n"
+"    - バックフィルサービスは、指定されたシグナリングレコードを持つネットワーク内のすべてのアカウントを列挙し、そのレコードの削除を非アクティブ化として処理できます。\n"
+"    - このデザインパターンは、新規アプリのモダリティに強く推奨されます。\n"

@@ -31,7 +31,7 @@ msgstr ""
 #: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
 #, no-wrap
 msgid "## Further Reading and Resources\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"further-reading-and-resources\">関連・参考資料</Heading>\n"
 
 #. type: Plain text
 #: src/guides/oauth-patterns/en.mdx:2 src/guides/subscriptions/en.mdx:2
@@ -40,28 +40,34 @@ msgstr ""
 #, no-wrap
 msgid "import {Container} from \"@/components/Container\"\n"
 msgstr ""
+"import {Container} from \"@/components/Container\"\n"
+"import {Heading} from \"@/components/Heading\"\n"
 
 #. type: Plain text
 #: src/guides/labels/en.mdx:7
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "export const header = {\n"
 "  title: 'Labels',\n"
 "  description: 'All about moderation labels',\n"
 "}\n"
-msgstr "import {Heading} from '@/components/Heading' export const header = { title: 'FAQ', description: 'AT プロトコルに関するよくある質問。', }"
+msgstr ""
+"export const header = {\n"
+"  title: 'ラベル',\n"
+"  description: 'モデレーションラベルに関する全て',\n"
+"}\n"
 
 #. type: Plain text
 #: src/guides/labels/en.mdx:9
 #, no-wrap
 msgid "## About labels\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"about-labels\">ラベルとは</Heading>\n"
 
 #. type: Plain text
 #: src/guides/labels/en.mdx:11
 #, no-wrap
 msgid "Moderation in AT consists of multiple, stackable systems, including:\n"
-msgstr ""
+msgstr "ATのモデレーションは、以下を含む複数のスタッカブルなシステムで構成されています。\n"
 
 #. type: Plain text
 #: src/guides/labels/en.mdx:15
@@ -71,24 +77,27 @@ msgid ""
 "2. Labels placed on content by moderation services\n"
 "3. User controls such as mutes and blocks\n"
 msgstr ""
+"1. APIからコンテンツをフィルタリングする公開停止措置（takedown）\n"
+"2. モデレーションサービスによってコンテンツに紐付けられるラベル\n"
+"3. ミュートやブロックなどのユーザーコントロール\n"
 
 #. type: Plain text
 #: src/guides/labels/en.mdx:17
 #, no-wrap
 msgid "Developers building client applications should understand how to apply labels and user controls.\n"
-msgstr ""
+msgstr "クライアントアプリケーションを構築する開発者は、ラベルとユーザーコントロールの適用方法を理解する必要があります。\n"
 
 #. type: Plain text
 #: src/guides/labels/en.mdx:19
 #, no-wrap
 msgid "**Labels** are a form of metadata about any account or content in the AT ecosystem. Labels are published by *moderation services*, which are either hardcoded into the application or chosen by the user. They are attached to records in the responses under the `labels` key.\n"
-msgstr ""
+msgstr "**ラベル**は、ATエコシステム内のアカウントまたはコンテンツに関するメタデータ形式です。ラベルは*モデレーションサービス*によって公開され、アプリケーションにハードコードされているか、ユーザーによって選択されます。これらはレスポンスの`labels`フィールドでレコードに付与されます。\n"
 
 #. type: Plain text
 #: src/guides/labels/en.mdx:21
 #, no-wrap
 msgid "A label is published with the following information:\n"
-msgstr ""
+msgstr "ラベルは以下の情報と共に公開されます。\n"
 
 #. type: Plain text
 #: src/guides/labels/en.mdx:37
@@ -110,36 +119,51 @@ msgid ""
 "  cts: string\n"
 "}\n"
 msgstr ""
+"```markdown\n"
+"{\n"
+"  /** このラベルを作成したアクターのDID */\n"
+"  src: string\n"
+"  /** このラベルが適用されるレコード、リポジトリ（アカウント）、またはその他のリソースのAT URI */\n"
+"  uri: string\n"
+"  /** オプション：このラベルが適用される'uri'リソースのバージョンを指定するCID */\n"
+"  cid?: string\n"
+"  /** このラベルの値または種類を表す短い文字列名 */\n"
+"  val: string\n"
+"  /** trueの場合、これは以前のラベルを取り消す否定ラベル */\n"
+"  neg?: boolean\n"
+"  /** このラベルが作成されたときのタイムスタンプ */\n"
+"  cts: string\n"
+"}\n"
 
 #. type: Plain text
 #: src/guides/labels/en.mdx:39
 #, no-wrap
 msgid "```\n"
-msgstr ""
+msgstr "```\n"
 
 #. type: Plain text
 #: src/guides/labels/en.mdx:41
 #, no-wrap
 msgid "## **Label values**\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"label-values\">ラベル値</Heading>\n"
 
 #. type: Plain text
 #: src/guides/labels/en.mdx:43
 #, no-wrap
 msgid "The *value* of a label will determine its behavior. Some example label values are `porn`, `gore`, and `spam`.\n"
-msgstr ""
+msgstr "ラベルの*値*はその動作を決定します。ラベル値の例としては、`porn`、`gore`、`spam`があります。\n"
 
 #. type: Plain text
 #: src/guides/labels/en.mdx:45
 #, no-wrap
 msgid "Label values are strings. They currently must only be lowercase a-z or a dash character `^[a-z-]+$`. Some of them start with `!`, but that can only be used by global label values.\n"
-msgstr ""
+msgstr "ラベル値は文字列です。現在、小文字のa-zまたはダッシュ文字のみ（`^[a-z-]+$`）である必要があります。`!`で始まるものもいくつかありますが、グローバルラベル値でのみ使用できます。\n"
 
 #. type: Plain text
 #: src/guides/labels/en.mdx:47
 #, no-wrap
 msgid "Label values are interpreted by their definitions. Those definitions include these attributes:\n"
-msgstr ""
+msgstr "ラベル値はその定義によって解釈されます。定義には以下の属性が含まれます。\n"
 
 #. type: Plain text
 #: src/guides/labels/en.mdx:52
@@ -150,24 +174,28 @@ msgid ""
 "- `defaultSetting` which may be `hide` or `warn` or `ignore`\n"
 "- `adultOnly` which is boolean\n"
 msgstr ""
+"- `blurs`属性は`content`、`media`、または`none`になりえます\n"
+"- `severity`属性は`alert`、`inform`、または`none`になりえます\n"
+"- `defaultSetting`属性は`hide`、`warn`、または`ignore`になりえます\n"
+"- `adultOnly`属性はブール値です\n"
 
 #. type: Plain text
 #: src/guides/labels/en.mdx:54
 #, no-wrap
 msgid "There are other definition attributes, but they are only used by the global label values.\n"
-msgstr ""
+msgstr "他にも定義属性がありますが、グローバルラベル値にのみ使用されます。\n"
 
 #. type: Plain text
 #: src/guides/labels/en.mdx:56
 #, no-wrap
 msgid "## **Global label values**\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"global-label-values\">グローバルラベル値</Heading>\n"
 
 #. type: Plain text
 #: src/guides/labels/en.mdx:58
 #, no-wrap
 msgid "There are a few label values which are defined by the protocol. They are:\n"
-msgstr ""
+msgstr "プロトコルで定義されているいくつかのラベル値があります。\n"
 
 #. type: Plain text
 #: src/guides/labels/en.mdx:66
@@ -181,42 +209,48 @@ msgid ""
 "- `graphic-media` which behaves like `porn` but is for violence / gore.\n"
 "- `nudity` which puts a warning on images but isn't 18+ and defaults to ignore.\n"
 msgstr ""
+"- `!hide`はクリックできない汎用警告をコンテンツに置き、一覧からコンテンツをフィルタリングします。ユーザー設定の影響を受けません。\n"
+"- `!no-unauthenticated`はラベルを尊重するアプリケーションにおいて、ログインしていない利用者からコンテンツをアクセス不可にします。\n"
+"- `porn`は画像に警告を置き、ユーザーが18歳以上かつアダルトコンテンツを有効にしている場合にのみクリックできます。\n"
+"- `sexual`は`porn`と同じ挙動ですが、それほど過激ではない性的コンテンツに使われることを目的としています。\n"
+"- `graphic-media`は`porn`と同じ挙動ですが、暴力/流血のためのものです。\n"
+"- `nudity`は画像に警告を置きますが、18歳以上専用ではなく、デフォルトでは無視されます。\n"
 
 #. type: Plain text
 #: src/guides/labels/en.mdx:68
 #, no-wrap
 msgid "There are two reasons global label values exist.\n"
-msgstr ""
+msgstr "グローバルラベル値が存在する理由は2つあります。\n"
 
 #. type: Plain text
 #: src/guides/labels/en.mdx:70
 #, no-wrap
 msgid "The first is because only label values which are defined globally can be used as self-labels (ie set by a user who is not a Labeler). The porn, sexual, gore, nudity, and !no-unauthenticated labels are global for this reason.\n"
-msgstr ""
+msgstr "1番目の理由は、グローバルに定義されているラベル値のみがセルフラベルとして使用できる（つまり、ラベラーではないユーザーによって設定される）からです。porn、sexual、gore、nudity、および!no-unauthenticatedラベルはこの理由でグローバルになっています。\n"
 
 #. type: Plain text
 #: src/guides/labels/en.mdx:72
 #, no-wrap
 msgid "The second is because some special behaviors, like \"non-configurable\" and \"applies only to logged out users,\" cannot be applied to custom labels. The !hide, !warn, and !no-unauthenticated labels are global for this reason.\n"
-msgstr ""
+msgstr "2番目の理由は、「設定不可能」や「非ログインユーザーにのみ適用」などの特別な動作をカスタムラベルには規定できないからです。!hide、!warn、および!no-unauthenticatedラベルはこの理由でグローバルになっています。\n"
 
 #. type: Plain text
 #: src/guides/labels/en.mdx:74
 #, no-wrap
 msgid "## **Custom label values**\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"custom-label-values\">カスタムラベル値</Heading>\n"
 
 #. type: Plain text
 #: src/guides/labels/en.mdx:76
 #, no-wrap
 msgid "Labelers may define their own label values. Every Labeler has its own namespace of label values it defines. Custom definitions can override all global definitions for the defining Labeler except for the ones that start with a `!`, because those are reserved.\n"
-msgstr ""
+msgstr "ラベラーは独自のラベル値を定義できます。すべてのラベラーは固有のラベル値定義の名前空間を持ちます。カスタム定義は、定義したラベラーにおけるすべてのグローバルラベルの定義を上書きできます。ただし、`!`で始まるものは予約されており、上書きできません。\n"
 
 #. type: Plain text
 #: src/guides/labels/en.mdx:78
 #, no-wrap
 msgid "Since there are two behavior attributes (`blurs` and `severity`) with three values each, there are 9 possible behaviors for custom label values.\n"
-msgstr ""
+msgstr "2つの挙動属性（`blurs`と`severity`）があり、それぞれ3つの値を持っているため、カスタムラベル値には9つパターンの挙動があります。\n"
 
 #. type: Plain text
 #: src/guides/labels/en.mdx:90
@@ -234,12 +268,23 @@ msgid ""
 "| `none` | `inform` | Put a \"neutral\" information label on the content |\n"
 "| `none` | `none` | No visual effect |\n"
 msgstr ""
+"| **blurs** | **severity** | **説明** |\n"
+"| --- | --- | --- |\n"
+"| `content` | `alert` | コンテンツを非表示にして、表示時に「危険」警告ラベルをコンテンツに置きます |\n"
+"| `content` | `inform` | コンテンツを非表示にして、表示時に「中立」情報ラベルをコンテンツに置きます |\n"
+"| `content` | `none` | コンテンツを非表示にします |\n"
+"| `media` | `alert` | コンテンツ内の画像を非表示にして、表示時に「危険」警告ラベルをコンテンツに置きます |\n"
+"| `media` | `inform` | コンテンツ内の画像を非表示にして、表示時に「中立」情報ラベルをコンテンツに置きます |\n"
+"| `media` | `none` | コンテンツ内の画像を非表示にします |\n"
+"| `none` | `alert` | 「危険」警告ラベルをコンテンツに置きます |\n"
+"| `none` | `inform` | 「中立」情報ラベルをコンテンツに置きます |\n"
+"| `none` | `none` | 視覚的効果なし |\n"
 
 #. type: Plain text
 #: src/guides/labels/en.mdx:92
 #, no-wrap
 msgid "Some examples of the definitions you might use for a label\n"
-msgstr ""
+msgstr "使うかもしれないラベルの定義例\n"
 
 #. type: Plain text
 #: src/guides/labels/en.mdx:98
@@ -251,36 +296,41 @@ msgid ""
 "- Verified user: `blurs=none` + `severity=inform`\n"
 "- Curational down-regulate: `blurs=none` + `severity=none`\n"
 msgstr ""
+"- ハラスメント：`blurs=content` + `severity=alert`\n"
+"- 蜘蛛注意：`blurs=media` + `severity=alert`\n"
+"- 誤情報：`blurs=none` + `severity=alert`\n"
+"- 認証済ユーザー：`blurs=none` + `severity=inform`\n"
+"- キュレーション優先度低：`blurs=none` + `severity=none`\n"
 
 #. type: Plain text
 #: src/guides/labels/en.mdx:100
 #, no-wrap
 msgid "The `defaultSetting` establishes how the label will be configured when the user first subscribes to the labeler.\n"
-msgstr ""
+msgstr "`defaultSetting`は、ユーザーが最初にラベラーを登録するときにラベルがどのように設定されるかを規定します。\n"
 
 #. type: Plain text
 #: src/guides/labels/en.mdx:102
 #, no-wrap
 msgid "The `adultOnly` establishes whether the label should be configurable if adult content is disabled.\n"
-msgstr ""
+msgstr "`adultOnly`は、アダルトコンテンツが無効の場合、ラベルを設定可能にするべきかを規定します。\n"
 
 #. type: Plain text
 #: src/guides/labels/en.mdx:104
 #, no-wrap
 msgid "## **Label configuration**\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"label-configurations\">ラベル設定</Heading>\n"
 
 #. type: Plain text
 #: src/guides/labels/en.mdx:106
 #, no-wrap
 msgid "A user may choose to hide, warn, or ignore each label from a labeler. Hiding and warning are basically similar, except that hide will also filter the labeled content from feeds and listings. Ignore just ignores the label. If adult content is not enabled in preferences, the behavior should force to hide with no override.\n"
-msgstr ""
+msgstr "ユーザーは、ラベラーからの各ラベルを非表示（hide）、警告（warn）、または無視（ignore）することを選択できます。非表示と警告は基本的に似ていますが、非表示はラベル付きコンテンツをフィードや一覧表示からフィルタリングします。無視はラベルを無視するだけです。環境設定でアダルトコンテンツが有効になっていない場合、挙動は上書き不可で非表示を強制する必要があります。\n"
 
 #. type: Plain text
 #: src/guides/labels/en.mdx:108
 #, no-wrap
 msgid "For more information, see the [Labels](/specs/label) spec.\n"
-msgstr ""
+msgstr "詳細については、[ラベル](/specs/label)仕様を参照してください。\n"
 
 #. type: Plain text
 #: src/guides/labels/en.mdx:115
@@ -292,3 +342,8 @@ msgid ""
 "- [Using Ozone](/guides/using-ozone)\n"
 "- [Label Specs](/specs/label)\n"
 msgstr ""
+"- [モデレーション](/guides/moderation)\n"
+"- [サブスクリプション](/guides/subscriptions)\n"
+"- [ラベラーの作成](/guides/creating-a-labeler)\n"
+"- [Ozoneの使用](/guides/using-ozone)\n"
+"- [ラベル仕様](/specs/label)\n"

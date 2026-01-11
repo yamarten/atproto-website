@@ -31,59 +31,65 @@ msgstr ""
 #: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
 #, no-wrap
 msgid "## Further Reading and Resources\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"further-reading-and-resources\">関連・参考資料</Heading>\n"
 
 #. type: Plain text
 #: src/guides/social-graph/en.mdx:5
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "export const header = {\n"
 "  title: 'Social graph',\n"
 "  description: 'Working with AT Protocol Social Graphs',\n"
 "}\n"
-msgstr "import {Heading} from '@/components/Heading' export const header = { title: 'プロトコルの概要', description: 'AT プロトコルの概要。', }"
+msgstr ""
+"import {Heading} from '@/components/Heading'\n"
+"\n"
+"export const header = {\n"
+"  title: 'ソーシャルグラフ',\n"
+"  description: 'ATプロトコルのソーシャルグラフの操作',\n"
+"}\n"
 
 #. type: Plain text
 #: src/guides/social-graph/en.mdx:7
 #, no-wrap
 msgid "## Querying social graphs\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"querying-social-graphs\">ソーシャルグラフの取得</Heading>\n"
 
 #. type: Plain text
 #: src/guides/social-graph/en.mdx:9
 #, no-wrap
 msgid "AT Protocol records are public...\n"
-msgstr ""
+msgstr "ATプロトコルのレコードは公開情報です。\n"
 
 #. type: Plain text
 #: src/guides/social-graph/en.mdx:11
 #, no-wrap
 msgid "See [Exploring AT Protocol with Python](https://davidgasquez.com/exploring-atproto-python/) for another example of this approach.\n"
-msgstr ""
+msgstr "このアプローチの別の例として、[『Exploring AT Protocol with Python」](https://davidgasquez.com/exploring-atproto-python/)も参照してください。\n"
 
 #. type: Plain text
 #: src/guides/social-graph/en.mdx:13
 #, no-wrap
 msgid "## Backlinks\n"
-msgstr ""
+msgstr "<Heading level={2} id=\"backlinks\">バックリンク</Heading>\n"
 
 #. type: Plain text
 #: src/guides/social-graph/en.mdx:15
 #, no-wrap
 msgid "One of the most powerful ways to get social graph data from AT Protocol is through the use of **backlinks**. Querying backlinks lets you resolve all of the records linking *to* any given record, *or* identity.\n"
-msgstr ""
+msgstr "ATプロトコルからソーシャルグラフデータを取得する強力な方法として、**バックリンク**があります。バックリンクを取得すると、特定のレコード*や*ID*に*リンクしているすべてのレコードを解決できます。\n"
 
 #. type: Plain text
 #: src/guides/social-graph/en.mdx:17
 #, no-wrap
 msgid "Because all AT Protocol records are openly available and addressible via an `at://` URI, this makes it possible to encode nested API queries into individual URLs. The community project [pds.ls](https://pdsls.dev/at://did:plc:vmt7o7y6titkqzzxav247zrn/app.bsky.feed.post/3mbaxebcd6s2f) does this, for example.\n"
-msgstr ""
+msgstr "ATプロトコルのレコードは全て誰でも取得可能で、`at://` URIで指定可能なため、これによりネストされたAPIクエリを個別のURLにエンコードできるようになります。一例として、コミュニティプロジェクト[pds.ls](https://pdsls.dev/at://did:plc:vmt7o7y6titkqzzxav247zrn/app.bsky.feed.post/3mbaxebcd6s2f)はこれを行います。\n"
 
 #. type: Plain text
 #: src/guides/social-graph/en.mdx:19
 #, no-wrap
 msgid "[Microcosm](https://constellation.microcosm.blue) provides a set of resources for working with backlinks.\n"
-msgstr ""
+msgstr "[Microcosm](https://constellation.microcosm.blue)はバックリンクを操作するための一連のリソースを提供します。\n"
 
 #. type: Plain text
 #: src/guides/social-graph/en.mdx:27
@@ -96,3 +102,9 @@ msgid ""
 "- [Record Key spec](/specs/record-key)\n"
 "- [URI scheme](/specs/at-uri-scheme)\n"
 msgstr ""
+"- [読み取りと書き込み](/guides/reads-and-writes)\n"
+"- [データ読み出し](/guides/reading-data)\n"
+"- [データ書き込み](/guides/writing-data)\n"
+"- [アカウントと削除](/guides/writing-data)\n"
+"- [レコードキー仕様](/specs/record-key)\n"
+"- [URIスキーム](/specs/at-uri-scheme)\n"
