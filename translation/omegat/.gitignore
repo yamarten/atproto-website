@@ -1,4 +1,5 @@
 *
 !.gitignore
 !glossary/
+!glossary/glossary.txt
 !project_save.tmx

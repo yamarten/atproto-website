@@ -1,0 +1,37 @@
+# Glossary in tab-separated format -*- coding: utf-8 -*-
+document	文書
+AT Protocol	ATプロトコル
+firehose	firehose
+record	レコード
+repository	リポジトリ
+identity	ID
+relay	リレー
+AppView	AppView
+backfill	バックフィル
+repo	リポジトリ
+suspend	凍結
+takedown	公開停止	Bluesky上では「停止」はsuspensionの訳語だが、アプリのsuspension表示は内部的には大体takedown
+account takedown	アカウント停止
+deactivate	無効化
+DID document	DIDドキュメント
+blob	blob
+rotation key	ローテーション鍵
+PLC operation	PLCオペレーション	データであることを強調するため「操作」を避ける
+permission	権限
+user	ユーザー
+union	共用体
+post	投稿
+interface	インターフェース
+namespace	名前空間
+subscribe	登録	labelerやgeneratorの文脈を想定
+Lexicon	Lexicon
+evolution rule	進化ルール
+hydrate	ハイドレート
+profile	プロフィール	OAuthの文脈では「プロファイル」も可
+auth	認証	原文でauthzと明示されていれば認可にするが、曖昧な場合は認証に統一
+entryway	entryway
+parameter	パラメータ
+subscribe	サブスクライブ	websocketなどの文脈。「利用」「購読」とかでもいい
+App View	AppView
+Web	ウェブ
+ATProto	ATプロトコル	AT Protoなども同様。atprotoの場合のみそのまま表記する。
