@@ -13,7 +13,7 @@ import DiagramOptimisticUpdate from './diagram-optimistic-update.png'
 import DiagramRepo from './diagram-repo.png'
 
 export const header = {
-  title: 'AT プロトコルでアプリケーションを構築するためのクイックスタートガイド',
+  title: 'ATプロトコルでアプリケーションを構築するためのクイックスタートガイド',
   description:
     'このガイドでは、「ステータス」を絵文字として公開するシンプルなマルチユーザーアプリを構築します。',
 }
@@ -71,7 +71,7 @@ cd statusphere-example-app
 cp .env.template .env
 npm install
 npm run dev
-# http://localhost:8080 に移動します
+# http://localhost:8080に移動します
 ```
 
 リポジトリは通常のウェブアプリです。1999年のようにHTMLサーバー側でレンダリングしています。また、[Kysely](https://kysely.dev/)で管理しているSQLiteデータベースもあります。
@@ -89,7 +89,7 @@ npm run dev
 
 誰かがアプリにログインすると、その人の個人用`at://`リポジトリへの読み取りおよび書き込みアクセス権が付与されます。これを使用して、ステータスjsonレコードを書き込みます。
 
-これをOAuth（[spec](https://github.com/bluesky-social/proposals/tree/main/0004-oauth)）を使用して実現します。 OAuthフローのほとんどは、[@atproto/oauth-client-node](https://github.com/bluesky-social/atproto/tree/main/packages/oauth/oauth-client-node)ライブラリで処理されます。私たちが目指している構成は以下のようになります。
+これをOAuth（[spec](https://github.com/bluesky-social/proposals/tree/main/0004-oauth)）を使用して実現します。OAuthフローのほとんどは、[@atproto/oauth-client-node](https://github.com/bluesky-social/atproto/tree/main/packages/oauth/oauth-client-node)ライブラリで処理されます。私たちが目指している構成は以下のようになります。
 
 <Image alt="OAuth要素の図" src={DiagramOauth} />
 
@@ -97,7 +97,7 @@ npm run dev
 
 <Image alt="ログインUIのスクリーンショット" src={AppLogin} />
 
-ログインページでは、ユーザーに「ハンドル」を尋ねるだけです。これは、アカウントに関連付けられたドメイン名です。[Bluesky](https://bsky.app)ユーザーの場合、これらは`alice.bsky.social`のように見えますが、任意の種類のドメイン（例 `alice.com`）にすることができます。
+ログインページでは、ユーザーに「ハンドル」を尋ねるだけです。これは、アカウントに関連付けられたドメイン名です。[Bluesky](https://bsky.app)ユーザーの場合、これらは`alice.bsky.social`のように見えますが、任意の種類のドメイン（例えば`alice.com`）にすることができます。
 
 ```html
 <!-- src/pages/login.ts -->
@@ -136,7 +136,7 @@ router.post(
 
 ```typescript
 /** src/routes.ts **/
-// セッション作成を完了するための OAuth コールバック
+// セッション作成を完了するためのOAuthコールバック
 router.get(
   '/oauth/callback',
   handler(async (req, res) => {
@@ -154,7 +154,7 @@ router.get(
 )
 ```
 
-これで準備完了です！これで、ユーザーのリポジトリサーバーとのセッションが確立され、それを使用してユーザーのデータにアクセスできます。
+さあ、準備ができました。これで、ユーザーのリポジトリサーバーとのセッションが確立され、それを使用してユーザーのデータにアクセスできます。
 
 <Heading level={2} id="step-3-fetching-the-users-profile">ステップ3. ユーザーのプロフィールを取得する</Heading>
 
@@ -334,15 +334,15 @@ router.post(
 </form>
 ```
 
-これで完了です！
+するとこうなります。
 
 <Image alt="アプリのステータスの選択肢のスクリーンショット" src={AppStatusOptions} />
 
 <Heading level={2} id="step-5-creating-a-custom-status-schema">ステップ5. カスタムの「ステータス」スキーマの作成</Heading>
 
-リポジトリのコレクションは型指定されており、スキーマが定義されています。`app.bsky.actor.profile`型定義は [こちら](https://github.com/bluesky-social/atproto/blob/main/lexicons/app/bsky/actor/profile.json)にあります。
+リポジトリのコレクションは型指定されており、スキーマが定義されています。`app.bsky.actor.profile`型定義は[こちら](https://github.com/bluesky-social/atproto/blob/main/lexicons/app/bsky/actor/profile.json)にあります。
 
-[JSON-Schema](http://json-schema.org/)に非常によく似た[Lexicon](https://atproto.com/specs/lexicon)言語を使用して、誰でも新しいスキーマを作成できます。スキーマは、所有権を示す[逆DNS ID](https://atproto.com/specs/nsid)を使用します。このデモアプリでは、このプロジェクト専用に登録した `xyz.statusphere`（別名statusphere.xyz）を使用します。
+[JSON-Schema](http://json-schema.org/)に非常によく似た[Lexicon](https://atproto.com/specs/lexicon)言語を使用して、誰でも新しいスキーマを作成できます。スキーマは、所有権を示す[逆DNS ID](https://atproto.com/specs/nsid)を使用します。このデモアプリでは、このプロジェクト専用に登録した`xyz.statusphere`（別名statusphere.xyz）を使用します。
 
 > <Heading level={3} id="why-create-a-schema">スキーマを作成する理由</Heading>
 >
@@ -436,7 +436,7 @@ router.post(
 )
 ```
 
-<Heading level={2} id="step-6-listening-to-the-firehose">ステップ 6. ファイアホースをリッスン</Heading>
+<Heading level={2} id="step-6-listening-to-the-firehose">ステップ6. ファイアホースをリッスン</Heading>
 
 ここまでで、以下の操作を実行しました。
 
@@ -675,4 +675,4 @@ router.post(
 - 認証されたユーザーのフォロー`app.bsky.graph.follow`を取得し、それらのステータスを表示します。
 - ウェブサイトへのリンクを投稿して1から4つ星で評価する方法など、別の種類のスキーマを作成します。
 
-<FooterCTA href="/" title="さらに学習する準備はできましたか?" description="仕様、ガイド、SDK はここにあります。" />
+<FooterCTA href="/" title="さらに学習する準備はできましたか？" description="仕様、ガイド、SDK はここにあります。" />
