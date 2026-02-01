@@ -157,13 +157,13 @@ msgstr "<Heading level={2} id=\"updating-identity\">ID更新</Heading>\n"
 #: src/guides/account-migration/en.mdx:42
 #, no-wrap
 msgid "Once content has been migrated, the identity (DID and handle) can be updated to indicate that the new PDS is the current host for the account.\n"
-msgstr "コンテンツが移行されたら、ID（DID とハンドル）を更新して、新しいPDSがそのアカウントの現行ホストであることを示すことができます。\n"
+msgstr "コンテンツが移行されたら、ID（DIDとハンドル）を更新して、新しいPDSがそのアカウントの現行ホストであることを示すことができます。\n"
 
 #. type: Plain text
 #: src/guides/account-migration/en.mdx:44
 #, no-wrap
 msgid "\"Recommended\" DID document parameters can be fetched from the new PDS using the `com.atproto.identity.getRecommendedDidCredentials` endpoint. This will include the DID service hostname, local handle (as requested during account creation), a PDS-managed atproto signing key (public key), and (if relevant) PLC rotation keys (public keys).\n"
-msgstr "推奨されるDIDドキュメントのパラメータは、新PDSの`com.atproto.identity.getRecommendedDidCredentials` エンドポイントから取得できます。これにはDIDのサービスホスト名、ローカルハンドル（アカウント作成時に要求したもの）、PDS管理のatproto署名鍵（公開鍵）、および該当する場合はPLC回転鍵（公開鍵）が含まれます。\n"
+msgstr "推奨されるDIDドキュメントのパラメータは、新PDSの`com.atproto.identity.getRecommendedDidCredentials`エンドポイントから取得できます。これにはDIDのサービスホスト名、ローカルハンドル（アカウント作成時に要求したもの）、PDS管理のatproto署名鍵（公開鍵）、および該当する場合はPLC回転鍵（公開鍵）が含まれます。\n"
 
 #. type: Plain text
 #: src/guides/account-migration/en.mdx:46
@@ -175,7 +175,7 @@ msgstr "秘密鍵の鍵ペアを安全に管理できるユーザー（例：パ
 #: src/guides/account-migration/en.mdx:48
 #, no-wrap
 msgid "For a self-controlled identity (eg, `did:web`, or `did:plc` with local rotation key), the identity update can be done directly by the user.\n"
-msgstr "自己管理型のID（例：`did:web`、またはローカル回転鍵を持つ `did:plc`）の場合、IDの更新はユーザー自身が直接行うことができます。\n"
+msgstr "自己管理型のID（例：`did:web`、またはローカル回転鍵を持つ`did:plc`）の場合、IDの更新はユーザー自身が直接行うことができます。\n"
 
 #. type: Plain text
 #: src/guides/account-migration/en.mdx:50

@@ -38,7 +38,7 @@ msgstr ""
 "export const header = {\n"
 "  title: 'セルフホスティング',\n"
 "  description:\n"
-"    'Atmosphere スタックの各コンポーネントをセルフホストするためのリソース',\n"
+"    'Atmosphereスタックの各コンポーネントをセルフホストするためのリソース',\n"
 "}\n"
 
 #. type: Plain text
@@ -51,7 +51,7 @@ msgstr "Atmosphereスタックのほとんどの部分はデプロイメント�
 #: src/guides/self-hosting/en.mdx:12
 #, no-wrap
 msgid "Resources for self-hosting a PDS, including install steps, Docker images and Frequently Asked Questions, are available from the [PDS](https://github.com/bluesky-social/pds) Github repo. Start here if you want to host your own PDS!\n"
-msgstr "インストール手順、Dockerイメージ、FAQを含むPDSのセルフホスティング用リソースは、[PDS](https://github.com/bluesky-social/pds)のGitHubリポジトリで入手できます。自分のPDSをホストしたい場合はここから始めてください！\n"
+msgstr "インストール手順、Dockerイメージ、FAQを含むPDSのセルフホスティング用リソースは、[PDS](https://github.com/bluesky-social/pds)のGitHubリポジトリで入手できます。自分のPDSをホストしたい場合はここから始めてください。\n"
 
 #. type: Plain text
 #: src/guides/self-hosting/en.mdx:14
@@ -101,7 +101,7 @@ msgid ""
 "- [Tranquil PDS](https://tangled.org/lewis.moe/bspds-sandbox), written in Rust.\n"
 "- [Cocoon](https://tangled.org/hailey.at/cocoon), written in Go.\n"
 msgstr ""
-"コミュニティによるPDS実装もあります！例えば、以下があります。\n"
+"コミュニティによるPDS実装もあります。例えば、以下があります。\n"
 "- [Tranquil PDS](https://tangled.org/lewis.moe/bspds-sandbox)（Rust）\n"
 "- [Cocoon](https://tangled.org/hailey.at/cocoon)（Go）\n"
 
@@ -121,7 +121,7 @@ msgstr "TapはATネットワークから既存のレコードを同期し、そ�
 #: src/guides/self-hosting/en.mdx:35
 #, no-wrap
 msgid "We also provide a quick start guide for [deploying Tap](https://github.com/bluesky-social/indigo/blob/main/cmd/tap/RAILWAY_DEPLOY.md) to [Railway](https://railway.com/).\n"
-msgstr "また、[Railway](https://railway.com/)向けの[Tapデプロイのクイックスタートガイド](https://github.com/bluesky-social/indigo/blob/main/cmd/tap/RAILWAY_DEPLOY.md) も提供しています。\n"
+msgstr "また、[Railway](https://railway.com/)向けの[Tapデプロイのクイックスタートガイド](https://github.com/bluesky-social/indigo/blob/main/cmd/tap/RAILWAY_DEPLOY.md)も提供しています。\n"
 
 #. type: Plain text
 #: src/guides/self-hosting/en.mdx:37
@@ -139,7 +139,7 @@ msgstr "独自のAppViewやリレーをホスティングすることは可能�
 #: src/guides/self-hosting/en.mdx:41
 #, no-wrap
 msgid "There are lots of other decisions that will go into designing and running your own Atmosphere apps! This will not be a comprehensive list of recommendations.\n"
-msgstr "Atmosphereアプリを設計・運用する際には他にも多くの判断事項があります！このガイドは推奨事項の包括的なリストではありません。\n"
+msgstr "Atmosphereアプリを設計・運用する際には他にも多くの判断事項があります。このガイドは推奨事項の包括的なリストではありません。\n"
 
 #. type: Plain text
 #: src/guides/self-hosting/en.mdx:43

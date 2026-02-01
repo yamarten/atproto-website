@@ -130,7 +130,7 @@ msgid ""
 "</Note>\n"
 msgstr ""
 "<Note>\n"
-"Pythonの例ではSDKを使用していません！[OAuthクライアント実装ガイド](https://docs.bsky.app/docs/advanced-guides/oauth-client)と共に、OAuth SDKを一から構築する際の参考として役立つかもしれません\n"
+"PythonのサンプルではSDKを使用していないことに注意してください。[OAuthクライアント実装ガイド](https://docs.bsky.app/docs/advanced-guides/oauth-client)と共に、OAuth SDKを一から構築する際の参考として役立つかもしれません。\n"
 "</Note>\n"
 
 #. type: Plain text

@@ -71,7 +71,7 @@ msgstr "**Lexiconは相互運用性を提供します**。ATアプリケーシ�
 #: src/guides/lexicon/en.mdx:13
 #, no-wrap
 msgid "The schemas are identified using [NSIDs](/specs/nsid), a reverse-DNS format. Here are some example API endpoints:\n"
-msgstr "スキーマは[NSID](/specs/nsid)を使用して識別されます。これは逆ドメイン名形式です。以下にAPI エンドポイントの例を示します。\n"
+msgstr "スキーマは[NSID](/specs/nsid)を使用して識別されます。これは逆ドメイン名形式です。以下にAPIエンドポイントの例を示します。\n"
 
 #. type: Plain text
 #: src/guides/lexicon/en.mdx:20

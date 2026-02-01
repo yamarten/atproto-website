@@ -274,7 +274,7 @@ msgstr "これは、AppViewなどのサービスにユーザーのPDSからの�
 #: src/guides/writing-data/en.mdx:89
 #, no-wrap
 msgid "Because all requests from the application are sent to the user's PDS, the PDS is in a position to smooth over this behavior. [Our PDS distribution](https://github.com/bluesky-social/pds) provides some basic read-after-write behaviors by looking at response headers from the App View, determining if there are any new records that are not in the response, and modifying the response to reflect those new records.\n"
-msgstr "アプリケーションからのすべてのリクエストはユーザーのPDSに送信されるため、PDSはこの動作をスムーズに処理できる立場にあります。[BlueskyのPDSディストリビューション](https://github.com/bluesky-social/pds) は、AppViewから応答ヘッダーを確認し、応答にない新しいレコードがあるかどうかを判断し、それらの新しいレコードを反映するように応答を書き換えることにより、いくつかの基本的なread-after-write動作を提供します。\n"
+msgstr "アプリケーションからのすべてのリクエストはユーザーのPDSに送信されるため、PDSはこの動作をスムーズに処理できる立場にあります。[BlueskyのPDSディストリビューション](https://github.com/bluesky-social/pds)は、AppViewから応答ヘッダーを確認し、応答にない新しいレコードがあるかどうかを判断し、それらの新しいレコードを反映するように応答を書き換えることにより、いくつかの基本的なread-after-write動作を提供します。\n"
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:91

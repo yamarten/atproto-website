@@ -255,13 +255,13 @@ msgstr "<Heading level={2} id=\"did-resolition\">DID解決</Heading>\n"
 #: src/guides/reading-data/en.mdx:87
 #, no-wrap
 msgid "In AT, user data is resolved through [DIDs](/guides/sync#data-repositories), also known as [Decentralized Identifiers](https://en.wikipedia.org/wiki/Decentralized_identifier). Most AT Protocol applications use [`did:plc` DIDs](/guides/the-at-stack#did-plc) when registering user accounts.\n"
-msgstr "ATでは、ユーザーデータは[DID](/guides/sync#data-repositories)(別名[分散型識別子](https://en.wikipedia.org/wiki/Decentralized_identifier))を通じて解決されます。ほとんどのATプロトコルアプリケーションはユーザーアカウント登録時に[`did:plc` DID](/guides/the-at-stack#did-plc)を使用します。\n"
+msgstr "ATでは、ユーザーデータは[DID](/guides/sync#data-repositories)（別名[分散型識別子](https://en.wikipedia.org/wiki/Decentralized_identifier)）を通じて解決されます。ほとんどのATプロトコルアプリケーションはユーザーアカウント登録時に[`did:plc` DID](/guides/the-at-stack#did-plc)を使用します。\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:89
 #, no-wrap
 msgid "You can resolve a known username to a DID using the `com.atproto.identity.resolveHandle` endpoint. This means that you can just visit this address in a browser with a `handle=` arugment to look up your DID:\n"
-msgstr "`com.atproto.identity.resolveHandle`エンドポイントを使用して、既知のユーザー名をDIDに解決できます。これは、ブラウザで`handle=`引数を使用してこのアドレスにアクセスしてDIDを調べることができることを意味します。\n"
+msgstr "`com.atproto.identity.resolveHandle`エンドポイントを使用して、既知のユーザー名をDIDに解決できます。これは、ブラウザで`handle=`引数を使用してこのアドレスにアクセスしてDIDを調べられることを意味します。\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:93

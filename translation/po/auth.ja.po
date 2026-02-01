@@ -67,7 +67,7 @@ msgstr "<Heading level={2} id=\"about-authentication\">認証について</Headi
 #: src/guides/auth/en.mdx:11
 #, no-wrap
 msgid "**Authentication is the first part of our docs for a reason!** You don't always need to be authenticated to [read data](/reading-data#unauthenticated-reads) from AT Protocol records or even to [stream data from the firehose](/guides/streaming-data). But if you're looking to build an application that integrates with the Atmosphere of ATProto apps in some way, you'll begin with authentication. You might start out by just using AT Protocol identities as an OAuth source — though you'll find that there's lots more you can do by building on top of the ATProto [social graph](/guides/social-graph).\n"
-msgstr "**認証が最初のドキュメントであることには理由があります**！ATプロトコルのレコードから[データを読む](/reading-data#unauthenticated-reads)ために常に認証が必要というわけではありませんし、[firehose からデータをストリーム](/guides/streaming-data)する場合も同じです。ただしATプロトコルアプリの環境（Atmosphere）に何らかの形で統合されるアプリケーションを構築したい場合は、認証から始めることになります。まずATプロトコルのIDをOAuthソースとして使うだけから始めるかもしれませんが、ATプロトコルの[ソーシャルグラフ](/guides/social-graph)上でさらに多くのことができることに気付くでしょう。\n"
+msgstr "**認証が最初のドキュメントであることには理由があります**。ATプロトコルのレコードから[データを読む](/reading-data#unauthenticated-reads)ために常に認証が必要というわけではありませんし、[firehoseからデータをストリーム](/guides/streaming-data)する場合も同じです。ただしATプロトコルアプリの環境（Atmosphere）に何らかの形で統合されるアプリケーションを構築したい場合は、認証から始めることになります。まずATプロトコルのIDをOAuthソースとして使うだけから始めるかもしれませんが、ATプロトコルの[ソーシャルグラフ](/guides/social-graph)上でさらに多くのことができることに気付くでしょう。\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:13
@@ -91,7 +91,7 @@ msgstr ""
 #: src/guides/auth/en.mdx:19
 #, no-wrap
 msgid "To implement OAuth in your application, refer to [OAuth patterns](/guides/oauth-patterns) for common use cases, and the [Scopes](/guides/scopes) guide for understanding permission models. If you're building your own protocol implementation or OAuth Client SDK, refer to the [OAuth spec](/specs/oauth).\n"
-msgstr "アプリケーションにOAuthを実装するには、一般的なユースケースについては[OAuthパターン](/guides/oauth-patterns)を、権限モデルの理解については [スコープガイド](/guides/scopes) を参照してください。独自のプロトコル実装または OAuth Client SDK を構築している場合は、[OAuth 仕様](/specs/oauth) を参照してください。\n"
+msgstr "アプリケーションにOAuthを実装するには、一般的なユースケースについては[OAuthパターン](/guides/oauth-patterns)を、権限モデルの理解については[スコープガイド](/guides/scopes)を参照してください。独自のプロトコル実装またはOAuth Client SDKを構築している場合は、[OAuth仕様](/specs/oauth)を参照してください。\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:21
@@ -139,7 +139,7 @@ msgstr "他のOAuthシステムを使っている場合は細かい部分で意�
 #: src/guides/auth/en.mdx:35
 #, no-wrap
 msgid "- **ATProto is distributed**: Usually, when an app has a \"sign in with...\" button, it provides a choice of which authorities it allows to authenticate users (usually one of a few big corporations). With ATProto OAuth, the app has no prior relationship with the authentication provider: a user's [PDS](/guides/the-at-stack#pds). This is also the reason why ATProto OAuth is not compatible with OIDC, which requires a pre-established relationship.\n"
-msgstr "- **ATプロトコルは分散しています**：通常、アプリに「…でサインイン」ボタンがある場合、ユーザーの認証を許可する権限を選択できます（大抵は少数の大企業のどれか）。ATプロトコルのOAuth では、アプリは認証プロバイダー、つまりユーザーの[PDS](/guides/the-at-stack#pds)との事前の関係がありません。これは、ATプロトコルのOAuthが、事前に確立された関係を必要とするOIDCと互換性がない理由でもあります。\n"
+msgstr "- **ATプロトコルは分散しています**：通常、アプリに「…でサインイン」ボタンがある場合、ユーザーの認証を許可する権限を選択できます（大抵は少数の大企業のどれか）。ATプロトコルのOAuthでは、アプリは認証プロバイダー、つまりユーザーの[PDS](/guides/the-at-stack#pds)との事前の関係がありません。これは、ATプロトコルのOAuthが、事前に確立された関係を必要とするOIDCと互換性がない理由でもあります。\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:37

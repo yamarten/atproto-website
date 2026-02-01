@@ -35,3 +35,5 @@ subscribe	サブスクライブ	websocketなどの文脈。「利用」「購読
 App View	AppView
 Web	ウェブ
 ATProto	ATプロトコル	AT Protoなども同様。atprotoの場合のみそのまま表記する。
+eventual consistency	結果整合性
+strong consistency	強い一貫性

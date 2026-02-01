@@ -143,7 +143,7 @@ msgstr "<Heading level={2} id=\"password-authentication\">パスワード認証<
 #: src/guides/sdk-auth/en.mdx:42
 #, no-wrap
 msgid "If you are using password auth, you should generate an [app password](/specs/xrpc#app-passwords) for your account rather than using your main account password. If you are using Bluesky as an auth provider, you can generate an app password in your [account settings](https://bsky.app/settings/app-passwords).\n"
-msgstr "パスワード認証を使用している場合は、メインのアカウントパスワードではなく[アプリパスワード](/specs/xrpc#app-passwords) を生成するべきです。Blueskyを認証プロバイダとして使用している場合は、[アカウント設定](https://bsky.app/settings/app-passwords)でアプリパスワードを生成できます。\n"
+msgstr "パスワード認証を使用している場合は、メインのアカウントパスワードではなく[アプリパスワード](/specs/xrpc#app-passwords)を生成するべきです。Blueskyを認証プロバイダとして使用している場合は、[アカウント設定](https://bsky.app/settings/app-passwords)でアプリパスワードを生成できます。\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:51

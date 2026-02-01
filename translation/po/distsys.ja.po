@@ -21,7 +21,7 @@ msgstr ""
 #: src/articles/atproto-for-distsys-engineers/en.mdx:232
 #, no-wrap
 msgid "<FooterCTA href=\"/\" title=\"Ready to learn more?\" description=\"Specs, guides, and SDKs can be found here.\" />\n"
-msgstr "<FooterCTA href=\"/\" title=\"さらに学習する準備はできましたか?\" description=\"仕様、ガイド、SDK はここにあります。\" />\n"
+msgstr "<FooterCTA href=\"/\" title=\"さらに学習する準備はできましたか？\" description=\"仕様、ガイド、SDK はここにあります。\" />\n"
 
 #. type: Plain text
 #: src/articles/atproto-for-distsys-engineers/en.mdx:27
@@ -270,7 +270,7 @@ msgstr "これで[ストリーム処理アーキテクチャ](https://milinda.pa
 #: src/articles/atproto-for-distsys-engineers/en.mdx:91
 #, no-wrap
 msgid "The good news is that this architecture scales pretty well. We've given up strong consistency and sometimes our read queries lag behind the most up to date version of the data, but the service doesn't drop writes or enter an incorrect state.\n"
-msgstr "良いニュースは、このアーキテクチャの拡張性が非常に高いことです。強力な一貫性はあきらめ、読み取りクエリがデータの最新バージョンより遅れることもありますが、サービスが書き込みをドロップしたり、誤った状態になったりすることはありません。\n"
+msgstr "良いニュースは、このアーキテクチャの拡張性が非常に高いことです。強い一貫性はあきらめ、読み取りクエリがデータの最新バージョンより遅れることもありますが、サービスが書き込みをドロップしたり、誤った状態になったりすることはありません。\n"
 
 #. type: Plain text
 #: src/articles/atproto-for-distsys-engineers/en.mdx:93

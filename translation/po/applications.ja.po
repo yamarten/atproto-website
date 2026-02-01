@@ -58,7 +58,7 @@ msgid ""
 "}\n"
 msgstr ""
 "export const header = {\n"
-"  title: 'AT プロトコルでアプリケーションを構築するためのクイックスタートガイド',\n"
+"  title: 'ATプロトコルでアプリケーションを構築するためのクイックスタートガイド',\n"
 "  description:\n"
 "    'このガイドでは、「ステータス」を絵文字として公開するシンプルなマルチユーザーアプリを構築します。',\n"
 "}\n"
@@ -212,7 +212,7 @@ msgstr ""
 "cp .env.template .env\n"
 "npm install\n"
 "npm run dev\n"
-"# http://localhost:8080 に移動します\n"
+"# http://localhost:8080に移動します\n"
 "```\n"
 
 #. type: Plain text
@@ -263,7 +263,7 @@ msgstr "誰かがアプリにログインすると、その人の個人用`at://
 #: src/guides/applications/en.mdx:92
 #, no-wrap
 msgid "We're going to accomplish this using OAuth ([spec](https://github.com/bluesky-social/proposals/tree/main/0004-oauth)). Most of the OAuth flows are going to be handled for us using the [@atproto/oauth-client-node](https://github.com/bluesky-social/atproto/tree/main/packages/oauth/oauth-client-node) library. This is the arrangement we're aiming toward:\n"
-msgstr "これをOAuth（[spec](https://github.com/bluesky-social/proposals/tree/main/0004-oauth)）を使用して実現します。 OAuthフローのほとんどは、[@atproto/oauth-client-node](https://github.com/bluesky-social/atproto/tree/main/packages/oauth/oauth-client-node)ライブラリで処理されます。私たちが目指している構成は以下のようになります。\n"
+msgstr "これをOAuth（[spec](https://github.com/bluesky-social/proposals/tree/main/0004-oauth)）を使用して実現します。OAuthフローのほとんどは、[@atproto/oauth-client-node](https://github.com/bluesky-social/atproto/tree/main/packages/oauth/oauth-client-node)ライブラリで処理されます。私たちが目指している構成は以下のようになります。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:94
@@ -287,7 +287,7 @@ msgstr "<Image alt=\"ログインUIのスクリーンショット\" src={AppLogi
 #: src/guides/applications/en.mdx:100
 #, no-wrap
 msgid "Our login page just asks the user for their \"handle,\" which is the domain name associated with their account. For [Bluesky](https://bsky.app) users, these tend to look like `alice.bsky.social`, but they can be any kind of domain (eg `alice.com`).\n"
-msgstr "ログインページでは、ユーザーに「ハンドル」を尋ねるだけです。これは、アカウントに関連付けられたドメイン名です。[Bluesky](https://bsky.app)ユーザーの場合、これらは`alice.bsky.social`のように見えますが、任意の種類のドメイン（例 `alice.com`）にすることができます。\n"
+msgstr "ログインページでは、ユーザーに「ハンドル」を尋ねるだけです。これは、アカウントに関連付けられたドメイン名です。[Bluesky](https://bsky.app)ユーザーの場合、これらは`alice.bsky.social`のように見えますが、任意の種類のドメイン（例えば`alice.com`）にすることができます。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:113
@@ -388,7 +388,7 @@ msgid ""
 msgstr ""
 "```typescript\n"
 "/** src/routes.ts **/\n"
-"// セッション作成を完了するための OAuth コールバック\n"
+"// セッション作成を完了するためのOAuthコールバック\n"
 "router.get(\n"
 "  '/oauth/callback',\n"
 "  handler(async (req, res) => {\n"
@@ -429,7 +429,7 @@ msgstr ""
 #: src/guides/applications/en.mdx:157
 #, no-wrap
 msgid "With that, we're in business! We now have a session with the user's repo server and can use that to access their data.\n"
-msgstr "これで準備完了です！これで、ユーザーのリポジトリサーバーとのセッションが確立され、それを使用してユーザーのデータにアクセスできます。\n"
+msgstr "さあ、準備ができました。これで、ユーザーのリポジトリサーバーとのセッションが確立され、それを使用してユーザーのデータにアクセスできます。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:159
@@ -867,7 +867,7 @@ msgstr ""
 #: src/guides/applications/en.mdx:337
 #, no-wrap
 msgid "And here we are!\n"
-msgstr "これで完了です！\n"
+msgstr "するとこうなります。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:339
@@ -885,13 +885,13 @@ msgstr "<Heading level={2} id=\"step-5-creating-a-custom-status-schema\">ステ�
 #: src/guides/applications/en.mdx:343
 #, no-wrap
 msgid "Repo collections are typed, meaning that they have a defined schema. The `app.bsky.actor.profile` type definition [can be found here](https://github.com/bluesky-social/atproto/blob/main/lexicons/app/bsky/actor/profile.json).\n"
-msgstr "リポジトリのコレクションは型指定されており、スキーマが定義されています。`app.bsky.actor.profile`型定義は [こちら](https://github.com/bluesky-social/atproto/blob/main/lexicons/app/bsky/actor/profile.json)にあります。\n"
+msgstr "リポジトリのコレクションは型指定されており、スキーマが定義されています。`app.bsky.actor.profile`型定義は[こちら](https://github.com/bluesky-social/atproto/blob/main/lexicons/app/bsky/actor/profile.json)にあります。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:345
 #, no-wrap
 msgid "Anybody can create a new schema using the [Lexicon](https://atproto.com/specs/lexicon) language, which is very similar to [JSON-Schema](http://json-schema.org/). The schemas use [reverse-DNS IDs](https://atproto.com/specs/nsid) which indicate ownership. In this demo app we're going to use `xyz.statusphere` which we registered specifically for this project (aka statusphere.xyz).\n"
-msgstr "[JSON-Schema](http://json-schema.org/)に非常によく似た[Lexicon](https://atproto.com/specs/lexicon)言語を使用して、誰でも新しいスキーマを作成できます。スキーマは、所有権を示す[逆DNS ID](https://atproto.com/specs/nsid)を使用します。このデモアプリでは、このプロジェクト専用に登録した `xyz.statusphere`（別名statusphere.xyz）を使用します。\n"
+msgstr "[JSON-Schema](http://json-schema.org/)に非常によく似た[Lexicon](https://atproto.com/specs/lexicon)言語を使用して、誰でも新しいスキーマを作成できます。スキーマは、所有権を示す[逆DNS ID](https://atproto.com/specs/nsid)を使用します。このデモアプリでは、このプロジェクト専用に登録した`xyz.statusphere`（別名statusphere.xyz）を使用します。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:349
@@ -1125,7 +1125,7 @@ msgstr ""
 #: src/guides/applications/en.mdx:439
 #, no-wrap
 msgid "## Step 6. Listening to the firehose\n"
-msgstr "<Heading level={2} id=\"step-6-listening-to-the-firehose\">ステップ 6. ファイアホースをリッスン</Heading>\n"
+msgstr "<Heading level={2} id=\"step-6-listening-to-the-firehose\">ステップ6. ファイアホースをリッスン</Heading>\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:441
@@ -1699,4 +1699,4 @@ msgstr ""
 #: src/articles/atproto-for-distsys-engineers/en.mdx:232
 #, no-wrap
 msgid "<FooterCTA href=\"/\" title=\"Ready to learn more?\" description=\"Specs, guides, and SDKs can be found here.\" />\n"
-msgstr "<FooterCTA href=\"/\" title=\"さらに学習する準備はできましたか?\" description=\"仕様、ガイド、SDK はここにあります。\" />\n"
+msgstr "<FooterCTA href=\"/\" title=\"さらに学習する準備はできましたか？\" description=\"仕様、ガイド、SDK はここにあります。\" />\n"

@@ -56,7 +56,7 @@ msgstr "<Heading level={2} id=\"identity\">アイデンティティ</Heading>\n"
 #: src/guides/overview/en.mdx:14
 #, no-wrap
 msgid "Users in AT Protocol have permanent decentralized identifiers (DIDs) for their accounts. They also have a configurable domain name, which acts as a human-readable handle. Identities include a reference to the user's current hosting provider and cryptographic keys.\n"
-msgstr "ATプロトコルユーザーは、自分のアカウントに対して永続的な分散型識別子（DID）を持ちます。また、人間可読なハンドルとして機能する構成可能なドメイン名も持っています。 IDにはユーザーの現在のホスティングプロバイダーと暗号鍵への参照が含まれます。\n"
+msgstr "ATプロトコルユーザーは、自分のアカウントに対して永続的な分散型識別子（DID）を持ちます。また、人間可読なハンドルとして機能する構成可能なドメイン名も持っています。IDにはユーザーの現在のホスティングプロバイダーと暗号鍵への参照が含まれます。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:16 src/guides/sync/en.mdx:15
@@ -185,8 +185,8 @@ msgid ""
 "* **Signing key**: Validates the user's data repository. All DIDs include such a key.\n"
 "* **Rotation keys**: Asserts changes to the DID Document itself. The PLC DID method includes this, while the DID Web method does not.\n"
 msgstr ""
-"* **署名鍵**: ユーザーのデータリポジトリを検証します。全てのDIDに含まれています。\n"
-"* **ローテーション鍵**: DIDドキュメントへの変更をアサートします。PLC DIDメソッドにはありますが、DID Webメソッドにはありません。\n"
+"* **署名鍵**：ユーザーのデータリポジトリを検証します。全てのDIDに含まれています。\n"
+"* **ローテーション鍵**：DIDドキュメントへの変更をアサートします。PLC DIDメソッドにはありますが、DID Webメソッドにはありません。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:59

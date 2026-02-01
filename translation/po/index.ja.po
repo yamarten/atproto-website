@@ -347,7 +347,7 @@ msgstr "<ImageCard image={WhitepaperPng} href=\"https://arxiv.org/abs/2402.03239
 #: src/docs/en.mdx:120
 #, no-wrap
 msgid "{/* <ImageCard image={TbdIntervewJpg} href=\"https://www.youtube.com/live/D5WVK7KfTAk\" title=\"Building the Social Internet with Bluesky's AT Protocol\" tag=\"Interview\" description=\"An interview between Dan Abramov and TBD about how the dotmedia Protocol works.png\" /> */}\n"
-msgstr "{/* <ImageCard image={TbdInterviewJpg} href=\"https://www.youtube.com/live/D5WVK7KfTAk\" title=\"BlueskyのATプロトコルでソーシャルインターネットを構築する\" tag=\"Interview\" description=\"ATプロトコルの仕組みに関するDan Abramov氏とTB 氏によるインタビュー。このトピックを初めて知る人にとっては素晴らしい入門書です。\" /> */}\n"
+msgstr "{/* <ImageCard image={TbdInterviewJpg} href=\"https://www.youtube.com/live/D5WVK7KfTAk\" title=\"BlueskyのATプロトコルでソーシャルインターネットを構築する\" tag=\"Interview\" description=\"ATプロトコルの仕組みに関するDan Abramov氏とTB氏によるインタビュー。このトピックを初めて知る人にとっては素晴らしい入門書です。\" /> */}\n"
 
 #. type: Plain text
 #: src/docs/en.mdx:122

@@ -65,7 +65,7 @@ msgstr "ATプロトコルは、ウェブの基本的な構成要素を用いて�
 #: src/guides/reads-and-writes/en.mdx:11
 #, no-wrap
 msgid "For more context, see [ATProto for distributed systems engineers](/articles/atproto-for-distsys-engineers) and [The ATProto Ethos](/articles/atproto-ethos).\n"
-msgstr "詳しい背景は、[分散システムエンジニアのためのATプロトコル](/articles/atproto-for-distsys-engineers) と [The ATProto Ethos](/articles/atproto-ethos) を参照してください。\n"
+msgstr "詳しい背景は、[分散システムエンジニアのためのATプロトコル](/articles/atproto-for-distsys-engineers)と[The ATProto Ethos](/articles/atproto-ethos)を参照してください。\n"
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:13
@@ -111,7 +111,7 @@ msgstr ""
 "  </TabList>\n"
 "  <TabPanels>\n"
 "    <TabPanel value=\"ts\">\n"
-"    APIリクエストを行うには、特定の[Lexicon](/guides/lexicon)を指定する必要があります。例えば、Blueskyの投稿は`app.bsky.feed.post` Lexicon で提供されます。\n"
+"    APIリクエストを行うには、特定の[Lexicon](/guides/lexicon)を指定する必要があります。例えば、Blueskyの投稿は`app.bsky.feed.post` Lexiconで提供されます。\n"
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:30
@@ -169,7 +169,7 @@ msgid ""
 "    \"github.com/bluesky-social/indigo/xrpc\"\n"
 "  )\n"
 msgstr ""
-"    これによりLexiconのAPIメソッドにアクセスできるようになります。これで[リクエストを行う](/guides/reading-data)準備が整いました！\n"
+"    これによりLexiconのAPIメソッドにアクセスできるようになります。これで[リクエストを行う](/guides/reading-data)準備が整いました。\n"
 "    </TabPanel>\n"
 "    <TabPanel value=\"go\">\n"
 "  ```go\n"
@@ -191,7 +191,7 @@ msgid ""
 msgstr ""
 "  ctx := context.Background()\n"
 "  ```\n"
-"    SDKライブラリをインポートしたら、そのまま[リクエストの作成](/guides/reading-data)に進みましょう！\n"
+"    SDKライブラリをインポートしたら、そのまま[リクエストの作成](/guides/reading-data)に進みましょう。\n"
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:61

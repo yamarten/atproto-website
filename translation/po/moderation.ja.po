@@ -68,7 +68,7 @@ msgstr "<Heading level={2} id=\"about-moderation\">モデレーションにつ�
 #: src/guides/moderation/en.mdx:12
 #, no-wrap
 msgid "The AT Proto model is that *speech* and *reach* should be two separate layers, built to work with each other. The “speech” layer should remain permissive, distributing authority and designed to ensure everyone has a voice. The “reach” layer lives on top, built for flexibility and designed to scale. AT Proto moderation is implemented using [Labels](/guides/labels).\n"
-msgstr "ATプロトコルのモデルでは、*スピーチ*と*リーチ*は別個の層として設計され、相互に連携して動作します。スピーチ層は寛容で権限を分散し、誰もが発言できることを重視します。リーチ層はその上に位置し、柔軟性とスケーラビリティのために設計されています。ATプロトコルのモデレーションは [ラベル](/guides/labels) を用いて実装されています。\n"
+msgstr "ATプロトコルのモデルでは、*スピーチ*と*リーチ*は別個の層として設計され、相互に連携して動作します。スピーチ層は寛容で権限を分散し、誰もが発言できることを重視します。リーチ層はその上に位置し、柔軟性とスケーラビリティのために設計されています。ATプロトコルのモデレーションは[ラベル](/guides/labels)を用いて実装されています。\n"
 
 #. type: Plain text
 #: src/guides/moderation/en.mdx:16

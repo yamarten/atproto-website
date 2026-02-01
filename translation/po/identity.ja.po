@@ -148,7 +148,7 @@ msgstr ""
 #: src/guides/identity/en.mdx:50
 #, no-wrap
 msgid "The DNS handle is a user-facing identifier — it should be displayed in user interfaces and promoted as a way to find users. Applications resolve handles to DIDs and then use the DID as the canonical identifier for accounts. Any DID can be rapidly resolved to a DID document which includes public keys and user services.\n"
-msgstr "DNSハンドルはユーザー向けの識別子です。UIに表示され、ユーザーを見つける方法として宣伝される必要があります。アプリケーションはハンドルをDIDに解決し、DIDを安定した正規の識別子として使用します。その後、DID は公開鍵とユーザーサービスを含むDIDドキュメントに安全に解決できます。\n"
+msgstr "DNSハンドルはユーザー向けの識別子です。UIに表示され、ユーザーを見つける方法として宣伝される必要があります。アプリケーションはハンドルをDIDに解決し、DIDを安定した正規の識別子として使用します。その後、DIDは公開鍵とユーザーサービスを含むDIDドキュメントに安全に解決できます。\n"
 
 #. type: Plain text
 #: src/guides/identity/en.mdx:63
@@ -204,7 +204,7 @@ msgid ""
 "- **Key rotation**. Users must be able to rotate keypairs without losing their identity.\n"
 "- **Decentralized governance**. The network should not be governed by a single stakeholder; it must be an open network or a consortium of providers.\n"
 msgstr ""
-"- **強力な一貫性**。特定のDIDに対して、解決クエリによって生成される有効なドキュメントは常に1つだけである必要があります。（一部のネットワークでは、これは確率的なトランザクションの最終性に左右される可能性があります。）\n"
+"- **強い一貫性**。特定のDIDに対して、解決クエリによって生成される有効なドキュメントは常に1つだけである必要があります。（一部のネットワークでは、これは確率的なトランザクションの最終性に左右される可能性があります。）\n"
 "- **高可用性**。解決クエリは確実に成功する必要があります。\n"
 "- **オンラインAPI**。クライアントは、標準APIを介して新しいDIDドキュメントを公開できる必要があります。\n"
 "- **安全**。ネットワークは、オペレーター、MITM、およびその他のユーザーからの攻撃から保護する必要があります。\n"

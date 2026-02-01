@@ -123,7 +123,7 @@ msgstr "動画は、サーバー側で`ffmpeg`のようなツールを使用し�
 #: src/guides/video-handling/en.mdx:32
 #, no-wrap
 msgid "It is possible to design an application endpoint to allow submitting videos to a separate microservice for processing before creating a post. This method also allows for better UX, since you can show the processing state to the user and let them know if the processing job fails.\n"
-msgstr "アプリケーションエンドポイントを設計して、投稿を作成する前に動画を別のマイクロサービスに送信して処理することが可能です。この方法は、処理状態をユーザーに表示し、処理ジョブが失敗した場合に知らせることができるため、より良いUXを提供します。\n"
+msgstr "アプリケーションエンドポイントを設計して、投稿を作成する前に動画を別のマイクロサービスに送信して処理することが可能です。この方法は処理状態をユーザーに表示し、処理ジョブが失敗した場合にそれを知らせるため、より良いUXを提供します。\n"
 
 #. type: Plain text
 #: src/guides/video-handling/en.mdx:34
