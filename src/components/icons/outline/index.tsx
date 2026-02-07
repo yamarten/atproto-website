@@ -1,5 +1,9 @@
+import { PaperAirplaneIcon } from '../PaperAirplaneIcon'
+import { UserIcon } from '../UserIcon'
 import { AcademicCapIcon } from './AcademicCapIcon'
 import { BookIcon } from './BookIcon'
+import { BriefcaseIcon } from './BriefcaseIcon'
+import { CloudIcon } from './CloudIcon'
 import { CubeIcon } from './CubeIcon'
 import { DatabaseIcon } from './DatabaseIcon'
 import { DocumentTextIcon } from './DocumentTextIcon'
@@ -9,11 +13,16 @@ import { KeyIcon } from './KeyIcon'
 import { MediaIcon } from './MediaIcon'
 import { PuzzlePieceIcon } from './PuzzlePieceIcon'
 import { QuestionIcon } from './QuestionIcon'
+import { RectangleGroupIcon } from './RectangleGroupIcon'
+import { SparklesIcon } from './SparklesIcon'
 import { StreamIcon } from './StreamIcon'
+import { WindowIcon } from './WindowIcon'
 
 export type OutlineIconEnum =
   | 'academic-cap'
   | 'book'
+  | 'briefcase'
+  | 'cloud'
   | 'cube'
   | 'database'
   | 'document-text'
@@ -21,9 +30,14 @@ export type OutlineIconEnum =
   | 'home'
   | 'key'
   | 'media'
+  | 'paper-airplane'
   | 'puzzle-piece'
+  | 'rectangle-group'
   | 'question'
+  | 'sparkles'
   | 'stream'
+  | 'user'
+  | 'window'
 
 export function Icon(
   props: React.ComponentPropsWithoutRef<'svg'> & { icon: OutlineIconEnum },
@@ -33,6 +47,12 @@ export function Icon(
   }
   if (props.icon === 'book') {
     return <BookIcon {...props} />
+  }
+  if (props.icon === 'briefcase') {
+    return <BriefcaseIcon {...props} />
+  }
+  if (props.icon === 'cloud') {
+    return <CloudIcon {...props} />
   }
   if (props.icon === 'cube') {
     return <CubeIcon {...props} />
@@ -55,14 +75,29 @@ export function Icon(
   if (props.icon === 'media') {
     return <MediaIcon {...props} />
   }
+  if (props.icon === 'paper-airplane') {
+    return <PaperAirplaneIcon {...props} />
+  }
   if (props.icon === 'puzzle-piece') {
     return <PuzzlePieceIcon {...props} />
+  }
+  if (props.icon === 'rectangle-group') {
+    return <RectangleGroupIcon {...props} />
   }
   if (props.icon === 'question') {
     return <QuestionIcon {...props} />
   }
+  if (props.icon === 'sparkles') {
+    return <SparklesIcon {...props} />
+  }
   if (props.icon === 'stream') {
     return <StreamIcon {...props} />
+  }
+  if (props.icon === 'user') {
+    return <UserIcon {...props} />
+  }
+  if (props.icon === 'window') {
+    return <WindowIcon {...props} />
   }
   return <></>
 }

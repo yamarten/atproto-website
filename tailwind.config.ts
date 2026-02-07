@@ -64,6 +64,26 @@ export default {
         7.5: '0.075',
         15: '0.15',
       },
+      animation: {
+        text: 'text 1s ease infinite',
+        'progress-fill': 'progress-fill linear forwards',
+      },
+      keyframes: {
+        text: {
+          '0%': {
+            'background-size': '200% 200%',
+            'background-position-x': '0%',
+          },
+          '100%': {
+            'background-size': '200% 200%',
+            'background-position-x': '-200%',
+          },
+        },
+        'progress-fill': {
+          '0%': { width: '0%' },
+          '100%': { width: '100%' },
+        },
+      },
     },
   },
   plugins: [typographyPlugin, headlessuiPlugin],
