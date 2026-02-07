@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"POT-Creation-Date: 2026-02-07 17:03+0900\n"
 "PO-Revision-Date: 2026-01-07 19:40+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -15,6 +15,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#. type: Plain text
+#: src/guides/creating-a-labeler/en.mdx:44 src/guides/self-hosting/en.mdx:45
+#, no-wrap
+msgid "## Ozone\n"
+msgstr "<Heading level={2} id=\"ozone\">Ozone</Heading>\n"
 
 #. type: Plain text
 #: src/guides/sync/en.mdx:45 src/guides/going-to-production/en.mdx:12
@@ -148,16 +154,10 @@ msgid "- For your app's signup flow, you will need users to log in or create an 
 msgstr "- アプリのサインアップフローでは、ユーザーがログインまたはアカウント作成を行う必要があります。Atmosphereを初めて利用するユーザー（まだPDSの概念を知らない可能性がある）に対してアプリ内で直接サインアップさせるため、アプリと一緒にPDSもホストすることを一般的に推奨します。PDSとAppViewは[異なるドメイン名](/going-to-production#domain-names)を使用してください。\n"
 
 #. type: Plain text
-#: src/guides/self-hosting/en.mdx:45
-#, no-wrap
-msgid "## Ozone and Osprey\n"
-msgstr "<Heading level={2} id=\"ozone-and-osprey\">OzoneとOsprey</Heading>\n"
-
-#. type: Plain text
 #: src/guides/self-hosting/en.mdx:47
 #, no-wrap
-msgid "Refer to the [Osprey](https://github.com/bluesky-social/osprey-atproto) and [Ozone](https://github.com/bluesky-social/ozone/blob/main/HOSTING.md) Github repos for self-hosting guidance.\n"
-msgstr "セルフホスティングのガイダンスについては、[Osprey](https://github.com/bluesky-social/osprey-atproto)と[Ozone](https://github.com/bluesky-social/ozone/blob/main/HOSTING.md)のGitHubリポジトリを参照してください。\n"
+msgid "Refer to [Using Ozone](/guides/using-ozone) for self-hosting guidance.\n"
+msgstr ""
 
 #. type: Plain text
 #: src/guides/self-hosting/en.mdx:49

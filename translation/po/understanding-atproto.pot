@@ -1,0 +1,163 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Bluesky Social PBC
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-02-07 17:03+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: src/guides/understanding-atproto/en.mdx:2
+#, no-wrap
+msgid "import { Card, CardParagraph, CardTitle } from '@/components/Card'\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/understanding-atproto/en.mdx:7
+#, no-wrap
+msgid ""
+"export const header = {\n"
+"  title: 'Understanding Atproto',\n"
+"  description: 'A closer look into how it all works',\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/understanding-atproto/en.mdx:9
+#, no-wrap
+msgid "## TL;DR\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/understanding-atproto/en.mdx:11
+#, no-wrap
+msgid "Atproto is big-world, open social. Users publish JSON records into repositories. The changestreams of those records then sync across the network to drive applications.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/understanding-atproto/en.mdx:13
+#, no-wrap
+msgid "We recommend these fantastic articles by community member [Dan Abramov](https://bsky.app/profile/danabra.mov):\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/understanding-atproto/en.mdx:17
+#, no-wrap
+msgid ""
+"- [**Open Social**](https://overreacted.io/open-social/) - The protocol is the API.\n"
+"- [**Where it's at://**](https://overreacted.io/where-its-at/) - From handles to hosting.\n"
+"- [**A Social Filesystem**](https://overreacted.io/a-social-filesystem/) - Formats over apps.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/understanding-atproto/en.mdx:19
+#, no-wrap
+msgid "## Core primitives\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/understanding-atproto/en.mdx:23
+#, no-wrap
+msgid ""
+"- **User repos.** The public per-user databases.\n"
+"- **User handles.** Usernames, which are DNS records. Our account is [@atproto.com](https://bsky.app/profile/atproto.com).\n"
+"- **User DIDs.** The permanent IDs of users.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/understanding-atproto/en.mdx:25
+#, no-wrap
+msgid "## Data models\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/understanding-atproto/en.mdx:30
+#, no-wrap
+msgid ""
+"- **Records**. JSON, categorized into collections.\n"
+"- **Blobs**. The [images and videos](/guides/images-and-video).\n"
+"- **Lexicon**. The schema language.\n"
+"- **Lexicon RPC (XRPC).** It's HTTPS but with the routes defined by Lexicons.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/understanding-atproto/en.mdx:32
+#, no-wrap
+msgid "## The stack\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/understanding-atproto/en.mdx:34
+#, no-wrap
+msgid "There are different kinds of services which you can [self-host](/guides/self-hosting):\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/understanding-atproto/en.mdx:39
+#, no-wrap
+msgid ""
+"- **Personal Data Servers (PDS).** They host user accounts.\n"
+"- **Relays**. They collect and rebroadcast user write events.\n"
+"- **Applications**. They aggregate user data to produce app experiences.\n"
+"- **Labelers**. Publish moderation decisions as label metadata.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/understanding-atproto/en.mdx:41
+#, no-wrap
+msgid "## Making it happen\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/understanding-atproto/en.mdx:43
+#, no-wrap
+msgid "Let's assume you're building an application. Your users will sign in with [OAuth](/guides/auth), which hands your application the address of their PDS. Your application then [reads & writes](/guides/reads-and-writes) records by contacting their PDS.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/understanding-atproto/en.mdx:45
+#, no-wrap
+msgid "To listen for activity across the network, you [sync from relays](/guides/sync). You could sync directly from the users' PDSes, but it's more convenient to use the relays. Since all data is signed, you can confirm the relay's stream is accurate.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/understanding-atproto/en.mdx:47
+#, no-wrap
+msgid "The [Lexicons](/guides/lexicon) help identify the data being published on the network. You use them to validate data as you read it, just like you validate incoming HTTP requests.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/understanding-atproto/en.mdx:49
+#, no-wrap
+msgid "Finally, you handle [moderation](/guides/moderation) by subscribing to (or running) labelers which receive user reports and publish labels on user content.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/understanding-atproto/en.mdx:51
+#, no-wrap
+msgid "## Deeper reads\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/understanding-atproto/en.mdx:53
+#, no-wrap
+msgid "We also recommend these deep-dive articles by the team:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/understanding-atproto/en.mdx:56
+#, no-wrap
+msgid ""
+"- [**Atproto for distributed systems engineers**](/articles/atproto-for-distsys-engineers). An explainer for backend thinkers.\n"
+"- [**The Atproto Ethos**](/articles/atproto-ethos). The principles that underpin the design of atproto.\n"
+msgstr ""

@@ -1,0 +1,993 @@
+# Japanese translations for PACKAGE package
+# Copyright (C) 2026 Bluesky Social PBC
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-02-07 17:03+0900\n"
+"PO-Revision-Date: 2026-02-07 17:03+0900\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. type: Plain text
+#: src/guides/reads-and-writes/en.mdx:13 src/guides/bot-tutorial/en.mdx:11
+#: src/guides/custom-feed-tutorial/en.mdx:14
+#: src/guides/oauth-tutorial/en.mdx:18
+#: src/guides/statusphere-tutorial/en.mdx:17
+#, no-wrap
+msgid "## Prerequisites\n"
+msgstr "<Heading level={2} id=\"prerequisites\">前提条件</Heading>\n"
+
+#. type: Plain text
+#: src/guides/feeds/en.mdx:68 src/guides/custom-feed-tutorial/en.mdx:78
+#, no-wrap
+msgid "The general flow of providing a custom algorithm to a user is as follows:\n"
+msgstr "ユーザーにカスタムアルゴリズムを提供する一般的なフローは以下の通りです。\n"
+
+#. type: Plain text
+#: src/guides/installing-lexicons/en.mdx:17 src/guides/bot-tutorial/en.mdx:28
+#: src/guides/custom-feed-tutorial/en.mdx:32
+#: src/guides/statusphere-tutorial/en.mdx:42
+#, no-wrap
+msgid ""
+"```bash\n"
+"npm install -g @atproto/lex\n"
+"```\n"
+msgstr ""
+"```bash\n"
+"npm install -g @atproto/lex\n"
+"```\n"
+
+#. type: Plain text
+#: src/guides/installing-lexicons/en.mdx:34 src/guides/bot-tutorial/en.mdx:54
+#: src/guides/custom-feed-tutorial/en.mdx:64
+#, no-wrap
+msgid ""
+"```bash\n"
+"lex build\n"
+"```\n"
+msgstr ""
+"```bash\n"
+"lex build\n"
+"```\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:13 src/guides/custom-feed-tutorial/en.mdx:16
+#, no-wrap
+msgid "This tutorial involves building a TypeScript application from scratch. You should have a working understanding of TypeScript and Node.js.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:24 src/guides/custom-feed-tutorial/en.mdx:28
+#: src/guides/statusphere-tutorial/en.mdx:38
+#, no-wrap
+msgid "You should also have our `lex` CLI tool installed globally:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:30 src/guides/custom-feed-tutorial/en.mdx:40
+#, no-wrap
+msgid "Now, create a new Typescript project directory and initialize your project:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:245
+#: src/guides/custom-feed-tutorial/en.mdx:387
+#: src/guides/oauth-tutorial/en.mdx:783
+#: src/guides/statusphere-tutorial/en.mdx:728
+#: src/articles/atproto-ethos/en.mdx:136
+#, no-wrap
+msgid "## Conclusion\n"
+msgstr "<Heading level={2} id=\"conclusion\">結論</Heading>\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:248
+#: src/guides/custom-feed-tutorial/en.mdx:398
+#, no-wrap
+msgid "You can find more guides and tutorials in our [Guides](/guides) section, and more example apps in the [Cookbook](https://github.com/bluesky-social/cookbook/) repository. Happy building!\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:3
+#, fuzzy, no-wrap
+#| msgid ""
+#| "import {Container} from \"@/components/Container\"\n"
+#| "import ozone from \"./ozone.png\"\n"
+msgid ""
+"import {Container} from \"@/components/Container\"\n"
+"import bsky from \"./feeds-bsky.png\"\n"
+msgstr ""
+"import {Container} from \"@/components/Container\"\n"
+"import {Heading} from \"@/components/Heading\"\n"
+"import ozone from \"./ozone.png\"\n"
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:8
+#, fuzzy, no-wrap
+#| msgid ""
+#| "export const header = {\n"
+#| "  title: 'OAuth Patterns',\n"
+#| "  description: 'OAuth implementation examples',\n"
+#| "}\n"
+msgid ""
+"export const header = {\n"
+"  title: 'Write a Custom Feed',\n"
+"  description: 'Host an algorithm that\\'s accessible from apps like Bluesky.',\n"
+"}\n"
+msgstr ""
+"export const header = {\n"
+"  title: 'OAuthパターン集',\n"
+"  description: 'OAuthの実装例',\n"
+"}\n"
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:10
+#, fuzzy, no-wrap
+#| msgid "Custom feeds, or feed generators, are services that provide custom algorithms to users through the AT Protocol. This allows users to choose their own timelines, and for feed builders to [create and embed dedicated view](https://graze.leaflet.pub/3m4yjmbnyec2c) of AT records.\n"
+msgid "Custom feeds, or feed generators, are services that provide algorithms to users. This gives you lots of freedom: to choose your own timeline view, or to [create a embeddable feed for other users](https://graze.leaflet.pub/3m4yjmbnyec2c).\n"
+msgstr "カスタムフィード（フィードジェネレーター）は、ATプロトコルを通じてユーザーにカスタムアルゴリズムを提供するサービスです。これにより、ユーザーは自分のタイムラインを選択でき、フィードビルダーはレコードの[専門的なビューを作成して組み込む](https://graze.leaflet.pub/3m4yjmbnyec2c)ことができます。\n"
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:12
+#, no-wrap
+msgid "In this tutorial, you'll create a custom feed server by consuming posts from the [firehose](http://localhost:3000/guides/streaming-data), algorithmically sorting them, and [broadcasting them as an XRPC feed](/guides/feeds).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:20
+#, no-wrap
+msgid ""
+"You should have installed:\n"
+"- Node.js 18+\n"
+"- Go 1.25+\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:22
+#: src/guides/statusphere-tutorial/en.mdx:26
+#, no-wrap
+msgid "On platforms supported by [homebrew](https://brew.sh/), you can install them with:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:26
+#, fuzzy, no-wrap
+#| msgid ""
+#| "```shell\n"
+#| "brew install goat\n"
+#| "```\n"
+msgid ""
+"```bash\n"
+"brew install node go\n"
+"```\n"
+msgstr ""
+"```shell\n"
+"brew install goat\n"
+"```\n"
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:34
+#, no-wrap
+msgid "You'll also need to install [`tap`](/guides/the-at-stack#tap) to consume the firehose of posts from the network. \n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:38
+#, no-wrap
+msgid ""
+"```bash\n"
+"go install github.com/bluesky-social/indigo/cmd/tap\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:48
+#, no-wrap
+msgid ""
+"```bash\n"
+"mkdir my-agent\n"
+"cd my-agent\n"
+"npm init -y\n"
+"npm i -D typescript ts-node @types/node dotenv @atproto/lex @atproto/lex-server @atproto/tap\n"
+"npx tsc --init --verbatimModuleSyntax false\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:50
+#: src/guides/statusphere-tutorial/en.mdx:44
+#, no-wrap
+msgid "You'll begin by adding Lexicons to your project.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:52
+#, no-wrap
+msgid "## Part 1: Lexicons and Tap\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:54
+#, no-wrap
+msgid "[Lexicons](/guides/lexicon) define Atproto records. A baseline feed generator requires the `app.bsky.feed.describeFeedGenerator` and `app.bsky.feed.getFeedSkeleton` Lexicons. You can use `lex` to download and build these Lexicons into your project:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:58
+#, fuzzy, no-wrap
+#| msgid ""
+#| "```bash\n"
+#| "lex install app.bsky.feed.post app.bsky.feed.like\n"
+#| "```\n"
+msgid ""
+"```bash\n"
+"lex install app.bsky.feed.describeFeedGenerator app.bsky.feed.getFeedSkeleton\n"
+"```\n"
+msgstr ""
+"```bash\n"
+"lex install app.bsky.feed.post app.bsky.feed.like\n"
+"```\n"
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:60
+#, fuzzy, no-wrap
+#| msgid "Finally, generate TypeScript schemas from the installed Lexicons:\n"
+msgid "From here, you can run `lex build` to generate TypeScript types for all of your installed Lexicons:\n"
+msgstr "最後に、インストールされたLexiconからTypeScriptスキーマを生成します。\n"
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:66
+#, no-wrap
+msgid "The generated code will live in `src/lexicons`.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:68
+#, no-wrap
+msgid "You'll also need to run `tap` in a separate terminal to index posts from the network. Start `tap` with:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:72
+#, fuzzy, no-wrap
+#| msgid ""
+#| "```bash\n"
+#| "npm install -g @atproto/lex\n"
+#| "```\n"
+msgid ""
+"```bash\n"
+"tap run --disable-acks=true\n"
+"```\n"
+msgstr ""
+"```bash\n"
+"npm install -g @atproto/lex\n"
+"```\n"
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:74
+#, no-wrap
+msgid "Now you can start building your feed generator.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:76
+#, no-wrap
+msgid "## Part 2: Feed Structure\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:85
+#, fuzzy, no-wrap
+#| msgid ""
+#| "- A user requests a feed from the AppView using the at-uri of the declared feed\n"
+#| "- The AppView resolves the at-uri and finds the DID doc of the Feed Generator\n"
+#| "- The AppView sends a getFeedSkeleton request to the service endpoint declared in the Feed Generator's DID doc\n"
+#| "  - This request is authenticated by a JWT signed by the user's repo signing key\n"
+#| "- The Feed Generator returns a skeleton of the feed to the AppView\n"
+#| "- The AppView hydrates the feed (user info, post contents, aggregates, etc.)\n"
+#| "- The AppView returns the hydrated feed to the user\n"
+msgid ""
+"- A user requests a feed from the application backend (e.g. Bluesky)\n"
+"- The application finds the DID doc of the requested feed to look up its hosting server\n"
+"- The application sends a `getFeedSkeleton` request to the hosting server\n"
+"- The feed's hosting server returns a list of post URLs\n"
+"- The application hydrates the feed (user info, post contents, aggregates, etc.)\n"
+"- The application returns the hydrated feed to the user\n"
+msgstr ""
+"- 宣言されたフィードのat-uriを使用してユーザーがAppViewからフィードをリクエストします\n"
+"- AppViewがat-uriを解決し、フィードジェネレーターのDIDドキュメントを見つけます\n"
+"- AppViewがフィードジェネレーターのDIDドキュメントで宣言されたサービスエンドポイントにgetFeedSkeletonリクエストを送信します\n"
+"  - このリクエストはユーザーのリポジトリ署名キーで署名されたJWTで認証されます\n"
+"- フィードジェネレーターがフィードのスケルトンをAppViewに返します。\n"
+"- AppViewがフィードをハイドレート（ユーザー情報、投稿内容、集計値などの注入）します\n"
+"- AppViewがハイドレートされたフィードをユーザーに返します\n"
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:87
+#, no-wrap
+msgid "You'll start by capturing some configuration from environment variables. Much of this is configuration for the published feed (`FEED_PUBLISHER_DID`, `FEED_NAME`) but some details configure how the feed will behave (`FEED_MAX_POSTS`, `SEARCH_TERMS`).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:89
+#, no-wrap
+msgid "For this example, you'll be creating our entire app in a single file at `src/index.ts`. Create that file now, and add these imports and config lines:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:96
+#, fuzzy, no-wrap
+#| msgid ""
+#| "      ```ts\n"
+#| "      import { LexRouter, LexError } from '@atproto/lex-server'\n"
+#| "      import { serve, upgradeWebSocket } from '@atproto/lex-server/nodejs'\n"
+#| "      import * as app from './lexicons/app.js'\n"
+msgid ""
+"```ts\n"
+"import { AtUriString, DidString, asDidString } from '@atproto/lex'\n"
+"import { LexError, LexRouter, serviceAuth } from '@atproto/lex-server'\n"
+"import { serve } from '@atproto/lex-server/nodejs'\n"
+"import { Tap, SimpleIndexer } from '@atproto/tap'\n"
+"import * as app from './lexicons/app.js'\n"
+msgstr ""
+"      ```ts\n"
+"      import { LexRouter, LexError } from '@atproto/lex-server'\n"
+"      import { serve, upgradeWebSocket } from '@atproto/lex-server/nodejs'\n"
+"      import * as app from './lexicons/app.js'\n"
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:100
+#, no-wrap
+msgid ""
+"// =============================================================================\n"
+"// Configuration\n"
+"// =============================================================================\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:111
+#, no-wrap
+msgid ""
+"interface FeedConfig {\n"
+"    publisherDid: DidString\n"
+"    feedName: string\n"
+"    searchTerms: string[]\n"
+"    maxPosts: number\n"
+"    port: number\n"
+"    tapUrl: string\n"
+"    tapPassword: string\n"
+"    initialRepos: string[]\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:113
+#, no-wrap
+msgid "const DEFAULT_REPO = 'did:plc:ragtjsm2j2vknwkz3zp4oxrd' // pfrazee.com\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:124
+#, no-wrap
+msgid ""
+"const config: FeedConfig = {\n"
+"    publisherDid: asDidString(process.env.FEED_PUBLISHER_DID || 'did:example:alice'),\n"
+"    feedName: process.env.FEED_NAME || 'whats-alf',\n"
+"    searchTerms: (process.env.FEED_SEARCH_TERMS || 'alf').split(',').map(s => s.trim()),\n"
+"    maxPosts: parseInt(process.env.FEED_MAX_POSTS || '1000', 10),\n"
+"    port: parseInt(process.env.FEED_PORT || '3000', 10),\n"
+"    tapUrl: process.env.TAP_URL || 'http://localhost:2480',\n"
+"    tapPassword: process.env.TAP_PASSWORD || 'secret',\n"
+"    initialRepos: (process.env.FEED_INITIAL_REPOS || DEFAULT_REPO).split(',').map(s => s.trim()),\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:127
+#, no-wrap
+msgid ""
+"const FEED_URI: AtUriString = `at://${config.publisherDid}/app.bsky.feed.generator/${config.feedName}` as AtUriString\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:129
+#, no-wrap
+msgid "There are a few things to note here. You've supplied a `DEFAULT_REPO` to fetch with `tap`. In this case, you're following a single user, [`pfrazee.com`](https://bsky.app/profile/pfrazee.com). This will keep the tutorial example manageable.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:131
+#, no-wrap
+msgid "You're sorting this feed by searching for posts that contain certain terms. You can configure these terms with the `FEED_SEARCH_TERMS` environment variable. In this case, you're searching for posts that mention \"alf\".\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:133
+#, no-wrap
+msgid "Next, you'll set up the logic to consume posts from the firehose.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:135
+#, fuzzy, no-wrap
+#| msgid "## Step 6. Listening to the firehose\n"
+msgid "## Part 3: Consuming the Firehose\n"
+msgstr "<Heading level={2} id=\"step-6-listening-to-the-firehose\">ステップ6. ファイアホースをリッスン</Heading>\n"
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:137
+#, no-wrap
+msgid "You'll store the posts you want to serve in an array.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:139
+#, no-wrap
+msgid "As `tap` discovers posts from the network, this feed server will search their text for our configured search terms. If it finds a match, it'll add the post to your array. Add the following contents to `src/index.ts`:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:144
+#, no-wrap
+msgid ""
+"```ts\n"
+"// =============================================================================\n"
+"// Post Index\n"
+"// =============================================================================\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:149
+#, no-wrap
+msgid ""
+"interface IndexedPost {\n"
+"    uri: AtUriString\n"
+"    indexedAt: number\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:151
+#, no-wrap
+msgid "const postIndex: IndexedPost[] = []\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:155
+#, no-wrap
+msgid ""
+"// =============================================================================\n"
+"// Tap Indexer\n"
+"// =============================================================================\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:158
+#, no-wrap
+msgid ""
+"const tap = new Tap(config.tapUrl, { adminPassword: config.tapPassword })\n"
+"const indexer = new SimpleIndexer()\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:163
+#, no-wrap
+msgid ""
+"const searchPattern = new RegExp(\n"
+"    `\\\\b(${config.searchTerms.map(t => t.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\\\$&')).join('|')})\\\\b`,\n"
+"    'i'\n"
+")\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:166
+#, no-wrap
+msgid ""
+"indexer.record(async (evt) => {\n"
+"    if (evt.collection !== 'app.bsky.feed.post') return\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:168
+#, no-wrap
+msgid "    const uri = `at://${evt.did}/${evt.collection}/${evt.rkey}` as AtUriString\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:177
+#, no-wrap
+msgid ""
+"    if (evt.action === 'delete') {\n"
+"        const idx = postIndex.findIndex(p => p.uri === uri)\n"
+"        if (idx !== -1) {\n"
+"            postIndex.splice(idx, 1)\n"
+"            console.log(`DELETE ${uri}`)\n"
+"        }\n"
+"        return\n"
+"    }\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:181
+#, no-wrap
+msgid ""
+"    const text = (evt.record?.text as string) || ''\n"
+"    if (!searchPattern.test(text)) return\n"
+"    if (postIndex.some(p => p.uri === uri)) return\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:184
+#, no-wrap
+msgid ""
+"    postIndex.unshift({ uri, indexedAt: Date.now() })\n"
+"    if (postIndex.length > config.maxPosts) postIndex.pop()\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:190
+#, no-wrap
+msgid ""
+"    const preview = text.substring(0, 60).replace(/\\n/g, ' ')\n"
+"    console.log(`${evt.action.toUpperCase()} ${uri}`)\n"
+"    console.log(`  \"${preview}${text.length > 60 ? '...' : ''}\"`)\n"
+"    console.log(`  ⭐ Added to index (${postIndex.length} total)`)\n"
+"})\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:200
+#, no-wrap
+msgid ""
+"indexer.identity(async (evt) => {\n"
+"    if (evt.status === 'active') return\n"
+"    // Remove posts from disabled/deleted identities\n"
+"    const removed = postIndex.filter(p => p.uri.includes(evt.did)).length\n"
+"    if (removed > 0) {\n"
+"        postIndex.splice(0, postIndex.length, ...postIndex.filter(p => !p.uri.includes(evt.did)))\n"
+"        console.log(`Identity ${evt.did} (${evt.status}): removed ${removed} posts`)\n"
+"    }\n"
+"})\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:202
+#, no-wrap
+msgid "indexer.error((err) => console.error('Indexer error:', err))\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:205
+#, no-wrap
+msgid ""
+"const channel = tap.channel(indexer)\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:207
+#, no-wrap
+msgid "Here, you connect to `tap`, and use the `SimpleIndexer` function provided by the `@atproto/tap` library to process incoming records from the `app.bsky.feed.post` Lexicon — i.e., Bluesky posts.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:209
+#, no-wrap
+msgid "When a new post is discovered, you check if its text matches your search terms. If it does, you add it to your `postIndex` array. You'll also handle deletions and identity status changes to keep your index accurate.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:211
+#, no-wrap
+msgid "Essentially, you're building an in-memory search index of posts that match your criteria. You'll then serve this index as a feed.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:213
+#, no-wrap
+msgid "## Part 4: Serving the Feed\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:215
+#, no-wrap
+msgid "Now, you'll add [XRPC](/guides/lexicon#http-api-methods) routes to serve our feed. Your server will be handling two kinds of requests:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:220
+#, no-wrap
+msgid ""
+"```\n"
+"GET /xrpc/app.bsky.feed.describeFeedGenerator\n"
+"GET /xrpc/app.bsky.feed.getFeedSkeleton\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:222
+#, no-wrap
+msgid "Add the Feed Generator server logic to `src/index.ts`:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:227
+#, no-wrap
+msgid ""
+"```ts\n"
+"// =============================================================================\n"
+"// Feed Generator Server\n"
+"// =============================================================================\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:234
+#, no-wrap
+msgid ""
+"// Auth is optional for this demo since we only log the requester's DID.\n"
+"// In production, you may want to use credentials to personalize the feed.\n"
+"const auth = serviceAuth({\n"
+"    audience: config.publisherDid,\n"
+"    unique: async () => true,\n"
+"})\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:236
+#, fuzzy, no-wrap
+#| msgid "      const router = new LexRouter({ upgradeWebSocket })\n"
+msgid "const router = new LexRouter()\n"
+msgstr "      const router = new LexRouter({ upgradeWebSocket })\n"
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:253
+#, no-wrap
+msgid ""
+"router.add(app.bsky.feed.describeFeedGenerator, {\n"
+"    auth,\n"
+"    handler: (ctx) => {\n"
+"        console.log('describeFeedGenerator from', ctx.credentials?.did)\n"
+"        return {\n"
+"            body: {\n"
+"                did: config.publisherDid,\n"
+"                feeds: [app.bsky.feed.describeFeedGenerator.feed.$build({ uri: FEED_URI })],\n"
+"                links: {\n"
+"                    privacyPolicy: 'https://example.com/privacy',\n"
+"                    termsOfService: 'https://example.com/tos',\n"
+"                },\n"
+"            },\n"
+"        }\n"
+"    },\n"
+"})\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:261
+#, no-wrap
+msgid ""
+"router.add(app.bsky.feed.getFeedSkeleton, {\n"
+"    auth,\n"
+"    handler: (ctx) => {\n"
+"        if (ctx.params.feed !== FEED_URI) {\n"
+"            throw new LexError('InvalidRequest', 'Feed not found')\n"
+"        }\n"
+"        console.log('getFeedSkeleton from', ctx.credentials?.did)\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:264
+#, no-wrap
+msgid ""
+"        const limit = Math.min(ctx.params.limit ?? 50, 100)\n"
+"        const cursor = ctx.params.cursor as string | undefined\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:271
+#, no-wrap
+msgid ""
+"        let startIdx = 0\n"
+"        if (cursor) {\n"
+"            const cursorTime = parseInt(cursor, 10)\n"
+"            startIdx = postIndex.findIndex(p => p.indexedAt < cursorTime)\n"
+"            if (startIdx === -1) startIdx = postIndex.length\n"
+"        }\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:278
+#, no-wrap
+msgid ""
+"        const slice = postIndex.slice(startIdx, startIdx + limit)\n"
+"        const feed = slice.map(p => app.bsky.feed.defs.skeletonFeedPost.$build({ post: p.uri }))\n"
+"        const lastPost = slice.at(-1)\n"
+"        const nextCursor = lastPost && slice.length === limit && startIdx + limit < postIndex.length\n"
+"            ? lastPost.indexedAt.toString()\n"
+"            : undefined\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:283
+#, no-wrap
+msgid ""
+"        return { body: { feed, cursor: nextCursor } }\n"
+"    },\n"
+"})\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:285
+#, no-wrap
+msgid "Here, you're using `LexRouter` from the `@atproto/lex-server` package to define your XRPC routes. You'll notice that the `getFeedSkeleton` method returns a `cursor` in its response and takes a `cursor` param as input. This allows clients to paginate through your feed.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:290
+#, no-wrap
+msgid ""
+"<Note>\n"
+"This cursor is treated as an opaque value and fully at the Feed Generator's discretion. It is passed through the AppView directly to and from the client. The cursor be _unique per feed item_ to prevent unexpected behavior in pagination. For instance, a compound cursor with a timestamp + a CID:\n"
+"`1683654690921::bafyreia3tbsfxe3cc75xrxyyn6qc42oupi73fxiox76prlyi5bpx7hr72u`\n"
+"</Note>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:292
+#, no-wrap
+msgid "Finally, you'll add the runtime logic to start the server.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:294
+#, no-wrap
+msgid "## Part 5: Running the Server\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:296
+#, no-wrap
+msgid "You'll connect to tap with `channel.start()` then initiate your server. Add the runtime logic to `src/index.ts`:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:301
+#, no-wrap
+msgid ""
+"```ts\n"
+"// =============================================================================\n"
+"// Start\n"
+"// =============================================================================\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:304
+#, no-wrap
+msgid ""
+"channel.start()\n"
+"console.log('Indexer connected to Tap server')\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:310
+#, no-wrap
+msgid ""
+"if (config.initialRepos.length > 0) {\n"
+"    tap.addRepos(config.initialRepos).then(() => {\n"
+"        console.log(`Added ${config.initialRepos.length} repo(s) to follow\\n`)\n"
+"    })\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:313
+#, no-wrap
+msgid ""
+"serve(router, { port: config.port }).then((server) => {\n"
+"    const feedParam = encodeURIComponent(FEED_URI)\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:316
+#, no-wrap
+msgid ""
+"    console.log(`\n"
+"Feed Generator Running\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:322
+#, no-wrap
+msgid ""
+"Server: http://localhost:${config.port}\n"
+"Feed: ${config.feedName}\n"
+"Terms: ${config.searchTerms.join(', ')}\n"
+"Tap: ${config.tapUrl}\n"
+"Repos: ${config.initialRepos.length}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:325
+#, no-wrap
+msgid ""
+"To test (generate a JWT with goat):\n"
+"goat account service-auth --aud ${config.publisherDid}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:328
+#, no-wrap
+msgid ""
+"Then:\n"
+"curl -H \"Authorization: Bearer <jwt>\" \"http://localhost:${config.port}/xrpc/app.bsky.feed.getFeedSkeleton?feed=${feedParam}\"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:331
+#, no-wrap
+msgid ""
+"Listening for posts matching: ${config.searchTerms.join(', ')}\n"
+"`)\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:338
+#, no-wrap
+msgid ""
+"    const shutdown = async () => {\n"
+"        console.log('Shutting down...')\n"
+"        await channel.destroy()\n"
+"        await server.terminate()\n"
+"        process.exit(0)\n"
+"    }\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:343
+#, no-wrap
+msgid ""
+"    process.on('SIGINT', shutdown)\n"
+"    process.on('SIGTERM', shutdown)\n"
+"})\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:345
+#, no-wrap
+msgid "This kicks off both your connection to `tap` (your feed input) and your XRPC server (your feed output). It also provides some logging to help you test your feed generator.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:347
+#, no-wrap
+msgid "Run it with `ts-node src/index.ts`. You should see some initial posts being indexed:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:350
+#, no-wrap
+msgid ""
+"```\n"
+"Indexer connected to Tap server\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:352
+#, fuzzy, no-wrap
+#| msgid "## Feed Generator Templates\n"
+msgid "Feed Generator Running\n"
+msgstr "<Heading level={2} id=\"feed-generator-templates\">フィードジェネレーターテンプレート</Heading>\n"
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:358
+#, no-wrap
+msgid ""
+"Server: http://localhost:3000\n"
+"Feed: whats-alf\n"
+"Terms: alf\n"
+"Tap: http://localhost:2480\n"
+"Repos: 1\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:361
+#, no-wrap
+msgid ""
+"To test (generate a JWT with goat):\n"
+"goat account service-auth --aud did:example:alice\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:364
+#, no-wrap
+msgid ""
+"Then:\n"
+"curl -H \"Authorization: Bearer <jwt>\" \"http://localhost:3000/xrpc/app.bsky.feed.getFeedSkeleton?feed=at%3A%2F%2Fdid%3Aexample%3Aalice%2Fapp.bsky.feed.generator%2Fwhats-alf\"\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:366
+#, no-wrap
+msgid "Listening for posts matching: alf\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:368
+#, no-wrap
+msgid "Added 1 repo(s) to follow\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:376
+#, no-wrap
+msgid ""
+"CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux6xlrdb42v\n"
+"  \"Run?? Alf was the date I struck out with ☹️\"\n"
+"  ⭐ Added to index (1 total)\n"
+"CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v\n"
+"  \"god is that okay? I'm really confused right now, Alf broke m...\"\n"
+"  ⭐ Added to index (2 total)\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:379
+#, no-wrap
+msgid ""
+"<Note>\n"
+"Remember that this example fetches only a single user's data repository. To fetch the entire network, stop and re-run `tap` with the `--signal-collection` flag:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:385
+#, no-wrap
+msgid ""
+"```bash\n"
+"tap run --collection-filters=app.bsky.feed.post \\\n"
+"  --signal-collection=app.bsky.feed.post\n"
+"```\n"
+"</Note>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:389
+#, no-wrap
+msgid "You've now built a custom Atproto feed that retrieves posts from the network, indexes them based on your own algorithm, and serves them via XRPC to clients like Bluesky.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:391
+#, no-wrap
+msgid "Now that your feed server is running, you can customize it further, then publish it for others to use. To do that, you'll want to deploy it to a public server (e.g., AWS, DigitalOcean, etc.) and ensure it's accessible over HTTPS.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:393
+#, no-wrap
+msgid "After that, you can clone down our original [feed-generator repo](https://github.com/bluesky-social/feed-generator) and run the [publishFeedGen.ts](https://github.com/bluesky-social/feed-generator/blob/main/scripts/publishFeedGen.ts) script interactively. This creates the necessary Atproto records to point to your feed server, and allow it to be discovered:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/custom-feed-tutorial/en.mdx:397
+#, fuzzy, no-wrap
+#| msgid ""
+#| "<Container>\n"
+#| "  <Image src={skyblur} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
+#| "</Container>\n"
+msgid ""
+"<Container>\n"
+"  <Image src={bsky} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
+"</Container>\n"
+msgstr ""
+"<Container>\n"
+"  <Image src={skyblur} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
+"</Container>\n"

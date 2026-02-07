@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"POT-Creation-Date: 2026-02-07 17:03+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,8 +42,9 @@ msgstr "# FAQ\n"
 
 #. type: Plain text
 #: src/guides/faq/en.mdx:10
-#, no-wrap
-msgid "Frequently Asked Questions about the Authenticated Transfer Protocol (AT Proto). For FAQ about Bluesky, visit [here](https://bsky.social/about/faq).\n"
+#, fuzzy, no-wrap
+#| msgid "Frequently Asked Questions about the Authenticated Transfer Protocol (AT Proto). For FAQ about Bluesky, visit [here](https://bsky.social/about/faq).\n"
+msgid "Frequently Asked Questions about the Authenticated Transfer Protocol (Atproto). For FAQ about Bluesky, visit [here](https://bsky.social/about/faq).\n"
 msgstr "Authenticated Transferプロトコル（ATプロトコル）に関するよくある質問。Blueskyに関するよくある質問については、[こちら](https://bsky.social/about/faq)をご覧ください。\n"
 
 #. type: Plain text
@@ -127,13 +128,14 @@ msgstr "<Heading level={2} id=\"what-is-xrpc-and-why-not-use-___\">「XRPC」と
 #. type: Plain text
 #: src/guides/faq/en.mdx:38
 #, no-wrap
-msgid "[XRPC](/specs/xrpc) is HTTP with some added conventions. We're aiming to retire the term \"XRPC\" and just refer to it as the ATProto usage of HTTP.\n"
-msgstr "[XRPC](/specs/xrpc)は、いくつかの規則が追加されたHTTPです。私たちは「XRPC」という用語を廃止し、単にHTTPのATプロトコル用法と呼ぶことを目指しています。\n"
+msgid "[XRPC](/specs/xrpc) is HTTP with some added conventions.\n"
+msgstr ""
 
 #. type: Plain text
 #: src/guides/faq/en.mdx:40
-#, no-wrap
-msgid "XRPC uses [Lexicon](/guides/lexicon) to describe HTTP calls and maps them to `/xrpc/{methodId}`. For example, this API call:\n"
+#, fuzzy, no-wrap
+#| msgid "XRPC uses [Lexicon](/guides/lexicon) to describe HTTP calls and maps them to `/xrpc/{methodId}`. For example, this API call:\n"
+msgid "XRPC uses [Lexicons](/guides/lexicon) to describe HTTP calls and maps them to `/xrpc/{methodId}`. For example, this API call:\n"
 msgstr "XRPCは[Lexicon](/guides/lexicon)を使用してHTTP呼び出しを記述し、それらを`/xrpc/{methodId}`にマッピングします。たとえば、次のAPI呼び出し：\n"
 
 #. type: Plain text
@@ -178,6 +180,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/faq/en.mdx:56
-#, no-wrap
-msgid "Lexicon establishes a shared method id (`com.atproto.repo.listRecords`) and the expected query params, input body, and output body. By using Lexicon we get runtime checks on the inputs and outputs of the call, and can generate typed code like the API call example above.\n"
+#, fuzzy, no-wrap
+#| msgid "Lexicon establishes a shared method id (`com.atproto.repo.listRecords`) and the expected query params, input body, and output body. By using Lexicon we get runtime checks on the inputs and outputs of the call, and can generate typed code like the API call example above.\n"
+msgid "Lexicons establish shared method id (`com.atproto.repo.listRecords`) and the expected query params, input body, and output body. By using Lexicons we get runtime checks on the inputs and outputs of the call, and can generate typed code like the API call example above.\n"
 msgstr "Lexiconは、共有メソッドID（`com.atproto.repo.listRecords`）と、予想されるクエリパラメータ、入力本文、および出力本文を確立します。Lexiconを使用すると、呼び出しの入力と出力の実行時チェックが実行され、上記のAPI呼び出しの例のような型付きコードを生成できます。\n"

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"POT-Creation-Date: 2026-02-07 17:03+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -194,23 +194,29 @@ msgstr ""
 #. type: Plain text
 #: src/guides/going-to-production/en.mdx:64
 #, no-wrap
-msgid "## Moderation\n"
+msgid "If you are running multiple processes in parallel, you may also want to leverage [sidecar containers](https://litestream.io/guides/docker/#why-sidecar-containers-work) for your SQLite databases.\n"
 msgstr ""
 
 #. type: Plain text
 #: src/guides/going-to-production/en.mdx:66
 #, no-wrap
-msgid "Moderation is almost always performed at the PDS level. However, if you are also running a Relay, you should be aware that the Relay admin web interface has forms for performing account-level and PDS-level actions if needed. There are also some moderation-related PDS endpoints not exposed via XRPC, which our [goat](https://github.com/bluesky-social/goat) CLI tool can interact with. Refer to [goat/pds_admin.go](https://github.com/bluesky-social/goat/blob/main/pds_admin.go) for examples.\n"
+msgid "## Moderation\n"
 msgstr ""
 
 #. type: Plain text
 #: src/guides/going-to-production/en.mdx:68
 #, no-wrap
-msgid "[Ozone](https://github.com/bluesky-social/ozone) is our labeling service and moderation interface. If you are building your own AppView, AppViews can use the Ozone `subscribeLabel` \"firehose\" to receive updates. Ozone can also be granted permission to read additional PDS-level private information, such as the account email. This is helpful for things like account recovery.\n"
+msgid "Moderation is almost always performed at the PDS level. However, if you are also running a Relay, you should be aware that the Relay admin web interface has forms for performing account-level and PDS-level actions if needed. There are also some moderation-related PDS endpoints not exposed via XRPC, which our [goat](https://github.com/bluesky-social/goat) CLI tool can interact with. Refer to [goat/pds_admin.go](https://github.com/bluesky-social/goat/blob/main/pds_admin.go) for examples.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/going-to-production/en.mdx:69
+#: src/guides/going-to-production/en.mdx:70
+#, no-wrap
+msgid "[Ozone](https://github.com/bluesky-social/ozone) is our labeling service and moderation interface. If you are building your own AppView, AppViews can use the Ozone `subscribeLabel` \"firehose\" to receive updates. Ozone can also be granted permission to read additional PDS-level private information, such as the account email. This is helpful for things like account recovery.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/going-to-production/en.mdx:71
 #, no-wrap
 msgid "You should generally run separate Ozone instances for moderating the PDS (since they can see private account info) and standalone AppViews, unless there is actually a single administrative org doing the moderation for both.\n"
 msgstr ""

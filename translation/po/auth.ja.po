@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-01-11 22:17+0900\n"
+"POT-Creation-Date: 2026-02-07 17:03+0900\n"
 "PO-Revision-Date: 2026-01-07 19:40+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -20,23 +20,23 @@ msgstr ""
 #: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:21
 #: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:73
 #: src/guides/streaming-data/en.mdx:60 src/guides/video-handling/en.mdx:39
-#: src/guides/account-migration/en.mdx:74 src/guides/feeds/en.mdx:111
-#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:52
-#: src/guides/scopes/en.mdx:45 src/guides/subscriptions/en.mdx:78
-#: src/guides/writing-data/en.mdx:181 src/guides/creating-a-labeler/en.mdx:56
-#: src/guides/labels/en.mdx:110 src/guides/sdk-auth/en.mdx:145
-#: src/guides/sync/en.mdx:51 src/guides/auth/en.mdx:41
-#: src/guides/lexicon/en.mdx:128 src/guides/publishing-lexicons/en.mdx:53
-#: src/guides/backfilling/en.mdx:60 src/guides/reading-data/en.mdx:165
-#: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
+#: src/guides/feeds/en.mdx:113 src/guides/installing-lexicons/en.mdx:53
+#: src/guides/oauth-patterns/en.mdx:56 src/guides/scopes/en.mdx:45
+#: src/guides/subscriptions/en.mdx:78 src/guides/writing-data/en.mdx:181
+#: src/guides/creating-a-labeler/en.mdx:56 src/guides/labels/en.mdx:110
+#: src/guides/sdk-auth/en.mdx:145 src/guides/sync/en.mdx:51
+#: src/guides/auth/en.mdx:41 src/guides/lexicon/en.mdx:128
+#: src/guides/publishing-lexicons/en.mdx:49 src/guides/backfilling/en.mdx:60
+#: src/guides/reading-data/en.mdx:165 src/guides/social-graph/en.mdx:23
+#: src/guides/permission-sets/en.mdx:214 src/guides/using-ozone/en.mdx:132
 #, no-wrap
 msgid "## Further Reading and Resources\n"
 msgstr "<Heading level={2} id=\"further-reading-and-resources\">関連・参考資料</Heading>\n"
 
 #. type: Plain text
-#: src/guides/oauth-patterns/en.mdx:2 src/guides/subscriptions/en.mdx:2
-#: src/guides/labels/en.mdx:2 src/guides/sdk-auth/en.mdx:2
-#: src/guides/auth/en.mdx:2
+#: src/guides/subscriptions/en.mdx:2 src/guides/labels/en.mdx:2
+#: src/guides/sdk-auth/en.mdx:2 src/guides/auth/en.mdx:2
+#: src/guides/tutorials/en.mdx:2
 #, no-wrap
 msgid "import {Container} from \"@/components/Container\"\n"
 msgstr ""
@@ -45,11 +45,16 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:7
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "export const header = {\n"
+#| "  title: 'Auth',\n"
+#| "  description: 'Auth for AT Protocol application developers',\n"
+#| "}\n"
 msgid ""
 "export const header = {\n"
 "  title: 'Auth',\n"
-"  description: 'Auth for AT Protocol application developers',\n"
+"  description: 'Auth for Atproto application developers',\n"
 "}\n"
 msgstr ""
 "export const header = {\n"
@@ -59,20 +64,23 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:9
-#, no-wrap
-msgid "## About authentication\n"
+#, fuzzy, no-wrap
+#| msgid "## About authentication\n"
+msgid "## About authorization\n"
 msgstr "<Heading level={2} id=\"about-authentication\">認証について</Heading>\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:11
-#, no-wrap
-msgid "**Authentication is the first part of our docs for a reason!** You don't always need to be authenticated to [read data](/reading-data#unauthenticated-reads) from AT Protocol records or even to [stream data from the firehose](/guides/streaming-data). But if you're looking to build an application that integrates with the Atmosphere of ATProto apps in some way, you'll begin with authentication. You might start out by just using AT Protocol identities as an OAuth source — though you'll find that there's lots more you can do by building on top of the ATProto [social graph](/guides/social-graph).\n"
+#, fuzzy, no-wrap
+#| msgid "**Authentication is the first part of our docs for a reason!** You don't always need to be authenticated to [read data](/reading-data#unauthenticated-reads) from AT Protocol records or even to [stream data from the firehose](/guides/streaming-data). But if you're looking to build an application that integrates with the Atmosphere of ATProto apps in some way, you'll begin with authentication. You might start out by just using AT Protocol identities as an OAuth source — though you'll find that there's lots more you can do by building on top of the ATProto [social graph](/guides/social-graph).\n"
+msgid "**Authorization is the first part of our docs for a reason!** You don't always need to be authenticated to [read data](/reading-data#unauthenticated-reads) from AT Protocol records or even to [stream data from the firehose](/guides/streaming-data). But if you're looking to build an application that integrates with the Atmosphere of Atproto apps in some way, you'll begin with authentication. You might start out by just using AT Protocol identities as an OAuth source — though you'll find that there's lots more you can do by building on top of the Atproto [social graph](/guides/social-graph).\n"
 msgstr "**認証が最初のドキュメントであることには理由があります**。ATプロトコルのレコードから[データを読む](/reading-data#unauthenticated-reads)ために常に認証が必要というわけではありませんし、[firehoseからデータをストリーム](/guides/streaming-data)する場合も同じです。ただしATプロトコルアプリの環境（Atmosphere）に何らかの形で統合されるアプリケーションを構築したい場合は、認証から始めることになります。まずATプロトコルのIDをOAuthソースとして使うだけから始めるかもしれませんが、ATプロトコルの[ソーシャルグラフ](/guides/social-graph)上でさらに多くのことができることに気付くでしょう。\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:13
-#, no-wrap
-msgid "This section is aimed at developers building applications on AT Protocol. Applications with their own end-user login flow should implement [OAuth](#what-is-oauth) for authentication. Single-purpose applications such as bots or command line tools may use [password authentication](/guides/sdk-auth) instead.\n"
+#, fuzzy, no-wrap
+#| msgid "This section is aimed at developers building applications on AT Protocol. Applications with their own end-user login flow should implement [OAuth](#what-is-oauth) for authentication. Single-purpose applications such as bots or command line tools may use [password authentication](/guides/sdk-auth) instead.\n"
+msgid "This section is aimed at developers building applications on Atproto. Applications with their own end-user login flow should implement [OAuth](#what-is-oauth) for authentication. Single-purpose applications such as bots or command line tools may use [password authentication](/guides/sdk-auth) instead.\n"
 msgstr "このセクションはATプロトコルでアプリケーションを構築している開発者を対象としています。独自のログインフローを持つアプリケーションは認証に[OAuth](#what-is-oauth)を実装すべきです。ボットやコマンドラインツールなどの単一目的のアプリケーションは[パスワード認証](/guides/sdk-auth)を使うこともできます。\n"
 
 #. type: Plain text
@@ -125,8 +133,9 @@ msgstr "<Heading level={2} id=\"how-is-oauth-different-in-at-protocol\">ATプロ
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:31
-#, no-wrap
-msgid "ATProto [specifies](/specs/oauth) a particular \"profile\" of the OAuth standards, using [OAuth 2.1](https://www.ietf.org/archive/id/draft-ietf-oauth-v2-1-13.html) as the foundation.\n"
+#, fuzzy, no-wrap
+#| msgid "ATProto [specifies](/specs/oauth) a particular \"profile\" of the OAuth standards, using [OAuth 2.1](https://www.ietf.org/archive/id/draft-ietf-oauth-v2-1-13.html) as the foundation.\n"
+msgid "Atproto [specifies](/specs/oauth) a particular \"profile\" of the OAuth standards, using [OAuth 2.1](https://www.ietf.org/archive/id/draft-ietf-oauth-v2-1-13.html) as the foundation.\n"
 msgstr "ATプロトコルは[OAuth仕様](/specs/oauth)でOAuth標準の特定の「プロファイル」を指定し、[OAuth 2.1](https://www.ietf.org/archive/id/draft-ietf-oauth-v2-1-13.html)を基礎としています。\n"
 
 #. type: Plain text
@@ -137,20 +146,23 @@ msgstr "他のOAuthシステムを使っている場合は細かい部分で意�
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:35
-#, no-wrap
-msgid "- **ATProto is distributed**: Usually, when an app has a \"sign in with...\" button, it provides a choice of which authorities it allows to authenticate users (usually one of a few big corporations). With ATProto OAuth, the app has no prior relationship with the authentication provider: a user's [PDS](/guides/the-at-stack#pds). This is also the reason why ATProto OAuth is not compatible with OIDC, which requires a pre-established relationship.\n"
+#, fuzzy, no-wrap
+#| msgid "- **ATProto is distributed**: Usually, when an app has a \"sign in with...\" button, it provides a choice of which authorities it allows to authenticate users (usually one of a few big corporations). With ATProto OAuth, the app has no prior relationship with the authentication provider: a user's [PDS](/guides/the-at-stack#pds). This is also the reason why ATProto OAuth is not compatible with OIDC, which requires a pre-established relationship.\n"
+msgid "- **Atproto is distributed**: Usually, when an app has a \"sign in with...\" button, it provides a choice of which authorities it allows to authenticate users (usually one of a few big corporations). With ATProto OAuth, the app has no prior relationship with the authentication provider: a user's [PDS](/guides/the-at-stack#pds). This is also the reason why Atproto OAuth is not compatible with OIDC, which requires a pre-established relationship.\n"
 msgstr "- **ATプロトコルは分散しています**：通常、アプリに「…でサインイン」ボタンがある場合、ユーザーの認証を許可する権限を選択できます（大抵は少数の大企業のどれか）。ATプロトコルのOAuthでは、アプリは認証プロバイダー、つまりユーザーの[PDS](/guides/the-at-stack#pds)との事前の関係がありません。これは、ATプロトコルのOAuthが、事前に確立された関係を必要とするOIDCと互換性がない理由でもあります。\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:37
-#, no-wrap
-msgid "- **Migration**: ATProto users can migrate their accounts between servers ([PDSes](/guides/glossary#pds-personal-data-server)) over time. To facilitate this ATProto has a flexible [Identity](/guides/identity) layer, which allows usernames ([handles](/specs/handle)) to be resolved to a static user ID ([DID](/specs/did)), which in turn can be resolved to locate the user's PDS. When a user logs in to an app, the OAuth client dynamically resolves these relationships.\n"
+#, fuzzy, no-wrap
+#| msgid "- **Migration**: ATProto users can migrate their accounts between servers ([PDSes](/guides/glossary#pds-personal-data-server)) over time. To facilitate this ATProto has a flexible [Identity](/guides/identity) layer, which allows usernames ([handles](/specs/handle)) to be resolved to a static user ID ([DID](/specs/did)), which in turn can be resolved to locate the user's PDS. When a user logs in to an app, the OAuth client dynamically resolves these relationships.\n"
+msgid "- **Migration**: Atproto users can migrate their accounts between servers ([PDSes](/guides/glossary#pds-personal-data-server)) over time. To facilitate this Atproto has a flexible [Identity](/guides/identity) layer, which allows usernames ([handles](/specs/handle)) to be resolved to a static user ID ([DID](/specs/did)), which in turn can be resolved to locate the user's PDS. When a user logs in to an app, the OAuth client dynamically resolves these relationships.\n"
 msgstr "- **移行**：ATプロトコルユーザーはアカウントをサーバー（[PDS](/guides/glossary#pds-personal-data-server)）間で移行できます。これを促進するため、ATプロトコルは柔軟な[ID](/guides/identity)レイヤーを持っており、ユーザー名（[ハンドル](/specs/handle)）を不変のユーザーID（[DID](/specs/did)）に解決でき、さらにそれを解決してユーザーのPDSを見つけることができます。ユーザーがアプリケーションにログインすると、OAuthクライアントはこれらの関係を動的に解決します。\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:39
-#, no-wrap
-msgid "- **Client IDs**: In other OAuth ecosystems, it is often necessary for client apps to pre-register themselves with the resource server. This is not viable in a decentralized system (with many clients and many resource servers), so ATProto addresses this using [Client ID Metadata Documents](/specs/oauth#client-id-metadata-document).\n"
+#, fuzzy, no-wrap
+#| msgid "- **Client IDs**: In other OAuth ecosystems, it is often necessary for client apps to pre-register themselves with the resource server. This is not viable in a decentralized system (with many clients and many resource servers), so ATProto addresses this using [Client ID Metadata Documents](/specs/oauth#client-id-metadata-document).\n"
+msgid "- **Client IDs**: In other OAuth ecosystems, it is often necessary for client apps to pre-register themselves with the resource server. This is not viable in a decentralized system (with many clients and many resource servers), so Atproto addresses this using [Client ID Metadata Documents](/specs/oauth#client-id-metadata-document).\n"
 msgstr "- **クライアントID**： 他のOAuthエコシステムでは、クライアントアプリケーションがリソースサーバーに事前登録が必要なことがよくあります。これは分散型システム（多数のクライアントと多数のリソースサーバーがある）では実行できないため、ATプロトコルは[Client ID Metadata Documents](/specs/oauth#client-id-metadata-document)を使用してこれに対処しています。\n"
 
 #. type: Plain text

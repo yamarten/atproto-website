@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-01-11 22:17+0900\n"
+"POT-Creation-Date: 2026-02-07 17:03+0900\n"
 "PO-Revision-Date: 2026-01-07 19:40+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -20,15 +20,15 @@ msgstr ""
 #: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:21
 #: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:73
 #: src/guides/streaming-data/en.mdx:60 src/guides/video-handling/en.mdx:39
-#: src/guides/account-migration/en.mdx:74 src/guides/feeds/en.mdx:111
-#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:52
-#: src/guides/scopes/en.mdx:45 src/guides/subscriptions/en.mdx:78
-#: src/guides/writing-data/en.mdx:181 src/guides/creating-a-labeler/en.mdx:56
-#: src/guides/labels/en.mdx:110 src/guides/sdk-auth/en.mdx:145
-#: src/guides/sync/en.mdx:51 src/guides/auth/en.mdx:41
-#: src/guides/lexicon/en.mdx:128 src/guides/publishing-lexicons/en.mdx:53
-#: src/guides/backfilling/en.mdx:60 src/guides/reading-data/en.mdx:165
-#: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
+#: src/guides/feeds/en.mdx:113 src/guides/installing-lexicons/en.mdx:53
+#: src/guides/oauth-patterns/en.mdx:56 src/guides/scopes/en.mdx:45
+#: src/guides/subscriptions/en.mdx:78 src/guides/writing-data/en.mdx:181
+#: src/guides/creating-a-labeler/en.mdx:56 src/guides/labels/en.mdx:110
+#: src/guides/sdk-auth/en.mdx:145 src/guides/sync/en.mdx:51
+#: src/guides/auth/en.mdx:41 src/guides/lexicon/en.mdx:128
+#: src/guides/publishing-lexicons/en.mdx:49 src/guides/backfilling/en.mdx:60
+#: src/guides/reading-data/en.mdx:165 src/guides/social-graph/en.mdx:23
+#: src/guides/permission-sets/en.mdx:214 src/guides/using-ozone/en.mdx:132
 #, no-wrap
 msgid "## Further Reading and Resources\n"
 msgstr "<Heading level={2} id=\"further-reading-and-resources\">関連・参考資料</Heading>\n"
@@ -216,7 +216,7 @@ msgid "A Feed Generator service can host one or more algorithms. The service its
 msgstr "フィードジェネレーターサービスは1つ以上のアルゴリズムをホストできます。サービス自体はDIDで識別され、ホストする各アルゴリズムはそれを作成したアカウントのリポジトリ内のレコードで宣言されます。例えば、Blueskyが提供するフィードは`@bsky.app`のリポジトリで宣言されるでしょう。したがって、特定のアルゴリズムは宣言レコードのat-uriで識別されます。この宣言レコードには、サービスのDIDへのポインターとフィードのプロフィール情報が含まれます。\n"
 
 #. type: Plain text
-#: src/guides/feeds/en.mdx:68
+#: src/guides/feeds/en.mdx:68 src/guides/custom-feed-tutorial/en.mdx:78
 #, no-wrap
 msgid "The general flow of providing a custom algorithm to a user is as follows:\n"
 msgstr "ユーザーにカスタムアルゴリズムを提供する一般的なフローは以下の通りです。\n"
@@ -262,76 +262,87 @@ msgstr "[TypeScript](https://github.com/bluesky-social/feed-generator)でフィ�
 #. type: Plain text
 #: src/guides/feeds/en.mdx:84
 #, no-wrap
+msgid "We also have a [more minimal example](https://tangled.org/strings/did:plc:vmt7o7y6titkqzzxav247zrn/3mbujziyniw22) using the new [lex](https://www.npmjs.com/package/@atproto/lex) SDK and [tap](https://www.npmjs.com/package/@atproto/tap) TypeScript library.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/feeds/en.mdx:86
+#, no-wrap
 msgid "There are also community-maintained implementations in [Python](https://github.com/MarshalX/bluesky-feed-generator) and [Ruby](https://github.com/mackuba/bluesky-feeds-rb).\n"
 msgstr "[Python](https://github.com/MarshalX/bluesky-feed-generator)と[Ruby](https://github.com/mackuba/bluesky-feeds-rb)でコミュニティによる実装もあります。\n"
 
 #. type: Plain text
-#: src/guides/feeds/en.mdx:86
+#: src/guides/feeds/en.mdx:88
 #, no-wrap
 msgid "## Implementing Feeds\n"
 msgstr "<Heading level={2} id=\"implementing-feeds\">フィードの実装</Heading>\n"
 
 #. type: Plain text
-#: src/guides/feeds/en.mdx:88
+#: src/guides/feeds/en.mdx:90
 #, no-wrap
 msgid "How a feed generator fulfills the `getFeedSkeleton` request is completely at their discretion. At the simplest end, a Feed Generator could supply a \"feed\" that only contains some hardcoded posts.\n"
 msgstr "`getFeedSkeleton`リクエストに対してフィードジェネレーターがどのように埋めるかは完全にその裁量に任されています。最も単純な場合、フィードジェネレーターはハードコードされた投稿のみを含む「フィード」を提供できます。\n"
 
 #. type: Plain text
-#: src/guides/feeds/en.mdx:90
+#: src/guides/feeds/en.mdx:92
 #, no-wrap
 msgid "For most use cases, we recommend [subscribing to the firehose](/guides/streaming-data) at `com.atproto.sync.subscribeRepos`. This websocket will send you every record that is published on the network. Since Feed Generators do not need to provide hydrated posts, you can index as much or as little of the firehose as necessary. This is an important point — needing to sync with the firehose to provide a feed *can* be resource-intensive, but does not have to be. Refer to the examples linked from this guide for more details.\n"
 msgstr "ほとんどのユースケースでは、`com.atproto.sync.subscribeRepos`で[firehoseを取得する](/guides/streaming-data)ことをお勧めします。このwebsocketはネットワークで公開されたすべてのレコードを送信します。フィードジェネレーターはハイドレートされた投稿は提供する必要がないため、必要に応じてfirehoseから多量にも少量だけでもインデックスできます。これは重要なポイントです。フィードを提供するためにfirehoseと同期する必要があることはリソース集約的である*可能性*がありますが、そうである必要はありません。詳細については、このガイドからリンクされている例を参照してください。\n"
 
 #. type: Plain text
-#: src/guides/feeds/en.mdx:92
+#: src/guides/feeds/en.mdx:94
 #, no-wrap
 msgid "Depending on your feed's algorithm, you likely do not need to keep posts around for long. Unless your feed is intended to provide \"posts you missed\" or something similar, you can likely garbage collect any data that is older than 48 hours from your feed.\n"
 msgstr "フィードのアルゴリズムによっては、長い間投稿を保持する必要がないかもしれません。フィードが「見逃した投稿」のようなものの提供を目的としていない限り、48時間以上前のデータはおそらくガベージコレクションしてよいでしょう。\n"
 
 #. type: Plain text
-#: src/guides/feeds/en.mdx:94
+#: src/guides/feeds/en.mdx:96
 #, no-wrap
 msgid "## Language Handling\n"
 msgstr "<Heading level={2} id=\"language-handling\">使用言語対応</Heading>\n"
 
 #. type: Plain text
-#: src/guides/feeds/en.mdx:96
+#: src/guides/feeds/en.mdx:98
 #, no-wrap
 msgid "When making requests to `getFeedSkeleton`, clients are encouraged to populate the `Accept-Language` HTTP header with comma-separated BCP-47 language codes e.g. `en`,`pr-BR`. Feed generators can use this language context to filter or rank posts. If language filtering is applied, the feed generator should use the the `Content-Language` response header indicating the parsed language codes.\n"
 msgstr "`getFeedSkeleton`にリクエストを送信する際、クライアントは`Accept-Language` HTTPヘッダーにカンマ区切りのBCP-47言語コード（例：`en`、`pr-BR`）を含めることが推奨されます。フィードジェネレーターはこの言語コンテキストを使用して投稿をフィルタリングまたはランク付けできます。言語フィルタリングが適用される場合、フィードジェネレーターはパースされた言語コードを示す`Content-Language`レスポンスヘッダーを使用する必要があります。\n"
 
 #. type: Plain text
-#: src/guides/feeds/en.mdx:98
+#: src/guides/feeds/en.mdx:100
 #, no-wrap
 msgid "## Feed Feedback\n"
 msgstr "<Heading level={2} id=\"feed-feedback\">フィードのフィードバック</Heading>\n"
 
 #. type: Plain text
-#: src/guides/feeds/en.mdx:100
+#: src/guides/feeds/en.mdx:102
 #, no-wrap
 msgid "Feed generators can also implement the `app.bsky.feed.sendInteractions` endpoint to receive input from users. These include likes, reposts, shares, and other interactions. See the [the app.bsky.feed Lexicon](https://github.com/bluesky-social/atproto/blob/main/lexicons/app/bsky/feed/defs.json#L247) for a complete list.\n"
 msgstr "フィードジェネレーターは`app.bsky.feed.sendInteractions`エンドポイントを実装することでユーザーからの入力を受け取ることができます。これにはいいね、リポスト、共有などのインタラクションが含まれます。完全な一覧は[app.bsky.feed Lexicon](https://github.com/bluesky-social/atproto/blob/main/lexicons/app/bsky/feed/defs.json#L247)を参照してください。\n"
 
 #. type: Plain text
-#: src/guides/feeds/en.mdx:102
+#: src/guides/feeds/en.mdx:104
 #, no-wrap
 msgid "Implementing Feed Feedback is optional, but can help improve user experience.\n"
 msgstr "フィードフィードバックの実装は任意ですが、ユーザー体験の向上に役立つことがあります。\n"
 
 #. type: Plain text
-#: src/guides/feeds/en.mdx:104
+#: src/guides/feeds/en.mdx:106
 #, no-wrap
 msgid "## Example Feeds\n"
 msgstr "<Heading level={2} id=\"example-feeds\">フィードの例</Heading>\n"
 
 #. type: Plain text
-#: src/guides/feeds/en.mdx:109
-#, no-wrap
+#: src/guides/feeds/en.mdx:111
+#, fuzzy, no-wrap
+#| msgid ""
+#| "- A community feed: Compile a list of DIDs within that community and filter the firehose for all posts from users within that list.\n"
+#| "- A topical feed: Filter the algorithm for posts and pass the post text through some filtering mechanism (an LLM, a keyword matcher, etc.) that filters for the topic of your choice.\n"
+#| "- [graze.social](https://www.graze.social/) provides an application model for AT Proto feeds.\n"
+#| "- You can find other examples of community-created feeds at [https://bsky.app/feeds](https://bsky.app/feeds).\n"
 msgid ""
 "- A community feed: Compile a list of DIDs within that community and filter the firehose for all posts from users within that list.\n"
 "- A topical feed: Filter the algorithm for posts and pass the post text through some filtering mechanism (an LLM, a keyword matcher, etc.) that filters for the topic of your choice.\n"
-"- [graze.social](https://www.graze.social/) provides an application model for AT Proto feeds.\n"
+"- [graze.social](https://www.graze.social/) provides an application model for Atproto feeds.\n"
 "- You can find other examples of community-created feeds at [https://bsky.app/feeds](https://bsky.app/feeds).\n"
 msgstr ""
 "- コミュニティフィード：そのコミュニティ内のDIDのリストをコンパイルし、そのリスト内のユーザーからのすべての投稿についてfirehoseをフィルタリングします。\n"
@@ -340,7 +351,7 @@ msgstr ""
 "- コミュニティが作成したその他のフィード例は[https://bsky.app/feeds](https://bsky.app/feeds)で見つけることができます。\n"
 
 #. type: Plain text
-#: src/guides/feeds/en.mdx:118
+#: src/guides/feeds/en.mdx:120
 #, no-wrap
 msgid ""
 "- [Sync](/guides/sync)\n"

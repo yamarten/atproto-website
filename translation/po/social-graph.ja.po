@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"POT-Creation-Date: 2026-02-07 17:03+0900\n"
 "PO-Revision-Date: 2026-01-07 19:40+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -18,17 +18,17 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:21
-#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:64
+#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:73
 #: src/guides/streaming-data/en.mdx:60 src/guides/video-handling/en.mdx:39
-#: src/guides/account-migration/en.mdx:74 src/guides/feeds/en.mdx:105
-#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:52
-#: src/guides/scopes/en.mdx:45 src/guides/subscriptions/en.mdx:78
-#: src/guides/writing-data/en.mdx:181 src/guides/creating-a-labeler/en.mdx:56
-#: src/guides/labels/en.mdx:110 src/guides/sdk-auth/en.mdx:145
-#: src/guides/sync/en.mdx:51 src/guides/auth/en.mdx:41
-#: src/guides/lexicon/en.mdx:128 src/guides/publishing-lexicons/en.mdx:53
-#: src/guides/backfilling/en.mdx:60 src/guides/reading-data/en.mdx:165
-#: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
+#: src/guides/feeds/en.mdx:113 src/guides/installing-lexicons/en.mdx:53
+#: src/guides/oauth-patterns/en.mdx:56 src/guides/scopes/en.mdx:45
+#: src/guides/subscriptions/en.mdx:78 src/guides/writing-data/en.mdx:181
+#: src/guides/creating-a-labeler/en.mdx:56 src/guides/labels/en.mdx:110
+#: src/guides/sdk-auth/en.mdx:145 src/guides/sync/en.mdx:51
+#: src/guides/auth/en.mdx:41 src/guides/lexicon/en.mdx:128
+#: src/guides/publishing-lexicons/en.mdx:49 src/guides/backfilling/en.mdx:60
+#: src/guides/reading-data/en.mdx:165 src/guides/social-graph/en.mdx:23
+#: src/guides/permission-sets/en.mdx:214 src/guides/using-ozone/en.mdx:132
 #, no-wrap
 msgid "## Further Reading and Resources\n"
 msgstr "<Heading level={2} id=\"further-reading-and-resources\">関連・参考資料</Heading>\n"
@@ -58,41 +58,48 @@ msgstr "<Heading level={2} id=\"querying-social-graphs\">ソーシャルグラ�
 #. type: Plain text
 #: src/guides/social-graph/en.mdx:9
 #, no-wrap
-msgid "AT Protocol records are public...\n"
-msgstr "ATプロトコルのレコードは公開情報です。\n"
+msgid "Atproto HTTP API methods each scope and implement a particular set of [Lexicons](/guides/lexicon). For example, an app using the `app.bsky.feed.post` record type would be expected to also implement an application endpoint like `curl -X POST example.com/xrpc/app.bsky.feed.post -d {post-contents}`.\n"
+msgstr ""
 
 #. type: Plain text
 #: src/guides/social-graph/en.mdx:11
+#, no-wrap
+msgid "This also means that all the POST requests you make to an Atproto app are retained and can be streamed back in that same format. This saves developers from having to make many backend implementation decisions. It also means that new applications that build on the AT Protocol can leverage existing social graph data — for example, from the `app.bsky.graph.getFollows` Lexicon RPC endpoint — to build new use cases, and bootstrap with an existing user base. This, in turn, gets you to native ATProtocol concepts like [A Social Filesystem](https://overreacted.io/a-social-filesystem/).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/social-graph/en.mdx:13
 #, no-wrap
 msgid "See [Exploring AT Protocol with Python](https://davidgasquez.com/exploring-atproto-python/) for another example of this approach.\n"
 msgstr "このアプローチの別の例として、[『Exploring AT Protocol with Python」](https://davidgasquez.com/exploring-atproto-python/)も参照してください。\n"
 
 #. type: Plain text
-#: src/guides/social-graph/en.mdx:13
+#: src/guides/social-graph/en.mdx:15
 #, no-wrap
 msgid "## Backlinks\n"
 msgstr "<Heading level={2} id=\"backlinks\">バックリンク</Heading>\n"
 
 #. type: Plain text
-#: src/guides/social-graph/en.mdx:15
+#: src/guides/social-graph/en.mdx:17
 #, no-wrap
 msgid "One of the most powerful ways to get social graph data from AT Protocol is through the use of **backlinks**. Querying backlinks lets you resolve all of the records linking *to* any given record, *or* identity.\n"
 msgstr "ATプロトコルからソーシャルグラフデータを取得する強力な方法として、**バックリンク**があります。バックリンクを取得すると、特定のレコード*や*ID*に*リンクしているすべてのレコードを解決できます。\n"
 
 #. type: Plain text
-#: src/guides/social-graph/en.mdx:17
-#, no-wrap
-msgid "Because all AT Protocol records are openly available and addressible via an `at://` URI, this makes it possible to encode nested API queries into individual URLs. The community project [pds.ls](https://pdsls.dev/at://did:plc:vmt7o7y6titkqzzxav247zrn/app.bsky.feed.post/3mbaxebcd6s2f) does this, for example.\n"
+#: src/guides/social-graph/en.mdx:19
+#, fuzzy, no-wrap
+#| msgid "Because all AT Protocol records are openly available and addressible via an `at://` URI, this makes it possible to encode nested API queries into individual URLs. The community project [pds.ls](https://pdsls.dev/at://did:plc:vmt7o7y6titkqzzxav247zrn/app.bsky.feed.post/3mbaxebcd6s2f) does this, for example.\n"
+msgid "Because all AT Protocol records are openly available and addressible via an `at://` URI, this makes it possible to encode nested API queries into individual URLs. The community project [pdsls](https://pdsls.dev/at://did:plc:vmt7o7y6titkqzzxav247zrn/app.bsky.feed.post/3mbaxebcd6s2f) does this, for example.\n"
 msgstr "ATプロトコルのレコードは全て誰でも取得可能で、`at://` URIで指定可能なため、これによりネストされたAPIクエリを個別のURLにエンコードできるようになります。一例として、コミュニティプロジェクト[pds.ls](https://pdsls.dev/at://did:plc:vmt7o7y6titkqzzxav247zrn/app.bsky.feed.post/3mbaxebcd6s2f)はこれを行います。\n"
 
 #. type: Plain text
-#: src/guides/social-graph/en.mdx:19
+#: src/guides/social-graph/en.mdx:21
 #, no-wrap
 msgid "[Microcosm](https://constellation.microcosm.blue) provides a set of resources for working with backlinks.\n"
 msgstr "[Microcosm](https://constellation.microcosm.blue)はバックリンクを操作するための一連のリソースを提供します。\n"
 
 #. type: Plain text
-#: src/guides/social-graph/en.mdx:27
+#: src/guides/social-graph/en.mdx:29
 #, no-wrap
 msgid ""
 "- [Reads and Writes](/guides/reads-and-writes)\n"

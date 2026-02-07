@@ -1,0 +1,577 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Bluesky Social PBC
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-02-07 17:03+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: src/guides/reads-and-writes/en.mdx:13 src/guides/bot-tutorial/en.mdx:11
+#: src/guides/custom-feed-tutorial/en.mdx:14
+#: src/guides/oauth-tutorial/en.mdx:18
+#: src/guides/statusphere-tutorial/en.mdx:17
+#, no-wrap
+msgid "## Prerequisites\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/installing-lexicons/en.mdx:17 src/guides/bot-tutorial/en.mdx:28
+#: src/guides/custom-feed-tutorial/en.mdx:32
+#: src/guides/statusphere-tutorial/en.mdx:42
+#, no-wrap
+msgid ""
+"```bash\n"
+"npm install -g @atproto/lex\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/installing-lexicons/en.mdx:34 src/guides/bot-tutorial/en.mdx:54
+#: src/guides/custom-feed-tutorial/en.mdx:64
+#, no-wrap
+msgid ""
+"```bash\n"
+"lex build\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:5
+#, no-wrap
+msgid ""
+"export const header = {\n"
+"  title: 'Build an Agent',\n"
+"  description: 'Create a bot that automatically posts on Bluesky',\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:7
+#, no-wrap
+msgid "Bots are accounts on the network that post automatically. Popular ones include bots that post the magnitude of recent earthquakes, photos from an archive on a regular schedule, etc.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:9
+#, no-wrap
+msgid "In this tutorial, you'll create a bot that authenticates with an [app password](/guides/sdk-auth) to interact with the network.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:13 src/guides/custom-feed-tutorial/en.mdx:16
+#, no-wrap
+msgid "This tutorial involves building a TypeScript application from scratch. You should have a working understanding of TypeScript and Node.js.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:16
+#, no-wrap
+msgid ""
+"You should have installed:\n"
+"- Node.js 18+\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:18
+#, no-wrap
+msgid "On platforms supported by [homebrew](https://brew.sh/), you can install it with:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:22
+#, no-wrap
+msgid ""
+"```bash\n"
+"brew install node\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:24 src/guides/custom-feed-tutorial/en.mdx:28
+#: src/guides/statusphere-tutorial/en.mdx:38
+#, no-wrap
+msgid "You should also have our `lex` CLI tool installed globally:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:30 src/guides/custom-feed-tutorial/en.mdx:40
+#, no-wrap
+msgid "Now, create a new Typescript project directory and initialize your project:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:38
+#, no-wrap
+msgid ""
+"```bash\n"
+"mkdir my-agent\n"
+"cd my-agent\n"
+"npm init -y\n"
+"npm i -D typescript ts-node @types/node dotenv cron @atproto/lex @atproto/lex-password-session\n"
+"npx tsc --init --verbatimModuleSyntax false\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:40
+#, no-wrap
+msgid "If you aren't using an existing account to post from, you should [create a new account](https://bsky.app/) for your bot. You should also generate an [app password](/guides/sdk-auth) for that account.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:42 src/guides/statusphere-tutorial/en.mdx:46
+#, no-wrap
+msgid "## Part 1: Lexicons \n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:44
+#, no-wrap
+msgid "[Lexicons](/guides/lexicon) define Atproto records. Your bot will create Bluesky posts, using the [app.bsky.feed.post](https://pdsls.dev/at://did:plc:ewvi7nxzyoun6zhxrhs64oiz/app.bsky.feed.post/3juc4thkx452i#schema) Lexicon. You can use `lex` to download and build this Lexicon into your project:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:48
+#, no-wrap
+msgid ""
+"```bash\n"
+"lex install app.bsky.feed.post\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:50
+#, no-wrap
+msgid "If you want, you can view the downloaded Lexicon file at `lib/lexicons/app.bsky.post.json`. From here, you can run `lex build` to generate TypeScript types for all of your installed Lexicons:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:56
+#, no-wrap
+msgid "The generated code will live in `src/lexicons`. Now you can create your bot script.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:58
+#, no-wrap
+msgid "## Part 2: Create a Bot\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:60
+#, no-wrap
+msgid "Create a new file at `src/index.ts`. This file will contain the code for your bot.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:62
+#, no-wrap
+msgid "First, add the imports that you'll need, and a call to `PasswordSession.create()` to authenticate your bot using an app password:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:70
+#, no-wrap
+msgid ""
+"```ts\n"
+"import { Client } from '@atproto/lex'\n"
+"import { PasswordSession } from '@atproto/lex-password-session'\n"
+"import * as dotenv from 'dotenv'\n"
+"import { CronJob } from 'cron'\n"
+"import * as process from 'process'\n"
+"import * as app from './lexicons/app.js'\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:72
+#, no-wrap
+msgid "dotenv.config()\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:83
+#, no-wrap
+msgid ""
+"// Create a session\n"
+"async function login() {\n"
+"    const service = process.env.BOT_PDS!\n"
+"    const identifier = process.env.BOT_HANDLE!\n"
+"    const password = process.env.BOT_PASSWORD!\n"
+"    const session = await PasswordSession.login({\n"
+"        service, // eg 'https://bsky.social'\n"
+"        identifier, // eg 'alice.bsky.social'\n"
+"        password,\n"
+"    })\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:87
+#, no-wrap
+msgid ""
+"    return session\n"
+"}\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:89
+#, no-wrap
+msgid "Next, add a function that posts. This will instantiate a new `Client` using the authenticated session, and use it to create a post. The `app.bsky.feed.post` Lexicon requires two parameters: the text of a post — you'll use \"🙂\" — and a timestamp.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:100
+#, no-wrap
+msgid ""
+"```ts\n"
+"// Posting logic\n"
+"async function makePost(session: PasswordSession) {\n"
+"    const client = new Client(session)\n"
+"    await client.create(app.bsky.feed.post, {\n"
+"        text: '🙂',\n"
+"        createdAt: new Date().toISOString(),\n"
+"    })\n"
+"    console.log('Just posted!')\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:105
+#, no-wrap
+msgid ""
+"async function main() {\n"
+"    const session = await login()\n"
+"    await makePost(session)\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:108 src/guides/bot-tutorial/en.mdx:233
+#, no-wrap
+msgid ""
+"main().catch(console.error)\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:110
+#, no-wrap
+msgid "Finally, add another code block inside of `main()` using the `cron` package to schedule your bot to post every three hours:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:121
+#, no-wrap
+msgid ""
+"```ts\n"
+"async function main() {\n"
+"    const session = await login()\n"
+"    await makePost(session)\n"
+"    // Run this on a cron job\n"
+"    const scheduleExpression = '0 */3 * * *'\n"
+"    const job = new CronJob(scheduleExpression, () => makePost(session))\n"
+"    job.start()\n"
+"}\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:123
+#, no-wrap
+msgid "That's all the code you need for your bot! Next, you'll test it out.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:125
+#, no-wrap
+msgid "## Part 3: Run the Bot\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:127
+#, no-wrap
+msgid "Save your bot's host (PDS), username, and password to an `.env` file.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:133
+#, no-wrap
+msgid ""
+"```bash\n"
+"BOT_PDS= # eg 'https://bsky.social' if you aren't self-hosting your PDS\n"
+"BOT_HANDLE= # eg 'alice.bsky.social'\n"
+"BOT_PASSWORD=\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:135
+#, no-wrap
+msgid "Now you can test the bot using `ts-node`.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:139
+#, no-wrap
+msgid ""
+"```bash\n"
+"ts-node src/index.ts\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:141
+#, no-wrap
+msgid "You can run this bot on your own machine, or deploy it on a platform like [Fly.io](http://fly.io/).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:143
+#, no-wrap
+msgid "Keep in mind that bots should respect the network's rate limits. For instance, [Bluesky has its own set of rate limits](https://docs.bsky.app/docs/advanced-guides/rate-limits). \n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:145
+#, no-wrap
+msgid "## Part 4: From Bot to Agent\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:147
+#, no-wrap
+msgid "So far, you've created a bot that makes posts on a regular interval. Now, you can expand your bot into a more complex agent that interacts with other users!\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:149
+#, no-wrap
+msgid "In this section, you'll use the [Vercel AI SDK](https://www.npmjs.com/package/ai). This library provides a unified API to interact with model providers like Anthropic through the Vercel AI Gateway. You'll need to sign up for a free [Hobby project](https://vercel.com/) to get an API key.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:151
+#, no-wrap
+msgid "Once you've got an API key, add the AI SDK to your project:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:155
+#, no-wrap
+msgid ""
+"```bash\n"
+"npm i ai\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:157
+#, no-wrap
+msgid "Then, add another environment variable to your `.env` file:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:164
+#, no-wrap
+msgid ""
+"```bash\n"
+"BOT_PDS=\n"
+"BOT_HANDLE=\n"
+"BOT_PASSWORD=\n"
+"AI_GATEWAY_API_KEY=xxxxxxxxx\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:166
+#, no-wrap
+msgid "Finally, you'll need to install some additional Lexicons to get mentions. Run the following command to install and build the necessary Lexicons:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:171
+#, no-wrap
+msgid ""
+"```bash\n"
+"lex install app.bsky.notification.listNotifications app.bsky.feed.getPostThread\n"
+"lex build --override\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:173
+#, no-wrap
+msgid "Almost there. Add the `ai` import to your `src/index.ts` file:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:177
+#, no-wrap
+msgid ""
+"```ts\n"
+"import { generateText } from 'ai'\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:179
+#, no-wrap
+msgid "Now you can replace everything after the `login` function in your script with new logic that uses the AI SDK to generate replies:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:189
+#, no-wrap
+msgid ""
+"```ts\n"
+"async function generateReply(mentionText: string): Promise<string> {\n"
+"  const { text } = await generateText({\n"
+"    model: 'anthropic/claude-sonnet-4-5',\n"
+"    system: 'You are a mystical fortune teller bot on Bluesky named \"The Oracle\". Speak in a dramatic, mysterious tone with occasional emoji (🔮 ✨ 🌙 ⭐). If someone asks a yes/no question, give a cryptic but leaning answer. If they ask for general guidance, offer a brief horoscope-style prediction. Keep responses under 280 characters. Never break character.',\n"
+"    prompt: mentionText,\n"
+"  })\n"
+"  return text\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:196
+#, no-wrap
+msgid ""
+"// Check for new mentions and reply\n"
+"async function checkMentions(session: PasswordSession) {\n"
+"  const client = new Client(session)\n"
+"  const notifications = await client.call(app.bsky.notification.listNotifications, {\n"
+"    limit: 20,\n"
+"  })\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:200
+#, no-wrap
+msgid ""
+"  for (const notif of notifications.notifications) {\n"
+"    // Only process unread mentions\n"
+"    if (notif.reason !== 'mention' || notif.isRead) continue\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:205
+#, no-wrap
+msgid ""
+"    // Get the post that mentioned us\n"
+"    const post = await client.call(app.bsky.feed.getPostThread, {\n"
+"      uri: notif.uri,\n"
+"    })\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:208
+#, no-wrap
+msgid ""
+"    const mentionText = post.thread.post.record.text\n"
+"    const reply = await generateReply(mentionText)\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:218
+#, no-wrap
+msgid ""
+"    // Reply to the post\n"
+"    await client.create(app.bsky.feed.post, {\n"
+"      text: reply,\n"
+"      createdAt: new Date().toISOString(),\n"
+"      reply: {\n"
+"        root: { uri: notif.uri, cid: post.thread.post.cid },\n"
+"        parent: { uri: notif.uri, cid: post.thread.post.cid },\n"
+"      },\n"
+"    })\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:222
+#, no-wrap
+msgid ""
+"    console.log(`Replied to mention: ${mentionText}`)\n"
+"  }\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:227
+#, no-wrap
+msgid ""
+"async function main() {\n"
+"    const session = await login()\n"
+"    const job = new CronJob('*/1 * * * *', () => checkMentions(session))\n"
+"    job.start()\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:230
+#, no-wrap
+msgid ""
+"    console.log('Agent is running...')\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:235
+#, no-wrap
+msgid "There are a few new concepts here. You'll recognize the `app.bsky.feed.post` logic, and now you'll also implement `app.bsky.notification.listNotifications` and `app.bsky.feed.getPostThread`. The first Lexicon is used to get a list of notifications for, and the second fetches the full thread for a given post URI.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:237
+#, no-wrap
+msgid "...and feel free to change our silly example prompt.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:239
+#, no-wrap
+msgid "Redeploy your bot, and it will now reply to mentions!\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:243
+#, no-wrap
+msgid ""
+"<Note>\n"
+"Automated bots that post to an account on an regular interval are welcome on the network. If your bot interacts with other users, please only interact (like, repost, reply, etc.) if the user has tagged the bot account. It should be an opt-in interaction, or your bot may be flagged for spam.\n"
+"</Note>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:245
+#: src/guides/custom-feed-tutorial/en.mdx:387
+#: src/guides/oauth-tutorial/en.mdx:783
+#: src/guides/statusphere-tutorial/en.mdx:728
+#: src/articles/atproto-ethos/en.mdx:136
+#, no-wrap
+msgid "## Conclusion\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:247
+#, no-wrap
+msgid "You've now built an automated Atproto app that creates records on the network!\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:248
+#: src/guides/custom-feed-tutorial/en.mdx:398
+#, no-wrap
+msgid "You can find more guides and tutorials in our [Guides](/guides) section, and more example apps in the [Cookbook](https://github.com/bluesky-social/cookbook/) repository. Happy building!\n"
+msgstr ""

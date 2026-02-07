@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"POT-Creation-Date: 2026-02-07 17:03+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,8 +42,9 @@ msgstr "# プロトコル概要\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:10
-#, no-wrap
-msgid "The **Authenticated Transfer Protocol**, aka **atproto**, is a decentralized protocol for large-scale social web applications. This document will introduce you to the ideas behind the AT Protocol.\n"
+#, fuzzy, no-wrap
+#| msgid "The **Authenticated Transfer Protocol**, aka **atproto**, is a decentralized protocol for large-scale social web applications. This document will introduce you to the ideas behind the AT Protocol.\n"
+msgid "The **Authenticated Transfer Protocol**, aka **Atproto**, is a decentralized protocol for large-scale social web applications. This document will introduce you to the ideas behind the AT Protocol.\n"
 msgstr "**Authenticated Transferプロトコル**（別名 **atproto**）は、大規模な分散型ソーシャルアプリケーション用のフェデレーションプロトコルです。このドキュメントでは、ATプロトコルの背後にある考え方を紹介します。\n"
 
 #. type: Plain text
@@ -196,8 +197,9 @@ msgstr "署名鍵はPDSに委託され、ユーザーのデータを管理でき
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:61
-#, no-wrap
-msgid "A backup of the user’s data could be persistently synced to a user's own device as a backup (contingent on the disk space available), or mirrored by a third-party service. In the event their PDS disappears without notice, the user should be able to migrate to a new provider by updating their DID Document and uploading their data backup.\n"
+#, fuzzy, no-wrap
+#| msgid "A backup of the user’s data could be persistently synced to a user's own device as a backup (contingent on the disk space available), or mirrored by a third-party service. In the event their PDS disappears without notice, the user should be able to migrate to a new provider by updating their DID Document and uploading their data backup.\n"
+msgid "A backup of the user's data could be persistently synced to a user's own device as a backup (contingent on the disk space available), or mirrored by a third-party service. In the event their PDS disappears without notice, the user should be able to migrate to a new provider by updating their DID Document and uploading their data backup.\n"
 msgstr "ユーザーデータのバックアップは、バックアップとしてクライアントに永続的に同期することができます（使用可能なディスク領域によって異なります）。PDSが予告なく消えた場合、ユーザーはDIDドキュメントを更新してバックアップをアップロードすることで、新しいプロバイダーに移行できます。\n"
 
 #. type: Plain text

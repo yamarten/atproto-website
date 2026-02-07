@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"POT-Creation-Date: 2026-02-07 17:03+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,19 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:677 src/articles/atproto-ethos/en.mdx:147
-#: src/articles/atproto-for-distsys-engineers/en.mdx:232
+#: src/articles/atproto-for-distsys-engineers/en.mdx:227
 #, no-wrap
 msgid "<FooterCTA href=\"/\" title=\"Ready to learn more?\" description=\"Specs, guides, and SDKs can be found here.\" />\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:245
+#: src/guides/custom-feed-tutorial/en.mdx:387
+#: src/guides/oauth-tutorial/en.mdx:783
+#: src/guides/statusphere-tutorial/en.mdx:728
+#: src/articles/atproto-ethos/en.mdx:136
+#, no-wrap
+msgid "## Conclusion\n"
 msgstr ""
 
 #. type: Plain text
@@ -413,12 +423,6 @@ msgstr ""
 #: src/articles/atproto-ethos/en.mdx:134
 #, no-wrap
 msgid "Operating in a trusted manner is by nature more efficient than operating trustlessly. Generally, this speaks to a philosophy of atproto which is to take advantage of the performance and UX gains that come with operating in a high-trust manner. However, when doing so always maintain the ability for credible exit and a system of checks and balances to hedge against bad actors and shoddy service providers.\n"
-msgstr ""
-
-#. type: Plain text
-#: src/articles/atproto-ethos/en.mdx:136
-#, no-wrap
-msgid "## Conclusion\n"
 msgstr ""
 
 #. type: Plain text

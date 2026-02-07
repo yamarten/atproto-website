@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"POT-Creation-Date: 2026-02-07 17:03+0900\n"
 "PO-Revision-Date: 2026-01-07 19:40+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -366,36 +366,25 @@ msgstr "<Heading level={2} id=\"osprey-and-ozone\">OspreyとOzone</Heading>\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:123
-#, no-wrap
-msgid "Moderation is handled by two parts of our stack: [*Osprey*](https://github.com/bluesky-social/osprey-atproto), an event stream decisions engine and analysis UI designed to investigate and take automatic action; and [*Ozone*](https://github.com/bluesky-social/ozone), a labeling service and web frontend for making moderation decisions.\n"
+#, fuzzy, no-wrap
+#| msgid "Moderation is handled by two parts of our stack: [*Osprey*](https://github.com/bluesky-social/osprey-atproto), an event stream decisions engine and analysis UI designed to investigate and take automatic action; and [*Ozone*](https://github.com/bluesky-social/ozone), a labeling service and web frontend for making moderation decisions.\n"
+msgid "Moderation is handled by two parts of our stack: [*Osprey*](https://github.com/roostorg/osprey), an event stream decisions engine and analysis UI designed to investigate and take automatic action; and [*Ozone*](/guides/using-ozone), a labeling service and web frontend for making moderation decisions.\n"
 msgstr "モデレーションはスタックの2箇所で処理されます。[*Osprey*](https://github.com/bluesky-social/osprey-atproto)はイベントストリームの判定エンジンと分析用UIで、自動的な調査と措置の実行を目的としています。[*Ozone*](https://github.com/bluesky-social/ozone)はラベリングサービスとモデレーション判断のためのウェブフロントエンドです。\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:125
 #, no-wrap
-msgid "Osprey is written in Python, and was designed and open sourced in collaboration with Discord. Osprey is a library for processing actions through human written rules and outputting labels, webhooks back to an API and other sinks. It evaluates events using structured logic, user-defined functions, and external signals to assign labels, verdicts, and actions. Some of these, such as our Toxrank model for toxicity detection, make use of fine-tuned LLMs and other classifiers that expose their own web endpoints to Osprey. We also utilize image OCR and hashing to create actionable moderation metadata, which can be automatically actioned, surfaced to moderators via Ozone, and in turn helps shape our Discover feed algorithms.\n"
-msgstr "OspreyはPythonで書かれており、Discordとの協働で設計・オープンソース化されました。Ospreyは人間が記述したルールを通じてアクションを処理し、ラベルを発行したりAPIへのwebhookを出力したりするためのPythonライブラリです。構造化されたロジック、ユーザー定義関数、外部シグナルを用いてイベントを評価し、ラベル・判定・アクションを割り当てます。これらの一部、例えば毒性検出のToxrankモデルは、Osprey向けに独自のウェブエンドポイントを公開するファインチューニング済みLLMやその他の分類器を利用しています。私たちは画像OCRとハッシュ化も活用して、実行可能なモデレーションメタデータを作成し、それを自動的にアクション化したり、Ozoneを通じてモデレーターに提示したり、結果的にDiscoverフィードのアルゴリズム形成に役立てたりしています。\n"
-
-#. type: Plain text
-#: src/guides/the-at-stack/en.mdx:127
-#, no-wrap
-msgid "Although some of our internal heuristics are private, Osprey and Ozone are designed to be deployed and run by other app hosts with their own custom rules and moderation practices, whether they are reimplementing the Bluesky Lexicon and feature set or running a different kind of Atmosphere app with a different set of content.\n"
-msgstr "内部のヒューリスティックの一部は非公開ですが、OspreyとOzoneは、Bluesky Lexiconと機能セットを再実装する場合でも、別種のAtmosphereアプリとして異なるコンテンツセットで運用する場合でも、独自のルールとモデレーション運用を持つ他のアプリホストが導入・運用できるように設計されています。\n"
-
-#. type: Plain text
-#: src/guides/the-at-stack/en.mdx:129
-#, no-wrap
 msgid "## Tools and SDKs\n"
 msgstr "<Heading level={2} id=\"tools-and-sdks\">ツールとSDK</Heading>\n"
 
 #. type: Plain text
-#: src/guides/the-at-stack/en.mdx:131
+#: src/guides/the-at-stack/en.mdx:127
 #, no-wrap
 msgid "Most AT tooling is implemented in Go and TypeScript.\n"
 msgstr "ATの主要なツール群はGoとTypeScriptで実装されています。\n"
 
 #. type: Plain text
-#: src/guides/the-at-stack/en.mdx:135
+#: src/guides/the-at-stack/en.mdx:131
 #, no-wrap
 msgid ""
 "- The [indigo](https://github.com/bluesky-social/indigo) repository contains most of our Go tooling, including the code for the [Relay](https://github.com/bluesky-social/indigo/blob/main/cmd/relay/README.md) and the Go SDK.\n"

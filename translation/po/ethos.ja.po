@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"POT-Creation-Date: 2026-02-07 17:03+0900\n"
 "PO-Revision-Date: 2026-01-07 19:40+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -18,10 +18,20 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:677 src/articles/atproto-ethos/en.mdx:147
-#: src/articles/atproto-for-distsys-engineers/en.mdx:232
+#: src/articles/atproto-for-distsys-engineers/en.mdx:227
 #, no-wrap
 msgid "<FooterCTA href=\"/\" title=\"Ready to learn more?\" description=\"Specs, guides, and SDKs can be found here.\" />\n"
 msgstr "<FooterCTA href=\"/\" title=\"さらに学習する準備はできましたか？\" description=\"仕様、ガイド、SDK はここにあります。\" />\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:245
+#: src/guides/custom-feed-tutorial/en.mdx:387
+#: src/guides/oauth-tutorial/en.mdx:783
+#: src/guides/statusphere-tutorial/en.mdx:728
+#: src/articles/atproto-ethos/en.mdx:136
+#, no-wrap
+msgid "## Conclusion\n"
+msgstr "<Heading level={2} id=\"conclusion\">結論</Heading>\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:2
@@ -424,12 +434,6 @@ msgstr "また、p2pネットワークと異なり、ユーザーは自分のデ
 #, no-wrap
 msgid "Operating in a trusted manner is by nature more efficient than operating trustlessly. Generally, this speaks to a philosophy of atproto which is to take advantage of the performance and UX gains that come with operating in a high-trust manner. However, when doing so always maintain the ability for credible exit and a system of checks and balances to hedge against bad actors and shoddy service providers.\n"
 msgstr "信頼のもとで運用するほうが、信頼不要で運用するより本質的に効率的です。一般的に、これは高信頼運用によるパフォーマンスとUXの利得を活かすというatprotoの哲学を示しています。しかしその際も常に、信頼できる出口と、不正な利用者や粗悪なサービス提供者に備えるための抑制と均衡の仕組みを維持する必要があります。\n"
-
-#. type: Plain text
-#: src/articles/atproto-ethos/en.mdx:136
-#, no-wrap
-msgid "## Conclusion\n"
-msgstr "<Heading level={2} id=\"conclusion\">結論</Heading>\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:138

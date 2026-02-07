@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-01-11 22:17+0900\n"
+"POT-Creation-Date: 2026-02-07 17:03+0900\n"
 "PO-Revision-Date: 2026-01-07 19:40+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -15,23 +15,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-
-#. type: Plain text
-#: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:21
-#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:73
-#: src/guides/streaming-data/en.mdx:60 src/guides/video-handling/en.mdx:39
-#: src/guides/account-migration/en.mdx:74 src/guides/feeds/en.mdx:111
-#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:52
-#: src/guides/scopes/en.mdx:45 src/guides/subscriptions/en.mdx:78
-#: src/guides/writing-data/en.mdx:181 src/guides/creating-a-labeler/en.mdx:56
-#: src/guides/labels/en.mdx:110 src/guides/sdk-auth/en.mdx:145
-#: src/guides/sync/en.mdx:51 src/guides/auth/en.mdx:41
-#: src/guides/lexicon/en.mdx:128 src/guides/publishing-lexicons/en.mdx:53
-#: src/guides/backfilling/en.mdx:60 src/guides/reading-data/en.mdx:165
-#: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
-#, no-wrap
-msgid "## Further Reading and Resources\n"
-msgstr "<Heading level={2} id=\"further-reading-and-resources\">関連・参考資料</Heading>\n"
 
 #. type: Plain text
 #: src/guides/account-migration/en.mdx:6
@@ -58,55 +41,75 @@ msgid "This document complements the [Account Hosting](/specs/account) specifica
 msgstr "この文書は[アカウントホスティング](/specs/account]仕様が与えるアカウントライフサイクル概要を補完します。両方のPDSが協力する簡単な移行と、アカウント復旧シナリオの双方における移行手順を詳細に示します。これらの具体的な仕組みはプロトコルの正式な一部ではなく、将来的に変更される可能性があることに注意してください。\n"
 
 #. type: Plain text
-#: src/guides/account-migration/en.mdx:10
+#: src/guides/account-migration/en.mdx:12
+#, fuzzy, no-wrap
+#| msgid ""
+#| "- [Migrating PDS Account with `goat`](https://whtwnd.com/bnewbold.net/3l5ii332pf32u)\n"
+#| "- [PDS MOOver](https://pdsmoover.com/) — a third-party tool for migrating PDS accounts\n"
+msgid ""
+"If you're just looking to migrate an account to a new PDS using existing tools, we recommend:\n"
+"- [Migrating PDS Account with `goat`](https://whtwnd.com/bnewbold.net/3l5ii332pf32u)\n"
+"- [PDS MOOver](https://pdsmoover.com/) — a community-developed tool\n"
+msgstr ""
+"- [`goat`を使ったPDSアカウント移行](https://whtwnd.com/bnewbold.net/3l5ii332pf32u)\n"
+"- [PDS MOOver](https://pdsmoover.com/) — PDSアカウント移行のためのサードパーティツール\n"
+
+#. type: Plain text
+#: src/guides/account-migration/en.mdx:14
+#, no-wrap
+msgid "For an in-depth explanation of the steps involved in a migration, read on.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/account-migration/en.mdx:16
 #, no-wrap
 msgid "## Creating a New Account\n"
 msgstr "<Heading level={2} id=\"creating-a-new-account\">新規アカウント作成</Heading>\n"
 
 #. type: Plain text
-#: src/guides/account-migration/en.mdx:12
+#: src/guides/account-migration/en.mdx:18
 #, no-wrap
 msgid "To create a PDS account with an existing identity, it is necessary to prove control the identity.\n"
 msgstr "既存IDを使ってPDSアカウントを作成するには、そのIDを自分が制御していると証明する必要があります。\n"
 
 #. type: Plain text
-#: src/guides/account-migration/en.mdx:14
+#: src/guides/account-migration/en.mdx:20
 #, no-wrap
 msgid "For an active account on another PDS, this is done by generating a service auth token (JWT) signed with the current atproto signing key indicated in the identity DID document. This can be requested from the previous PDS instance using the `com.atproto.server.getServiceAuth` endpoint (or an equivalent interface/API).\n"
 msgstr "別のPDSで有効なアカウントの場合、DIDドキュメントに示された現在のatproto署名鍵で署名されたサービス認証トークン（JWT）を生成することでこれを行います。これは元のPDSインスタンスに対して`com.atproto.server.getServiceAuth`エンドポイント（または同等のインターフェースやAPI）を使って要求できます。\n"
 
 #. type: Plain text
-#: src/guides/account-migration/en.mdx:16
+#: src/guides/account-migration/en.mdx:22
 #, no-wrap
 msgid "For an independently-controlled identity (eg, `did:web`, or a `did:plc` with old PDS offline or uncooperative), this may involve updating the identity to include a self-controlled atproto signing key, and generating the service auth token offline.\n"
 msgstr "独立して管理されるID（例：`did:web`、あるいは旧PDSがオフラインまたは非協力的な`did:plc`）の場合、管理下のatproto署名鍵を含めるようIDを更新したり、オフラインでサービス認証トークンを生成することが含まれる場合があります。\n"
 
 #. type: Plain text
-#: src/guides/account-migration/en.mdx:18
+#: src/guides/account-migration/en.mdx:24
 #, no-wrap
 msgid "The service auth token is provided along with the existing DID when creating the account with `com.atproto.server.createAccount` (or an equivalent interface/API) on the new PDS.\n"
 msgstr "サービス認証トークンは、新しいPDS上で`com.atproto.server.createAccount`（または同等のAPI）を使ってアカウントを作成する際に、既存のDIDとともに提供します。\n"
 
 #. type: Plain text
-#: src/guides/account-migration/en.mdx:20
+#: src/guides/account-migration/en.mdx:26
 #, no-wrap
 msgid "The new account will be in a `deactivated` state. It should be possible to directly login and authenticate, but not to participate in the network. From the perspective of other services in the network, the old PDS account is still current, and the new PDS account is not yet active or valid. Functionality like OAuth or proxied requests using service auth will not yet work with the new PDS.\n"
 msgstr "新しいアカウントは`deactivated`状態になります。直接ログインや認証は可能なはずですが、ネットワークに参加することはできません。ネットワーク内の他のサービスから見ると旧PDSのアカウントが依然として現役であり、新PDSのアカウントはまだ有効でも正当でもありません。OAuthやサービス認証を用いたプロキシなどの機能は新PDSではまだ動作しません。\n"
 
 #. type: Plain text
-#: src/guides/account-migration/en.mdx:22
+#: src/guides/account-migration/en.mdx:28
 #, no-wrap
 msgid "## Migrating Data\n"
 msgstr "<Heading level={2} id=\"migrating-data\">データ移行</Heading>\n"
 
 #. type: Plain text
-#: src/guides/account-migration/en.mdx:24
+#: src/guides/account-migration/en.mdx:30
 #, no-wrap
 msgid "Some categories of data that are typically migrated are:\n"
 msgstr "移行されるデータの典型的なカテゴリには次のものがあります。\n"
 
 #. type: Plain text
-#: src/guides/account-migration/en.mdx:28
+#: src/guides/account-migration/en.mdx:34
 #, no-wrap
 msgid ""
 "- public repository\n"
@@ -118,143 +121,133 @@ msgstr ""
 "- 非公開設定\n"
 
 #. type: Plain text
-#: src/guides/account-migration/en.mdx:30
+#: src/guides/account-migration/en.mdx:36
 #, no-wrap
 msgid "At any stage of migration, the authenticated `com.atproto.server.checkAccountStatus` endpoint can be called on either the old or new PDS instance to check statistics about currently indexed data.\n"
 msgstr "移行中の任意の段階で、認証付きで`com.atproto.server.checkAccountStatus`エンドポイントを旧PDSまたは新PDSで呼び出し、現在インデックスされているデータの統計を確認できます。\n"
 
 #. type: Plain text
-#: src/guides/account-migration/en.mdx:32
+#: src/guides/account-migration/en.mdx:38
 #, no-wrap
 msgid "A copy of the repository can be fetched as a CAR file from the old PDS using the public `com.atproto.sync.getRepo` endpoint. If the old PDS is inaccessible, a mirror might be available from a public relay, or a local backup might be available. If not, the new account will still function with the same identity, but old content would be missing.\n"
 msgstr "リポジトリのコピーは、旧PDSから認証不要の`com.atproto.sync.getRepo`エンドポイントを使ってCARファイルとして取得できます。旧PDSにアクセスできない場合、公開リレー上のミラーやローカルバックアップが利用できる場合があります。どちらも無い場合でも新しいアカウントは同じIDで動作しますが、移行前のコンテンツが欠落する可能性があります。\n"
 
 #. type: Plain text
-#: src/guides/account-migration/en.mdx:34
+#: src/guides/account-migration/en.mdx:40
 #, no-wrap
 msgid "A CAR file can be imported to the new PDS using the authenticated `com.atproto.repo.importRepo` endpoint.\n"
 msgstr "認証付きで`com.atproto.repo.importRepo`エンドポイントを使って、CARファイルを新しいPDSにインポートできます。\n"
 
 #. type: Plain text
-#: src/guides/account-migration/en.mdx:36
+#: src/guides/account-migration/en.mdx:42
 #, no-wrap
 msgid "Blobs (media files) are download and re-uploaded one by one. They should not be uploaded to the new PDS until the repository has been imported and fully indexed, so that blobs can be linked to the records that refer to them, and won’t be garbage collected. A full list of relevant blobs (by CID) can be fetched either from the old PDS (`com.atproto.sync.listBlobs`), or the current list of \"missing\" blobs can be checked on the new PDS (`com.atproto.repo.listMissingBlobs`). If some blobs can not be found, the migration process can continue, and any recovered blobs can be uploaded later (if the blob CIDs match exactly).\n"
 msgstr "blob（メディアファイル）は一つずつダウンロードしてアップロードし直されます。リポジトリがインポートされ完全にインデックスされるまで、blobを新PDSへアップロードしてはいけません。これにより、アップロードされたblobがレコードから参照されている状態にし、ガベージコレクションを防ぎます。関連するblob（のCID）の完全なリストを旧PDSから取得（`com.atproto.sync.listBlobs`）するか、現在の不足blobリストを新PDSで確認（`com.atproto.repo.listMissingBlobs`）できます。見つからないブロブがある場合でも移行は継続でき、後で復旧したblobをアップロードできます（blobのCIDが完全に一致する場合）。\n"
 
 #. type: Plain text
-#: src/guides/account-migration/en.mdx:38
+#: src/guides/account-migration/en.mdx:44
 #, no-wrap
 msgid "Private account preferences can be exported from the old PDS using the authenticated like `app.bsky.actor.getPreferences` endpoint, then imported using `app.bsky.actor.putPreferences`. These are Bluesky app-specific endpoints, and other apps (Lexicons) may define their own preference APIs. Note that this will only include private state stored in the PDS; some preferences and state may exist in external services (eg, centralized chat/DM implementations).\n"
 msgstr "非公開のアカウント設定は、旧PDSから認証された`app.bsky.actor.getPreferences`のようなエンドポイントを使ってエクスポートし、`app.bsky.actor.putPreferences`を使ってインポートできます。これらはBlueskyアプリ固有のエンドポイントで、他のアプリ（Lexicon）は独自の設定APIを定義することもあります。これはPDSに保存された状態のみを含む点に注意してください。一部の設定や状態は外部サービス（例：中央集権型チャット/DM実装）に存在するかもしれません。\n"
 
 #. type: Plain text
-#: src/guides/account-migration/en.mdx:40
+#: src/guides/account-migration/en.mdx:46
 #, no-wrap
 msgid "## Updating Identity\n"
 msgstr "<Heading level={2} id=\"updating-identity\">ID更新</Heading>\n"
 
 #. type: Plain text
-#: src/guides/account-migration/en.mdx:42
+#: src/guides/account-migration/en.mdx:48
 #, no-wrap
 msgid "Once content has been migrated, the identity (DID and handle) can be updated to indicate that the new PDS is the current host for the account.\n"
 msgstr "コンテンツが移行されたら、ID（DIDとハンドル）を更新して、新しいPDSがそのアカウントの現行ホストであることを示すことができます。\n"
 
 #. type: Plain text
-#: src/guides/account-migration/en.mdx:44
+#: src/guides/account-migration/en.mdx:50
 #, no-wrap
 msgid "\"Recommended\" DID document parameters can be fetched from the new PDS using the `com.atproto.identity.getRecommendedDidCredentials` endpoint. This will include the DID service hostname, local handle (as requested during account creation), a PDS-managed atproto signing key (public key), and (if relevant) PLC rotation keys (public keys).\n"
 msgstr "推奨されるDIDドキュメントのパラメータは、新PDSの`com.atproto.identity.getRecommendedDidCredentials`エンドポイントから取得できます。これにはDIDのサービスホスト名、ローカルハンドル（アカウント作成時に要求したもの）、PDS管理のatproto署名鍵（公開鍵）、および該当する場合はPLC回転鍵（公開鍵）が含まれます。\n"
 
 #. type: Plain text
-#: src/guides/account-migration/en.mdx:46
+#: src/guides/account-migration/en.mdx:52
 #, no-wrap
 msgid "For users who are able to securely manage a private cryptographic keypair (eg, store in a password manager or digital wallet), it is recommended to include a self-controlled PLC rotation key (public key) in the PLC operation.\n"
 msgstr "秘密鍵の鍵ペアを安全に管理できるユーザー（例：パスワードマネージャやデジタルウォレットに保存できる場合）は、PLCオペレーションに自己管理のPLCローテーション鍵（公開鍵）を含めることを推奨します。\n"
 
 #. type: Plain text
-#: src/guides/account-migration/en.mdx:48
+#: src/guides/account-migration/en.mdx:54
 #, no-wrap
 msgid "For a self-controlled identity (eg, `did:web`, or `did:plc` with local rotation key), the identity update can be done directly by the user.\n"
 msgstr "自己管理型のID（例：`did:web`、またはローカル回転鍵を持つ`did:plc`）の場合、IDの更新はユーザー自身が直接行うことができます。\n"
 
 #. type: Plain text
-#: src/guides/account-migration/en.mdx:50
+#: src/guides/account-migration/en.mdx:56
 #, no-wrap
 msgid "For an account with a `did:plc` managed by the old PDS, a PLC \"operation\" is signed by the old PDS, then submitted via the new PDS. The motivation for having the new PDS submit the PLC operation instead of having the user do so directly is to give the new PDS a chance to validate the operation and do safety check to prevent the account from getting in a broken state.\n"
 msgstr "旧PDSによって管理されている`did:plc`を使うアカウントの場合、PLCのオペレーションは旧PDSによって署名され、新PDS経由で提出されます。ユーザーに直接提出させるのではなく新PDSに提出させる理由は、新PDSがオペレーションを検証し、アカウントが破損状態になるのを防ぐ安全性チェックを行えるようにするためです。\n"
 
 #. type: Plain text
-#: src/guides/account-migration/en.mdx:52
+#: src/guides/account-migration/en.mdx:58
 #, no-wrap
 msgid "Because identity operations are sensitive, they require an additional security token as an additional \"factor\". The token can be requested via `com.atproto.identity.requestPlcOperationSignature` on the old PDS, and will be delivered by email to the verified account email by default.\n"
 msgstr "ID操作はセンシティブなため、追加の『因子』としてセキュリティトークンが必要です。トークンは旧PDS上の`com.atproto.identity.requestPlcOperationSignature`を通じて要求でき、デフォルトではアカウントの確認済みメールアドレスに電子メールで配信されます。\n"
 
 #. type: Plain text
-#: src/guides/account-migration/en.mdx:54
+#: src/guides/account-migration/en.mdx:60
 #, no-wrap
 msgid "This token is included as part of a call to `com.atproto.identity.signPlcOperation` on the old PDS, along with the requested DID fields (new signing key, rotation keys, PDS location, etc). The old PDS will validate the request, sign using the PDS-managed PLC rotation key, and return the signed PLC operation. The operation will not have been submitted to any PLC directory at this point in time.\n"
 msgstr "このトークンは、要求するDIDのフィールド（新しい署名鍵、ローテーション鍵、PDSの場所など）とともに旧PDS上の`com.atproto.identity.signPlcOperation`呼び出しの一部として含まれます。旧PDSは要求を検証し、PDSが管理するPLCローテーション鍵で署名したPLC操作を返します。この時点ではオペレーションはまだPLCディレクトリに提出されていません。\n"
 
 #. type: Plain text
-#: src/guides/account-migration/en.mdx:56
+#: src/guides/account-migration/en.mdx:62
 #, no-wrap
 msgid "The user is then recommended to submit the operation to the new PDS (using the `com.atproto.identity.submitPlcOperation` endpoint), which will validate that the changes are \"safe\" (aka, that they enable the the PDS to help manage the identity and atproto account), and then submit it to the PLC directory.\n"
 msgstr "その後、ユーザーはそのオペレーションを新PDS（`com.atproto.identity.submitPlcOperation`エンドポイント）に提出することが推奨されます。新PDSは変更が安全であること（すなわちPDSがIDとatprotoアカウントの管理を支援できること）を検証した後、PLCディレクトリへ提出します。\n"
 
 #. type: Plain text
-#: src/guides/account-migration/en.mdx:58
+#: src/guides/account-migration/en.mdx:64
 #, no-wrap
 msgid "With the identity successfully updated, the new PDS is now the \"current\" host for the account from the perspective of the entire network. This will be immediately apparent to new services which resolve the identity. Existing services that consume from the firehose will be alerted by the `#identity` event. Other services, which may have now-stale cached identity metadata for the account, will either refresh when the cache expires, or should refresh their cache when they encounter errors (such as invalid service auth signatures).\n"
 msgstr "IDが正常に更新されると、新PDSはネットワーク全体でそのアカウントの「現行」ホストになります。これは新規サービスのID解決には即座に反映されます。firehoseを消費している既存サービスには`#identity`イベントで通知されます。古いIDメタデータのキャッシュを持つサービスは、キャッシュの期限切れ時に更新するか、署名失敗などのエラーに遭遇した際にキャッシュを更新します。\n"
 
 #. type: Plain text
-#: src/guides/account-migration/en.mdx:60
+#: src/guides/account-migration/en.mdx:66
 #, no-wrap
 msgid "However, the new account is not yet \"active\".\n"
 msgstr "ただし、新しいアカウントはまだ有効ではありません。\n"
 
 #. type: Plain text
-#: src/guides/account-migration/en.mdx:62
+#: src/guides/account-migration/en.mdx:68
 #, no-wrap
 msgid "## Finalizing Account Status\n"
 msgstr "<Heading level={2} id=\"finalizing-account-status\">アカウント状態確定</Heading>\n"
 
 #. type: Plain text
-#: src/guides/account-migration/en.mdx:64
+#: src/guides/account-migration/en.mdx:70
 #, no-wrap
 msgid "At this point, the user is still able to authenticate to both PDS instances. The new PDS knows that it is current for the account, but still has the account marked as \"deactivated\". The old PDS may not realize that it is no longer current.\n"
 msgstr "この時点ではユーザーは両方のPDSインスタンスに認証可能です。新PDSはアカウントの現行であることを認識していますが、アカウントはまだ無効化されたままです。旧PDSはもはや現行でないことに気づかない可能性があります。\n"
 
 #. type: Plain text
-#: src/guides/account-migration/en.mdx:66
+#: src/guides/account-migration/en.mdx:72
 #, no-wrap
 msgid "It may be worth double-checking with `com.atproto.server.checkAccountStatus` on both PDS instances to confirm that all the expected content has been migrated.\n"
 msgstr "すべてのコンテンツが移行されたことを確認するため、両方のPDSインスタンスで`com.atproto.server.checkAccountStatus`を呼び出して再確認することが有益な場合があります。\n"
 
 #. type: Plain text
-#: src/guides/account-migration/en.mdx:68
+#: src/guides/account-migration/en.mdx:74
 #, no-wrap
 msgid "The user can activate their account on the new PDS with a call to `com.atproto.server.activateAccount`, and deactivate their account on the old PDS with `com.atproto.server.deactivateAccount`.\n"
 msgstr "ユーザーは`com.atproto.server.activateAccount`を呼び出すことで新PDS上でアカウントを有効化でき、旧PDS上では`com.atproto.server.deactivateAccount`を使ってアカウントを無効化できます。\n"
 
 #. type: Plain text
-#: src/guides/account-migration/en.mdx:70
+#: src/guides/account-migration/en.mdx:76
 #, no-wrap
 msgid "At this point the migration is complete. New content can be published by writing to the repo, preferences can be updated, and inter-service auth and proxying should work as expected. It may be necessary to log out of any clients and log back in. In some cases, if services have aggressive identity caching and do not refresh on signature failure, service auth requests could fail for up to 24 hours.\n"
 msgstr "この時点で移行は完了です。リポジトリへ書き込むことで新しいコンテンツを公開でき、設定の更新やサービス間認証、プロキシも期待通り動作するはずです。クライアントからログアウトして再ログインする必要があるかもしれません。場合によっては、サービスの積極的なIDキャッシュが署名失敗でもリフレッシュされず、サービス認証が最大で24時間失敗する可能性があります。\n"
 
 #. type: Plain text
-#: src/guides/account-migration/en.mdx:72
+#: src/guides/account-migration/en.mdx:77
 #, no-wrap
 msgid "It will still be possible to login and authenticate with the old PDS. The user may wish to fully terminated their old account eventually. This can be automated with the `deleteAfter` parameter to the `com.atproto.server.deactivateAccount` request. Note that the old PDS may be able to assist with PLC identity recovery during a fixed 72hr window, but only if the account was not fully deleted during that window.\n"
 msgstr "旧PDSでログインや認証を行うことは引き続き可能です。ユーザーは最終的に旧アカウントを完全に削除したい場合があります。これは`com.atproto.server.deactivateAccount`リクエストの`deleteAfter`パラメータで自動化できます。旧PDSは72時間固定のウィンドウ内でPLC識別子の復旧を支援できる場合がありますが、そのウィンドウ内でアカウントが完全に削除されていない場合に限ります。\n"
-
-#. type: Plain text
-#: src/guides/account-migration/en.mdx:76
-#, no-wrap
-msgid ""
-"- [Migrating PDS Account with `goat`](https://whtwnd.com/bnewbold.net/3l5ii332pf32u)\n"
-"- [PDS MOOver](https://pdsmoover.com/) — a third-party tool for migrating PDS accounts\n"
-msgstr ""
-"- [`goat`を使ったPDSアカウント移行](https://whtwnd.com/bnewbold.net/3l5ii332pf32u)\n"
-"- [PDS MOOver](https://pdsmoover.com/) — PDSアカウント移行のためのサードパーティツール\n"
