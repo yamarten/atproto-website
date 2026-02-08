@@ -8,7 +8,7 @@ export const header = {
 
 # FAQ
 
-Authenticated Transferプロトコル（ATプロトコル）に関するよくある質問。Blueskyに関するよくある質問については、[こちら](https://bsky.social/about/faq)をご覧ください。
+Authenticated Transferプロトコル（atproto）に関するよくある質問。Blueskyに関するよくある質問については、[こちら](https://bsky.social/about/faq)をご覧ください。
 
 <Heading level={2} id="is-the-at-protocol-a-blockchain">ATプロトコルはブロックチェーンですか？</Heading>
 
@@ -26,7 +26,7 @@ Authenticated Transferプロトコル（ATプロトコル）に関するよく�
 
 <Heading level={2} id="why-create-lexicon-instead-of-using-json-ld-or-rdf">JSON-LDやRDFを使用する代わりにLexiconを作成する理由</Heading>
 
-ATプロトコルは組織間でデータとRPCコマンドを交換します。データとRPCが有用であるためには、ソフトウェアが別のチームによって作成されたスキーマを正しく処理する必要があります。これが[Lexicon](/guides/lexicon)の目的です。
+atprotoは組織間でデータとRPCコマンドを交換します。データとRPCが有用であるためには、ソフトウェアが別のチームによって作成されたスキーマを正しく処理する必要があります。これが[Lexicon](/guides/lexicon)の目的です。
 
 私たちは、エンジニアが新しいスキーマを快適に使用および作成できるようにし、開発者がシステムのDXを楽しめるようにしたいと考えています。Lexiconは、開発者にとって非常に馴染み深く、さまざまな実行時正確性チェックを提供する、厳密に型指定されたAPIの作成に役立ちます。
 
@@ -36,9 +36,9 @@ ATプロトコルは組織間でデータとRPCコマンドを交換します。
 
 <Heading level={2} id="what-is-xrpc-and-why-not-use-___">「XRPC」とは何ですか。なぜ___を使用しないのですか?</Heading>
 
-[XRPC](/specs/xrpc)は、いくつかの規則が追加されたHTTPです。私たちは「XRPC」という用語を廃止し、単にHTTPのATプロトコル用法と呼ぶことを目指しています。
+[XRPC](/specs/xrpc)は、いくつかの規則が追加されたHTTPです。
 
-XRPCは[Lexicon](/guides/lexicon)を使用してHTTP呼び出しを記述し、それらを`/xrpc/{methodId}`にマッピングします。たとえば、次のAPI呼び出し：
+XRPCは[Lexicon](/guides/lexicon)を使用してHTTP呼び出しを記述し、それらを`/xrpc/{methodId}`にマッピングします。たとえば、次のようなAPI呼び出しを考えます。
 
 ```typescript
 await api.com.atproto.repo.listRecords({
@@ -55,4 +55,4 @@ GET /xrpc/com.atproto.repo.listRecords
   &collection=app.bsky.feed.post
 ```
 
-Lexiconは、共有メソッドID（`com.atproto.repo.listRecords`）と、予想されるクエリパラメータ、入力本文、および出力本文を確立します。Lexiconを使用すると、呼び出しの入力と出力の実行時チェックが実行され、上記のAPI呼び出しの例のような型付きコードを生成できます。
+Lexiconは、共有メソッドID（`com.atproto.repo.listRecords`）と、予想されるクエリパラメータ、入力および出力を明示します。Lexiconを使用すると、呼び出しの入力と出力の実行時チェックが実行され、上記のAPI呼び出しの例のような型付きコードを生成できます。

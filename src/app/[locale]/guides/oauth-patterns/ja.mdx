@@ -1,5 +1,6 @@
 import {Container} from "@/components/Container"
 import {Heading} from "@/components/Heading"
+import {ResponsiveTable} from '@/components/ResponsiveTable'
 
 export const header = {
   title: 'OAuthパターン集',
@@ -17,17 +18,20 @@ export const header = {
 
 - [Indigo](https://github.com/bluesky-social/indigo/tree/main/atproto/auth/oauth)（[APIドキュメント](https://pkg.go.dev/github.com/bluesky-social/indigo/atproto/auth/oauth)）- ネイティブアプリまたはサーバーサイドデプロイメントに適しています
 
-<Heading level={2} id="atproto-oauth-example-apps">ATプロトコルOAuthサンプルアプリ</Heading>
+<Heading level={2} id="atproto-oauth-example-apps">atproto OAuthサンプルアプリ</Heading>
 
 これらのシンプルなサンプルアプリは、各SDKの使用方法を示しています。
 
-| サンプルアプリ | 言語 | SDK | アーキテクチャ | 機密クライアントか？ | [ローカルホスト開発クライアントID？](https://atproto.com/specs/oauth#localhost-client-development) |
-| --- | --- | --- | --- | --- | --- |
-| [cookbook/react-native-oauth](https://github.com/bluesky-social/cookbook/tree/main/react-native-oauth#readme) | TypeScript | @atproto/oauth-client-expo | モバイルアプリ（バックエンドなし） | いいえ | いいえ（ホストされたクライアントメタデータが必要） |
-| [cookbook/vanillajs-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/vanillajs-oauth-web-app#readme) | JavaScript | @atproto/oauth-client-browser | Web SPA（バックエンドなし） | いいえ | オプション |
-| [cookbook/go-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/go-oauth-web-app#readme) | Go | indigo | Web BFF | オプション | オプション |
-| [cookbook/go-oauth-cli-app](https://github.com/bluesky-social/cookbook/tree/main/go-oauth-cli-app#readme) | Go | indigo | ネイティブCLI | いいえ | いいえ（ホストされたクライアントメタデータが必要） |
-| [cookbook/python-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/python-oauth-web-app#readme) | Python | なし | Web BFF | オプション | オプション |
+<ResponsiveTable
+  columns={[{label: 'サンプルアプリ'}, {label: '言語'}, {label: 'SDK'}, {label: '構成'}, {label: '機密'}, {label: 'ローカル', href: '/specs/oauth#localhost-client-development'}]}
+  rows={[
+    [{label: 'cookbook/react-native-oauth', href:' https://github.com/bluesky-social/cookbook/tree/main/react-native-oauth#readme' }, {label: 'TypeScript'}, {label: '@atproto/oauth-client-expo'}, {label: 'モバイルアプリ（バックエンドなし）'}, {label: '非対応'}, {label: '非対応（ホストされたメタデータが必要）'},],
+    [{label: 'cookbook/vanillajs-oauth-web-app', href:' https://github.com/bluesky-social/cookbook/tree/main/vanillajs-oauth-web-app#readme' }, {label: 'JavaScript'}, {label: '@atproto/oauth-client-browser'}, {label: 'Web SPA（バックエンドなし）'}, {label: '非対応'}, {label: '選択可'},],
+    [{label: 'cookbook/go-oauth-web-app', href:' https://github.com/bluesky-social/cookbook/tree/main/go-oauth-web-app#readme' }, {label: 'Go'}, {label: 'indigo'}, {label: 'Web BFF'}, {label: '選択可'}, {label: '選択可'},],
+    [{label: 'cookbook/go-oauth-cli-app', href:' https://github.com/bluesky-social/cookbook/tree/main/go-oauth-cli-app#readme' }, {label: 'Go'}, {label: 'indigo'}, {label: 'ネイティブCLI'}, {label: '非対応'}, {label: '非対応（ホストされたメタデータが必要）'},],
+    [{label: 'cookbook/python-oauth-web-app', href:' https://github.com/bluesky-social/cookbook/tree/main/python-oauth-web-app#readme' }, {label: 'Python'}, {label: 'None'}, {label: 'Web BFF'}, {label: '選択可'}, {label: '選択可'},]
+  ]}
+/>
 
 <Note>
 PythonのサンプルではSDKを使用していないことに注意してください。[OAuthクライアント実装ガイド](https://docs.bsky.app/docs/advanced-guides/oauth-client)と共に、OAuth SDKを一から構築する際の参考として役立つかもしれません。

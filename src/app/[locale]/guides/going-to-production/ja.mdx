@@ -60,6 +60,8 @@ PDS実装にはデフォルトで[リポジトリ操作制限](https://docs.bsky
 
 これにより、レート制限を段階的にスケールできます。
 
+複数プロセスを並列実行する場合、SQLiteデータベースに[サイドカーコンテナ](https://litestream.io/guides/docker/#why-sidecar-containers-work)を利用することもできます。
+
 <Heading level={2} id="moderation">モデレーション</Heading>
 
 モデレーションはほとんどがPDSレベルで実行されます。ただし、リレーも実行している場合は、必要に応じてアカウントレベルおよびPDSレベルのアクションを実行するためのフォームがリレー管理ウェブインターフェースにあることに注意してください。XRPC経由で公開されていないモデレーション関連のPDSエンドポイントもいくつかあり、[goat](https://github.com/bluesky-social/goat) CLIツールがこれらと対話できます。例については[goat/pds_admin.go](https://github.com/bluesky-social/goat/blob/main/pds_admin.go)を参照してください。

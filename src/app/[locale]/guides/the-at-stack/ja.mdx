@@ -120,11 +120,7 @@ PLCミラーリングのガイダンスは[この開発者ブログ](https://dho
 
 <Heading level={2} id="osprey-and-ozone">OspreyとOzone</Heading>
 
-モデレーションはスタックの2箇所で処理されます。[*Osprey*](https://github.com/bluesky-social/osprey-atproto)はイベントストリームの判定エンジンと分析用UIで、自動的な調査と措置の実行を目的としています。[*Ozone*](https://github.com/bluesky-social/ozone)はラベリングサービスとモデレーション判断のためのウェブフロントエンドです。
-
-OspreyはPythonで書かれており、Discordとの協働で設計・オープンソース化されました。Ospreyは人間が記述したルールを通じてアクションを処理し、ラベルを発行したりAPIへのwebhookを出力したりするためのPythonライブラリです。構造化されたロジック、ユーザー定義関数、外部シグナルを用いてイベントを評価し、ラベル・判定・アクションを割り当てます。これらの一部、例えば毒性検出のToxrankモデルは、Osprey向けに独自のウェブエンドポイントを公開するファインチューニング済みLLMやその他の分類器を利用しています。私たちは画像OCRとハッシュ化も活用して、実行可能なモデレーションメタデータを作成し、それを自動的にアクション化したり、Ozoneを通じてモデレーターに提示したり、結果的にDiscoverフィードのアルゴリズム形成に役立てたりしています。
-
-内部のヒューリスティックの一部は非公開ですが、OspreyとOzoneは、Bluesky Lexiconと機能セットを再実装する場合でも、別種のAtmosphereアプリとして異なるコンテンツセットで運用する場合でも、独自のルールとモデレーション運用を持つ他のアプリホストが導入・運用できるように設計されています。
+モデレーションはスタックの2箇所で処理されます。[*Osprey*](https://github.com/roostorg/osprey)はイベントストリームの判定エンジンと分析用UIで、自動的な調査と措置の実行を目的としています。[*Ozone*](/guides/using-ozone)はラベリングサービスとモデレーション判断のためのウェブフロントエンドです。
 
 <Heading level={2} id="tools-and-sdks">ツールとSDK</Heading>
 

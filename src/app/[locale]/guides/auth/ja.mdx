@@ -2,21 +2,21 @@ import {Container} from "@/components/Container"
 import {Heading} from "@/components/Heading"
 
 export const header = {
-  title: '認証',
-  description: 'ATプロトコルアプリケーション開発者向けの認証ガイド',
+  title: '認可',
+  description: 'atprotoアプリケーション開発者向けの認可ガイド',
 }
 
-<Heading level={2} id="about-authentication">認証について</Heading>
+<Heading level={2} id="about-authorization">認可について</Heading>
 
-**認証が最初のドキュメントであることには理由があります**。ATプロトコルのレコードから[データを読む](/reading-data#unauthenticated-reads)ために常に認証が必要というわけではありませんし、[firehoseからデータをストリーム](/guides/streaming-data)する場合も同じです。ただしATプロトコルアプリの環境（Atmosphere）に何らかの形で統合されるアプリケーションを構築したい場合は、認証から始めることになります。まずATプロトコルのIDをOAuthソースとして使うだけから始めるかもしれませんが、ATプロトコルの[ソーシャルグラフ](/guides/social-graph)上でさらに多くのことができることに気付くでしょう。
+**認可が最初のドキュメントであることには理由があります**。ATプロトコルのレコードから[データを読む](/reading-data#unauthenticated-reads)ために常に認証・認可が必要というわけではありませんし、[firehoseからデータをストリーム](/guides/streaming-data)する場合も同じです。ただしatprotoアプリの環境（Atmosphere）に何らかの形で統合されるアプリケーションを構築したい場合は、認可から始めることになります。まずATプロトコルのIDをOAuthソースとして使うだけから始めるかもしれませんが、atprotoの[ソーシャルグラフ](/guides/social-graph)上でさらに多くのことができることに気付くでしょう。
 
-このセクションはATプロトコルでアプリケーションを構築している開発者を対象としています。独自のログインフローを持つアプリケーションは認証に[OAuth](#what-is-oauth)を実装すべきです。ボットやコマンドラインツールなどの単一目的のアプリケーションは[パスワード認証](/guides/sdk-auth)を使うこともできます。
+このセクションはatprotoでアプリケーションを構築している開発者を対象としています。独自のログインフローを持つアプリケーションは認証に[OAuth](#what-is-oauth)を実装すべきです。ボットやコマンドラインツールなどの単一目的のアプリケーションは[パスワード認証](/guides/sdk-auth)を使うこともできます。
 
 <Note>
 私たちは[アプリパスワード](/specs/xrpc#app-passwords)の使用もサポートしています。アカウントは主パスワードとは別にアプリパスワードの作成・取消しができます。これにより、パスワード認証を使うアプリケーションに主パスワードを渡す必要がありません。
 </Note>
 
-アプリケーションにOAuthを実装するには、一般的なユースケースについては[OAuthパターン](/guides/oauth-patterns)を、権限モデルの理解については[スコープガイド](/guides/scopes)を参照してください。独自のプロトコル実装またはOAuth Client SDKを構築している場合は、[OAuth仕様](/specs/oauth)を参照してください。
+アプリケーションにOAuthを実装するには、一般的なユースケースについては[OAuthパターン](/guides/oauth-patterns)を、権限モデルの理解については[スコープガイド](/guides/scopes)を参照してください。独自のプロトコル実装またはOAuthクライアアントSDKを構築している場合は、[OAuth仕様](/specs/oauth)を参照してください。
 
 <Heading level={2} id="what-is-oauth">OAuthとは？</Heading>
 
@@ -28,15 +28,15 @@ OAuthはこれらの問題を、個人のユーザー名とパスワードを必
 
 <Heading level={2} id="how-is-oauth-different-in-at-protocol">ATプロトコルのOAuthは何が違う？</Heading>
 
-ATプロトコルは[OAuth仕様](/specs/oauth)でOAuth標準の特定の「プロファイル」を指定し、[OAuth 2.1](https://www.ietf.org/archive/id/draft-ietf-oauth-v2-1-13.html)を基礎としています。
+atprotoは[OAuth仕様](/specs/oauth)でOAuth標準の特定の「プロファイル」を指定し、[OAuth 2.1](https://www.ietf.org/archive/id/draft-ietf-oauth-v2-1-13.html)を基礎としています。
 
 他のOAuthシステムを使っている場合は細かい部分で意外に感じるかもしれません。
 
-- **ATプロトコルは分散しています**：通常、アプリに「…でサインイン」ボタンがある場合、ユーザーの認証を許可する権限を選択できます（大抵は少数の大企業のどれか）。ATプロトコルのOAuthでは、アプリは認証プロバイダー、つまりユーザーの[PDS](/guides/the-at-stack#pds)との事前の関係がありません。これは、ATプロトコルのOAuthが、事前に確立された関係を必要とするOIDCと互換性がない理由でもあります。
+- **atprotoは分散しています**：通常、アプリに「…でサインイン」ボタンがある場合、ユーザーの認証を許可する権限を選択できます（大抵は少数の大企業のどれか）。atprotoのOAuthでは、アプリは認証プロバイダー、つまりユーザーの[PDS](/guides/the-at-stack#pds)との事前の関係がありません。これは、atprotoのOAuthが、事前に確立された関係を必要とするOIDCと互換性がない理由でもあります。
 
 - **移行**：ATプロトコルユーザーはアカウントをサーバー（[PDS](/guides/glossary#pds-personal-data-server)）間で移行できます。これを促進するため、ATプロトコルは柔軟な[ID](/guides/identity)レイヤーを持っており、ユーザー名（[ハンドル](/specs/handle)）を不変のユーザーID（[DID](/specs/did)）に解決でき、さらにそれを解決してユーザーのPDSを見つけることができます。ユーザーがアプリケーションにログインすると、OAuthクライアントはこれらの関係を動的に解決します。
 
-- **クライアントID**： 他のOAuthエコシステムでは、クライアントアプリケーションがリソースサーバーに事前登録が必要なことがよくあります。これは分散型システム（多数のクライアントと多数のリソースサーバーがある）では実行できないため、ATプロトコルは[Client ID Metadata Documents](/specs/oauth#client-id-metadata-document)を使用してこれに対処しています。
+- **クライアントID**： 他のOAuthエコシステムでは、クライアントアプリケーションがリソースサーバーに事前登録が必要なことがよくあります。これは分散型システム（多数のクライアントと多数のリソースサーバーがある）では実行できないため、atprotoは[Client ID Metadata Documents](/specs/oauth#client-id-metadata-document)を使用してこれに対処しています。
 
 <Heading level={2} id="further-reading-and-resources">関連・参考資料</Heading>
 
