@@ -263,7 +263,7 @@ msgstr "[TypeScript](https://github.com/bluesky-social/feed-generator)でフィ�
 #: src/guides/feeds/en.mdx:84
 #, no-wrap
 msgid "We also have a [more minimal example](https://tangled.org/strings/did:plc:vmt7o7y6titkqzzxav247zrn/3mbujziyniw22) using the new [lex](https://www.npmjs.com/package/@atproto/lex) SDK and [tap](https://www.npmjs.com/package/@atproto/tap) TypeScript library.\n"
-msgstr ""
+msgstr "新しい[lex](https://www.npmjs.com/package/@atproto/lex) SDKと[tap](https://www.npmjs.com/package/@atproto/tap)のTypeScriptライブラリを使った[より小さなサンプル](https://tangled.org/strings/did:plc:vmt7o7y6titkqzzxav247zrn/3mbujziyniw22)もあります。\n"
 
 #. type: Plain text
 #: src/guides/feeds/en.mdx:86
@@ -333,12 +333,7 @@ msgstr "<Heading level={2} id=\"example-feeds\">フィードの例</Heading>\n"
 
 #. type: Plain text
 #: src/guides/feeds/en.mdx:111
-#, fuzzy, no-wrap
-#| msgid ""
-#| "- A community feed: Compile a list of DIDs within that community and filter the firehose for all posts from users within that list.\n"
-#| "- A topical feed: Filter the algorithm for posts and pass the post text through some filtering mechanism (an LLM, a keyword matcher, etc.) that filters for the topic of your choice.\n"
-#| "- [graze.social](https://www.graze.social/) provides an application model for AT Proto feeds.\n"
-#| "- You can find other examples of community-created feeds at [https://bsky.app/feeds](https://bsky.app/feeds).\n"
+#, no-wrap
 msgid ""
 "- A community feed: Compile a list of DIDs within that community and filter the firehose for all posts from users within that list.\n"
 "- A topical feed: Filter the algorithm for posts and pass the post text through some filtering mechanism (an LLM, a keyword matcher, etc.) that filters for the topic of your choice.\n"
@@ -347,7 +342,7 @@ msgid ""
 msgstr ""
 "- コミュニティフィード：そのコミュニティ内のDIDのリストをコンパイルし、そのリスト内のユーザーからのすべての投稿についてfirehoseをフィルタリングします。\n"
 "- トピックフィード：アルゴリズムが返す投稿に対して、投稿本文をフィルタリングメカニズム（LLM、キーワードマッチャーなど）に渡して、選択したトピック用にフィルタリングします。\n"
-"- [graze.social](https://www.graze.social/)はATプロトコルフィードのアプリケーションモデルを提供します。\n"
+"- [graze.social](https://www.graze.social/)はatprotoフィードのアプリケーションモデルを提供します。\n"
 "- コミュニティが作成したその他のフィード例は[https://bsky.app/feeds](https://bsky.app/feeds)で見つけることができます。\n"
 
 #. type: Plain text

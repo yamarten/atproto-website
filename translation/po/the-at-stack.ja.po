@@ -366,10 +366,9 @@ msgstr "<Heading level={2} id=\"osprey-and-ozone\">OspreyとOzone</Heading>\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:123
-#, fuzzy, no-wrap
-#| msgid "Moderation is handled by two parts of our stack: [*Osprey*](https://github.com/bluesky-social/osprey-atproto), an event stream decisions engine and analysis UI designed to investigate and take automatic action; and [*Ozone*](https://github.com/bluesky-social/ozone), a labeling service and web frontend for making moderation decisions.\n"
+#, no-wrap
 msgid "Moderation is handled by two parts of our stack: [*Osprey*](https://github.com/roostorg/osprey), an event stream decisions engine and analysis UI designed to investigate and take automatic action; and [*Ozone*](/guides/using-ozone), a labeling service and web frontend for making moderation decisions.\n"
-msgstr "モデレーションはスタックの2箇所で処理されます。[*Osprey*](https://github.com/bluesky-social/osprey-atproto)はイベントストリームの判定エンジンと分析用UIで、自動的な調査と措置の実行を目的としています。[*Ozone*](https://github.com/bluesky-social/ozone)はラベリングサービスとモデレーション判断のためのウェブフロントエンドです。\n"
+msgstr "モデレーションはスタックの2箇所で処理されます。[*Osprey*](https://github.com/roostorg/osprey)はイベントストリームの判定エンジンと分析用UIで、自動的な調査と措置の実行を目的としています。[*Ozone*](/guides/using-ozone)はラベリングサービスとモデレーション判断のためのウェブフロントエンドです。\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:125

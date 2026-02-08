@@ -84,13 +84,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/articles/atproto-for-distsys-engineers/en.mdx:34
-#, fuzzy, no-wrap
-#| msgid ""
-#| "export const header = {\n"
-#| "  title: 'ATProto for distributed systems engineers',\n"
-#| "  description:\n"
-#| "    'AT Protocol is the tech developed at Bluesky for open social networking. In this article we\\'re going to explore AT Proto from the perspective of distributed backend engineering.',\n"
-#| "}\n"
+#, no-wrap
 msgid ""
 "export const header = {\n"
 "  title: 'ATProto for distributed systems engineers',\n"
@@ -100,9 +94,9 @@ msgid ""
 "}\n"
 msgstr ""
 "export const header = {\n"
-"  title: '分散システムエンジニアのためのATプロトコル',\n"
+"  title: '分散システムエンジニアのためのatproto',\n"
 "  description:\n"
-"    'ATプロトコルは、Blueskyでオープンソーシャルネットワーキング用に開発された技術です。この記事では、分散バックエンドエンジニアリングの観点からATプロトコルについて説明します。',\n"
+"    'この記事では、分散バックエンドエンジニアリングの観点からatprotoについて説明します。',\n"
 "}\n"
 
 #. type: Plain text

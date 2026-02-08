@@ -87,10 +87,9 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:20 src/guides/sdk-auth/en.mdx:29
-#, fuzzy, no-wrap
-#| msgid "    Begin by installing the ATProto SDK packages:\n"
+#, no-wrap
 msgid "    Begin by installing the Atproto SDK packages:\n"
-msgstr "    まずATプロトコルSDKパッケージをインストールしてください。\n"
+msgstr "    まずatproto SDKパッケージをインストールしてください。\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:27

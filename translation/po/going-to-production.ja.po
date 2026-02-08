@@ -206,7 +206,7 @@ msgstr "これにより、レート制限を段階的にスケールできます
 #: src/guides/going-to-production/en.mdx:64
 #, no-wrap
 msgid "If you are running multiple processes in parallel, you may also want to leverage [sidecar containers](https://litestream.io/guides/docker/#why-sidecar-containers-work) for your SQLite databases.\n"
-msgstr ""
+msgstr "複数プロセスを並列実行する場合、SQLiteデータベースに[サイドカーコンテナ](https://litestream.io/guides/docker/#why-sidecar-containers-work)を利用することもできます。\n"
 
 #. type: Plain text
 #: src/guides/going-to-production/en.mdx:66
@@ -222,8 +222,7 @@ msgstr "モデレーションはほとんどがPDSレベルで実行されます
 
 #. type: Plain text
 #: src/guides/going-to-production/en.mdx:70
-#, fuzzy, no-wrap
-#| msgid "[Ozone](https://github.com/bluesky-social/ozone) is our labeling service and moderation interface. If you are building your own AppView, AppViews can use the Ozone `subscribeLabel` \"firehose\" to receive updates. Ozone can also be granted permission to read additional PDS-level private information, such as the account email. This is helpful for things like account recovery.\n"
+#, no-wrap
 msgid "[Ozone](https://github.com/bluesky-social/ozone) is our labeling service and moderation interface. If you are building your own AppView, AppViews can use the Ozone `subscribeLabel` \"firehose\" to receive updates. Ozone can also be granted permission to read additional PDS-level private information, such as the account email. This is helpful for things like account recovery.\n"
 msgstr "[Ozone](https://github.com/bluesky-social/ozone)はラベリングサービスおよびモデレーションインターフェースです。独自のAppViewを構築している場合、AppViewはOzoneの`subscribeLabel` firehoseを使用して更新を受け取ることができます。Ozoneにはアカウントメールのような追加のPDSレベルのプライベート情報を読み取る権限を与えることもできます。これはアカウント復旧などに役立ちます。\n"
 

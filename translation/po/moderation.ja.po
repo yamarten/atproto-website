@@ -66,10 +66,9 @@ msgstr "<Heading level={2} id=\"about-moderation\">モデレーションにつ�
 
 #. type: Plain text
 #: src/guides/moderation/en.mdx:12
-#, fuzzy, no-wrap
-#| msgid "The AT Proto model is that *speech* and *reach* should be two separate layers, built to work with each other. The “speech” layer should remain permissive, distributing authority and designed to ensure everyone has a voice. The “reach” layer lives on top, built for flexibility and designed to scale. AT Proto moderation is implemented using [Labels](/guides/labels).\n"
+#, no-wrap
 msgid "The Atproto model is that *speech* and *reach* should be two separate layers, built to work with each other. The “speech” layer should remain permissive, distributing authority and designed to ensure everyone has a voice. The “reach” layer lives on top, built for flexibility and designed to scale. Atproto moderation is implemented using [Labels](/guides/labels).\n"
-msgstr "ATプロトコルのモデルでは、*スピーチ*と*リーチ*は別個の層として設計され、相互に連携して動作します。スピーチ層は寛容で権限を分散し、誰もが発言できることを重視します。リーチ層はその上に位置し、柔軟性とスケーラビリティのために設計されています。ATプロトコルのモデレーションは[ラベル](/guides/labels)を用いて実装されています。\n"
+msgstr "atprotoのモデルでは、*スピーチ*と*リーチ*は別個の層として設計され、相互に連携して動作します。スピーチ層は寛容で権限を分散し、誰もが発言できることを重視します。リーチ層はその上に位置し、柔軟性とスケーラビリティのために設計されています。atprotoのモデレーションは[ラベル](/guides/labels)を用いて実装されています。\n"
 
 #. type: Plain text
 #: src/guides/moderation/en.mdx:16
@@ -117,7 +116,7 @@ msgstr "別の見方をすれば、Ospreyは人間が記述したルールを通
 #: src/guides/moderation/en.mdx:28
 #, no-wrap
 msgid "Osprey is maintained by [Roost](https://roost.tools/), who build open source moderation tools.\n"
-msgstr ""
+msgstr "Ospreyは、オープンソースモデレーションツールを開発している[Roost](https://roost.tools/)によって管理されています。\n"
 
 #. type: Plain text
 #: src/guides/moderation/en.mdx:32

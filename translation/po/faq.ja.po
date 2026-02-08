@@ -42,10 +42,9 @@ msgstr "# FAQ\n"
 
 #. type: Plain text
 #: src/guides/faq/en.mdx:10
-#, fuzzy, no-wrap
-#| msgid "Frequently Asked Questions about the Authenticated Transfer Protocol (AT Proto). For FAQ about Bluesky, visit [here](https://bsky.social/about/faq).\n"
+#, no-wrap
 msgid "Frequently Asked Questions about the Authenticated Transfer Protocol (Atproto). For FAQ about Bluesky, visit [here](https://bsky.social/about/faq).\n"
-msgstr "Authenticated Transferプロトコル（ATプロトコル）に関するよくある質問。Blueskyに関するよくある質問については、[こちら](https://bsky.social/about/faq)をご覧ください。\n"
+msgstr "Authenticated Transferプロトコル（atproto）に関するよくある質問。Blueskyに関するよくある質問については、[こちら](https://bsky.social/about/faq)をご覧ください。\n"
 
 #. type: Plain text
 #: src/guides/faq/en.mdx:12
@@ -99,7 +98,7 @@ msgstr "<Heading level={2} id=\"why-create-lexicon-instead-of-using-json-ld-or-r
 #: src/guides/faq/en.mdx:28
 #, no-wrap
 msgid "Atproto exchanges data and RPC commands across organizations. For the data and RPC to be useful, the software needs to correctly handle schemas created by separate teams. This is the purpose of [Lexicon](/guides/lexicon).\n"
-msgstr "ATプロトコルは組織間でデータとRPCコマンドを交換します。データとRPCが有用であるためには、ソフトウェアが別のチームによって作成されたスキーマを正しく処理する必要があります。これが[Lexicon](/guides/lexicon)の目的です。\n"
+msgstr "atprotoは組織間でデータとRPCコマンドを交換します。データとRPCが有用であるためには、ソフトウェアが別のチームによって作成されたスキーマを正しく処理する必要があります。これが[Lexicon](/guides/lexicon)の目的です。\n"
 
 #. type: Plain text
 #: src/guides/faq/en.mdx:30
@@ -129,14 +128,13 @@ msgstr "<Heading level={2} id=\"what-is-xrpc-and-why-not-use-___\">「XRPC」と
 #: src/guides/faq/en.mdx:38
 #, no-wrap
 msgid "[XRPC](/specs/xrpc) is HTTP with some added conventions.\n"
-msgstr ""
+msgstr "[XRPC](/specs/xrpc)は、いくつかの規則が追加されたHTTPです。\n"
 
 #. type: Plain text
 #: src/guides/faq/en.mdx:40
-#, fuzzy, no-wrap
-#| msgid "XRPC uses [Lexicon](/guides/lexicon) to describe HTTP calls and maps them to `/xrpc/{methodId}`. For example, this API call:\n"
+#, no-wrap
 msgid "XRPC uses [Lexicons](/guides/lexicon) to describe HTTP calls and maps them to `/xrpc/{methodId}`. For example, this API call:\n"
-msgstr "XRPCは[Lexicon](/guides/lexicon)を使用してHTTP呼び出しを記述し、それらを`/xrpc/{methodId}`にマッピングします。たとえば、次のAPI呼び出し：\n"
+msgstr "XRPCは[Lexicon](/guides/lexicon)を使用してHTTP呼び出しを記述し、それらを`/xrpc/{methodId}`にマッピングします。たとえば、次のようなAPI呼び出しを考えます。\n"
 
 #. type: Plain text
 #: src/guides/faq/en.mdx:47
@@ -180,7 +178,6 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/faq/en.mdx:56
-#, fuzzy, no-wrap
-#| msgid "Lexicon establishes a shared method id (`com.atproto.repo.listRecords`) and the expected query params, input body, and output body. By using Lexicon we get runtime checks on the inputs and outputs of the call, and can generate typed code like the API call example above.\n"
+#, no-wrap
 msgid "Lexicons establish shared method id (`com.atproto.repo.listRecords`) and the expected query params, input body, and output body. By using Lexicons we get runtime checks on the inputs and outputs of the call, and can generate typed code like the API call example above.\n"
-msgstr "Lexiconは、共有メソッドID（`com.atproto.repo.listRecords`）と、予想されるクエリパラメータ、入力本文、および出力本文を確立します。Lexiconを使用すると、呼び出しの入力と出力の実行時チェックが実行され、上記のAPI呼び出しの例のような型付きコードを生成できます。\n"
+msgstr "Lexiconは、共有メソッドID（`com.atproto.repo.listRecords`）と、予想されるクエリパラメータ、入力および出力を明示します。Lexiconを使用すると、呼び出しの入力と出力の実行時チェックが実行され、上記のAPI呼び出しの例のような型付きコードを生成できます。\n"

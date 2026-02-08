@@ -18,52 +18,43 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/understanding-atproto/en.mdx:2
-#, fuzzy, no-wrap
-#| msgid "import {Container} from \"@/components/Container\"\n"
+#, no-wrap
 msgid "import { Card, CardParagraph, CardTitle } from '@/components/Card'\n"
 msgstr ""
-"import {Container} from \"@/components/Container\"\n"
-"import {Heading} from \"@/components/Heading\"\n"
+"import { Card, CardParagraph, CardTitle } from '@/components/Card'\n"
+"import { Heading } from '@/components/Heading'\n"
 
 #. type: Plain text
 #: src/guides/understanding-atproto/en.mdx:7
-#, fuzzy, no-wrap
-#| msgid ""
-#| "export const header = {\n"
-#| "  title: 'Reading Data',\n"
-#| "  description: 'Read AT Protocol Records',\n"
-#| "}\n"
+#, no-wrap
 msgid ""
 "export const header = {\n"
 "  title: 'Understanding Atproto',\n"
 "  description: 'A closer look into how it all works',\n"
 "}\n"
 msgstr ""
-"import {Heading} from '@/components/Heading'\n"
-"\n"
 "export const header = {\n"
-"  title: 'データ読み取り',\n"
-"  description: 'ATプロトコルレコードを読み取る',\n"
+"  title: 'atprotoを知る',\n"
+"  description: '全体の仕組みの深掘り',\n"
 "}\n"
 
 #. type: Plain text
 #: src/guides/understanding-atproto/en.mdx:9
-#, fuzzy, no-wrap
-#| msgid "## Tap\n"
+#, no-wrap
 msgid "## TL;DR\n"
-msgstr "<Heading level={2} id=\"tap\">Tap</Heading>\n"
+msgstr "<Heading level={2} id=\"tl-dr\">要約</Heading>\n"
 
 #. type: Plain text
 #: src/guides/understanding-atproto/en.mdx:11
 #, no-wrap
 msgid "Atproto is big-world, open social. Users publish JSON records into repositories. The changestreams of those records then sync across the network to drive applications.\n"
-msgstr ""
+msgstr "atprotoは、ビッグワールドでオープンなソーシャルです。ユーザーはJSONレコードをリポジトリに公開します。これらのレコードの変更ストリームがネットワーク全体で同期され、アプリケーションを動かします。\n"
 
 #. type: Plain text
 #: src/guides/understanding-atproto/en.mdx:13
 #, no-wrap
 msgid "We recommend these fantastic articles by community member [Dan Abramov](https://bsky.app/profile/danabra.mov):\n"
-msgstr ""
+msgstr "コミュニティメンバーの[Dan Abramov](https://bsky.app/profile/danabra.mov)による、素晴らしい記事をおすすめします。\n"
 
 #. type: Plain text
 #: src/guides/understanding-atproto/en.mdx:17
@@ -73,13 +64,15 @@ msgid ""
 "- [**Where it's at://**](https://overreacted.io/where-its-at/) - From handles to hosting.\n"
 "- [**A Social Filesystem**](https://overreacted.io/a-social-filesystem/) - Formats over apps.\n"
 msgstr ""
+"- [**Open Social**](https://overreacted.io/open-social/) - プロトコルはAPIである\n"
+"- [**Where it's at://**](https://overreacted.io/where-its-at/) - ハンドルからホスティングに辿り着くまで\n"
+"- [**A Social Filesystem**](https://overreacted.io/a-social-filesystem/) - フォーマットはアプリを超える\n"
 
 #. type: Plain text
 #: src/guides/understanding-atproto/en.mdx:19
-#, fuzzy, no-wrap
-#| msgid "## Rate limits\n"
+#, no-wrap
 msgid "## Core primitives\n"
-msgstr "<Heading level={2} id=\"rate-limits\">レート制限</Heading>\n"
+msgstr "<Heading level={2} id=\"core-primitives\">コアプリミティブ</Heading>\n"
 
 #. type: Plain text
 #: src/guides/understanding-atproto/en.mdx:23
@@ -89,13 +82,15 @@ msgid ""
 "- **User handles.** Usernames, which are DNS records. Our account is [@atproto.com](https://bsky.app/profile/atproto.com).\n"
 "- **User DIDs.** The permanent IDs of users.\n"
 msgstr ""
+"- **ユーザーリポジトリ**：ユーザーごとの公開データベース。\n"
+"- **ユーザーハンドル**：DNSレコードとして表現されるユーザー名。私たちのアカウントは[@atproto.com](https://bsky.app/profile/atproto.com)です。\n"
+"- **ユーザーDID**：ユーザーの恒久的なID。\n"
 
 #. type: Plain text
 #: src/guides/understanding-atproto/en.mdx:25
-#, fuzzy, no-wrap
-#| msgid "## Data Repo\n"
+#, no-wrap
 msgid "## Data models\n"
-msgstr "<Heading level={2} id=\"data-repo\">データリポジトリ</Heading>\n"
+msgstr "<Heading level={2} id=\"data-models\">データモデル</Heading>\n"
 
 #. type: Plain text
 #: src/guides/understanding-atproto/en.mdx:30
@@ -106,19 +101,22 @@ msgid ""
 "- **Lexicon**. The schema language.\n"
 "- **Lexicon RPC (XRPC).** It's HTTPS but with the routes defined by Lexicons.\n"
 msgstr ""
+"- **レコード**：コレクションごとに分類されたJSON。\n"
+"- **blob**：[画像と動画](/guides/images-and-video)。\n"
+"- **Lexicon**：スキーマ言語。\n"
+"- **Lexicon RPC (XRPC)**：HTTPSですが、ルートはLexiconで定義されます。\n"
 
 #. type: Plain text
 #: src/guides/understanding-atproto/en.mdx:32
-#, fuzzy, no-wrap
-#| msgid "### The web\n"
+#, no-wrap
 msgid "## The stack\n"
-msgstr "<Heading level={3} id=\"the-web\">ウェブ</Heading>\n"
+msgstr "<Heading level={2} id=\"the-stack\">スタック</Heading>\n"
 
 #. type: Plain text
 #: src/guides/understanding-atproto/en.mdx:34
 #, no-wrap
 msgid "There are different kinds of services which you can [self-host](/guides/self-hosting):\n"
-msgstr ""
+msgstr "[セルフホスト](/guides/self-hosting)できるサービスには、いくつかの種類があります。\n"
 
 #. type: Plain text
 #: src/guides/understanding-atproto/en.mdx:39
@@ -129,56 +127,59 @@ msgid ""
 "- **Applications**. They aggregate user data to produce app experiences.\n"
 "- **Labelers**. Publish moderation decisions as label metadata.\n"
 msgstr ""
+"- **パーソナルデータサーバー（PDS）**：ユーザーアカウントをホストします。\n"
+"- **リレー**：ユーザーの書き込みイベントを収集して再配信します。\n"
+"- **アプリケーション**：ユーザーデータを集約してアプリ体験を作ります。\n"
+"- **ラベラー**：モデレーションの判断をラベルメタデータとして公開します。\n"
 
 #. type: Plain text
 #: src/guides/understanding-atproto/en.mdx:41
-#, fuzzy, no-wrap
-#| msgid "## Using tap\n"
+#, no-wrap
 msgid "## Making it happen\n"
-msgstr "<Heading level={2} id=\"using-tap\">tapの利用</Heading>\n"
+msgstr "<Heading level={2} id=\"making-it-happen\">使い方</Heading>\n"
 
 #. type: Plain text
 #: src/guides/understanding-atproto/en.mdx:43
 #, no-wrap
 msgid "Let's assume you're building an application. Your users will sign in with [OAuth](/guides/auth), which hands your application the address of their PDS. Your application then [reads & writes](/guides/reads-and-writes) records by contacting their PDS.\n"
-msgstr ""
+msgstr "あなたがアプリケーションを作っているとします。ユーザーは[OAuth](/guides/auth)でサインインし、その結果としてあなたのアプリは各ユーザーのPDSアドレスを受け取ります。あなたのアプリは、そのPDSに接続してレコードを[読み書き](/guides/reads-and-writes)します。\n"
 
 #. type: Plain text
 #: src/guides/understanding-atproto/en.mdx:45
 #, no-wrap
 msgid "To listen for activity across the network, you [sync from relays](/guides/sync). You could sync directly from the users' PDSes, but it's more convenient to use the relays. Since all data is signed, you can confirm the relay's stream is accurate.\n"
-msgstr ""
+msgstr "ネットワーク全体のアクティビティを監視するには、[リレーから同期](/guides/sync)します。ユーザーのPDSから直接同期することもできますが、リレーを使う方が便利です。すべてのデータには署名があるため、リレーのストリームが正確か検証できます。\n"
 
 #. type: Plain text
 #: src/guides/understanding-atproto/en.mdx:47
 #, no-wrap
 msgid "The [Lexicons](/guides/lexicon) help identify the data being published on the network. You use them to validate data as you read it, just like you validate incoming HTTP requests.\n"
-msgstr ""
+msgstr "[Lexicon](/guides/lexicon)は、ネットワーク上で公開されるデータの識別に役立ちます。受け取ったHTTPリクエストを検証するように、読み取り時のデータ検証に使います。\n"
 
 #. type: Plain text
 #: src/guides/understanding-atproto/en.mdx:49
 #, no-wrap
 msgid "Finally, you handle [moderation](/guides/moderation) by subscribing to (or running) labelers which receive user reports and publish labels on user content.\n"
-msgstr ""
+msgstr "最後に、ユーザーからの報告を受け取りユーザーコンテンツにラベルを発行するラベラーを利用（または運用）して、[モデレーション](/guides/moderation)を行います。\n"
 
 #. type: Plain text
 #: src/guides/understanding-atproto/en.mdx:51
-#, fuzzy, no-wrap
-#| msgid "## Deleting Records\n"
+#, no-wrap
 msgid "## Deeper reads\n"
-msgstr "<Heading level={2} id=\"deleting-records\">レコードの削除</Heading>\n"
+msgstr "<Heading level={2} id=\"deeper-reads\">さらに詳しく</Heading>\n"
 
 #. type: Plain text
 #: src/guides/understanding-atproto/en.mdx:53
 #, no-wrap
 msgid "We also recommend these deep-dive articles by the team:\n"
-msgstr ""
+msgstr "チームによる次の深掘り記事もおすすめです。\n"
 
 #. type: Plain text
 #: src/guides/understanding-atproto/en.mdx:56
-#, fuzzy, no-wrap
-#| msgid "For more context, see [ATProto for distributed systems engineers](/articles/atproto-for-distsys-engineers) and [The ATProto Ethos](/articles/atproto-ethos).\n"
+#, no-wrap
 msgid ""
 "- [**Atproto for distributed systems engineers**](/articles/atproto-for-distsys-engineers). An explainer for backend thinkers.\n"
 "- [**The Atproto Ethos**](/articles/atproto-ethos). The principles that underpin the design of atproto.\n"
-msgstr "詳しい背景は、[分散システムエンジニアのためのATプロトコル](/articles/atproto-for-distsys-engineers)と[The ATProto Ethos](/articles/atproto-ethos)を参照してください。\n"
+msgstr ""
+"- [分散システムエンジニアのためのatproto](/articles/atproto-for-distsys-engineers)：バックエンドを考える人のための解説\n"
+"- [atprotoの基本理念](/articles/atproto-ethos)：atprotoの設計を支える原則\n"

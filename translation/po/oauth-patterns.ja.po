@@ -41,17 +41,14 @@ msgstr "<Heading level={2} id=\"typescript\">TypeScript</Heading>\n"
 
 #. type: Plain text
 #: src/guides/oauth-patterns/en.mdx:3
-#, fuzzy, no-wrap
-#| msgid ""
-#| "import {Container} from \"@/components/Container\"\n"
-#| "import ozone from \"./ozone.png\"\n"
+#, no-wrap
 msgid ""
 "import {Container} from \"@/components/Container\"\n"
 "import {ResponsiveTable} from '@/components/ResponsiveTable'\n"
 msgstr ""
 "import {Container} from \"@/components/Container\"\n"
 "import {Heading} from \"@/components/Heading\"\n"
-"import ozone from \"./ozone.png\"\n"
+"import {ResponsiveTable} from '@/components/ResponsiveTable'\n"
 
 #. type: Plain text
 #: src/guides/oauth-patterns/en.mdx:8
@@ -95,10 +92,9 @@ msgstr "- [Indigo](https://github.com/bluesky-social/indigo/tree/main/atproto/au
 
 #. type: Plain text
 #: src/guides/oauth-patterns/en.mdx:21
-#, fuzzy, no-wrap
-#| msgid "## ATProto OAuth Example Apps\n"
+#, no-wrap
 msgid "## Atproto OAuth Example Apps\n"
-msgstr "<Heading level={2} id=\"atproto-oauth-example-apps\">ATプロトコルOAuthサンプルアプリ</Heading>\n"
+msgstr "<Heading level={2} id=\"atproto-oauth-example-apps\">atproto OAuthサンプルアプリ</Heading>\n"
 
 #. type: Plain text
 #: src/guides/oauth-patterns/en.mdx:23
@@ -108,15 +104,7 @@ msgstr "これらのシンプルなサンプルアプリは、各SDKの使用方
 
 #. type: Plain text
 #: src/guides/oauth-patterns/en.mdx:34
-#, fuzzy, no-wrap
-#| msgid ""
-#| "| Example App | Language | SDK | Architecture | Confidential Client? | [Localhost development client ID?](https://atproto.com/specs/oauth#localhost-client-development) |\n"
-#| "| --- | --- | --- | --- | --- | --- |\n"
-#| "| [cookbook/react-native-oauth](https://github.com/bluesky-social/cookbook/tree/main/react-native-oauth#readme) | TypeScript | @atproto/oauth-client-expo | Mobile App (no backend) | No | No (requires hosted client metadata) |\n"
-#| "| [cookbook/vanillajs-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/vanillajs-oauth-web-app#readme) | JavaScript | @atproto/oauth-client-browser | Web SPA (no backend) | No | Optionally |\n"
-#| "| [cookbook/go-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/go-oauth-web-app#readme) | Go | indigo | Web BFF | Optionally | Optionally |\n"
-#| "| [cookbook/go-oauth-cli-app](https://github.com/bluesky-social/cookbook/tree/main/go-oauth-cli-app#readme) | Go | indigo | Native CLI | No | No (requires hosted client metadata) |\n"
-#| "| [cookbook/python-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/python-oauth-web-app#readme) | Python | None | Web BFF | Optionally | Optionally |\n"
+#, no-wrap
 msgid ""
 "<ResponsiveTable\n"
 "  columns={[{label: 'Example App'}, {label: 'Language'}, {label: 'SDK'}, {label: 'Architecture'}, {label: 'Confidential Client?'}, {label: 'Localhost development client ID?', href: '/specs/oauth#localhost-client-development'}]}\n"
@@ -129,13 +117,16 @@ msgid ""
 "  ]}\n"
 "/>\n"
 msgstr ""
-"| サンプルアプリ | 言語 | SDK | アーキテクチャ | 機密クライアントか？ | [ローカルホスト開発クライアントID？](https://atproto.com/specs/oauth#localhost-client-development) |\n"
-"| --- | --- | --- | --- | --- | --- |\n"
-"| [cookbook/react-native-oauth](https://github.com/bluesky-social/cookbook/tree/main/react-native-oauth#readme) | TypeScript | @atproto/oauth-client-expo | モバイルアプリ（バックエンドなし） | いいえ | いいえ（ホストされたクライアントメタデータが必要） |\n"
-"| [cookbook/vanillajs-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/vanillajs-oauth-web-app#readme) | JavaScript | @atproto/oauth-client-browser | Web SPA（バックエンドなし） | いいえ | オプション |\n"
-"| [cookbook/go-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/go-oauth-web-app#readme) | Go | indigo | Web BFF | オプション | オプション |\n"
-"| [cookbook/go-oauth-cli-app](https://github.com/bluesky-social/cookbook/tree/main/go-oauth-cli-app#readme) | Go | indigo | ネイティブCLI | いいえ | いいえ（ホストされたクライアントメタデータが必要） |\n"
-"| [cookbook/python-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/python-oauth-web-app#readme) | Python | なし | Web BFF | オプション | オプション |\n"
+"<ResponsiveTable\n"
+"  columns={[{label: 'サンプルアプリ'}, {label: '言語'}, {label: 'SDK'}, {label: '構成'}, {label: '機密'}, {label: 'ローカル', href: '/specs/oauth#localhost-client-development'}]}\n"
+"  rows={[\n"
+"    [{label: 'cookbook/react-native-oauth', href:' https://github.com/bluesky-social/cookbook/tree/main/react-native-oauth#readme' }, {label: 'TypeScript'}, {label: '@atproto/oauth-client-expo'}, {label: 'モバイルアプリ（バックエンドなし）'}, {label: '非対応'}, {label: '非対応（ホストされたメタデータが必要）'},],\n"
+"    [{label: 'cookbook/vanillajs-oauth-web-app', href:' https://github.com/bluesky-social/cookbook/tree/main/vanillajs-oauth-web-app#readme' }, {label: 'JavaScript'}, {label: '@atproto/oauth-client-browser'}, {label: 'Web SPA（バックエンドなし）'}, {label: '非対応'}, {label: '選択可'},],\n"
+"    [{label: 'cookbook/go-oauth-web-app', href:' https://github.com/bluesky-social/cookbook/tree/main/go-oauth-web-app#readme' }, {label: 'Go'}, {label: 'indigo'}, {label: 'Web BFF'}, {label: '選択可'}, {label: '選択可'},],\n"
+"    [{label: 'cookbook/go-oauth-cli-app', href:' https://github.com/bluesky-social/cookbook/tree/main/go-oauth-cli-app#readme' }, {label: 'Go'}, {label: 'indigo'}, {label: 'ネイティブCLI'}, {label: '非対応'}, {label: '非対応（ホストされたメタデータが必要）'},],\n"
+"    [{label: 'cookbook/python-oauth-web-app', href:' https://github.com/bluesky-social/cookbook/tree/main/python-oauth-web-app#readme' }, {label: 'Python'}, {label: 'None'}, {label: 'Web BFF'}, {label: '選択可'}, {label: '選択可'},]\n"
+"  ]}\n"
+"/>\n"
 
 #. type: Plain text
 #: src/guides/oauth-patterns/en.mdx:38

@@ -53,7 +53,7 @@ msgid ""
 "}\n"
 msgstr ""
 "export const header = {\n"
-"  title: 'Atprotoの基本理念',\n"
+"  title: 'atprotoの基本理念',\n"
 "  description:\n"
 "    'ATプロトコルの設計を支える哲学的・美学的原則を深掘りする',\n"
 "    date: 'Apr 4, 2025'\n"
@@ -403,7 +403,7 @@ msgstr "これにより、atprotoは「だいたい同じことを話してい�
 #: src/articles/atproto-ethos/en.mdx:124
 #, no-wrap
 msgid "### Lazy trust\n"
-msgstr "<Heading level={3} id=\"lazy-trust\">怠惰な信頼</Heading>\n"
+msgstr "<Heading level={3} id=\"lazy-trust\">後回し信頼</Heading>\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:126
@@ -421,13 +421,13 @@ msgstr "p2pネットワークは、根本的に信頼不要という別のアプ
 #: src/articles/atproto-ethos/en.mdx:130
 #, no-wrap
 msgid "Atproto takes a middle approach that we sometimes refer to as “lazy trust”. Like p2p networks, trust is imbued into the data. However most often when browsing the network, users are seeing computed views not the canonical data. When viewing a timeline for instance, clients are likely not checking the signatures on every post that comes down. This is mitigated by the fact that the canonical data is always at hand. Therefore the service that offers these computed views is *staking its reputation* on every view that it serves. If a service starts serving invalid views, this can be verifiably proven. And since the data is locked open, users can migrate to another service that is better behaved.\n"
-msgstr "atprotoは中間的なアプローチを取り、私たちはこれを「怠惰な信頼（lazy trust）」と呼ぶことがあります。p2pネットワークと同様に、信頼はデータに埋め込まれています。しかし、ネットワークを閲覧する際にユーザーが見るのは多くの場合、正規データではなく計算済みのビューです。例えばタイムラインを見るとき、クライアントは流れてくるすべての投稿の署名を検証しないでしょう。これは、正規データが常に手元にあることで緩和されます。したがって、これらの計算済みビューを提供するサービスは、提供するすべてのビューに*評判を賭けて*います。サービスが無効なビューを出し始めたら、それを検証できます。しかもデータはオープンなので、ユーザーはより適切な別サービスへ移行できます。\n"
+msgstr "atprotoは中間的なアプローチを取り、私たちはこれを「後回し信頼（lazy trust）」と呼ぶことがあります。p2pネットワークと同様に、信頼はデータに埋め込まれています。しかし、ネットワークを閲覧する際にユーザーが見るのは多くの場合、正規データではなく計算済みのビューです。例えばタイムラインを見るとき、クライアントは流れてくるすべての投稿の署名を検証しないでしょう。これは、正規データが常に手元にあることで緩和されます。したがって、これらの計算済みビューを提供するサービスは、提供するすべてのビューに*評判を賭けて*います。サービスが無効なビューを出し始めたら、それを検証できます。しかもデータはオープンなので、ユーザーはより適切な別サービスへ移行できます。\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:132
 #, no-wrap
 msgid "As well, unlike p2p networks, users maintain a relationship with a persistent backend (the PDS) that hosts their data and information about their identity. Most notably (while not a hard requirement in atproto), we made the decision to move signing keys up to the backend. This prevents the complex key management UX issues that come with client-side keys. However, there is an obvious loss in user-control by doing so. This is mitigated once again by lazy trust. Trust is moved a layer up into the identity system such that a user can hold a recovery key for their identity that allows them to migrate away from a bad PDS.\n"
-msgstr "また、p2pネットワークと異なり、ユーザーは自分のデータとID情報をホストする永続的なバックエンド（PDS）と関係を持ちます。特に（atprotoで厳密に必須というわけではありませんが）、私たちは署名鍵をバックエンド側へ移す決定をしました。これにより、クライアントが鍵を持つことによる複雑な鍵管理UXの問題を防げます。しかし、その分ユーザーのコントロールが失われるのも事実です。これも怠惰な信頼で緩和されます。信頼はIDシステムの一段上に移され、ユーザーはIDの復旧鍵を保持でき、それによって不適切なPDSから移行できます。\n"
+msgstr "また、p2pネットワークと異なり、ユーザーは自分のデータとID情報をホストする永続的なバックエンド（PDS）と関係を持ちます。特に（atprotoで厳密に必須というわけではありませんが）、私たちは署名鍵をバックエンド側へ移す決定をしました。これにより、クライアントが鍵を持つことによる複雑な鍵管理UXの問題を防げます。しかし、その分ユーザーのコントロールが失われるのも事実です。これも後回し信頼で緩和されます。信頼はIDシステムの一段上に移され、ユーザーはIDの復旧鍵を保持でき、それによって不適切なPDSから移行できます。\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:134

@@ -35,12 +35,7 @@ msgstr "<Heading level={2} id=\"further-reading-and-resources\">関連・参考�
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:5
-#, fuzzy, no-wrap
-#| msgid ""
-#| "export const header = {\n"
-#| "  title: 'Reads and Writes',\n"
-#| "  description: 'Read and Write AT Protocol Records',\n"
-#| "}\n"
+#, no-wrap
 msgid ""
 "export const header = {\n"
 "  title: 'Reads and Writes',\n"
@@ -51,7 +46,7 @@ msgstr ""
 "\n"
 "export const header = {\n"
 "  title: '読み取りと書き込み',\n"
-"  description: 'ATプロトコルレコードを読み書きする',\n"
+"  description: 'Atmosphereのレコードを読み書きする',\n"
 "}\n"
 
 #. type: Plain text
@@ -62,17 +57,15 @@ msgstr "<Heading level={2} id=\"at-records\">ATレコード</Heading>\n"
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:9
-#, fuzzy, no-wrap
-#| msgid "The AT Protocol distributes user data across different nodes of your network, using the core building blocks of the web. The AT Protocol interconnects applications so that their backends share state, including user accounts and content, in individual data repositories. Many operations you'll perform when working with AT apps involve reading and writing these data repositories.\n"
+#, no-wrap
 msgid "The AT Protocol distributes user data across different nodes of your network, using the core building blocks of the web. The AT Protocol interconnects applications so that their backends share state, including user accounts and content, in individual data repositories. Many operations you'll perform when working with Atproto apps involve reading and writing these data repositories.\n"
-msgstr "ATプロトコルは、ウェブの基本的な構成要素を用いてネットワークの異なるノードにユーザーデータを分散します。ATプロトコルはアプリケーションを相互接続し、各バックエンドが個々のデータリポジトリに含まれるアカウントやコンテンツなどの状態を共有します。ATアプリで行う操作の多くは、これらのデータリポジトリの読み書きを伴います。\n"
+msgstr "ATプロトコルは、ウェブの基本的な構成要素を用いてネットワークの異なるノードにユーザーデータを分散します。ATプロトコルはアプリケーションを相互接続し、各バックエンドが個々のデータリポジトリに含まれるアカウントやコンテンツなどの状態を共有します。atprotoアプリで行う操作の多くは、これらのデータリポジトリの読み書きを伴います。\n"
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:11
-#, fuzzy, no-wrap
-#| msgid "For more context, see [ATProto for distributed systems engineers](/articles/atproto-for-distsys-engineers) and [The ATProto Ethos](/articles/atproto-ethos).\n"
+#, no-wrap
 msgid "For more context, see [Atproto for distributed systems engineers](/articles/atproto-for-distsys-engineers) and [The ATProto Ethos](/articles/atproto-ethos).\n"
-msgstr "詳しい背景は、[分散システムエンジニアのためのATプロトコル](/articles/atproto-for-distsys-engineers)と[The ATProto Ethos](/articles/atproto-ethos)を参照してください。\n"
+msgstr "詳しい背景は、[分散システムエンジニアのためのatproto](/articles/atproto-for-distsys-engineers)と[atprotoの基本理念](/articles/atproto-ethos)を参照してください。\n"
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:13 src/guides/bot-tutorial/en.mdx:11

@@ -172,13 +172,7 @@ msgstr "<Heading level={2} id=\"related-resources\">参考資料</Heading>\n"
 
 #. type: Plain text
 #: src/guides/blob-lifecycle/en.mdx:57
-#, fuzzy, no-wrap
-#| msgid ""
-#| "- [Images and Video](/guides/images-and-video)\n"
-#| "- [Blob security](/guides/blob-security)\n"
-#| "- [Video handling](/guides/video-handling)\n"
-#| "- [Blob Specs](/specs/blob)\n"
-#| "- [Streamplace](https://stream.place/docs/) provides an implementation and related Lexicon for video streaming on ATProto.\n"
+#, no-wrap
 msgid ""
 "- [Images and Video](/guides/images-and-video)\n"
 "- [Blob security](/guides/blob-security)\n"
@@ -190,4 +184,4 @@ msgstr ""
 "- [blobのセキュリティ](/guides/blob-security)\n"
 "- [動画の取り扱い](/guides/video-handling)\n"
 "- [blob仕様](/specs/blob)\n"
-"- [Streamplace](https://stream.place/docs/)はATプロトコル上の動画ストリーミングの実装および関連Lexiconを提供します。\n"
+"- [Streamplace](https://stream.place/docs/)はatproto上の動画ストリーミングの実装および関連Lexiconを提供します。\n"

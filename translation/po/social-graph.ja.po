@@ -59,13 +59,13 @@ msgstr "<Heading level={2} id=\"querying-social-graphs\">ソーシャルグラ�
 #: src/guides/social-graph/en.mdx:9
 #, no-wrap
 msgid "Atproto HTTP API methods each scope and implement a particular set of [Lexicons](/guides/lexicon). For example, an app using the `app.bsky.feed.post` record type would be expected to also implement an application endpoint like `curl -X POST example.com/xrpc/app.bsky.feed.post -d {post-contents}`.\n"
-msgstr ""
+msgstr "atprotoのHTTP APIメソッドは、それぞれ特定のLexiconセットに対して実装します。例えば、`app.bsky.feed.post`レコードを使用するアプリは、`curl -X POST example.com/xrpc/app.bsky.feed.post -d {post-contents}` のようなアプリケーションエンドポイントも実装することが期待されます。\n"
 
 #. type: Plain text
 #: src/guides/social-graph/en.mdx:11
 #, no-wrap
 msgid "This also means that all the POST requests you make to an Atproto app are retained and can be streamed back in that same format. This saves developers from having to make many backend implementation decisions. It also means that new applications that build on the AT Protocol can leverage existing social graph data — for example, from the `app.bsky.graph.getFollows` Lexicon RPC endpoint — to build new use cases, and bootstrap with an existing user base. This, in turn, gets you to native ATProtocol concepts like [A Social Filesystem](https://overreacted.io/a-social-filesystem/).\n"
-msgstr ""
+msgstr "これは、atprotoアプリに対して行ったすべてのPOSTリクエストが保持され、同じ形式でストリーミングできることも意味します。これにより、開発者はバックエンドの実装について多くの決定を下す必要がなくなりました。これは、ATプロトコル上に構築された新しいアプリケーションが、既存のソーシャルグラフデータ（`app.bsky.graph.getFollows` Lexicon RPC エンドポイントで得られるようなもの）を活用して、新しいユースケースを構築し、既存のユーザーベースでブートストラップできることも意味します。これにより、[A Social Filesystem](https://overreacted.io/a-social-filesystem/)のようなネイティブATプロトコルの概念が得られます。\n"
 
 #. type: Plain text
 #: src/guides/social-graph/en.mdx:13
@@ -87,10 +87,9 @@ msgstr "ATプロトコルからソーシャルグラフデータを取得する�
 
 #. type: Plain text
 #: src/guides/social-graph/en.mdx:19
-#, fuzzy, no-wrap
-#| msgid "Because all AT Protocol records are openly available and addressible via an `at://` URI, this makes it possible to encode nested API queries into individual URLs. The community project [pds.ls](https://pdsls.dev/at://did:plc:vmt7o7y6titkqzzxav247zrn/app.bsky.feed.post/3mbaxebcd6s2f) does this, for example.\n"
+#, no-wrap
 msgid "Because all AT Protocol records are openly available and addressible via an `at://` URI, this makes it possible to encode nested API queries into individual URLs. The community project [pdsls](https://pdsls.dev/at://did:plc:vmt7o7y6titkqzzxav247zrn/app.bsky.feed.post/3mbaxebcd6s2f) does this, for example.\n"
-msgstr "ATプロトコルのレコードは全て誰でも取得可能で、`at://` URIで指定可能なため、これによりネストされたAPIクエリを個別のURLにエンコードできるようになります。一例として、コミュニティプロジェクト[pds.ls](https://pdsls.dev/at://did:plc:vmt7o7y6titkqzzxav247zrn/app.bsky.feed.post/3mbaxebcd6s2f)はこれを行います。\n"
+msgstr "ATプロトコルのレコードは全て誰でも取得可能で、`at://` URIで指定可能なため、これによりネストされたAPIクエリを個別のURLにエンコードできるようになります。一例として、コミュニティプロジェクト[pdsls](https://pdsls.dev/at://did:plc:vmt7o7y6titkqzzxav247zrn/app.bsky.feed.post/3mbaxebcd6s2f)はこれを行います。\n"
 
 #. type: Plain text
 #: src/guides/social-graph/en.mdx:21

@@ -28,121 +28,110 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:7
-#, fuzzy, no-wrap
-#| msgid ""
-#| "export const header = {\n"
-#| "  title: 'Writing Data',\n"
-#| "  description: 'Write AT Protocol Records',\n"
-#| "}\n"
+#, no-wrap
 msgid ""
 "export const header = {\n"
 "  title: 'Tutorials',\n"
 "  // description: 'AT Protocol Tutorials',\n"
 "}\n"
 msgstr ""
-"import {Heading} from '@/components/Heading'\n"
-"\n"
 "export const header = {\n"
-"  title: 'データ書き込み',\n"
-"  description: 'ATプロトコルレコードを書き込む',\n"
+"  title: 'チュートリアル',\n"
+"  // description: 'ATプロトコルチュートリアル集',\n"
 "}\n"
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:9
 #, no-wrap
 msgid "These tutorials will guide you through building applications using the AT Protocol. Each tutorial focuses on a specific use case or feature, providing step-by-step instructions and code examples.\n"
-msgstr ""
+msgstr "このチュートリアルでは、ATプロトコルを使ったアプリケーション開発を順を追って学べます。各チュートリアルは個別のユースケースや機能に焦点を当て、段階を踏んだ手順とコード例を提供します。\n"
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:11
 #, no-wrap
 msgid "Our tutorials are organized to be completed in order, but each tutorial is self-contained and can be followed independently.\n"
-msgstr ""
+msgstr "チュートリアルは順番に進める構成ですが、各チュートリアルは独立しているため個別に取り組むこともできます。\n"
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:13
-#, fuzzy, no-wrap
-#| msgid "## Blob\n"
+#, no-wrap
 msgid "## Build-a-Bot\n"
-msgstr "<Heading level={2} id=\"blob\">blob</Heading>\n"
+msgstr "<Heading level={2} id=\"build-a-bot\">ボット作成</Heading>\n"
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:15
 #, no-wrap
 msgid "Create an agent that can interact with the AT Protocol, post content, and respond to user actions.\n"
-msgstr ""
+msgstr "ATプロトコルと対話し、投稿し、ユーザーに応答できるエージェントを作成します。\n"
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:17
 #, no-wrap
 msgid "[**Build a Bot Tutorial**](/guides/bot-tutorial)\n"
-msgstr ""
+msgstr "[**ボット作成チュートリアル**](/guides/bot-tutorial)\n"
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:19
-#, fuzzy, no-wrap
-#| msgid "## Custom Feeds\n"
+#, no-wrap
 msgid "## Custom Feed Algorithms\n"
-msgstr "<Heading level={2} id=\"custom-feeds\">カスタムフィード</Heading>\n"
+msgstr "<Heading level={2} id=\"custom-feed-algorithms\">カスタムフィードアルゴリズム</Heading>\n"
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:21
 #, no-wrap
 msgid "Learn how to create and deploy custom feeds to curate content for users based on specific criteria.\n"
-msgstr ""
+msgstr "条件に基づいてユーザーにコンテンツをキュレーションするカスタムフィードを作成し、デプロイする方法を学びます。\n"
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:23
 #, no-wrap
 msgid "[**Custom Feed Tutorial**](/guides/custom-feed-tutorial)\n"
-msgstr ""
+msgstr "[**カスタムフィードチュートリアル**](/guides/custom-feed-tutorial)\n"
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:25
-#, fuzzy, no-wrap
-#| msgid "## OAuth flow examples\n"
+#, no-wrap
 msgid "## OAuth with NextJS\n"
-msgstr "<Heading level={2} id=\"oauth-flow-examples\">OAuthフローの例</Heading>\n"
+msgstr "<Heading level={2} id=\"oauth-with-nextjs\">NextJSでOAuth</Heading>\n"
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:27
 #, no-wrap
 msgid "Build a Next.js app where users can log in with their AT Protocol identity using OAuth.\n"
-msgstr ""
+msgstr "OAuthを使ってユーザーがATプロトコルのIDでログインできるNext.jsアプリを構築します。\n"
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:29 src/guides/oauth-tutorial/en.mdx:16
 #, no-wrap
 msgid "See a demo version running at: [https://nextjs-oauth-tutorial.up.railway.app/](https://nextjs-oauth-tutorial.up.railway.app/).\n"
-msgstr ""
+msgstr "動作デモはこちらです。[https://nextjs-oauth-tutorial.up.railway.app/](https://nextjs-oauth-tutorial.up.railway.app/)。\n"
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:31
 #, no-wrap
 msgid "[**OAuth with NextJS Tutorial**](/guides/oauth-tutorial)\n"
-msgstr ""
+msgstr "[**NextJSでOAuthチュートリアル**](/guides/oauth-tutorial)\n"
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:33
-#, fuzzy, no-wrap
-#| msgid "## ATProto OAuth Example Apps\n"
+#, no-wrap
 msgid "## Statusphere Example App\n"
-msgstr "<Heading level={2} id=\"atproto-oauth-example-apps\">ATプロトコルOAuthサンプルアプリ</Heading>\n"
+msgstr "<Heading level={2} id=\"statusphere-example-apps\">Statusphereサンプルアプリ</Heading>\n"
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:35
 #, no-wrap
 msgid "Build an app that lets you broadcast a \"status\" message using custom Lexicons, and see a live feed of other statuses.\n"
-msgstr ""
+msgstr "カスタムLexiconを使って「status」メッセージを配信し、他のstatusをライブフィードで確認できるアプリを構築します。\n"
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:37
 #, no-wrap
 msgid "This is a revision of our original Statusphere tutorial.\n"
-msgstr ""
+msgstr "これは元のStatusphereチュートリアルを改訂したものです。\n"
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:38
 #, no-wrap
 msgid "[**Statusphere Example App Tutorial**](/guides/statusphere-tutorial)\n"
-msgstr ""
+msgstr "[**Statusphereサンプルアプリチュートリアル**](/guides/statusphere-tutorial)\n"

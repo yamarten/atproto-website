@@ -157,7 +157,7 @@ msgstr "- アプリのサインアップフローでは、ユーザーがログ�
 #: src/guides/self-hosting/en.mdx:47
 #, no-wrap
 msgid "Refer to [Using Ozone](/guides/using-ozone) for self-hosting guidance.\n"
-msgstr ""
+msgstr "[Ozoneの使用](/guides/using-ozone)を参照してください。\n"
 
 #. type: Plain text
 #: src/guides/self-hosting/en.mdx:49
