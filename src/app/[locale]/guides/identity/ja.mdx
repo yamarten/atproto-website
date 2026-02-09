@@ -65,7 +65,7 @@ DNSハンドルはユーザー向けの識別子です。UIに表示され、ユ
 
 <Heading level={2} id="did-methods">DIDメソッド</Heading>
 
-[DID標準](https://www.w3.org/TR/did-core/)は、DIDを公開し、[DIDドキュメント](https://www.w3.org/TR/did-core/#core-properties)に解決するカスタム「メソッド」をサポートしています。さまざまな既存のメソッドが[公開](https://w3c.github.io/did-spec-registries/#did-methods)されているため、この提案に含めるための基準を確立する必要があります。
+[DID標準](https://www.w3.org/TR/did-core/)は、DIDを公開し、[DIDドキュメント](https://www.w3.org/TR/did-core/#core-properties)に解決する「メソッド」を、ただ一つに定めず多様に定義できるフレームワークを設けています。さまざまな既存のメソッドが[公開](https://w3c.github.io/did-spec-registries/#did-methods)されおり、それぞれ異なる機能や特徴を持ちます。atprotoでの使用に際して、以下の基準を設定しました。
 
 - **強い一貫性**。特定のDIDに対して、解決クエリによって生成される有効なドキュメントは常に1つだけである必要があります。（一部のネットワークでは、これは確率的なトランザクションの最終性に左右される可能性があります。）
 - **高可用性**。解決クエリは確実に成功する必要があります。

@@ -74,7 +74,7 @@ LexiconスキーマはATプロトコルLexiconリポジトリのレコードと�
 
 <Heading level={2} id="permission-set-design">権限セットの設計</Heading>
 
-フル機能のクライアントアプリは、多数の細かな権限（数十、場合によっては数百）を必要とします。権限管理を簡素化するために、Lexicon設計者は公開するスキーマの一部として権限の「セット」を定義できます。これらの権限セット自体もLexiconスキーマであり、`com.example.authBasicFeatures`のような名前空間IDで参照されます。
+フル機能のクライアントアプリは、多数の細かな権限（数十、場合によっては数百）を必要とします。権限管理を簡素化するために、Lexicon設計者は公開するスキーマの一部として権限の集合を定義できます。これらの権限セット自体もLexiconスキーマであり、`com.example.authBasicFeatures`のような名前空間IDで参照されます。
 
 例えば、アプリケーションは`include:com.example.authBasicFeatures?aud=did:web:api.example.com%23svc_appview`のような権限セットtを要求できます。これはアプリの動作に必要な権限の集まりを定義するLexiconに解決されます。
 
@@ -185,7 +185,7 @@ atprotoのIDプロバイダーを認証*のみ*に利用するアプリは、[`a
   <Image src={oauth} alt="" className="w-full max-w-md mx-auto"/>
 </Container>
 
-これは十分に実用的なAtmosphere連携で、多くのアプリが出発点として利用します。ここでは明快で読みやすい「Authorize」フローが提示されます。要求元アプリのURLが明確に表示され、権限ダイアログにはアプリが「あなたを一意に識別したい」とだけ示され、それ以外はありません。
+これは十分に実用的なAtmosphere連携で、多くのアプリが出発点として利用します。ここでは明快で読みやすい「Authorize」フローが提示されます。要求元アプリのURLが明確に表示され、権限ダイアログにはアプリが「wants to uniquely identify you（あなたを識別しようとしています）」とだけ示され、それ以外はありません。
 
 次に、追加の権限を要求する、より複雑な連携を考えます。デフォルトでは、これらは要約で提示されます。
 

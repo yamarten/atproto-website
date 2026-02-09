@@ -54,9 +54,9 @@ export const header = {
   <Image src={image3} alt="" className="w-full dark:invert max-w-xl mx-auto" />
 </Container>
 
-これはかなり良いですが、何億人ものユーザーを抱えるソーシャルネットワークを構築しているため、このモデルでも限界に達します。問題は、SQLデータベースが「[強い一貫性](https://en.wikipedia.org/wiki/Strong_consistency)」を持つことです。つまり、状態はシステム全体で均一に同期されています。強い一貫性を維持するとパフォーマンス コストが発生し、それがボトルネックになります。 
+これはかなり良いですが、何億人ものユーザーを抱えるソーシャルネットワークを構築しているため、このモデルでも限界に達します。問題は、SQLデータベースが[強い一貫性](https://en.wikipedia.org/wiki/Strong_consistency)を持つことです。つまり、状態はシステム全体で均一に同期されています。強い一貫性を維持するとパフォーマンス コストが発生し、それがボトルネックになります。 
 
-システムを緩和して「[結果整合性](https://en.wikipedia.org/wiki/Eventual_consistency)」を使用できれば、さらに拡張できます。まず、NoSQLクラスターに切り替えます。
+システムを緩和して[結果整合性](https://en.wikipedia.org/wiki/Eventual_consistency)を使用できれば、さらに拡張できます。まず、NoSQLクラスターに切り替えます。
 
 <Container>
   <Image src={image4} alt="" className="w-full dark:invert max-w-lg mx-auto" />
@@ -116,19 +116,19 @@ ATプロトコルの目標は、アプリケーションを相互接続して、
 
 <Heading level={2} id="unifying-the-data-model">データモデルの統合</Heading>
 
-[“ユーザーデータリポジトリ”](/guides/data-repos)と呼ばれる共有データモデルを確立します。
+[ユーザーデータリポジトリ](/guides/data-repos)と呼ばれる共有データモデルを確立します。
 
 <Container>
   <Image src={image10} alt="" className="w-full dark:invert max-w-72 mx-auto" />
 </Container>
 
-すべてのデータリポジトリには、JSONドキュメント（ここでは “レコード” と呼びます）が含まれます。
+すべてのデータリポジトリには、JSONドキュメント（ここではレコードと呼びます）が含まれます。
 
 <Container>
   <Image src={image11} alt="" className="w-full dark:invert max-w-lg mx-auto" />
 </Container>
 
-整理のため、これらのレコードを「コレクション」にまとめます。
+整理のため、これらのレコードをコレクションとしてまとめます。
 
 <Container>
   <Image src={image12} alt="" className="w-full dark:invert max-w-lg mx-auto" />
@@ -140,9 +140,9 @@ ATプロトコルの目標は、アプリケーションを相互接続して、
   <Image src={image13} alt="" className="w-full dark:invert" />
 </Container>
 
-覚えておいてください：データリポジトリサービスは基本的にNoSQLストアのままですが、非常に特殊な方法で整理されるようになりました。
+振り返りましょう。データリポジトリサービスは基本的にNoSQLストアのままですが、明確に定められた方法で整理されるようになりました。
 
-1. 各ユーザーにはデータ リポジトリがあります。
+1. 各ユーザーにはデータリポジトリがあります。
 2. 各リポジトリにはコレクションがあります。
 3. 各コレクションは、JSONドキュメントの順序付けられたK/Vストアです。
 

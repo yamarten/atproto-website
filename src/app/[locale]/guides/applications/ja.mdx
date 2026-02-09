@@ -97,7 +97,7 @@ npm run dev
 
 <Image alt="ログインUIのスクリーンショット" src={AppLogin} />
 
-ログインページでは、ユーザーに「ハンドル」を尋ねるだけです。これは、アカウントに関連付けられたドメイン名です。[Bluesky](https://bsky.app)ユーザーの場合、これらは`alice.bsky.social`のように見えますが、任意の種類のドメイン（例えば`alice.com`）にすることができます。
+ログインページでは、ユーザーに「ハンドル」を尋ねるだけです。ハンドルとは、アカウントに関連付けられたドメイン名です。[Bluesky](https://bsky.app)ユーザーからすると、`alice.bsky.social`という形式ばかりに見えますが、任意のドメイン（例えば`alice.com`）にすることができます。
 
 ```html
 <!-- src/pages/login.ts -->
@@ -158,7 +158,7 @@ router.get(
 
 <Heading level={2} id="step-3-fetching-the-users-profile">ステップ3. ユーザーのプロフィールを取得する</Heading>
 
-ユーザーについて何か調べてみましょう。[Bluesky](https://bsky.app)では、ユーザーは次のような「プロフィール」レコードを公開します。
+ユーザーについて何か調べてみましょう。[Bluesky](https://bsky.app)では、ユーザーは次のようなプロフィールレコードを公開します。
 
 ```typescript
 interface ProfileRecord {
@@ -254,7 +254,7 @@ router.get(
 
 <Image alt="リポジトリの図" src={DiagramRepo} />
 
-「プロフィール」レコードの読み取り方法をもう一度見てみましょう。
+プロフィールレコードの読み取り方法をもう一度見てみましょう。
 
 ```typescript
 await agent.com.atproto.repo.getRecord({
@@ -264,7 +264,7 @@ await agent.com.atproto.repo.getRecord({
 })
 ```
 
-同様のAPIを使用してレコードを書き込みます。目標は「ステータス」レコードを書き込むことなので、その方法を見てみましょう。
+同様のAPIを使用してレコードを書き込みます。目標はステータスレコードを書き込むことなので、その方法を見てみましょう。
 
 ```typescript
 // 時間ベースのレコードキーを生成します
@@ -586,7 +586,7 @@ ${statuses.map((status, i) => {
 
 <Heading level={2} id="step-8-optimistic-updates">ステップ8. 楽観的更新</Heading>
 
-最後の最適化として、「楽観的更新」を導入しましょう。
+最後の最適化として、楽観的更新を導入しましょう。
 
 リポジトリ書き込みとイベントログによる情報フローループを覚えていますか？
 
