@@ -248,7 +248,7 @@ msgstr "<Heading level={2} id=\"permission-set-design\">権限セットの設計
 #: src/guides/permission-sets/en.mdx:77
 #, no-wrap
 msgid "Full-featured client apps require a large number of granular permissions to function: dozens or even hundreds of individual permissions. To simplify permission management, Lexicon designers can define \"sets\" of permissions as part of the schemas they publish. These permission sets are themselves Lexicon schemas and are referred to by namespace ID, such as `com.example.authBasicFeatures`.\n"
-msgstr "フル機能のクライアントアプリは、多数の細かな権限（数十、場合によっては数百）を必要とします。権限管理を簡素化するために、Lexicon設計者は公開するスキーマの一部として権限の「セット」を定義できます。これらの権限セット自体もLexiconスキーマであり、`com.example.authBasicFeatures`のような名前空間IDで参照されます。\n"
+msgstr "フル機能のクライアントアプリは、多数の細かな権限（数十、場合によっては数百）を必要とします。権限管理を簡素化するために、Lexicon設計者は公開するスキーマの一部として権限の集合を定義できます。これらの権限セット自体もLexiconスキーマであり、`com.example.authBasicFeatures`のような名前空間IDで参照されます。\n"
 
 #. type: Plain text
 #: src/guides/permission-sets/en.mdx:79
@@ -536,7 +536,7 @@ msgstr ""
 #: src/guides/permission-sets/en.mdx:188
 #, no-wrap
 msgid "This is a fully usable Atmosphere integration, and many applications will use this as a starting point. Note that it produces a straightforward, readable \"Authorize\" flow. The URL of the requesting app is clearly visible, and the permissions dialog states that the app \"wants to uniquely identify you,\" but nothing else.\n"
-msgstr "これは十分に実用的なAtmosphere連携で、多くのアプリが出発点として利用します。ここでは明快で読みやすい「Authorize」フローが提示されます。要求元アプリのURLが明確に表示され、権限ダイアログにはアプリが「あなたを一意に識別したい」とだけ示され、それ以外はありません。\n"
+msgstr "これは十分に実用的なAtmosphere連携で、多くのアプリが出発点として利用します。ここでは明快で読みやすい「Authorize」フローが提示されます。要求元アプリのURLが明確に表示され、権限ダイアログにはアプリが「wants to uniquely identify you（あなたを識別しようとしています）」とだけ示され、それ以外はありません。\n"
 
 #. type: Plain text
 #: src/guides/permission-sets/en.mdx:190

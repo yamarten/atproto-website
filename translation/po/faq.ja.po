@@ -122,7 +122,7 @@ msgstr "私たちはRDFの使用を非常に詳しく検討しましたが、開
 #: src/guides/faq/en.mdx:36
 #, no-wrap
 msgid "## What is “XRPC,” and why not use ___?\n"
-msgstr "<Heading level={2} id=\"what-is-xrpc-and-why-not-use-___\">「XRPC」とは何ですか。なぜ___を使用しないのですか?</Heading>\n"
+msgstr "<Heading level={2} id=\"what-is-xrpc-and-why-not-use-___\">XRPCとは何ですか。なぜ___を使用しないのですか?</Heading>\n"
 
 #. type: Plain text
 #: src/guides/faq/en.mdx:38

@@ -78,7 +78,7 @@ msgstr "この`data`オブジェクトは別のレコードで参照できます
 #: src/guides/blob-lifecycle/en.mdx:22
 #, no-wrap
 msgid "Chunked transfer encoding may also be permitted for uploads. Servers *may* sniff the blob mimetype to validate against the declared **`Content-Type`** header, and either return a modified mimetype in the response, or reject the upload. See \"Security Considerations\" below. If the actual blob upload size differs from the **`Content-Length`** header, the server should reject the upload.\n"
-msgstr "チャンク転送エンコーディングによるアップロードも許可されている場合があります。サーバーはblobのmimetypeをスニッフィングして宣言された **`Content-Type`** ヘッダーに対して検証し、レスポンスで修正されたmimetypeを返すか、アップロードを拒否する場合があります。以下の「セキュリティに関する考慮事項」を参照してください。実際のblobアップロードサイズが **`Content-Length`** ヘッダーと異なる場合、サーバーはアップロードを拒否します。\n"
+msgstr "チャンク転送エンコーディングによるアップロードも許可されている場合があります。サーバーはblobのmimetypeをスニッフィングして宣言された **`Content-Type`** ヘッダーに対して検証し、レスポンスで修正されたmimetypeを返すか、アップロードを拒否する場合があります。以下の『セキュリティに関する考慮事項』を参照してください。実際のblobアップロードサイズが **`Content-Length`** ヘッダーと異なる場合、サーバーはアップロードを拒否します。\n"
 
 #. type: Plain text
 #: src/guides/blob-lifecycle/en.mdx:24
@@ -90,7 +90,7 @@ msgstr "<Heading level={2} id=\"garbage-collection\">ガベージコレクショ
 #: src/guides/blob-lifecycle/en.mdx:26
 #, no-wrap
 msgid "After a successful upload, blobs are placed in temporary storage. They are not accessible for download or distribution while in this state. Servers should \"garbage collect\" (delete) un-referenced temporary blobs after an appropriate time span (see implementation guidelines below). Blobs which are in temporary storage should not be included in the **`listBlobs`** output.\n"
-msgstr "アップロードに成功した後、blobは一時ストレージに配置されます。この状態では、ダウンロードや配送はできません。サーバーは適切な時間経過後に、参照されていない一時blobを「ガベージコレクション」（削除）すべきです（後述の実装ガイドラインを参照）。一時ストレージのblobは **`listBlobs`** の出力に含められません。\n"
+msgstr "アップロードに成功した後、blobは一時ストレージに配置されます。この状態では、ダウンロードや配送はできません。サーバーは適切な時間経過後に、参照されていない一時blobをガベージコレクション（削除）すべきです（後述の実装ガイドラインを参照）。一時ストレージのblobは **`listBlobs`** の出力に含められません。\n"
 
 #. type: Plain text
 #: src/guides/blob-lifecycle/en.mdx:28
@@ -150,7 +150,7 @@ msgstr "<Heading level={2} id=\"web-accessibillity\">ウェブアクセシビリ
 #: src/guides/blob-lifecycle/en.mdx:46
 #, no-wrap
 msgid "Original blobs can be fetched from the PDS using the **`com.atproto.sync.getBlob`** endpoint. The server should return appropriate **`Content-Type`** and **`Content-Length`** HTTP headers. It is not a recommended or required pattern to serve media directly from the PDS to end-user browsers, and servers do not need to support or facilitate this use case. See \"Security Considerations\" for more.\n"
-msgstr "オリジナルのblobは **`com.atproto.sync.getBlob`** エンドポイントを使用してPDSから取得できます。サーバーは適切な **`Content-Type`** と **`Content-Length`** HTTPヘッダーを返します。PDSからエンドユーザーのブラウザにメディアを直接提供することは推奨されるパターンではなく、サーバーはこのユースケースをサポート、または推進する必要はありません。詳細は「セキュリティに関する考慮事項」を参照してください。\n"
+msgstr "オリジナルのblobは **`com.atproto.sync.getBlob`** エンドポイントを使用してPDSから取得できます。サーバーは適切な **`Content-Type`** と **`Content-Length`** HTTPヘッダーを返します。PDSからエンドユーザーのブラウザにメディアを直接提供することは推奨されるパターンではなく、サーバーはこのユースケースをサポート、または推進する必要はありません。詳細は『セキュリティに関する考慮事項』を参照してください。\n"
 
 #. type: Plain text
 #: src/guides/blob-lifecycle/en.mdx:48
@@ -162,7 +162,7 @@ msgstr "サーバーはLexicon定義の制約とは別に、blob一般に対す�
 #: src/guides/blob-lifecycle/en.mdx:50
 #, no-wrap
 msgid "Some applications may have a long delay between blob upload and reference from a record. To maximize interoperability, server implementations and operators are recommended to allow several hours of grace time before \"garbage collecting\", with at least one hour a firm lower bound.\n"
-msgstr "一部のアプリケーションでは、blobアップロードからレコードによる参照までの間に長い遅延がある場合があります。相互運用性を最大化するために、サーバー実装とオペレーターは「ガベージコレクション」前になるべく数時間、最低でも1時間の猶予を設けてください。\n"
+msgstr "一部のアプリケーションでは、blobアップロードからレコードによる参照までの間に長い遅延がある場合があります。相互運用性を最大化するために、サーバー実装とオペレーターはガベージコレクション前になるべく数時間、最低でも1時間の猶予を設けてください。\n"
 
 #. type: Plain text
 #: src/guides/blob-lifecycle/en.mdx:52 src/guides/blob-security/en.mdx:30

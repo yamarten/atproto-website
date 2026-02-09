@@ -29,7 +29,7 @@ msgstr "<Heading level={2} id=\"prerequisites\">前提条件</Heading>\n"
 #: src/guides/tutorials/en.mdx:29 src/guides/oauth-tutorial/en.mdx:16
 #, no-wrap
 msgid "See a demo version running at: [https://nextjs-oauth-tutorial.up.railway.app/](https://nextjs-oauth-tutorial.up.railway.app/).\n"
-msgstr "動作デモはこちらです。[https://nextjs-oauth-tutorial.up.railway.app/](https://nextjs-oauth-tutorial.up.railway.app/)。\n"
+msgstr "動作デモはこちら [https://nextjs-oauth-tutorial.up.railway.app/](https://nextjs-oauth-tutorial.up.railway.app/)\n"
 
 #. type: Plain text
 #: src/guides/bot-tutorial/en.mdx:245
@@ -239,7 +239,7 @@ msgstr "まず、インメモリストレージを使うローカルの*ルー�
 #: src/guides/oauth-tutorial/en.mdx:71
 #, no-wrap
 msgid "OAuth loopback works by using a special redirect URI (like http://127.0.0.1:PORT/callback) to send authorization codes directly back to an app, which listens on a local port, avoiding browser-based callbacks and enabling secure, direct communication for token exchange. Instead of a web redirect, the app opens a local listener, you can auth in a browser, and the server redirects back to the app's local URI, letting the app grab the code and exchange it for a token. It's particularly useful for development scenarios.\n"
-msgstr "OAuthのループバックは、特別なリダイレクトURI（例：http://127.0.0.1:PORT/callback）を使って認可コードをアプリへ直接返します。アプリはローカルポートで待ち受けるため、ブラウザベースのコールバックを避けつつ安全にトークン交換できます。ウェブへのリダイレクトの代わりに、アプリがローカルリスナーを開き、ブラウザで認証したあとサーバーがアプリのローカルURIに戻すことで、アプリがコードを受け取ってトークンに交換します。特に開発時に有用です。\n"
+msgstr "OAuthのループバックは、特別なリダイレクトURI（例：[http://127.0.0.1:PORT/callback](http://127.0.0.1:PORT/callback)）を使って認可コードをアプリへ直接返します。アプリはローカルポートで待ち受けるため、ブラウザベースのコールバックを避けつつ安全にトークン交換できます。ウェブへのリダイレクトの代わりに、アプリがローカルリスナーを開き、ブラウザで認証したあとサーバーがアプリのローカルURIに戻すことで、アプリがコードを受け取ってトークンに交換します。特に開発時に有用です。\n"
 
 #. type: Plain text
 #: src/guides/oauth-tutorial/en.mdx:73

@@ -395,8 +395,8 @@ websocat ws://localhost:2480/channel</seg>
       <tuv lang="en-US">
         <seg>## Atproto at the intersection of three movements</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260128T133157Z">
-        <seg>&lt;Heading level={2} id="atproto-at-the-intersection-of-three-movements"&gt;三つのムーブメントの交差点にあるatproto&lt;/Heading&gt;</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T085634Z">
+        <seg>&lt;Heading level={2} id="atproto-at-the-intersection-of-three-movements"&gt;3つのムーブメントの交差点にあるatproto&lt;/Heading&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -883,8 +883,8 @@ websocat ws://localhost:2480/channel</seg>
       <tuv lang="en-US">
         <seg>## Identity</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T072001Z">
-        <seg>&lt;Heading level={2} id="identity"&gt;アイデンティティ&lt;/Heading&gt;</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T101102Z">
+        <seg>&lt;Heading level={2} id="identity"&gt;ID&lt;/Heading&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -1128,7 +1128,6 @@ websocat ws://localhost:2480/channel</seg>
       </tuv>
     </tu>
     <tu>
-      <note>あんまり納得いく訳が無い</note>
       <tuv lang="en-US">
         <seg>## Opinionated takes</seg>
       </tuv>
@@ -1385,7 +1384,6 @@ websocat ws://localhost:2480/channel</seg>
       </tuv>
     </tu>
     <tu>
-      <note>DB用語だと「リードアフターライト」で定着してそうなのでそれでも良い</note>
       <tuv lang="en-US">
         <seg>## Read-after-Write</seg>
       </tuv>
@@ -1790,8 +1788,8 @@ websocat ws://localhost:2480/channel</seg>
       <tuv lang="en-US">
         <seg>## What is “XRPC,” and why not use ___?</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T104305Z">
-        <seg>&lt;Heading level={2} id="what-is-xrpc-and-why-not-use-___"&gt;「XRPC」とは何ですか。なぜ___を使用しないのですか?&lt;/Heading&gt;</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T103452Z">
+        <seg>&lt;Heading level={2} id="what-is-xrpc-and-why-not-use-___"&gt;XRPCとは何ですか。なぜ___を使用しないのですか?&lt;/Heading&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -1878,8 +1876,8 @@ websocat ws://localhost:2480/channel</seg>
       <tuv lang="en-US">
         <seg>### Peer-to-peer</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260128T135907Z">
-        <seg>&lt;Heading level={3} id="peer-to-peer"&gt;ピアチーピアチ&lt;/Heading&gt;### ピアツーピア</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T085643Z">
+        <seg>&lt;Heading level={3} id="peer-to-peer"&gt;ピアツーピア&lt;/Heading&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -2336,7 +2334,6 @@ error: linting issues detected
       </tuv>
     </tu>
     <tu>
-      <note>at-uriはURLではない</note>
       <tuv lang="en-US">
         <seg>- A user requests a feed from the application backend (e.g. Bluesky)
 - The application finds the DID doc of the requested feed to look up its hosting server
@@ -2355,7 +2352,6 @@ error: linting issues detected
       </tuv>
     </tu>
     <tu>
-      <note>ここではdescriptionフィールドに説明を書けという意図なので、敢えて訳さない</note>
       <tuv lang="en-US">
         <seg>- Add a description to every `main` schema definition (records, API endpoints, etc)
     - for API endpoints, mention in the description if authentication is required, and whether responses will be personalized if authentication is optional
@@ -2378,8 +2374,6 @@ error: linting issues detected
       </tuv>
     </tu>
     <tu>
-      <note>無効なリンク
-/guides/lexiconに飛ばすのが正しい？</note>
       <tuv lang="en-US">
         <seg>- Design the [Lexicon](#) schemas for the records you'll publish into the Atmosphere.
 - Create a database for aggregating the records into useful views.
@@ -2508,7 +2502,6 @@ error: linting issues detected
       </tuv>
     </tu>
     <tu>
-      <note>引用符に誤字あり</note>
       <tuv lang="en-US">
         <seg>- PDS emits an `#account` event, with `active` false and status `deleted`.
 - Relay updates local account status for the repo, and passes through the `#account` event. If the Relay is a full mirror, it immediately stops serving `getRepo`, `getRecord`, and similar API requests for the account, indicating the reason in the response error. The Relay may fully delete repo content locally according to local policy. The firehose backfill window does not need to be immediately purged of commit events for the repo, as long as the backfill window is time-limited.
@@ -2728,7 +2721,7 @@ error: linting issues detected
     - Backfill services can enumerate all accounts in the network with the given signaling record, and also process deletion of that record as deactivation of that modality.
     - This design pattern is strongly recommended for new app modalities.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260107T124709Z" creationid="yamarten" creationdate="20260107T124709Z">
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T104455Z" creationid="yamarten" creationdate="20260107T124709Z">
         <seg>- `query` APIエンドポイントのページネーションの基本的な慣例
     - クエリパラメータにはオプションの`limit`（整数）とオプションの`cursor`（文字列）が含まれます
     - 出力のボディには、オプションの`cursor`（文字列）と、必須のレスポンスオブジェクト配列（コンテキスト固有の複数形フィールド名を持つ）が含まれます
@@ -2743,7 +2736,7 @@ error: linting issues detected
     - `cursor`が最も古い利用可能なメッセージより古い場合（または0の場合）、サーバーは`OutdatedCursor`という名前のメッセージを返した後、最も古い利用可能なものからメッセージを返します
 -  APIレスポンスのよくあるパターンは、データレコードの「ハイドレートされたビュー」を含めることです。例えば、アカウントのプロフィールを表示する場合、レスポンスにはメディアファイルのCDNまたはサムネイルURL、モデレーションラベル、グローバルな集計値、およびビューア固有のソーシャルグラフコンテキストが含まれる場合があります。
     - 詳細ビューの場合、フィールドのスーパーセットを持つ新しいスキーマを定義する代わりに、元のレコードをそのまま含めることがベストプラクティスです。これはメンテナンスが簡単で（フィールドの更新漏れはありえません）、スキーマ外の拡張データまで含まれることを保証します。
-    - 閲覧者依存のメタデータはオプションであり、descriptionで示されているか、サブオブジェクトの下にグループ化される必要があります。これにより、スキーマが「公開」ビューと「ログイン」ビューの間で再利用可能になり、どの情報がいつ利用可能かが明確になります。
+    - 閲覧者依存のメタデータはオプションであり、descriptionで示されているか、サブオブジェクトの下にグループ化される必要があります。これにより、スキーマが公開ビューとログインビューの間で再利用可能になり、どの情報がいつ利用可能かが明確になります。
     - アプリケーション開発者にとって有用なパターンは、レコードへの参照（例：AT URIまたは同等のもの、および複数の参照）を受け入れるAPIエンドポイントがあり、ハイドレートされたデータオブジェクトを返すことです。
 - `app.bsky.richtext.facet`システムは、フル機能のマークアップ言語よりも単純で安全な方法で短い文字列を装飾するために使用できます
     - 詳細については、[『Why RichText facets in Bluesky』](https://www.pfrazee.com/blog/why-facets)を参照してください
@@ -2826,7 +2819,6 @@ error: linting issues detected
       </tuv>
     </tu>
     <tu>
-      <note>日本語フォントが太字対応してないかも</note>
       <tuv lang="en-US">
         <seg>- [**Decentralized IDs (DIDs)**](https://w3c.github.io/did/) identify data repositories. They are broadly used as user IDs, but since every user has one data repository then a DID can be considered a reference to a data repository.
 - [**Namespaced Identifiers (NSIDs)**](/specs/nsid) identify the Lexicon type for groups of records within a repository.
@@ -3285,7 +3277,6 @@ error: linting issues detected
       </tuv>
     </tu>
     <tu>
-      <note>Accounts and deletionsがリンク間違い</note>
       <tuv lang="en-US">
         <seg>- [Reading data](/guides/reading-data)
 - [Writing data](/guides/writing-data)
@@ -3304,7 +3295,6 @@ error: linting issues detected
       </tuv>
     </tu>
     <tu>
-      <note>Accounts and deletionsが自分へのリンクになっている</note>
       <tuv lang="en-US">
         <seg>- [Reads and Writes](/guides/reads-and-writes)
 - [Reading data](/guides/reading-data)
@@ -3359,7 +3349,6 @@ error: linting issues detected
       </tuv>
     </tu>
     <tu>
-      <note>Accounts and deletionsがリンク間違い</note>
       <tuv lang="en-US">
         <seg>- [Reads and Writes](/guides/reads-and-writes)
 - [Writing data](/guides/writing-data)
@@ -3498,7 +3487,6 @@ error: linting issues detected
       </tuv>
     </tu>
     <tu>
-      <note>	</note>
       <tuv lang="en-US">
         <seg>- [Sync](/guides/sync)
 - [Streaming data](/guides/streaming-data)
@@ -3661,7 +3649,6 @@ error: linting issues detected
       </tuv>
     </tu>
     <tu>
-      <note>open unionのいい訳が見つからず。共用体とかやめてオープンユニオンでもいいかも。</note>
       <tuv lang="en-US">
         <seg>- do not mark data fields or API parameters as `required` unless they are truly required for functionality
     - `required` fields can not be made optional or deprecated under the evolution rules
@@ -3742,8 +3729,7 @@ error: linting issues detected
       </tuv>
     </tu>
     <tu>
-      <note>`commit`って何？
-^</note>
+      <note>`commit`はfirehose上に現れるもので、リポジトリが持つものではないのでは？</note>
       <tuv lang="en-US">
         <seg>- the PDS will generate or confirm the existence of the account's identity (DID and handle). Once the DID is in a confirmed state that can be resolved by other services in the network, and points to the current PDS instance, the PDS emits an `#identity` event. It is good, but not required, to wait until the handle is resolvable by third parties before emitting the event (especially, but not only, if the PDS is providing a handle for the account). The account status may or may not be `active` when this event is emitted.
 - once the account creation has completed, and the PDS will respond with `active` to API requests for account status, an `#account` event can be emitted
@@ -4586,8 +4572,8 @@ await agent.com.atproto.repo.putRecord({
       <tuv lang="en-US">
         <seg>1. **From the web:** an open, permissionless, and universal network of interconnected content.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260201T082030Z">
-        <seg>1. **Webから**: 開かれており、許可不要な、相互接続コンテンツの単一ネットワーク</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T114228Z">
+        <seg>1. **ウェブから**：開かれており、許可不要な、相互接続コンテンツの単一ネットワーク</seg>
       </tuv>
     </tu>
     <tu>
@@ -4596,8 +4582,8 @@ await agent.com.atproto.repo.putRecord({
 2. Each repository has collections.
 3. Each collection is an ordered K/V store of JSON documents.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T102706Z">
-        <seg>1. 各ユーザーにはデータ リポジトリがあります。
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T102747Z">
+        <seg>1. 各ユーザーにはデータリポジトリがあります。
 2. 各リポジトリにはコレクションがあります。
 3. 各コレクションは、JSONドキュメントの順序付けられたK/Vストアです。</seg>
       </tuv>
@@ -4634,8 +4620,8 @@ await agent.com.atproto.repo.putRecord({
       <tuv lang="en-US">
         <seg>2. **From peer-to-peer:** location-independent data, self-certifying data, and skepticism of centralized control of any aspect of the user’s experience.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260201T082136Z">
-        <seg>2. **p2pから**: 位置に依存しないデータ、自己証明データ、ユーザー体験のあらゆる側面に対する中央集権的支配への懐疑</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T114232Z">
+        <seg>2. **P2Pから**：位置に依存しないデータ、自己証明データ、ユーザー体験のあらゆる側面に対する中央集権的支配への懐疑</seg>
       </tuv>
     </tu>
     <tu>
@@ -4658,8 +4644,8 @@ await agent.com.atproto.repo.putRecord({
       <tuv lang="en-US">
         <seg>3. **From data-intensive distributed systems:** a splitting of read and write load, application-aware secondary indices to facilitate high-throughput and low latency, streaming canonical data, and the decomposition of monoliths into microservices.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260201T082700Z">
-        <seg>3. **データ指向分散システムから**: 読み取り/書き込み負荷の分離、高スループットと低レイテンシのためのアプリケーション向けセカンダリインデックス、正規データのストリーミング、モノリスからマイクロサービスへの分割</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T114235Z">
+        <seg>3. **データ指向分散システムから**：読み取り/書き込み負荷の分離、高スループットと低レイテンシのためのアプリケーション向けセカンダリインデックス、正規データのストリーミング、モノリスからマイクロサービスへの分割</seg>
       </tuv>
     </tu>
     <tu>
@@ -5543,9 +5529,9 @@ by Steve Klabnik
   &lt;Description title="rkey"&gt;[Record Keys ("rkeys")](/specs/record-key) identify individual records within a collection in a given repository. The format is specified by the collection Lexicon, with some collections having only a single record with a key like "self", and other collections having many records, with keys using a base32-encoded timestamp called a Timestamp Identifier (TID).&lt;/Description&gt;
 &lt;/DescriptionList&gt;</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T103316Z">
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T103319Z">
         <seg>&lt;DescriptionList&gt;
-&lt;Description title="DID"&gt;[分散型識別子（DID）](https://w3c.github.io/did/)はデータリポジトリを識別します。これは広くユーザーIDとして使用されますが、すべてのユーザーが1つのデータリポジトリを持っているため、DIDはデータリポジトリへの参照と見なすことができます。DIDの形式は使用される「DIDメソッド」によって異なりますが、すべてのDIDは最終的に鍵ペアとサービスプロバイダーのリストに解決されます。この鍵ペアは、データ リポジトリへのコミットに署名できます。&lt;/Description&gt;
+&lt;Description title="DID"&gt;[分散型識別子（DID）](https://w3c.github.io/did/)はデータリポジトリを識別します。これは広くユーザーIDとして使用されますが、すべてのユーザーが1つのデータリポジトリを持っているため、DIDはデータリポジトリへの参照と見なすことができます。DIDの形式は使用される「DIDメソッド」によって異なりますが、すべてのDIDは最終的に鍵ペアとサービスプロバイダーのリストに解決されます。この鍵ペアは、データリポジトリへのコミットに署名できます。&lt;/Description&gt;
 &lt;Description title="CID"&gt;[コンテンツID（CID）](https://github.com/multiformats/cid)は、フィンガープリントハッシュを使用してコンテンツを識別します。これはリポジトリ全体で使用され、リポジトリ内のオブジェクト（ノード）を参照します。リポジトリ内のノードが変更されると、そのCIDも変更されます。ノードを参照する親は参照を更新する必要があり、その結果、親のCIDも変更されます。これはコミットノードまで連鎖し、その後コミットノードが署名されます。&lt;/Description&gt;
 &lt;Description title="NSID"&gt;[名前空間識別子（NSID）](/specs/nsid)は、リポジトリ内のレコードグループのLexiconタイプを識別します。&lt;/Description&gt;
 &lt;Description title="rkey"&gt;[レコードキー（rkey）](specs/record-key)は、特定のリポジトリ内のコレクションに含まれる個々のレコードを識別します。形式はコレクションのLexiconによって指定されます。レコードを一つだけ持つコレクションは"self"などのキーでレコードを持ったり、多数のレコードを持つコレクションではキーにタイムスタンプ識別子（TID）と呼ばれるbase32エンコードされたタイムスタンプが使用されたりします。&lt;/Description&gt;
@@ -5583,7 +5569,6 @@ by Steve Klabnik
       </tuv>
     </tu>
     <tu>
-      <note>			</note>
       <tuv lang="en-US">
         <seg>&lt;FooterCTA href="/" title="Ready to learn more?" description="Specs, guides, and SDKs can be found here." /&gt;</seg>
       </tuv>
@@ -6743,7 +6728,6 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       </tuv>
     </tu>
     <tu>
-      <note>ここでのlistingsは主にスレッドを指すと思われる</note>
       <tuv lang="en-US">
         <seg>A user may choose to hide, warn, or ignore each label from a labeler. Hiding and warning are basically similar, except that hide will also filter the labeled content from feeds and listings. Ignore just ignores the label. If adult content is not enabled in preferences, the behavior should force to hide with no override.</seg>
       </tuv>
@@ -6811,8 +6795,8 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       <tuv lang="en-US">
         <seg>AT Protocol builds on the philosophy of the web with the technology of peer-to-peer protocols and the practices of data-intensive distributed systems.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260201T100449Z">
-        <seg>ATプロトコルは、ウェブの哲学を土台に、p2pプロトコルの技術とデータ指向分散システムの実践を組み合わせて構築されています。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T100000Z">
+        <seg>ATプロトコルは、ウェブの哲学を土台に、P2Pプロトコルの技術とデータ指向分散システムの実践を組み合わせて構築されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7502,8 +7486,8 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       <tuv lang="en-US">
         <seg>After a successful upload, blobs are placed in temporary storage. They are not accessible for download or distribution while in this state. Servers should "garbage collect" (delete) un-referenced temporary blobs after an appropriate time span (see implementation guidelines below). Blobs which are in temporary storage should not be included in the **`listBlobs`** output.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T172635Z" creationid="yamarten" creationdate="20260103T082316Z">
-        <seg>アップロードに成功した後、blobは一時ストレージに配置されます。この状態では、ダウンロードや配送はできません。サーバーは適切な時間経過後に、参照されていない一時blobを「ガベージコレクション」（削除）すべきです（後述の実装ガイドラインを参照）。一時ストレージのblobは **`listBlobs`** の出力に含められません。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T103130Z" creationid="yamarten" creationdate="20260103T082316Z">
+        <seg>アップロードに成功した後、blobは一時ストレージに配置されます。この状態では、ダウンロードや配送はできません。サーバーは適切な時間経過後に、参照されていない一時blobをガベージコレクション（削除）すべきです（後述の実装ガイドラインを参照）。一時ストレージのblobは **`listBlobs`** の出力に含められません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8516,8 +8500,8 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       <tuv lang="en-US">
         <seg>As a final optimization, let's introduce "optimistic updates."</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T071723Z">
-        <seg>最後の最適化として、「楽観的更新」を導入しましょう。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T103042Z">
+        <seg>最後の最適化として、楽観的更新を導入しましょう。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8532,8 +8516,8 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       <tuv lang="en-US">
         <seg>As well, unlike p2p networks, users maintain a relationship with a persistent backend (the PDS) that hosts their data and information about their identity. Most notably (while not a hard requirement in atproto), we made the decision to move signing keys up to the backend. This prevents the complex key management UX issues that come with client-side keys. However, there is an obvious loss in user-control by doing so. This is mitigated once again by lazy trust. Trust is moved a layer up into the identity system such that a user can hold a recovery key for their identity that allows them to migrate away from a bad PDS.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T063313Z">
-        <seg>また、p2pネットワークと異なり、ユーザーは自分のデータとID情報をホストする永続的なバックエンド（PDS）と関係を持ちます。特に（atprotoで厳密に必須というわけではありませんが）、私たちは署名鍵をバックエンド側へ移す決定をしました。これにより、クライアントが鍵を持つことによる複雑な鍵管理UXの問題を防げます。しかし、その分ユーザーのコントロールが失われるのも事実です。これも後回し信頼で緩和されます。信頼はIDシステムの一段上に移され、ユーザーはIDの復旧鍵を保持でき、それによって不適切なPDSから移行できます。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T095953Z">
+        <seg>また、P2Pネットワークと異なり、ユーザーは自分のデータとID情報をホストする永続的なバックエンド（PDS）と関係を持ちます。特に（atprotoで厳密に必須というわけではありませんが）、私たちは署名鍵をバックエンド側へ移す決定をしました。これにより、クライアントが鍵を持つことによる複雑な鍵管理UXの問題を防げます。しかし、その分ユーザーのコントロールが失われるのも事実です。これも後回し信頼で緩和されます。信頼はIDシステムの一段上に移され、ユーザーはIDの復旧鍵を保持でき、それによって不適切なPDSから移行できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8633,7 +8617,6 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       </tuv>
     </tu>
     <tu>
-      <note>recordとprocedureがごっちゃになってそう</note>
       <tuv lang="en-US">
         <seg>Atproto HTTP API methods each scope and implement a particular set of [Lexicons](/guides/lexicon). For example, an app using the `app.bsky.feed.post` record type would be expected to also implement an application endpoint like `curl -X POST example.com/xrpc/app.bsky.feed.post -d {post-contents}`.</seg>
       </tuv>
@@ -8645,8 +8628,8 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       <tuv lang="en-US">
         <seg>Atproto [specifies](/specs/oauth) a particular "profile" of the OAuth standards, using [OAuth 2.1](https://www.ietf.org/archive/id/draft-ietf-oauth-v2-1-13.html) as the foundation.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T064127Z" creationid="yamarten" creationdate="20260208T064127Z">
-        <seg>atprotoは[OAuth仕様](/specs/oauth)でOAuth標準の特定の「プロファイル」を指定し、[OAuth 2.1](https://www.ietf.org/archive/id/draft-ietf-oauth-v2-1-13.html)を基礎としています。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T103049Z" creationid="yamarten" creationdate="20260208T064127Z">
+        <seg>atprotoは[OAuth仕様](/specs/oauth)でOAuth標準の特定のプロファイルを指定し、[OAuth 2.1](https://www.ietf.org/archive/id/draft-ietf-oauth-v2-1-13.html)を基礎としています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8674,12 +8657,11 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       </tuv>
     </tu>
     <tu>
-      <note>おそらくlazy evaluation(遅延評価)のように、口コミで後から信頼評価できるという話をしている</note>
       <tuv lang="en-US">
         <seg>Atproto takes a middle approach that we sometimes refer to as “lazy trust”. Like p2p networks, trust is imbued into the data. However most often when browsing the network, users are seeing computed views not the canonical data. When viewing a timeline for instance, clients are likely not checking the signatures on every post that comes down. This is mitigated by the fact that the canonical data is always at hand. Therefore the service that offers these computed views is *staking its reputation* on every view that it serves. If a service starts serving invalid views, this can be verifiably proven. And since the data is locked open, users can migrate to another service that is better behaved.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T063301Z">
-        <seg>atprotoは中間的なアプローチを取り、私たちはこれを「後回し信頼（lazy trust）」と呼ぶことがあります。p2pネットワークと同様に、信頼はデータに埋め込まれています。しかし、ネットワークを閲覧する際にユーザーが見るのは多くの場合、正規データではなく計算済みのビューです。例えばタイムラインを見るとき、クライアントは流れてくるすべての投稿の署名を検証しないでしょう。これは、正規データが常に手元にあることで緩和されます。したがって、これらの計算済みビューを提供するサービスは、提供するすべてのビューに*評判を賭けて*います。サービスが無効なビューを出し始めたら、それを検証できます。しかもデータはオープンなので、ユーザーはより適切な別サービスへ移行できます。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T095949Z">
+        <seg>atprotoは中間的なアプローチを取り、私たちはこれを「後回し信頼（lazy trust）」と呼ぶことがあります。P2Pネットワークと同様に、信頼はデータに埋め込まれています。しかし、ネットワークを閲覧する際にユーザーが見るのは多くの場合、正規データではなく計算済みのビューです。例えばタイムラインを見るとき、クライアントは流れてくるすべての投稿の署名を検証しないでしょう。これは、正規データが常に手元にあることで緩和されます。したがって、これらの計算済みビューを提供するサービスは、提供するすべてのビューに*評判を賭けて*います。サービスが無効なビューを出し始めたら、それを検証できます。しかもデータはオープンなので、ユーザーはより適切な別サービスへ移行できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9470,8 +9452,8 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       <tuv lang="en-US">
         <seg>Build an app that lets you broadcast a "status" message using custom Lexicons, and see a live feed of other statuses.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T094210Z" creationid="yamarten" creationdate="20260208T094210Z">
-        <seg>カスタムLexiconを使って「status」メッセージを配信し、他のstatusをライブフィードで確認できるアプリを構築します。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T104858Z" creationid="yamarten" creationdate="20260208T094210Z">
+        <seg>カスタムLexiconを使って「ステータス」メッセージを配信し、他のステータスをライブフィードで確認できるアプリを構築します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10034,8 +10016,8 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>Chunked transfer encoding may also be permitted for uploads. Servers *may* sniff the blob mimetype to validate against the declared **`Content-Type`** header, and either return a modified mimetype in the response, or reject the upload. See "Security Considerations" below. If the actual blob upload size differs from the **`Content-Length`** header, the server should reject the upload.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T064205Z" creationid="yamarten" creationdate="20260103T081708Z">
-        <seg>チャンク転送エンコーディングによるアップロードも許可されている場合があります。サーバーはblobのmimetypeをスニッフィングして宣言された **`Content-Type`** ヘッダーに対して検証し、レスポンスで修正されたmimetypeを返すか、アップロードを拒否する場合があります。以下の「セキュリティに関する考慮事項」を参照してください。実際のblobアップロードサイズが **`Content-Length`** ヘッダーと異なる場合、サーバーはアップロードを拒否します。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T103146Z" creationid="yamarten" creationdate="20260103T081708Z">
+        <seg>チャンク転送エンコーディングによるアップロードも許可されている場合があります。サーバーはblobのmimetypeをスニッフィングして宣言された **`Content-Type`** ヘッダーに対して検証し、レスポンスで修正されたmimetypeを返すか、アップロードを拒否する場合があります。以下の『セキュリティに関する考慮事項』を参照してください。実際のblobアップロードサイズが **`Content-Length`** ヘッダーと異なる場合、サーバーはアップロードを拒否します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12839,8 +12821,8 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>Every data repository contains JSON documents, which we'll call “records”.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T102617Z">
-        <seg>すべてのデータリポジトリには、JSONドキュメント（ここでは “レコード” と呼びます）が含まれます。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T102426Z">
+        <seg>すべてのデータリポジトリには、JSONドキュメント（ここではレコードと呼びます）が含まれます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14367,8 +14349,8 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>For organizational purposes, we'll bucket these records into “collections.”</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T070034Z">
-        <seg>整理のため、これらのレコードを「コレクション」にまとめます。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T102443Z">
+        <seg>整理のため、これらのレコードをコレクションとしてまとめます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14629,8 +14611,8 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>Full-featured client apps require a large number of granular permissions to function: dozens or even hundreds of individual permissions. To simplify permission management, Lexicon designers can define "sets" of permissions as part of the schemas they publish. These permission sets are themselves Lexicon schemas and are referred to by namespace ID, such as `com.example.authBasicFeatures`.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T143343Z" creationid="yamarten" creationdate="20260111T143343Z">
-        <seg>フル機能のクライアントアプリは、多数の細かな権限（数十、場合によっては数百）を必要とします。権限管理を簡素化するために、Lexicon設計者は公開するスキーマの一部として権限の「セット」を定義できます。これらの権限セット自体もLexiconスキーマであり、`com.example.authBasicFeatures`のような名前空間IDで参照されます。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T104533Z" creationid="yamarten" creationdate="20260111T143343Z">
+        <seg>フル機能のクライアントアプリは、多数の細かな権限（数十、場合によっては数百）を必要とします。権限管理を簡素化するために、Lexicon設計者は公開するスキーマの一部として権限の集合を定義できます。これらの権限セット自体もLexiconスキーマであり、`com.example.authBasicFeatures`のような名前空間IDで参照されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15485,8 +15467,8 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>How a feed generator fulfills the `getFeedSkeleton` request is completely at their discretion. At the simplest end, a Feed Generator could supply a "feed" that only contains some hardcoded posts.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260103T111031Z" creationid="yamarten" creationdate="20260103T111031Z">
-        <seg>`getFeedSkeleton`リクエストに対してフィードジェネレーターがどのように埋めるかは完全にその裁量に任されています。最も単純な場合、フィードジェネレーターはハードコードされた投稿のみを含む「フィード」を提供できます。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T103508Z" creationid="yamarten" creationdate="20260103T111031Z">
+        <seg>`getFeedSkeleton`リクエストに対してフィードジェネレーターがどのように埋めるかは完全にその裁量に任されています。最も単純な場合、フィードジェネレーターはハードコードされた投稿のみを含むフィードを提供できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15541,7 +15523,7 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>However, the sheer volume of data and the compute required to support these platforms cannot be handled by a single machine. Therefore even within a given platform's deployment, work must be split up across many machines. A common pattern is to peel off pieces of the application into smaller “micro-services” that can call into one another and then compose these micro-services into the larger platform. By isolating the concerns of each subsystem, teams can scale each according to its particular needs. For example, feed generation looks very different from video transcoding, and these workloads can benefit from being hosted on machines tailored to their workload.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260201T073610Z">
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T103427Z">
         <seg>しかし、これらのプラットフォームを支える膨大なデータ量と計算量は、単一のマシンでは処理できません。したがって、ひとつのプラットフォームのデプロイ内でも作業は多数のマシンに分割する必要があります。よくあるパターンは、アプリケーションを小さな「マイクロサービス」に切り出し、それらが相互に呼び出し合いながら大きなプラットフォームを構成することです。各サブシステムの関心を分離することで、チームはそれぞれの必要に応じてスケールできます。例えば、フィード生成と動画トランスコードは大きく異なるため、それぞれに適したマシンでホストすることで恩恵を得られます。</seg>
       </tuv>
     </tu>
@@ -15597,8 +15579,8 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>Identities are long-lived and untethered from any location where they may currently be housed. The primacy that data has in p2p networks is moved up the stack to identity. Identities exist independent of any given host or application and can move between them fluidly. Data in the network then flows from these identities with a well-defined mechanism of how to resolve the identity to some set of data and receive real time updates as new content is created.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260201T085042Z">
-        <seg>IDは長期間維持され、今いる場所から切り離されています。p2pネットワークではデータが主体ですが、このスタックの主体はIDへと移ります。IDは特定のホストやアプリケーションに依存せずに存在し、それらの間を流動的に移動できます。ネットワーク内のデータはこれらのIDが源流となり、IDをデータの集まりに解決する仕組みと、新しいコンテンツが生成された際にリアルタイム更新を受け取る仕組みが明確に定義されています。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T095942Z">
+        <seg>IDは長期間維持され、今いる場所から切り離されています。P2Pネットワークではデータが主体ですが、このスタックの主体はIDへと移ります。IDは特定のホストやアプリケーションに依存せずに存在し、それらの間を流動的に移動できます。ネットワーク内のデータはこれらのIDが源流となり、IDをデータの集まりに解決する仕組みと、新しいコンテンツが生成された際にリアルタイム更新を受け取る仕組みが明確に定義されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15669,12 +15651,11 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>If we can relax our system to use “[eventual consistency](https://en.wikipedia.org/wiki/Eventual_consistency),” we can scale much further. We start by switching to a NoSQL cluster.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T101445Z">
-        <seg>システムを緩和して「[結果整合性](https://en.wikipedia.org/wiki/Eventual_consistency)」を使用できれば、さらに拡張できます。まず、NoSQLクラスターに切り替えます。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T102412Z">
+        <seg>システムを緩和して[結果整合性](https://en.wikipedia.org/wiki/Eventual_consistency)を使用できれば、さらに拡張できます。まず、NoSQLクラスターに切り替えます。</seg>
       </tuv>
     </tu>
     <tu>
-      <note>？</note>
       <tuv lang="en-US">
         <seg>If you are building a client or another interface that both reads and writes data, it is important to ensure that you read your own writes using this response.</seg>
       </tuv>
@@ -15742,7 +15723,6 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       </tuv>
     </tu>
     <tu>
-      <note>認証プロバイダとしてのBlueskyはbsky.socialで、生成ページはbsky.appなのであまり関係無いのでは？</note>
       <tuv lang="en-US">
         <seg>If you are using password auth, you should generate an [app password](/specs/xrpc#app-passwords) for your account rather than using your main account password. If you are using Bluesky as an auth provider, you can generate an app password in your [account settings](https://bsky.app/settings/app-passwords).</seg>
       </tuv>
@@ -16116,7 +16096,6 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       </tuv>
     </tu>
     <tu>
-      <note>for usersは存在しない。書きかけ？</note>
       <tuv lang="en-US">
         <seg>In general, it is best to use existing permission sets for cleaner UI, but you can also request individual permissions and define your own permission sets as needed. Refer to the [for users](#for-users) section for how these requests appear in the OAuth flow.</seg>
       </tuv>
@@ -16141,8 +16120,6 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       </tuv>
     </tu>
     <tu>
-      <note>確保していないドメインに例として使うのはともかく、リンクを張るのってどうなんだ？
-リンクがeuroskyなのに文面がeuroskyになってる部分もあって謎。</note>
       <tuv lang="en-US">
         <seg>In other words, if you have an app at [https://greensky.app](https://greensky.app/), you should not use [https://pds.greensky.app](https://pds.greensky.app/) as a PDS hostname, you should use something like [https://greensky-pds.net](https://greensky-pds.net/). If you used [https://pds.greensky.social](https://pds.eurosky.social/) (which would make sense), it might rule out an OAuth client app at [https://chat.greensky.social](https://chat.eurosky.social/) in the future. But you could do something like [https://chat.greensky.app](https://chat.eurosky.app/).</seg>
       </tuv>
@@ -16223,7 +16200,6 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       </tuv>
     </tu>
     <tu>
-      <note>localhostは消すべき</note>
       <tuv lang="en-US">
         <seg>In this tutorial, you'll create a custom feed server by consuming posts from the [firehose](http://localhost:3000/guides/streaming-data), algorithmically sorting them, and [broadcasting them as an XRPC feed](/guides/feeds).</seg>
       </tuv>
@@ -16347,8 +16323,8 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>Instead of sending content and interactions to some coordinating backend service, users of social media platforms would send relevant data directly from their device to another device. If two users follow one another and one of them posts, the other would receive the post through a direct connection with the former's device. Of course, this requires that both parties are online at the same time for any data transfer to happen. P2p systems sought to get around this by allowing data to be replicated across many devices. Therefore a user may receive a post from the posting user or they could receive it from another friend that's currently online and in possession of the post.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260128T134636Z">
-        <seg>コンテンツや相互作用を調整役のバックエンドサービスへ送る代わりに、ソーシャルメディアのユーザーは、自分のデバイスから別のデバイスへ直接関連データを送ります。2人のユーザーが互いにフォローしていて片方が投稿した場合、もう片方は直接接続によってその投稿を受け取ります。もちろん、データ転送のためには両者が同時にオンラインである必要があります。p2pシステムは、多数のデバイスにデータを複製することでこの問題を回避しようとしました。したがって、ユーザーは投稿者本人から投稿を受け取ることも、現在オンラインでその投稿を保持している別の友人から受け取ることもできます。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T095901Z">
+        <seg>コンテンツや相互作用を調整役のバックエンドサービスへ送る代わりに、ソーシャルメディアのユーザーは、自分のデバイスから別のデバイスへ直接関連データを送ります。2人のユーザーが互いにフォローしていて片方が投稿した場合、もう片方は直接接続によってその投稿を受け取ります。もちろん、データ転送のためには両者が同時にオンラインである必要があります。P2Pシステムは、多数のデバイスにデータを複製することでこの問題を回避しようとしました。したがって、ユーザーは投稿者本人から投稿を受け取ることも、現在オンラインでその投稿を保持している別の友人から受け取ることもできます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17108,8 +17084,8 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>Let's look again at how we read the "profile" record:</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T090319Z">
-        <seg>「プロフィール」レコードの読み取り方法をもう一度見てみましょう。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T102955Z">
+        <seg>プロフィールレコードの読み取り方法をもう一度見てみましょう。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17201,7 +17177,6 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       </tuv>
     </tu>
     <tu>
-      <note>our Lexicon registryはまだ存在しないのでは？</note>
       <tuv lang="en-US">
         <seg>Lexicons can be [installed locally](/guides/installing-lexicons) for each of our SDKs from our Lexicon registry. You can also [publish your own Lexicons](/guides/publishing-lexicons) following our [Style Guide](/guides/lexicon-style-guide).</seg>
       </tuv>
@@ -19527,8 +19502,8 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>OAuth loopback works by using a special redirect URI (like http://127.0.0.1:PORT/callback) to send authorization codes directly back to an app, which listens on a local port, avoiding browser-based callbacks and enabling secure, direct communication for token exchange. Instead of a web redirect, the app opens a local listener, you can auth in a browser, and the server redirects back to the app's local URI, letting the app grab the code and exchange it for a token. It's particularly useful for development scenarios.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T103133Z" creationid="yamarten" creationdate="20260208T102942Z">
-        <seg>OAuthのループバックは、特別なリダイレクトURI（例：http://127.0.0.1:PORT/callback）を使って認可コードをアプリへ直接返します。アプリはローカルポートで待ち受けるため、ブラウザベースのコールバックを避けつつ安全にトークン交換できます。ウェブへのリダイレクトの代わりに、アプリがローカルリスナーを開き、ブラウザで認証したあとサーバーがアプリのローカルURIに戻すことで、アプリがコードを受け取ってトークンに交換します。特に開発時に有用です。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T111018Z" creationid="yamarten" creationdate="20260208T102942Z">
+        <seg>OAuthのループバックは、特別なリダイレクトURI（例：[http://127.0.0.1:PORT/callback](http://127.0.0.1:PORT/callback)）を使って認可コードをアプリへ直接返します。アプリはローカルポートで待ち受けるため、ブラウザベースのコールバックを避けつつ安全にトークン交換できます。ウェブへのリダイレクトの代わりに、アプリがローカルリスナーを開き、ブラウザで認証したあとサーバーがアプリのローカルURIに戻すことで、アプリがコードを受け取ってトークンに交換します。特に開発時に有用です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19567,8 +19542,8 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>Of course the abstraction doesn't always work perfectly, and this new topology brought with it a host of problems - most notably data availability and discovery. As noted earlier, if the poster of some data is not online, you need to find that data from another device in the network. Discovering which device can serve you some data is a hard problem, especially with devices routinely coming on and offline at different addresses. And it may be the case that there is not a single online device that can send you the data that you're looking for! Even if everything is functioning well, these systems have to lean in hard to eventual consistency since network partitions are much more common and there is no service in the network that can purport to have a “global view” of all data.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260128T135608Z">
-        <seg>もちろんこの抽象化が常に完璧に機能するわけではなく、この新しいトポロジーは多くの問題、特にデータの可用性と発見性の問題をもたらしました。前述の通り、あるデータの投稿者がオフラインなら、ネットワーク内の別のデバイスからそのデータを見つける必要があります。どのデバイスがそのデータを提供できるのかを見つけるのは難しい問題で、特にデバイスが異なるアドレスで頻繁にオンライン/オフラインを繰り返す場合はなおさらです。探しているデータを送れるオンラインデバイスが1台もないことすらあり得ます。すべてがうまく動いていても、ネットワーク分断がはるかに一般的で、ネットワーク内に全データの「グローバルビュー」を持つと主張できるサービスがないため、これらのシステムは結果整合性に強く依存せざるを得ません。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T103359Z">
+        <seg>もちろんこの抽象化が常に完璧に機能するわけではなく、この新しいトポロジーは多くの問題、特にデータの可用性と発見性の問題をもたらしました。前述の通り、あるデータの投稿者がオフラインなら、ネットワーク内の別のデバイスからそのデータを見つける必要があります。どのデバイスがそのデータを提供できるのかを見つけるのは難しい問題で、特にデバイスが異なるアドレスで頻繁にオンライン/オフラインを繰り返す場合はなおさらです。探しているデータを送れるオンラインデバイスが1台もないことすらあり得ます。すべてがうまく動いていても、ネットワーク分断がはるかに一般的で、ネットワーク内に全データのグローバルビューを持つと主張できるサービスがないため、これらのシステムは結果整合性に強く依存せざるを得ません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19716,12 +19691,11 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       </tuv>
     </tu>
     <tu>
-      <note>ここでのauthenticatedはざっくり「署名付き」くらいの意味と思われるが、一旦直訳</note>
       <tuv lang="en-US">
         <seg>One of the core primitives of the AT Protocol is the *firehose*. It is an authenticated stream of events used to efficiently sync user updates (posts, likes, follows, handle changes, etc).</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T171754Z" creationid="yamarten" creationdate="20260106T132201Z">
-        <seg>ATプロトコルのコアプリミティブの一つは*firehose*です。これは、ユーザーの更新（投稿、いいね、フォロー、ハンドル変更など）を効率的に同期するために使用される認証付きイベントストリームです。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T092059Z" creationid="yamarten" creationdate="20260106T132201Z">
+        <seg>ATプロトコルのコアプリミティブの一つは*firehose*です。これは、ユーザーの更新（投稿、いいね、フォロー、ハンドル変更など）を効率的に同期するために使用される署名付きイベントストリームです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20229,12 +20203,11 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       </tuv>
     </tu>
     <tu>
-      <note>Security Considerationsはblob仕様の章題なので訳すべきか微妙</note>
       <tuv lang="en-US">
         <seg>Original blobs can be fetched from the PDS using the **`com.atproto.sync.getBlob`** endpoint. The server should return appropriate **`Content-Type`** and **`Content-Length`** HTTP headers. It is not a recommended or required pattern to serve media directly from the PDS to end-user browsers, and servers do not need to support or facilitate this use case. See "Security Considerations" for more.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T064228Z" creationid="yamarten" creationdate="20260103T083658Z">
-        <seg>オリジナルのblobは **`com.atproto.sync.getBlob`** エンドポイントを使用してPDSから取得できます。サーバーは適切な **`Content-Type`** と **`Content-Length`** HTTPヘッダーを返します。PDSからエンドユーザーのブラウザにメディアを直接提供することは推奨されるパターンではなく、サーバーはこのユースケースをサポート、または推進する必要はありません。詳細は「セキュリティに関する考慮事項」を参照してください。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T103151Z" creationid="yamarten" creationdate="20260103T083658Z">
+        <seg>オリジナルのblobは **`com.atproto.sync.getBlob`** エンドポイントを使用してPDSから取得できます。サーバーは適切な **`Content-Type`** と **`Content-Length`** HTTPヘッダーを返します。PDSからエンドユーザーのブラウザにメディアを直接提供することは推奨されるパターンではなく、サーバーはこのユースケースをサポート、または推進する必要はありません。詳細は『セキュリティに関する考慮事項』を参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20342,7 +20315,6 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       </tuv>
     </tu>
     <tu>
-      <note>リンク漏れ？</note>
       <tuv lang="en-US">
         <seg>Our [official PDS install script](https://github.com/bluesky-social/pds) configures SQLite as a database backend. Specifically, it uses one SQLite DB for each user's [data repository], and a few others for PDS-wide data. This may be surprising, since SQLite doesn't have any mechanism for handling backups or replications out of the box, but SQLite has increasingly been found to [scale very well](https://fly.io/blog/sqlite-internals-rollback-journal/) with some additional tooling.</seg>
       </tuv>
@@ -20383,12 +20355,11 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       </tuv>
     </tu>
     <tu>
-      <note>ハンドルはPDS(bsky.social)に由来するのでbsky.appにリンクするのは抵抗があるが、PDSのページは無い(bsky.socialは会社のウェブサイトを表示する)のでやむなし</note>
       <tuv lang="en-US">
         <seg>Our login page just asks the user for their "handle," which is the domain name associated with their account. For [Bluesky](https://bsky.app) users, these tend to look like `alice.bsky.social`, but they can be any kind of domain (eg `alice.com`).</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260128T130919Z">
-        <seg>ログインページでは、ユーザーに「ハンドル」を尋ねるだけです。これは、アカウントに関連付けられたドメイン名です。[Bluesky](https://bsky.app)ユーザーの場合、これらは`alice.bsky.social`のように見えますが、任意の種類のドメイン（例えば`alice.com`）にすることができます。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T114030Z">
+        <seg>ログインページでは、ユーザーに「ハンドル」を尋ねるだけです。ハンドルとは、アカウントに関連付けられたドメイン名です。[Bluesky](https://bsky.app)ユーザーからすると、`alice.bsky.social`という形式ばかりに見えますが、任意のドメイン（例えば`alice.com`）にすることができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20467,16 +20438,16 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>P2p data is often addressed by the hash of the data and signed by a private key that the posting user holds. With this, content can be arbitrarily redistributed while maintaining full authority that it came from the user that posted it. Therefore a client can simply reach out to “the network” in the abstract to find some content with a known hash. When functioning well, content-addressed networks have this beautiful quality where the data seems to “just exist”, somewhere out there in this mesh of cooperating devices. Unlike the traditional location-addressed web where the data you receive is contingent on the service that you talk to, data in p2p systems has this essential quality to it - the data, not the location, is in primacy.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260201T083519Z">
-        <seg>p2pデータは、多くの場合データのハッシュで指定され、投稿者が保持する秘密鍵で署名されます。これにより、投稿者由来の権威を保ったまま、コンテンツを任意に再配布できます。したがってクライアントは、既知のハッシュを持つコンテンツを探すために抽象的な「ネットワーク」へ問い合わせればよいのです。うまく機能しているとき、コンテンツアドレッシング型ネットワークは、データが協調するデバイスによるメッシュのどこかに「ただ存在する」かのような美しい性質を持ちます。受け取るデータが話しかけるサービスに依存する従来のロケーションアドレッシング型ウェブと異なり、p2pシステムのデータは場所ではなくデータそのものが本質であるという性質を持っています。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T095915Z">
+        <seg>P2Pデータは、多くの場合データのハッシュで指定され、投稿者が保持する秘密鍵で署名されます。これにより、投稿者由来の権威を保ったまま、コンテンツを任意に再配布できます。したがってクライアントは、既知のハッシュを持つコンテンツを探すために抽象的な「ネットワーク」へ問い合わせればよいのです。うまく機能しているとき、コンテンツアドレッシング型ネットワークは、データが協調するデバイスによるメッシュのどこかに「ただ存在する」かのような美しい性質を持ちます。受け取るデータが話しかけるサービスに依存する従来のロケーションアドレッシング型ウェブと異なり、P2Pシステムのデータは場所ではなくデータそのものが本質であるという性質を持っています。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="en-US">
         <seg>P2p networks took a different approach that was radically trust-less. You have to trust your client device of course, but that's it. Because the software runs on your client and the trust is imbued into the data, no trust in any other service or actor in the network is required.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260201T094706Z">
-        <seg>p2pネットワークは、根本的に信頼不要という別のアプローチを取りました。もちろん自分のクライアントデバイスを信頼する必要はありますが、それだけです。ソフトウェアはクライアント上で動作し、信頼がデータに埋め込まれるため、ネットワーク内の他のサービスや主体を信頼する必要がありません。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T095945Z">
+        <seg>P2Pネットワークは、根本的に信頼不要という別のアプローチを取りました。もちろん自分のクライアントデバイスを信頼する必要はありますが、それだけです。ソフトウェアはクライアント上で動作し、信頼がデータに埋め込まれるため、ネットワーク内の他のサービスや主体を信頼する必要がありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -22057,8 +22028,8 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>Remember: the data repo services are still basically NoSQL stores, it's just that they're now organized in a very specific way:</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T102658Z">
-        <seg>覚えておいてください：データリポジトリサービスは基本的にNoSQLストアのままですが、非常に特殊な方法で整理されるようになりました。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T102714Z">
+        <seg>振り返りましょう。データリポジトリサービスは基本的にNoSQLストアのままですが、明確に定められた方法で整理されるようになりました。</seg>
       </tuv>
     </tu>
     <tu>
@@ -23346,8 +23317,8 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>See a demo version running at: [https://nextjs-oauth-tutorial.up.railway.app/](https://nextjs-oauth-tutorial.up.railway.app/).</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T094054Z" creationid="yamarten" creationdate="20260208T094054Z">
-        <seg>動作デモはこちらです。[https://nextjs-oauth-tutorial.up.railway.app/](https://nextjs-oauth-tutorial.up.railway.app/)。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T110447Z" creationid="yamarten" creationdate="20260208T094054Z">
+        <seg>動作デモはこちら [https://nextjs-oauth-tutorial.up.railway.app/](https://nextjs-oauth-tutorial.up.railway.app/)</seg>
       </tuv>
     </tu>
     <tu>
@@ -24708,8 +24679,8 @@ Repos: 1</seg>
       <tuv lang="en-US">
         <seg>Some applications may have a long delay between blob upload and reference from a record. To maximize interoperability, server implementations and operators are recommended to allow several hours of grace time before "garbage collecting", with at least one hour a firm lower bound.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260103T084857Z" creationid="yamarten" creationdate="20260103T084613Z">
-        <seg>一部のアプリケーションでは、blobアップロードからレコードによる参照までの間に長い遅延がある場合があります。相互運用性を最大化するために、サーバー実装とオペレーターは「ガベージコレクション」前になるべく数時間、最低でも1時間の猶予を設けてください。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T103216Z" creationid="yamarten" creationdate="20260103T084613Z">
+        <seg>一部のアプリケーションでは、blobアップロードからレコードによる参照までの間に長い遅延がある場合があります。相互運用性を最大化するために、サーバー実装とオペレーターはガベージコレクション前になるべく数時間、最低でも1時間の猶予を設けてください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -25689,7 +25660,6 @@ Repos: 1</seg>
       </tuv>
     </tu>
     <tu>
-      <note>「いくつでも」は嘘なのでは？</note>
       <tuv lang="en-US">
         <seg>The "data repository" or "repo" is the public dataset which represents a user. It is comprised of [collections](#collection) of JSON [records](#record) and unstructured [blobs](#blob). Every repo is assigned a single permanent [DID](#did-decentralized-id) which identifies it. Repos may also have any number of [domain handles](#handle) which act as human-readable names.</seg>
       </tuv>
@@ -25701,8 +25671,8 @@ Repos: 1</seg>
       <tuv lang="en-US">
         <seg>The **Authenticated Transfer Protocol**, aka **Atproto**, is a decentralized protocol for large-scale social web applications. This document will introduce you to the ideas behind the AT Protocol.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T073337Z" creationid="yamarten" creationdate="20260208T073337Z">
-        <seg>**Authenticated Transferプロトコル**（別名 **atproto**）は、大規模な分散型ソーシャルアプリケーション用のフェデレーションプロトコルです。このドキュメントでは、ATプロトコルの背後にある考え方を紹介します。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T101046Z" creationid="yamarten" creationdate="20260208T073337Z">
+        <seg>**Authenticated Transferプロトコル**（別名**atproto**）は、大規模な分散型ソーシャルアプリケーション用のフェデレーションプロトコルです。このドキュメントでは、ATプロトコルの背後にある考え方を紹介します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -25805,8 +25775,8 @@ Repos: 1</seg>
       <tuv lang="en-US">
         <seg>The AT Protocol is architected in a “big world with small world fallbacks” way, modeled after the open web itself. With the web, individual computers upload content to the network, and then all of that content is then broadcasted back to other computers. Similarly, with the AT Protocol, we're sending messages to a much smaller number of big aggregators, which then broadcast that data to personal data servers across the network.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T044813Z" creationid="yamarten" creationdate="20260111T044813Z">
-        <seg>ATプロトコルは、オープンウェブそのものをモデルにした「小さな世界のフォールバックを伴う大きな世界」という設計です。ウェブでは、個々のコンピューターがコンテンツをネットワークにアップロードし、そのすべてのコンテンツが他のコンピューターへブロードキャストされます。同様に、ATプロトコルでは、少数の大規模アグリゲーターにメッセージを送り、ネットワーク全体のパーソナルデータサーバーへデータをブロードキャストします。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T104838Z" creationid="yamarten" creationdate="20260111T044813Z">
+        <seg>ATプロトコルは、オープンウェブそのものをモデルにした「小さな世界へのフォールバックを伴う大きな世界」という設計です。ウェブでは、個々のコンピューターがコンテンツをネットワークにアップロードし、そのすべてのコンテンツが他のコンピューターへブロードキャストされます。同様に、ATプロトコルでは、少数の大規模アグリゲーターにメッセージを送り、ネットワーク全体のパーソナルデータサーバーへデータをブロードキャストします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -26045,8 +26015,8 @@ Repos: 1</seg>
       <tuv lang="en-US">
         <seg>The [DID standard](https://www.w3.org/TR/did-core/) describes a framework for different "methods" of publishing and resolving DIDs to the [DID Document](https://www.w3.org/TR/did-core/#core-properties), instead of specifying a single mechanism. A variety of existing methods [have been registered](https://w3c.github.io/did-spec-registries/#did-methods), with different features and properties. We established the following criteria for use with atproto:</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T111114Z">
-        <seg>[DID標準](https://www.w3.org/TR/did-core/)は、DIDを公開し、[DIDドキュメント](https://www.w3.org/TR/did-core/#core-properties)に解決するカスタム「メソッド」をサポートしています。さまざまな既存のメソッドが[公開](https://w3c.github.io/did-spec-registries/#did-methods)されているため、この提案に含めるための基準を確立する必要があります。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T104319Z">
+        <seg>[DID標準](https://www.w3.org/TR/did-core/)は、DIDを公開し、[DIDドキュメント](https://www.w3.org/TR/did-core/#core-properties)に解決する「メソッド」を、ただ一つに定めず多様に定義できるフレームワークを設けています。さまざまな既存のメソッドが[公開](https://w3c.github.io/did-spec-registries/#did-methods)されおり、それぞれ異なる機能や特徴を持ちます。atprotoでの使用に際して、以下の基準を設定しました。</seg>
       </tuv>
     </tu>
     <tu>
@@ -26251,8 +26221,8 @@ Repos: 1</seg>
       <tuv lang="en-US">
         <seg>The data model of atproto is very similar to that of p2p networks. The major difference is that rather than being simply content-addressed, a layer of indirection is added to make the data identity-addressed. Therefore an at-uri looks like `at://username/record-type/record-key`.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260201T083354Z">
-        <seg>atprotoのデータモデルはp2pネットワークのそれに非常に似ています。大きな違いは、単なるコンテンツアドレッシングではなく、間接層を追加してデータをIDアドレッシング化している点です。したがって、at-uriは`at://username/record-type/record-key`のようになります。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T095938Z">
+        <seg>atprotoのデータモデルはP2Pネットワークのそれに非常に似ています。大きな違いは、単なるコンテンツアドレッシングではなく、間接層を追加してデータをIDアドレッシング化している点です。したがって、at-uriは`at://username/record-type/record-key`のようになります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -26275,8 +26245,8 @@ Repos: 1</seg>
       <tuv lang="en-US">
         <seg>The end result is that products built on these p2p protocols often feel spotty - posts and interactions are missing, global algorithms are impossible to create, and running these applications takes a noticeable hit on the battery life and resource usage of the devices they run on. In short, it doesn't seem tractable to replicate the seamless dynamic feel of the massive platforms of the modern web.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260201T080617Z">
-        <seg>結果として、これらのp2pプロトコル上に構築された製品はしばしば不安定に感じられます。投稿や反応が欠け、グローバルなアルゴリズムを作れず、アプリの実行はバッテリー寿命やデバイス資源に目に見える負荷を与えます。要するに、現代ウェブの巨大プラットフォームが持つシームレスで動的な感覚を再現するのは現実的ではありません。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T095920Z">
+        <seg>結果として、これらのP2Pプロトコル上に構築された製品はしばしば不安定に感じられます。投稿や反応が欠け、グローバルなアルゴリズムを作れず、アプリの実行はバッテリー寿命やデバイス資源に目に見える負荷を与えます。要するに、現代ウェブの巨大プラットフォームが持つシームレスで動的な感覚を再現するのは現実的ではありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -26443,8 +26413,8 @@ Repos: 1</seg>
       <tuv lang="en-US">
         <seg>The introduction of new database technologies and the general trend of micro-services brought even more problems. Micro-services often need access to the same data. If a micro-service goes down for a period of time, it needs a mechanism to catch up with everything that happened. And applications need a way to create new indices even over past data. An approach of stream processing helped to answer many of these issues. In a stream processing architecture - most prominently exemplified by Kafka - you maintain an event log of all events that flow through a system. Many consumers tap into this event log. If a consumer goes offline, when it comes back it can pick back up where it left off. And if a new index needs to be created, the entire event log can simply be replayed. These stream processing tools serve as a “backbone” of canonical data that enable the platform to coalesce around a single source of truth.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260201T081347Z">
-        <seg>新しいデータベース技術の導入やマイクロサービス化の流れは、さらに多くの問題をもたらしました。マイクロサービスはしばしば同じデータへアクセスする必要があります。マイクロサービスがしばらく停止した場合、その間に起きたすべてに追いつく仕組みが必要です。さらに、過去のデータを含めて新しいインデックスを作る手段も必要になります。ストリーム処理のアプローチは、こうした問題の多くに答えを与えました。Kafkaに代表されるストリーム処理アーキテクチャでは、システムを流れるすべてのイベントのログを保持します。多くのコンシューマーがこのイベントログに接続します。コンシューマーがオフラインになっても、復帰時に中断点から再開できます。新しいインデックスが必要になれば、イベントログ全体をリプレイすればよいのです。これらのストリーム処理ツールは、プラットフォームが信頼できる唯一の情報源に収束するための「背骨」として機能します。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T103418Z">
+        <seg>新しいデータベース技術の導入やマイクロサービス化の流れは、さらに多くの問題をもたらしました。マイクロサービスはしばしば同じデータへアクセスする必要があります。マイクロサービスがしばらく停止した場合、その間に起きたすべてに追いつく仕組みが必要です。さらに、過去のデータを含めて新しいインデックスを作る手段も必要になります。ストリーム処理のアプローチは、こうした問題の多くに答えを与えました。Kafkaに代表されるストリーム処理アーキテクチャでは、システムを流れるすべてのイベントのログを保持します。多くのコンシューマーがこのイベントログに接続します。コンシューマーがオフラインになっても、復帰時に中断点から再開できます。新しいインデックスが必要になれば、イベントログ全体をリプレイすればよいのです。これらのストリーム処理ツールは、プラットフォームが信頼できる唯一の情報源に収束するための背骨として機能します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -26526,8 +26496,8 @@ Repos: 1</seg>
       <tuv lang="en-US">
         <seg>The peer-to-peer (p2p) movement was in many ways a reaction to the emergence of the massive platforms that came to dominate the modern web. Idealistic and radical (sometimes to a fault), the p2p movement asked if we could remove backend applications from the mix entirely.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260128T134523Z">
-        <seg>ピアツーピア（p2p）ムーブメントは、色々な意味で現代のウェブを支配する巨大プラットフォームの出現への反動でした。理想主義的で急進的（時に行き過ぎるほど）なこのムーブメントは、バックエンドアプリケーションを完全に排除できないかと問いかけました。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T095849Z">
+        <seg>ピアツーピア（P2P）ムーブメントは、色々な意味で現代のウェブを支配する巨大プラットフォームの出現への反動でした。理想主義的で急進的（時に行き過ぎるほど）なこのムーブメントは、バックエンドアプリケーションを完全に排除できないかと問いかけました。</seg>
       </tuv>
     </tu>
     <tu>
@@ -27582,8 +27552,8 @@ curl -H "Authorization: Bearer &lt;jwt&gt;" "http://localhost:3000/xrpc/app.bsky
       <tuv lang="en-US">
         <seg>This is a fully usable Atmosphere integration, and many applications will use this as a starting point. Note that it produces a straightforward, readable "Authorize" flow. The URL of the requesting app is clearly visible, and the permissions dialog states that the app "wants to uniquely identify you," but nothing else.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T144310Z" creationid="yamarten" creationdate="20260111T144310Z">
-        <seg>これは十分に実用的なAtmosphere連携で、多くのアプリが出発点として利用します。ここでは明快で読みやすい「Authorize」フローが提示されます。要求元アプリのURLが明確に表示され、権限ダイアログにはアプリが「あなたを一意に識別したい」とだけ示され、それ以外はありません。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T105136Z" creationid="yamarten" creationdate="20260111T144310Z">
+        <seg>これは十分に実用的なAtmosphere連携で、多くのアプリが出発点として利用します。ここでは明快で読みやすい「Authorize」フローが提示されます。要求元アプリのURLが明確に表示され、権限ダイアログにはアプリが「wants to uniquely identify you（あなたを識別しようとしています）」とだけ示され、それ以外はありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -27662,8 +27632,8 @@ curl -H "Authorization: Bearer &lt;jwt&gt;" "http://localhost:3000/xrpc/app.bsky
       <tuv lang="en-US">
         <seg>This is pretty good, but we're building a social network with hundreds of millions of users; even this model hits limits. The problem is that our SQL database is “[strongly consistent](https://en.wikipedia.org/wiki/Strong_consistency)” which means the state is kept uniformly in sync across the system. Maintaining strong consistency incurs a performance cost which becomes our bottleneck.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T101249Z">
-        <seg>これはかなり良いですが、何億人ものユーザーを抱えるソーシャルネットワークを構築しているため、このモデルでも限界に達します。問題は、SQLデータベースが「[強い一貫性](https://en.wikipedia.org/wiki/Strong_consistency)」を持つことです。つまり、状態はシステム全体で均一に同期されています。強い一貫性を維持するとパフォーマンス コストが発生し、それがボトルネックになります。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T102353Z">
+        <seg>これはかなり良いですが、何億人ものユーザーを抱えるソーシャルネットワークを構築しているため、このモデルでも限界に達します。問題は、SQLデータベースが[強い一貫性](https://en.wikipedia.org/wiki/Strong_consistency)を持つことです。つまり、状態はシステム全体で均一に同期されています。強い一貫性を維持するとパフォーマンス コストが発生し、それがボトルネックになります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -27763,7 +27733,6 @@ curl -H "Authorization: Bearer &lt;jwt&gt;" "http://localhost:3000/xrpc/app.bsky
       </tuv>
     </tu>
     <tu>
-      <note>boundary to the “weirdness”の解釈が分かっていない。スキーマ所有者の奇行による影響や、独自性を出せる範囲の話？</note>
       <tuv lang="en-US">
         <seg>This ownership is reflected in the schema language for the atproto network where the notion of ownership is baked into the IDs of schemas. The owner of those schemas is free to iterate and evolve the data model for the application. Similarly, application owners are free to build their backends in whichever way they see fit. There is a boundary to the “weirdness” of the atproto network. Once identities and data cross that threshold, it is the application's decision how to index it and present it to the user.</seg>
       </tuv>
@@ -28313,7 +28282,6 @@ curl -H "Authorization: Bearer &lt;jwt&gt;" "http://localhost:3000/xrpc/app.bsky
       </tuv>
     </tu>
     <tu>
-      <note>labelではなくreportの間違いでは？</note>
       <tuv lang="en-US">
         <seg>To specify which labeler should receive the label, set the `atproto-proxy` header with the DID of the labeler and the service key of `atproto_labeler`. In the TypeScript SDK, it looks like this:</seg>
       </tuv>
@@ -30273,8 +30241,8 @@ goat account service-auth --aud did:example:alice</seg>
       <tuv lang="en-US">
         <seg>We write records using a similar API. Since our goal is to write "status" records, let's look at how that will happen:</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T090336Z">
-        <seg>同様のAPIを使用してレコードを書き込みます。目標は「ステータス」レコードを書き込むことなので、その方法を見てみましょう。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T103029Z">
+        <seg>同様のAPIを使用してレコードを書き込みます。目標はステータスレコードを書き込むことなので、その方法を見てみましょう。</seg>
       </tuv>
     </tu>
     <tu>
@@ -30345,8 +30313,8 @@ goat account service-auth --aud did:example:alice</seg>
       <tuv lang="en-US">
         <seg>We're going to establish a shared data model called the [“user data repository.”](/guides/data-repos)</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T102605Z">
-        <seg>[“ユーザーデータリポジトリ”](/guides/data-repos)と呼ばれる共有データモデルを確立します。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T102418Z">
+        <seg>[ユーザーデータリポジトリ](/guides/data-repos)と呼ばれる共有データモデルを確立します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -30601,8 +30569,8 @@ goat account service-auth --aud did:example:alice</seg>
       <tuv lang="en-US">
         <seg>When backfilling, you generally need to maintain 'up to date' replica of the data, which requires a cutover to streaming firehose data once the backfill is complete. We created `tap` to streamline this process.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260103T071812Z" creationid="yamarten" creationdate="20260103T071812Z">
-        <seg>バックフィルを行うのは、一般にデータの「最新」レプリカを維持する必要がある場合なので、バックフィルが完了したらfirehoseデータのストリーミングへの切り替えが必要です。このプロセスを簡素化するために`tap`を作成しました。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T103102Z" creationid="yamarten" creationdate="20260103T071812Z">
+        <seg>バックフィルを行うのは、一般にデータの最新レプリカを維持する必要がある場合なので、バックフィルが完了したらfirehoseデータのストリーミングへの切り替えが必要です。このプロセスを簡素化するために`tap`を作成しました。</seg>
       </tuv>
     </tu>
     <tu>
@@ -30737,8 +30705,8 @@ goat account service-auth --aud did:example:alice</seg>
       <tuv lang="en-US">
         <seg>While peer-to-peer technology was being explored, the platforms that make up the modern web continued to grow in size. As the barriers to participating in the web lowered, millions and eventually billions of people started participating in and generating content on the web.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260128T140055Z">
-        <seg>p2p技術が探求される一方で、現代のウェブを構成するプラットフォームは規模を拡大し続けました。ウェブ参加の障壁が下がるにつれ、数百万、やがては数十億の人々がウェブに参加し、コンテンツを生成するようになりました。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T095925Z">
+        <seg>P2P技術が探求される一方で、現代のウェブを構成するプラットフォームは規模を拡大し続けました。ウェブ参加の障壁が下がるにつれ、数百万、やがては数十億の人々がウェブに参加し、コンテンツを生成するようになりました。</seg>
       </tuv>
     </tu>
     <tu>
@@ -30849,8 +30817,8 @@ goat account service-auth --aud did:example:alice</seg>
       <tuv lang="en-US">
         <seg>Why don't we learn something about our user? In [Bluesky](https://bsky.app), users publish a "profile" record which looks like this:</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T085108Z">
-        <seg>ユーザーについて何か調べてみましょう。[Bluesky](https://bsky.app)では、ユーザーは次のような「プロフィール」レコードを公開します。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T103001Z">
+        <seg>ユーザーについて何か調べてみましょう。[Bluesky](https://bsky.app)では、ユーザーは次のようなプロフィールレコードを公開します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -30953,8 +30921,8 @@ goat account service-auth --aud did:example:alice</seg>
       <tuv lang="en-US">
         <seg>With the identity successfully updated, the new PDS is now the "current" host for the account from the perspective of the entire network. This will be immediately apparent to new services which resolve the identity. Existing services that consume from the firehose will be alerted by the `#identity` event. Other services, which may have now-stale cached identity metadata for the account, will either refresh when the cache expires, or should refresh their cache when they encounter errors (such as invalid service auth signatures).</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260102T104054Z" creationid="yamarten" creationdate="20260102T104054Z">
-        <seg>IDが正常に更新されると、新PDSはネットワーク全体でそのアカウントの「現行」ホストになります。これは新規サービスのID解決には即座に反映されます。firehoseを消費している既存サービスには`#identity`イベントで通知されます。古いIDメタデータのキャッシュを持つサービスは、キャッシュの期限切れ時に更新するか、署名失敗などのエラーに遭遇した際にキャッシュを更新します。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T102919Z" creationid="yamarten" creationdate="20260102T104054Z">
+        <seg>IDが正常に更新されると、新PDSはネットワーク全体でそのアカウントの現行ホストになります。これは新規サービスのID解決には即座に反映されます。firehoseを消費している既存サービスには`#identity`イベントで通知されます。古いIDメタデータのキャッシュを持つサービスは、キャッシュの期限切れ時に更新するか、署名失敗などのエラーに遭遇した際にキャッシュを更新します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -30969,8 +30937,8 @@ goat account service-auth --aud did:example:alice</seg>
       <tuv lang="en-US">
         <seg>With this, p2p moved away from the traditional location-based authority model of the web and towards “self-certifying data”. Data could come from a device that didn't originally create that data, and even if the content is coming from the canonical device, that device probably doesn't have a static IP associated with the account. Therefore p2p protocols moved the authority of data from the location of the data to the data itself.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260128T134810Z">
-        <seg>これにより、p2pはウェブの伝統的な場所ベースの権威モデルから離れ、「自己証明データ」へと向かいました。データは元の作成者ではないデバイスから届く可能性があり、たとえ正規のデバイスから来ていても、そのデバイスはアカウントに紐付いた固定IPを持たないことが多いのです。結果として、p2pプロトコルはデータの権威をデータの場所からデータそのものへ移しました。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T103348Z">
+        <seg>これにより、P2Pはウェブの伝統的な場所ベースの権威モデルから離れ、自己証明データへと向かいました。データは元の作成者ではないデバイスから届く可能性があり、たとえ正規のデバイスから来ていても、そのデバイスはアカウントに紐付いた固定IPを持たないことが多いのです。結果として、P2Pプロトコルはデータの権威をデータの置場からデータそのものへ移しました。</seg>
       </tuv>
     </tu>
     <tu>
@@ -31420,8 +31388,6 @@ goat account service-auth --aud did:example:alice</seg>
       </tuv>
     </tu>
     <tu>
-      <note>急にタブを混ぜるな
-インデントがズレてるのも含め、おそらくコピペしてきたせい</note>
       <tuv lang="en-US">
         <seg>You can make API calls to any Lexicon using the same SDK client pattern. For more examples, refer to [the SDK documentation](https://www.npmjs.com/package/@atproto/lex).
     &lt;/TabPanel&gt;
@@ -35447,8 +35413,8 @@ brew install goat
 $ websocat wss://bsky.network/xrpc/com.atproto.sync.subscribeRepos
 ```</seg>
       </tuv>
-      <tuv lang="ja">
-        <seg>```shell 
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T114817Z">
+        <seg>```shell
 $ websocat wss://bsky.network/xrpc/com.atproto.sync.subscribeRepos
 ```</seg>
       </tuv>
@@ -39059,7 +39025,6 @@ export const header = {
       </tuv>
     </tu>
     <tu>
-      <note>	</note>
       <tuv lang="en-US">
         <seg>export const header = {
   title: 'FAQ',
@@ -39307,7 +39272,7 @@ description:
     'An introduction to the AT Protocol.',
 }</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T113321Z" creationid="yamarten" creationdate="20260106T151628Z">
+      <tuv lang="ja" changeid="yamarten" changedate="20260209T101044Z" creationid="yamarten" creationdate="20260106T151628Z">
         <seg>import {Heading} from '@/components/Heading'
 
 export const header = {

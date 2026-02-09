@@ -169,13 +169,13 @@ msgstr ""
 #: src/articles/atproto-for-distsys-engineers/en.mdx:58
 #, no-wrap
 msgid "This is pretty good, but we're building a social network with hundreds of millions of users; even this model hits limits. The problem is that our SQL database is “[strongly consistent](https://en.wikipedia.org/wiki/Strong_consistency)” which means the state is kept uniformly in sync across the system. Maintaining strong consistency incurs a performance cost which becomes our bottleneck. \n"
-msgstr "これはかなり良いですが、何億人ものユーザーを抱えるソーシャルネットワークを構築しているため、このモデルでも限界に達します。問題は、SQLデータベースが「[強い一貫性](https://en.wikipedia.org/wiki/Strong_consistency)」を持つことです。つまり、状態はシステム全体で均一に同期されています。強い一貫性を維持するとパフォーマンス コストが発生し、それがボトルネックになります。 \n"
+msgstr "これはかなり良いですが、何億人ものユーザーを抱えるソーシャルネットワークを構築しているため、このモデルでも限界に達します。問題は、SQLデータベースが[強い一貫性](https://en.wikipedia.org/wiki/Strong_consistency)を持つことです。つまり、状態はシステム全体で均一に同期されています。強い一貫性を維持するとパフォーマンス コストが発生し、それがボトルネックになります。 \n"
 
 #. type: Plain text
 #: src/articles/atproto-for-distsys-engineers/en.mdx:60
 #, no-wrap
 msgid "If we can relax our system to use “[eventual consistency](https://en.wikipedia.org/wiki/Eventual_consistency),” we can scale much further. We start by switching to a NoSQL cluster.\n"
-msgstr "システムを緩和して「[結果整合性](https://en.wikipedia.org/wiki/Eventual_consistency)」を使用できれば、さらに拡張できます。まず、NoSQLクラスターに切り替えます。\n"
+msgstr "システムを緩和して[結果整合性](https://en.wikipedia.org/wiki/Eventual_consistency)を使用できれば、さらに拡張できます。まず、NoSQLクラスターに切り替えます。\n"
 
 #. type: Plain text
 #: src/articles/atproto-for-distsys-engineers/en.mdx:64
@@ -355,7 +355,7 @@ msgstr "<Heading level={2} id=\"unifying-the-data-model\">データモデルの�
 #: src/articles/atproto-for-distsys-engineers/en.mdx:120
 #, no-wrap
 msgid "We're going to establish a shared data model called the [“user data repository.”](/guides/data-repos)\n"
-msgstr "[“ユーザーデータリポジトリ”](/guides/data-repos)と呼ばれる共有データモデルを確立します。\n"
+msgstr "[ユーザーデータリポジトリ](/guides/data-repos)と呼ばれる共有データモデルを確立します。\n"
 
 #. type: Plain text
 #: src/articles/atproto-for-distsys-engineers/en.mdx:124
@@ -373,7 +373,7 @@ msgstr ""
 #: src/articles/atproto-for-distsys-engineers/en.mdx:126
 #, no-wrap
 msgid "Every data repository contains JSON documents, which we'll call “records”.\n"
-msgstr "すべてのデータリポジトリには、JSONドキュメント（ここでは “レコード” と呼びます）が含まれます。\n"
+msgstr "すべてのデータリポジトリには、JSONドキュメント（ここではレコードと呼びます）が含まれます。\n"
 
 #. type: Plain text
 #: src/articles/atproto-for-distsys-engineers/en.mdx:130
@@ -391,7 +391,7 @@ msgstr ""
 #: src/articles/atproto-for-distsys-engineers/en.mdx:132
 #, no-wrap
 msgid "For organizational purposes, we'll bucket these records into “collections.”\n"
-msgstr "整理のため、これらのレコードを「コレクション」にまとめます。\n"
+msgstr "整理のため、これらのレコードをコレクションとしてまとめます。\n"
 
 #. type: Plain text
 #: src/articles/atproto-for-distsys-engineers/en.mdx:136
@@ -427,7 +427,7 @@ msgstr ""
 #: src/articles/atproto-for-distsys-engineers/en.mdx:144
 #, no-wrap
 msgid "Remember: the data repo services are still basically NoSQL stores, it's just that they're now organized in a very specific way:\n"
-msgstr "覚えておいてください：データリポジトリサービスは基本的にNoSQLストアのままですが、非常に特殊な方法で整理されるようになりました。\n"
+msgstr "振り返りましょう。データリポジトリサービスは基本的にNoSQLストアのままですが、明確に定められた方法で整理されるようになりました。\n"
 
 #. type: Plain text
 #: src/articles/atproto-for-distsys-engineers/en.mdx:148
@@ -437,7 +437,7 @@ msgid ""
 "2. Each repository has collections.\n"
 "3. Each collection is an ordered K/V store of JSON documents.\n"
 msgstr ""
-"1. 各ユーザーにはデータ リポジトリがあります。\n"
+"1. 各ユーザーにはデータリポジトリがあります。\n"
 "2. 各リポジトリにはコレクションがあります。\n"
 "3. 各コレクションは、JSONドキュメントの順序付けられたK/Vストアです。\n"
 

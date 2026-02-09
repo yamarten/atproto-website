@@ -71,7 +71,7 @@ msgstr "ネットワーク全体が第三者によってバックフィル可能
 #: src/guides/backfilling/en.mdx:13
 #, no-wrap
 msgid "When backfilling, you generally need to maintain 'up to date' replica of the data, which requires a cutover to streaming firehose data once the backfill is complete. We created `tap` to streamline this process.\n"
-msgstr "バックフィルを行うのは、一般にデータの「最新」レプリカを維持する必要がある場合なので、バックフィルが完了したらfirehoseデータのストリーミングへの切り替えが必要です。このプロセスを簡素化するために`tap`を作成しました。\n"
+msgstr "バックフィルを行うのは、一般にデータの最新レプリカを維持する必要がある場合なので、バックフィルが完了したらfirehoseデータのストリーミングへの切り替えが必要です。このプロセスを簡素化するために`tap`を作成しました。\n"
 
 #. type: Plain text
 #: src/guides/backfilling/en.mdx:15

@@ -127,7 +127,7 @@ msgstr "<Heading level={2} id=\"how-is-oauth-different-in-at-protocol\">ATプロ
 #: src/guides/auth/en.mdx:31
 #, no-wrap
 msgid "Atproto [specifies](/specs/oauth) a particular \"profile\" of the OAuth standards, using [OAuth 2.1](https://www.ietf.org/archive/id/draft-ietf-oauth-v2-1-13.html) as the foundation.\n"
-msgstr "atprotoは[OAuth仕様](/specs/oauth)でOAuth標準の特定の「プロファイル」を指定し、[OAuth 2.1](https://www.ietf.org/archive/id/draft-ietf-oauth-v2-1-13.html)を基礎としています。\n"
+msgstr "atprotoは[OAuth仕様](/specs/oauth)でOAuth標準の特定のプロファイルを指定し、[OAuth 2.1](https://www.ietf.org/archive/id/draft-ietf-oauth-v2-1-13.html)を基礎としています。\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:33

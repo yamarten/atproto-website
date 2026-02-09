@@ -124,7 +124,7 @@ msgstr ""
 #: src/guides/the-at-stack/en.mdx:31
 #, no-wrap
 msgid "The AT Protocol is architected in a “big world with small world fallbacks” way, modeled after the open web itself. With the web, individual computers upload content to the network, and then all of that content is then broadcasted back to other computers. Similarly, with the AT Protocol, we're sending messages to a much smaller number of big aggregators, which then broadcast that data to personal data servers across the network.\n"
-msgstr "ATプロトコルは、オープンウェブそのものをモデルにした「小さな世界のフォールバックを伴う大きな世界」という設計です。ウェブでは、個々のコンピューターがコンテンツをネットワークにアップロードし、そのすべてのコンテンツが他のコンピューターへブロードキャストされます。同様に、ATプロトコルでは、少数の大規模アグリゲーターにメッセージを送り、ネットワーク全体のパーソナルデータサーバーへデータをブロードキャストします。\n"
+msgstr "ATプロトコルは、オープンウェブそのものをモデルにした「小さな世界へのフォールバックを伴う大きな世界」という設計です。ウェブでは、個々のコンピューターがコンテンツをネットワークにアップロードし、そのすべてのコンテンツが他のコンピューターへブロードキャストされます。同様に、ATプロトコルでは、少数の大規模アグリゲーターにメッセージを送り、ネットワーク全体のパーソナルデータサーバーへデータをブロードキャストします。\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:33

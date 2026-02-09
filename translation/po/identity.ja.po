@@ -190,7 +190,7 @@ msgstr "<Heading level={2} id=\"did-methods\">DIDメソッド</Heading>\n"
 #: src/guides/identity/en.mdx:68
 #, no-wrap
 msgid "The [DID standard](https://www.w3.org/TR/did-core/) describes a framework for different \"methods\" of publishing and resolving DIDs to the [DID Document](https://www.w3.org/TR/did-core/#core-properties), instead of specifying a single mechanism. A variety of existing methods [have been registered](https://w3c.github.io/did-spec-registries/#did-methods), with different features and properties. We established the following criteria for use with atproto:\n"
-msgstr "[DID標準](https://www.w3.org/TR/did-core/)は、DIDを公開し、[DIDドキュメント](https://www.w3.org/TR/did-core/#core-properties)に解決するカスタム「メソッド」をサポートしています。さまざまな既存のメソッドが[公開](https://w3c.github.io/did-spec-registries/#did-methods)されているため、この提案に含めるための基準を確立する必要があります。\n"
+msgstr "[DID標準](https://www.w3.org/TR/did-core/)は、DIDを公開し、[DIDドキュメント](https://www.w3.org/TR/did-core/#core-properties)に解決する「メソッド」を、ただ一つに定めず多様に定義できるフレームワークを設けています。さまざまな既存のメソッドが[公開](https://w3c.github.io/did-spec-registries/#did-methods)されおり、それぞれ異なる機能や特徴を持ちます。atprotoでの使用に際して、以下の基準を設定しました。\n"
 
 #. type: Plain text
 #: src/guides/identity/en.mdx:76

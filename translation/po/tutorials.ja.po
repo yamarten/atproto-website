@@ -104,7 +104,7 @@ msgstr "OAuthを使ってユーザーがATプロトコルのIDでログインで
 #: src/guides/tutorials/en.mdx:29 src/guides/oauth-tutorial/en.mdx:16
 #, no-wrap
 msgid "See a demo version running at: [https://nextjs-oauth-tutorial.up.railway.app/](https://nextjs-oauth-tutorial.up.railway.app/).\n"
-msgstr "動作デモはこちらです。[https://nextjs-oauth-tutorial.up.railway.app/](https://nextjs-oauth-tutorial.up.railway.app/)。\n"
+msgstr "動作デモはこちら [https://nextjs-oauth-tutorial.up.railway.app/](https://nextjs-oauth-tutorial.up.railway.app/)\n"
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:31
@@ -122,7 +122,7 @@ msgstr "<Heading level={2} id=\"statusphere-example-apps\">Statusphereサンプ�
 #: src/guides/tutorials/en.mdx:35
 #, no-wrap
 msgid "Build an app that lets you broadcast a \"status\" message using custom Lexicons, and see a live feed of other statuses.\n"
-msgstr "カスタムLexiconを使って「status」メッセージを配信し、他のstatusをライブフィードで確認できるアプリを構築します。\n"
+msgstr "カスタムLexiconを使って「ステータス」メッセージを配信し、他のステータスをライブフィードで確認できるアプリを構築します。\n"
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:37

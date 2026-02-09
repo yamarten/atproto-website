@@ -44,13 +44,13 @@ msgstr "# プロトコル概要\n"
 #: src/guides/overview/en.mdx:10
 #, no-wrap
 msgid "The **Authenticated Transfer Protocol**, aka **Atproto**, is a decentralized protocol for large-scale social web applications. This document will introduce you to the ideas behind the AT Protocol.\n"
-msgstr "**Authenticated Transferプロトコル**（別名 **atproto**）は、大規模な分散型ソーシャルアプリケーション用のフェデレーションプロトコルです。このドキュメントでは、ATプロトコルの背後にある考え方を紹介します。\n"
+msgstr "**Authenticated Transferプロトコル**（別名**atproto**）は、大規模な分散型ソーシャルアプリケーション用のフェデレーションプロトコルです。このドキュメントでは、ATプロトコルの背後にある考え方を紹介します。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:12
 #, no-wrap
 msgid "## Identity\n"
-msgstr "<Heading level={2} id=\"identity\">アイデンティティ</Heading>\n"
+msgstr "<Heading level={2} id=\"identity\">ID</Heading>\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:14

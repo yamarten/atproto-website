@@ -206,7 +206,7 @@ msgstr "その後、ユーザーはそのオペレーションを新PDS（`com.a
 #: src/guides/account-migration/en.mdx:64
 #, no-wrap
 msgid "With the identity successfully updated, the new PDS is now the \"current\" host for the account from the perspective of the entire network. This will be immediately apparent to new services which resolve the identity. Existing services that consume from the firehose will be alerted by the `#identity` event. Other services, which may have now-stale cached identity metadata for the account, will either refresh when the cache expires, or should refresh their cache when they encounter errors (such as invalid service auth signatures).\n"
-msgstr "IDが正常に更新されると、新PDSはネットワーク全体でそのアカウントの「現行」ホストになります。これは新規サービスのID解決には即座に反映されます。firehoseを消費している既存サービスには`#identity`イベントで通知されます。古いIDメタデータのキャッシュを持つサービスは、キャッシュの期限切れ時に更新するか、署名失敗などのエラーに遭遇した際にキャッシュを更新します。\n"
+msgstr "IDが正常に更新されると、新PDSはネットワーク全体でそのアカウントの現行ホストになります。これは新規サービスのID解決には即座に反映されます。firehoseを消費している既存サービスには`#identity`イベントで通知されます。古いIDメタデータのキャッシュを持つサービスは、キャッシュの期限切れ時に更新するか、署名失敗などのエラーに遭遇した際にキャッシュを更新します。\n"
 
 #. type: Plain text
 #: src/guides/account-migration/en.mdx:66

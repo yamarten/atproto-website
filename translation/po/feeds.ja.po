@@ -281,7 +281,7 @@ msgstr "<Heading level={2} id=\"implementing-feeds\">フィードの実装</Head
 #: src/guides/feeds/en.mdx:90
 #, no-wrap
 msgid "How a feed generator fulfills the `getFeedSkeleton` request is completely at their discretion. At the simplest end, a Feed Generator could supply a \"feed\" that only contains some hardcoded posts.\n"
-msgstr "`getFeedSkeleton`リクエストに対してフィードジェネレーターがどのように埋めるかは完全にその裁量に任されています。最も単純な場合、フィードジェネレーターはハードコードされた投稿のみを含む「フィード」を提供できます。\n"
+msgstr "`getFeedSkeleton`リクエストに対してフィードジェネレーターがどのように埋めるかは完全にその裁量に任されています。最も単純な場合、フィードジェネレーターはハードコードされた投稿のみを含むフィードを提供できます。\n"
 
 #. type: Plain text
 #: src/guides/feeds/en.mdx:92

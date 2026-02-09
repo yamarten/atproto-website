@@ -93,7 +93,7 @@ msgstr "この投稿では、そのethosを掘り下げます。まず、atproto
 #: src/articles/atproto-ethos/en.mdx:21
 #, no-wrap
 msgid "## Atproto at the intersection of three movements\n"
-msgstr "<Heading level={2} id=\"atproto-at-the-intersection-of-three-movements\">三つのムーブメントの交差点にあるatproto</Heading>\n"
+msgstr "<Heading level={2} id=\"atproto-at-the-intersection-of-three-movements\">3つのムーブメントの交差点にあるatproto</Heading>\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:23
@@ -153,37 +153,37 @@ msgstr "文書ベースのウェブが現代のウェブへ進化したことは
 #: src/articles/atproto-ethos/en.mdx:41
 #, no-wrap
 msgid "### Peer-to-peer\n"
-msgstr "<Heading level={3} id=\"peer-to-peer\">ピアチーピアチ</Heading>### ピアツーピア\n"
+msgstr "<Heading level={3} id=\"peer-to-peer\">ピアツーピア</Heading>\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:43
 #, no-wrap
 msgid "The peer-to-peer (p2p) movement was in many ways a reaction to the emergence of the massive platforms that came to dominate the modern web. Idealistic and radical (sometimes to a fault), the p2p movement asked if we could remove backend applications from the mix entirely.\n"
-msgstr "ピアツーピア（p2p）ムーブメントは、色々な意味で現代のウェブを支配する巨大プラットフォームの出現への反動でした。理想主義的で急進的（時に行き過ぎるほど）なこのムーブメントは、バックエンドアプリケーションを完全に排除できないかと問いかけました。\n"
+msgstr "ピアツーピア（P2P）ムーブメントは、色々な意味で現代のウェブを支配する巨大プラットフォームの出現への反動でした。理想主義的で急進的（時に行き過ぎるほど）なこのムーブメントは、バックエンドアプリケーションを完全に排除できないかと問いかけました。\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:45
 #, no-wrap
 msgid "Instead of sending content and interactions to some coordinating backend service, users of social media platforms would send relevant data directly from their device to another device. If two users follow one another and one of them posts, the other would receive the post through a direct connection with the former's device. Of course, this requires that both parties are online at the same time for any data transfer to happen. P2p systems sought to get around this by allowing data to be replicated across many devices. Therefore a user may receive a post from the posting user or they could receive it from another friend that's currently online and in possession of the post.\n"
-msgstr "コンテンツや相互作用を調整役のバックエンドサービスへ送る代わりに、ソーシャルメディアのユーザーは、自分のデバイスから別のデバイスへ直接関連データを送ります。2人のユーザーが互いにフォローしていて片方が投稿した場合、もう片方は直接接続によってその投稿を受け取ります。もちろん、データ転送のためには両者が同時にオンラインである必要があります。p2pシステムは、多数のデバイスにデータを複製することでこの問題を回避しようとしました。したがって、ユーザーは投稿者本人から投稿を受け取ることも、現在オンラインでその投稿を保持している別の友人から受け取ることもできます。\n"
+msgstr "コンテンツや相互作用を調整役のバックエンドサービスへ送る代わりに、ソーシャルメディアのユーザーは、自分のデバイスから別のデバイスへ直接関連データを送ります。2人のユーザーが互いにフォローしていて片方が投稿した場合、もう片方は直接接続によってその投稿を受け取ります。もちろん、データ転送のためには両者が同時にオンラインである必要があります。P2Pシステムは、多数のデバイスにデータを複製することでこの問題を回避しようとしました。したがって、ユーザーは投稿者本人から投稿を受け取ることも、現在オンラインでその投稿を保持している別の友人から受け取ることもできます。\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:47
 #, no-wrap
 msgid "With this, p2p moved away from the traditional location-based authority model of the web and towards “self-certifying data”. Data could come from a device that didn't originally create that data, and even if the content is coming from the canonical device, that device probably doesn't have a static IP associated with the account. Therefore p2p protocols moved the authority of data from the location of the data to the data itself. \n"
-msgstr "これにより、p2pはウェブの伝統的な場所ベースの権威モデルから離れ、「自己証明データ」へと向かいました。データは元の作成者ではないデバイスから届く可能性があり、たとえ正規のデバイスから来ていても、そのデバイスはアカウントに紐付いた固定IPを持たないことが多いのです。結果として、p2pプロトコルはデータの権威をデータの場所からデータそのものへ移しました。 \n"
+msgstr "これにより、P2Pはウェブの伝統的な場所ベースの権威モデルから離れ、自己証明データへと向かいました。データは元の作成者ではないデバイスから届く可能性があり、たとえ正規のデバイスから来ていても、そのデバイスはアカウントに紐付いた固定IPを持たないことが多いのです。結果として、P2Pプロトコルはデータの権威をデータの置場からデータそのものへ移しました。 \n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:49
 #, no-wrap
 msgid "P2p data is often addressed by the hash of the data and signed by a private key that the posting user holds. With this, content can be arbitrarily redistributed while maintaining full authority that it came from the user that posted it. Therefore a client can simply reach out to “the network” in the abstract to find some content with a known hash. When functioning well, content-addressed networks have this beautiful quality where the data seems to “just exist”, somewhere out there in this mesh of cooperating devices. Unlike the traditional location-addressed web where the data you receive is contingent on the service that you talk to, data in p2p systems has this essential quality to it - the data, not the location, is in primacy.\n"
-msgstr "p2pデータは、多くの場合データのハッシュで指定され、投稿者が保持する秘密鍵で署名されます。これにより、投稿者由来の権威を保ったまま、コンテンツを任意に再配布できます。したがってクライアントは、既知のハッシュを持つコンテンツを探すために抽象的な「ネットワーク」へ問い合わせればよいのです。うまく機能しているとき、コンテンツアドレッシング型ネットワークは、データが協調するデバイスによるメッシュのどこかに「ただ存在する」かのような美しい性質を持ちます。受け取るデータが話しかけるサービスに依存する従来のロケーションアドレッシング型ウェブと異なり、p2pシステムのデータは場所ではなくデータそのものが本質であるという性質を持っています。\n"
+msgstr "P2Pデータは、多くの場合データのハッシュで指定され、投稿者が保持する秘密鍵で署名されます。これにより、投稿者由来の権威を保ったまま、コンテンツを任意に再配布できます。したがってクライアントは、既知のハッシュを持つコンテンツを探すために抽象的な「ネットワーク」へ問い合わせればよいのです。うまく機能しているとき、コンテンツアドレッシング型ネットワークは、データが協調するデバイスによるメッシュのどこかに「ただ存在する」かのような美しい性質を持ちます。受け取るデータが話しかけるサービスに依存する従来のロケーションアドレッシング型ウェブと異なり、P2Pシステムのデータは場所ではなくデータそのものが本質であるという性質を持っています。\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:51
 #, no-wrap
 msgid "Of course the abstraction doesn't always work perfectly, and this new topology brought with it a host of problems - most notably data availability and discovery. As noted earlier, if the poster of some data is not online, you need to find that data from another device in the network. Discovering which device can serve you some data is a hard problem, especially with devices routinely coming on and offline at different addresses. And it may be the case that there is not a single online device that can send you the data that you're looking for! Even if everything is functioning well, these systems have to lean in hard to eventual consistency since network partitions are much more common and there is no service in the network that can purport to have a “global view” of all data.\n"
-msgstr "もちろんこの抽象化が常に完璧に機能するわけではなく、この新しいトポロジーは多くの問題、特にデータの可用性と発見性の問題をもたらしました。前述の通り、あるデータの投稿者がオフラインなら、ネットワーク内の別のデバイスからそのデータを見つける必要があります。どのデバイスがそのデータを提供できるのかを見つけるのは難しい問題で、特にデバイスが異なるアドレスで頻繁にオンライン/オフラインを繰り返す場合はなおさらです。探しているデータを送れるオンラインデバイスが1台もないことすらあり得ます。すべてがうまく動いていても、ネットワーク分断がはるかに一般的で、ネットワーク内に全データの「グローバルビュー」を持つと主張できるサービスがないため、これらのシステムは結果整合性に強く依存せざるを得ません。\n"
+msgstr "もちろんこの抽象化が常に完璧に機能するわけではなく、この新しいトポロジーは多くの問題、特にデータの可用性と発見性の問題をもたらしました。前述の通り、あるデータの投稿者がオフラインなら、ネットワーク内の別のデバイスからそのデータを見つける必要があります。どのデバイスがそのデータを提供できるのかを見つけるのは難しい問題で、特にデバイスが異なるアドレスで頻繁にオンライン/オフラインを繰り返す場合はなおさらです。探しているデータを送れるオンラインデバイスが1台もないことすらあり得ます。すべてがうまく動いていても、ネットワーク分断がはるかに一般的で、ネットワーク内に全データのグローバルビューを持つと主張できるサービスがないため、これらのシステムは結果整合性に強く依存せざるを得ません。\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:53
@@ -195,7 +195,7 @@ msgstr "もう一つの大きな問題は、現代のウェブでユーザーが
 #: src/articles/atproto-ethos/en.mdx:55
 #, no-wrap
 msgid "The end result is that products built on these p2p protocols often feel spotty - posts and interactions are missing, global algorithms are impossible to create, and running these applications takes a noticeable hit on the battery life and resource usage of the devices they run on. In short, it doesn't seem tractable to replicate the seamless dynamic feel of the massive platforms of the modern web.\n"
-msgstr "結果として、これらのp2pプロトコル上に構築された製品はしばしば不安定に感じられます。投稿や反応が欠け、グローバルなアルゴリズムを作れず、アプリの実行はバッテリー寿命やデバイス資源に目に見える負荷を与えます。要するに、現代ウェブの巨大プラットフォームが持つシームレスで動的な感覚を再現するのは現実的ではありません。\n"
+msgstr "結果として、これらのP2Pプロトコル上に構築された製品はしばしば不安定に感じられます。投稿や反応が欠け、グローバルなアルゴリズムを作れず、アプリの実行はバッテリー寿命やデバイス資源に目に見える負荷を与えます。要するに、現代ウェブの巨大プラットフォームが持つシームレスで動的な感覚を再現するのは現実的ではありません。\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:57
@@ -207,7 +207,7 @@ msgstr "<Heading level={3} id=\"data-intensive-ditributed-systems\">データ集
 #: src/articles/atproto-ethos/en.mdx:59
 #, no-wrap
 msgid "While peer-to-peer technology was being explored, the platforms that make up the modern web continued to grow in size. As the barriers to participating in the web lowered, millions and eventually billions of people started participating in and generating content on the web. \n"
-msgstr "p2p技術が探求される一方で、現代のウェブを構成するプラットフォームは規模を拡大し続けました。ウェブ参加の障壁が下がるにつれ、数百万、やがては数十億の人々がウェブに参加し、コンテンツを生成するようになりました。 \n"
+msgstr "P2P技術が探求される一方で、現代のウェブを構成するプラットフォームは規模を拡大し続けました。ウェブ参加の障壁が下がるにつれ、数百万、やがては数十億の人々がウェブに参加し、コンテンツを生成するようになりました。 \n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:61
@@ -249,7 +249,7 @@ msgstr "分散システムの導入は、分散による問題も導入します
 #: src/articles/atproto-ethos/en.mdx:73
 #, no-wrap
 msgid "The introduction of new database technologies and the general trend of micro-services brought even more problems. Micro-services often need access to the same data. If a micro-service goes down for a period of time, it needs a mechanism to catch up with everything that happened. And applications need a way to create new indices even over past data. An approach of stream processing helped to answer many of these issues. In a stream processing architecture - most prominently exemplified by Kafka - you maintain an event log of all events that flow through a system. Many consumers tap into this event log. If a consumer goes offline, when it comes back it can pick back up where it left off. And if a new index needs to be created, the entire event log can simply be replayed. These stream processing tools serve as a “backbone” of canonical data that enable the platform to coalesce around a single source of truth.\n"
-msgstr "新しいデータベース技術の導入やマイクロサービス化の流れは、さらに多くの問題をもたらしました。マイクロサービスはしばしば同じデータへアクセスする必要があります。マイクロサービスがしばらく停止した場合、その間に起きたすべてに追いつく仕組みが必要です。さらに、過去のデータを含めて新しいインデックスを作る手段も必要になります。ストリーム処理のアプローチは、こうした問題の多くに答えを与えました。Kafkaに代表されるストリーム処理アーキテクチャでは、システムを流れるすべてのイベントのログを保持します。多くのコンシューマーがこのイベントログに接続します。コンシューマーがオフラインになっても、復帰時に中断点から再開できます。新しいインデックスが必要になれば、イベントログ全体をリプレイすればよいのです。これらのストリーム処理ツールは、プラットフォームが信頼できる唯一の情報源に収束するための「背骨」として機能します。\n"
+msgstr "新しいデータベース技術の導入やマイクロサービス化の流れは、さらに多くの問題をもたらしました。マイクロサービスはしばしば同じデータへアクセスする必要があります。マイクロサービスがしばらく停止した場合、その間に起きたすべてに追いつく仕組みが必要です。さらに、過去のデータを含めて新しいインデックスを作る手段も必要になります。ストリーム処理のアプローチは、こうした問題の多くに答えを与えました。Kafkaに代表されるストリーム処理アーキテクチャでは、システムを流れるすべてのイベントのログを保持します。多くのコンシューマーがこのイベントログに接続します。コンシューマーがオフラインになっても、復帰時に中断点から再開できます。新しいインデックスが必要になれば、イベントログ全体をリプレイすればよいのです。これらのストリーム処理ツールは、プラットフォームが信頼できる唯一の情報源に収束するための背骨として機能します。\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:76
@@ -265,19 +265,19 @@ msgstr ""
 #: src/articles/atproto-ethos/en.mdx:78
 #, no-wrap
 msgid "1. **From the web:** an open, permissionless, and universal network of interconnected content.\n"
-msgstr "1. **Webから**: 開かれており、許可不要な、相互接続コンテンツの単一ネットワーク\n"
+msgstr "1. **ウェブから**：開かれており、許可不要な、相互接続コンテンツの単一ネットワーク\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:80
 #, no-wrap
 msgid "2. **From peer-to-peer:** location-independent data, self-certifying data, and skepticism of centralized control of any aspect of the user’s experience.\n"
-msgstr "2. **p2pから**: 位置に依存しないデータ、自己証明データ、ユーザー体験のあらゆる側面に対する中央集権的支配への懐疑\n"
+msgstr "2. **P2Pから**：位置に依存しないデータ、自己証明データ、ユーザー体験のあらゆる側面に対する中央集権的支配への懐疑\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:82
 #, no-wrap
 msgid "3. **From data-intensive distributed systems:** a splitting of read and write load, application-aware secondary indices to facilitate high-throughput and low latency, streaming canonical data, and the decomposition of monoliths into microservices.\n"
-msgstr "3. **データ指向分散システムから**: 読み取り/書き込み負荷の分離、高スループットと低レイテンシのためのアプリケーション向けセカンダリインデックス、正規データのストリーミング、モノリスからマイクロサービスへの分割\n"
+msgstr "3. **データ指向分散システムから**：読み取り/書き込み負荷の分離、高スループットと低レイテンシのためのアプリケーション向けセカンダリインデックス、正規データのストリーミング、モノリスからマイクロサービスへの分割\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:84
@@ -301,7 +301,7 @@ msgstr "<Heading level={3} id=\"identity-based-authority\">IDに基づく権威<
 #: src/articles/atproto-ethos/en.mdx:90
 #, no-wrap
 msgid "The data model of atproto is very similar to that of p2p networks. The major difference is that rather than being simply content-addressed, a layer of indirection is added to make the data identity-addressed. Therefore an at-uri looks like `at://username/record-type/record-key`. \n"
-msgstr "atprotoのデータモデルはp2pネットワークのそれに非常に似ています。大きな違いは、単なるコンテンツアドレッシングではなく、間接層を追加してデータをIDアドレッシング化している点です。したがって、at-uriは`at://username/record-type/record-key`のようになります。 \n"
+msgstr "atprotoのデータモデルはP2Pネットワークのそれに非常に似ています。大きな違いは、単なるコンテンツアドレッシングではなく、間接層を追加してデータをIDアドレッシング化している点です。したがって、at-uriは`at://username/record-type/record-key`のようになります。 \n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:92
@@ -313,7 +313,7 @@ msgstr "このデータのIDアドレス化は、ロケーションアドレッ�
 #: src/articles/atproto-ethos/en.mdx:94
 #, no-wrap
 msgid "Identities are long-lived and untethered from any location where they may currently be housed. The primacy that data has in p2p networks is moved up the stack to identity. Identities exist independent of any given host or application and can move between them fluidly. Data in the network then flows from these identities with a well-defined mechanism of how to resolve the identity to some set of data and receive real time updates as new content is created.\n"
-msgstr "IDは長期間維持され、今いる場所から切り離されています。p2pネットワークではデータが主体ですが、このスタックの主体はIDへと移ります。IDは特定のホストやアプリケーションに依存せずに存在し、それらの間を流動的に移動できます。ネットワーク内のデータはこれらのIDが源流となり、IDをデータの集まりに解決する仕組みと、新しいコンテンツが生成された際にリアルタイム更新を受け取る仕組みが明確に定義されています。\n"
+msgstr "IDは長期間維持され、今いる場所から切り離されています。P2Pネットワークではデータが主体ですが、このスタックの主体はIDへと移ります。IDは特定のホストやアプリケーションに依存せずに存在し、それらの間を流動的に移動できます。ネットワーク内のデータはこれらのIDが源流となり、IDをデータの集まりに解決する仕組みと、新しいコンテンツが生成された際にリアルタイム更新を受け取る仕組みが明確に定義されています。\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:96
@@ -415,19 +415,19 @@ msgstr "ウェブでは、やり取りするサービスに対する相当の信
 #: src/articles/atproto-ethos/en.mdx:128
 #, no-wrap
 msgid "P2p networks took a different approach that was radically trust-less. You have to trust your client device of course, but that's it. Because the software runs on your client and the trust is imbued into the data, no trust in any other service or actor in the network is required.\n"
-msgstr "p2pネットワークは、根本的に信頼不要という別のアプローチを取りました。もちろん自分のクライアントデバイスを信頼する必要はありますが、それだけです。ソフトウェアはクライアント上で動作し、信頼がデータに埋め込まれるため、ネットワーク内の他のサービスや主体を信頼する必要がありません。\n"
+msgstr "P2Pネットワークは、根本的に信頼不要という別のアプローチを取りました。もちろん自分のクライアントデバイスを信頼する必要はありますが、それだけです。ソフトウェアはクライアント上で動作し、信頼がデータに埋め込まれるため、ネットワーク内の他のサービスや主体を信頼する必要がありません。\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:130
 #, no-wrap
 msgid "Atproto takes a middle approach that we sometimes refer to as “lazy trust”. Like p2p networks, trust is imbued into the data. However most often when browsing the network, users are seeing computed views not the canonical data. When viewing a timeline for instance, clients are likely not checking the signatures on every post that comes down. This is mitigated by the fact that the canonical data is always at hand. Therefore the service that offers these computed views is *staking its reputation* on every view that it serves. If a service starts serving invalid views, this can be verifiably proven. And since the data is locked open, users can migrate to another service that is better behaved.\n"
-msgstr "atprotoは中間的なアプローチを取り、私たちはこれを「後回し信頼（lazy trust）」と呼ぶことがあります。p2pネットワークと同様に、信頼はデータに埋め込まれています。しかし、ネットワークを閲覧する際にユーザーが見るのは多くの場合、正規データではなく計算済みのビューです。例えばタイムラインを見るとき、クライアントは流れてくるすべての投稿の署名を検証しないでしょう。これは、正規データが常に手元にあることで緩和されます。したがって、これらの計算済みビューを提供するサービスは、提供するすべてのビューに*評判を賭けて*います。サービスが無効なビューを出し始めたら、それを検証できます。しかもデータはオープンなので、ユーザーはより適切な別サービスへ移行できます。\n"
+msgstr "atprotoは中間的なアプローチを取り、私たちはこれを「後回し信頼（lazy trust）」と呼ぶことがあります。P2Pネットワークと同様に、信頼はデータに埋め込まれています。しかし、ネットワークを閲覧する際にユーザーが見るのは多くの場合、正規データではなく計算済みのビューです。例えばタイムラインを見るとき、クライアントは流れてくるすべての投稿の署名を検証しないでしょう。これは、正規データが常に手元にあることで緩和されます。したがって、これらの計算済みビューを提供するサービスは、提供するすべてのビューに*評判を賭けて*います。サービスが無効なビューを出し始めたら、それを検証できます。しかもデータはオープンなので、ユーザーはより適切な別サービスへ移行できます。\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:132
 #, no-wrap
 msgid "As well, unlike p2p networks, users maintain a relationship with a persistent backend (the PDS) that hosts their data and information about their identity. Most notably (while not a hard requirement in atproto), we made the decision to move signing keys up to the backend. This prevents the complex key management UX issues that come with client-side keys. However, there is an obvious loss in user-control by doing so. This is mitigated once again by lazy trust. Trust is moved a layer up into the identity system such that a user can hold a recovery key for their identity that allows them to migrate away from a bad PDS.\n"
-msgstr "また、p2pネットワークと異なり、ユーザーは自分のデータとID情報をホストする永続的なバックエンド（PDS）と関係を持ちます。特に（atprotoで厳密に必須というわけではありませんが）、私たちは署名鍵をバックエンド側へ移す決定をしました。これにより、クライアントが鍵を持つことによる複雑な鍵管理UXの問題を防げます。しかし、その分ユーザーのコントロールが失われるのも事実です。これも後回し信頼で緩和されます。信頼はIDシステムの一段上に移され、ユーザーはIDの復旧鍵を保持でき、それによって不適切なPDSから移行できます。\n"
+msgstr "また、P2Pネットワークと異なり、ユーザーは自分のデータとID情報をホストする永続的なバックエンド（PDS）と関係を持ちます。特に（atprotoで厳密に必須というわけではありませんが）、私たちは署名鍵をバックエンド側へ移す決定をしました。これにより、クライアントが鍵を持つことによる複雑な鍵管理UXの問題を防げます。しかし、その分ユーザーのコントロールが失われるのも事実です。これも後回し信頼で緩和されます。信頼はIDシステムの一段上に移され、ユーザーはIDの復旧鍵を保持でき、それによって不適切なPDSから移行できます。\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:134
@@ -445,7 +445,7 @@ msgstr "これらすべてを踏まえると、プロトコルとネットワー
 #: src/articles/atproto-ethos/en.mdx:140
 #, no-wrap
 msgid "AT Protocol builds on the philosophy of the web with the technology of peer-to-peer protocols and the practices of data-intensive distributed systems. \n"
-msgstr "ATプロトコルは、ウェブの哲学を土台に、p2pプロトコルの技術とデータ指向分散システムの実践を組み合わせて構築されています。 \n"
+msgstr "ATプロトコルは、ウェブの哲学を土台に、P2Pプロトコルの技術とデータ指向分散システムの実践を組み合わせて構築されています。 \n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:142
