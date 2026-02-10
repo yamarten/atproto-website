@@ -3,8 +3,6 @@
 import { useRef } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useCurrentLocale } from 'next-i18n-router/client'
-import i18nConfig from '../../i18nConfig'
 import clsx from 'clsx'
 
 import { useIsInsideMobileNavigation } from '@/components/MobileNavigation'
@@ -147,16 +145,12 @@ function NavigationGroup({
   // The state will still update when we re-open (re-render) the navigation.
   let isInsideMobileNavigation = useIsInsideMobileNavigation()
   let [pathname] = useInitialValue([usePathname()], isInsideMobileNavigation)
-  let locale = useCurrentLocale(i18nConfig)
 
-  function isActiveLink(link: NavLink): boolean {
-    return link.href === pathname || '/' + locale + link.href === pathname
-  }
   // Check if any link or subpage is active
   const activePage = group.links.find((link) => {
-    if (isActiveLink(link)) return true
+    if (link.href === pathname) return true
     if (link.links) {
-      return link.links.some((sublink) => isActiveLink(sublink))
+      return link.links.some((sublink) => sublink.href === pathname)
     }
     return false
   })
@@ -180,7 +174,7 @@ function NavigationGroup({
               <NavLink
                 href={link.href}
                 icon={link.icon}
-                active={isActiveLink(link)}
+                active={link.href === pathname}
                 chevron={
                   hasChildren ? (isExpanded ? 'down' : 'right') : undefined
                 }
@@ -195,7 +189,7 @@ function NavigationGroup({
                       <NavLink
                         href={sublink.href}
                         icon={sublink.icon}
-                        active={isActiveLink(sublink)}
+                        active={sublink.href === pathname}
                         isSubpage
                       >
                         {sublink.title}
