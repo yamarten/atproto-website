@@ -18,7 +18,7 @@ ATプロトコルでは、すぐには馴染みのない用語が多数使用さ
 
 ATプロトコルは、「Authenticated Transfer Protocol」の略です。この名前は、すべてのユーザーデータが作成ユーザーによって署名されているという事実に由来しています。これにより、多くのサービスを通じてデータをブロードキャストし、発信元サーバーと直接通信しなくても、データが本物であることを証明できます。
 
-この名前は、atprotoがソーシャルシステム向けに設計されているため、「@」記号、別名「at」記号をもじったものです。
+この名前は、Atprotoがソーシャルシステム向けに設計されているため、「@」記号、別名「at」記号をもじったものです。
 
 <Heading level={2} id="pds-personal-data-server">PDS（パーソナルデータサーバー）</Heading>
 
@@ -40,7 +40,7 @@ AppViewはウェブ上の検索エンジンに少し似ています。Atmosphere
 
 <Heading level={2} id="lexicon">Lexicon</Heading>
 
-Lexiconはスキーマ言語です。[Atmosphere](#atmosphere)で[データ レコード](#record)とHTTP APIを記述するために使用されます。機能的には、[JSON-Schema](https://json-schema.org/)や[OpenAPI](https://www.openapis.org/)と非常によく似ています。
+Lexiconはスキーマ言語です。[Atmosphere](#atmosphere)で[データレコード](#record)とHTTP APIを記述するために使用されます。機能的には、[JSON-Schema](https://json-schema.org/)や[OpenAPI](https://www.openapis.org/)と非常によく似ています。
 
 Lexiconの唯一の目的は、開発者が互換性のあるソフトウェアを構築できるようにすることです。
 
@@ -49,7 +49,7 @@ Lexiconの唯一の目的は、開発者が互換性のあるソフトウェア�
 
 <Heading level={2} id="data-repo">データリポジトリ</Heading>
 
-「データリポジトリ」または「リポジトリ」は、ユーザーを表すパブリックデータセットです。これは、JSON[レコード](#record)と非構造化[blob](#blob)の[コレクション](#collection)で構成されています。すべてのリポジトリには、それを識別する1つの永続的な[DID](#did-decentralized-id)が割り当てられます。リポジトリには、人間が読める名前として機能する[ドメインハンドル](#handle)をいくつでも持つことができます。
+「データリポジトリ」または「リポジトリ」は、ユーザーを表すパブリックデータセットです。これは、JSON[レコード](#record)と非構造化[blob](#blob)の[コレクション](#collection)で構成されています。すべてのリポジトリには、それを識別する1つの永続的な[DID](#did-decentralized-id)が割り当てられます。リポジトリには、人間が読める名前として機能する[ドメインハンドル](#handle)を1つ持つことができます。
 
 データリポジトリは、署名されたマークルツリーです。その署名は、リポジトリの[did](#did-decentralized-id)で公開された鍵マテリアルに対して検証できます。
 
@@ -58,7 +58,7 @@ Lexiconの唯一の目的は、開発者が互換性のあるソフトウェア�
 
 <Heading level={2} id="collection">コレクション</Heading>
 
-「コレクション」は、[データ リポジトリ](#data-repo)内のJSON[レコード](#record)のバケツです。順序付きリスト操作をサポートします。すべてのコレクションは、[NSID](#nsid-namespace-id)によって識別され、[Lexicon](#lexicon)スキーマにマップされることが想定されています。
+「コレクション」は、[データリポジトリ](#data-repo)内のJSON[レコード](#record)のバケツです。順序付きリスト操作をサポートします。すべてのコレクションは、[NSID](#nsid-namespace-id)によって識別され、[Lexicon](#lexicon)スキーマにマップされることが想定されています。
 
 <Heading level={2} id="record">レコード</Heading>
 
@@ -109,12 +109,12 @@ CIDまたはコンテンツ識別子は、[レコード](#record)の暗号化ハ
 
 <Heading level={2} id="dag-cbor">DAG-CBOR</Heading>
 
-DAG-CBORは、[atproto](#at-protocol)で使用されるシリアル化形式です。暗号検証に重要な信頼性の高い標準形式を提供するため、この形式が選択されました。
+DAG-CBORは、[Atproto](#at-protocol)で使用されるシリアル化形式です。暗号検証に重要な信頼性の高い標準形式を提供するため、この形式が選択されました。
 
 - [データモデル仕様](/specs/data-model)
 
 <Heading level={2} id="xrpc">XRPC</Heading>
 
-XRPCは非推奨の用語ですが、歴史的には[atproto](#at-protocol)のHTTP用法を説明するために使用されていました。これは「Cross-organizational Remote Procedure Calls」の略語ですが、実際にはHTTPを使用しているだけなので、この用語を発明したことを後悔しています。
+XRPCは非推奨の用語ですが、歴史的には[Atproto](#at-protocol)のHTTP用法を説明するために使用されていました。これは「Cross-organizational Remote Procedure Calls」の略語ですが、実際にはHTTPを使用しているだけなので、この用語を発明したことを後悔しています。
 
 - [HTTP API仕様](/specs/xrpc)

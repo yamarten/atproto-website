@@ -67,17 +67,17 @@ export const header = {
     <TabPanel value="go">
     `RepoGetRecord()`を使用して、[`rkey`](/specs/record-key)で個別レコードを読み取ることができます。
     
-  ```go
-  resp, _ := comatproto.RepoGetRecord(ctx, client, 
-      "",                    // cid (empty for latest)
-      "app.bsky.feed.post",  // lexicon
-      "alex.bsky.team",      // handle or DID
-      "3mbl5xdw4yk2r",       // rkey
-  )
+    ```go
+    resp, _ := comatproto.RepoGetRecord(ctx, client, 
+        "",                    // cid (empty for latest)
+        "app.bsky.feed.post",  // lexicon
+        "alex.bsky.team",      // handle or DID
+        "3mbl5xdw4yk2r",       // rkey
+    )
 
-  fmt.Printf("URI: %s\n", resp.Uri)
-  // resp.Valueにレコードデータが含まれています
-  ```
+    fmt.Printf("URI: %s\n", resp.Uri)
+    // resp.Valueにレコードデータが含まれています
+    ```
     </TabPanel>
   </TabPanels>
 </TabGroup>
@@ -132,28 +132,28 @@ const your_did = client.did
     同様のSDKクライアントパターンを使用して、任意のLexiconにAPI呼び出しを行うことができます。その他の例については、[SDKドキュメント](https://www.npmjs.com/package/@atproto/lex)を参照してください。
     </TabPanel>
     <TabPanel value="go">
-```go
-import (
-	"context"
-	appbsky "github.com/bluesky-social/indigo/api/bsky"
-	"github.com/bluesky-social/indigo/xrpc"
-)
+    ```go
+    import (
+        "context"
+        appbsky "github.com/bluesky-social/indigo/api/bsky"
+        "github.com/bluesky-social/indigo/xrpc"
+    )
 
-ctx := context.Background()
+    ctx := context.Background()
 
-client := &xrpc.Client{
-  Host: "https://public.api.bsky.app", // public API endpoint
-}
-```
+    client := &xrpc.Client{
+        Host: "https://public.api.bsky.app", // public API endpoint
+    }
+    ```
 
     認証済みクライアントと同様に、ユーザープロフィールなどの公開レコードを`.get()`できます。
 
     ```go
-profile, _ := appbsky.ActorGetProfile(ctx, client, "alex.bsky.team")
+    profile, _ := appbsky.ActorGetProfile(ctx, client, "alex.bsky.team")
 
-fmt.Printf("Handle: %s\n", profile.Handle)
-fmt.Printf("Display Name: %s\n", *profile.DisplayName)
-fmt.Printf("Followers: %d\n", *profile.FollowersCount)
+    fmt.Printf("Handle: %s\n", profile.Handle)
+    fmt.Printf("Display Name: %s\n", *profile.DisplayName)
+    fmt.Printf("Followers: %d\n", *profile.FollowersCount)
     ```
 
     同様のSDKクライアントパターンを使用して、任意のLexiconにAPI呼び出しを行うことができます。その他の例については、[Go SDKライブラリ](https://pkg.go.dev/github.com/bluesky-social/indigo)を参照してください。
@@ -167,7 +167,7 @@ fmt.Printf("Followers: %d\n", *profile.FollowersCount)
 
 - [読み取りと書き込み](/guides/reads-and-writes)
 - [データ書き込み](/guides/writing-data)
-- [アカウントと削除](/guides/writing-data)
+- [アカウントと削除](/guides/account-lifecycle)
 - [ソーシャルグラフ](/guides/social-graph)
 - [レコードキー仕様](/specs/record-key)
 - [URIスキーム](/specs/at-uri-scheme)

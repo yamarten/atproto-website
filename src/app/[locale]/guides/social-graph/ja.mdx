@@ -7,9 +7,7 @@ export const header = {
 
 <Heading level={2} id="querying-social-graphs">ソーシャルグラフの取得</Heading>
 
-atprotoのHTTP APIメソッドは、それぞれ特定のLexiconセットに対して実装します。例えば、`app.bsky.feed.post`レコードを使用するアプリは、`curl -X POST example.com/xrpc/app.bsky.feed.post -d {post-contents}` のようなアプリケーションエンドポイントも実装することが期待されます。
-
-これは、atprotoアプリに対して行ったすべてのPOSTリクエストが保持され、同じ形式でストリーミングできることも意味します。これにより、開発者はバックエンドの実装について多くの決定を下す必要がなくなりました。これは、ATプロトコル上に構築された新しいアプリケーションが、既存のソーシャルグラフデータ（`app.bsky.graph.getFollows` Lexicon RPC エンドポイントで得られるようなもの）を活用して、新しいユースケースを構築し、既存のユーザーベースでブートストラップできることも意味します。これにより、[A Social Filesystem](https://overreacted.io/a-social-filesystem/)のようなネイティブATプロトコルの概念が得られます。
+ATプロトコル上に構築された新しいアプリケーションは、既存のソーシャルグラフデータ（`app.bsky.graph.getFollows` Lexicon RPCエンドポイントで得られるようなもの）を活用して、新しいユースケースを構築し、既存のユーザーベースでブートストラップできます。これにより、[A Social Filesystem](https://overreacted.io/a-social-filesystem/)のようなネイティブATプロトコルの概念が得られます。
 
 このアプローチの別の例として、[『Exploring AT Protocol with Python」](https://davidgasquez.com/exploring-atproto-python/)も参照してください。
 
@@ -26,6 +24,6 @@ ATプロトコルのレコードは全て誰でも取得可能で、`at://` URI�
 - [読み取りと書き込み](/guides/reads-and-writes)
 - [データ読み取り](/guides/reading-data)
 - [データ書き込み](/guides/writing-data)
-- [アカウントと削除](/guides/writing-data)
+- [アカウントと削除](/guides/account-lifecycle)
 - [レコードキー仕様](/specs/record-key)
 - [URIスキーム](/specs/at-uri-scheme)

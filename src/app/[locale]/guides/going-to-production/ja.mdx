@@ -18,15 +18,15 @@ Atmosphereは分散型として構築されているため、誰もが自分のA
 
 PDSデプロイメントに加えてBluesky以外のアプリを実行している場合、PDSホスティングとアプリには**異なるドメイン名が必要**です。そうしないと、画像や動画のblobがOAuthやセッション管理ページと同じドメイン名から提供されることになります。これは認証情報盗難などのセキュリティ問題につながる可能性があり、サブドメインの使用は実用的ではないことを意味します。
 
-言い換えれば、[https://greensky.app](https://greensky.app/)にアプリがある場合、[https://pds.greensky.app](https://pds.greensky.app/)をPDSホスト名として使用するのではなく、[https://greensky-pds.net](https://greensky-pds.net/)のようなものを使用する必要があります。[https://pds.greensky.social](https://pds.eurosky.social/)を使用した場合（理にかなっているでしょう）、将来[https://chat.greensky.social](https://chat.eurosky.social/)にOAuthクライアントアプリを置くことができなくなります。しかし、[https://chat.greensky.app](https://chat.eurosky.app/)のようにすることはできます。
+言い換えれば、`https://greensky.app`にアプリがある場合、`https://pds.greensky.app`をPDSホスト名として使用するのではなく、`https://greensky-pds.net`のようなものを使用する必要があります。`https://pds.greensky.social`を使用した場合（一見理にかなっています）、将来`https://chat.greensky.social`にOAuthクライアントアプリを置くことができなくなります。しかし、`https://chat.greensky.app`のようにすることはできます。
 
 PDSはデフォルトで制限的なCORSヘッダーを持っています。 
 
-アクティブなアカウントを持つようになると、PDSホスト名の変更は困難です。すべてのアカウントを個別に移行する必要があります。これはPLCローテーション鍵を使えば間違いなく可能ですが、移行は簡単ではありません。また、PDSはユーザーがパスワードを入力するドメインである（したがってパスワードマネージャーで記憶される）ことに注意してください。
+アクティブなアカウントを持つようになると、PDSホスト名の変更は困難です。すべてのアカウントを個別に移行する必要があります。これは[PLCローテーション鍵](https://web.plc.directory/spec/v0.1/did-plc)を使えば間違いなく可能ですが、移行は簡単ではありません。また、PDSはユーザーがパスワードを入力するドメインである（したがってパスワードマネージャーで記憶される）ことに注意してください。
 
 <Heading level={2} id="backup-and-recovery">バックアップと復旧</Heading>
 
-公式の[PDSインストールスクリプト](https://github.com/bluesky-social/pds)はSQLiteをデータベースバックエンドとして構成します。具体的には、各ユーザーのデータリポジトリに対して1つのSQLite DBを使用し、PDS全体のデータ用にいくつかのDBを使用します。SQLiteにはボックスの外からバックアップまたはレプリケーションを処理するメカニズムがないため、これは驚くかもしれませんが、SQLiteは追加のツールを使用すると[非常にうまくスケール](https://fly.io/blog/sqlite-internals-rollback-journal/)する事例が増えています。
+公式の[PDSインストールスクリプト](https://github.com/bluesky-social/pds)はSQLiteをデータベースバックエンドとして構成します。具体的には、各ユーザーの[データリポジトリ](https://atproto.com/guides/data-repos)に対して1つのSQLite DBを使用し、PDS全体のデータ用にいくつかのDBを使用します。SQLiteにはボックスの外からバックアップまたはレプリケーションを処理するメカニズムがないため、これは驚くかもしれませんが、SQLiteは追加のツールを使用すると[非常にうまくスケール](https://fly.io/blog/sqlite-internals-rollback-journal/)する事例が増えています。
 
 秘訣は[Litestream](https://fly.io/blog/litestream-v050-is-here/)です。これはまさしく[SQLiteのバックアップと復旧](https://github.com/benbjohnson/litestream)を行います。Litestreamで復旧可能でスケーラブルなPDS SQLiteデプロイメントを取得するには、以下をお勧めします。
 

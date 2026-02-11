@@ -20,11 +20,11 @@ const { data } = await agent.uploadBlob(convertDataURIToUint8Array(image), {
 
 この`data`オブジェクトは別のレコードで参照できます。例えば`embed`として使用できます。
 
-チャンク転送エンコーディングによるアップロードも許可されている場合があります。サーバーはblobのmimetypeをスニッフィングして宣言された **`Content-Type`** ヘッダーに対して検証し、レスポンスで修正されたmimetypeを返すか、アップロードを拒否する場合があります。以下の『セキュリティに関する考慮事項』を参照してください。実際のblobアップロードサイズが **`Content-Length`** ヘッダーと異なる場合、サーバーはアップロードを拒否します。
+チャンク転送エンコーディングによるアップロードも許可されている場合があります。サーバーはblobのmimetypeをスニッフィングして宣言された **`Content-Type`** ヘッダーに対して検証し、レスポンスで修正されたmimetypeを返すか、アップロードを拒否する場合があります。[『Security Considerations』](/specs/blob#security-considerations)を参照してください。実際のblobアップロードサイズが **`Content-Length`** ヘッダーと異なる場合、サーバーはアップロードを拒否します。
 
 <Heading level={2} id="garbage-collection">ガベージコレクション</Heading>
 
-アップロードに成功した後、blobは一時ストレージに配置されます。この状態では、ダウンロードや配送はできません。サーバーは適切な時間経過後に、参照されていない一時blobをガベージコレクション（削除）すべきです（後述の実装ガイドラインを参照）。一時ストレージのblobは **`listBlobs`** の出力に含められません。
+アップロードに成功した後、blobは一時ストレージに配置されます。この状態では、ダウンロードや配送はできません。サーバーは適切な時間経過後に、参照されていない一時blobをガベージコレクション（削除）すべきです（[実装ガイドライン](#web-accessibility)を参照）。一時ストレージのblobは **`listBlobs`** の出力に含められません。
 
 <Heading level={2} id="referencing-blobs">blobの参照</Heading>
 
@@ -56,4 +56,4 @@ blobを参照するレコードが削除されると、サーバーは同じリ�
 - [blobのセキュリティ](/guides/blob-security)
 - [動画の取り扱い](/guides/video-handling)
 - [blob仕様](/specs/blob)
-- [Streamplace](https://stream.place/docs/)はatproto上の動画ストリーミングの実装および関連Lexiconを提供します。
+- [Streamplace](https://stream.place/docs/)はAtproto上の動画ストリーミングの実装および関連Lexiconを提供します。

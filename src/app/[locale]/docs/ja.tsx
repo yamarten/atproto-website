@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { OutlineIconEnum, Icon } from '@/components/icons/outline'
 
 export const header = {
-  title: 'まずは作ろう',
+  title: 'さあ、作ろう',
   description:
     '相互運用可能な大規模ソーシャルアプリケーションを作成しましょう',
   primaryCTA: {

@@ -53,7 +53,7 @@ client.clearLabelers()
 
 ラベラーに報告を送信するには、`com.atproto.moderation.createReport`を使用します。ユーザーはどのラベラーにでも報告を送信できます。
 
-どのラベラーがラベルを受け取るべきかを指定するには、ラベラーのDIDと`atproto_labeler`サービスキーを`atproto-proxy`ヘッダーを設定します。TypeScript SDKでは、次のようになります。
+どのラベラーが報告を受け取るべきかを指定するには、ラベラーのDIDと`atproto_labeler`サービスキーを`atproto-proxy`ヘッダーを設定します。TypeScript SDKでは、次のようになります。
 
 ```typescript
 import { AtpAgent } from '@atproto/api'

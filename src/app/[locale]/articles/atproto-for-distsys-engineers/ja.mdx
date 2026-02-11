@@ -27,9 +27,10 @@ import image23 from "./image23.png"
 import image24 from './image24.png'
 
 export const header = {
-  title: '分散システムエンジニアのためのatproto',
+  title: '分散システムエンジニアのためのAtproto',
   description:
-    'この記事では、分散バックエンドエンジニアリングの観点からatprotoについて説明します。',
+    'この記事では、分散バックエンドエンジニアリングの観点からAtprotoについて説明します。',
+  date: '2024年9月3日',
 }
 
 [ストリーム処理](https://milinda.pathirage.org/kappa-architecture.com/)を使用してバックエンドを構築したことがある場合は、これから説明する種類のシステムに精通していることになります。そうでない場合も心配しないでください。順を追って説明します。{{className: 'lead'}}
@@ -54,7 +55,7 @@ export const header = {
   <Image src={image3} alt="" className="w-full dark:invert max-w-xl mx-auto" />
 </Container>
 
-これはかなり良いですが、何億人ものユーザーを抱えるソーシャルネットワークを構築しているため、このモデルでも限界に達します。問題は、SQLデータベースが[強い一貫性](https://en.wikipedia.org/wiki/Strong_consistency)を持つことです。つまり、状態はシステム全体で均一に同期されています。強い一貫性を維持するとパフォーマンス コストが発生し、それがボトルネックになります。 
+これはかなり良いですが、何億人ものユーザーを抱えるソーシャルネットワークを構築しているため、このモデルでも限界に達します。問題は、SQLデータベースが[強い一貫性](https://en.wikipedia.org/wiki/Strong_consistency)を持つことです。つまり、状態はシステム全体で均一に同期されています。強い一貫性を維持するとパフォーマンスコストが発生し、それがボトルネックになります。 
 
 システムを緩和して[結果整合性](https://en.wikipedia.org/wiki/Eventual_consistency)を使用できれば、さらに拡張できます。まず、NoSQLクラスターに切り替えます。
 
@@ -222,6 +223,6 @@ ATプロトコルの目標は、アプリケーションを相互接続して、
 
 ATプロトコルは、P2Pテクノロジーと大規模システムの実践を融合します。当社の創設エンジニアは、[IPFS](https://en.wikipedia.org/wiki/InterPlanetary_File_System)および[Dat](https://en.wikipedia.org/wiki/Dat_(software))のコアエンジニアであり、[Data Intensive Applications](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/)の著者であるMartin Kleppmannは、アクティブな技術アドバイザーです。
 
-Blueskyを始める前に、私たちは「後退しない」という明確な要件を設定しました。ネットワークが、これまでのすべてのソーシャルアプリと同様に便利でグローバルでありながら、オープンネットワークとして機能することを望んでいました。そのため、フェデレーションとブロックチェーンを検討したときに、これらのアーキテクチャのスケーリングの限界が際立っていました。私たちの解決策は、大規模なバックエンドの標準的な方法を採用し、ピアツーピア システムで使用した手法を適用してオープンネットワークを作成することでした。
+Blueskyを始める前に、私たちは「後退しない」という明確な要件を設定しました。ネットワークが、これまでのすべてのソーシャルアプリと同様に便利でグローバルでありながら、オープンネットワークとして機能することを望んでいました。そのため、フェデレーションとブロックチェーンを検討したときに、これらのアーキテクチャのスケーリングの限界が際立っていました。私たちの解決策は、大規模なバックエンドの標準的な方法を採用し、ピアツーピアシステムで使用した手法を適用してオープンネットワークを作成することでした。
 
-<FooterCTA href="/" title="さらに学習する準備はできましたか？" description="仕様、ガイド、SDK はここにあります。" />
+<FooterCTA href="/" title="さらに学習する準備はできましたか？" description="仕様、ガイド、SDKはここにあります。" />
