@@ -1115,8 +1115,8 @@ websocat ws://localhost:2480/channel</seg>
       <tuv lang="en-US">
         <seg>## OAuth with NextJS</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260211T042823Z" creationid="yamarten" creationdate="20260208T094002Z">
-        <seg>&lt;Heading level={2} id="oauth-with-nextjs"&gt;OAuth with NextJS/Heading&gt;</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T060627Z" creationid="yamarten" creationdate="20260208T094002Z">
+        <seg>&lt;Heading level={2} id="oauth-with-nextjs"&gt;OAuth with NextJS&lt;/Heading&gt;</seg>
       </tuv>
     </tu>
     <tu>

@@ -92,7 +92,7 @@ msgstr "[**カスタムフィードチュートリアル**](/guides/custom-feed-
 #: src/guides/tutorials/en.mdx:25
 #, no-wrap
 msgid "## OAuth with NextJS\n"
-msgstr "<Heading level={2} id=\"oauth-with-nextjs\">OAuth with NextJS/Heading>\n"
+msgstr "<Heading level={2} id=\"oauth-with-nextjs\">OAuth with NextJS</Heading>\n"
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:27
