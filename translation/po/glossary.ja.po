@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"POT-Creation-Date: 2026-02-11 10:36+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -166,8 +166,9 @@ msgstr "<Heading level={2} id=\"data-repo\">データリポジトリ</Heading>\n
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:51
-#, no-wrap
-msgid "The \"data repository\" or \"repo\" is the public dataset which represents a user. It is comprised of [collections](#collection) of JSON [records](#record) and unstructured [blobs](#blob). Every repo is assigned a single permanent [DID](#did-decentralized-id) which identifies it. Repos may also have any number of [domain handles](#handle) which act as human-readable names.\n"
+#, fuzzy, no-wrap
+#| msgid "The \"data repository\" or \"repo\" is the public dataset which represents a user. It is comprised of [collections](#collection) of JSON [records](#record) and unstructured [blobs](#blob). Every repo is assigned a single permanent [DID](#did-decentralized-id) which identifies it. Repos may also have any number of [domain handles](#handle) which act as human-readable names.\n"
+msgid "The \"data repository\" or \"repo\" is the public dataset which represents a user. It is comprised of [collections](#collection) of JSON [records](#record) and unstructured [blobs](#blob). Every repo is assigned a single permanent [DID](#did-decentralized-id) which identifies it. Repos may also have a single [domain handle](#handle) which act as human-readable names.\n"
 msgstr "「データリポジトリ」または「リポジトリ」は、ユーザーを表すパブリックデータセットです。これは、JSON[レコード](#record)と非構造化[blob](#blob)の[コレクション](#collection)で構成されています。すべてのリポジトリには、それを識別する1つの永続的な[DID](#did-decentralized-id)が割り当てられます。リポジトリには、人間が読める名前として機能する[ドメインハンドル](#handle)をいくつでも持つことができます。\n"
 
 #. type: Plain text

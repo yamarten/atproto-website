@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-07 17:03+0900\n"
+"POT-Creation-Date: 2026-02-11 10:36+0900\n"
 "PO-Revision-Date: 2026-01-07 19:40+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -27,7 +27,7 @@ msgstr ""
 #: src/guides/sdk-auth/en.mdx:145 src/guides/sync/en.mdx:51
 #: src/guides/auth/en.mdx:41 src/guides/lexicon/en.mdx:128
 #: src/guides/publishing-lexicons/en.mdx:49 src/guides/backfilling/en.mdx:60
-#: src/guides/reading-data/en.mdx:165 src/guides/social-graph/en.mdx:23
+#: src/guides/reading-data/en.mdx:165 src/guides/social-graph/en.mdx:21
 #: src/guides/permission-sets/en.mdx:214 src/guides/using-ozone/en.mdx:132
 #, no-wrap
 msgid "## Further Reading and Resources\n"
@@ -141,8 +141,9 @@ msgstr "<Heading level={2} id=\"password-authentication\">パスワード認証<
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:42
-#, no-wrap
-msgid "If you are using password auth, you should generate an [app password](/specs/xrpc#app-passwords) for your account rather than using your main account password. If you are using Bluesky as an auth provider, you can generate an app password in your [account settings](https://bsky.app/settings/app-passwords).\n"
+#, fuzzy, no-wrap
+#| msgid "If you are using password auth, you should generate an [app password](/specs/xrpc#app-passwords) for your account rather than using your main account password. If you are using Bluesky as an auth provider, you can generate an app password in your [account settings](https://bsky.app/settings/app-passwords).\n"
+msgid "If you are using password auth, you should generate an [app password](/specs/xrpc#app-passwords) for your account rather than using your main account password. If you are using Bluesky, you can generate an app password in your [account settings](https://bsky.app/settings/app-passwords).\n"
 msgstr "パスワード認証を使用している場合は、メインのアカウントパスワードではなく[アプリパスワード](/specs/xrpc#app-passwords)を生成するべきです。Blueskyを認証プロバイダとして使用している場合は、[アカウント設定](https://bsky.app/settings/app-passwords)でアプリパスワードを生成できます。\n"
 
 #. type: Plain text

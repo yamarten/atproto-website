@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-07 17:03+0900\n"
+"POT-Creation-Date: 2026-02-11 10:36+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -159,7 +159,7 @@ msgstr ""
 #. type: Plain text
 #: src/guides/oauth-tutorial/en.mdx:53
 #, no-wrap
-msgid "Navigate to your app in a browser at [http://127.0.0.1:3000]([http://127.0.0.1:3000]).\n"
+msgid "Navigate to your app in a browser at [http://127.0.0.1:3000](http://127.0.0.1:3000).\n"
 msgstr ""
 
 #. type: Plain text
@@ -899,7 +899,7 @@ msgstr ""
 #, no-wrap
 msgid ""
 "Then:\n"
-"1. Navigate to your app in a browser at [http://127.0.0.1:3000]([http://127.0.0.1:3000]).\n"
+"1. Navigate to your app in a browser at [http://127.0.0.1:3000](http://127.0.0.1:3000).\n"
 "2. Enter your handle\n"
 "3. Authorize the app\n"
 "4. You should see \"Authentication working!\" with your DID:\n"

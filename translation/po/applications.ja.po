@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"POT-Creation-Date: 2026-02-11 10:36+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1644,9 +1644,14 @@ msgstr "アプリを構築するときは、次の4つの重要な手順につ�
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:661
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "- Design the [Lexicon](#) schemas for the records you'll publish into the Atmosphere.\n"
+#| "- Create a database for aggregating the records into useful views.\n"
+#| "- Build your application to write the records on your users' repos.\n"
+#| "- Listen to the firehose to aggregate data across the network.\n"
 msgid ""
-"- Design the [Lexicon](#) schemas for the records you'll publish into the Atmosphere.\n"
+"- Design the [Lexicon](https://atproto.com/guides/lexicon) schemas for the records you'll publish into the Atmosphere.\n"
 "- Create a database for aggregating the records into useful views.\n"
 "- Build your application to write the records on your users' repos.\n"
 "- Listen to the firehose to aggregate data across the network.\n"
@@ -1696,7 +1701,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:677 src/articles/atproto-ethos/en.mdx:147
-#: src/articles/atproto-for-distsys-engineers/en.mdx:232
+#: src/articles/atproto-for-distsys-engineers/en.mdx:227
 #, no-wrap
 msgid "<FooterCTA href=\"/\" title=\"Ready to learn more?\" description=\"Specs, guides, and SDKs can be found here.\" />\n"
 msgstr "<FooterCTA href=\"/\" title=\"さらに学習する準備はできましたか？\" description=\"仕様、ガイド、SDK はここにあります。\" />\n"

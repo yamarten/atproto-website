@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"POT-Creation-Date: 2026-02-11 10:36+0900\n"
 "PO-Revision-Date: 2026-01-07 19:40+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -118,11 +118,16 @@ msgstr "<Heading level={2} id=\"account-deletion\">アカウント削除</Headin
 
 #. type: Plain text
 #: src/guides/account-lifecycle/en.mdx:40
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "- PDS emits an `#account` event, with `active` false and status `deleted`.\n"
+#| "- Relay updates local account status for the repo, and passes through the `#account` event. If the Relay is a full mirror, it immediately stops serving `getRepo`, `getRecord`, and similar API requests for the account, indicating the reason in the response error. The Relay may fully delete repo content locally according to local policy. The firehose backfill window does not need to be immediately purged of commit events for the repo, as long as the backfill window is time-limited.\n"
+#| "- the PDS should not emit `#commit` events for an account which is not \"active'. If any further `#commit` messages are emitted for the repo (eg, by accident or out-of-order processing or delivery), all downstream services should ignore the event and not pass it through\n"
+#| "- downstream services (eg, AppView) **should** immediately stop serving/distributing content for the account. They *may* defer permanent data deletion according to local policy. Updating aggregations (eg, record counts) may also be deferred or processed in a background queue according to policy and implementation. Error status messages may indicate either that the content is \"gone\" (existed, but no longer available), or that content is \"not found\" (not revealing that content existed previously)\n"
 msgid ""
 "- PDS emits an `#account` event, with `active` false and status `deleted`.\n"
 "- Relay updates local account status for the repo, and passes through the `#account` event. If the Relay is a full mirror, it immediately stops serving `getRepo`, `getRecord`, and similar API requests for the account, indicating the reason in the response error. The Relay may fully delete repo content locally according to local policy. The firehose backfill window does not need to be immediately purged of commit events for the repo, as long as the backfill window is time-limited.\n"
-"- the PDS should not emit `#commit` events for an account which is not \"active'. If any further `#commit` messages are emitted for the repo (eg, by accident or out-of-order processing or delivery), all downstream services should ignore the event and not pass it through\n"
+"- the PDS should not emit `#commit` events for an account which is not \"active\". If any further `#commit` messages are emitted for the repo (eg, by accident or out-of-order processing or delivery), all downstream services should ignore the event and not pass it through\n"
 "- downstream services (eg, AppView) **should** immediately stop serving/distributing content for the account. They *may* defer permanent data deletion according to local policy. Updating aggregations (eg, record counts) may also be deferred or processed in a background queue according to policy and implementation. Error status messages may indicate either that the content is \"gone\" (existed, but no longer available), or that content is \"not found\" (not revealing that content existed previously)\n"
 msgstr ""
 "- PDSは`#account`イベントを`active`がfalseかつ`deleted`状態で送信します。\n"
@@ -198,17 +203,17 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:21
-#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:64
+#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:73
 #: src/guides/streaming-data/en.mdx:60 src/guides/video-handling/en.mdx:39
-#: src/guides/account-migration/en.mdx:74 src/guides/feeds/en.mdx:105
-#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:52
-#: src/guides/scopes/en.mdx:45 src/guides/subscriptions/en.mdx:78
-#: src/guides/writing-data/en.mdx:181 src/guides/creating-a-labeler/en.mdx:56
-#: src/guides/labels/en.mdx:110 src/guides/sdk-auth/en.mdx:145
-#: src/guides/sync/en.mdx:51 src/guides/auth/en.mdx:41
-#: src/guides/lexicon/en.mdx:128 src/guides/publishing-lexicons/en.mdx:53
-#: src/guides/backfilling/en.mdx:60 src/guides/reading-data/en.mdx:165
-#: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
+#: src/guides/feeds/en.mdx:113 src/guides/installing-lexicons/en.mdx:53
+#: src/guides/oauth-patterns/en.mdx:56 src/guides/scopes/en.mdx:45
+#: src/guides/subscriptions/en.mdx:78 src/guides/writing-data/en.mdx:181
+#: src/guides/creating-a-labeler/en.mdx:56 src/guides/labels/en.mdx:110
+#: src/guides/sdk-auth/en.mdx:145 src/guides/sync/en.mdx:51
+#: src/guides/auth/en.mdx:41 src/guides/lexicon/en.mdx:128
+#: src/guides/publishing-lexicons/en.mdx:49 src/guides/backfilling/en.mdx:60
+#: src/guides/reading-data/en.mdx:165 src/guides/social-graph/en.mdx:21
+#: src/guides/permission-sets/en.mdx:214 src/guides/using-ozone/en.mdx:132
 #, no-wrap
 msgid "## Further Reading and Resources\n"
 msgstr "<Heading level={2} id=\"further-reading-and-resources\">関連・参考資料</Heading>\n"

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-07 17:03+0900\n"
+"POT-Creation-Date: 2026-02-11 10:36+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgstr ""
 #: src/guides/sdk-auth/en.mdx:145 src/guides/sync/en.mdx:51
 #: src/guides/auth/en.mdx:41 src/guides/lexicon/en.mdx:128
 #: src/guides/publishing-lexicons/en.mdx:49 src/guides/backfilling/en.mdx:60
-#: src/guides/reading-data/en.mdx:165 src/guides/social-graph/en.mdx:23
+#: src/guides/reading-data/en.mdx:165 src/guides/social-graph/en.mdx:21
 #: src/guides/permission-sets/en.mdx:214 src/guides/using-ozone/en.mdx:132
 #, no-wrap
 msgid "## Further Reading and Resources\n"
@@ -76,7 +76,7 @@ msgstr ""
 #. type: Plain text
 #: src/guides/permission-sets/en.mdx:20
 #, no-wrap
-msgid "In general, it is best to use existing permission sets for cleaner UI, but you can also request individual permissions and define your own permission sets as needed. Refer to the [for users](#for-users) section for how these requests appear in the OAuth flow.\n"
+msgid "In general, it is best to use existing permission sets for cleaner UI, but you can also request individual permissions and define your own permission sets as needed. Refer to the [OAuth flow examples](#oauth-flow-examples) section for how these requests appear in the OAuth flow.\n"
 msgstr ""
 
 #. type: Plain text
@@ -276,7 +276,7 @@ msgstr ""
 #. type: Plain text
 #: src/guides/permission-sets/en.mdx:116
 #, no-wrap
-msgid "The `title` and `details` fields are descriptive, and will be displayed as part of the OAuth flow; see the [for users](#for-users) section for an example. Internationalization of these descriptive fields is supported — refer to [the permission sets spec](/specs/permission#permission-sets).\n"
+msgid "The `title` and `details` fields are descriptive, and will be displayed as part of the OAuth flow; see the [OAuth flow examples](#oauth-flow-examples) section for an example. Internationalization of these descriptive fields is supported — refer to [the permission sets spec](/specs/permission#permission-sets).\n"
 msgstr ""
 
 #. type: Plain text

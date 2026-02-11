@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-07 17:03+0900\n"
+"POT-Creation-Date: 2026-02-11 10:36+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -115,7 +115,7 @@ msgstr ""
 #. type: Plain text
 #: src/guides/custom-feed-tutorial/en.mdx:12
 #, no-wrap
-msgid "In this tutorial, you'll create a custom feed server by consuming posts from the [firehose](http://localhost:3000/guides/streaming-data), algorithmically sorting them, and [broadcasting them as an XRPC feed](/guides/feeds).\n"
+msgid "In this tutorial, you'll create a custom feed server by consuming posts from the [firehose](/guides/streaming-data), algorithmically sorting them, and [broadcasting them as an XRPC feed](/guides/feeds).\n"
 msgstr ""
 
 #. type: Plain text

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"POT-Creation-Date: 2026-02-11 10:36+0900\n"
 "PO-Revision-Date: 2026-01-07 19:40+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -18,17 +18,17 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:21
-#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:64
+#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:73
 #: src/guides/streaming-data/en.mdx:60 src/guides/video-handling/en.mdx:39
-#: src/guides/account-migration/en.mdx:74 src/guides/feeds/en.mdx:105
-#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:52
-#: src/guides/scopes/en.mdx:45 src/guides/subscriptions/en.mdx:78
-#: src/guides/writing-data/en.mdx:181 src/guides/creating-a-labeler/en.mdx:56
-#: src/guides/labels/en.mdx:110 src/guides/sdk-auth/en.mdx:145
-#: src/guides/sync/en.mdx:51 src/guides/auth/en.mdx:41
-#: src/guides/lexicon/en.mdx:128 src/guides/publishing-lexicons/en.mdx:53
-#: src/guides/backfilling/en.mdx:60 src/guides/reading-data/en.mdx:165
-#: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
+#: src/guides/feeds/en.mdx:113 src/guides/installing-lexicons/en.mdx:53
+#: src/guides/oauth-patterns/en.mdx:56 src/guides/scopes/en.mdx:45
+#: src/guides/subscriptions/en.mdx:78 src/guides/writing-data/en.mdx:181
+#: src/guides/creating-a-labeler/en.mdx:56 src/guides/labels/en.mdx:110
+#: src/guides/sdk-auth/en.mdx:145 src/guides/sync/en.mdx:51
+#: src/guides/auth/en.mdx:41 src/guides/lexicon/en.mdx:128
+#: src/guides/publishing-lexicons/en.mdx:49 src/guides/backfilling/en.mdx:60
+#: src/guides/reading-data/en.mdx:165 src/guides/social-graph/en.mdx:21
+#: src/guides/permission-sets/en.mdx:214 src/guides/using-ozone/en.mdx:132
 #, no-wrap
 msgid "## Further Reading and Resources\n"
 msgstr "<Heading level={2} id=\"further-reading-and-resources\">関連・参考資料</Heading>\n"
@@ -209,15 +209,23 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:75
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "  ```go\n"
+#| "  resp, _ := comatproto.RepoGetRecord(ctx, client, \n"
+#| "      \"\",                    // cid (empty for latest)\n"
+#| "      \"app.bsky.feed.post\",  // lexicon\n"
+#| "      \"alex.bsky.team\",      // handle or DID\n"
+#| "      \"3mbl5xdw4yk2r\",       // rkey\n"
+#| "  )\n"
 msgid ""
-"  ```go\n"
-"  resp, _ := comatproto.RepoGetRecord(ctx, client, \n"
-"      \"\",                    // cid (empty for latest)\n"
-"      \"app.bsky.feed.post\",  // lexicon\n"
-"      \"alex.bsky.team\",      // handle or DID\n"
-"      \"3mbl5xdw4yk2r\",       // rkey\n"
-"  )\n"
+"    ```go\n"
+"    resp, _ := comatproto.RepoGetRecord(ctx, client, \n"
+"        \"\",                    // cid (empty for latest)\n"
+"        \"app.bsky.feed.post\",  // lexicon\n"
+"        \"alex.bsky.team\",      // handle or DID\n"
+"        \"3mbl5xdw4yk2r\",       // rkey\n"
+"    )\n"
 msgstr ""
 "  ```go\n"
 "  resp, _ := comatproto.RepoGetRecord(ctx, client, \n"
@@ -229,11 +237,18 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:82
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "  fmt.Printf(\"URI: %s\\n\", resp.Uri)\n"
+#| "  // resp.Value contains the record data\n"
+#| "  ```\n"
+#| "    </TabPanel>\n"
+#| "  </TabPanels>\n"
+#| "</TabGroup>\n"
 msgid ""
-"  fmt.Printf(\"URI: %s\\n\", resp.Uri)\n"
-"  // resp.Value contains the record data\n"
-"  ```\n"
+"    fmt.Printf(\"URI: %s\\n\", resp.Uri)\n"
+"    // resp.Value contains the record data\n"
+"    ```\n"
 "    </TabPanel>\n"
 "  </TabPanels>\n"
 "</TabGroup>\n"
@@ -377,17 +392,27 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:139
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "    You can make API calls to any Lexicon using the same SDK client pattern. For more examples, refer to [the SDK documentation](https://www.npmjs.com/package/@atproto/lex).\n"
+#| "    </TabPanel>\n"
+#| "    <TabPanel value=\"go\">\n"
+#| "```go\n"
+#| "import (\n"
+#| "\t\"context\"\n"
+#| "\tappbsky \"github.com/bluesky-social/indigo/api/bsky\"\n"
+#| "\t\"github.com/bluesky-social/indigo/xrpc\"\n"
+#| ")\n"
 msgid ""
 "    You can make API calls to any Lexicon using the same SDK client pattern. For more examples, refer to [the SDK documentation](https://www.npmjs.com/package/@atproto/lex).\n"
 "    </TabPanel>\n"
 "    <TabPanel value=\"go\">\n"
-"```go\n"
-"import (\n"
-"\t\"context\"\n"
-"\tappbsky \"github.com/bluesky-social/indigo/api/bsky\"\n"
-"\t\"github.com/bluesky-social/indigo/xrpc\"\n"
-")\n"
+"    ```go\n"
+"    import (\n"
+"        \"context\"\n"
+"        appbsky \"github.com/bluesky-social/indigo/api/bsky\"\n"
+"        \"github.com/bluesky-social/indigo/xrpc\"\n"
+"    )\n"
 msgstr ""
 "    同様のSDKクライアントパターンを使用して、任意のLexiconにAPI呼び出しを行うことができます。その他の例については、[SDKドキュメント](https://www.npmjs.com/package/@atproto/lex)を参照してください。\n"
 "    </TabPanel>\n"
@@ -401,18 +426,24 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:141
-#, no-wrap
-msgid "ctx := context.Background()\n"
+#, fuzzy, no-wrap
+#| msgid "ctx := context.Background()\n"
+msgid "    ctx := context.Background()\n"
 msgstr "ctx := context.Background()\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:146
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "client := &xrpc.Client{\n"
+#| "  Host: \"https://public.api.bsky.app\", // public API endpoint\n"
+#| "}\n"
+#| "```\n"
 msgid ""
-"client := &xrpc.Client{\n"
-"  Host: \"https://public.api.bsky.app\", // public API endpoint\n"
-"}\n"
-"```\n"
+"    client := &xrpc.Client{\n"
+"        Host: \"https://public.api.bsky.app\", // public API endpoint\n"
+"    }\n"
+"    ```\n"
 msgstr ""
 "client := &xrpc.Client{\n"
 "  Host: \"https://public.api.bsky.app\", // public API endpoint\n"
@@ -421,21 +452,29 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:151
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "    ```go\n"
+#| "profile, _ := appbsky.ActorGetProfile(ctx, client, \"alex.bsky.team\")\n"
 msgid ""
 "    ```go\n"
-"profile, _ := appbsky.ActorGetProfile(ctx, client, \"alex.bsky.team\")\n"
+"    profile, _ := appbsky.ActorGetProfile(ctx, client, \"alex.bsky.team\")\n"
 msgstr ""
 "    ```go\n"
 "profile, _ := appbsky.ActorGetProfile(ctx, client, \"alex.bsky.team\")\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:156
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "fmt.Printf(\"Handle: %s\\n\", profile.Handle)\n"
+#| "fmt.Printf(\"Display Name: %s\\n\", *profile.DisplayName)\n"
+#| "fmt.Printf(\"Followers: %d\\n\", *profile.FollowersCount)\n"
+#| "    ```\n"
 msgid ""
-"fmt.Printf(\"Handle: %s\\n\", profile.Handle)\n"
-"fmt.Printf(\"Display Name: %s\\n\", *profile.DisplayName)\n"
-"fmt.Printf(\"Followers: %d\\n\", *profile.FollowersCount)\n"
+"    fmt.Printf(\"Handle: %s\\n\", profile.Handle)\n"
+"    fmt.Printf(\"Display Name: %s\\n\", *profile.DisplayName)\n"
+"    fmt.Printf(\"Followers: %d\\n\", *profile.FollowersCount)\n"
 "    ```\n"
 msgstr ""
 "fmt.Printf(\"Handle: %s\\n\", profile.Handle)\n"
@@ -465,11 +504,18 @@ msgstr "次は、ユーザーのデータリポジトリに[書き込み](/guide
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:171
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "- [Reads and Writes](/guides/reads-and-writes)\n"
+#| "- [Writing data](/guides/writing-data)\n"
+#| "- [Accounts and deletions](/guides/writing-data)\n"
+#| "- [Social graph](/guides/social-graph)\n"
+#| "- [Record Key spec](/specs/record-key)\n"
+#| "- [URI scheme](/specs/at-uri-scheme)\n"
 msgid ""
 "- [Reads and Writes](/guides/reads-and-writes)\n"
 "- [Writing data](/guides/writing-data)\n"
-"- [Accounts and deletions](/guides/writing-data)\n"
+"- [Accounts and deletions](/guides/account-lifecycle)\n"
 "- [Social graph](/guides/social-graph)\n"
 "- [Record Key spec](/specs/record-key)\n"
 "- [URI scheme](/specs/at-uri-scheme)\n"

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-07 17:03+0900\n"
+"POT-Creation-Date: 2026-02-11 10:36+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgstr ""
 #: src/guides/sdk-auth/en.mdx:145 src/guides/sync/en.mdx:51
 #: src/guides/auth/en.mdx:41 src/guides/lexicon/en.mdx:128
 #: src/guides/publishing-lexicons/en.mdx:49 src/guides/backfilling/en.mdx:60
-#: src/guides/reading-data/en.mdx:165 src/guides/social-graph/en.mdx:23
+#: src/guides/reading-data/en.mdx:165 src/guides/social-graph/en.mdx:21
 #: src/guides/permission-sets/en.mdx:214 src/guides/using-ozone/en.mdx:132
 #, no-wrap
 msgid "## Further Reading and Resources\n"
@@ -141,22 +141,22 @@ msgid ""
 "    This will give you access to the API methods for your Lexicons. Now you are ready to start [making requests](/guides/reading-data)!\n"
 "    </TabPanel>\n"
 "    <TabPanel value=\"go\">\n"
-"  ```go\n"
-"  import (\n"
-"    \"context\"\n"
-"    appbsky \"github.com/bluesky-social/indigo/api/bsky\"\n"
-"    comatproto \"github.com/bluesky-social/indigo/api/atproto\"\n"
-"    lexutil \"github.com/bluesky-social/indigo/lex/util\"\n"
-"    \"github.com/bluesky-social/indigo/xrpc\"\n"
-"  )\n"
+"    ```go\n"
+"    import (\n"
+"      \"context\"\n"
+"      appbsky \"github.com/bluesky-social/indigo/api/bsky\"\n"
+"      comatproto \"github.com/bluesky-social/indigo/api/atproto\"\n"
+"      lexutil \"github.com/bluesky-social/indigo/lex/util\"\n"
+"      \"github.com/bluesky-social/indigo/xrpc\"\n"
+"    )\n"
 msgstr ""
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:58
 #, no-wrap
 msgid ""
-"  ctx := context.Background()\n"
-"  ```\n"
+"    ctx := context.Background()\n"
+"    ```\n"
 "    Import the SDK libraries and go directly to [making requests](/guides/reading-data)!\n"
 msgstr ""
 
@@ -164,19 +164,19 @@ msgstr ""
 #: src/guides/reads-and-writes/en.mdx:61
 #, no-wrap
 msgid ""
-"<Note>\n"
-"Note that you'll need to [blank import](https://www.oreilly.com/library/view/the-go-programming/9780134190570/ebook_split_100.html) the `bsky` and `util` libraries if you aren't using them directly, due to the way Go imports work:\n"
+"    <Note>\n"
+"    Note that you'll need to [blank import](https://www.oreilly.com/library/view/the-go-programming/9780134190570/ebook_split_100.html) the `bsky` and `util` libraries if you aren't using them directly, due to the way Go imports work:\n"
 msgstr ""
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:67
 #, no-wrap
 msgid ""
-"```go\n"
-"_ \"github.com/bluesky-social/indigo/api/bsky\"\n"
-"_ \"github.com/bluesky-social/indigo/lex/util\"\n"
-"```\n"
-"</Note>\n"
+"    ```go\n"
+"    _ \"github.com/bluesky-social/indigo/api/bsky\"\n"
+"    _ \"github.com/bluesky-social/indigo/lex/util\"\n"
+"    ```\n"
+"    </Note>\n"
 msgstr ""
 
 #. type: Plain text
@@ -194,7 +194,7 @@ msgstr ""
 msgid ""
 "- [Reading data](/guides/reading-data)\n"
 "- [Writing data](/guides/writing-data)\n"
-"- [Accounts and deletions](/guides/writing-data)\n"
+"- [Accounts and deletions](/guides/account-lifecycle)\n"
 "- [Social graph](/guides/social-graph)\n"
 "- [Record Key spec](/specs/record-key)\n"
 "- [URI scheme](/specs/at-uri-scheme)\n"

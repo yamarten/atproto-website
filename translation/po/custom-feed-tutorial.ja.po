@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-07 17:03+0900\n"
+"POT-Creation-Date: 2026-02-11 10:36+0900\n"
 "PO-Revision-Date: 2026-02-07 17:03+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -127,8 +127,9 @@ msgstr "カスタムフィード（フィードジェネレーター）は、ユ
 
 #. type: Plain text
 #: src/guides/custom-feed-tutorial/en.mdx:12
-#, no-wrap
-msgid "In this tutorial, you'll create a custom feed server by consuming posts from the [firehose](http://localhost:3000/guides/streaming-data), algorithmically sorting them, and [broadcasting them as an XRPC feed](/guides/feeds).\n"
+#, fuzzy, no-wrap
+#| msgid "In this tutorial, you'll create a custom feed server by consuming posts from the [firehose](http://localhost:3000/guides/streaming-data), algorithmically sorting them, and [broadcasting them as an XRPC feed](/guides/feeds).\n"
+msgid "In this tutorial, you'll create a custom feed server by consuming posts from the [firehose](/guides/streaming-data), algorithmically sorting them, and [broadcasting them as an XRPC feed](/guides/feeds).\n"
 msgstr "このチュートリアルでは、[firehose](http://localhost:3000/guides/streaming-data)から投稿を取り込み、アルゴリズムで並び替え、[XRPCフィードとして配信する](/guides/feeds)ことで、カスタムフィードサーバーを作成します。\n"
 
 #. type: Plain text
