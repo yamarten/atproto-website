@@ -92,7 +92,7 @@ msgstr "[**カスタムフィードチュートリアル**](/guides/custom-feed-
 #: src/guides/tutorials/en.mdx:25
 #, no-wrap
 msgid "## OAuth with NextJS\n"
-msgstr "<Heading level={2} id=\"oauth-with-nextjs\">NextJSでOAuth</Heading>\n"
+msgstr "<Heading level={2} id=\"oauth-with-nextjs\">OAuth with NextJS/Heading>\n"
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:27
@@ -110,7 +110,7 @@ msgstr "動作デモはこちら [https://nextjs-oauth-tutorial.up.railway.app/]
 #: src/guides/tutorials/en.mdx:31
 #, no-wrap
 msgid "[**OAuth with NextJS Tutorial**](/guides/oauth-tutorial)\n"
-msgstr "[**NextJSでOAuthチュートリアル**](/guides/oauth-tutorial)\n"
+msgstr "[**OAuth with NextJSチュートリアル**](/guides/oauth-tutorial)\n"
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:33

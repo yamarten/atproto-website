@@ -230,7 +230,7 @@ msgstr "<Heading level={2} id=\"lexicon-evolition\">Lexiconの進化</Heading>\n
 #: src/guides/lexicon-style-guide/en.mdx:83
 #, no-wrap
 msgid "All Lexcions should be flexible to extension and evolution over time, without breaking the Lexicon schema evolution rules. This is particularly true for record schemas. Given the distributed storage model of atproto, developers do not have a reliable mechanism to update all data records in the network. Extensions could come from the original designer, or other developers and projects.\n"
-msgstr "すべてのLexiconはスキーマの進化ルールを破らない範囲で拡張と進化に柔軟であるべきです。これは特にレコードスキーマに当てはまります。atprotoの分散ストレージモデルを考えると、開発者はネットワーク内のすべてのデータレコードを更新するための確実なメカニズムを持ちません。拡張は元の設計者または他の開発者やプロジェクトから来ることがあります。\n"
+msgstr "すべてのLexiconはスキーマの進化ルールを破らない範囲で拡張と進化に柔軟であるべきです。これは特にレコードスキーマに当てはまります。Atprotoの分散ストレージモデルを考えると、開発者はネットワーク内のすべてのデータレコードを更新するための確実なメカニズムを持ちません。拡張は元の設計者または他の開発者やプロジェクトから来ることがあります。\n"
 
 #. type: Plain text
 #: src/guides/lexicon-style-guide/en.mdx:85
@@ -333,7 +333,7 @@ msgstr ""
 "    - サイドカーレコードは、元のLexicon設計者または別の開発者によって定義および管理できます。\n"
 "    - サイドカーレコードは、元のレコードへの強い参照を壊さずに更新（変更）できます。\n"
 "    - サイドカーコンテキストはAPIレスポンスに含めることができます。\n"
-"- atprotoアカウントはネットワーク内のあらゆるアプリケーションと柔軟に使用できるため、どのアカウントが特定のアプリケーションに参加しているかは曖昧な場合があります。モダリティを示す既知の代表的なレコード型があり、クライアントが活動中のアカウントにそのようなレコードを作成するなら、これを明確にすることができます。このレコードを削除することで、ユーザーがアクティブでなくなったと示せます。レコードの既知インスタンスが唯一（固定レコードキー）である場合に、この手法は特に機能します。\n"
+"- Atprotoアカウントはネットワーク内のあらゆるアプリケーションと柔軟に使用できるため、どのアカウントが特定のアプリケーションに参加しているかは曖昧な場合があります。モダリティを示す既知の代表的なレコード型があり、クライアントが活動中のアカウントにそのようなレコードを作成するなら、これを明確にすることができます。このレコードを削除することで、ユーザーがアクティブでなくなったと示せます。レコードの既知インスタンスが唯一（固定レコードキー）である場合に、この手法は特に機能します。\n"
 "    - 例えば、アプリ固有の「プロフィール」または「宣言」レコードは、たとえ空であっても存在していれば、アカウントが関連アプリに一度はログインしたことを示すことができます。\n"
 "    - バックフィルサービスは、指定されたシグナリングレコードを持つネットワーク内のすべてのアカウントを列挙し、そのレコードの削除を非アクティブ化として処理できます。\n"
 "    - このデザインパターンは、新規アプリのモダリティに強く推奨されます。\n"

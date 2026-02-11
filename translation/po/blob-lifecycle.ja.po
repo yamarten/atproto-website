@@ -76,10 +76,9 @@ msgstr "この`data`オブジェクトは別のレコードで参照できます
 
 #. type: Plain text
 #: src/guides/blob-lifecycle/en.mdx:22
-#, fuzzy, no-wrap
-#| msgid "Chunked transfer encoding may also be permitted for uploads. Servers *may* sniff the blob mimetype to validate against the declared **`Content-Type`** header, and either return a modified mimetype in the response, or reject the upload. See \"Security Considerations\" below. If the actual blob upload size differs from the **`Content-Length`** header, the server should reject the upload.\n"
+#, no-wrap
 msgid "Chunked transfer encoding may also be permitted for uploads. Servers *may* sniff the blob mimetype to validate against the declared **`Content-Type`** header, and either return a modified mimetype in the response, or reject the upload. See [\"Security Considerations\"](/specs/blob#security-considerations). If the actual blob upload size differs from the **`Content-Length`** header, the server should reject the upload.\n"
-msgstr "チャンク転送エンコーディングによるアップロードも許可されている場合があります。サーバーはblobのmimetypeをスニッフィングして宣言された **`Content-Type`** ヘッダーに対して検証し、レスポンスで修正されたmimetypeを返すか、アップロードを拒否する場合があります。以下の『セキュリティに関する考慮事項』を参照してください。実際のblobアップロードサイズが **`Content-Length`** ヘッダーと異なる場合、サーバーはアップロードを拒否します。\n"
+msgstr "チャンク転送エンコーディングによるアップロードも許可されている場合があります。サーバーはblobのmimetypeをスニッフィングして宣言された **`Content-Type`** ヘッダーに対して検証し、レスポンスで修正されたmimetypeを返すか、アップロードを拒否する場合があります。[『Security Considerations』](/specs/blob#security-considerations)を参照してください。実際のblobアップロードサイズが **`Content-Length`** ヘッダーと異なる場合、サーバーはアップロードを拒否します。\n"
 
 #. type: Plain text
 #: src/guides/blob-lifecycle/en.mdx:24
@@ -89,10 +88,9 @@ msgstr "<Heading level={2} id=\"garbage-collection\">ガベージコレクショ
 
 #. type: Plain text
 #: src/guides/blob-lifecycle/en.mdx:26
-#, fuzzy, no-wrap
-#| msgid "After a successful upload, blobs are placed in temporary storage. They are not accessible for download or distribution while in this state. Servers should \"garbage collect\" (delete) un-referenced temporary blobs after an appropriate time span (see implementation guidelines below). Blobs which are in temporary storage should not be included in the **`listBlobs`** output.\n"
+#, no-wrap
 msgid "After a successful upload, blobs are placed in temporary storage. They are not accessible for download or distribution while in this state. Servers should \"garbage collect\" (delete) un-referenced temporary blobs after an appropriate time span (see [implementation guidelines](#web-accessibility)). Blobs which are in temporary storage should not be included in the **`listBlobs`** output.\n"
-msgstr "アップロードに成功した後、blobは一時ストレージに配置されます。この状態では、ダウンロードや配送はできません。サーバーは適切な時間経過後に、参照されていない一時blobをガベージコレクション（削除）すべきです（後述の実装ガイドラインを参照）。一時ストレージのblobは **`listBlobs`** の出力に含められません。\n"
+msgstr "アップロードに成功した後、blobは一時ストレージに配置されます。この状態では、ダウンロードや配送はできません。サーバーは適切な時間経過後に、参照されていない一時blobをガベージコレクション（削除）すべきです（[実装ガイドライン](#web-accessibility)を参照）。一時ストレージのblobは **`listBlobs`** の出力に含められません。\n"
 
 #. type: Plain text
 #: src/guides/blob-lifecycle/en.mdx:28
@@ -186,4 +184,4 @@ msgstr ""
 "- [blobのセキュリティ](/guides/blob-security)\n"
 "- [動画の取り扱い](/guides/video-handling)\n"
 "- [blob仕様](/specs/blob)\n"
-"- [Streamplace](https://stream.place/docs/)はatproto上の動画ストリーミングの実装および関連Lexiconを提供します。\n"
+"- [Streamplace](https://stream.place/docs/)はAtproto上の動画ストリーミングの実装および関連Lexiconを提供します。\n"

@@ -97,7 +97,7 @@ msgstr ""
 "    />\n"
 "  </svg>\n"
 "  <span>\n"
-"    サンプル アプリケーションのソースコードはGitHubで見つかります。\n"
+"    サンプルアプリケーションのソースコードはGitHubで見つかります。\n"
 "  </span>\n"
 "</Link>\n"
 
@@ -805,7 +805,7 @@ msgid ""
 "    }\n"
 msgstr ""
 "    try {\n"
-"      // ステータス レコードをユーザーのリポジトリに書き込みます\n"
+"      // ステータスレコードをユーザーのリポジトリに書き込みます\n"
 "      await agent.com.atproto.repo.putRecord({\n"
 "        repo: agent.assertDid,\n"
 "        collection: 'xyz.statusphere.status',\n"
@@ -1600,7 +1600,7 @@ msgid ""
 "    }\n"
 msgstr ""
 "    try {\n"
-"      // SQLite を楽観的に更新します <-- ここ!\n"
+"      // SQLiteを楽観的に更新します <-- ここ!\n"
 "      await db\n"
 "        .insertInto('status')\n"
 "        .values({\n"
@@ -1634,7 +1634,7 @@ msgstr "<Heading level={2} id=\"thinking-in-at-proto\">ATプロトコル的に�
 #: src/guides/applications/en.mdx:654
 #, no-wrap
 msgid "In this tutorial we've covered the key steps to building an atproto app. Data is published in its canonical form on users' `at://` repos and then aggregated into apps' databases to produce views of the network.\n"
-msgstr "このチュートリアルでは、atprotoアプリを構築するための重要な手順について説明しました。データは、ユーザーの`at://`リポジトリに正規形で公開され、その後、アプリのデータベースに集約されてネットワークのビューが生成されます。\n"
+msgstr "このチュートリアルでは、Atprotoアプリを構築するための重要な手順について説明しました。データは、ユーザーの`at://`リポジトリに正規形で公開され、その後、アプリのデータベースに集約されてネットワークのビューが生成されます。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:656
@@ -1644,19 +1644,14 @@ msgstr "アプリを構築するときは、次の4つの重要な手順につ�
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:661
-#, fuzzy, no-wrap
-#| msgid ""
-#| "- Design the [Lexicon](#) schemas for the records you'll publish into the Atmosphere.\n"
-#| "- Create a database for aggregating the records into useful views.\n"
-#| "- Build your application to write the records on your users' repos.\n"
-#| "- Listen to the firehose to aggregate data across the network.\n"
+#, no-wrap
 msgid ""
 "- Design the [Lexicon](https://atproto.com/guides/lexicon) schemas for the records you'll publish into the Atmosphere.\n"
 "- Create a database for aggregating the records into useful views.\n"
 "- Build your application to write the records on your users' repos.\n"
 "- Listen to the firehose to aggregate data across the network.\n"
 msgstr ""
-"- Atmosphereに公開するレコードの[Lexicon](#)スキーマを設計します。\n"
+"- Atmosphereに公開するレコードの[Lexicon](https://atproto.com/guides/lexicon)スキーマを設計します。\n"
 "- レコードを便利なビューに集約するためのデータベースを作成します。\n"
 "- ユーザーのリポジトリにレコードを書き込むアプリケーションを構築します。\n"
 "- ネットワーク全体のデータを集約するために、firehoseをリッスンします。\n"
@@ -1704,4 +1699,4 @@ msgstr ""
 #: src/articles/atproto-for-distsys-engineers/en.mdx:227
 #, no-wrap
 msgid "<FooterCTA href=\"/\" title=\"Ready to learn more?\" description=\"Specs, guides, and SDKs can be found here.\" />\n"
-msgstr "<FooterCTA href=\"/\" title=\"さらに学習する準備はできましたか？\" description=\"仕様、ガイド、SDK はここにあります。\" />\n"
+msgstr "<FooterCTA href=\"/\" title=\"さらに学習する準備はできましたか？\" description=\"仕様、ガイド、SDKはここにあります。\" />\n"

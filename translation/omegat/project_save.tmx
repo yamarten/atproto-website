@@ -16,8 +16,8 @@
       <tuv lang="en-US">
         <seg>"Recommended" DID document parameters can be fetched from the new PDS using the `com.atproto.identity.getRecommendedDidCredentials` endpoint. This will include the DID service hostname, local handle (as requested during account creation), a PDS-managed atproto signing key (public key), and (if relevant) PLC rotation keys (public keys).</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260128T125846Z" creationid="yamarten" creationdate="20260102T101836Z">
-        <seg>推奨されるDIDドキュメントのパラメータは、新PDSの`com.atproto.identity.getRecommendedDidCredentials`エンドポイントから取得できます。これにはDIDのサービスホスト名、ローカルハンドル（アカウント作成時に要求したもの）、PDS管理のatproto署名鍵（公開鍵）、および該当する場合はPLC回転鍵（公開鍵）が含まれます。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T035627Z" creationid="yamarten" creationdate="20260102T101836Z">
+        <seg>推奨されるDIDドキュメントのパラメータは、新PDSの`com.atproto.identity.getRecommendedDidCredentials`エンドポイントから取得できます。これにはDIDのサービスホスト名、ローカルハンドル（アカウント作成時に要求したもの）、PDS管理のAtproto署名鍵（公開鍵）、および該当する場合はPLC回転鍵（公開鍵）が含まれます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -387,16 +387,16 @@ websocat ws://localhost:2480/channel</seg>
       <tuv lang="en-US">
         <seg>## Atproto OAuth Example Apps</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T072637Z" creationid="yamarten" creationdate="20260208T072637Z">
-        <seg>&lt;Heading level={2} id="atproto-oauth-example-apps"&gt;atproto OAuthサンプルアプリ&lt;/Heading&gt;</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T044028Z" creationid="yamarten" creationdate="20260208T072637Z">
+        <seg>&lt;Heading level={2} id="atproto-oauth-example-apps"&gt;Atproto OAuthサンプルアプリ&lt;/Heading&gt;</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="en-US">
         <seg>## Atproto at the intersection of three movements</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260209T085634Z">
-        <seg>&lt;Heading level={2} id="atproto-at-the-intersection-of-three-movements"&gt;3つのムーブメントの交差点にあるatproto&lt;/Heading&gt;</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040148Z">
+        <seg>&lt;Heading level={2} id="atproto-at-the-intersection-of-three-movements"&gt;3つのムーブメントの交差点にあるAtproto&lt;/Heading&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -1115,8 +1115,8 @@ websocat ws://localhost:2480/channel</seg>
       <tuv lang="en-US">
         <seg>## OAuth with NextJS</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T155026Z" creationid="yamarten" creationdate="20260208T094002Z">
-        <seg>&lt;Heading level={2} id="oauth-with-nextjs"&gt;NextJSでOAuth&lt;/Heading&gt;</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T042823Z" creationid="yamarten" creationdate="20260208T094002Z">
+        <seg>&lt;Heading level={2} id="oauth-with-nextjs"&gt;OAuth with NextJS/Heading&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -1131,8 +1131,8 @@ websocat ws://localhost:2480/channel</seg>
       <tuv lang="en-US">
         <seg>## Opinionated takes</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260201T100950Z" creationid="yamarten" creationdate="20260201T100950Z">
-        <seg>&lt;Heading level={2} id="opinionated-takes"&gt;こだわりの表明&lt;/Heading&gt;</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T043327Z" creationid="yamarten" creationdate="20260201T100950Z">
+        <seg>&lt;Heading level={2} id="opinionated-takes"&gt;設計へのこだわり&lt;/Heading&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -1893,9 +1893,9 @@ websocat ws://localhost:2480/channel</seg>
         <seg>### Synthesis
 Atproto is situated as the synthesis of these three movements.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260201T082050Z">
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040218Z">
         <seg>&lt;Heading level={3} id="synthesis"&gt;統合&lt;/Heading&gt;
-atprotoは、3つのムーブメントを統合したものとして位置づけられます。</seg>
+Atprotoは、3つのムーブメントを統合したものとして位置づけられます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2007,8 +2007,8 @@ error: linting issues detected
       <tuv lang="en-US">
         <seg>**Authorization is the first part of our docs for a reason!** You don't always need to be authenticated to [read data](/reading-data#unauthenticated-reads) from AT Protocol records or even to [stream data from the firehose](/guides/streaming-data). But if you're looking to build an application that integrates with the Atmosphere of Atproto apps in some way, you'll begin with authentication. You might start out by just using AT Protocol identities as an OAuth source — though you'll find that there's lots more you can do by building on top of the Atproto [social graph](/guides/social-graph).</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T064331Z" creationid="yamarten" creationdate="20260208T064011Z">
-        <seg>**認可が最初のドキュメントであることには理由があります**。ATプロトコルのレコードから[データを読む](/reading-data#unauthenticated-reads)ために常に認証・認可が必要というわけではありませんし、[firehoseからデータをストリーム](/guides/streaming-data)する場合も同じです。ただしatprotoアプリの環境（Atmosphere）に何らかの形で統合されるアプリケーションを構築したい場合は、認可から始めることになります。まずATプロトコルのIDをOAuthソースとして使うだけから始めるかもしれませんが、atprotoの[ソーシャルグラフ](/guides/social-graph)上でさらに多くのことができることに気付くでしょう。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T035752Z" creationid="yamarten" creationdate="20260208T064011Z">
+        <seg>**認可が最初のドキュメントであることには理由があります**。ATプロトコルのレコードから[データを読む](/reading-data#unauthenticated-reads)ために常に認証・認可が必要というわけではありませんし、[firehoseからデータをストリーム](/guides/streaming-data)する場合も同じです。ただしAtprotoアプリの環境（Atmosphere）に何らかの形で統合されるアプリケーションを構築したい場合は、認可から始めることになります。まずATプロトコルのIDをOAuthソースとして使うだけから始めるかもしれませんが、Atprotoの[ソーシャルグラフ](/guides/social-graph)上でさらに多くのことができることに気付くでしょう。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2071,8 +2071,8 @@ error: linting issues detected
       <tuv lang="en-US">
         <seg>**Integers:** as mentioned [in the atproto specification](https://atproto.com/specs/data-model#data-types), it is a strongly recommended best practice to keep integer values "64-bit float safe", meaning restricting them to 53 bits of precision. This ensures compatibility with JavaScript without loss of numeric precision. The specific values are `MAX_SAFE_INTEGER: 9007199254740991` and `MIN_SAFE_INTEGER: -9007199254740991`.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260103T102908Z" creationid="yamarten" creationdate="20260103T102628Z">
-        <seg>**整数：**[atproto仕様](https://atproto.com/specs/data-model#data-types)で述べられているように、整数値を"64ビットフロートセーフ"に保つこと、つまり53ビットの精度に制限することは強く推奨されるベストプラクティスです。これにより、精度の損失なくJavaScriptとの互換性が保証されます。具体的な値としては`MAX_SAFE_INTEGER: 9007199254740991`および`MIN_SAFE_INTEGER: -9007199254740991`です。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T035949Z" creationid="yamarten" creationdate="20260103T102628Z">
+        <seg>**整数：**[Atproto仕様](https://atproto.com/specs/data-model#data-types)で述べられているように、整数値を"64ビットフロートセーフ"に保つこと、つまり53ビットの精度に制限することは強く推奨されるベストプラクティスです。これにより、精度の損失なくJavaScriptとの互換性が保証されます。具体的な値としては`MAX_SAFE_INTEGER: 9007199254740991`および`MIN_SAFE_INTEGER: -9007199254740991`です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2176,8 +2176,8 @@ error: linting issues detected
       <tuv lang="en-US">
         <seg>- **Atproto is distributed**: Usually, when an app has a "sign in with..." button, it provides a choice of which authorities it allows to authenticate users (usually one of a few big corporations). With ATProto OAuth, the app has no prior relationship with the authentication provider: a user's [PDS](/guides/the-at-stack#pds). This is also the reason why Atproto OAuth is not compatible with OIDC, which requires a pre-established relationship.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T064159Z" creationid="yamarten" creationdate="20260208T064159Z">
-        <seg>- **atprotoは分散しています**：通常、アプリに「…でサインイン」ボタンがある場合、ユーザーの認証を許可する権限を選択できます（大抵は少数の大企業のどれか）。atprotoのOAuthでは、アプリは認証プロバイダー、つまりユーザーの[PDS](/guides/the-at-stack#pds)との事前の関係がありません。これは、atprotoのOAuthが、事前に確立された関係を必要とするOIDCと互換性がない理由でもあります。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T035816Z" creationid="yamarten" creationdate="20260208T064159Z">
+        <seg>- **Atprotoは分散しています**：通常、アプリに「…でサインイン」ボタンがある場合、ユーザーの認証を許可する権限を選択できます（大抵は少数の大企業のどれか）。AtprotoのOAuthでは、アプリは認証プロバイダー、つまりユーザーの[PDS](/guides/the-at-stack#pds)との事前の関係がありません。これは、AtprotoのOAuthが、事前に確立された関係を必要とするOIDCと互換性がない理由でもあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2192,8 +2192,8 @@ error: linting issues detected
       <tuv lang="en-US">
         <seg>- **Client IDs**: In other OAuth ecosystems, it is often necessary for client apps to pre-register themselves with the resource server. This is not viable in a decentralized system (with many clients and many resource servers), so Atproto addresses this using [Client ID Metadata Documents](/specs/oauth#client-id-metadata-document).</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T064816Z" creationid="yamarten" creationdate="20260208T064816Z">
-        <seg>- **クライアントID**： 他のOAuthエコシステムでは、クライアントアプリケーションがリソースサーバーに事前登録が必要なことがよくあります。これは分散型システム（多数のクライアントと多数のリソースサーバーがある）では実行できないため、atprotoは[Client ID Metadata Documents](/specs/oauth#client-id-metadata-document)を使用してこれに対処しています。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T041920Z" creationid="yamarten" creationdate="20260208T064816Z">
+        <seg>- **クライアントID**：他のOAuthエコシステムでは、クライアントアプリケーションがリソースサーバーに事前登録が必要なことがよくあります。これは分散型システム（多数のクライアントと多数のリソースサーバーがある）では実行できないため、Atprotoは[Client ID Metadata Documents](/specs/oauth#client-id-metadata-document)を使用してこれに対処しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2306,10 +2306,10 @@ error: linting issues detected
 - [graze.social](https://www.graze.social/) provides an application model for Atproto feeds.
 - You can find other examples of community-created feeds at [https://bsky.app/feeds](https://bsky.app/feeds).</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T070446Z" creationid="yamarten" creationdate="20260208T070446Z">
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040400Z" creationid="yamarten" creationdate="20260208T070446Z">
         <seg>- コミュニティフィード：そのコミュニティ内のDIDのリストをコンパイルし、そのリスト内のユーザーからのすべての投稿についてfirehoseをフィルタリングします。
 - トピックフィード：アルゴリズムが返す投稿に対して、投稿本文をフィルタリングメカニズム（LLM、キーワードマッチャーなど）に渡して、選択したトピック用にフィルタリングします。
-- [graze.social](https://www.graze.social/)はatprotoフィードのアプリケーションモデルを提供します。
+- [graze.social](https://www.graze.social/)はAtprotoフィードのアプリケーションモデルを提供します。
 - コミュニティが作成したその他のフィード例は[https://bsky.app/feeds](https://bsky.app/feeds)で見つけることができます。</seg>
       </tuv>
     </tu>
@@ -2382,6 +2382,20 @@ error: linting issues detected
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260111T092908Z">
         <seg>- Atmosphereに公開するレコードの[Lexicon](#)スキーマを設計します。
+- レコードを便利なビューに集約するためのデータベースを作成します。
+- ユーザーのリポジトリにレコードを書き込むアプリケーションを構築します。
+- ネットワーク全体のデータを集約するために、firehoseをリッスンします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>- Design the [Lexicon](https://atproto.com/guides/lexicon) schemas for the records you'll publish into the Atmosphere.
+- Create a database for aggregating the records into useful views.
+- Build your application to write the records on your users' repos.
+- Listen to the firehose to aggregate data across the network.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T015745Z" creationid="yamarten" creationdate="20260211T015745Z">
+        <seg>- Atmosphereに公開するレコードの[Lexicon](https://atproto.com/guides/lexicon)スキーマを設計します。
 - レコードを便利なビューに集約するためのデータベースを作成します。
 - ユーザーのリポジトリにレコードを書き込むアプリケーションを構築します。
 - ネットワーク全体のデータを集約するために、firehoseをリッスンします。</seg>
@@ -2499,6 +2513,20 @@ error: linting issues detected
 - 削除と同様にリレーはイベントを処理し、コンテンツ再配布は行わず、イベントをパススルーします。リレーはコンテンツを消去しませんが、長期間無効化されたままであれば削除するかもしれません（ポリシー次第）。
 - 削除と同様、`#commit`イベントはPDSから送信されず、リレーは受信したとしても無視し、パススルーしません。
 - 下流サービス（例：AppView）はコンテンツを利用不可にしますが、ローカルから削除する必要はありません。対象のアカウントやコンテンツのステータスとして"unavailable"を示します。ベストプラクティスは、アカウント無効化によるものだと提示することです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>- PDS emits an `#account` event, with `active` false and status `deleted`.
+- Relay updates local account status for the repo, and passes through the `#account` event. If the Relay is a full mirror, it immediately stops serving `getRepo`, `getRecord`, and similar API requests for the account, indicating the reason in the response error. The Relay may fully delete repo content locally according to local policy. The firehose backfill window does not need to be immediately purged of commit events for the repo, as long as the backfill window is time-limited.
+- the PDS should not emit `#commit` events for an account which is not "active". If any further `#commit` messages are emitted for the repo (eg, by accident or out-of-order processing or delivery), all downstream services should ignore the event and not pass it through
+- downstream services (eg, AppView) **should** immediately stop serving/distributing content for the account. They *may* defer permanent data deletion according to local policy. Updating aggregations (eg, record counts) may also be deferred or processed in a background queue according to policy and implementation. Error status messages may indicate either that the content is "gone" (existed, but no longer available), or that content is "not found" (not revealing that content existed previously)</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T015658Z" creationid="yamarten" creationdate="20260211T015658Z">
+        <seg>- PDSは`#account`イベントを`active`がfalseかつ`deleted`状態で送信します。
+- リレーはローカルのアカウント状態を更新し、`#account`イベントをパススルーします。リレーが完全なミラーの場合、即座に対象アカウントに関する`getRepo`、`getRecord`および類似APIを止め、エラー応答で理由を示します。リレーはポリシーに基づいて、対象リポジトリのコンテンツをローカルで完全に削除するかもしれません。firehoseのバックフィルウィンドウに時間制限があるなら、ウィンドウからそのリポジトリのコミットイベントを即座に削除する必要はありません。
+- PDSは"active"ではないアカウントの`#commit`を送信しません。もしそのリポジトリについて（アクシデントや処理または配送の順番乱れによって）何かしら`#commit`が送信されても、下流のサービスはそのイベントを無視し、パススルーもしません。
+- 下流のサービス（例：AppView）は即座にそのアカウントのコンテンツ提供や配布を止め**なければいけません**。恒久的なデータ削除はポリシーによって延期する*かもしれません*。集計（例：レコード数）の更新もポリシーや実装によって遅れたりバックグラウンドキューで処理されるかもしれません。エラーメッセージは"gone"（存在するが利用できない）か"not found"（過去に存在したことも明かさない）を示すかもしれません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2648,10 +2676,10 @@ error: linting issues detected
 - The DID: `did:plc:12345`
 - The hosting service: `https://alice.com`</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T112002Z">
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T042026Z">
         <seg>- ハンドル：`alice.com`
 - DID：`did:plc:12345`
-- ホスティング サービス：`https://alice.com`</seg>
+- ホスティングサービス：`https://alice.com`</seg>
       </tuv>
     </tu>
     <tu>
@@ -2721,7 +2749,7 @@ error: linting issues detected
     - Backfill services can enumerate all accounts in the network with the given signaling record, and also process deletion of that record as deactivation of that modality.
     - This design pattern is strongly recommended for new app modalities.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260209T104455Z" creationid="yamarten" creationdate="20260107T124709Z">
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040516Z" creationid="yamarten" creationdate="20260107T124709Z">
         <seg>- `query` APIエンドポイントのページネーションの基本的な慣例
     - クエリパラメータにはオプションの`limit`（整数）とオプションの`cursor`（文字列）が含まれます
     - 出力のボディには、オプションの`cursor`（文字列）と、必須のレスポンスオブジェクト配列（コンテキスト固有の複数形フィールド名を持つ）が含まれます
@@ -2746,7 +2774,7 @@ error: linting issues detected
     - サイドカーレコードは、元のLexicon設計者または別の開発者によって定義および管理できます。
     - サイドカーレコードは、元のレコードへの強い参照を壊さずに更新（変更）できます。
     - サイドカーコンテキストはAPIレスポンスに含めることができます。
-- atprotoアカウントはネットワーク内のあらゆるアプリケーションと柔軟に使用できるため、どのアカウントが特定のアプリケーションに参加しているかは曖昧な場合があります。モダリティを示す既知の代表的なレコード型があり、クライアントが活動中のアカウントにそのようなレコードを作成するなら、これを明確にすることができます。このレコードを削除することで、ユーザーがアクティブでなくなったと示せます。レコードの既知インスタンスが唯一（固定レコードキー）である場合に、この手法は特に機能します。
+- Atprotoアカウントはネットワーク内のあらゆるアプリケーションと柔軟に使用できるため、どのアカウントが特定のアプリケーションに参加しているかは曖昧な場合があります。モダリティを示す既知の代表的なレコード型があり、クライアントが活動中のアカウントにそのようなレコードを作成するなら、これを明確にすることができます。このレコードを削除することで、ユーザーがアクティブでなくなったと示せます。レコードの既知インスタンスが唯一（固定レコードキー）である場合に、この手法は特に機能します。
     - 例えば、アプリ固有の「プロフィール」または「宣言」レコードは、たとえ空であっても存在していれば、アカウントが関連アプリに一度はログインしたことを示すことができます。
     - バックフィルサービスは、指定されたシグナリングレコードを持つネットワーク内のすべてのアカウントを列挙し、そのレコードの削除を非アクティブ化として処理できます。
     - このデザインパターンは、新規アプリのモダリティに強く推奨されます。</seg>
@@ -2813,9 +2841,9 @@ error: linting issues detected
         <seg>- [**Atproto for distributed systems engineers**](/articles/atproto-for-distsys-engineers). An explainer for backend thinkers.
 - [**The Atproto Ethos**](/articles/atproto-ethos). The principles that underpin the design of atproto.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T095826Z" creationid="yamarten" creationdate="20260208T095826Z">
-        <seg>- [分散システムエンジニアのためのatproto](/articles/atproto-for-distsys-engineers)：バックエンドを考える人のための解説
-- [atprotoの基本理念](/articles/atproto-ethos)：atprotoの設計を支える原則</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T041425Z" creationid="yamarten" creationdate="20260208T095826Z">
+        <seg>- [分散システムエンジニアのためのAtproto](/articles/atproto-for-distsys-engineers)：バックエンドを考える人のための解説
+- [Atprotoの基本理念](/articles/atproto-ethos)：Atprotoの設計を支える原則</seg>
       </tuv>
     </tu>
     <tu>
@@ -3116,12 +3144,12 @@ error: linting issues detected
 - [Blob Specs](/specs/blob)
 - [Streamplace](https://stream.place/docs/) provides an implementation and related Lexicon for video streaming on Atproto.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T064913Z" creationid="yamarten" creationdate="20260208T064913Z">
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T035842Z" creationid="yamarten" creationdate="20260208T064913Z">
         <seg>- [画像と動画](/guides/images-and-video)
 - [blobのセキュリティ](/guides/blob-security)
 - [動画の取り扱い](/guides/video-handling)
 - [blob仕様](/specs/blob)
-- [Streamplace](https://stream.place/docs/)はatproto上の動画ストリーミングの実装および関連Lexiconを提供します。</seg>
+- [Streamplace](https://stream.place/docs/)はAtproto上の動画ストリーミングの実装および関連Lexiconを提供します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3280,6 +3308,24 @@ error: linting issues detected
       <tuv lang="en-US">
         <seg>- [Reading data](/guides/reading-data)
 - [Writing data](/guides/writing-data)
+- [Accounts and deletions](/guides/account-lifecycle)
+- [Social graph](/guides/social-graph)
+- [Record Key spec](/specs/record-key)
+- [URI scheme](/specs/at-uri-scheme)</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T015239Z" creationid="yamarten" creationdate="20260211T015239Z">
+        <seg>- [データ読み取り](/guides/reading-data)
+- [データ書き込み](/guides/writing-data)
+- [アカウントと削除](/guides/account-lifecycle)
+- [ソーシャルグラフ](/guides/social-graph)
+- [レコードキー仕様](/specs/record-key)
+- [URIスキーム](/specs/at-uri-scheme)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>- [Reading data](/guides/reading-data)
+- [Writing data](/guides/writing-data)
 - [Accounts and deletions](/guides/writing-data)
 - [Social graph](/guides/social-graph)
 - [Record Key spec](/specs/record-key)
@@ -3289,6 +3335,24 @@ error: linting issues detected
         <seg>- [データ読み取り](/guides/reading-data)
 - [データ書き込み](/guides/writing-data)
 - [アカウントと削除](/guides/writing-data)
+- [ソーシャルグラフ](/guides/social-graph)
+- [レコードキー仕様](/specs/record-key)
+- [URIスキーム](/specs/at-uri-scheme)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>- [Reads and Writes](/guides/reads-and-writes)
+- [Reading data](/guides/reading-data)
+- [Accounts and deletions](/guides/account-lifecycle)
+- [Social graph](/guides/social-graph)
+- [Record Key spec](/specs/record-key)
+- [URI scheme](/specs/at-uri-scheme)</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T015513Z" creationid="yamarten" creationdate="20260211T015513Z">
+        <seg>- [読み取りと書き込み](/guides/reads-and-writes)
+- [データ読み取り](/guides/reading-data)
+- [アカウントと削除](/guides/account-lifecycle)
 - [ソーシャルグラフ](/guides/social-graph)
 - [レコードキー仕様](/specs/record-key)
 - [URIスキーム](/specs/at-uri-scheme)</seg>
@@ -3308,6 +3372,24 @@ error: linting issues detected
 - [データ読み取り](/guides/reading-data)
 - [アカウントと削除](/guides/writing-data)
 - [ソーシャルグラフ](/guides/social-graph)
+- [レコードキー仕様](/specs/record-key)
+- [URIスキーム](/specs/at-uri-scheme)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>- [Reads and Writes](/guides/reads-and-writes)
+- [Reading data](/guides/reading-data)
+- [Writing data](/guides/writing-data)
+- [Accounts and deletions](/guides/account-lifecycle)
+- [Record Key spec](/specs/record-key)
+- [URI scheme](/specs/at-uri-scheme)</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T015437Z" creationid="yamarten" creationdate="20260211T015437Z">
+        <seg>- [読み取りと書き込み](/guides/reads-and-writes)
+- [データ読み取り](/guides/reading-data)
+- [データ書き込み](/guides/writing-data)
+- [アカウントと削除](/guides/account-lifecycle)
 - [レコードキー仕様](/specs/record-key)
 - [URIスキーム](/specs/at-uri-scheme)</seg>
       </tuv>
@@ -3343,6 +3425,24 @@ error: linting issues detected
         <seg>- [読み取りと書き込み](/guides/reads-and-writes)
 - [データ読み取り](/guides/reading-data)
 - [データ書き込み](/guides/writing-data)
+- [ソーシャルグラフ](/guides/social-graph)
+- [レコードキー仕様](/specs/record-key)
+- [URIスキーム](/specs/at-uri-scheme)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>- [Reads and Writes](/guides/reads-and-writes)
+- [Writing data](/guides/writing-data)
+- [Accounts and deletions](/guides/account-lifecycle)
+- [Social graph](/guides/social-graph)
+- [Record Key spec](/specs/record-key)
+- [URI scheme](/specs/at-uri-scheme)</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T015021Z" creationid="yamarten" creationdate="20260211T015021Z">
+        <seg>- [読み取りと書き込み](/guides/reads-and-writes)
+- [データ書き込み](/guides/writing-data)
+- [アカウントと削除](/guides/account-lifecycle)
 - [ソーシャルグラフ](/guides/social-graph)
 - [レコードキー仕様](/specs/record-key)
 - [URIスキーム](/specs/at-uri-scheme)</seg>
@@ -5572,8 +5672,8 @@ by Steve Klabnik
       <tuv lang="en-US">
         <seg>&lt;FooterCTA href="/" title="Ready to learn more?" description="Specs, guides, and SDKs can be found here." /&gt;</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260128T132459Z">
-        <seg>&lt;FooterCTA href="/" title="さらに学習する準備はできましたか？" description="仕様、ガイド、SDK はここにあります。" /&gt;</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T042456Z">
+        <seg>&lt;FooterCTA href="/" title="さらに学習する準備はできましたか？" description="仕様、ガイド、SDKはここにあります。" /&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -5712,7 +5812,7 @@ by Steve Klabnik
   &lt;/span&gt;
 &lt;/Link&gt;</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T082724Z">
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T041210Z">
         <seg>&lt;Link href="https://github.com/bluesky-social/statusphere-example-app" className="not-prose flex items-center gap-2 bg-blue-100 dark:bg-blue-950 dark:text-white px-4 py-3 text-base rounded-lg hover:underline"&gt;
   &lt;svg viewBox="0 0 20 20" aria-hidden="true" className="h-6 dark:text-white"&gt;
     &lt;path
@@ -5723,9 +5823,19 @@ by Steve Klabnik
     /&gt;
   &lt;/svg&gt;
   &lt;span&gt;
-    サンプル アプリケーションのソースコードはGitHubで見つかります。
+    サンプルアプリケーションのソースコードはGitHubで見つかります。
   &lt;/span&gt;
 &lt;/Link&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>&lt;Note&gt;
+    Note that you'll need to [blank import](https://www.oreilly.com/library/view/the-go-programming/9780134190570/ebook_split_100.html) the `bsky` and `util` libraries if you aren't using them directly, due to the way Go imports work:</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T015158Z" creationid="yamarten" creationdate="20260211T015138Z">
+        <seg>&lt;Note&gt;
+    Goインポートの仕組み上、`bsky`ライブラリと`util`ライブラリを直接使用していない場合は、これらを[空インポート](https://www.oreilly.com/library/view/the-go-programming/9780134190570/ebook_split_100.html)する必要があることに注意してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6779,8 +6889,8 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       <tuv lang="en-US">
         <seg>AT Protocol (or atproto) is a protocol for creating decentralized social applications. {{className: 'lead'}}</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260128T132852Z">
-        <seg>ATプロトコル（またはatproto）は、分散型ソーシャルアプリケーションを作成するためのプロトコルです。 {{className: 'lead'}}</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040127Z">
+        <seg>ATプロトコル（またはAtproto）は、分散型ソーシャルアプリケーションを作成するためのプロトコルです。 {{className: 'lead'}}</seg>
       </tuv>
     </tu>
     <tu>
@@ -7484,6 +7594,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>After a successful upload, blobs are placed in temporary storage. They are not accessible for download or distribution while in this state. Servers should "garbage collect" (delete) un-referenced temporary blobs after an appropriate time span (see [implementation guidelines](#web-accessibility)). Blobs which are in temporary storage should not be included in the **`listBlobs`** output.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T020004Z" creationid="yamarten" creationdate="20260211T020004Z">
+        <seg>アップロードに成功した後、blobは一時ストレージに配置されます。この状態では、ダウンロードや配送はできません。サーバーは適切な時間経過後に、参照されていない一時blobをガベージコレクション（削除）すべきです（[実装ガイドライン](#web-accessibility)を参照）。一時ストレージのblobは **`listBlobs`** の出力に含められません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>After a successful upload, blobs are placed in temporary storage. They are not accessible for download or distribution while in this state. Servers should "garbage collect" (delete) un-referenced temporary blobs after an appropriate time span (see implementation guidelines below). Blobs which are in temporary storage should not be included in the **`listBlobs`** output.</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260209T103130Z" creationid="yamarten" creationdate="20260103T082316Z">
@@ -7518,8 +7636,8 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       <tuv lang="en-US">
         <seg>After that, you can clone down our original [feed-generator repo](https://github.com/bluesky-social/feed-generator) and run the [publishFeedGen.ts](https://github.com/bluesky-social/feed-generator/blob/main/scripts/publishFeedGen.ts) script interactively. This creates the necessary Atproto records to point to your feed server, and allow it to be discovered:</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T092954Z" creationid="yamarten" creationdate="20260208T092954Z">
-        <seg>その後、公式の[feed-generatorリポジトリ](https://github.com/bluesky-social/feed-generator)をクローンし、[publishFeedGen.ts](https://github.com/bluesky-social/feed-generator/blob/main/scripts/publishFeedGen.ts)スクリプトを対話的に実行できます。これにより、あなたのフィードサーバーを指すために必要なatprotoレコードが作成され、発見可能になります。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T035936Z" creationid="yamarten" creationdate="20260208T092954Z">
+        <seg>その後、公式の[feed-generatorリポジトリ](https://github.com/bluesky-social/feed-generator)をクローンし、[publishFeedGen.ts](https://github.com/bluesky-social/feed-generator/blob/main/scripts/publishFeedGen.ts)スクリプトを対話的に実行できます。これにより、あなたのフィードサーバーを指すために必要なAtprotoレコードが作成され、発見可能になります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -7566,8 +7684,8 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       <tuv lang="en-US">
         <seg>All Lexcions should be flexible to extension and evolution over time, without breaking the Lexicon schema evolution rules. This is particularly true for record schemas. Given the distributed storage model of atproto, developers do not have a reliable mechanism to update all data records in the network. Extensions could come from the original designer, or other developers and projects.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260104T081637Z" creationid="yamarten" creationdate="20260104T081637Z">
-        <seg>すべてのLexiconはスキーマの進化ルールを破らない範囲で拡張と進化に柔軟であるべきです。これは特にレコードスキーマに当てはまります。atprotoの分散ストレージモデルを考えると、開発者はネットワーク内のすべてのデータレコードを更新するための確実なメカニズムを持ちません。拡張は元の設計者または他の開発者やプロジェクトから来ることがあります。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040511Z" creationid="yamarten" creationdate="20260104T081637Z">
+        <seg>すべてのLexiconはスキーマの進化ルールを破らない範囲で拡張と進化に柔軟であるべきです。これは特にレコードスキーマに当てはまります。Atprotoの分散ストレージモデルを考えると、開発者はネットワーク内のすべてのデータレコードを更新するための確実なメカニズムを持ちません。拡張は元の設計者または他の開発者やプロジェクトから来ることがあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8356,8 +8474,8 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       <tuv lang="en-US">
         <seg>Apps that are using Atproto identity providers *solely* for authentication [only need to request the `atproto` permission](/guides/scopes). This provides the same OAuth flow that you might expect from other identity providers; no features of the Atmosphere social graph are used, and no additional permissions are required:</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T073555Z" creationid="yamarten" creationdate="20260208T073555Z">
-        <seg>atprotoのIDプロバイダーを認証*のみ*に利用するアプリは、[`atproto`権限を要求するだけで十分](/guides/scopes)です。これにより、他のIDプロバイダーで期待するのと同じOAuthフローが提供されます。Atmosphereのソーシャルグラフ機能は使われず、追加の権限も不要です。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040650Z" creationid="yamarten" creationdate="20260208T073555Z">
+        <seg>AtprotoのIDプロバイダーを認証*のみ*に利用するアプリは、[`atproto`権限を要求するだけで十分](/guides/scopes)です。これにより、他のIDプロバイダーで期待するのと同じOAuthフローが提供されます。Atmosphereのソーシャルグラフ機能は使われず、追加の権限も不要です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8516,8 +8634,8 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       <tuv lang="en-US">
         <seg>As well, unlike p2p networks, users maintain a relationship with a persistent backend (the PDS) that hosts their data and information about their identity. Most notably (while not a hard requirement in atproto), we made the decision to move signing keys up to the backend. This prevents the complex key management UX issues that come with client-side keys. However, there is an obvious loss in user-control by doing so. This is mitigated once again by lazy trust. Trust is moved a layer up into the identity system such that a user can hold a recovery key for their identity that allows them to migrate away from a bad PDS.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260209T095953Z">
-        <seg>また、P2Pネットワークと異なり、ユーザーは自分のデータとID情報をホストする永続的なバックエンド（PDS）と関係を持ちます。特に（atprotoで厳密に必須というわけではありませんが）、私たちは署名鍵をバックエンド側へ移す決定をしました。これにより、クライアントが鍵を持つことによる複雑な鍵管理UXの問題を防げます。しかし、その分ユーザーのコントロールが失われるのも事実です。これも後回し信頼で緩和されます。信頼はIDシステムの一段上に移され、ユーザーはIDの復旧鍵を保持でき、それによって不適切なPDSから移行できます。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040332Z">
+        <seg>また、P2Pネットワークと異なり、ユーザーは自分のデータとID情報をホストする永続的なバックエンド（PDS）と関係を持ちます。特に（Atprotoで厳密に必須というわけではありませんが）、私たちは署名鍵をバックエンド側へ移す決定をしました。これにより、クライアントが鍵を持つことによる複雑な鍵管理UXの問題を防げます。しかし、その分ユーザーのコントロールが失われるのも事実です。これも後回し信頼で緩和されます。信頼はIDシステムの一段上に移され、ユーザーはIDの復旧鍵を保持でき、それによって不適切なPDSから移行できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8612,8 +8730,8 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       <tuv lang="en-US">
         <seg>Atproto HTTP API methods each scope and implement a particular set of Lexicons. The AT Protocol's API system, [XRPC](/specs/xrpc), is essentially a thin wrapper around HTTPS. For example, a call to:</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T072323Z" creationid="yamarten" creationdate="20260208T072323Z">
-        <seg>atprotoのHTTP APIメソッドは、それぞれ特定のLexiconセットに対して実装します。ATプロトコルのAPIシステムである[XRPC](/specs/xrpc)は、本質的にHTTPSの薄いラッパーです。例えば、次の呼び出しを考えます。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040521Z" creationid="yamarten" creationdate="20260208T072323Z">
+        <seg>AtprotoのHTTP APIメソッドは、それぞれ特定のLexiconセットに対して実装します。ATプロトコルのAPIシステムである[XRPC](/specs/xrpc)は、本質的にHTTPSの薄いラッパーです。例えば、次の呼び出しを考えます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8628,40 +8746,40 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       <tuv lang="en-US">
         <seg>Atproto [specifies](/specs/oauth) a particular "profile" of the OAuth standards, using [OAuth 2.1](https://www.ietf.org/archive/id/draft-ietf-oauth-v2-1-13.html) as the foundation.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260209T103049Z" creationid="yamarten" creationdate="20260208T064127Z">
-        <seg>atprotoは[OAuth仕様](/specs/oauth)でOAuth標準の特定のプロファイルを指定し、[OAuth 2.1](https://www.ietf.org/archive/id/draft-ietf-oauth-v2-1-13.html)を基礎としています。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T035802Z" creationid="yamarten" creationdate="20260208T064127Z">
+        <seg>Atprotoは[OAuth仕様](/specs/oauth)でOAuth標準の特定のプロファイルを指定し、[OAuth 2.1](https://www.ietf.org/archive/id/draft-ietf-oauth-v2-1-13.html)を基礎としています。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="en-US">
         <seg>Atproto exchanges data and RPC commands across organizations. For the data and RPC to be useful, the software needs to correctly handle schemas created by separate teams. This is the purpose of [Lexicon](/guides/lexicon).</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T063520Z">
-        <seg>atprotoは組織間でデータとRPCコマンドを交換します。データとRPCが有用であるためには、ソフトウェアが別のチームによって作成されたスキーマを正しく処理する必要があります。これが[Lexicon](/guides/lexicon)の目的です。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T041639Z">
+        <seg>Atprotoは組織間でデータとRPCコマンドを交換します。データとRPCが有用であるためには、ソフトウェアが別のチームによって作成されたスキーマを正しく処理する必要があります。これが[Lexicon](/guides/lexicon)の目的です。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="en-US">
         <seg>Atproto is a multi-party, low-coordination network. Services can join permissionlessly and operate under their own policies. While coordination pains are to some degree inevitable, atproto tries to head off the worst of it by being a very structured protocol. You'll see this reflected in many design decisions in the protocol: records encoded as canonical cbor, multiformats everywhere, a unicit (deterministic insertion-order-independent construction) data structure in the repository, a constrained set of allowed dids/hash functions, even things like requiring DPoP in OAuth.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260201T092658Z">
-        <seg>atprotoは多者間・低調整のネットワークです。サービスは許可不要で参加し、それぞれのポリシーで運用できます。調整の痛みはある程度避けられませんが、atprotoは非常に構造化されたプロトコルであることで、最悪の事態を避けようとしています。これはプロトコルの多くの設計判断に反映されています。例えば、正規化CBORでエンコードされたレコード、至る所に現れるmultiformats、unicit（挿入順序に依存しない決定的構成）なデータ構造を持つリポジトリ、許可されたDID/ハッシュ関数の制限、さらにはOAuthでDPoPを要求することなどです。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040309Z">
+        <seg>Atprotoは多者間・低調整のネットワークです。サービスは許可不要で参加し、それぞれのポリシーで運用できます。調整の痛みはある程度避けられませんが、Atprotoは非常に構造化されたプロトコルであることで、最悪の事態を避けようとしています。これはプロトコルの多くの設計判断に反映されています。例えば、正規化CBORでエンコードされたレコード、至る所に現れるmultiformats、unicit（挿入順序に依存しない決定的構成）なデータ構造を持つリポジトリ、許可されたDID/ハッシュ関数の制限、さらにはOAuthでDPoPを要求することなどです。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="en-US">
         <seg>Atproto is big-world, open social. Users publish JSON records into repositories. The changestreams of those records then sync across the network to drive applications.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T094417Z" creationid="yamarten" creationdate="20260208T094417Z">
-        <seg>atprotoは、ビッグワールドでオープンなソーシャルです。ユーザーはJSONレコードをリポジトリに公開します。これらのレコードの変更ストリームがネットワーク全体で同期され、アプリケーションを動かします。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T041403Z" creationid="yamarten" creationdate="20260208T094417Z">
+        <seg>Atprotoは、ビッグワールドでオープンなソーシャルです。ユーザーはJSONレコードをリポジトリに公開します。これらのレコードの変更ストリームがネットワーク全体で同期され、アプリケーションを動かします。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="en-US">
         <seg>Atproto takes a middle approach that we sometimes refer to as “lazy trust”. Like p2p networks, trust is imbued into the data. However most often when browsing the network, users are seeing computed views not the canonical data. When viewing a timeline for instance, clients are likely not checking the signatures on every post that comes down. This is mitigated by the fact that the canonical data is always at hand. Therefore the service that offers these computed views is *staking its reputation* on every view that it serves. If a service starts serving invalid views, this can be verifiably proven. And since the data is locked open, users can migrate to another service that is better behaved.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260209T095949Z">
-        <seg>atprotoは中間的なアプローチを取り、私たちはこれを「後回し信頼（lazy trust）」と呼ぶことがあります。P2Pネットワークと同様に、信頼はデータに埋め込まれています。しかし、ネットワークを閲覧する際にユーザーが見るのは多くの場合、正規データではなく計算済みのビューです。例えばタイムラインを見るとき、クライアントは流れてくるすべての投稿の署名を検証しないでしょう。これは、正規データが常に手元にあることで緩和されます。したがって、これらの計算済みビューを提供するサービスは、提供するすべてのビューに*評判を賭けて*います。サービスが無効なビューを出し始めたら、それを検証できます。しかもデータはオープンなので、ユーザーはより適切な別サービスへ移行できます。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040328Z">
+        <seg>Atprotoは中間的なアプローチを取り、私たちはこれを「後回し信頼（lazy trust）」と呼ぶことがあります。P2Pネットワークと同様に、信頼はデータに埋め込まれています。しかし、ネットワークを閲覧する際にユーザーが見るのは多くの場合、正規データではなく計算済みのビューです。例えばタイムラインを見るとき、クライアントは流れてくるすべての投稿の署名を検証しないでしょう。これは、正規データが常に手元にあることで緩和されます。したがって、これらの計算済みビューを提供するサービスは、提供するすべてのビューに*評判を賭けて*います。サービスが無効なビューを出し始めたら、それを検証できます。しかもデータはオープンなので、ユーザーはより適切な別サービスへ移行できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8852,8 +8970,8 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       <tuv lang="en-US">
         <seg>Before Bluesky was started, we established a clear requirement of “no steps backwards.” We wanted the network to feel as convenient and global as every social app before it, while still working as an open network. This is why, when we looked at federation and blockchains, the scaling limits of those architectures stood out to us. Our solution was to take standard practices for high scale backends, and then apply the techniques we used in peer-to-peer systems to create an open network.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T103114Z">
-        <seg>Blueskyを始める前に、私たちは「後退しない」という明確な要件を設定しました。ネットワークが、これまでのすべてのソーシャルアプリと同様に便利でグローバルでありながら、オープンネットワークとして機能することを望んでいました。そのため、フェデレーションとブロックチェーンを検討したときに、これらのアーキテクチャのスケーリングの限界が際立っていました。私たちの解決策は、大規模なバックエンドの標準的な方法を採用し、ピアツーピア システムで使用した手法を適用してオープンネットワークを作成することでした。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T042445Z">
+        <seg>Blueskyを始める前に、私たちは「後退しない」という明確な要件を設定しました。ネットワークが、これまでのすべてのソーシャルアプリと同様に便利でグローバルでありながら、オープンネットワークとして機能することを望んでいました。そのため、フェデレーションとブロックチェーンを検討したときに、これらのアーキテクチャのスケーリングの限界が際立っていました。私たちの解決策は、大規模なバックエンドの標準的な方法を採用し、ピアツーピアシステムで使用した手法を適用してオープンネットワークを作成することでした。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8932,8 +9050,8 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       <tuv lang="en-US">
         <seg>Begin by adding these Atproto libraries to your existing project:</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T145528Z" creationid="yamarten" creationdate="20260208T145528Z">
-        <seg>まず、用意したプロジェクトに以下のatprotoライブラリを追加します。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040733Z" creationid="yamarten" creationdate="20260208T145528Z">
+        <seg>まず、用意したプロジェクトに以下のAtprotoライブラリを追加します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8948,8 +9066,8 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       <tuv lang="en-US">
         <seg>Begin by installing the Atproto SDK packages:</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T074136Z" creationid="yamarten" creationdate="20260208T074136Z">
-        <seg>まずatproto SDKパッケージをインストールしてください。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040720Z" creationid="yamarten" creationdate="20260208T074136Z">
+        <seg>まずAtproto SDKパッケージをインストールしてください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10022,6 +10140,14 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Chunked transfer encoding may also be permitted for uploads. Servers *may* sniff the blob mimetype to validate against the declared **`Content-Type`** header, and either return a modified mimetype in the response, or reject the upload. See ["Security Considerations"](/specs/blob#security-considerations). If the actual blob upload size differs from the **`Content-Length`** header, the server should reject the upload.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T015904Z" creationid="yamarten" creationdate="20260211T015904Z">
+        <seg>チャンク転送エンコーディングによるアップロードも許可されている場合があります。サーバーはblobのmimetypeをスニッフィングして宣言された **`Content-Type`** ヘッダーに対して検証し、レスポンスで修正されたmimetypeを返すか、アップロードを拒否する場合があります。[『Security Considerations』](/specs/blob#security-considerations)を参照してください。実際のblobアップロードサイズが **`Content-Length`** ヘッダーと異なる場合、サーバーはアップロードを拒否します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Clear all storage data</seg>
       </tuv>
       <tuv lang="ja">
@@ -10472,8 +10598,8 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>Congratulations on completing this tutorial! You now have a solid Next.js foundation for building Atproto apps with OAuth. From here, you can move on to our [**Statusphere Example App Tutorial**](/guides/statusphere-tutorial).</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T110300Z" creationid="yamarten" creationdate="20260208T110300Z">
-        <seg>おめでとうございます、チュートリアルは完了です。これでOAuthを使ったatprotoアプリを作るための堅実なNext.js基盤ができました。次は[**Statusphereサンプルアプリチュートリアル**](/guides/statusphere-tutorial)に進めます。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040615Z" creationid="yamarten" creationdate="20260208T110300Z">
+        <seg>おめでとうございます、チュートリアルは完了です。これでOAuthを使ったAtprotoアプリを作るための堅実なNext.js基盤ができました。次は[**Statusphereサンプルアプリチュートリアル**](/guides/statusphere-tutorial)に進めます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -10712,8 +10838,8 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>Control over Atproto resources is described and granted using [permissions](/specs/permission). A group of a permissions related to a specific Lexicon namespace (record types and API endpoints) can be bundled together as a "permission set". Both are used in the context of [OAuth](/specs/auth) to grant client software access to account resources on a PDS: For example, the ability to write records of specific types to the user's public repository, or make authenticated API requests to remote services. Developers declare the permissions their app requires to function, and end users are shown the permissions when granting access to the app.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T073459Z" creationid="yamarten" creationdate="20260208T073459Z">
-        <seg>atprotoのリソース制御は[権限](/specs/permission)で説明され、付与されます。特定のLexicon名前空間（レコード型とAPIエンドポイント）に関連する権限のグループは「権限セット」としてまとめられます。どちらも[OAuth](/specs/auth)の文脈で使われ、PDS上のアカウントリソースへのクライアントアクセスを付与します。例えば、ユーザーの公開リポジトリに特定の型のレコードを書き込む権限や、リモートサービスへの認証付きAPIリクエストを行う権限です。開発者はアプリが動作に必要な権限を宣言し、エンドユーザーはアプリへのアクセス許可時にその権限を確認します。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040637Z" creationid="yamarten" creationdate="20260208T073459Z">
+        <seg>Atprotoのリソース制御は[権限](/specs/permission)で説明され、付与されます。特定のLexicon名前空間（レコード型とAPIエンドポイント）に関連する権限のグループは「権限セット」としてまとめられます。どちらも[OAuth](/specs/auth)の文脈で使われ、PDS上のアカウントリソースへのクライアントアクセスを付与します。例えば、ユーザーの公開リポジトリに特定の型のレコードを書き込む権限や、リモートサービスへの認証付きAPIリクエストを行う権限です。開発者はアプリが動作に必要な権限を宣言し、エンドユーザーはアプリへのアクセス許可時にその権限を確認します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -11336,8 +11462,8 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>DAG-CBOR is a serialization format used by [atproto](#at-protocol). It was chosen because it provides a reliable canonical form, which is important for cryptographic verification.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T110201Z">
-        <seg>DAG-CBORは、[atproto](#at-protocol)で使用されるシリアル化形式です。暗号検証に重要な信頼性の高い標準形式を提供するため、この形式が選択されました。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040407Z">
+        <seg>DAG-CBORは、[Atproto](#at-protocol)で使用されるシリアル化形式です。暗号検証に重要な信頼性の高い標準形式を提供するため、この形式が選択されました。</seg>
       </tuv>
     </tu>
     <tu>
@@ -12813,8 +12939,8 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>Even though product development is centralized, the underlying data and identity remain open and universally accessible as a result of building on atproto. Put another way, ownership is clear for the evolution of a given application, but since the data is open, it can be reused, remixed, or extended by anyone else in the network.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260201T091331Z">
-        <seg>プロダクト開発が集権的であっても、atproto上に構築されているため、基盤となるデータとIDは開かれており普遍的にアクセス可能です。言い換えれば、特定アプリケーションの進化に関する所有権は明確ですが、データがオープンである以上、ネットワーク内の他の誰でも再利用・リミックス・拡張できます。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040301Z">
+        <seg>プロダクト開発が集権的であっても、Atproto上に構築されているため、基盤となるデータとIDは開かれており普遍的にアクセス可能です。言い換えれば、特定アプリケーションの進化に関する所有権は明確ですが、データがオープンである以上、ネットワーク内の他の誰でも再利用・リミックス・拡張できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -13757,8 +13883,8 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>Finally, you'll make one last route, to expose the `oauth-client-metadata.json` at a well-known URL. This is [used in ATProto OAuth](/specs/oauth#clients) to discover client configuration. Create `app/oauth-client-metadata.json/route.ts`:</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T104626Z" creationid="yamarten" creationdate="20260208T104626Z">
-        <seg>最後にもう1つルートを作成し、`oauth-client-metadata.json`をwell-known URLで公開します。これはatproto OAuthでクライアント設定の検出に[使われます](/specs/oauth#clients)。`app/oauth-client-metadata.json/route.ts`を作成してください。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040604Z" creationid="yamarten" creationdate="20260208T104626Z">
+        <seg>最後にもう1つルートを作成し、`oauth-client-metadata.json`をwell-known URLで公開します。これはAtproto OAuthでクライアント設定の検出に[使われます](/specs/oauth#clients)。`app/oauth-client-metadata.json/route.ts`を作成してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14213,8 +14339,8 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>For an active account on another PDS, this is done by generating a service auth token (JWT) signed with the current atproto signing key indicated in the identity DID document. This can be requested from the previous PDS instance using the `com.atproto.server.getServiceAuth` endpoint (or an equivalent interface/API).</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260103T125359Z" creationid="yamarten" creationdate="20260102T093436Z">
-        <seg>別のPDSで有効なアカウントの場合、DIDドキュメントに示された現在のatproto署名鍵で署名されたサービス認証トークン（JWT）を生成することでこれを行います。これは元のPDSインスタンスに対して`com.atproto.server.getServiceAuth`エンドポイント（または同等のインターフェースやAPI）を使って要求できます。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T035607Z" creationid="yamarten" creationdate="20260102T093436Z">
+        <seg>別のPDSで有効なアカウントの場合、DIDドキュメントに示された現在のAtproto署名鍵で署名されたサービス認証トークン（JWT）を生成することでこれを行います。これは元のPDSインスタンスに対して`com.atproto.server.getServiceAuth`エンドポイント（または同等のインターフェースやAPI）を使って要求できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14229,8 +14355,8 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>For an independently-controlled identity (eg, `did:web`, or a `did:plc` with old PDS offline or uncooperative), this may involve updating the identity to include a self-controlled atproto signing key, and generating the service auth token offline.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260102T094045Z" creationid="yamarten" creationdate="20260102T094045Z">
-        <seg>独立して管理されるID（例：`did:web`、あるいは旧PDSがオフラインまたは非協力的な`did:plc`）の場合、管理下のatproto署名鍵を含めるようIDを更新したり、オフラインでサービス認証トークンを生成することが含まれる場合があります。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T035612Z" creationid="yamarten" creationdate="20260102T094045Z">
+        <seg>独立して管理されるID（例：`did:web`、あるいは旧PDSがオフラインまたは非協力的な`did:plc`）の場合、管理下のAtproto署名鍵を含めるようIDを更新したり、オフラインでサービス認証トークンを生成することが含まれる場合があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14317,8 +14443,8 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>For more context, see [Atproto for distributed systems engineers](/articles/atproto-for-distsys-engineers) and [The ATProto Ethos](/articles/atproto-ethos).</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T093445Z" creationid="yamarten" creationdate="20260208T093347Z">
-        <seg>詳しい背景は、[分散システムエンジニアのためのatproto](/articles/atproto-for-distsys-engineers)と[atprotoの基本理念](/articles/atproto-ethos)を参照してください。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040707Z" creationid="yamarten" creationdate="20260208T093347Z">
+        <seg>詳しい背景は、[分散システムエンジニアのためのAtproto](/articles/atproto-for-distsys-engineers)と[atprotoの基本理念](/articles/atproto-ethos)を参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14499,8 +14625,8 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>Frequently Asked Questions about the Authenticated Transfer Protocol (Atproto). For FAQ about Bluesky, visit [here](https://bsky.social/about/faq).</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T065908Z" creationid="yamarten" creationdate="20260208T065908Z">
-        <seg>Authenticated Transferプロトコル（atproto）に関するよくある質問。Blueskyに関するよくある質問については、[こちら](https://bsky.social/about/faq)をご覧ください。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040353Z" creationid="yamarten" creationdate="20260208T065908Z">
+        <seg>Authenticated Transferプロトコル（Atproto）に関するよくある質問。Blueskyに関するよくある質問については、[こちら](https://bsky.social/about/faq)をご覧ください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14587,8 +14713,8 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>From the expanded Atproto and Bluesky permissions, you might recognize `atproto` (for OAuth login), `blob:*/*` (for image and video handling), and several other `app.bsky.*` permissions for profile and social graph interactions.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T073604Z" creationid="yamarten" creationdate="20260208T073604Z">
-        <seg>展開されたatprotoとBlueskyの権限には、OAuthログイン用の`atproto`、画像・動画の取り扱い用の`blob:*/*`、そしてプロフィールやソーシャルグラフ操作のための複数の`app.bsky.*`権限が含まれていることが分かるでしょう。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040653Z" creationid="yamarten" creationdate="20260208T073604Z">
+        <seg>展開されたAtprotoとBlueskyの権限には、OAuthログイン用の`atproto`、画像・動画の取り扱い用の`blob:*/*`、そしてプロフィールやソーシャルグラフ操作のための複数の`app.bsky.*`権限が含まれていることが分かるでしょう。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14603,8 +14729,8 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>From this basis, atproto adds two core innovations: identity-based authority and the separation of data hosting from the rich applications built on top of it.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260201T083004Z">
-        <seg>この基盤の上に、atprotoは2つの核となるイノベーションを加えます。IDに基づく権威と、データホスティング層をその上のリッチなアプリケーションから分離することです。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040227Z">
+        <seg>この基盤の上に、Atprotoは2つの核となるイノベーションを加えます。IDに基づく権威と、データホスティング層をその上のリッチなアプリケーションから分離することです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15011,8 +15137,8 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>Handles in atproto are domain names which resolve to a DID, which in turn resolves to a DID Document containing the user's signing key and hosting service.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T111344Z">
-        <seg>atprotoのハンドルは、DIDに解決されるドメイン名です。DIDは、ユーザーの署名公開鍵とホスティングサービスを含むDIDドキュメントに解決されます。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040450Z">
+        <seg>Atprotoのハンドルは、DIDに解決されるドメイン名です。DIDは、ユーザーの署名公開鍵とホスティングサービスを含むDIDドキュメントに解決されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -15732,6 +15858,14 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>If you are using password auth, you should generate an [app password](/specs/xrpc#app-passwords) for your account rather than using your main account password. If you are using Bluesky, you can generate an app password in your [account settings](https://bsky.app/settings/app-passwords).</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T015319Z" creationid="yamarten" creationdate="20260211T015319Z">
+        <seg>パスワード認証を使用している場合は、メインのアカウントパスワードではなく[アプリパスワード](/specs/xrpc#app-passwords)を生成するべきです。Blueskyを使用している場合は、[アカウント設定](https://bsky.app/settings/app-passwords)でアプリパスワードを生成できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>If you aren't using an existing account to post from, you should [create a new account](https://bsky.app/) for your bot. You should also generate an [app password](/guides/sdk-auth) for that account.</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260208T081117Z" creationid="yamarten" creationdate="20260208T081117Z">
@@ -16097,6 +16231,14 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>In general, it is best to use existing permission sets for cleaner UI, but you can also request individual permissions and define your own permission sets as needed. Refer to the [OAuth flow examples](#oauth-flow-examples) section for how these requests appear in the OAuth flow.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T014643Z" creationid="yamarten" creationdate="20260211T014643Z">
+        <seg>一般的には、UIをすっきりさせるために既存の権限セットを使うのが最善ですが、必要に応じて個別の権限を要求したり独自の権限セットを定義することもできます。これらのリクエストがOAuthフローでどのように表示されるかは、[OAuthフローの例](#oauth-flow-examples)を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>In general, it is best to use existing permission sets for cleaner UI, but you can also request individual permissions and define your own permission sets as needed. Refer to the [for users](#for-users) section for how these requests appear in the OAuth flow.</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260111T170256Z" creationid="yamarten" creationdate="20260111T135807Z">
@@ -16129,6 +16271,14 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>In other words, if you have an app at `https://greensky.app`, you should not use `https://pds.greensky.app` as a PDS hostname, you should use something like `https://greensky-pds.net`. If you used `https://pds.greensky.social` (which would make sense), it might rule out an OAuth client app at `https://chat.greensky.social` in the future. But you could do something like `https://chat.greensky.app`.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T020345Z" creationid="yamarten" creationdate="20260211T020345Z">
+        <seg>言い換えれば、`https://greensky.app`にアプリがある場合、`https://pds.greensky.app`をPDSホスト名として使用するのではなく、`https://greensky-pds.net`のようなものを使用する必要があります。`https://pds.greensky.social`を使用した場合（一見理にかなっています）、将来`https://chat.greensky.social`にOAuthクライアントアプリを置くことができなくなります。しかし、`https://chat.greensky.app`のようにすることはできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>In this case, the most straightforward action is to acknowledge the report without taking further action. Select "Ackonwledge" from the drop-down, provide a note, then submit the action. You can use keyboard shortcuts to speed up moderation actions — for example, `S` for Submit.</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260106T150235Z" creationid="yamarten" creationdate="20260106T150235Z">
@@ -16155,8 +16305,8 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>In this post, we'll distill that ethos. First, we look at the movements in technology that have most directly influenced atproto.Then, we pull out the core innovations that atproto brought to the table. Finally, we highlight some opinionated ways of thinking that influenced the design. {{className: 'lead'}}</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260128T133141Z">
-        <seg>この投稿では、そのethosを掘り下げます。まず、atprotoに最も直接的な影響を与えた技術的ムーブメントを見ていきます。次に、atprotoがもたらした中核的な革新を取り上げます。最後に、設計に影響を与えた主張の強い思考様式をいくつか紹介します。 {{className: 'lead'}}</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040143Z">
+        <seg>この投稿では、そのethosを掘り下げます。まず、Atprotoに最も直接的な影響を与えた技術的ムーブメントを見ていきます。次に、Atprotoがもたらした中核的な革新を取り上げます。最後に、設計に影響を与えた主張の強い思考様式をいくつか紹介します。 {{className: 'lead'}}</seg>
       </tuv>
     </tu>
     <tu>
@@ -16171,8 +16321,8 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>In this tutorial we've covered the key steps to building an atproto app. Data is published in its canonical form on users' `at://` repos and then aggregated into apps' databases to produce views of the network.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T092730Z">
-        <seg>このチュートリアルでは、atprotoアプリを構築するための重要な手順について説明しました。データは、ユーザーの`at://`リポジトリに正規形で公開され、その後、アプリのデータベースに集約されてネットワークのビューが生成されます。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T035731Z">
+        <seg>このチュートリアルでは、Atprotoアプリを構築するための重要な手順について説明しました。データは、ユーザーの`at://`リポジトリに正規形で公開され、その後、アプリのデータベースに集約されてネットワークのビューが生成されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16197,6 +16347,14 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260208T080816Z" creationid="yamarten" creationdate="20260208T080816Z">
         <seg>このチュートリアルでは、[アプリパスワード](/guides/sdk-auth)で認証し、ネットワークとやり取りするボットを作成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>In this tutorial, you'll create a custom feed server by consuming posts from the [firehose](/guides/streaming-data), algorithmically sorting them, and [broadcasting them as an XRPC feed](/guides/feeds).</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T020036Z" creationid="yamarten" creationdate="20260211T020036Z">
+        <seg>このチュートリアルでは、[firehose](/guides/streaming-data)から投稿を取り込み、アルゴリズムで並び替え、[XRPCフィードとして配信する](/guides/feeds)ことで、カスタムフィードサーバーを作成します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -16514,6 +16672,14 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>It is difficult to change a PDS hostname once it has active accounts — every account needs to be migrated individually. This is absolutely possible using [PLC rotation keys](https://web.plc.directory/spec/v0.1/did-plc), but migrating is not turnkey. Also note that the PDS is the domain that users will enter their passwords on (and therefore remembered in password managers).</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T020432Z" creationid="yamarten" creationdate="20260211T020432Z">
+        <seg>アクティブなアカウントを持つようになると、PDSホスト名の変更は困難です。すべてのアカウントを個別に移行する必要があります。これは[PLCローテーション鍵](https://web.plc.directory/spec/v0.1/did-plc)を使えば間違いなく可能ですが、移行は簡単ではありません。また、PDSはユーザーがパスワードを入力するドメインである（したがってパスワードマネージャーで記憶される）ことに注意してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>It is difficult to change a PDS hostname once it has active accounts — every account needs to be migrated individually. This is absolutely possible using [PLC rotation keys], but migrating is not turnkey. Also note that the PDS is the domain that users will enter their passwords on (and therefore remembered in password managers).</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260103T130207Z" creationid="yamarten" creationdate="20260103T130207Z">
@@ -16596,8 +16762,8 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>It's not the first protocol with that aim to exist. In the history of decentralized social media protocols, atproto takes a unique approach which is still deeply influenced by technologies and movements that came before it. {{className: 'lead'}}</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260128T133002Z">
-        <seg>同じ目的を掲げるプロトコルは初めてではありません。分散型ソーシャルメディアプロトコルの歴史の中で、atprotoは独自のアプローチを取りつつも、それ以前の技術やムーブメントから深い影響を受けています。 {{className: 'lead'}}</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040131Z">
+        <seg>同じ目的を掲げるプロトコルは初めてではありません。分散型ソーシャルメディアプロトコルの歴史の中で、Atprotoは独自のアプローチを取りつつも、それ以前の技術やムーブメントから深い影響を受けています。 {{className: 'lead'}}</seg>
       </tuv>
     </tu>
     <tu>
@@ -17124,8 +17290,8 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>Lexicon is a schema language. It's used in the [Atmosphere](#atmosphere) to describe [data records](#record) and HTTP APIs. Functionally it's very similar to [JSON-Schema](https://json-schema.org/) and [OpenAPI](https://www.openapis.org/).</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T105147Z">
-        <seg>Lexiconはスキーマ言語です。[Atmosphere](#atmosphere)で[データ レコード](#record)とHTTP APIを記述するために使用されます。機能的には、[JSON-Schema](https://json-schema.org/)や[OpenAPI](https://www.openapis.org/)と非常によく似ています。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T042000Z">
+        <seg>Lexiconはスキーマ言語です。[Atmosphere](#atmosphere)で[データレコード](#record)とHTTP APIを記述するために使用されます。機能的には、[JSON-Schema](https://json-schema.org/)や[OpenAPI](https://www.openapis.org/)と非常によく似ています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -17974,8 +18140,8 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>Moderation in Atproto consists of multiple, stackable systems, including:</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T072251Z" creationid="yamarten" creationdate="20260208T072251Z">
-        <seg>atprotoのモデレーションは、以下を含む複数のスタッカブルなシステムで構成されています。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040500Z" creationid="yamarten" creationdate="20260208T072251Z">
+        <seg>Atprotoのモデレーションは、以下を含む複数のスタッカブルなシステムで構成されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18420,6 +18586,14 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Navigate to your app in a browser at [http://127.0.0.1:3000](http://127.0.0.1:3000).</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T014335Z" creationid="yamarten" creationdate="20260211T014335Z">
+        <seg>ブラウザで[http://127.0.0.1:3000](http://127.0.0.1:3000)にアクセスしてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Navigate to {0}</seg>
       </tuv>
       <tuv lang="ja">
@@ -18488,6 +18662,14 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       </tuv>
       <tuv lang="ja">
         <seg>新しい投稿</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>New applications that build on the AT Protocol can leverage existing social graph data — for example, from the `app.bsky.graph.getFollows` Lexicon RPC endpoint — to build new use cases, and bootstrap with an existing user base. This, in turn, gets you to native ATProtocol concepts like [A Social Filesystem](https://overreacted.io/a-social-filesystem/).</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T042600Z" creationid="yamarten" creationdate="20260211T015418Z">
+        <seg>ATプロトコル上に構築された新しいアプリケーションは、既存のソーシャルグラフデータ（`app.bsky.graph.getFollows` Lexicon RPCエンドポイントで得られるようなもの）を活用して、新しいユースケースを構築し、既存のユーザーベースでブートストラップできます。これにより、[A Social Filesystem](https://overreacted.io/a-social-filesystem/)のようなネイティブATプロトコルの概念が得られます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18662,8 +18844,8 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>Next, add the `oauth-client-node` package from the Atproto ecosystem, which provides OAuth client functionality.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T102714Z" creationid="yamarten" creationdate="20260208T102714Z">
-        <seg>次に、OAuthクライアント機能を提供するatprotoエコシステムの`oauth-client-node`パッケージを追加します。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040552Z" creationid="yamarten" creationdate="20260208T102714Z">
+        <seg>次に、OAuthクライアント機能を提供するAtprotoエコシステムの`oauth-client-node`パッケージを追加します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -19686,8 +19868,8 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>One more thing you should do now is update the `SCOPE` constant in `lib/auth/client.ts` to request access to this collection. Atproto permission scopes are Lexicons, so you can add `xyz.statusphere.status` to the list of scopes your app requests:</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T150014Z" creationid="yamarten" creationdate="20260208T150014Z">
-        <seg>もう1つ、`lib/auth/client.ts`の`SCOPE`定数を更新してこのコレクションへのアクセスを要求してください。atproto の権限スコープはLexicon単位なので、アプリが要求するスコープに`xyz.statusphere.status`を追加します。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040750Z" creationid="yamarten" creationdate="20260208T150014Z">
+        <seg>もう1つ、`lib/auth/client.ts`の`SCOPE`定数を更新してこのコレクションへのアクセスを要求してください。Atprotoの権限スコープはLexicon単位なので、アプリが要求するスコープに`xyz.statusphere.status`を追加します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20150,8 +20332,8 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>Operating in a trusted manner is by nature more efficient than operating trustlessly. Generally, this speaks to a philosophy of atproto which is to take advantage of the performance and UX gains that come with operating in a high-trust manner. However, when doing so always maintain the ability for credible exit and a system of checks and balances to hedge against bad actors and shoddy service providers.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260201T100236Z">
-        <seg>信頼のもとで運用するほうが、信頼不要で運用するより本質的に効率的です。一般的に、これは高信頼運用によるパフォーマンスとUXの利得を活かすというatprotoの哲学を示しています。しかしその際も常に、信頼できる出口と、不正な利用者や粗悪なサービス提供者に備えるための抑制と均衡の仕組みを維持する必要があります。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040339Z">
+        <seg>信頼のもとで運用するほうが、信頼不要で運用するより本質的に効率的です。一般的に、これは高信頼運用によるパフォーマンスとUXの利得を活かすというAtprotoの哲学を示しています。しかしその際も常に、信頼できる出口と、不正な利用者や粗悪なサービス提供者に備えるための抑制と均衡の仕組みを維持する必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20312,6 +20494,14 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260111T091923Z">
         <seg>HTMLで次のステータスレコードを一覧表示できるようになりました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Our [official PDS install script](https://github.com/bluesky-social/pds) configures SQLite as a database backend. Specifically, it uses one SQLite DB for each user's [data repository](https://atproto.com/guides/data-repos), and a few others for PDS-wide data. This may be surprising, since SQLite doesn't have any mechanism for handling backups or replications out of the box, but SQLite has increasingly been found to [scale very well](https://fly.io/blog/sqlite-internals-rollback-journal/) with some additional tooling.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T020512Z" creationid="yamarten" creationdate="20260211T020512Z">
+        <seg>公式の[PDSインストールスクリプト](https://github.com/bluesky-social/pds)はSQLiteをデータベースバックエンドとして構成します。具体的には、各ユーザーの[データリポジトリ](https://atproto.com/guides/data-repos)に対して1つのSQLite DBを使用し、PDS全体のデータ用にいくつかのDBを使用します。SQLiteにはボックスの外からバックアップまたはレプリケーションを処理するメカニズムがないため、これは驚くかもしれませんが、SQLiteは追加のツールを使用すると[非常にうまくスケール](https://fly.io/blog/sqlite-internals-rollback-journal/)する事例が増えています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -20646,8 +20836,8 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>Permission sets can be revised, but removing them or making destructive changes can break existing applications. In general, permission sets should be closely tied to the applications they are designed for, but not necessarily 1:1. Remember that Atproto applications can utilize multiple different Lexicons.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T073537Z" creationid="yamarten" creationdate="20260208T073537Z">
-        <seg>権限セットは改訂できますが、削除したり破壊的変更を行うと既存アプリケーションが壊れる可能性があります。一般に、権限セットは設計対象のアプリケーションに密接に結びつけるべきですが、必ずしも1:1である必要はありません。atprotoアプリケーションは複数の異なるLexiconを利用できることを覚えておいてください。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040645Z" creationid="yamarten" creationdate="20260208T073537Z">
+        <seg>権限セットは改訂できますが、削除したり破壊的変更を行うと既存アプリケーションが壊れる可能性があります。一般に、権限セットは設計対象のアプリケーションに密接に結びつけるべきですが、必ずしも1:1である必要はありません。Atprotoアプリケーションは複数の異なるLexiconを利用できることを覚えておいてください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -24743,8 +24933,8 @@ Repos: 1</seg>
       <tuv lang="en-US">
         <seg>Some software does not need to worry much about Bluesky or atproto schema validation. For example, client apps and bots can generally assume that data they receive from the Bluesky API is valid, and when they try to create records the PDS is responsible for double-checking schema validation.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260103T095250Z" creationid="yamarten" creationdate="20260103T095200Z">
-        <seg>一部のソフトウェアはBlueskyやatprotoのスキーマ検証についてあまり心配する必要はありません。例えば、クライアントアプリやボットは通常、Bluesky APIから受け取るデータが正しいと見なすことができ、レコードの作成時にはPDSがスキーマ検証を二重チェックする責任があります。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T035940Z" creationid="yamarten" creationdate="20260103T095200Z">
+        <seg>一部のソフトウェアはBlueskyやAtprotoのスキーマ検証についてあまり心配する必要はありません。例えば、クライアントアプリやボットは通常、Bluesky APIから受け取るデータが正しいと見なすことができ、レコードの作成時にはPDSがスキーマ検証を二重チェックする責任があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -25655,8 +25845,16 @@ Repos: 1</seg>
       <tuv lang="en-US">
         <seg>The "collection" is a bucket of JSON [records](#record) in a [data repository](#data-repo). They support ordered list operations. Every collection is identified by an [NSID](#nsid-namespaced-id) which is expected to map to a [Lexicon](#lexicon) schema.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T105432Z">
-        <seg>「コレクション」は、[データ リポジトリ](#data-repo)内のJSON[レコード](#record)のバケツです。順序付きリスト操作をサポートします。すべてのコレクションは、[NSID](#nsid-namespace-id)によって識別され、[Lexicon](#lexicon)スキーマにマップされることが想定されています。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T041937Z">
+        <seg>「コレクション」は、[データリポジトリ](#data-repo)内のJSON[レコード](#record)のバケツです。順序付きリスト操作をサポートします。すべてのコレクションは、[NSID](#nsid-namespace-id)によって識別され、[Lexicon](#lexicon)スキーマにマップされることが想定されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>The "data repository" or "repo" is the public dataset which represents a user. It is comprised of [collections](#collection) of JSON [records](#record) and unstructured [blobs](#blob). Every repo is assigned a single permanent [DID](#did-decentralized-id) which identifies it. Repos may also have a single [domain handle](#handle) which act as human-readable names.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T020101Z" creationid="yamarten" creationdate="20260211T020101Z">
+        <seg>「データリポジトリ」または「リポジトリ」は、ユーザーを表すパブリックデータセットです。これは、JSON[レコード](#record)と非構造化[blob](#blob)の[コレクション](#collection)で構成されています。すべてのリポジトリには、それを識別する1つの永続的な[DID](#did-decentralized-id)が割り当てられます。リポジトリには、人間が読める名前として機能する[ドメインハンドル](#handle)を1つ持つことができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -25671,8 +25869,8 @@ Repos: 1</seg>
       <tuv lang="en-US">
         <seg>The **Authenticated Transfer Protocol**, aka **Atproto**, is a decentralized protocol for large-scale social web applications. This document will introduce you to the ideas behind the AT Protocol.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260209T101046Z" creationid="yamarten" creationdate="20260208T073337Z">
-        <seg>**Authenticated Transferプロトコル**（別名**atproto**）は、大規模な分散型ソーシャルアプリケーション用のフェデレーションプロトコルです。このドキュメントでは、ATプロトコルの背後にある考え方を紹介します。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040622Z" creationid="yamarten" creationdate="20260208T073337Z">
+        <seg>**Authenticated Transferプロトコル**（別名**Atproto**）は、大規模な分散型ソーシャルアプリケーション用のフェデレーションプロトコルです。このドキュメントでは、ATプロトコルの背後にある考え方を紹介します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -25751,8 +25949,8 @@ Repos: 1</seg>
       <tuv lang="en-US">
         <seg>The AT Protocol distributes user data across different nodes of your network, using the core building blocks of the web. The AT Protocol interconnects applications so that their backends share state, including user accounts and content, in individual data repositories. Many operations you'll perform when working with Atproto apps involve reading and writing these data repositories.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T074036Z" creationid="yamarten" creationdate="20260208T074036Z">
-        <seg>ATプロトコルは、ウェブの基本的な構成要素を用いてネットワークの異なるノードにユーザーデータを分散します。ATプロトコルはアプリケーションを相互接続し、各バックエンドが個々のデータリポジトリに含まれるアカウントやコンテンツなどの状態を共有します。atprotoアプリで行う操作の多くは、これらのデータリポジトリの読み書きを伴います。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040704Z" creationid="yamarten" creationdate="20260208T074036Z">
+        <seg>ATプロトコルは、ウェブの基本的な構成要素を用いてネットワークの異なるノードにユーザーデータを分散します。ATプロトコルはアプリケーションを相互接続し、各バックエンドが個々のデータリポジトリに含まれるアカウントやコンテンツなどの状態を共有します。Atprotoアプリで行う操作の多くは、これらのデータリポジトリの読み書きを伴います。</seg>
       </tuv>
     </tu>
     <tu>
@@ -25879,8 +26077,8 @@ Repos: 1</seg>
       <tuv lang="en-US">
         <seg>The Atproto model is that *speech* and *reach* should be two separate layers, built to work with each other. The “speech” layer should remain permissive, distributing authority and designed to ensure everyone has a voice. The “reach” layer lives on top, built for flexibility and designed to scale. Atproto moderation is implemented using [Labels](/guides/labels).</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T072357Z" creationid="yamarten" creationdate="20260208T072357Z">
-        <seg>atprotoのモデルでは、*スピーチ*と*リーチ*は別個の層として設計され、相互に連携して動作します。スピーチ層は寛容で権限を分散し、誰もが発言できることを重視します。リーチ層はその上に位置し、柔軟性とスケーラビリティのために設計されています。atprotoのモデレーションは[ラベル](/guides/labels)を用いて実装されています。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040529Z" creationid="yamarten" creationdate="20260208T072357Z">
+        <seg>Atprotoのモデルでは、*スピーチ*と*リーチ*は別個の層として設計され、相互に連携して動作します。スピーチ層は寛容で権限を分散し、誰もが発言できることを重視します。リーチ層はその上に位置し、柔軟性とスケーラビリティのために設計されています。Atprotoのモデレーションは[ラベル](/guides/labels)を用いて実装されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -26015,8 +26213,8 @@ Repos: 1</seg>
       <tuv lang="en-US">
         <seg>The [DID standard](https://www.w3.org/TR/did-core/) describes a framework for different "methods" of publishing and resolving DIDs to the [DID Document](https://www.w3.org/TR/did-core/#core-properties), instead of specifying a single mechanism. A variety of existing methods [have been registered](https://w3c.github.io/did-spec-registries/#did-methods), with different features and properties. We established the following criteria for use with atproto:</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260209T104319Z">
-        <seg>[DID標準](https://www.w3.org/TR/did-core/)は、DIDを公開し、[DIDドキュメント](https://www.w3.org/TR/did-core/#core-properties)に解決する「メソッド」を、ただ一つに定めず多様に定義できるフレームワークを設けています。さまざまな既存のメソッドが[公開](https://w3c.github.io/did-spec-registries/#did-methods)されおり、それぞれ異なる機能や特徴を持ちます。atprotoでの使用に際して、以下の基準を設定しました。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040443Z">
+        <seg>[DID標準](https://www.w3.org/TR/did-core/)は、DIDを公開し、[DIDドキュメント](https://www.w3.org/TR/did-core/#core-properties)に解決する「メソッド」を、ただ一つに定めず多様に定義できるフレームワークを設けています。さまざまな既存のメソッドが[公開](https://w3c.github.io/did-spec-registries/#did-methods)されおり、それぞれ異なる機能や特徴を持ちます。Atprotoでの使用に際して、以下の基準を設定しました。</seg>
       </tuv>
     </tu>
     <tu>
@@ -26031,15 +26229,15 @@ Repos: 1</seg>
       <tuv lang="en-US">
         <seg>The [atproto Lexicon system](https://atproto.com/specs/lexicon) describes a data model and schema language for validating data against a known schema. But what if you are processing data where the schema isn't known or present?</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260103T134311Z" creationid="yamarten" creationdate="20260103T103035Z">
-        <seg>[atprotoのLexiconシステム](https://atproto.com/specs/lexicon)は、既知のスキーマに対してデータを検証するためのデータモデルとスキーマ言語について説明しています。しかし、スキーマが不明または存在しないデータを処理している場合はどうでしょうか？</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T035956Z" creationid="yamarten" creationdate="20260103T103035Z">
+        <seg>[AtprotoのLexiconシステム](https://atproto.com/specs/lexicon)は、既知のスキーマに対してデータを検証するためのデータモデルとスキーマ言語について説明しています。しかし、スキーマが不明または存在しないデータを処理している場合はどうでしょうか？</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="en-US">
         <seg>The [code](https://github.com/bluesky-social/atproto) to power a fully distributed Atmosphere is constantly improving. Here's a guide with some lessons and best practices for managing your own services.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260103T113932Z" creationid="yamarten" creationdate="20260103T113809Z">
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040428Z" creationid="yamarten" creationdate="20260103T113809Z">
         <seg>完全に分散されたAtmosphereを動かすための[コード](https://github.com/bluesky-social/atproto)は常に改善され続けています。ここでは、自分のサービスを管理するための教訓と最適なプラクティスに関するガイドを提供します。</seg>
       </tuv>
     </tu>
@@ -26115,6 +26313,14 @@ Repos: 1</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>The `title` and `details` fields are descriptive, and will be displayed as part of the OAuth flow; see the [OAuth flow examples](#oauth-flow-examples) section for an example. Internationalization of these descriptive fields is supported — refer to [the permission sets spec](/specs/permission#permission-sets).</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T014723Z" creationid="yamarten" creationdate="20260211T014723Z">
+        <seg>`title`と`details`フィールドは説明用で、OAuthフローの一部として表示されます。[OAuthフローの例](#oauth-flow-examples)を参照してください。これらの説明フィールドは国際化にも対応しています。詳細は[権限セット仕様](/specs/permission#permission-sets)を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>The `title` and `details` fields are descriptive, and will be displayed as part of the OAuth flow; see the [for users](#for-users) section for an example. Internationalization of these descriptive fields is supported — refer to [the permission sets spec](/specs/permission#permission-sets).</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260111T143553Z" creationid="yamarten" creationdate="20260111T143553Z">
@@ -26141,8 +26347,8 @@ Repos: 1</seg>
       <tuv lang="en-US">
         <seg>The atproto identity system has a number of requirements:</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T110311Z">
-        <seg>atprotoのIDシステムには、いくつかの要件があります。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040437Z">
+        <seg>AtprotoのIDシステムには、いくつかの要件があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -26165,8 +26371,8 @@ Repos: 1</seg>
       <tuv lang="en-US">
         <seg>The base layer of atproto (personal data repositories and federated networking) creates a common space for speech where everyone is free to participate, analogous to the Web where anyone can put up a website. The indexing services then enable reach by aggregating content from the network, analogous to a search engine.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T115613Z">
-        <seg>atprotoの基本レイヤー（パーソナルデータリポジトリとフェデレーションネットワーク）は、誰もが自由に参加できるスピーチのための共通スペースを作成します。これは、誰でもサイトを作成できるウェブに似ています。次に、インデックスサービスがネットワークからコンテンツを集約してリーチを有効にします。これは、検索エンジンに似ています。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040630Z">
+        <seg>Atprotoの基本レイヤー（パーソナルデータリポジトリとフェデレーションネットワーク）は、誰もが自由に参加できるスピーチのための共通スペースを作成します。これは、誰でもサイトを作成できるウェブに似ています。次に、インデックスサービスがネットワークからコンテンツを集約してリーチを有効にします。これは、検索エンジンに似ています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -26221,16 +26427,16 @@ Repos: 1</seg>
       <tuv lang="en-US">
         <seg>The data model of atproto is very similar to that of p2p networks. The major difference is that rather than being simply content-addressed, a layer of indirection is added to make the data identity-addressed. Therefore an at-uri looks like `at://username/record-type/record-key`.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260209T095938Z">
-        <seg>atprotoのデータモデルはP2Pネットワークのそれに非常に似ています。大きな違いは、単なるコンテンツアドレッシングではなく、間接層を追加してデータをIDアドレッシング化している点です。したがって、at-uriは`at://username/record-type/record-key`のようになります。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040232Z">
+        <seg>AtprotoのデータモデルはP2Pネットワークのそれに非常に似ています。大きな違いは、単なるコンテンツアドレッシングではなく、間接層を追加してデータをIDアドレッシング化している点です。したがって、at-uriは`at://username/record-type/record-key`のようになります。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="en-US">
         <seg>The data that an identity outputs takes the form of a repository of “records”. Each record is a piece of structured data - a post, a like, a follow, a profile, etc. In the web, the primary object is the document and documents are linked together through hyperlinks. In atproto, the primary object is the record, and records are linked together through at-uri references.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260201T085600Z">
-        <seg>IDが出力するデータは「レコード」のリポジトリという形を取ります。各レコードは構造化データの断片で、投稿、いいね、フォロー、プロフィールなどを表します。ウェブでは主対象は文書であり、文書はハイパーリンクで結び付けられます。atprotoでは主対象はレコードであり、レコードはat-uri参照によって結び付けられます。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040246Z">
+        <seg>IDが出力するデータは「レコード」のリポジトリという形を取ります。各レコードは構造化データの断片で、投稿、いいね、フォロー、プロフィールなどを表します。ウェブでは主対象は文書であり、文書はハイパーリンクで結び付けられます。Atprotoでは主対象はレコードであり、レコードはat-uri参照によって結び付けられます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -26261,8 +26467,8 @@ Repos: 1</seg>
       <tuv lang="en-US">
         <seg>The ergonomics of OAuth scopes in Atproto are still evolving. This minimal set is designed to provide a known-good starting point for app developers that does not grant unnecessary permissions. While we finalize granular permission scopes, we are also supporting a set of temporary coarse-grained scopes called the "transition scopes". There are currently no plans to deprecate either the transition scopes or the use of App Passwords. For an overview of these transition scopes, and more in-depth information on OAuth, see [Authorization Scopes](/specs/oauth#authorization-scopes). For the granular permission scopes, see [Permissions](/specs/permission).</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T074118Z" creationid="yamarten" creationdate="20260208T074118Z">
-        <seg>atprotoにおけるOAuthスコープの使い心地はまだ発展途上です。この最小セットは、不要な権限を与えずにアプリ開発者が使える出発点を提供するよう設計されています。詳細な権限スコープを最終決定するまで、暫定的な粗い粒度のスコープ（「移行スコープ」）もサポートしています。現時点では、移行スコープまたはアプリパスワードの使用を廃止する計画はありません。これら移行スコープの概要やOAuthの詳細については[認可スコープ](/specs/oauth#authorization-scopes)を、細かな権限スコープについては[権限](/specs/permission)を参照してください。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040717Z" creationid="yamarten" creationdate="20260208T074118Z">
+        <seg>AtprotoにおけるOAuthスコープの使い心地はまだ発展途上です。この最小セットは、不要な権限を与えずにアプリ開発者が使える出発点を提供するよう設計されています。詳細な権限スコープを最終決定するまで、暫定的な粗い粒度のスコープ（「移行スコープ」）もサポートしています。現時点では、移行スコープまたはアプリパスワードの使用を廃止する計画はありません。これら移行スコープの概要やOAuthの詳細については[認可スコープ](/specs/oauth#authorization-scopes)を、細かな権限スコープについては[権限](/specs/permission)を参照してください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -26293,8 +26499,8 @@ Repos: 1</seg>
       <tuv lang="en-US">
         <seg>The first and most obvious influence on atproto is the web itself.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260128T133210Z">
-        <seg>atprotoへの最初で最も明白な影響は、ウェブそのものです。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040154Z">
+        <seg>Atprotoへの最初で最も明白な影響は、ウェブそのものです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -26325,8 +26531,8 @@ Repos: 1</seg>
       <tuv lang="en-US">
         <seg>The following are informal guidelines, mostly to communicate order-of-magnitude expectations, and are likely to evolve over time. They are not part of the atproto specification, but if you are pushing the limits here, you may encounter interoperability issues now or in the future.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260103T100353Z" creationid="yamarten" creationdate="20260103T100353Z">
-        <seg>以下は非公式なガイドラインであり、主に大まかな期待を伝えるためのものであり、時間の経過とともに進化する可能性があります。これらはatproto仕様の一部ではありませんが、この制限を超えている場合、現在または将来の相互運用性の問題に遭遇する可能性があります。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T035945Z" creationid="yamarten" creationdate="20260103T100353Z">
+        <seg>以下は非公式なガイドラインであり、主に大まかな期待を伝えるためのものであり、時間の経過とともに進化する可能性があります。これらはAtproto仕様の一部ではありませんが、この制限を超えている場合、現在または将来の相互運用性の問題に遭遇する可能性があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -26464,8 +26670,8 @@ Repos: 1</seg>
       <tuv lang="en-US">
         <seg>The name is also a play on the "@" symbol, aka the "at" symbol, since atproto is designed for social systems.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T104643Z">
-        <seg>この名前は、atprotoがソーシャルシステム向けに設計されているため、「@」記号、別名「at」記号をもじったものです。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040403Z">
+        <seg>この名前は、Atprotoがソーシャルシステム向けに設計されているため、「@」記号、別名「at」記号をもじったものです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -26512,8 +26718,8 @@ Repos: 1</seg>
       <tuv lang="en-US">
         <seg>The phrase “atproto ethos” often comes up during our protocol design discussions. It's a fuzzy term, but we use it to refer to the philosophical and aesthetic principles that underlie the design of the network. {{className: 'lead'}}</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260128T133020Z">
-        <seg>「atproto ethos」という言葉は、私たちのプロトコル設計の議論の中でよく登場します。曖昧な用語ではありますが、ネットワーク設計の根底にある哲学的・美学的な原則を指すために使っています。 {{className: 'lead'}}</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040135Z">
+        <seg>「Atproto ethos」という言葉は、私たちのプロトコル設計の議論の中でよく登場します。曖昧な用語ではありますが、ネットワーク設計の根底にある哲学的・美学的な原則を指すために使っています。 {{className: 'lead'}}</seg>
       </tuv>
     </tu>
     <tu>
@@ -26673,8 +26879,8 @@ Repos: 1</seg>
       <tuv lang="en-US">
         <seg>The three core services in our network are Personal Data Servers (PDS), Relays, and App Views. There are also supporting services such as feed generators and labelers.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T113950Z">
-        <seg>ネットワークの3つのコアサービスは、パーソナルデータサーバー（PDS）、リレー、およびAppViewです。フィード ジェネレーターとラベラーにも取り組んでいます。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T042109Z">
+        <seg>ネットワークの3つのコアサービスは、パーソナルデータサーバー（PDS）、リレー、およびAppViewです。フィードジェネレーターとラベラーにも取り組んでいます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -26705,8 +26911,8 @@ Repos: 1</seg>
       <tuv lang="en-US">
         <seg>The user is then recommended to submit the operation to the new PDS (using the `com.atproto.identity.submitPlcOperation` endpoint), which will validate that the changes are "safe" (aka, that they enable the the PDS to help manage the identity and atproto account), and then submit it to the PLC directory.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260102T103448Z" creationid="yamarten" creationdate="20260102T103448Z">
-        <seg>その後、ユーザーはそのオペレーションを新PDS（`com.atproto.identity.submitPlcOperation`エンドポイント）に提出することが推奨されます。新PDSは変更が安全であること（すなわちPDSがIDとatprotoアカウントの管理を支援できること）を検証した後、PLCディレクトリへ提出します。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T035635Z" creationid="yamarten" creationdate="20260102T103448Z">
+        <seg>その後、ユーザーはそのオペレーションを新PDS（`com.atproto.identity.submitPlcOperation`エンドポイント）に提出することが推奨されます。新PDSは変更が安全であること（すなわちPDSがIDとAtprotoアカウントの管理を支援できること）を検証した後、PLCディレクトリへ提出します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -26823,6 +27029,21 @@ Repos: 1</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260208T105008Z" creationid="yamarten" creationdate="20260208T105008Z">
         <seg>1. ブラウザで[http://127.0.0.1:3000]([http://127.0.0.1:3000])にアクセスする
+2. ハンドルを入力する
+3. アプリを認可する
+4. DIDとともに"Authentication working!"と表示される</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Then:
+1. Navigate to your app in a browser at [http://127.0.0.1:3000](http://127.0.0.1:3000).
+2. Enter your handle
+3. Authorize the app
+4. You should see "Authentication working!" with your DID:</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T014416Z" creationid="yamarten" creationdate="20260211T014416Z">
+        <seg>1. ブラウザで[http://127.0.0.1:3000](http://127.0.0.1:3000)にアクセスする
 2. ハンドルを入力する
 3. アプリを認可する
 4. DIDとともに"Authentication working!"と表示される</seg>
@@ -27200,8 +27421,8 @@ curl -H "Authorization: Bearer &lt;jwt&gt;" "http://localhost:3000/xrpc/app.bsky
       <tuv lang="en-US">
         <seg>This OAuth tutorial does not use many Atproto concepts or dependencies. You should have a working understanding of Next.js and TypeScript.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T102537Z" creationid="yamarten" creationdate="20260208T102537Z">
-        <seg>このOAuthチュートリアルではatprotoの概念や依存関係をあまり使いません。Next.jsとTypeScriptの実用的な理解があることを前提とします。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040550Z" creationid="yamarten" creationdate="20260208T102537Z">
+        <seg>このOAuthチュートリアルではAtprotoの概念や依存関係をあまり使いません。Next.jsとTypeScriptの実用的な理解があることを前提とします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -27512,8 +27733,8 @@ curl -H "Authorization: Bearer &lt;jwt&gt;" "http://localhost:3000/xrpc/app.bsky
       <tuv lang="en-US">
         <seg>This guide describes how to request permissions for your Atproto application. [OAuth](/guides/auth) is used to authorize third-party applications to access users' social graphs, and is a prerequisite for the concepts described here.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T073442Z" creationid="yamarten" creationdate="20260208T073442Z">
-        <seg>このガイドでは、atprotoアプリケーションの権限リクエスト方法を説明します。[OAuth](/guides/auth)はサードパーティーアプリにユーザーのソーシャルグラフへのアクセス権を与えるために使用され、ここで説明する概念の前提条件です。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040634Z" creationid="yamarten" creationdate="20260208T073442Z">
+        <seg>このガイドでは、Atprotoアプリケーションの権限リクエスト方法を説明します。[OAuth](/guides/auth)はサードパーティーアプリにユーザーのソーシャルグラフへのアクセス権を与えるために使用され、ここで説明する概念の前提条件です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -27528,8 +27749,8 @@ curl -H "Authorization: Bearer &lt;jwt&gt;" "http://localhost:3000/xrpc/app.bsky
       <tuv lang="en-US">
         <seg>This identity-addressing of data is an inversion of the web-based model of location-addressed data. In the traditional web, the location (or the server) is the primary object; in atproto, the user is the primary object.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260201T084719Z">
-        <seg>このデータのIDアドレス化は、ロケーションアドレッシングデータというウェブ的モデルの裏返しです。従来のウェブでは場所（またはサーバー）が主対象ですが、atprotoではユーザーが主対象です。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040236Z">
+        <seg>このデータのIDアドレス化は、ロケーションアドレッシングデータというウェブ的モデルの裏返しです。従来のウェブでは場所（またはサーバー）が主対象ですが、Atprotoではユーザーが主対象です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -27632,8 +27853,8 @@ curl -H "Authorization: Bearer &lt;jwt&gt;" "http://localhost:3000/xrpc/app.bsky
       <tuv lang="en-US">
         <seg>This is pretty good, but we're building a social network with hundreds of millions of users; even this model hits limits. The problem is that our SQL database is “[strongly consistent](https://en.wikipedia.org/wiki/Strong_consistency)” which means the state is kept uniformly in sync across the system. Maintaining strong consistency incurs a performance cost which becomes our bottleneck.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260209T102353Z">
-        <seg>これはかなり良いですが、何億人ものユーザーを抱えるソーシャルネットワークを構築しているため、このモデルでも限界に達します。問題は、SQLデータベースが[強い一貫性](https://en.wikipedia.org/wiki/Strong_consistency)を持つことです。つまり、状態はシステム全体で均一に同期されています。強い一貫性を維持するとパフォーマンス コストが発生し、それがボトルネックになります。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T042248Z">
+        <seg>これはかなり良いですが、何億人ものユーザーを抱えるソーシャルネットワークを構築しているため、このモデルでも限界に達します。問題は、SQLデータベースが[強い一貫性](https://en.wikipedia.org/wiki/Strong_consistency)を持つことです。つまり、状態はシステム全体で均一に同期されています。強い一貫性を維持するとパフォーマンスコストが発生し、それがボトルネックになります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -27736,8 +27957,8 @@ curl -H "Authorization: Bearer &lt;jwt&gt;" "http://localhost:3000/xrpc/app.bsky
       <tuv lang="en-US">
         <seg>This ownership is reflected in the schema language for the atproto network where the notion of ownership is baked into the IDs of schemas. The owner of those schemas is free to iterate and evolve the data model for the application. Similarly, application owners are free to build their backends in whichever way they see fit. There is a boundary to the “weirdness” of the atproto network. Once identities and data cross that threshold, it is the application's decision how to index it and present it to the user.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260201T091247Z">
-        <seg>この所有権は、atprotoネットワークのスキーマ言語に反映されており、スキーマIDに所有権の概念が組み込まれています。スキーマの所有者は、アプリケーションのデータモデルを自由に反復・進化させられます。同様に、アプリケーションの所有者は自分に適した方法でバックエンドを構築できます。atprotoネットワークには「変わったこと」の境界が存在します。IDとデータがその境界を越えた後は、どのようにインデックスし、ユーザーに提示するかはアプリケーションの判断になります。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040255Z">
+        <seg>この所有権は、Atprotoネットワークのスキーマ言語に反映されており、スキーマIDに所有権の概念が組み込まれています。スキーマの所有者は、アプリケーションのデータモデルを自由に反復・進化させられます。同様に、アプリケーションの所有者は自分に適した方法でバックエンドを構築できます。Atprotoネットワークには独自性の境界が存在します。IDとデータがその境界を越えた後は、どのようにインデックスし、ユーザーに提示するかはアプリケーションの判断になります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -27840,8 +28061,8 @@ curl -H "Authorization: Bearer &lt;jwt&gt;" "http://localhost:3000/xrpc/app.bsky
       <tuv lang="en-US">
         <seg>This section is aimed at developers building applications on Atproto. Applications with their own end-user login flow should implement [OAuth](#what-is-oauth) for authentication. Single-purpose applications such as bots or command line tools may use [password authentication](/guides/sdk-auth) instead.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T064704Z" creationid="yamarten" creationdate="20260208T064034Z">
-        <seg>このセクションはatprotoでアプリケーションを構築している開発者を対象としています。独自のログインフローを持つアプリケーションは認証に[OAuth](#what-is-oauth)を実装すべきです。ボットやコマンドラインツールなどの単一目的のアプリケーションは[パスワード認証](/guides/sdk-auth)を使うこともできます。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T035757Z" creationid="yamarten" creationdate="20260208T064034Z">
+        <seg>このセクションはAtprotoでアプリケーションを構築している開発者を対象としています。独自のログインフローを持つアプリケーションは認証に[OAuth](#what-is-oauth)を実装すべきです。ボットやコマンドラインツールなどの単一目的のアプリケーションは[パスワード認証](/guides/sdk-auth)を使うこともできます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -27881,8 +28102,8 @@ curl -H "Authorization: Bearer &lt;jwt&gt;" "http://localhost:3000/xrpc/app.bsky
       <tuv lang="en-US">
         <seg>This structure is probably best exemplified by the schema language of atproto: Lexicon. Unlike other approaches to interoperation which attempt to create a generalized way of expressing properties on data (RDF) or to translate data between different domains to facilitate interoperation (lenses), Lexicon provides a way to determine if two things are speaking the same language, and to give a very structured mechanism for ensuring that the data is formatted properly.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260201T094243Z">
-        <seg>この構造は、おそらくatprotoのスキーマ言語であるLexiconに最もよく表れています。RDFのようにデータ上の属性を一般化して表現しようとする手法や、Lensのように異なるドメイン間でデータを翻訳して相互運用を実現しようとする手法とは異なり、Lexiconは二者が同じ言語を話しているかを判断する方法と、データが正しく整形されていることを保証するための非常に構造化された仕組みを提供します。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040315Z">
+        <seg>この構造は、おそらくAtprotoのスキーマ言語であるLexiconに最もよく表れています。RDFのようにデータ上の属性を一般化して表現しようとする手法や、Lensのように異なるドメイン間でデータを翻訳して相互運用を実現しようとする手法とは異なり、Lexiconは二者が同じ言語を話しているかを判断する方法と、データが正しく整形されていることを保証するための非常に構造化された仕組みを提供します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -27897,8 +28118,8 @@ curl -H "Authorization: Bearer &lt;jwt&gt;" "http://localhost:3000/xrpc/app.bsky
       <tuv lang="en-US">
         <seg>This tutorial builds on top of the app created in our [OAuth with NextJS Tutorial](/guides/oauth-tutorial). You should have a completed NextJS OAuth app before starting this tutorial. If you want to skip that step, you can clone the completed OAuth app from the [Cookbook](https://github.com/bluesky-social/nextjs-oauth-tutorial/tree/129cf28b4146ae709e0dac43ce20154ab5237559).</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T155017Z" creationid="yamarten" creationdate="20260208T145338Z">
-        <seg>このチュートリアルは、[NextJSでOAuthチュートリアル](/guides/oauth-tutorial)で作成したアプリをベースに進めます。開始前にNextJS OAuthアプリを完成させておいてください。この手順を省略したい場合は、[Cookbook](https://github.com/bluesky-social/nextjs-oauth-tutorial/tree/129cf28b4146ae709e0dac43ce20154ab5237559)から完成版をクローンできます。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T042754Z" creationid="yamarten" creationdate="20260208T145338Z">
+        <seg>このチュートリアルは、[OAuth with NextJSチュートリアル](/guides/oauth-tutorial)で作成したアプリをベースに進めます。開始前にNextJS OAuthアプリを完成させておいてください。この手順を省略したい場合は、[Cookbook](https://github.com/bluesky-social/nextjs-oauth-tutorial/tree/129cf28b4146ae709e0dac43ce20154ab5237559)から完成版をクローンできます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -28019,6 +28240,34 @@ curl -H "Authorization: Bearer &lt;jwt&gt;" "http://localhost:3000/xrpc/app.bsky
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260104T135014Z" creationid="yamarten" creationdate="20260104T134956Z">
         <seg>これによりLexiconのAPIメソッドにアクセスできるようになります。これで[リクエストを行う](/guides/reading-data)準備が整いました！</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>This will give you access to the API methods for your Lexicons. Now you are ready to start [making requests](/guides/reading-data)!
+    &lt;/TabPanel&gt;
+    &lt;TabPanel value="go"&gt;
+    ```go
+    import (
+      "context"
+      appbsky "github.com/bluesky-social/indigo/api/bsky"
+      comatproto "github.com/bluesky-social/indigo/api/atproto"
+      lexutil "github.com/bluesky-social/indigo/lex/util"
+      "github.com/bluesky-social/indigo/xrpc"
+    )</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T015052Z" creationid="yamarten" creationdate="20260211T015027Z">
+        <seg>これによりLexiconのAPIメソッドにアクセスできるようになります。これで[リクエストを行う](/guides/reading-data)準備が整いました。
+    &lt;/TabPanel&gt;
+    &lt;TabPanel value="go"&gt;
+    ```go
+    import (
+      "context"
+      appbsky "github.com/bluesky-social/indigo/api/bsky"
+      comatproto "github.com/bluesky-social/indigo/api/atproto"
+      lexutil "github.com/bluesky-social/indigo/lex/util"
+      "github.com/bluesky-social/indigo/xrpc"
+    )</seg>
       </tuv>
     </tu>
     <tu>
@@ -28287,6 +28536,14 @@ curl -H "Authorization: Bearer &lt;jwt&gt;" "http://localhost:3000/xrpc/app.bsky
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260106T140406Z" creationid="yamarten" creationdate="20260106T140406Z">
         <seg>どのラベラーがラベルを受け取るべきかを指定するには、ラベラーのDIDと`atproto_labeler`サービスキーを`atproto-proxy`ヘッダーを設定します。TypeScript SDKでは、次のようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>To specify which labeler should receive the report, set the `atproto-proxy` header with the DID of the labeler and the service key of `atproto_labeler`. In the TypeScript SDK, it looks like this:</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T015454Z" creationid="yamarten" creationdate="20260211T015454Z">
+        <seg>どのラベラーが報告を受け取るべきかを指定するには、ラベラーのDIDと`atproto_labeler`サービスキーを`atproto-proxy`ヘッダーを設定します。TypeScript SDKでは、次のようになります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -30673,8 +30930,8 @@ goat account service-auth --aud did:example:alice</seg>
       <tuv lang="en-US">
         <seg>When your app initiates an OAuth flow with an Atproto identity provider, it can request specific permission sets by including them in the `scope` parameter of the authorization request. This should be supplied as a *space-separated list* in the [`oauth-client-metadata.json` file](/specs/oauth#clients) when registering your OAuth client:</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T073530Z" creationid="yamarten" creationdate="20260208T073530Z">
-        <seg>アプリがatprotoのIDプロバイダーでOAuthフローを開始する際、認可リクエストの`scope`パラメーターに含めることで特定の権限セットを要求できます。これはOAuthクライアント登録時に[`oauth-client-metadata.json`ファイル](/specs/oauth#clients)へ*スペース区切りのリスト*として指定します。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040641Z" creationid="yamarten" creationdate="20260208T073530Z">
+        <seg>アプリがAtprotoのIDプロバイダーでOAuthフローを開始する際、認可リクエストの`scope`パラメーターに含めることで特定の権限セットを要求できます。これはOAuthクライアント登録時に[`oauth-client-metadata.json`ファイル](/specs/oauth#clients)へ*スペース区切りのリスト*として指定します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -30713,8 +30970,8 @@ goat account service-auth --aud did:example:alice</seg>
       <tuv lang="en-US">
         <seg>While the Web exchanges documents, the AT Protocol exchanges schematic and semantic information, enabling the software from different organizations to understand each others' data. This gives atproto clients freedom to produce user interfaces independently of the servers, and removes the need to exchange rendering code (HTML/JS/CSS) while browsing content.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T114203Z">
-        <seg>ウェブがドキュメントを交換する一方で、ATプロトコルはスキーマ情報とセマンティック情報を交換し、異なる組織のソフトウェアが互いのデータを理解できるようにします。これにより、atprotoクライアントはサーバーから独立してユーザーインターフェイスを自由に作成でき、コンテンツを閲覧する際にレンダリングコード（HTML/JS/CSS）を交換する必要がなくなります。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040626Z">
+        <seg>ウェブがドキュメントを交換する一方で、ATプロトコルはスキーマ情報とセマンティック情報を交換し、異なる組織のソフトウェアが互いのデータを理解できるようにします。これにより、Atprotoクライアントはサーバーから独立してユーザーインターフェイスを自由に作成でき、コンテンツを閲覧する際にレンダリングコード（HTML/JS/CSS）を交換する必要がなくなります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -30929,8 +31186,8 @@ goat account service-auth --aud did:example:alice</seg>
       <tuv lang="en-US">
         <seg>With this, atproto avoids the gray area of “we're sort of talking about the same thing but not really” and forces applications into the discrete choice that if you're talking about the same thing then you're talking about the *exact* same thing. Instead of trying to posit universality of semantics, atproto facilitates specific semantics and then allows for collaboration and extension of those semantics.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260201T094256Z">
-        <seg>これにより、atprotoは「だいたい同じことを話しているけれど実は違う」というグレーゾーンを避け、同じことを話すなら*まったく*同じことを話すという離散的な選択をアプリケーションに強います。意味の普遍性を仮定しようとするのではなく、atprotoは特定の意味を促進し、その意味の協調と拡張を可能にします。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040322Z">
+        <seg>これにより、Atprotoは「だいたい同じことを話しているけれど実は違う」というグレーゾーンを避け、同じことを話すなら*まったく*同じことを話すという離散的な選択をアプリケーションに強います。意味の普遍性を仮定しようとするのではなく、Atprotoは特定の意味を促進し、その意味の協調と拡張を可能にします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -31009,8 +31266,8 @@ goat account service-auth --aud did:example:alice</seg>
       <tuv lang="en-US">
         <seg>XRPC is [atproto's](#at-protocol) HTTP API. It stands for "Cross-organizational Remote Procedure Calls" and is a thin wrapper around standard HTTPS. XRPC uses [Lexicon](#lexicon) schemas to define the valid parameters and responses for each API endpoint.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T110235Z">
-        <seg>XRPCは非推奨の用語ですが、歴史的には[atproto](#at-protocol)のHTTP用法を説明するために使用されていました。これは「Cross-organizational Remote Procedure Calls」の略語ですが、実際にはHTTPを使用しているだけなので、この用語を発明したことを後悔しています。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040413Z">
+        <seg>XRPCは非推奨の用語ですが、歴史的には[Atproto](#at-protocol)のHTTP用法を説明するために使用されていました。これは「Cross-organizational Remote Procedure Calls」の略語ですが、実際にはHTTPを使用しているだけなので、この用語を発明したことを後悔しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -31385,6 +31642,30 @@ goat account service-auth --aud did:example:alice</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260104T111034Z" creationid="yamarten" creationdate="20260104T111034Z">
         <seg>同様のSDKクライアントパターンを使用して、任意のLexiconにAPI呼び出しを行うことができます。その他の例については、[SDKドキュメント](https://www.npmjs.com/package/@atproto/lex)を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>You can make API calls to any Lexicon using the same SDK client pattern. For more examples, refer to [the SDK documentation](https://www.npmjs.com/package/@atproto/lex).
+    &lt;/TabPanel&gt;
+    &lt;TabPanel value="go"&gt;
+    ```go
+    import (
+        "context"
+        appbsky "github.com/bluesky-social/indigo/api/bsky"
+        "github.com/bluesky-social/indigo/xrpc"
+    )</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T014848Z" creationid="yamarten" creationdate="20260211T014836Z">
+        <seg>同様のSDKクライアントパターンを使用して、任意のLexiconにAPI呼び出しを行うことができます。その他の例については、[SDKドキュメント](https://www.npmjs.com/package/@atproto/lex)を参照してください。
+    &lt;/TabPanel&gt;
+    &lt;TabPanel value="go"&gt;
+    ```go
+    import (
+        "context"
+        appbsky "github.com/bluesky-social/indigo/api/bsky"
+        "github.com/bluesky-social/indigo/xrpc"
+    )</seg>
       </tuv>
     </tu>
     <tu>
@@ -32310,24 +32591,24 @@ import (
       <tuv lang="en-US">
         <seg>You've now built a complete Atproto app that uses OAuth to sign in, a custom Lexicon to define status records, and Tap to synchronize records in real-time.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T152650Z" creationid="yamarten" creationdate="20260208T152624Z">
-        <seg>これで、OAuthログイン、カスタムLexiconによるステータスレコード定義、Tapによるリアルタイム同期を備えた完全なatprotoアプリが完成しました。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T041341Z" creationid="yamarten" creationdate="20260208T152624Z">
+        <seg>これで、OAuthログイン、カスタムLexiconによるステータスレコード定義、Tapによるリアルタイム同期を備えた完全なAtprotoアプリが完成しました。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="en-US">
         <seg>You've now built a custom Atproto feed that retrieves posts from the network, indexes them based on your own algorithm, and serves them via XRPC to clients like Bluesky.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T092848Z" creationid="yamarten" creationdate="20260208T092825Z">
-        <seg>これで、ネットワークから投稿を取得し、独自アルゴリズムでインデックスし、BlueskyのようなクライアントへXRPC経由で配信するカスタムatprotoフィードを構築できました。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T035931Z" creationid="yamarten" creationdate="20260208T092825Z">
+        <seg>これで、ネットワークから投稿を取得し、独自アルゴリズムでインデックスし、BlueskyのようなクライアントへXRPC経由で配信するカスタムAtprotoフィードを構築できました。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="en-US">
         <seg>You've now built an automated Atproto app that creates records on the network!</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T084558Z" creationid="yamarten" creationdate="20260208T084558Z">
-        <seg>これで、ネットワーク上にレコードを作成する自動化されたatprotoアプリを構築できました。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T035854Z" creationid="yamarten" creationdate="20260208T084558Z">
+        <seg>これで、ネットワーク上にレコードを作成する自動化されたAtprotoアプリを構築できました。</seg>
       </tuv>
     </tu>
     <tu>
@@ -32782,8 +33063,8 @@ import (
       <tuv lang="en-US">
         <seg>[**OAuth with NextJS Tutorial**](/guides/oauth-tutorial)</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T155030Z" creationid="yamarten" creationdate="20260208T094106Z">
-        <seg>[**NextJSでOAuthチュートリアル**](/guides/oauth-tutorial)</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T042831Z" creationid="yamarten" creationdate="20260208T094106Z">
+        <seg>[**OAuth with NextJSチュートリアル**](/guides/oauth-tutorial)</seg>
       </tuv>
     </tu>
     <tu>
@@ -33030,24 +33311,24 @@ import (
       <tuv lang="en-US">
         <seg>[Lexicons](/guides/lexicon) define Atproto records. A baseline feed generator requires the `app.bsky.feed.describeFeedGenerator` and `app.bsky.feed.getFeedSkeleton` Lexicons. You can use `lex` to download and build these Lexicons into your project:</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T090340Z" creationid="yamarten" creationdate="20260208T090340Z">
-        <seg>[Lexicon](/guides/lexicon)はatprotoのレコードを定義します。基本的なフィードジェネレーターには`app.bsky.feed.describeFeedGenerator`と`app.bsky.feed.getFeedSkeleton`のLexiconが必要です。`lex`を使えば、これらのLexiconをダウンロードしてプロジェクトに組み込めます。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T035923Z" creationid="yamarten" creationdate="20260208T090340Z">
+        <seg>[Lexicon](/guides/lexicon)はAtprotoのレコードを定義します。基本的なフィードジェネレーターには`app.bsky.feed.describeFeedGenerator`と`app.bsky.feed.getFeedSkeleton`のLexiconが必要です。`lex`を使えば、これらのLexiconをダウンロードしてプロジェクトに組み込めます。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="en-US">
         <seg>[Lexicons](/guides/lexicon) define Atproto records. Your bot will create Bluesky posts, using the [app.bsky.feed.post](https://pdsls.dev/at://did:plc:ewvi7nxzyoun6zhxrhs64oiz/app.bsky.feed.post/3juc4thkx452i#schema) Lexicon. You can use `lex` to download and build this Lexicon into your project:</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T081244Z" creationid="yamarten" creationdate="20260208T081244Z">
-        <seg>[Lexicon](/guides/lexicon)はatprotoのレコードを定義します。ボットは[app.bsky.feed.post](https://pdsls.dev/at://did:plc:ewvi7nxzyoun6zhxrhs64oiz/app.bsky.feed.post/3juc4thkx452i#schema) Lexiconを使ってBluesky投稿を作成します。`lex`を使えば、このLexiconをダウンロードしてプロジェクトに組み込めます。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T035847Z" creationid="yamarten" creationdate="20260208T081244Z">
+        <seg>[Lexicon](/guides/lexicon)はAtprotoのレコードを定義します。ボットは[app.bsky.feed.post](https://pdsls.dev/at://did:plc:ewvi7nxzyoun6zhxrhs64oiz/app.bsky.feed.post/3juc4thkx452i#schema) Lexiconを使ってBluesky投稿を作成します。`lex`を使えば、このLexiconをダウンロードしてプロジェクトに組み込めます。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="en-US">
         <seg>[Lexicons](/guides/lexicon) define the schema for records in Atproto. To create this tutorial, we've already published a new "Statusphere" Lexicon to our repository, available at `xyz.statusphere.status`. You can use `lex` to download and build this Lexicon into your project:</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T145617Z" creationid="yamarten" creationdate="20260208T145617Z">
-        <seg>[Lexicon](/guides/lexicon)はatprotoのレコードスキーマを定義します。このチュートリアル向けに、新しい"Statusphere" Lexicon（`xyz.statusphere.status`）をすでに公開しています。`lex`を使ってこのLexiconを取得し、プロジェクトに取り込みます。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040736Z" creationid="yamarten" creationdate="20260208T145617Z">
+        <seg>[Lexicon](/guides/lexicon)はAtprotoのレコードスキーマを定義します。このチュートリアル向けに、新しい"Statusphere" Lexicon（`xyz.statusphere.status`）をすでに公開しています。`lex`を使ってこのLexiconを取得し、プロジェクトに取り込みます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -34607,6 +34888,22 @@ npm install @atproto/lex @atproto/api
     <tu>
       <tuv lang="en-US">
         <seg>```go
+    _ "github.com/bluesky-social/indigo/api/bsky"
+    _ "github.com/bluesky-social/indigo/lex/util"
+    ```
+    &lt;/Note&gt;</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T015204Z" creationid="yamarten" creationdate="20260211T015204Z">
+        <seg>```go
+    _ "github.com/bluesky-social/indigo/api/bsky"
+    _ "github.com/bluesky-social/indigo/lex/util"
+    ```
+    &lt;/Note&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```go
     import (
       "context"
       comatproto "github.com/bluesky-social/indigo/api/atproto"
@@ -34619,6 +34916,36 @@ npm install @atproto/lex @atproto/api
       "context"
       comatproto "github.com/bluesky-social/indigo/api/atproto"
       "github.com/bluesky-social/indigo/xrpc"
+    )</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```go
+    profile, _ := appbsky.ActorGetProfile(ctx, client, "alex.bsky.team")</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T014931Z" creationid="yamarten" creationdate="20260211T014931Z">
+        <seg>```go
+    profile, _ := appbsky.ActorGetProfile(ctx, client, "alex.bsky.team")</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```go
+    resp, _ := comatproto.RepoGetRecord(ctx, client, 
+        "",                    // cid (empty for latest)
+        "app.bsky.feed.post",  // lexicon
+        "alex.bsky.team",      // handle or DID
+        "3mbl5xdw4yk2r",       // rkey
+    )</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T014738Z" creationid="yamarten" creationdate="20260211T014738Z">
+        <seg>```go
+    resp, _ := comatproto.RepoGetRecord(ctx, client, 
+        "",                    // cid (empty for latest)
+        "app.bsky.feed.post",  // lexicon
+        "alex.bsky.team",      // handle or DID
+        "3mbl5xdw4yk2r",       // rkey
     )</seg>
       </tuv>
     </tu>
@@ -37556,6 +37883,20 @@ console.log('Indexer connected to Tap server')</seg>
     <tu>
       <tuv lang="en-US">
         <seg>client := &amp;xrpc.Client{
+        Host: "https://public.api.bsky.app", // public API endpoint
+    }
+    ```</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T014910Z" creationid="yamarten" creationdate="20260211T014910Z">
+        <seg>client := &amp;xrpc.Client{
+        Host: "https://public.api.bsky.app", // public API endpoint
+    }
+    ```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>client := &amp;xrpc.Client{
   Host: "https://public.api.bsky.app", // public API endpoint
 }
 ```</seg>
@@ -38176,6 +38517,18 @@ const indexer = new SimpleIndexer()</seg>
       </tuv>
       <tuv lang="ja">
         <seg>ctx := context.Background()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>ctx := context.Background()
+    ```
+    Import the SDK libraries and go directly to [making requests](/guides/reading-data)!</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T034814Z" creationid="yamarten" creationdate="20260211T015118Z">
+        <seg>ctx := context.Background()
+    ```
+    SDKライブラリをインポートしたら、そのまま[リクエストの作成](/guides/reading-data)に進みましょう。</seg>
       </tuv>
     </tu>
     <tu>
@@ -38842,11 +39195,12 @@ const indexer = new SimpleIndexer()</seg>
   date: 'Sep 3, 2024',
 }</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T065830Z" creationid="yamarten" creationdate="20260208T065830Z">
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040005Z" creationid="yamarten" creationdate="20260208T065830Z">
         <seg>export const header = {
-  title: '分散システムエンジニアのためのatproto',
+  title: '分散システムエンジニアのためのAtproto',
   description:
-    'この記事では、分散バックエンドエンジニアリングの観点からatprotoについて説明します。',
+    'この記事では、分散バックエンドエンジニアリングの観点からAtprotoについて説明します。',
+  date: '2024年9月3日',
 }</seg>
       </tuv>
     </tu>
@@ -38895,12 +39249,12 @@ export const header = {
     date: 'Apr 4, 2025'
 }</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T063645Z">
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T040121Z">
         <seg>export const header = {
-  title: 'atprotoの基本理念',
+  title: 'Atprotoの基本理念',
   description:
     'ATプロトコルの設計を支える哲学的・美学的原則を深掘りする',
-    date: 'Apr 4, 2025'
+    date: '2025年4月4日'
 }</seg>
       </tuv>
     </tu>
@@ -38925,10 +39279,10 @@ export const header = {
   description: 'Auth for Atproto application developers',
 }</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T063805Z" creationid="yamarten" creationdate="20260208T063438Z">
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T035742Z" creationid="yamarten" creationdate="20260208T063438Z">
         <seg>export const header = {
   title: '認可',
-  description: 'atprotoアプリケーション開発者向けの認可ガイド',
+  description: 'Atprotoアプリケーション開発者向けの認可ガイド',
 }</seg>
       </tuv>
     </tu>
@@ -39225,10 +39579,10 @@ export const header = {
   description: 'Build a Next.js app supporting OAuth with ATProto identity.',
 }</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T154951Z" creationid="yamarten" creationdate="20260208T102108Z">
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T042736Z" creationid="yamarten" creationdate="20260208T102108Z">
         <seg>export const header = {
-  title: 'NextJSでOAuthチュートリアル',
-  description: 'atproto IDによるOAuthに対応したNext.jsアプリの作成',
+  title: 'OAuth with NextJSチュートリアル',
+  description: 'Atproto IDによるOAuthに対応したNext.jsアプリの作成',
 }</seg>
       </tuv>
     </tu>
@@ -39560,9 +39914,9 @@ export const header = {
   },
 }</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T154009Z" creationid="yamarten" creationdate="20260208T070755Z">
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T043356Z" creationid="yamarten" creationdate="20260208T070755Z">
         <seg>export const header = {
-  title: 'まずは作ろう',
+  title: 'さあ、作ろう',
   description:
     '相互運用可能な大規模ソーシャルアプリケーションを作成しましょう',
   primaryCTA: {
@@ -39927,6 +40281,20 @@ export const metadata = {
     <tu>
       <tuv lang="en-US">
         <seg>fmt.Printf("Handle: %s\n", profile.Handle)
+    fmt.Printf("Display Name: %s\n", *profile.DisplayName)
+    fmt.Printf("Followers: %d\n", *profile.FollowersCount)
+    ```</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T014937Z" creationid="yamarten" creationdate="20260211T014937Z">
+        <seg>fmt.Printf("Handle: %s\n", profile.Handle)
+    fmt.Printf("Display Name: %s\n", *profile.DisplayName)
+    fmt.Printf("Followers: %d\n", *profile.FollowersCount)
+    ```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>fmt.Printf("Handle: %s\n", profile.Handle)
 fmt.Printf("Display Name: %s\n", *profile.DisplayName)
 fmt.Printf("Followers: %d\n", *profile.FollowersCount)
     ```</seg>
@@ -39948,6 +40316,24 @@ fmt.Printf("Followers: %d\n", *profile.FollowersCount)
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260111T062833Z" creationid="yamarten" creationdate="20260107T130508Z">
         <seg>fmt.Printf("Logged in as: %s (%s)\n", session.Handle, session.Did)
+    ```
+    &lt;/TabPanel&gt;
+  &lt;/TabPanels&gt;
+&lt;/TabGroup&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>fmt.Printf("URI: %s\n", resp.Uri)
+    // resp.Value contains the record data
+    ```
+    &lt;/TabPanel&gt;
+  &lt;/TabPanels&gt;
+&lt;/TabGroup&gt;</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T014806Z" creationid="yamarten" creationdate="20260211T014756Z">
+        <seg>fmt.Printf("URI: %s\n", resp.Uri)
+    // resp.Valueにレコードデータが含まれています
     ```
     &lt;/TabPanel&gt;
   &lt;/TabPanels&gt;
@@ -42194,9 +42580,9 @@ import {Heading} from "@/components/Heading"</seg>
       )
     }</seg>
       </tuv>
-      <tuv lang="ja">
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T042549Z">
         <seg>try {
-      // SQLite を楽観的に更新します &lt;-- ここ!
+      // SQLiteを楽観的に更新します &lt;-- ここ!
       await db
         .insertInto('status')
         .values({
@@ -42260,9 +42646,9 @@ import {Heading} from "@/components/Heading"</seg>
       return res.status(500).type('html').send('&lt;h1&gt;Error: Failed to write record&lt;/h1&gt;')
     }</seg>
       </tuv>
-      <tuv lang="ja">
+      <tuv lang="ja" changeid="yamarten" changedate="20260211T041338Z">
         <seg>try {
-      // ステータス レコードをユーザーのリポジトリに書き込みます
+      // ステータスレコードをユーザーのリポジトリに書き込みます
       await agent.com.atproto.repo.putRecord({
         repo: agent.assertDid,
         collection: 'xyz.statusphere.status',

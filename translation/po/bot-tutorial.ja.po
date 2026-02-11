@@ -163,7 +163,7 @@ msgstr "<Heading level={2} id=\"part-1-lexicons\">パート1：Lexion</Heading> 
 #: src/guides/bot-tutorial/en.mdx:44
 #, no-wrap
 msgid "[Lexicons](/guides/lexicon) define Atproto records. Your bot will create Bluesky posts, using the [app.bsky.feed.post](https://pdsls.dev/at://did:plc:ewvi7nxzyoun6zhxrhs64oiz/app.bsky.feed.post/3juc4thkx452i#schema) Lexicon. You can use `lex` to download and build this Lexicon into your project:\n"
-msgstr "[Lexicon](/guides/lexicon)はatprotoのレコードを定義します。ボットは[app.bsky.feed.post](https://pdsls.dev/at://did:plc:ewvi7nxzyoun6zhxrhs64oiz/app.bsky.feed.post/3juc4thkx452i#schema) Lexiconを使ってBluesky投稿を作成します。`lex`を使えば、このLexiconをダウンロードしてプロジェクトに組み込めます。\n"
+msgstr "[Lexicon](/guides/lexicon)はAtprotoのレコードを定義します。ボットは[app.bsky.feed.post](https://pdsls.dev/at://did:plc:ewvi7nxzyoun6zhxrhs64oiz/app.bsky.feed.post/3juc4thkx452i#schema) Lexiconを使ってBluesky投稿を作成します。`lex`を使えば、このLexiconをダウンロードしてプロジェクトに組み込めます。\n"
 
 #. type: Plain text
 #: src/guides/bot-tutorial/en.mdx:48
@@ -709,7 +709,7 @@ msgstr "<Heading level={2} id=\"conclusion\">結論</Heading>\n"
 #: src/guides/bot-tutorial/en.mdx:247
 #, no-wrap
 msgid "You've now built an automated Atproto app that creates records on the network!\n"
-msgstr "これで、ネットワーク上にレコードを作成する自動化されたatprotoアプリを構築できました。\n"
+msgstr "これで、ネットワーク上にレコードを作成する自動化されたAtprotoアプリを構築できました。\n"
 
 #. type: Plain text
 #: src/guides/bot-tutorial/en.mdx:248

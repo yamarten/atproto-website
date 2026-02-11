@@ -494,14 +494,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/writing-data/en.mdx:187
-#, fuzzy, no-wrap
-#| msgid ""
-#| "- [Reads and Writes](/guides/reads-and-writes)\n"
-#| "- [Reading data](/guides/reading-data)\n"
-#| "- [Accounts and deletions](/guides/writing-data)\n"
-#| "- [Social graph](/guides/social-graph)\n"
-#| "- [Record Key spec](/specs/record-key)\n"
-#| "- [URI scheme](/specs/at-uri-scheme)\n"
+#, no-wrap
 msgid ""
 "- [Reads and Writes](/guides/reads-and-writes)\n"
 "- [Reading data](/guides/reading-data)\n"
@@ -512,7 +505,7 @@ msgid ""
 msgstr ""
 "- [読み取りと書き込み](/guides/reads-and-writes)\n"
 "- [データ読み取り](/guides/reading-data)\n"
-"- [アカウントと削除](/guides/writing-data)\n"
+"- [アカウントと削除](/guides/account-lifecycle)\n"
 "- [ソーシャルグラフ](/guides/social-graph)\n"
 "- [レコードキー仕様](/specs/record-key)\n"
 "- [URIスキーム](/specs/at-uri-scheme)\n"

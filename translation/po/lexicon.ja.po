@@ -131,7 +131,7 @@ msgstr "<Heading level={2} id=\"http-api-methods\">HTTP APIメソッド</Heading
 #: src/guides/lexicon/en.mdx:35
 #, no-wrap
 msgid "Atproto HTTP API methods each scope and implement a particular set of Lexicons. The AT Protocol's API system, [XRPC](/specs/xrpc), is essentially a thin wrapper around HTTPS. For example, a call to:\n"
-msgstr "atprotoのHTTP APIメソッドは、それぞれ特定のLexiconセットに対して実装します。ATプロトコルのAPIシステムである[XRPC](/specs/xrpc)は、本質的にHTTPSの薄いラッパーです。例えば、次の呼び出しを考えます。\n"
+msgstr "AtprotoのHTTP APIメソッドは、それぞれ特定のLexiconセットに対して実装します。ATプロトコルのAPIシステムである[XRPC](/specs/xrpc)は、本質的にHTTPSの薄いラッパーです。例えば、次の呼び出しを考えます。\n"
 
 #. type: Plain text
 #: src/guides/lexicon/en.mdx:39

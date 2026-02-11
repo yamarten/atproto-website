@@ -21,7 +21,7 @@ msgstr ""
 #: src/articles/atproto-for-distsys-engineers/en.mdx:227
 #, no-wrap
 msgid "<FooterCTA href=\"/\" title=\"Ready to learn more?\" description=\"Specs, guides, and SDKs can be found here.\" />\n"
-msgstr "<FooterCTA href=\"/\" title=\"さらに学習する準備はできましたか？\" description=\"仕様、ガイド、SDK はここにあります。\" />\n"
+msgstr "<FooterCTA href=\"/\" title=\"さらに学習する準備はできましたか？\" description=\"仕様、ガイド、SDKはここにあります。\" />\n"
 
 #. type: Plain text
 #: src/articles/atproto-for-distsys-engineers/en.mdx:27
@@ -94,9 +94,10 @@ msgid ""
 "}\n"
 msgstr ""
 "export const header = {\n"
-"  title: '分散システムエンジニアのためのatproto',\n"
+"  title: '分散システムエンジニアのためのAtproto',\n"
 "  description:\n"
-"    'この記事では、分散バックエンドエンジニアリングの観点からatprotoについて説明します。',\n"
+"    'この記事では、分散バックエンドエンジニアリングの観点からAtprotoについて説明します。',\n"
+"  date: '2024年9月3日',\n"
 "}\n"
 
 #. type: Plain text
@@ -169,7 +170,7 @@ msgstr ""
 #: src/articles/atproto-for-distsys-engineers/en.mdx:58
 #, no-wrap
 msgid "This is pretty good, but we're building a social network with hundreds of millions of users; even this model hits limits. The problem is that our SQL database is “[strongly consistent](https://en.wikipedia.org/wiki/Strong_consistency)” which means the state is kept uniformly in sync across the system. Maintaining strong consistency incurs a performance cost which becomes our bottleneck. \n"
-msgstr "これはかなり良いですが、何億人ものユーザーを抱えるソーシャルネットワークを構築しているため、このモデルでも限界に達します。問題は、SQLデータベースが[強い一貫性](https://en.wikipedia.org/wiki/Strong_consistency)を持つことです。つまり、状態はシステム全体で均一に同期されています。強い一貫性を維持するとパフォーマンス コストが発生し、それがボトルネックになります。 \n"
+msgstr "これはかなり良いですが、何億人ものユーザーを抱えるソーシャルネットワークを構築しているため、このモデルでも限界に達します。問題は、SQLデータベースが[強い一貫性](https://en.wikipedia.org/wiki/Strong_consistency)を持つことです。つまり、状態はシステム全体で均一に同期されています。強い一貫性を維持するとパフォーマンスコストが発生し、それがボトルネックになります。 \n"
 
 #. type: Plain text
 #: src/articles/atproto-for-distsys-engineers/en.mdx:60
@@ -673,4 +674,4 @@ msgstr "ATプロトコルは、P2Pテクノロジーと大規模システムの�
 #: src/articles/atproto-for-distsys-engineers/en.mdx:226
 #, no-wrap
 msgid "Before Bluesky was started, we established a clear requirement of “no steps backwards.” We wanted the network to feel as convenient and global as every social app before it, while still working as an open network. This is why, when we looked at federation and blockchains, the scaling limits of those architectures stood out to us. Our solution was to take standard practices for high scale backends, and then apply the techniques we used in peer-to-peer systems to create an open network.\n"
-msgstr "Blueskyを始める前に、私たちは「後退しない」という明確な要件を設定しました。ネットワークが、これまでのすべてのソーシャルアプリと同様に便利でグローバルでありながら、オープンネットワークとして機能することを望んでいました。そのため、フェデレーションとブロックチェーンを検討したときに、これらのアーキテクチャのスケーリングの限界が際立っていました。私たちの解決策は、大規模なバックエンドの標準的な方法を採用し、ピアツーピア システムで使用した手法を適用してオープンネットワークを作成することでした。\n"
+msgstr "Blueskyを始める前に、私たちは「後退しない」という明確な要件を設定しました。ネットワークが、これまでのすべてのソーシャルアプリと同様に便利でグローバルでありながら、オープンネットワークとして機能することを望んでいました。そのため、フェデレーションとブロックチェーンを検討したときに、これらのアーキテクチャのスケーリングの限界が際立っていました。私たちの解決策は、大規模なバックエンドの標準的な方法を採用し、ピアツーピアシステムで使用した手法を適用してオープンネットワークを作成することでした。\n"

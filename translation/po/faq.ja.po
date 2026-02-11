@@ -44,7 +44,7 @@ msgstr "# FAQ\n"
 #: src/guides/faq/en.mdx:10
 #, no-wrap
 msgid "Frequently Asked Questions about the Authenticated Transfer Protocol (Atproto). For FAQ about Bluesky, visit [here](https://bsky.social/about/faq).\n"
-msgstr "Authenticated Transferプロトコル（atproto）に関するよくある質問。Blueskyに関するよくある質問については、[こちら](https://bsky.social/about/faq)をご覧ください。\n"
+msgstr "Authenticated Transferプロトコル（Atproto）に関するよくある質問。Blueskyに関するよくある質問については、[こちら](https://bsky.social/about/faq)をご覧ください。\n"
 
 #. type: Plain text
 #: src/guides/faq/en.mdx:12
@@ -98,7 +98,7 @@ msgstr "<Heading level={2} id=\"why-create-lexicon-instead-of-using-json-ld-or-r
 #: src/guides/faq/en.mdx:28
 #, no-wrap
 msgid "Atproto exchanges data and RPC commands across organizations. For the data and RPC to be useful, the software needs to correctly handle schemas created by separate teams. This is the purpose of [Lexicon](/guides/lexicon).\n"
-msgstr "atprotoは組織間でデータとRPCコマンドを交換します。データとRPCが有用であるためには、ソフトウェアが別のチームによって作成されたスキーマを正しく処理する必要があります。これが[Lexicon](/guides/lexicon)の目的です。\n"
+msgstr "Atprotoは組織間でデータとRPCコマンドを交換します。データとRPCが有用であるためには、ソフトウェアが別のチームによって作成されたスキーマを正しく処理する必要があります。これが[Lexicon](/guides/lexicon)の目的です。\n"
 
 #. type: Plain text
 #: src/guides/faq/en.mdx:30

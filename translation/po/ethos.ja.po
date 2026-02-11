@@ -21,7 +21,7 @@ msgstr ""
 #: src/articles/atproto-for-distsys-engineers/en.mdx:227
 #, no-wrap
 msgid "<FooterCTA href=\"/\" title=\"Ready to learn more?\" description=\"Specs, guides, and SDKs can be found here.\" />\n"
-msgstr "<FooterCTA href=\"/\" title=\"さらに学習する準備はできましたか？\" description=\"仕様、ガイド、SDK はここにあります。\" />\n"
+msgstr "<FooterCTA href=\"/\" title=\"さらに学習する準備はできましたか？\" description=\"仕様、ガイド、SDKはここにあります。\" />\n"
 
 #. type: Plain text
 #: src/guides/bot-tutorial/en.mdx:245
@@ -53,10 +53,10 @@ msgid ""
 "}\n"
 msgstr ""
 "export const header = {\n"
-"  title: 'atprotoの基本理念',\n"
+"  title: 'Atprotoの基本理念',\n"
 "  description:\n"
 "    'ATプロトコルの設計を支える哲学的・美学的原則を深掘りする',\n"
-"    date: 'Apr 4, 2025'\n"
+"    date: '2025年4月4日'\n"
 "}\n"
 
 #. type: Plain text
@@ -69,31 +69,31 @@ msgstr "*この投稿は、Daniel HolmgrenがAtmosphereConf（2025年3月）で�
 #: src/articles/atproto-ethos/en.mdx:13
 #, no-wrap
 msgid "AT Protocol (or atproto) is a protocol for creating decentralized social applications. {{className: 'lead'}}\n"
-msgstr "ATプロトコル（またはatproto）は、分散型ソーシャルアプリケーションを作成するためのプロトコルです。 {{className: 'lead'}}\n"
+msgstr "ATプロトコル（またはAtproto）は、分散型ソーシャルアプリケーションを作成するためのプロトコルです。 {{className: 'lead'}}\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:15
 #, no-wrap
 msgid "It's not the first protocol with that aim to exist. In the history of decentralized social media protocols, atproto takes a unique approach which is still deeply influenced by technologies and movements that came before it. {{className: 'lead'}}\n"
-msgstr "同じ目的を掲げるプロトコルは初めてではありません。分散型ソーシャルメディアプロトコルの歴史の中で、atprotoは独自のアプローチを取りつつも、それ以前の技術やムーブメントから深い影響を受けています。 {{className: 'lead'}}\n"
+msgstr "同じ目的を掲げるプロトコルは初めてではありません。分散型ソーシャルメディアプロトコルの歴史の中で、Atprotoは独自のアプローチを取りつつも、それ以前の技術やムーブメントから深い影響を受けています。 {{className: 'lead'}}\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:17
 #, no-wrap
 msgid "The phrase “atproto ethos” often comes up during our protocol design discussions. It's a fuzzy term, but we use it to refer to the philosophical and aesthetic principles that underlie the design of the network. {{className: 'lead'}}\n"
-msgstr "「atproto ethos」という言葉は、私たちのプロトコル設計の議論の中でよく登場します。曖昧な用語ではありますが、ネットワーク設計の根底にある哲学的・美学的な原則を指すために使っています。 {{className: 'lead'}}\n"
+msgstr "「Atproto ethos」という言葉は、私たちのプロトコル設計の議論の中でよく登場します。曖昧な用語ではありますが、ネットワーク設計の根底にある哲学的・美学的な原則を指すために使っています。 {{className: 'lead'}}\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:19
 #, no-wrap
 msgid "In this post, we'll distill that ethos. First, we look at the movements in technology that have most directly influenced atproto.Then, we pull out the core innovations that atproto brought to the table. Finally, we highlight some opinionated ways of thinking that influenced the design. {{className: 'lead'}}\n"
-msgstr "この投稿では、そのethosを掘り下げます。まず、atprotoに最も直接的な影響を与えた技術的ムーブメントを見ていきます。次に、atprotoがもたらした中核的な革新を取り上げます。最後に、設計に影響を与えた主張の強い思考様式をいくつか紹介します。 {{className: 'lead'}}\n"
+msgstr "この投稿では、そのethosを掘り下げます。まず、Atprotoに最も直接的な影響を与えた技術的ムーブメントを見ていきます。次に、Atprotoがもたらした中核的な革新を取り上げます。最後に、設計に影響を与えた主張の強い思考様式をいくつか紹介します。 {{className: 'lead'}}\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:21
 #, no-wrap
 msgid "## Atproto at the intersection of three movements\n"
-msgstr "<Heading level={2} id=\"atproto-at-the-intersection-of-three-movements\">3つのムーブメントの交差点にあるatproto</Heading>\n"
+msgstr "<Heading level={2} id=\"atproto-at-the-intersection-of-three-movements\">3つのムーブメントの交差点にあるAtproto</Heading>\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:23
@@ -105,7 +105,7 @@ msgstr "<Heading level={3} id=\"the-web\">ウェブ</Heading>\n"
 #: src/articles/atproto-ethos/en.mdx:25
 #, no-wrap
 msgid "The first and most obvious influence on atproto is the web itself. \n"
-msgstr "atprotoへの最初で最も明白な影響は、ウェブそのものです。 \n"
+msgstr "Atprotoへの最初で最も明白な影響は、ウェブそのものです。 \n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:27
@@ -259,7 +259,7 @@ msgid ""
 "Atproto is situated as the synthesis of these three movements.\n"
 msgstr ""
 "<Heading level={3} id=\"synthesis\">統合</Heading>\n"
-"atprotoは、3つのムーブメントを統合したものとして位置づけられます。\n"
+"Atprotoは、3つのムーブメントを統合したものとして位置づけられます。\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:78
@@ -289,7 +289,7 @@ msgstr "<Heading level={2} id=\"innovations\">イノベーション</Heading>\n"
 #: src/articles/atproto-ethos/en.mdx:86
 #, no-wrap
 msgid "From this basis, atproto adds two core innovations: identity-based authority and the separation of data hosting from the rich applications built on top of it. \n"
-msgstr "この基盤の上に、atprotoは2つの核となるイノベーションを加えます。IDに基づく権威と、データホスティング層をその上のリッチなアプリケーションから分離することです。 \n"
+msgstr "この基盤の上に、Atprotoは2つの核となるイノベーションを加えます。IDに基づく権威と、データホスティング層をその上のリッチなアプリケーションから分離することです。 \n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:88
@@ -301,13 +301,13 @@ msgstr "<Heading level={3} id=\"identity-based-authority\">IDに基づく権威<
 #: src/articles/atproto-ethos/en.mdx:90
 #, no-wrap
 msgid "The data model of atproto is very similar to that of p2p networks. The major difference is that rather than being simply content-addressed, a layer of indirection is added to make the data identity-addressed. Therefore an at-uri looks like `at://username/record-type/record-key`. \n"
-msgstr "atprotoのデータモデルはP2Pネットワークのそれに非常に似ています。大きな違いは、単なるコンテンツアドレッシングではなく、間接層を追加してデータをIDアドレッシング化している点です。したがって、at-uriは`at://username/record-type/record-key`のようになります。 \n"
+msgstr "AtprotoのデータモデルはP2Pネットワークのそれに非常に似ています。大きな違いは、単なるコンテンツアドレッシングではなく、間接層を追加してデータをIDアドレッシング化している点です。したがって、at-uriは`at://username/record-type/record-key`のようになります。 \n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:92
 #, no-wrap
 msgid "This identity-addressing of data is an inversion of the web-based model of location-addressed data. In the traditional web, the location (or the server) is the primary object; in atproto, the user is the primary object.\n"
-msgstr "このデータのIDアドレス化は、ロケーションアドレッシングデータというウェブ的モデルの裏返しです。従来のウェブでは場所（またはサーバー）が主対象ですが、atprotoではユーザーが主対象です。\n"
+msgstr "このデータのIDアドレス化は、ロケーションアドレッシングデータというウェブ的モデルの裏返しです。従来のウェブでは場所（またはサーバー）が主対象ですが、Atprotoではユーザーが主対象です。\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:94
@@ -331,7 +331,7 @@ msgstr "各IDには1つ正規のホストがありますが、そこから出て
 #: src/articles/atproto-ethos/en.mdx:100
 #, no-wrap
 msgid "The data that an identity outputs takes the form of a repository of “records”. Each record is a piece of structured data - a post, a like, a follow, a profile, etc. In the web, the primary object is the document and documents are linked together through hyperlinks. In atproto, the primary object is the record, and records are linked together through at-uri references. \n"
-msgstr "IDが出力するデータは「レコード」のリポジトリという形を取ります。各レコードは構造化データの断片で、投稿、いいね、フォロー、プロフィールなどを表します。ウェブでは主対象は文書であり、文書はハイパーリンクで結び付けられます。atprotoでは主対象はレコードであり、レコードはat-uri参照によって結び付けられます。 \n"
+msgstr "IDが出力するデータは「レコード」のリポジトリという形を取ります。各レコードは構造化データの断片で、投稿、いいね、フォロー、プロフィールなどを表します。ウェブでは主対象は文書であり、文書はハイパーリンクで結び付けられます。Atprotoでは主対象はレコードであり、レコードはat-uri参照によって結び付けられます。 \n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:102
@@ -355,19 +355,19 @@ msgstr "PDSからアプリケーション固有の詳細を切り離すことの
 #: src/articles/atproto-ethos/en.mdx:108
 #, no-wrap
 msgid "This ownership is reflected in the schema language for the atproto network where the notion of ownership is baked into the IDs of schemas. The owner of those schemas is free to iterate and evolve the data model for the application. Similarly, application owners are free to build their backends in whichever way they see fit. There is a boundary to the “weirdness” of the atproto network. Once identities and data cross that threshold, it is the application's decision how to index it and present it to the user.\n"
-msgstr "この所有権は、atprotoネットワークのスキーマ言語に反映されており、スキーマIDに所有権の概念が組み込まれています。スキーマの所有者は、アプリケーションのデータモデルを自由に反復・進化させられます。同様に、アプリケーションの所有者は自分に適した方法でバックエンドを構築できます。atprotoネットワークには「変わったこと」の境界が存在します。IDとデータがその境界を越えた後は、どのようにインデックスし、ユーザーに提示するかはアプリケーションの判断になります。\n"
+msgstr "この所有権は、Atprotoネットワークのスキーマ言語に反映されており、スキーマIDに所有権の概念が組み込まれています。スキーマの所有者は、アプリケーションのデータモデルを自由に反復・進化させられます。同様に、アプリケーションの所有者は自分に適した方法でバックエンドを構築できます。Atprotoネットワークには独自性の境界が存在します。IDとデータがその境界を越えた後は、どのようにインデックスし、ユーザーに提示するかはアプリケーションの判断になります。\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:110
 #, no-wrap
 msgid "Even though product development is centralized, the underlying data and identity remain open and universally accessible as a result of building on atproto. Put another way, ownership is clear for the evolution of a given application, but since the data is open, it can be reused, remixed, or extended by anyone else in the network. \n"
-msgstr "プロダクト開発が集権的であっても、atproto上に構築されているため、基盤となるデータとIDは開かれており普遍的にアクセス可能です。言い換えれば、特定アプリケーションの進化に関する所有権は明確ですが、データがオープンである以上、ネットワーク内の他の誰でも再利用・リミックス・拡張できます。 \n"
+msgstr "プロダクト開発が集権的であっても、Atproto上に構築されているため、基盤となるデータとIDは開かれており普遍的にアクセス可能です。言い換えれば、特定アプリケーションの進化に関する所有権は明確ですが、データがオープンである以上、ネットワーク内の他の誰でも再利用・リミックス・拡張できます。 \n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:112
 #, no-wrap
 msgid "## Opinionated takes\n"
-msgstr "<Heading level={2} id=\"opinionated-takes\">こだわりの表明</Heading>\n"
+msgstr "<Heading level={2} id=\"opinionated-takes\">設計へのこだわり</Heading>\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:114
@@ -379,7 +379,7 @@ msgstr "<Heading level={3} id=\"structure-gives-freedom\">構造が自由をも�
 #: src/articles/atproto-ethos/en.mdx:116
 #, no-wrap
 msgid "Atproto is a multi-party, low-coordination network. Services can join permissionlessly and operate under their own policies. While coordination pains are to some degree inevitable, atproto tries to head off the worst of it by being a very structured protocol. You'll see this reflected in many design decisions in the protocol: records encoded as canonical cbor, multiformats everywhere, a unicit (deterministic insertion-order-independent construction) data structure in the repository, a constrained set of allowed dids/hash functions, even things like requiring DPoP in OAuth.\n"
-msgstr "atprotoは多者間・低調整のネットワークです。サービスは許可不要で参加し、それぞれのポリシーで運用できます。調整の痛みはある程度避けられませんが、atprotoは非常に構造化されたプロトコルであることで、最悪の事態を避けようとしています。これはプロトコルの多くの設計判断に反映されています。例えば、正規化CBORでエンコードされたレコード、至る所に現れるmultiformats、unicit（挿入順序に依存しない決定的構成）なデータ構造を持つリポジトリ、許可されたDID/ハッシュ関数の制限、さらにはOAuthでDPoPを要求することなどです。\n"
+msgstr "Atprotoは多者間・低調整のネットワークです。サービスは許可不要で参加し、それぞれのポリシーで運用できます。調整の痛みはある程度避けられませんが、Atprotoは非常に構造化されたプロトコルであることで、最悪の事態を避けようとしています。これはプロトコルの多くの設計判断に反映されています。例えば、正規化CBORでエンコードされたレコード、至る所に現れるmultiformats、unicit（挿入順序に依存しない決定的構成）なデータ構造を持つリポジトリ、許可されたDID/ハッシュ関数の制限、さらにはOAuthでDPoPを要求することなどです。\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:118
@@ -391,13 +391,13 @@ msgstr "*何でもできる*という考えには力強さがありますが、�
 #: src/articles/atproto-ethos/en.mdx:120
 #, no-wrap
 msgid "This structure is probably best exemplified by the schema language of atproto: Lexicon. Unlike other approaches to interoperation which attempt to create a generalized way of expressing properties on data (RDF) or to translate data between different domains to facilitate interoperation (lenses), Lexicon provides a way to determine if two things are speaking the same language, and to give a very structured mechanism for ensuring that the data is formatted properly. \n"
-msgstr "この構造は、おそらくatprotoのスキーマ言語であるLexiconに最もよく表れています。RDFのようにデータ上の属性を一般化して表現しようとする手法や、Lensのように異なるドメイン間でデータを翻訳して相互運用を実現しようとする手法とは異なり、Lexiconは二者が同じ言語を話しているかを判断する方法と、データが正しく整形されていることを保証するための非常に構造化された仕組みを提供します。 \n"
+msgstr "この構造は、おそらくAtprotoのスキーマ言語であるLexiconに最もよく表れています。RDFのようにデータ上の属性を一般化して表現しようとする手法や、Lensのように異なるドメイン間でデータを翻訳して相互運用を実現しようとする手法とは異なり、Lexiconは二者が同じ言語を話しているかを判断する方法と、データが正しく整形されていることを保証するための非常に構造化された仕組みを提供します。 \n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:122
 #, no-wrap
 msgid "With this, atproto avoids the gray area of “we're sort of talking about the same thing but not really” and forces applications into the discrete choice that if you're talking about the same thing then you're talking about the *exact* same thing. Instead of trying to posit universality of semantics, atproto facilitates specific semantics and then allows for collaboration and extension of those semantics.\n"
-msgstr "これにより、atprotoは「だいたい同じことを話しているけれど実は違う」というグレーゾーンを避け、同じことを話すなら*まったく*同じことを話すという離散的な選択をアプリケーションに強います。意味の普遍性を仮定しようとするのではなく、atprotoは特定の意味を促進し、その意味の協調と拡張を可能にします。\n"
+msgstr "これにより、Atprotoは「だいたい同じことを話しているけれど実は違う」というグレーゾーンを避け、同じことを話すなら*まったく*同じことを話すという離散的な選択をアプリケーションに強います。意味の普遍性を仮定しようとするのではなく、Atprotoは特定の意味を促進し、その意味の協調と拡張を可能にします。\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:124
@@ -421,19 +421,19 @@ msgstr "P2Pネットワークは、根本的に信頼不要という別のアプ
 #: src/articles/atproto-ethos/en.mdx:130
 #, no-wrap
 msgid "Atproto takes a middle approach that we sometimes refer to as “lazy trust”. Like p2p networks, trust is imbued into the data. However most often when browsing the network, users are seeing computed views not the canonical data. When viewing a timeline for instance, clients are likely not checking the signatures on every post that comes down. This is mitigated by the fact that the canonical data is always at hand. Therefore the service that offers these computed views is *staking its reputation* on every view that it serves. If a service starts serving invalid views, this can be verifiably proven. And since the data is locked open, users can migrate to another service that is better behaved.\n"
-msgstr "atprotoは中間的なアプローチを取り、私たちはこれを「後回し信頼（lazy trust）」と呼ぶことがあります。P2Pネットワークと同様に、信頼はデータに埋め込まれています。しかし、ネットワークを閲覧する際にユーザーが見るのは多くの場合、正規データではなく計算済みのビューです。例えばタイムラインを見るとき、クライアントは流れてくるすべての投稿の署名を検証しないでしょう。これは、正規データが常に手元にあることで緩和されます。したがって、これらの計算済みビューを提供するサービスは、提供するすべてのビューに*評判を賭けて*います。サービスが無効なビューを出し始めたら、それを検証できます。しかもデータはオープンなので、ユーザーはより適切な別サービスへ移行できます。\n"
+msgstr "Atprotoは中間的なアプローチを取り、私たちはこれを「後回し信頼（lazy trust）」と呼ぶことがあります。P2Pネットワークと同様に、信頼はデータに埋め込まれています。しかし、ネットワークを閲覧する際にユーザーが見るのは多くの場合、正規データではなく計算済みのビューです。例えばタイムラインを見るとき、クライアントは流れてくるすべての投稿の署名を検証しないでしょう。これは、正規データが常に手元にあることで緩和されます。したがって、これらの計算済みビューを提供するサービスは、提供するすべてのビューに*評判を賭けて*います。サービスが無効なビューを出し始めたら、それを検証できます。しかもデータはオープンなので、ユーザーはより適切な別サービスへ移行できます。\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:132
 #, no-wrap
 msgid "As well, unlike p2p networks, users maintain a relationship with a persistent backend (the PDS) that hosts their data and information about their identity. Most notably (while not a hard requirement in atproto), we made the decision to move signing keys up to the backend. This prevents the complex key management UX issues that come with client-side keys. However, there is an obvious loss in user-control by doing so. This is mitigated once again by lazy trust. Trust is moved a layer up into the identity system such that a user can hold a recovery key for their identity that allows them to migrate away from a bad PDS.\n"
-msgstr "また、P2Pネットワークと異なり、ユーザーは自分のデータとID情報をホストする永続的なバックエンド（PDS）と関係を持ちます。特に（atprotoで厳密に必須というわけではありませんが）、私たちは署名鍵をバックエンド側へ移す決定をしました。これにより、クライアントが鍵を持つことによる複雑な鍵管理UXの問題を防げます。しかし、その分ユーザーのコントロールが失われるのも事実です。これも後回し信頼で緩和されます。信頼はIDシステムの一段上に移され、ユーザーはIDの復旧鍵を保持でき、それによって不適切なPDSから移行できます。\n"
+msgstr "また、P2Pネットワークと異なり、ユーザーは自分のデータとID情報をホストする永続的なバックエンド（PDS）と関係を持ちます。特に（Atprotoで厳密に必須というわけではありませんが）、私たちは署名鍵をバックエンド側へ移す決定をしました。これにより、クライアントが鍵を持つことによる複雑な鍵管理UXの問題を防げます。しかし、その分ユーザーのコントロールが失われるのも事実です。これも後回し信頼で緩和されます。信頼はIDシステムの一段上に移され、ユーザーはIDの復旧鍵を保持でき、それによって不適切なPDSから移行できます。\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:134
 #, no-wrap
 msgid "Operating in a trusted manner is by nature more efficient than operating trustlessly. Generally, this speaks to a philosophy of atproto which is to take advantage of the performance and UX gains that come with operating in a high-trust manner. However, when doing so always maintain the ability for credible exit and a system of checks and balances to hedge against bad actors and shoddy service providers.\n"
-msgstr "信頼のもとで運用するほうが、信頼不要で運用するより本質的に効率的です。一般的に、これは高信頼運用によるパフォーマンスとUXの利得を活かすというatprotoの哲学を示しています。しかしその際も常に、信頼できる出口と、不正な利用者や粗悪なサービス提供者に備えるための抑制と均衡の仕組みを維持する必要があります。\n"
+msgstr "信頼のもとで運用するほうが、信頼不要で運用するより本質的に効率的です。一般的に、これは高信頼運用によるパフォーマンスとUXの利得を活かすというAtprotoの哲学を示しています。しかしその際も常に、信頼できる出口と、不正な利用者や粗悪なサービス提供者に備えるための抑制と均衡の仕組みを維持する必要があります。\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:138

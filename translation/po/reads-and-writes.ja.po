@@ -59,13 +59,13 @@ msgstr "<Heading level={2} id=\"at-records\">ATレコード</Heading>\n"
 #: src/guides/reads-and-writes/en.mdx:9
 #, no-wrap
 msgid "The AT Protocol distributes user data across different nodes of your network, using the core building blocks of the web. The AT Protocol interconnects applications so that their backends share state, including user accounts and content, in individual data repositories. Many operations you'll perform when working with Atproto apps involve reading and writing these data repositories.\n"
-msgstr "ATプロトコルは、ウェブの基本的な構成要素を用いてネットワークの異なるノードにユーザーデータを分散します。ATプロトコルはアプリケーションを相互接続し、各バックエンドが個々のデータリポジトリに含まれるアカウントやコンテンツなどの状態を共有します。atprotoアプリで行う操作の多くは、これらのデータリポジトリの読み書きを伴います。\n"
+msgstr "ATプロトコルは、ウェブの基本的な構成要素を用いてネットワークの異なるノードにユーザーデータを分散します。ATプロトコルはアプリケーションを相互接続し、各バックエンドが個々のデータリポジトリに含まれるアカウントやコンテンツなどの状態を共有します。Atprotoアプリで行う操作の多くは、これらのデータリポジトリの読み書きを伴います。\n"
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:11
 #, no-wrap
 msgid "For more context, see [Atproto for distributed systems engineers](/articles/atproto-for-distsys-engineers) and [The ATProto Ethos](/articles/atproto-ethos).\n"
-msgstr "詳しい背景は、[分散システムエンジニアのためのatproto](/articles/atproto-for-distsys-engineers)と[atprotoの基本理念](/articles/atproto-ethos)を参照してください。\n"
+msgstr "詳しい背景は、[分散システムエンジニアのためのAtproto](/articles/atproto-for-distsys-engineers)と[atprotoの基本理念](/articles/atproto-ethos)を参照してください。\n"
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:13 src/guides/bot-tutorial/en.mdx:11
@@ -158,19 +158,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:54
-#, fuzzy, no-wrap
-#| msgid ""
-#| "    This will give you access to the API methods for your Lexicons. Now you are ready to start [making requests](/guides/reading-data)!\n"
-#| "    </TabPanel>\n"
-#| "    <TabPanel value=\"go\">\n"
-#| "  ```go\n"
-#| "  import (\n"
-#| "    \"context\"\n"
-#| "    appbsky \"github.com/bluesky-social/indigo/api/bsky\"\n"
-#| "    comatproto \"github.com/bluesky-social/indigo/api/atproto\"\n"
-#| "    lexutil \"github.com/bluesky-social/indigo/lex/util\"\n"
-#| "    \"github.com/bluesky-social/indigo/xrpc\"\n"
-#| "  )\n"
+#, no-wrap
 msgid ""
 "    This will give you access to the API methods for your Lexicons. Now you are ready to start [making requests](/guides/reading-data)!\n"
 "    </TabPanel>\n"
@@ -187,53 +175,40 @@ msgstr ""
 "    これによりLexiconのAPIメソッドにアクセスできるようになります。これで[リクエストを行う](/guides/reading-data)準備が整いました。\n"
 "    </TabPanel>\n"
 "    <TabPanel value=\"go\">\n"
-"  ```go\n"
-"  import (\n"
-"    \"context\"\n"
-"    appbsky \"github.com/bluesky-social/indigo/api/bsky\"\n"
-"    comatproto \"github.com/bluesky-social/indigo/api/atproto\"\n"
-"    lexutil \"github.com/bluesky-social/indigo/lex/util\"\n"
-"    \"github.com/bluesky-social/indigo/xrpc\"\n"
-"  )\n"
+"    ```go\n"
+"    import (\n"
+"      \"context\"\n"
+"      appbsky \"github.com/bluesky-social/indigo/api/bsky\"\n"
+"      comatproto \"github.com/bluesky-social/indigo/api/atproto\"\n"
+"      lexutil \"github.com/bluesky-social/indigo/lex/util\"\n"
+"      \"github.com/bluesky-social/indigo/xrpc\"\n"
+"    )\n"
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:58
-#, fuzzy, no-wrap
-#| msgid ""
-#| "  ctx := context.Background()\n"
-#| "  ```\n"
-#| "    Import the SDK libraries and go directly to [making requests](/guides/reading-data)!\n"
+#, no-wrap
 msgid ""
 "    ctx := context.Background()\n"
 "    ```\n"
 "    Import the SDK libraries and go directly to [making requests](/guides/reading-data)!\n"
 msgstr ""
-"  ctx := context.Background()\n"
-"  ```\n"
+"    ctx := context.Background()\n"
+"    ```\n"
 "    SDKライブラリをインポートしたら、そのまま[リクエストの作成](/guides/reading-data)に進みましょう。\n"
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:61
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<Note>\n"
-#| "Note that you'll need to [blank import](https://www.oreilly.com/library/view/the-go-programming/9780134190570/ebook_split_100.html) the `bsky` and `util` libraries if you aren't using them directly, due to the way Go imports work:\n"
+#, no-wrap
 msgid ""
 "    <Note>\n"
 "    Note that you'll need to [blank import](https://www.oreilly.com/library/view/the-go-programming/9780134190570/ebook_split_100.html) the `bsky` and `util` libraries if you aren't using them directly, due to the way Go imports work:\n"
 msgstr ""
-"<Note>\n"
-"Goインポートの仕組み上、`bsky`ライブラリと`util`ライブラリを直接使用していない場合は、これらを[空インポート](https://www.oreilly.com/library/view/the-go-programming/9780134190570/ebook_split_100.html)する必要があることに注意してください。\n"
+"    <Note>\n"
+"    Goインポートの仕組み上、`bsky`ライブラリと`util`ライブラリを直接使用していない場合は、これらを[空インポート](https://www.oreilly.com/library/view/the-go-programming/9780134190570/ebook_split_100.html)する必要があることに注意してください。\n"
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:67
-#, fuzzy, no-wrap
-#| msgid ""
-#| "```go\n"
-#| "_ \"github.com/bluesky-social/indigo/api/bsky\"\n"
-#| "_ \"github.com/bluesky-social/indigo/lex/util\"\n"
-#| "```\n"
-#| "</Note>\n"
+#, no-wrap
 msgid ""
 "    ```go\n"
 "    _ \"github.com/bluesky-social/indigo/api/bsky\"\n"
@@ -241,11 +216,11 @@ msgid ""
 "    ```\n"
 "    </Note>\n"
 msgstr ""
-"```go\n"
-"_ \"github.com/bluesky-social/indigo/api/bsky\"\n"
-"_ \"github.com/bluesky-social/indigo/lex/util\"\n"
-"```\n"
-"</Note>\n"
+"    ```go\n"
+"    _ \"github.com/bluesky-social/indigo/api/bsky\"\n"
+"    _ \"github.com/bluesky-social/indigo/lex/util\"\n"
+"    ```\n"
+"    </Note>\n"
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:71
@@ -261,14 +236,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:79
-#, fuzzy, no-wrap
-#| msgid ""
-#| "- [Reading data](/guides/reading-data)\n"
-#| "- [Writing data](/guides/writing-data)\n"
-#| "- [Accounts and deletions](/guides/writing-data)\n"
-#| "- [Social graph](/guides/social-graph)\n"
-#| "- [Record Key spec](/specs/record-key)\n"
-#| "- [URI scheme](/specs/at-uri-scheme)\n"
+#, no-wrap
 msgid ""
 "- [Reading data](/guides/reading-data)\n"
 "- [Writing data](/guides/writing-data)\n"
@@ -279,7 +247,7 @@ msgid ""
 msgstr ""
 "- [データ読み取り](/guides/reading-data)\n"
 "- [データ書き込み](/guides/writing-data)\n"
-"- [アカウントと削除](/guides/writing-data)\n"
+"- [アカウントと削除](/guides/account-lifecycle)\n"
 "- [ソーシャルグラフ](/guides/social-graph)\n"
 "- [レコードキー仕様](/specs/record-key)\n"
 "- [URIスキーム](/specs/at-uri-scheme)\n"

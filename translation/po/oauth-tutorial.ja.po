@@ -66,8 +66,8 @@ msgid ""
 "}\n"
 msgstr ""
 "export const header = {\n"
-"  title: 'NextJSでOAuthチュートリアル',\n"
-"  description: 'atproto IDによるOAuthに対応したNext.jsアプリの作成',\n"
+"  title: 'OAuth with NextJSチュートリアル',\n"
+"  description: 'Atproto IDによるOAuthに対応したNext.jsアプリの作成',\n"
 "}\n"
 
 #. type: Plain text
@@ -86,7 +86,7 @@ msgstr "このチュートリアルのソースコードは、他のサンプル
 #: src/guides/oauth-tutorial/en.mdx:20
 #, no-wrap
 msgid "This OAuth tutorial does not use many Atproto concepts or dependencies. You should have a working understanding of Next.js and TypeScript.\n"
-msgstr "このOAuthチュートリアルではatprotoの概念や依存関係をあまり使いません。Next.jsとTypeScriptの実用的な理解があることを前提とします。\n"
+msgstr "このOAuthチュートリアルではAtprotoの概念や依存関係をあまり使いません。Next.jsとTypeScriptの実用的な理解があることを前提とします。\n"
 
 #. type: Plain text
 #: src/guides/oauth-tutorial/en.mdx:24
@@ -148,7 +148,7 @@ msgstr ""
 #: src/guides/oauth-tutorial/en.mdx:41
 #, no-wrap
 msgid "Next, add the `oauth-client-node` package from the Atproto ecosystem, which provides OAuth client functionality.\n"
-msgstr "次に、OAuthクライアント機能を提供するatprotoエコシステムの`oauth-client-node`パッケージを追加します。\n"
+msgstr "次に、OAuthクライアント機能を提供するAtprotoエコシステムの`oauth-client-node`パッケージを追加します。\n"
 
 #. type: Plain text
 #: src/guides/oauth-tutorial/en.mdx:45
@@ -183,10 +183,9 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/oauth-tutorial/en.mdx:53
-#, fuzzy, no-wrap
-#| msgid "Navigate to your app in a browser at [http://127.0.0.1:3000]([http://127.0.0.1:3000]).\n"
+#, no-wrap
 msgid "Navigate to your app in a browser at [http://127.0.0.1:3000](http://127.0.0.1:3000).\n"
-msgstr "ブラウザで[http://127.0.0.1:3000]([http://127.0.0.1:3000])にアクセスしてください。\n"
+msgstr "ブラウザで[http://127.0.0.1:3000](http://127.0.0.1:3000)にアクセスしてください。\n"
 
 #. type: Plain text
 #: src/guides/oauth-tutorial/en.mdx:57
@@ -772,7 +771,7 @@ msgstr ""
 #: src/guides/oauth-tutorial/en.mdx:270
 #, no-wrap
 msgid "Finally, you'll make one last route, to expose the `oauth-client-metadata.json` at a well-known URL. This is [used in ATProto OAuth](/specs/oauth#clients) to discover client configuration. Create `app/oauth-client-metadata.json/route.ts`:\n"
-msgstr "最後にもう1つルートを作成し、`oauth-client-metadata.json`をwell-known URLで公開します。これはatproto OAuthでクライアント設定の検出に[使われます](/specs/oauth#clients)。`app/oauth-client-metadata.json/route.ts`を作成してください。\n"
+msgstr "最後にもう1つルートを作成し、`oauth-client-metadata.json`をwell-known URLで公開します。これはAtproto OAuthでクライアント設定の検出に[使われます](/specs/oauth#clients)。`app/oauth-client-metadata.json/route.ts`を作成してください。\n"
 
 #. type: Plain text
 #: src/guides/oauth-tutorial/en.mdx:274
@@ -1190,13 +1189,7 @@ msgstr "パート1からアプリをまだ起動していない場合は、次�
 
 #. type: Plain text
 #: src/guides/oauth-tutorial/en.mdx:441
-#, fuzzy, no-wrap
-#| msgid ""
-#| "Then:\n"
-#| "1. Navigate to your app in a browser at [http://127.0.0.1:3000]([http://127.0.0.1:3000]).\n"
-#| "2. Enter your handle\n"
-#| "3. Authorize the app\n"
-#| "4. You should see \"Authentication working!\" with your DID:\n"
+#, no-wrap
 msgid ""
 "Then:\n"
 "1. Navigate to your app in a browser at [http://127.0.0.1:3000](http://127.0.0.1:3000).\n"
@@ -1204,7 +1197,7 @@ msgid ""
 "3. Authorize the app\n"
 "4. You should see \"Authentication working!\" with your DID:\n"
 msgstr ""
-"1. ブラウザで[http://127.0.0.1:3000]([http://127.0.0.1:3000])にアクセスする\n"
+"1. ブラウザで[http://127.0.0.1:3000](http://127.0.0.1:3000)にアクセスする\n"
 "2. ハンドルを入力する\n"
 "3. アプリを認可する\n"
 "4. DIDとともに\"Authentication working!\"と表示される\n"
@@ -2129,4 +2122,4 @@ msgstr "1つの定数に集約しておくことで、変更箇所は1か所で�
 #: src/guides/oauth-tutorial/en.mdx:802
 #, no-wrap
 msgid "Congratulations on completing this tutorial! You now have a solid Next.js foundation for building Atproto apps with OAuth. From here, you can move on to our [**Statusphere Example App Tutorial**](/guides/statusphere-tutorial).\n"
-msgstr "おめでとうございます、チュートリアルは完了です。これでOAuthを使ったatprotoアプリを作るための堅実なNext.js基盤ができました。次は[**Statusphereサンプルアプリチュートリアル**](/guides/statusphere-tutorial)に進めます。\n"
+msgstr "おめでとうございます、チュートリアルは完了です。これでOAuthを使ったAtprotoアプリを作るための堅実なNext.js基盤ができました。次は[**Statusphereサンプルアプリチュートリアル**](/guides/statusphere-tutorial)に進めます。\n"

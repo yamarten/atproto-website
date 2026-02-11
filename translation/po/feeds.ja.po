@@ -342,7 +342,7 @@ msgid ""
 msgstr ""
 "- コミュニティフィード：そのコミュニティ内のDIDのリストをコンパイルし、そのリスト内のユーザーからのすべての投稿についてfirehoseをフィルタリングします。\n"
 "- トピックフィード：アルゴリズムが返す投稿に対して、投稿本文をフィルタリングメカニズム（LLM、キーワードマッチャーなど）に渡して、選択したトピック用にフィルタリングします。\n"
-"- [graze.social](https://www.graze.social/)はatprotoフィードのアプリケーションモデルを提供します。\n"
+"- [graze.social](https://www.graze.social/)はAtprotoフィードのアプリケーションモデルを提供します。\n"
 "- コミュニティが作成したその他のフィード例は[https://bsky.app/feeds](https://bsky.app/feeds)で見つけることができます。\n"
 
 #. type: Plain text

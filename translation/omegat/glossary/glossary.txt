@@ -34,6 +34,6 @@ parameter	パラメータ
 subscribe	サブスクライブ	websocketなどの文脈。「利用」「購読」とかでもいい
 App View	AppView
 Web	ウェブ
-Atproto	atproto
+Atproto	Atproto
 eventual consistency	結果整合性
 strong consistency	強い一貫性

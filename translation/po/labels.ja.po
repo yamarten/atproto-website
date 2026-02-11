@@ -67,7 +67,7 @@ msgstr "<Heading level={2} id=\"about-labels\">ラベルとは</Heading>\n"
 #: src/guides/labels/en.mdx:11
 #, no-wrap
 msgid "Moderation in Atproto consists of multiple, stackable systems, including:\n"
-msgstr "atprotoのモデレーションは、以下を含む複数のスタッカブルなシステムで構成されています。\n"
+msgstr "Atprotoのモデレーションは、以下を含む複数のスタッカブルなシステムで構成されています。\n"
 
 #. type: Plain text
 #: src/guides/labels/en.mdx:15

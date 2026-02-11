@@ -74,13 +74,13 @@ msgstr "既存IDを使ってPDSアカウントを作成するには、そのID�
 #: src/guides/account-migration/en.mdx:20
 #, no-wrap
 msgid "For an active account on another PDS, this is done by generating a service auth token (JWT) signed with the current atproto signing key indicated in the identity DID document. This can be requested from the previous PDS instance using the `com.atproto.server.getServiceAuth` endpoint (or an equivalent interface/API).\n"
-msgstr "別のPDSで有効なアカウントの場合、DIDドキュメントに示された現在のatproto署名鍵で署名されたサービス認証トークン（JWT）を生成することでこれを行います。これは元のPDSインスタンスに対して`com.atproto.server.getServiceAuth`エンドポイント（または同等のインターフェースやAPI）を使って要求できます。\n"
+msgstr "別のPDSで有効なアカウントの場合、DIDドキュメントに示された現在のAtproto署名鍵で署名されたサービス認証トークン（JWT）を生成することでこれを行います。これは元のPDSインスタンスに対して`com.atproto.server.getServiceAuth`エンドポイント（または同等のインターフェースやAPI）を使って要求できます。\n"
 
 #. type: Plain text
 #: src/guides/account-migration/en.mdx:22
 #, no-wrap
 msgid "For an independently-controlled identity (eg, `did:web`, or a `did:plc` with old PDS offline or uncooperative), this may involve updating the identity to include a self-controlled atproto signing key, and generating the service auth token offline.\n"
-msgstr "独立して管理されるID（例：`did:web`、あるいは旧PDSがオフラインまたは非協力的な`did:plc`）の場合、管理下のatproto署名鍵を含めるようIDを更新したり、オフラインでサービス認証トークンを生成することが含まれる場合があります。\n"
+msgstr "独立して管理されるID（例：`did:web`、あるいは旧PDSがオフラインまたは非協力的な`did:plc`）の場合、管理下のAtproto署名鍵を含めるようIDを更新したり、オフラインでサービス認証トークンを生成することが含まれる場合があります。\n"
 
 #. type: Plain text
 #: src/guides/account-migration/en.mdx:24
@@ -164,7 +164,7 @@ msgstr "コンテンツが移行されたら、ID（DIDとハンドル）を更�
 #: src/guides/account-migration/en.mdx:50
 #, no-wrap
 msgid "\"Recommended\" DID document parameters can be fetched from the new PDS using the `com.atproto.identity.getRecommendedDidCredentials` endpoint. This will include the DID service hostname, local handle (as requested during account creation), a PDS-managed atproto signing key (public key), and (if relevant) PLC rotation keys (public keys).\n"
-msgstr "推奨されるDIDドキュメントのパラメータは、新PDSの`com.atproto.identity.getRecommendedDidCredentials`エンドポイントから取得できます。これにはDIDのサービスホスト名、ローカルハンドル（アカウント作成時に要求したもの）、PDS管理のatproto署名鍵（公開鍵）、および該当する場合はPLC回転鍵（公開鍵）が含まれます。\n"
+msgstr "推奨されるDIDドキュメントのパラメータは、新PDSの`com.atproto.identity.getRecommendedDidCredentials`エンドポイントから取得できます。これにはDIDのサービスホスト名、ローカルハンドル（アカウント作成時に要求したもの）、PDS管理のAtproto署名鍵（公開鍵）、および該当する場合はPLC回転鍵（公開鍵）が含まれます。\n"
 
 #. type: Plain text
 #: src/guides/account-migration/en.mdx:52
@@ -200,7 +200,7 @@ msgstr "このトークンは、要求するDIDのフィールド（新しい署
 #: src/guides/account-migration/en.mdx:62
 #, no-wrap
 msgid "The user is then recommended to submit the operation to the new PDS (using the `com.atproto.identity.submitPlcOperation` endpoint), which will validate that the changes are \"safe\" (aka, that they enable the the PDS to help manage the identity and atproto account), and then submit it to the PLC directory.\n"
-msgstr "その後、ユーザーはそのオペレーションを新PDS（`com.atproto.identity.submitPlcOperation`エンドポイント）に提出することが推奨されます。新PDSは変更が安全であること（すなわちPDSがIDとatprotoアカウントの管理を支援できること）を検証した後、PLCディレクトリへ提出します。\n"
+msgstr "その後、ユーザーはそのオペレーションを新PDS（`com.atproto.identity.submitPlcOperation`エンドポイント）に提出することが推奨されます。新PDSは変更が安全であること（すなわちPDSがIDとAtprotoアカウントの管理を支援できること）を検証した後、PLCディレクトリへ提出します。\n"
 
 #. type: Plain text
 #: src/guides/account-migration/en.mdx:64

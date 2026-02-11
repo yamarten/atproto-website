@@ -145,7 +145,7 @@ msgstr "このチュートリアルのソースコードは、他のサンプル
 #: src/guides/statusphere-tutorial/en.mdx:19
 #, no-wrap
 msgid "This tutorial builds on top of the app created in our [OAuth with NextJS Tutorial](/guides/oauth-tutorial). You should have a completed NextJS OAuth app before starting this tutorial. If you want to skip that step, you can clone the completed OAuth app from the [Cookbook](https://github.com/bluesky-social/nextjs-oauth-tutorial/tree/129cf28b4146ae709e0dac43ce20154ab5237559).\n"
-msgstr "このチュートリアルは、[NextJSでOAuthチュートリアル](/guides/oauth-tutorial)で作成したアプリをベースに進めます。開始前にNextJS OAuthアプリを完成させておいてください。この手順を省略したい場合は、[Cookbook](https://github.com/bluesky-social/nextjs-oauth-tutorial/tree/129cf28b4146ae709e0dac43ce20154ab5237559)から完成版をクローンできます。\n"
+msgstr "このチュートリアルは、[OAuth with NextJSチュートリアル](/guides/oauth-tutorial)で作成したアプリをベースに進めます。開始前にNextJS OAuthアプリを完成させておいてください。この手順を省略したい場合は、[Cookbook](https://github.com/bluesky-social/nextjs-oauth-tutorial/tree/129cf28b4146ae709e0dac43ce20154ab5237559)から完成版をクローンできます。\n"
 
 #. type: Plain text
 #: src/guides/statusphere-tutorial/en.mdx:24
@@ -176,7 +176,7 @@ msgstr ""
 #: src/guides/statusphere-tutorial/en.mdx:32
 #, no-wrap
 msgid "Begin by adding these Atproto libraries to your existing project:\n"
-msgstr "まず、用意したプロジェクトに以下のatprotoライブラリを追加します。\n"
+msgstr "まず、用意したプロジェクトに以下のAtprotoライブラリを追加します。\n"
 
 #. type: Plain text
 #: src/guides/statusphere-tutorial/en.mdx:36
@@ -194,7 +194,7 @@ msgstr ""
 #: src/guides/statusphere-tutorial/en.mdx:48
 #, no-wrap
 msgid "[Lexicons](/guides/lexicon) define the schema for records in Atproto. To create this tutorial, we've already published a new \"Statusphere\" Lexicon to our repository, available at `xyz.statusphere.status`. You can use `lex` to download and build this Lexicon into your project:\n"
-msgstr "[Lexicon](/guides/lexicon)はatprotoのレコードスキーマを定義します。このチュートリアル向けに、新しい\"Statusphere\" Lexicon（`xyz.statusphere.status`）をすでに公開しています。`lex`を使ってこのLexiconを取得し、プロジェクトに取り込みます。\n"
+msgstr "[Lexicon](/guides/lexicon)はAtprotoのレコードスキーマを定義します。このチュートリアル向けに、新しい\"Statusphere\" Lexicon（`xyz.statusphere.status`）をすでに公開しています。`lex`を使ってこのLexiconを取得し、プロジェクトに取り込みます。\n"
 
 #. type: Plain text
 #: src/guides/statusphere-tutorial/en.mdx:52
@@ -242,7 +242,7 @@ msgstr ""
 #: src/guides/statusphere-tutorial/en.mdx:64
 #, no-wrap
 msgid "One more thing you should do now is update the `SCOPE` constant in `lib/auth/client.ts` to request access to this collection. Atproto permission scopes are Lexicons, so you can add `xyz.statusphere.status` to the list of scopes your app requests:\n"
-msgstr "もう1つ、`lib/auth/client.ts`の`SCOPE`定数を更新してこのコレクションへのアクセスを要求してください。atproto の権限スコープはLexicon単位なので、アプリが要求するスコープに`xyz.statusphere.status`を追加します。\n"
+msgstr "もう1つ、`lib/auth/client.ts`の`SCOPE`定数を更新してこのコレクションへのアクセスを要求してください。Atprotoの権限スコープはLexicon単位なので、アプリが要求するスコープに`xyz.statusphere.status`を追加します。\n"
 
 #. type: Plain text
 #: src/guides/statusphere-tutorial/en.mdx:68
@@ -1859,7 +1859,7 @@ msgstr ""
 #: src/guides/statusphere-tutorial/en.mdx:730
 #, no-wrap
 msgid "You've now built a complete Atproto app that uses OAuth to sign in, a custom Lexicon to define status records, and Tap to synchronize records in real-time.\n"
-msgstr "これで、OAuthログイン、カスタムLexiconによるステータスレコード定義、Tapによるリアルタイム同期を備えた完全なatprotoアプリが完成しました。\n"
+msgstr "これで、OAuthログイン、カスタムLexiconによるステータスレコード定義、Tapによるリアルタイム同期を備えた完全なAtprotoアプリが完成しました。\n"
 
 #. type: Plain text
 #: src/guides/statusphere-tutorial/en.mdx:731

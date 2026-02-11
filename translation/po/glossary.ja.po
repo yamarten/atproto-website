@@ -74,7 +74,7 @@ msgstr "ATプロトコルは、「Authenticated Transfer Protocol」の略です
 #: src/guides/glossary/en.mdx:20
 #, no-wrap
 msgid "The name is also a play on the \"@\" symbol, aka the \"at\" symbol, since atproto is designed for social systems.\n"
-msgstr "この名前は、atprotoがソーシャルシステム向けに設計されているため、「@」記号、別名「at」記号をもじったものです。\n"
+msgstr "この名前は、Atprotoがソーシャルシステム向けに設計されているため、「@」記号、別名「at」記号をもじったものです。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:22
@@ -140,7 +140,7 @@ msgstr "<Heading level={2} id=\"lexicon\">Lexicon</Heading>\n"
 #: src/guides/glossary/en.mdx:42
 #, no-wrap
 msgid "Lexicon is a schema language. It's used in the [Atmosphere](#atmosphere) to describe [data records](#record) and HTTP APIs. Functionally it's very similar to [JSON-Schema](https://json-schema.org/) and [OpenAPI](https://www.openapis.org/).\n"
-msgstr "Lexiconはスキーマ言語です。[Atmosphere](#atmosphere)で[データ レコード](#record)とHTTP APIを記述するために使用されます。機能的には、[JSON-Schema](https://json-schema.org/)や[OpenAPI](https://www.openapis.org/)と非常によく似ています。\n"
+msgstr "Lexiconはスキーマ言語です。[Atmosphere](#atmosphere)で[データレコード](#record)とHTTP APIを記述するために使用されます。機能的には、[JSON-Schema](https://json-schema.org/)や[OpenAPI](https://www.openapis.org/)と非常によく似ています。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:44
@@ -166,10 +166,9 @@ msgstr "<Heading level={2} id=\"data-repo\">データリポジトリ</Heading>\n
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:51
-#, fuzzy, no-wrap
-#| msgid "The \"data repository\" or \"repo\" is the public dataset which represents a user. It is comprised of [collections](#collection) of JSON [records](#record) and unstructured [blobs](#blob). Every repo is assigned a single permanent [DID](#did-decentralized-id) which identifies it. Repos may also have any number of [domain handles](#handle) which act as human-readable names.\n"
+#, no-wrap
 msgid "The \"data repository\" or \"repo\" is the public dataset which represents a user. It is comprised of [collections](#collection) of JSON [records](#record) and unstructured [blobs](#blob). Every repo is assigned a single permanent [DID](#did-decentralized-id) which identifies it. Repos may also have a single [domain handle](#handle) which act as human-readable names.\n"
-msgstr "「データリポジトリ」または「リポジトリ」は、ユーザーを表すパブリックデータセットです。これは、JSON[レコード](#record)と非構造化[blob](#blob)の[コレクション](#collection)で構成されています。すべてのリポジトリには、それを識別する1つの永続的な[DID](#did-decentralized-id)が割り当てられます。リポジトリには、人間が読める名前として機能する[ドメインハンドル](#handle)をいくつでも持つことができます。\n"
+msgstr "「データリポジトリ」または「リポジトリ」は、ユーザーを表すパブリックデータセットです。これは、JSON[レコード](#record)と非構造化[blob](#blob)の[コレクション](#collection)で構成されています。すべてのリポジトリには、それを識別する1つの永続的な[DID](#did-decentralized-id)が割り当てられます。リポジトリには、人間が読める名前として機能する[ドメインハンドル](#handle)を1つ持つことができます。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:53
@@ -197,7 +196,7 @@ msgstr "<Heading level={2} id=\"collection\">コレクション</Heading>\n"
 #: src/guides/glossary/en.mdx:60
 #, no-wrap
 msgid "The \"collection\" is a bucket of JSON [records](#record) in a [data repository](#data-repo). They support ordered list operations. Every collection is identified by an [NSID](#nsid-namespaced-id) which is expected to map to a [Lexicon](#lexicon) schema.\n"
-msgstr "「コレクション」は、[データ リポジトリ](#data-repo)内のJSON[レコード](#record)のバケツです。順序付きリスト操作をサポートします。すべてのコレクションは、[NSID](#nsid-namespace-id)によって識別され、[Lexicon](#lexicon)スキーマにマップされることが想定されています。\n"
+msgstr "「コレクション」は、[データリポジトリ](#data-repo)内のJSON[レコード](#record)のバケツです。順序付きリスト操作をサポートします。すべてのコレクションは、[NSID](#nsid-namespace-id)によって識別され、[Lexicon](#lexicon)スキーマにマップされることが想定されています。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:62
@@ -351,7 +350,7 @@ msgstr "<Heading level={2} id=\"dag-cbor\">DAG-CBOR</Heading>\n"
 #: src/guides/glossary/en.mdx:111
 #, no-wrap
 msgid "DAG-CBOR is a serialization format used by [atproto](#at-protocol). It was chosen because it provides a reliable canonical form, which is important for cryptographic verification.\n"
-msgstr "DAG-CBORは、[atproto](#at-protocol)で使用されるシリアル化形式です。暗号検証に重要な信頼性の高い標準形式を提供するため、この形式が選択されました。\n"
+msgstr "DAG-CBORは、[Atproto](#at-protocol)で使用されるシリアル化形式です。暗号検証に重要な信頼性の高い標準形式を提供するため、この形式が選択されました。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:113
@@ -369,7 +368,7 @@ msgstr "<Heading level={2} id=\"xrpc\">XRPC</Heading>\n"
 #: src/guides/glossary/en.mdx:117
 #, no-wrap
 msgid "XRPC is [atproto's](#at-protocol) HTTP API. It stands for \"Cross-organizational Remote Procedure Calls\" and is a thin wrapper around standard HTTPS. XRPC uses [Lexicon](#lexicon) schemas to define the valid parameters and responses for each API endpoint.\n"
-msgstr "XRPCは非推奨の用語ですが、歴史的には[atproto](#at-protocol)のHTTP用法を説明するために使用されていました。これは「Cross-organizational Remote Procedure Calls」の略語ですが、実際にはHTTPを使用しているだけなので、この用語を発明したことを後悔しています。\n"
+msgstr "XRPCは非推奨の用語ですが、歴史的には[Atproto](#at-protocol)のHTTP用法を説明するために使用されていました。これは「Cross-organizational Remote Procedure Calls」の略語ですが、実際にはHTTPを使用しているだけなので、この用語を発明したことを後悔しています。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:118

@@ -127,10 +127,9 @@ msgstr "カスタムフィード（フィードジェネレーター）は、ユ
 
 #. type: Plain text
 #: src/guides/custom-feed-tutorial/en.mdx:12
-#, fuzzy, no-wrap
-#| msgid "In this tutorial, you'll create a custom feed server by consuming posts from the [firehose](http://localhost:3000/guides/streaming-data), algorithmically sorting them, and [broadcasting them as an XRPC feed](/guides/feeds).\n"
+#, no-wrap
 msgid "In this tutorial, you'll create a custom feed server by consuming posts from the [firehose](/guides/streaming-data), algorithmically sorting them, and [broadcasting them as an XRPC feed](/guides/feeds).\n"
-msgstr "このチュートリアルでは、[firehose](http://localhost:3000/guides/streaming-data)から投稿を取り込み、アルゴリズムで並び替え、[XRPCフィードとして配信する](/guides/feeds)ことで、カスタムフィードサーバーを作成します。\n"
+msgstr "このチュートリアルでは、[firehose](/guides/streaming-data)から投稿を取り込み、アルゴリズムで並び替え、[XRPCフィードとして配信する](/guides/feeds)ことで、カスタムフィードサーバーを作成します。\n"
 
 #. type: Plain text
 #: src/guides/custom-feed-tutorial/en.mdx:20
@@ -218,7 +217,7 @@ msgstr "<Heading level={2} id=\"part-1-lexicons-and-tap\">パート1：Lexionと
 #: src/guides/custom-feed-tutorial/en.mdx:54
 #, no-wrap
 msgid "[Lexicons](/guides/lexicon) define Atproto records. A baseline feed generator requires the `app.bsky.feed.describeFeedGenerator` and `app.bsky.feed.getFeedSkeleton` Lexicons. You can use `lex` to download and build these Lexicons into your project:\n"
-msgstr "[Lexicon](/guides/lexicon)はatprotoのレコードを定義します。基本的なフィードジェネレーターには`app.bsky.feed.describeFeedGenerator`と`app.bsky.feed.getFeedSkeleton`のLexiconが必要です。`lex`を使えば、これらのLexiconをダウンロードしてプロジェクトに組み込めます。\n"
+msgstr "[Lexicon](/guides/lexicon)はAtprotoのレコードを定義します。基本的なフィードジェネレーターには`app.bsky.feed.describeFeedGenerator`と`app.bsky.feed.getFeedSkeleton`のLexiconが必要です。`lex`を使えば、これらのLexiconをダウンロードしてプロジェクトに組み込めます。\n"
 
 #. type: Plain text
 #: src/guides/custom-feed-tutorial/en.mdx:58
@@ -1132,7 +1131,7 @@ msgstr ""
 #: src/guides/custom-feed-tutorial/en.mdx:389
 #, no-wrap
 msgid "You've now built a custom Atproto feed that retrieves posts from the network, indexes them based on your own algorithm, and serves them via XRPC to clients like Bluesky.\n"
-msgstr "これで、ネットワークから投稿を取得し、独自アルゴリズムでインデックスし、BlueskyのようなクライアントへXRPC経由で配信するカスタムatprotoフィードを構築できました。\n"
+msgstr "これで、ネットワークから投稿を取得し、独自アルゴリズムでインデックスし、BlueskyのようなクライアントへXRPC経由で配信するカスタムAtprotoフィードを構築できました。\n"
 
 #. type: Plain text
 #: src/guides/custom-feed-tutorial/en.mdx:391
@@ -1144,7 +1143,7 @@ msgstr "フィードサーバーが動作したので、さらにカスタマイ
 #: src/guides/custom-feed-tutorial/en.mdx:393
 #, no-wrap
 msgid "After that, you can clone down our original [feed-generator repo](https://github.com/bluesky-social/feed-generator) and run the [publishFeedGen.ts](https://github.com/bluesky-social/feed-generator/blob/main/scripts/publishFeedGen.ts) script interactively. This creates the necessary Atproto records to point to your feed server, and allow it to be discovered:\n"
-msgstr "その後、公式の[feed-generatorリポジトリ](https://github.com/bluesky-social/feed-generator)をクローンし、[publishFeedGen.ts](https://github.com/bluesky-social/feed-generator/blob/main/scripts/publishFeedGen.ts)スクリプトを対話的に実行できます。これにより、あなたのフィードサーバーを指すために必要なatprotoレコードが作成され、発見可能になります。\n"
+msgstr "その後、公式の[feed-generatorリポジトリ](https://github.com/bluesky-social/feed-generator)をクローンし、[publishFeedGen.ts](https://github.com/bluesky-social/feed-generator/blob/main/scripts/publishFeedGen.ts)スクリプトを対話的に実行できます。これにより、あなたのフィードサーバーを指すために必要なAtprotoレコードが作成され、発見可能になります。\n"
 
 #. type: Plain text
 #: src/guides/custom-feed-tutorial/en.mdx:397

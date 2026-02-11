@@ -54,7 +54,7 @@ msgid ""
 msgstr ""
 "export const header = {\n"
 "  title: '認可',\n"
-"  description: 'atprotoアプリケーション開発者向けの認可ガイド',\n"
+"  description: 'Atprotoアプリケーション開発者向けの認可ガイド',\n"
 "}\n"
 
 #. type: Plain text
@@ -67,13 +67,13 @@ msgstr "<Heading level={2} id=\"about-authorization\">認可について</Headin
 #: src/guides/auth/en.mdx:11
 #, no-wrap
 msgid "**Authorization is the first part of our docs for a reason!** You don't always need to be authenticated to [read data](/reading-data#unauthenticated-reads) from AT Protocol records or even to [stream data from the firehose](/guides/streaming-data). But if you're looking to build an application that integrates with the Atmosphere of Atproto apps in some way, you'll begin with authentication. You might start out by just using AT Protocol identities as an OAuth source — though you'll find that there's lots more you can do by building on top of the Atproto [social graph](/guides/social-graph).\n"
-msgstr "**認可が最初のドキュメントであることには理由があります**。ATプロトコルのレコードから[データを読む](/reading-data#unauthenticated-reads)ために常に認証・認可が必要というわけではありませんし、[firehoseからデータをストリーム](/guides/streaming-data)する場合も同じです。ただしatprotoアプリの環境（Atmosphere）に何らかの形で統合されるアプリケーションを構築したい場合は、認可から始めることになります。まずATプロトコルのIDをOAuthソースとして使うだけから始めるかもしれませんが、atprotoの[ソーシャルグラフ](/guides/social-graph)上でさらに多くのことができることに気付くでしょう。\n"
+msgstr "**認可が最初のドキュメントであることには理由があります**。ATプロトコルのレコードから[データを読む](/reading-data#unauthenticated-reads)ために常に認証・認可が必要というわけではありませんし、[firehoseからデータをストリーム](/guides/streaming-data)する場合も同じです。ただしAtprotoアプリの環境（Atmosphere）に何らかの形で統合されるアプリケーションを構築したい場合は、認可から始めることになります。まずATプロトコルのIDをOAuthソースとして使うだけから始めるかもしれませんが、Atprotoの[ソーシャルグラフ](/guides/social-graph)上でさらに多くのことができることに気付くでしょう。\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:13
 #, no-wrap
 msgid "This section is aimed at developers building applications on Atproto. Applications with their own end-user login flow should implement [OAuth](#what-is-oauth) for authentication. Single-purpose applications such as bots or command line tools may use [password authentication](/guides/sdk-auth) instead.\n"
-msgstr "このセクションはatprotoでアプリケーションを構築している開発者を対象としています。独自のログインフローを持つアプリケーションは認証に[OAuth](#what-is-oauth)を実装すべきです。ボットやコマンドラインツールなどの単一目的のアプリケーションは[パスワード認証](/guides/sdk-auth)を使うこともできます。\n"
+msgstr "このセクションはAtprotoでアプリケーションを構築している開発者を対象としています。独自のログインフローを持つアプリケーションは認証に[OAuth](#what-is-oauth)を実装すべきです。ボットやコマンドラインツールなどの単一目的のアプリケーションは[パスワード認証](/guides/sdk-auth)を使うこともできます。\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:17
@@ -127,7 +127,7 @@ msgstr "<Heading level={2} id=\"how-is-oauth-different-in-at-protocol\">ATプロ
 #: src/guides/auth/en.mdx:31
 #, no-wrap
 msgid "Atproto [specifies](/specs/oauth) a particular \"profile\" of the OAuth standards, using [OAuth 2.1](https://www.ietf.org/archive/id/draft-ietf-oauth-v2-1-13.html) as the foundation.\n"
-msgstr "atprotoは[OAuth仕様](/specs/oauth)でOAuth標準の特定のプロファイルを指定し、[OAuth 2.1](https://www.ietf.org/archive/id/draft-ietf-oauth-v2-1-13.html)を基礎としています。\n"
+msgstr "Atprotoは[OAuth仕様](/specs/oauth)でOAuth標準の特定のプロファイルを指定し、[OAuth 2.1](https://www.ietf.org/archive/id/draft-ietf-oauth-v2-1-13.html)を基礎としています。\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:33
@@ -139,7 +139,7 @@ msgstr "他のOAuthシステムを使っている場合は細かい部分で意�
 #: src/guides/auth/en.mdx:35
 #, no-wrap
 msgid "- **Atproto is distributed**: Usually, when an app has a \"sign in with...\" button, it provides a choice of which authorities it allows to authenticate users (usually one of a few big corporations). With ATProto OAuth, the app has no prior relationship with the authentication provider: a user's [PDS](/guides/the-at-stack#pds). This is also the reason why Atproto OAuth is not compatible with OIDC, which requires a pre-established relationship.\n"
-msgstr "- **atprotoは分散しています**：通常、アプリに「…でサインイン」ボタンがある場合、ユーザーの認証を許可する権限を選択できます（大抵は少数の大企業のどれか）。atprotoのOAuthでは、アプリは認証プロバイダー、つまりユーザーの[PDS](/guides/the-at-stack#pds)との事前の関係がありません。これは、atprotoのOAuthが、事前に確立された関係を必要とするOIDCと互換性がない理由でもあります。\n"
+msgstr "- **Atprotoは分散しています**：通常、アプリに「…でサインイン」ボタンがある場合、ユーザーの認証を許可する権限を選択できます（大抵は少数の大企業のどれか）。AtprotoのOAuthでは、アプリは認証プロバイダー、つまりユーザーの[PDS](/guides/the-at-stack#pds)との事前の関係がありません。これは、AtprotoのOAuthが、事前に確立された関係を必要とするOIDCと互換性がない理由でもあります。\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:37
@@ -151,7 +151,7 @@ msgstr "- **移行**：ATプロトコルユーザーはアカウントをサー�
 #: src/guides/auth/en.mdx:39
 #, no-wrap
 msgid "- **Client IDs**: In other OAuth ecosystems, it is often necessary for client apps to pre-register themselves with the resource server. This is not viable in a decentralized system (with many clients and many resource servers), so Atproto addresses this using [Client ID Metadata Documents](/specs/oauth#client-id-metadata-document).\n"
-msgstr "- **クライアントID**： 他のOAuthエコシステムでは、クライアントアプリケーションがリソースサーバーに事前登録が必要なことがよくあります。これは分散型システム（多数のクライアントと多数のリソースサーバーがある）では実行できないため、atprotoは[Client ID Metadata Documents](/specs/oauth#client-id-metadata-document)を使用してこれに対処しています。\n"
+msgstr "- **クライアントID**：他のOAuthエコシステムでは、クライアントアプリケーションがリソースサーバーに事前登録が必要なことがよくあります。これは分散型システム（多数のクライアントと多数のリソースサーバーがある）では実行できないため、Atprotoは[Client ID Metadata Documents](/specs/oauth#client-id-metadata-document)を使用してこれに対処しています。\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:43

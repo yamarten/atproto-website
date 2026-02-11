@@ -201,10 +201,9 @@ msgstr "ラベラーに報告を送信するには、`com.atproto.moderation.cre
 
 #. type: Plain text
 #: src/guides/subscriptions/en.mdx:56
-#, fuzzy, no-wrap
-#| msgid "To specify which labeler should receive the label, set the `atproto-proxy` header with the DID of the labeler and the service key of `atproto_labeler`. In the TypeScript SDK, it looks like this:\n"
+#, no-wrap
 msgid "To specify which labeler should receive the report, set the `atproto-proxy` header with the DID of the labeler and the service key of `atproto_labeler`. In the TypeScript SDK, it looks like this:\n"
-msgstr "どのラベラーがラベルを受け取るべきかを指定するには、ラベラーのDIDと`atproto_labeler`サービスキーを`atproto-proxy`ヘッダーを設定します。TypeScript SDKでは、次のようになります。\n"
+msgstr "どのラベラーが報告を受け取るべきかを指定するには、ラベラーのDIDと`atproto_labeler`サービスキーを`atproto-proxy`ヘッダーを設定します。TypeScript SDKでは、次のようになります。\n"
 
 #. type: Plain text
 #: src/guides/subscriptions/en.mdx:59

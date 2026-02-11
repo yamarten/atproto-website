@@ -48,7 +48,7 @@ msgstr "<Heading level={2} id=\"tl-dr\">要約</Heading>\n"
 #: src/guides/understanding-atproto/en.mdx:11
 #, no-wrap
 msgid "Atproto is big-world, open social. Users publish JSON records into repositories. The changestreams of those records then sync across the network to drive applications.\n"
-msgstr "atprotoは、ビッグワールドでオープンなソーシャルです。ユーザーはJSONレコードをリポジトリに公開します。これらのレコードの変更ストリームがネットワーク全体で同期され、アプリケーションを動かします。\n"
+msgstr "Atprotoは、ビッグワールドでオープンなソーシャルです。ユーザーはJSONレコードをリポジトリに公開します。これらのレコードの変更ストリームがネットワーク全体で同期され、アプリケーションを動かします。\n"
 
 #. type: Plain text
 #: src/guides/understanding-atproto/en.mdx:13
@@ -181,5 +181,5 @@ msgid ""
 "- [**Atproto for distributed systems engineers**](/articles/atproto-for-distsys-engineers). An explainer for backend thinkers.\n"
 "- [**The Atproto Ethos**](/articles/atproto-ethos). The principles that underpin the design of atproto.\n"
 msgstr ""
-"- [分散システムエンジニアのためのatproto](/articles/atproto-for-distsys-engineers)：バックエンドを考える人のための解説\n"
-"- [atprotoの基本理念](/articles/atproto-ethos)：atprotoの設計を支える原則\n"
+"- [分散システムエンジニアのためのAtproto](/articles/atproto-for-distsys-engineers)：バックエンドを考える人のための解説\n"
+"- [Atprotoの基本理念](/articles/atproto-ethos)：Atprotoの設計を支える原則\n"
