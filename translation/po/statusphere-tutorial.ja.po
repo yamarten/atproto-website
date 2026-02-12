@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-07 17:03+0900\n"
+"POT-Creation-Date: 2026-02-12 10:49+0900\n"
 "PO-Revision-Date: 2026-02-07 17:03+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -137,8 +137,9 @@ msgstr "このチュートリアルでは、カスタムLexiconとリアルタ�
 
 #. type: Plain text
 #: src/guides/statusphere-tutorial/en.mdx:15
-#, no-wrap
-msgid "You can find the source code for this tutorial, along with other example projects, in the [Cookbook](https://github.com/bluesky-social/cookbook/) repository, under `statusphere`.\n"
+#, fuzzy, no-wrap
+#| msgid "You can find the source code for this tutorial, along with other example projects, in the [Cookbook](https://github.com/bluesky-social/cookbook/) repository, under `statusphere`.\n"
+msgid "You can find the source code for this tutorial in the [statusphere-example-app](https://github.com/bluesky-social/statusphere-example-app) repository.\n"
 msgstr "このチュートリアルのソースコードは、他のサンプルプロジェクトとあわせて[Cookbook](https://github.com/bluesky-social/cookbook/)リポジトリの`statusphere`にあります。\n"
 
 #. type: Plain text

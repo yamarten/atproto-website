@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-11 10:36+0900\n"
+"POT-Creation-Date: 2026-02-12 10:49+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,18 +17,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: Plain text
-#: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:21
-#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:73
-#: src/guides/streaming-data/en.mdx:60 src/guides/video-handling/en.mdx:39
-#: src/guides/feeds/en.mdx:113 src/guides/installing-lexicons/en.mdx:53
-#: src/guides/oauth-patterns/en.mdx:56 src/guides/scopes/en.mdx:45
-#: src/guides/subscriptions/en.mdx:78 src/guides/writing-data/en.mdx:181
-#: src/guides/creating-a-labeler/en.mdx:56 src/guides/labels/en.mdx:110
-#: src/guides/sdk-auth/en.mdx:145 src/guides/sync/en.mdx:51
-#: src/guides/auth/en.mdx:41 src/guides/lexicon/en.mdx:128
-#: src/guides/publishing-lexicons/en.mdx:49 src/guides/backfilling/en.mdx:60
-#: src/guides/reading-data/en.mdx:165 src/guides/social-graph/en.mdx:21
-#: src/guides/permission-sets/en.mdx:214 src/guides/using-ozone/en.mdx:132
+#: src/guides/account-lifecycle/en.mdx:65
+#: src/guides/images-and-video/en.mdx:142 src/guides/moderation/en.mdx:30
+#: src/guides/reads-and-writes/en.mdx:73 src/guides/streaming-data/en.mdx:60
+#: src/guides/video-handling/en.mdx:39 src/guides/feeds/en.mdx:111
+#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:56
+#: src/guides/scopes/en.mdx:45 src/guides/subscriptions/en.mdx:78
+#: src/guides/writing-data/en.mdx:181 src/guides/creating-a-labeler/en.mdx:56
+#: src/guides/labels/en.mdx:110 src/guides/sdk-auth/en.mdx:112
+#: src/guides/sync/en.mdx:51 src/guides/auth/en.mdx:74
+#: src/guides/lexicon/en.mdx:128 src/guides/publishing-lexicons/en.mdx:49
+#: src/guides/backfilling/en.mdx:60 src/guides/reading-data/en.mdx:165
+#: src/guides/social-graph/en.mdx:21 src/guides/permission-sets/en.mdx:214
+#: src/guides/using-ozone/en.mdx:132
 #, no-wrap
 msgid "## Further Reading and Resources\n"
 msgstr ""
@@ -54,73 +55,17 @@ msgstr ""
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:9
 #, no-wrap
-msgid "## Creating a Client\n"
-msgstr ""
-
-#. type: Plain text
-#: src/guides/sdk-auth/en.mdx:18
-#, no-wrap
-msgid ""
-"<TabGroup defaultValue=\"ts\">\n"
-"  <TabList>\n"
-"    <Tab value=\"ts\">TypeScript</Tab>\n"
-"    <Tab value=\"go\">Go</Tab>\n"
-"  </TabList>\n"
-"  <TabPanels>\n"
-"    <TabPanel value=\"ts\">\n"
-"    The first step when working with AT data is authenticating. You can authenticate using any [OAuth](/guides/auth) provider, or with [PasswordAgent](https://github.com/bluesky-social/atproto/tree/main/packages/lex/lex-password-agent) from our SDK if you are using password auth.\n"
-msgstr ""
-
-#. type: Plain text
-#: src/guides/sdk-auth/en.mdx:20 src/guides/sdk-auth/en.mdx:29
-#, no-wrap
-msgid "    Begin by installing the Atproto SDK packages:\n"
-msgstr ""
-
-#. type: Plain text
-#: src/guides/sdk-auth/en.mdx:27
-#, no-wrap
-msgid ""
-"    ```bash\n"
-"    npm install @atproto/lex @atproto/lex-password-agent\n"
-"    ```\n"
-"    </TabPanel>\n"
-"    <TabPanel value=\"go\">\n"
-"    The first step when working with AT data is authenticating. You can authenticate using any [OAuth](/guides/auth) provider, or with password authentication from our SDK.\n"
-msgstr ""
-
-#. type: Plain text
-#: src/guides/sdk-auth/en.mdx:36
-#, no-wrap
-msgid ""
-"    ```bash\n"
-"    go get github.com/bluesky-social/indigo\n"
-"    ```\n"
-"    </TabPanel>\n"
-"  </TabPanels>\n"
-"</TabGroup>\n"
-msgstr ""
-
-#. type: Plain text
-#: src/guides/sdk-auth/en.mdx:38
-#, no-wrap
-msgid "Because AT uses regular HTTP verbs and HTTP endpoints, you can also follow this guide by using a CLI tool like cURL to make HTTP requests following the [HTTP Reference](https://docs.bsky.app/docs/category/http-reference) endpoints. Most users will want to use an SDK.\n"
-msgstr ""
-
-#. type: Plain text
-#: src/guides/sdk-auth/en.mdx:40
-#, no-wrap
 msgid "## Password Authentication\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:42
+#: src/guides/sdk-auth/en.mdx:11
 #, no-wrap
 msgid "If you are using password auth, you should generate an [app password](/specs/xrpc#app-passwords) for your account rather than using your main account password. If you are using Bluesky, you can generate an app password in your [account settings](https://bsky.app/settings/app-passwords).\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:51
+#: src/guides/sdk-auth/en.mdx:20
 #, no-wrap
 msgid ""
 "<TabGroup defaultValue=\"ts\">\n"
@@ -130,22 +75,22 @@ msgid ""
 "  </TabList>\n"
 "  <TabPanels>\n"
 "    <TabPanel value=\"ts\">\n"
-"    Start by importing `PasswordAgent`, providing credentials to `PasswordAgent.login()`, and creating an `agent`:\n"
+"    Start by importing `PasswordSession`, providing credentials to `PasswordSession.login()`, and creating a `session`:\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:54
+#: src/guides/sdk-auth/en.mdx:23
 #, no-wrap
 msgid ""
 "    ```tsx\n"
-"    import { PasswordAgent } from '@atproto/lex-password-agent'\n"
+"    import { PasswordSession } from '@atproto/lex-password-session'\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:60
+#: src/guides/sdk-auth/en.mdx:29
 #, no-wrap
 msgid ""
-"    const result = await PasswordAgent.login({\n"
+"    const result = await PasswordSession.login({\n"
 "      service: 'https://bsky.social', // or your PDS host\n"
 "      identifier: 'your-handle.bsky.social',\n"
 "      password: 'your-app-password',\n"
@@ -153,27 +98,27 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:65
+#: src/guides/sdk-auth/en.mdx:34
 #, no-wrap
 msgid ""
 "    if (result.success) {\n"
-"        const agent = result.value\n"
+"        const session = result.value\n"
 "    }\n"
 "    ```\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:70
+#: src/guides/sdk-auth/en.mdx:39
 #, no-wrap
 msgid ""
-"    Applications with an end user login flow should use [OAuth](/guides/auth) authentication rather than app password sessions. Password auth is acceptable for bots and command line tools. Both methods will produce the same authenticated `agent`.\n"
+"    Applications with an end user login flow should use [OAuth](/guides/auth) authentication rather than app password sessions. Password auth is acceptable for bots and command line tools. Both methods will produce the same authenticated `session`.\n"
 "    </TabPanel>\n"
 "    <TabPanel value=\"go\">\n"
 "    Start by importing the `atproto` and `xrpc` libraries, creating an `&xrpc.Client{}`, and providing credentials to call `ServerCreateSession()`:\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:77
+#: src/guides/sdk-auth/en.mdx:46
 #, no-wrap
 msgid ""
 "    ```go\n"
@@ -185,7 +130,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:80
+#: src/guides/sdk-auth/en.mdx:49
 #, no-wrap
 msgid ""
 "    func main() {\n"
@@ -193,7 +138,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:84
+#: src/guides/sdk-auth/en.mdx:53
 #, no-wrap
 msgid ""
 "      client := &xrpc.Client{\n"
@@ -202,7 +147,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:94
+#: src/guides/sdk-auth/en.mdx:63
 #, no-wrap
 msgid ""
 "      session, _ := comatproto.ServerCreateSession(ctx, client, &comatproto.ServerCreateSession_Input{\n"
@@ -217,13 +162,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:96
+#: src/guides/sdk-auth/en.mdx:65
 #, no-wrap
 msgid "## Client Sessions\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:105
+#: src/guides/sdk-auth/en.mdx:74
 #, no-wrap
 msgid ""
 "<TabGroup defaultValue=\"ts\">\n"
@@ -233,24 +178,24 @@ msgid ""
 "  </TabList>\n"
 "  <TabPanels>\n"
 "    <TabPanel value=\"ts\">\n"
-"    Once you have a logged-in `agent`, you can create a `Client` instance to read and write data:\n"
+"    Once you have a logged-in `session`, you can create a `Client` instance to read and write data:\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:109
+#: src/guides/sdk-auth/en.mdx:78
 #, no-wrap
 msgid ""
 "    ```tsx\n"
 "    import { Client } from '@atproto/lex'\n"
-"    const client = new Client(agent)\n"
+"    const client = new Client(session)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:116
+#: src/guides/sdk-auth/en.mdx:85
 #, no-wrap
 msgid ""
 "    // Make authenticated API calls\n"
-"    console.log('Logged in as:', agent.did)\n"
+"    console.log('Logged in as:', session.did)\n"
 "    ```\n"
 "    </TabPanel>\n"
 "    <TabPanel value=\"go\">\n"
@@ -258,7 +203,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:125
+#: src/guides/sdk-auth/en.mdx:94
 #, no-wrap
 msgid ""
 "    ```go\n"
@@ -272,7 +217,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:131
+#: src/guides/sdk-auth/en.mdx:100
 #, no-wrap
 msgid ""
 "    fmt.Printf(\"Logged in as: %s (%s)\\n\", session.Handle, session.Did)\n"
@@ -283,25 +228,25 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:133
+#: src/guides/sdk-auth/en.mdx:102
 #, no-wrap
 msgid "From here, you can go directly to [making API requests](/guides/reads-and-writes).\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:135
+#: src/guides/sdk-auth/en.mdx:104
 #, no-wrap
 msgid "## API Tokens\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:137
+#: src/guides/sdk-auth/en.mdx:106
 #, no-wrap
-msgid "Rate limits for logging in are generally lower than for other API operations. Calling the login method multiple times in a short period may trigger rate limits. You only need to call the login method once per session to authenticate your agent.\n"
+msgid "Rate limits for logging in are generally lower than for other API operations. Calling the login method multiple times in a short period may trigger rate limits. You only need to call the login method once per session to authenticate.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:141
+#: src/guides/sdk-auth/en.mdx:110
 #, no-wrap
 msgid ""
 "The `com.atproto.server.createSession` API endpoint called by login methods returns a session object containing two API tokens:\n"
@@ -310,13 +255,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:143
-#, no-wrap
-msgid "The SDK stores this session information for you, and will include it in the headers of its requests.\n"
-msgstr ""
-
-#. type: Plain text
-#: src/guides/sdk-auth/en.mdx:151
+#: src/guides/sdk-auth/en.mdx:118
 #, no-wrap
 msgid ""
 "- [Auth](/guides/auth)\n"
