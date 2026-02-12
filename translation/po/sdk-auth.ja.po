@@ -72,16 +72,7 @@ msgstr "パスワード認証を使用している場合は、メインのアカ
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:20
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<TabGroup defaultValue=\"ts\">\n"
-#| "  <TabList>\n"
-#| "    <Tab value=\"ts\">TypeScript</Tab>\n"
-#| "    <Tab value=\"go\">Go</Tab>\n"
-#| "  </TabList>\n"
-#| "  <TabPanels>\n"
-#| "    <TabPanel value=\"ts\">\n"
-#| "    Start by importing `PasswordAgent`, providing credentials to `PasswordAgent.login()`, and creating an `agent`:\n"
+#, no-wrap
 msgid ""
 "<TabGroup defaultValue=\"ts\">\n"
 "  <TabList>\n"
@@ -99,30 +90,21 @@ msgstr ""
 "  </TabList>\n"
 "  <TabPanels>\n"
 "    <TabPanel value=\"ts\">\n"
-"    `PasswordAgent`をインポートし、`PasswordAgent.login()`に資格情報を与えて`agent`を作るところから始めましょう。\n"
+"    まずは`PasswordSession`をインポートし、`PasswordSession.login()`に資格情報を与えて`session`を生成します。\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:23
-#, fuzzy, no-wrap
-#| msgid ""
-#| "    ```tsx\n"
-#| "    import { PasswordAgent } from '@atproto/lex-password-agent'\n"
+#, no-wrap
 msgid ""
 "    ```tsx\n"
 "    import { PasswordSession } from '@atproto/lex-password-session'\n"
 msgstr ""
 "    ```tsx\n"
-"    import { PasswordAgent } from '@atproto/lex-password-agent'\n"
+"    import { PasswordSession } from '@atproto/lex-password-session'\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:29
-#, fuzzy, no-wrap
-#| msgid ""
-#| "    const result = await PasswordAgent.login({\n"
-#| "      service: 'https://bsky.social', // or your PDS host\n"
-#| "      identifier: 'your-handle.bsky.social',\n"
-#| "      password: 'your-app-password',\n"
-#| "    })\n"
+#, no-wrap
 msgid ""
 "    const result = await PasswordSession.login({\n"
 "      service: 'https://bsky.social', // or your PDS host\n"
@@ -130,7 +112,7 @@ msgid ""
 "      password: 'your-app-password',\n"
 "    })\n"
 msgstr ""
-"    const result = await PasswordAgent.login({\n"
+"    const result = await PasswordSession.login({\n"
 "      service: 'https://bsky.social', // or your PDS host\n"
 "      identifier: 'your-handle.bsky.social',\n"
 "      password: 'your-app-password',\n"
@@ -138,12 +120,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:34
-#, fuzzy, no-wrap
-#| msgid ""
-#| "    if (result.success) {\n"
-#| "        const agent = result.value\n"
-#| "    }\n"
-#| "    ```\n"
+#, no-wrap
 msgid ""
 "    if (result.success) {\n"
 "        const session = result.value\n"
@@ -151,28 +128,23 @@ msgid ""
 "    ```\n"
 msgstr ""
 "    if (result.success) {\n"
-"        const agent = result.value\n"
+"        const session = result.value\n"
 "    }\n"
 "    ```\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:39
-#, fuzzy, no-wrap
-#| msgid ""
-#| "    Applications with an end user login flow should use [OAuth](/guides/auth) authentication rather than app password sessions. Password auth is acceptable for bots and command line tools. Both methods will produce the same authenticated `agent`.\n"
-#| "    </TabPanel>\n"
-#| "    <TabPanel value=\"go\">\n"
-#| "    Start by importing the `atproto` and `xrpc` libraries, creating an `&xrpc.Client{}`, and providing credentials to call `ServerCreateSession()`:\n"
+#, no-wrap
 msgid ""
 "    Applications with an end user login flow should use [OAuth](/guides/auth) authentication rather than app password sessions. Password auth is acceptable for bots and command line tools. Both methods will produce the same authenticated `session`.\n"
 "    </TabPanel>\n"
 "    <TabPanel value=\"go\">\n"
 "    Start by importing the `atproto` and `xrpc` libraries, creating an `&xrpc.Client{}`, and providing credentials to call `ServerCreateSession()`:\n"
 msgstr ""
-"    エンドユーザーログインフローを備えるアプリケーションは、アプリパスワードセッションではなく[OAuth](/guides/auth)認証を使用しましょう。パスワード認証はボットやコマンドラインツールに適しています。どちらの方法でも同じ認証済み`agent`が生成されます。\n"
+"    エンドユーザーログインフローを備えるアプリケーションは、アプリパスワードセッションではなく[OAuth](/guides/auth)認証を使用しましょう。パスワード認証はボットやコマンドラインツールに適しています。どちらの方法でも同じ認証済み`session`が生成されます。\n"
 "    </TabPanel>\n"
 "    <TabPanel value=\"go\">\n"
-"    `atproto`と`xrpc`ライブラリをインポートし、`&xrpc.Client{}`を作って`ServerCreateSession()`に資格情報を与えるところから始めましょう。\n"
+"    まずは`atproto`と`xrpc`ライブラリをインポートし、`&xrpc.Client{}`を作って`ServerCreateSession()`に資格情報を与えます。\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:46
@@ -246,16 +218,7 @@ msgstr "<Heading level={2} id=\"client-sessions\">クライアントセッショ
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:74
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<TabGroup defaultValue=\"ts\">\n"
-#| "  <TabList>\n"
-#| "    <Tab value=\"ts\">TypeScript</Tab>\n"
-#| "    <Tab value=\"go\">Go</Tab>\n"
-#| "  </TabList>\n"
-#| "  <TabPanels>\n"
-#| "    <TabPanel value=\"ts\">\n"
-#| "    Once you have a logged-in `agent`, you can create a `Client` instance to read and write data:\n"
+#, no-wrap
 msgid ""
 "<TabGroup defaultValue=\"ts\">\n"
 "  <TabList>\n"
@@ -273,15 +236,11 @@ msgstr ""
 "  </TabList>\n"
 "  <TabPanels>\n"
 "    <TabPanel value=\"ts\">\n"
-"    ログインした`agent`が取得できたら、`Client`インスタンスを作成してデータの読み書きができます。\n"
+"    ログインした`session`が取得できたら、`Client`インスタンスを作成してデータの読み書きができます。\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:78
-#, fuzzy, no-wrap
-#| msgid ""
-#| "    ```tsx\n"
-#| "    import { Client } from '@atproto/lex'\n"
-#| "    const client = new Client(agent)\n"
+#, no-wrap
 msgid ""
 "    ```tsx\n"
 "    import { Client } from '@atproto/lex'\n"
@@ -289,18 +248,11 @@ msgid ""
 msgstr ""
 "    ```tsx\n"
 "    import { Client } from '@atproto/lex'\n"
-"    const client = new Client(agent)\n"
+"    const client = new Client(session)\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:85
-#, fuzzy, no-wrap
-#| msgid ""
-#| "    // Make authenticated API calls\n"
-#| "    console.log('Logged in as:', agent.did)\n"
-#| "    ```\n"
-#| "    </TabPanel>\n"
-#| "    <TabPanel value=\"go\">\n"
-#| "    Once you have an authed `client`, you can store auth info and make API calls:\n"
+#, no-wrap
 msgid ""
 "    // Make authenticated API calls\n"
 "    console.log('Logged in as:', session.did)\n"
@@ -310,7 +262,7 @@ msgid ""
 "    Once you have an authed `client`, you can store auth info and make API calls:\n"
 msgstr ""
 "    // 認証付きでAPIを呼び出す\n"
-"    console.log('Logged in as:', agent.did)\n"
+"    console.log('Logged in as:', session.did)\n"
 "    ```\n"
 "    </TabPanel>\n"
 "    <TabPanel value=\"go\">\n"
@@ -368,10 +320,9 @@ msgstr "<Heading level={2} id=\"api-tokens\">APIトークン</Heading>\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:106
-#, fuzzy, no-wrap
-#| msgid "Rate limits for logging in are generally lower than for other API operations. Calling the login method multiple times in a short period may trigger rate limits. You only need to call the login method once per session to authenticate your agent.\n"
+#, no-wrap
 msgid "Rate limits for logging in are generally lower than for other API operations. Calling the login method multiple times in a short period may trigger rate limits. You only need to call the login method once per session to authenticate.\n"
-msgstr "ログインのレート制限は一般的に他のAPI操作よりも低く設定されています。短期間に何度もログインメソッドを呼び出すとレート制限が発動する可能性があります。セッションを認証するためにログインメソッドを呼ぶのはセッション毎に一度だけで十分です。\n"
+msgstr "ログインのレート制限は一般的に他のAPI操作よりも低く設定されています。短期間に何度もログインメソッドを呼び出すとレート制限が発動する可能性があります。認証するためにログイン用メソッドを呼ぶのはセッション毎に一度だけで十分です。\n"
 
 #. type: Plain text
 #: src/guides/sdk-auth/en.mdx:110

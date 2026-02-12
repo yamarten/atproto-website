@@ -48,7 +48,7 @@ msgstr "<Heading level={2} id=\"tl-dr\">要約</Heading>\n"
 #: src/guides/understanding-atproto/en.mdx:11
 #, no-wrap
 msgid "Atproto is big-world, open social. Users publish JSON records into repositories. The changestreams of those records then sync across the network to drive applications.\n"
-msgstr "Atprotoは、ビッグワールドでオープンなソーシャルです。ユーザーはJSONレコードをリポジトリに公開します。これらのレコードの変更ストリームがネットワーク全体で同期され、アプリケーションを動かします。\n"
+msgstr "Atprotoは、大規模向けのオープンソーシャルです。ユーザーはJSONレコードをリポジトリに公開します。これらのレコードの変更ストリームがネットワーク全体で同期され、アプリケーションを動かします。\n"
 
 #. type: Plain text
 #: src/guides/understanding-atproto/en.mdx:13

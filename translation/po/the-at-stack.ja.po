@@ -76,7 +76,7 @@ msgstr "<Heading level={2} id=\"the-authenticated-transfer-protocol\">Authentica
 #: src/guides/the-at-stack/en.mdx:15
 #, no-wrap
 msgid "The AT Protocol (Authenticated Transfer Protocol) is a standard for public conversation and an open-source framework for building social apps.\n"
-msgstr "ATプロトコル（Authenticated Transferプロトコル）は公開会話の標準であり、ソーシャルアプリを構築するためのオープンソースフレームワークです。\n"
+msgstr "ATプロトコル（Authenticated Transfer Protocol）は公開会話の標準であり、ソーシャルアプリを構築するためのオープンソースフレームワークです。\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:17

@@ -6,10 +6,26 @@
 <!-- Default translations -->
     <tu>
       <tuv lang="en-US">
+        <seg>![https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ewvi7nxzyoun6zhxrhs64oiz/bafkreiebtvblnu4jwu66y57kakido7uhiigenznxdlh6r6wiswblv5m4py@jpeg](https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ewvi7nxzyoun6zhxrhs64oiz/bafkreiebtvblnu4jwu66y57kakido7uhiigenznxdlh6r6wiswblv5m4py@jpeg)</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T021835Z" creationid="yamarten" creationdate="20260212T021835Z">
+        <seg>![https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ewvi7nxzyoun6zhxrhs64oiz/bafkreiebtvblnu4jwu66y57kakido7uhiigenznxdlh6r6wiswblv5m4py@jpeg](https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ewvi7nxzyoun6zhxrhs64oiz/bafkreiebtvblnu4jwu66y57kakido7uhiigenznxdlh6r6wiswblv5m4py@jpeg)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>"Blobs" are media files stored alongside an account's repository. They include images, video, and audio, but could also include any other file format. Blobs are referenced by individual records by the **`blob`** lexicon datatype, which includes a content hash (CID) for the blob.</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260111T064033Z" creationid="yamarten" creationdate="20260103T131549Z">
         <seg>「blob」はアカウントのリポジトリと共に保存されるメディアファイルです。これらは画像、動画、音声データを含みますが、他のファイル形式も含むことができます。blobは個別のレコードからLexiconの **`blob`** データ型によって参照され、blobのコンテンツハッシュ（CID）を含みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>"Blobs" are media files stored alongside an account's repository. They include images, video, and audio, but could also include any other file format. Blobs are referenced by individual records by the **`blob`** lexicon datatype, which includes a content hash (CID; `ref`) for the blob .</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T021402Z" creationid="yamarten" creationdate="20260212T021402Z">
+        <seg>「blob」はアカウントのリポジトリと共に保存されるメディアファイルです。画像、動画、音声データを含みますが、他のファイル形式も可能です。blobは個別のレコードからLexiconの **`blob`** データ型によって参照され、blobのコンテンツハッシュ（CIDまたは`ref`）を含みます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -219,8 +235,8 @@ websocat ws://localhost:2480/channel</seg>
       <tuv lang="en-US">
         <seg>## About authorization</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260208T110714Z" creationid="yamarten" creationdate="20260208T063722Z">
-        <seg>&lt;Heading level={2} id="about-authorization"&gt;認可について&lt;/Heading&gt;</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T021001Z" creationid="yamarten" creationdate="20260208T063722Z">
+        <seg>&lt;Heading level={2} id="about-authorization"&gt;認証について&lt;/Heading&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -789,6 +805,14 @@ websocat ws://localhost:2480/channel</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260104T110305Z" creationid="yamarten" creationdate="20260104T110305Z">
         <seg>&lt;Heading level={2} id="getting-records"&gt;レコードの取得&lt;/Heading&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>## Getting Started</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T020842Z" creationid="yamarten" creationdate="20260212T020842Z">
+        <seg>&lt;Heading level={2} id="getting-started"&gt;はじめましょう&lt;/Heading&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -1722,6 +1746,14 @@ websocat ws://localhost:2480/channel</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>## Using blobs</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T023147Z" creationid="yamarten" creationdate="20260212T023147Z">
+        <seg>&lt;Heading level={2} id="using-blobs"&gt;blobの利用&lt;/Heading&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>## Using goat</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260104T104910Z" creationid="yamarten" creationdate="20260104T104910Z">
@@ -1993,6 +2025,14 @@ error: linting issues detected
       <tuv lang="ja" changeid="yamarten" changedate="20260128T130427Z">
         <seg>* **署名鍵**：ユーザーのデータリポジトリを検証します。全てのDIDに含まれています。
 * **ローテーション鍵**：DIDドキュメントへの変更をアサートします。PLC DIDメソッドにはありますが、DID Webメソッドにはありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>**Auth is the first part of our docs for a reason!** You don't need to be authed to [read records](/reading-data#unauthenticated-reads) or even to [stream data from the firehose](/guides/streaming-data). But if you're building an app that integrates with the Atmosphere, you'll begin with auth.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T020207Z" creationid="yamarten" creationdate="20260212T020207Z">
+        <seg>**認証が最初のドキュメントであることには理由があります**。[レコードを読み出す](/reading-data#unauthenticated-reads)ために認証が必要というわけではありませんし、[firehoseからデータをストリーム](/guides/streaming-data)する場合も同じです。ただしAtmosphereに統合されるアプリケーションを構築する場合は、認証から始めることになります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4409,6 +4449,24 @@ const accountStatus = session ? await getAccountStatus(session.did) : null;</seg
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>// Make authenticated API calls
+    console.log('Logged in as:', session.did)
+    ```
+    &lt;/TabPanel&gt;
+    &lt;TabPanel value="go"&gt;
+    Once you have an authed `client`, you can store auth info and make API calls:</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T022946Z" creationid="yamarten" creationdate="20260212T022928Z">
+        <seg>// 認証付きでAPIを呼び出す
+    console.log('Logged in as:', session.did)
+    ```
+    &lt;/TabPanel&gt;
+    &lt;TabPanel value="go"&gt;
+    ログインした`client`が取得できたら、認証情報を入力してAPIを呼び出します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>// Map user DIDs to their domain-name handles
     const didHandleMap = await resolver.resolveDidsToHandles(
       statuses.map((s) =&gt; s.authorDid)
@@ -6161,6 +6219,28 @@ Pythonの例ではSDKを使用していません！[OAuthクライアント実�
   &lt;/TabList&gt;
   &lt;TabPanels&gt;
     &lt;TabPanel value="ts"&gt;
+    Once you have a logged-in `session`, you can create a `Client` instance to read and write data:</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T022918Z" creationid="yamarten" creationdate="20260212T022918Z">
+        <seg>&lt;TabGroup defaultValue="ts"&gt;
+  &lt;TabList&gt;
+    &lt;Tab value="ts"&gt;TypeScript&lt;/Tab&gt;
+    &lt;Tab value="go"&gt;Go&lt;/Tab&gt;
+  &lt;/TabList&gt;
+  &lt;TabPanels&gt;
+    &lt;TabPanel value="ts"&gt;
+    ログインした`session`が取得できたら、`Client`インスタンスを作成してデータの読み書きができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>&lt;TabGroup defaultValue="ts"&gt;
+  &lt;TabList&gt;
+    &lt;Tab value="ts"&gt;TypeScript&lt;/Tab&gt;
+    &lt;Tab value="go"&gt;Go&lt;/Tab&gt;
+  &lt;/TabList&gt;
+  &lt;TabPanels&gt;
+    &lt;TabPanel value="ts"&gt;
     Start by importing `PasswordAgent`, providing credentials to `PasswordAgent.login()`, and creating an `agent`:</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260108T131804Z" creationid="yamarten" creationdate="20260108T131648Z">
@@ -6172,6 +6252,28 @@ Pythonの例ではSDKを使用していません！[OAuthクライアント実�
   &lt;TabPanels&gt;
     &lt;TabPanel value="ts"&gt;
     `PasswordAgent`をインポートし、`PasswordAgent.login()`に資格情報を与えて`agent`を作るところから始めましょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>&lt;TabGroup defaultValue="ts"&gt;
+  &lt;TabList&gt;
+    &lt;Tab value="ts"&gt;TypeScript&lt;/Tab&gt;
+    &lt;Tab value="go"&gt;Go&lt;/Tab&gt;
+  &lt;/TabList&gt;
+  &lt;TabPanels&gt;
+    &lt;TabPanel value="ts"&gt;
+    Start by importing `PasswordSession`, providing credentials to `PasswordSession.login()`, and creating a `session`:</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T022813Z" creationid="yamarten" creationdate="20260212T022553Z">
+        <seg>&lt;TabGroup defaultValue="ts"&gt;
+  &lt;TabList&gt;
+    &lt;Tab value="ts"&gt;TypeScript&lt;/Tab&gt;
+    &lt;Tab value="go"&gt;Go&lt;/Tab&gt;
+  &lt;/TabList&gt;
+  &lt;TabPanels&gt;
+    &lt;TabPanel value="ts"&gt;
+    まずは`PasswordSession`をインポートし、`PasswordSession.login()`に資格情報を与えて`session`を生成します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6216,6 +6318,28 @@ Pythonの例ではSDKを使用していません！[OAuthクライアント実�
   &lt;TabPanels&gt;
     &lt;TabPanel value="ts"&gt;
     APIリクエストを行うには、特定の[Lexicon](/guides/lexicon)を指定する必要があります。例えば、Blueskyの投稿は`app.bsky.feed.post` Lexiconで提供されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>&lt;TabGroup defaultValue="ts"&gt;
+  &lt;TabList&gt;
+    &lt;Tab value="ts"&gt;TypeScript&lt;/Tab&gt;
+    &lt;Tab value="go"&gt;Go&lt;/Tab&gt;
+  &lt;/TabList&gt;
+  &lt;TabPanels&gt;
+    &lt;TabPanel value="ts"&gt;
+    You can log in using any [OAuth](/guides/auth) provider, or with [PasswordSession](https://github.com/bluesky-social/atproto/tree/main/packages/lex/lex-password-session) from our SDK if you are using password auth.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T020633Z" creationid="yamarten" creationdate="20260212T020412Z">
+        <seg>&lt;TabGroup defaultValue="ts"&gt;
+  &lt;TabList&gt;
+    &lt;Tab value="ts"&gt;TypeScript&lt;/Tab&gt;
+    &lt;Tab value="go"&gt;Go&lt;/Tab&gt;
+  &lt;/TabList&gt;
+  &lt;TabPanels&gt;
+    &lt;TabPanel value="ts"&gt;
+    任意の[OAuth](/guides/auth)プロバイダでログインできます。SDKの[PasswordSession](https://github.com/bluesky-social/atproto/tree/main/packages/lex/lex-password-session)でパスワード認証もできます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -6286,6 +6410,30 @@ Pythonの例ではSDKを使用していません！[OAuthクライアント実�
     ```tsx
     import { Client } from '@atproto/lex'
     import * as app from './lexicons/app.js'</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>&lt;TabGroup defaultValue="ts"&gt;
+  &lt;TabList&gt;
+    &lt;Tab value="ts"&gt;TypeScript&lt;/Tab&gt;
+    &lt;Tab value="go"&gt;Go&lt;/Tab&gt;
+  &lt;/TabList&gt;
+  &lt;TabPanels&gt;
+    &lt;TabPanel value="ts"&gt;
+    ```typescript
+    const imageBytes = fs.readFileSync('./photo.jpg')</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T021423Z" creationid="yamarten" creationdate="20260212T021423Z">
+        <seg>&lt;TabGroup defaultValue="ts"&gt;
+  &lt;TabList&gt;
+    &lt;Tab value="ts"&gt;TypeScript&lt;/Tab&gt;
+    &lt;Tab value="go"&gt;Go&lt;/Tab&gt;
+  &lt;/TabList&gt;
+  &lt;TabPanels&gt;
+    &lt;TabPanel value="ts"&gt;
+    ```typescript
+    const imageBytes = fs.readFileSync('./photo.jpg')</seg>
       </tuv>
     </tu>
     <tu>
@@ -8146,6 +8294,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>And here's what the URL to that beautiful blob looks like when served from a CDN:</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T021923Z" creationid="yamarten" creationdate="20260212T021923Z">
+        <seg>CDNから提供される場合、この美しいblobのURLは次のようになります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>And we approach the design of this network erring on the side of structure and hoping to take advantage of high-trust environments where possible, but always allowing for credible exit if that relationship turns sour.</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260201T100621Z">
@@ -8436,6 +8592,20 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     &lt;/TabPanel&gt;
     &lt;TabPanel value="go"&gt;
     `atproto`と`xrpc`ライブラリをインポートし、`&amp;xrpc.Client{}`を作って`ServerCreateSession()`に資格情報を与えるところから始めましょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Applications with an end user login flow should use [OAuth](/guides/auth) authentication rather than app password sessions. Password auth is acceptable for bots and command line tools. Both methods will produce the same authenticated `session`.
+    &lt;/TabPanel&gt;
+    &lt;TabPanel value="go"&gt;
+    Start by importing the `atproto` and `xrpc` libraries, creating an `&amp;xrpc.Client{}`, and providing credentials to call `ServerCreateSession()`:</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T022907Z" creationid="yamarten" creationdate="20260212T022907Z">
+        <seg>エンドユーザーログインフローを備えるアプリケーションは、アプリパスワードセッションではなく[OAuth](/guides/auth)認証を使用しましょう。パスワード認証はボットやコマンドラインツールに適しています。どちらの方法でも同じ認証済み`session`が生成されます。
+    &lt;/TabPanel&gt;
+    &lt;TabPanel value="go"&gt;
+    まずは`atproto`と`xrpc`ライブラリをインポートし、`&amp;xrpc.Client{}`を作って`ServerCreateSession()`に資格情報を与えます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -8770,8 +8940,8 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
       <tuv lang="en-US">
         <seg>Atproto is big-world, open social. Users publish JSON records into repositories. The changestreams of those records then sync across the network to drive applications.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260211T041403Z" creationid="yamarten" creationdate="20260208T094417Z">
-        <seg>Atprotoは、ビッグワールドでオープンなソーシャルです。ユーザーはJSONレコードをリポジトリに公開します。これらのレコードの変更ストリームがネットワーク全体で同期され、アプリケーションを動かします。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T024722Z" creationid="yamarten" creationdate="20260208T094417Z">
+        <seg>Atprotoは、大規模向けのオープンソーシャルです。ユーザーはJSONレコードをリポジトリに公開します。これらのレコードの変更ストリームがネットワーク全体で同期され、アプリケーションを動かします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -9072,6 +9242,14 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Begin by installing the Atproto packages:</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T020658Z" creationid="yamarten" creationdate="20260212T020658Z">
+        <seg>まずAtprotoパッケージをインストールしてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Begin by reading [SDK authentication](/guides/sdk-auth). To implement OAuth in your application, refer to [OAuth patterns](/guides/oauth-patterns) for common use cases, and the [Scopes](/guides/scopes) guide for understanding permission models.</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260111T060006Z" creationid="yamarten" creationdate="20260103T065458Z">
@@ -9120,10 +9298,26 @@ To update an existing record, like a user's profile, use `client.put()`:</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Blob files are uploaded and distributed separately from records:</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T021603Z" creationid="yamarten" creationdate="20260212T021603Z">
+        <seg>blobファイルのアップロードや配信はレコードとは別で行います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Blobs (media files) are download and re-uploaded one by one. They should not be uploaded to the new PDS until the repository has been imported and fully indexed, so that blobs can be linked to the records that refer to them, and won’t be garbage collected. A full list of relevant blobs (by CID) can be fetched either from the old PDS (`com.atproto.sync.listBlobs`), or the current list of "missing" blobs can be checked on the new PDS (`com.atproto.repo.listMissingBlobs`). If some blobs can not be found, the migration process can continue, and any recovered blobs can be uploaded later (if the blob CIDs match exactly).</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260102T101258Z" creationid="yamarten" creationdate="20260102T101258Z">
         <seg>blob（メディアファイル）は一つずつダウンロードしてアップロードし直されます。リポジトリがインポートされ完全にインデックスされるまで、blobを新PDSへアップロードしてはいけません。これにより、アップロードされたblobがレコードから参照されている状態にし、ガベージコレクションを防ぎます。関連するblob（のCID）の完全なリストを旧PDSから取得（`com.atproto.sync.listBlobs`）するか、現在の不足blobリストを新PDSで確認（`com.atproto.repo.listMissingBlobs`）できます。見つからないブロブがある場合でも移行は継続でき、後で復旧したblobをアップロードできます（blobのCIDが完全に一致する場合）。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Blobs are authoritatively stored by the account's PDS instance, but views are commonly served by CDNs associated with individual applications ("AppViews"), to reduce traffic on the PDS. CDNs may serve transformed (resized, transcoded, etc) versions of the original blob.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T022528Z" creationid="yamarten" creationdate="20260212T022528Z">
+        <seg>blobはアカウントのPDSインスタンスに権威的に保存されますが、ビューは通常、PDSトラフィックを削減するために個別のアプリケーション（AppView）に関連付けられたCDNによって提供されます。CDNは元のblobの変換版（リサイズ、トランスコード等）を提供することがあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -14625,8 +14819,8 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       <tuv lang="en-US">
         <seg>Frequently Asked Questions about the Authenticated Transfer Protocol (Atproto). For FAQ about Bluesky, visit [here](https://bsky.social/about/faq).</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260211T040353Z" creationid="yamarten" creationdate="20260208T065908Z">
-        <seg>Authenticated Transferプロトコル（Atproto）に関するよくある質問。Blueskyに関するよくある質問については、[こちら](https://bsky.social/about/faq)をご覧ください。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T025652Z" creationid="yamarten" creationdate="20260208T065908Z">
+        <seg>Authenticated Transfer Protocol（Atproto）に関するよくある質問。Blueskyに関するよくある質問については、[こちら](https://bsky.social/about/faq)をご覧ください。</seg>
       </tuv>
     </tu>
     <tu>
@@ -18858,6 +19052,14 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>Next, authenticate with an [SDK](/guides/sdk-auth).</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T020909Z" creationid="yamarten" creationdate="20260212T020848Z">
+        <seg>続いて、[SDK](/guides/sdk-auth)を使って認証します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>Next, consider a more complex integration, that requests additional permissions. By default, these will be presented in a summarized view:</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260111T144332Z" creationid="yamarten" creationdate="20260111T144332Z">
@@ -19374,6 +19576,14 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260103T100812Z" creationid="yamarten" creationdate="20260103T100812Z">
         <seg>イベントストリーム（firehose）の"フレーム"は複数のレコードで構成される可能性があり、一般的なCBOR解析には4～5MBytes程度のより大きな制限が推奨されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Note the URL structure: the blob is served from the CDN, but the path includes the DID of the account that uploaded it, as well as the CID of the blob itself.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T022053Z" creationid="yamarten" creationdate="20260212T022053Z">
+        <seg>URLをよく見てください。blobはCDNから提供されていますが、パスにはblobのCIDだけでなく、アップロードしたアカウントのDIDが含まれています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -21878,6 +22088,14 @@ CREATE at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3jux7x2uvip2v
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260107T130635Z" creationid="yamarten" creationdate="20260107T130635Z">
         <seg>ログインのレート制限は一般的に他のAPI操作よりも低く設定されています。短期間に何度もログインメソッドを呼び出すとレート制限が発動する可能性があります。セッションを認証するためにログインメソッドを呼ぶのはセッション毎に一度だけで十分です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>Rate limits for logging in are generally lower than for other API operations. Calling the login method multiple times in a short period may trigger rate limits. You only need to call the login method once per session to authenticate.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T023030Z" creationid="yamarten" creationdate="20260212T023030Z">
+        <seg>ログインのレート制限は一般的に他のAPI操作よりも低く設定されています。短期間に何度もログインメソッドを呼び出すとレート制限が発動する可能性があります。認証するためにログイン用メソッドを呼ぶのはセッション毎に一度だけで十分です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -25869,8 +26087,8 @@ Repos: 1</seg>
       <tuv lang="en-US">
         <seg>The **Authenticated Transfer Protocol**, aka **Atproto**, is a decentralized protocol for large-scale social web applications. This document will introduce you to the ideas behind the AT Protocol.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260211T040622Z" creationid="yamarten" creationdate="20260208T073337Z">
-        <seg>**Authenticated Transferプロトコル**（別名**Atproto**）は、大規模な分散型ソーシャルアプリケーション用のフェデレーションプロトコルです。このドキュメントでは、ATプロトコルの背後にある考え方を紹介します。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T025705Z" creationid="yamarten" creationdate="20260208T073337Z">
+        <seg>**Authenticated Transfer Protocol**（別名**Atproto**）は、大規模な分散型ソーシャルアプリケーション用のフェデレーションプロトコルです。このドキュメントでは、ATプロトコルの背後にある考え方を紹介します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -25933,8 +26151,8 @@ Repos: 1</seg>
       <tuv lang="en-US">
         <seg>The AT Protocol (Authenticated Transfer Protocol) is a standard for public conversation and an open-source framework for building social apps.</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260111T173421Z" creationid="yamarten" creationdate="20260108T134937Z">
-        <seg>ATプロトコル（Authenticated Transferプロトコル）は公開会話の標準であり、ソーシャルアプリを構築するためのオープンソースフレームワークです。</seg>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T025713Z" creationid="yamarten" creationdate="20260108T134937Z">
+        <seg>ATプロトコル（Authenticated Transfer Protocol）は公開会話の標準であり、ソーシャルアプリを構築するためのオープンソースフレームワークです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -30352,6 +30570,14 @@ goat account service-auth --aud did:example:alice</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>We maintain a Feed Generator example in TypeScript. Refer to the [tutorial](/guides/custom-feed-tutorial) to get started.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T021121Z" creationid="yamarten" creationdate="20260212T021121Z">
+        <seg>TypeScriptフィードジェネレーターの例を提供しています。[チュートリアル](/guides/custom-feed-tutorial)を参照してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>We maintain a Feed Generator example in [TypeScript](https://github.com/bluesky-social/feed-generator). Refer to the GitHub readme to get started.</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260103T110830Z" creationid="yamarten" creationdate="20260103T110830Z">
@@ -31600,6 +31826,14 @@ goat account service-auth --aud did:example:alice</seg>
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>You can find the source code for this tutorial in the [statusphere-example-app](https://github.com/bluesky-social/statusphere-example-app) repository.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T023120Z" creationid="yamarten" creationdate="20260212T023120Z">
+        <seg>このチュートリアルのソースコードは、[statusphere-example-app](https://github.com/bluesky-social/statusphere-example-app)リポジトリにあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>You can find the source code for this tutorial, along with other example projects, in the [Cookbook](https://github.com/bluesky-social/cookbook/) repository, under `nextjs-oauth`.</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260208T102424Z" creationid="yamarten" creationdate="20260208T102424Z">
@@ -31786,6 +32020,14 @@ import (
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260208T082934Z" creationid="yamarten" creationdate="20260208T082934Z">
         <seg>このボットは手元のマシンで実行することも、[Fly.io](http://fly.io/) のようなプラットフォームにデプロイすることもできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>You can see what an existing Blob record looks like in [pdsls](https://pdsls.dev/at://did:plc:ewvi7nxzyoun6zhxrhs64oiz/app.bsky.feed.post/3juft56hdjg2o). It's this one right here:</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T021833Z" creationid="yamarten" creationdate="20260212T021833Z">
+        <seg>既存のblobレコードがどのようなものかは[pdsls](https://pdsls.dev/at://did:plc:ewvi7nxzyoun6zhxrhs64oiz/app.bsky.feed.post/3juft56hdjg2o)で確認できます。以下のような画像が見えるでしょう。</seg>
       </tuv>
     </tu>
     <tu>
@@ -32138,6 +32380,14 @@ import (
       </tuv>
       <tuv lang="ja">
         <seg>追加できるのは{STARTER_PACK_MAX_SIZE, plural, other {{STARTER_PACK_MAX_SIZE}人}}まで</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>You might start out by just using Atproto identities as an OAuth source — though you'll find that there's lots more you can do by building on top of the Atproto [social graph](/guides/social-graph).</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T020406Z" creationid="yamarten" creationdate="20260212T020406Z">
+        <seg>最初はAtprotoのIDをOAuthソースとして使うだけかもしれませんが、Atprotoの[ソーシャルグラフ](/guides/social-graph)上でさらに多くのことができることに気付くでしょう。</seg>
       </tuv>
     </tu>
     <tu>
@@ -33726,6 +33976,62 @@ import (
     <tu>
       <tuv lang="en-US">
         <seg>```
+    {
+      "$type": "blob",
+      "ref": {
+        "$link": "bafkreihdwdcefgh4dqkjv67uzcmw7ojee6xedzdetojuzjevtenxquvyku"
+      },
+      "mimeType": "image/jpeg",
+      "size": 354028
+    }
+    ```</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T021432Z" creationid="yamarten" creationdate="20260212T021432Z">
+        <seg>```
+    {
+      "$type": "blob",
+      "ref": {
+        "$link": "bafkreihdwdcefgh4dqkjv67uzcmw7ojee6xedzdetojuzjevtenxquvyku"
+      },
+      "mimeType": "image/jpeg",
+      "size": 354028
+    }
+    ```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```
+    {
+      "blob": {
+        "$type": "blob",
+        "ref": {
+          "$link": "bafkreihdwdcefgh4dqkjv67uzcmw7ojee6xedzdetojuzjevtenxquvyku"
+        },
+        "mimeType": "image/jpeg",
+        "size": 354028
+      }
+    }
+    ```</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T021615Z" creationid="yamarten" creationdate="20260212T021615Z">
+        <seg>```
+    {
+      "blob": {
+        "$type": "blob",
+        "ref": {
+          "$link": "bafkreihdwdcefgh4dqkjv67uzcmw7ojee6xedzdetojuzjevtenxquvyku"
+        },
+        "mimeType": "image/jpeg",
+        "size": 354028
+      }
+    }
+    ```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```
 GET /xrpc/app.bsky.feed.describeFeedGenerator
 GET /xrpc/app.bsky.feed.getFeedSkeleton
 ```</seg>
@@ -33860,6 +34166,18 @@ https://bsky.social/xrpc/com.atproto.identity.resolveHandle?handle=youraccount.b
       <tuv lang="ja" changeid="yamarten" changedate="20260107T125704Z" creationid="yamarten" creationdate="20260107T125704Z">
         <seg>```
 https://bsky.social/xrpc/com.atproto.identity.resolveHandle?handle=youraccount.bsky.social
+```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```
+https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ewvi7nxzyoun6zhxrhs64oiz/bafkreiebtvblnu4jwu66y57kakido7uhiigenznxdlh6r6wiswblv5m4py
+```</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T021925Z" creationid="yamarten" creationdate="20260212T021925Z">
+        <seg>```
+https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ewvi7nxzyoun6zhxrhs64oiz/bafkreiebtvblnu4jwu66y57kakido7uhiigenznxdlh6r6wiswblv5m4py
 ```</seg>
       </tuv>
     </tu>
@@ -34229,6 +34547,24 @@ https://bsky.social/xrpc/com.atproto.identity.resolveHandle?handle=youraccount.b
     &lt;/TabPanel&gt;
     &lt;TabPanel value="go"&gt;
     ATデータを扱う最初のステップは認証です。任意の[OAuth](/guides/auth)プロバイダを使用して認証することもできますし、SDKのパスワード認証を使用することもできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```bash
+    npm install @atproto/lex @atproto/lex-password-session
+    ```
+    &lt;/TabPanel&gt;
+    &lt;TabPanel value="go"&gt;
+    You can log in using any [OAuth](/guides/auth) provider, or with password authentication from our SDK.</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T020815Z" creationid="yamarten" creationdate="20260212T020702Z">
+        <seg>```bash
+    npm install @atproto/lex @atproto/lex-password-session
+    ```
+    &lt;/TabPanel&gt;
+    &lt;TabPanel value="go"&gt;
+    任意の[OAuth](/guides/auth)プロバイダでログインすることもできますし、SDKのパスワード認証を使用することもできます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -34917,6 +35253,66 @@ npm install @atproto/lex @atproto/api
       comatproto "github.com/bluesky-social/indigo/api/atproto"
       "github.com/bluesky-social/indigo/xrpc"
     )</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```go
+    post := &amp;bsky.FeedPost{
+        Text:      "Using a previously uploaded image",
+        CreatedAt: time.Now().UTC().Format(time.RFC3339),
+        Embed: &amp;bsky.FeedPost_Embed{
+          EmbedImages: &amp;bsky.EmbedImages{
+            Images: []*bsky.EmbedImages_Image{
+              {
+                Alt: "A photo uploaded earlier",
+                Image: &amp;lexutil.LexBlob{
+                  Ref:      uploadResp.Blob.Ref,
+                  MimeType: http.DetectContentType(imgBytes),
+                  Size:     uploadResp.Blob.Size,
+                },
+                AspectRatio: &amp;bsky.EmbedDefs_AspectRatio{
+                  Width:  1200,
+                  Height: 800,
+                },
+              },
+            },
+          },
+        },
+      }
+    ```
+    &lt;/TabPanel&gt;
+  &lt;/TabPanels&gt;
+&lt;/TabGroup&gt;</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T021617Z" creationid="yamarten" creationdate="20260212T021617Z">
+        <seg>```go
+    post := &amp;bsky.FeedPost{
+        Text:      "Using a previously uploaded image",
+        CreatedAt: time.Now().UTC().Format(time.RFC3339),
+        Embed: &amp;bsky.FeedPost_Embed{
+          EmbedImages: &amp;bsky.EmbedImages{
+            Images: []*bsky.EmbedImages_Image{
+              {
+                Alt: "A photo uploaded earlier",
+                Image: &amp;lexutil.LexBlob{
+                  Ref:      uploadResp.Blob.Ref,
+                  MimeType: http.DetectContentType(imgBytes),
+                  Size:     uploadResp.Blob.Size,
+                },
+                AspectRatio: &amp;bsky.EmbedDefs_AspectRatio{
+                  Width:  1200,
+                  Height: 800,
+                },
+              },
+            },
+          },
+        },
+      }
+    ```
+    &lt;/TabPanel&gt;
+  &lt;/TabPanels&gt;
+&lt;/TabGroup&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -36054,11 +36450,33 @@ import { generateText } from 'ai'
     <tu>
       <tuv lang="en-US">
         <seg>```tsx
+    import { Client } from '@atproto/lex'
+    const client = new Client(session)</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T022920Z" creationid="yamarten" creationdate="20260212T022920Z">
+        <seg>```tsx
+    import { Client } from '@atproto/lex'
+    const client = new Client(session)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```tsx
     import { PasswordAgent } from '@atproto/lex-password-agent'</seg>
       </tuv>
       <tuv lang="ja" changeid="yamarten" changedate="20260111T062818Z" creationid="yamarten" creationdate="20260107T130354Z">
         <seg>```tsx
     import { PasswordAgent } from '@atproto/lex-password-agent'</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```tsx
+    import { PasswordSession } from '@atproto/lex-password-session'</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T022647Z" creationid="yamarten" creationdate="20260212T022647Z">
+        <seg>```tsx
+    import { PasswordSession } from '@atproto/lex-password-session'</seg>
       </tuv>
     </tu>
     <tu>
@@ -36346,6 +36764,58 @@ const client = new Client(agent)
         <seg>```tsx
 import { Client } from '@atproto/lex'
 import * as app from './lexicons/app.js'</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>```typescript
+    await client.create(app.bsky.feed.post, {
+      text: 'Using a previously uploaded image',
+      createdAt: new Date().toISOString(),
+      embed: {
+        $type: 'app.bsky.embed.images',
+        images: [
+          {
+            alt: 'A photo uploaded earlier',
+            image: blobRef,
+            aspectRatio: { width: 1200, height: 800 },
+          },
+        ],
+      },
+    })
+    ```
+    &lt;/TabPanel&gt;
+    &lt;TabPanel value="go"&gt;
+    ```go
+    imgBytes, err := os.ReadFile("./photo.jpg")
+    if err != nil {
+      panic(err)
+    }</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T021604Z" creationid="yamarten" creationdate="20260212T021604Z">
+        <seg>```typescript
+    await client.create(app.bsky.feed.post, {
+      text: 'Using a previously uploaded image',
+      createdAt: new Date().toISOString(),
+      embed: {
+        $type: 'app.bsky.embed.images',
+        images: [
+          {
+            alt: 'A photo uploaded earlier',
+            image: blobRef,
+            aspectRatio: { width: 1200, height: 800 },
+          },
+        ],
+      },
+    })
+    ```
+    &lt;/TabPanel&gt;
+    &lt;TabPanel value="go"&gt;
+    ```go
+    imgBytes, err := os.ReadFile("./photo.jpg")
+    if err != nil {
+      panic(err)
+    }</seg>
       </tuv>
     </tu>
     <tu>
@@ -38092,6 +38562,18 @@ await agent.login({
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>const blob = uploadRes.data.blob
+    console.log(JSON.stringify(blob, null, 2))
+    ```</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T021430Z" creationid="yamarten" creationdate="20260212T021430Z">
+        <seg>const blob = uploadRes.data.blob
+    console.log(JSON.stringify(blob, null, 2))
+    ```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>const body = await request.json();
   const evt = parseTapEvent(body);</seg>
       </tuv>
@@ -38349,6 +38831,22 @@ await agent.login({
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>const result = await PasswordSession.login({
+      service: 'https://bsky.social', // or your PDS host
+      identifier: 'your-handle.bsky.social',
+      password: 'your-app-password',
+    })</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T022648Z" creationid="yamarten" creationdate="20260212T022648Z">
+        <seg>const result = await PasswordSession.login({
+      service: 'https://bsky.social', // or your PDS host
+      identifier: 'your-handle.bsky.social',
+      password: 'your-app-password',
+    })</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>const result = await client.create(app.bsky.feed.post, {
   text: 'Hello, world!',
   createdAt: new Date().toISOString(),
@@ -38467,6 +38965,20 @@ const indexer = new SimpleIndexer()</seg>
         <seg>const text = (evt.record?.text as string) || ''
     if (!searchPattern.test(text)) return
     if (postIndex.some(p =&gt; p.uri === uri)) return</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>const uploadRes = await client.call(com.atproto.repo.uploadBlob, {
+      encoding: 'image/jpeg',
+      data: imageBytes,
+    })</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T021428Z" creationid="yamarten" creationdate="20260212T021428Z">
+        <seg>const uploadRes = await client.call(com.atproto.repo.uploadBlob, {
+      encoding: 'image/jpeg',
+      data: imageBytes,
+    })</seg>
       </tuv>
     </tu>
     <tu>
@@ -39279,10 +39791,10 @@ export const header = {
   description: 'Auth for Atproto application developers',
 }</seg>
       </tuv>
-      <tuv lang="ja" changeid="yamarten" changedate="20260211T035742Z" creationid="yamarten" creationdate="20260208T063438Z">
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T015835Z" creationid="yamarten" creationdate="20260208T063438Z">
         <seg>export const header = {
-  title: '認可',
-  description: 'Atprotoアプリケーション開発者向けの認可ガイド',
+  title: '認証',
+  description: 'Atprotoアプリケーション開発者向けの認証・認可ガイド',
 }</seg>
       </tuv>
     </tu>
@@ -40118,6 +40630,186 @@ export const metadata = {
     </tu>
     <tu>
       <tuv lang="en-US">
+        <seg>export default function DocsHome() {
+  return (
+    &lt;div className="flex flex-1 flex-col gap-16 px-8 pb-16 pt-8 md:pt-16 xl:max-w-6xl xl:px-16"&gt;
+      &lt;div className="grid gap-6 md:grid-cols-2"&gt;
+        &lt;NavItem
+          icon="key"
+          title="Auth"
+          description="Login and permissions"
+          href="/guides/auth"
+        /&gt;
+        &lt;NavItem
+          icon="database"
+          title="Reads / Writes"
+          description="User data repos"
+          href="/guides/reads-and-writes"
+        /&gt;
+        &lt;NavItem
+          icon="stream"
+          title="Sync"
+          description="Stream user activity"
+          href="/guides/sync"
+        /&gt;
+        &lt;NavItem
+          icon="puzzle-piece"
+          title="Lexicon"
+          description="Record and API schemas"
+          href="/guides/lexicon"
+        /&gt;
+        &lt;NavItem
+          icon="media"
+          title="Images &amp; Videos"
+          description="Solve your CDN"
+          href="/guides/images-and-video"
+        /&gt;
+        &lt;NavItem
+          icon="flag"
+          title="Moderation"
+          description="Composable trust and safety"
+          href="/guides/moderation"
+        /&gt;
+      &lt;/div&gt;
+      &lt;div className="[html_:where(&amp;amp;&amp;gt;*)]:max-w-2xl [html_:where(&amp;amp;&amp;gt;*)]:lg:max-w-3xl prose flex-auto dark:prose-invert"&gt;
+        &lt;h2 className="scroll-mt-24"&gt;
+          What is this?
+        &lt;/h2&gt;
+        &lt;p&gt;
+          Atproto is a big-world open social protocol. Users publish JSON records into
+          repositories. The changestreams of those records then sync across the
+          network to drive applications.
+        &lt;/p&gt;
+        &lt;p&gt;
+          We recommend these fantastic articles by community member{' '}
+          &lt;a
+            href="https://bsky.app/profile/danabra.mov"
+            target="_blank"
+            rel="noopener noreferrer"
+          &gt;
+            Dan Abramov
+          &lt;/a&gt;
+          :
+        &lt;/p&gt;
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;Link href="https://overreacted.io/open-social/"&gt;
+              &lt;strong&gt;Open Social&lt;/strong&gt;
+            &lt;/Link&gt;{' '}
+            - The protocol is the API.
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;Link href="https://overreacted.io/where-its-at/"&gt;
+              &lt;strong&gt;Where it&amp;apos;s at://&lt;/strong&gt;
+            &lt;/Link&gt;{' '}
+            - From handles to hosting.
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;Link href="https://overreacted.io/a-social-filesystem/"&gt;
+              &lt;strong&gt;A Social Filesystem&lt;/strong&gt;
+            &lt;/Link&gt;{' '}
+            - Formats over apps.
+          &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p&gt;
+          Or, learn more &lt;Link href="/guides/understanding-atproto"&gt;in our intro doc&lt;/Link&gt;.
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  )
+}</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T025534Z" creationid="yamarten" creationdate="20260212T023151Z">
+        <seg>export default function DocsHome() {
+  return (
+    &lt;div className="flex flex-1 flex-col gap-16 px-8 pb-16 pt-8 md:pt-16 xl:max-w-6xl xl:px-16"&gt;
+      &lt;div className="grid gap-6 md:grid-cols-2"&gt;
+        &lt;NavItem
+          icon="key"
+          title="認証"
+          description="ログインと権限"
+          href="/guides/auth"
+        /&gt;
+        &lt;NavItem
+          icon="database"
+          title="読み書き"
+          description="データリポジトリ"
+          href="/guides/reads-and-writes"
+        /&gt;
+        &lt;NavItem
+          icon="stream"
+          title="同期"
+          description="ストリーミング"
+          href="/guides/sync"
+        /&gt;
+        &lt;NavItem
+          icon="puzzle-piece"
+          title="Lexicon"
+          description="レコードとAPIのスキーマ"
+          href="/guides/lexicon"
+        /&gt;
+        &lt;NavItem
+          icon="media"
+          title="画像と動画"
+          description="CDN利用"
+          href="/guides/images-and-video"
+        /&gt;
+        &lt;NavItem
+          icon="flag"
+          title="モデレーション"
+          description="安全と信頼の組み立て"
+          href="/guides/moderation"
+        /&gt;
+      &lt;/div&gt;
+      &lt;div className="[html_:where(&amp;amp;&amp;gt;*)]:max-w-2xl [html_:where(&amp;amp;&amp;gt;*)]:lg:max-w-3xl prose flex-auto dark:prose-invert"&gt;
+        &lt;h2 className="scroll-mt-24"&gt;
+          Atprotoとは
+        &lt;/h2&gt;
+        &lt;p&gt;
+          Atprotoは、大規模向けのオープンソーシャルプロトコルです。ユーザーはJSONレコードをリポジトリに公開します。レコードの変更ストリームはネットワーク全体で同期され、アプリケーションを駆動します。
+        &lt;/p&gt;
+        &lt;p&gt;
+          コミュニティメンバーの
+          &lt;a
+            href="https://bsky.app/profile/danabra.mov"
+            target="_blank"
+            rel="noopener noreferrer"
+          &gt;
+            Dan Abramov
+          &lt;/a&gt;
+          による、素晴らしい記事をおすすめします。
+        &lt;/p&gt;
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;Link href="https://overreacted.io/open-social/"&gt;
+              &lt;strong&gt;Open Social&lt;/strong&gt;
+            &lt;/Link&gt;{' '}
+            - プロトコルはAPIである
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;Link href="https://overreacted.io/where-its-at/"&gt;
+              &lt;strong&gt;Where it&amp;apos;s at://&lt;/strong&gt;
+            &lt;/Link&gt;{' '}
+            - ハンドルからホスティングに辿り着くまで
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;Link href="https://overreacted.io/a-social-filesystem/"&gt;
+              &lt;strong&gt;A Social Filesystem&lt;/strong&gt;
+            &lt;/Link&gt;{' '}
+            - フォーマットはアプリを超える
+          &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p&gt;
+          さらに学びたければ、&lt;Link href="/guides/understanding-atproto"&gt;導入&lt;/Link&gt;をお読みください。
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  )
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
         <seg>export default nextConfig;
 ```</seg>
       </tuv>
@@ -40366,6 +41058,16 @@ fmt.Printf("Followers: %d\n", *profile.FollowersCount)
       <tuv lang="ja" changeid="yamarten" changedate="20260107T132147Z" creationid="yamarten" creationdate="20260107T132147Z">
         <seg>fmt.Printf("Updated: %s (CID: %s)\n", resp.Uri, resp.Cid)
 ```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>fmt.Println(string(json.MarshalIndent(uploadResp, "", "  ")))
+    ```</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T021613Z" creationid="yamarten" creationdate="20260212T021613Z">
+        <seg>fmt.Println(string(json.MarshalIndent(uploadResp, "", "  ")))
+    ```</seg>
       </tuv>
     </tu>
     <tu>
@@ -40730,6 +41432,20 @@ fmt.Printf("Followers: %d\n", *profile.FollowersCount)
       <tuv lang="ja" changeid="yamarten" changedate="20260111T062820Z" creationid="yamarten" creationdate="20260107T130402Z">
         <seg>if (result.success) {
         const agent = result.value
+    }
+    ```</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>if (result.success) {
+        const session = result.value
+    }
+    ```</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T022650Z" creationid="yamarten" creationdate="20260212T022650Z">
+        <seg>if (result.success) {
+        const session = result.value
     }
     ```</seg>
       </tuv>
@@ -42715,6 +43431,20 @@ import {Heading} from "@/components/Heading"</seg>
     return null;
   }
 }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="en-US">
+        <seg>uploadResp, err := comatproto.RepoUploadBlob(ctx, xrpcc, bytes.NewReader(imgBytes))
+    if err != nil {
+      panic(err)
+    }</seg>
+      </tuv>
+      <tuv lang="ja" changeid="yamarten" changedate="20260212T021611Z" creationid="yamarten" creationdate="20260212T021611Z">
+        <seg>uploadResp, err := comatproto.RepoUploadBlob(ctx, xrpcc, bytes.NewReader(imgBytes))
+    if err != nil {
+      panic(err)
+    }</seg>
       </tuv>
     </tu>
     <tu>

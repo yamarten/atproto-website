@@ -256,10 +256,9 @@ msgstr "<Heading level={2} id=\"feed-generator-templates\">フィードジェネ
 
 #. type: Plain text
 #: src/guides/feeds/en.mdx:82
-#, fuzzy, no-wrap
-#| msgid "We maintain a Feed Generator example in [TypeScript](https://github.com/bluesky-social/feed-generator). Refer to the GitHub readme to get started. \n"
+#, no-wrap
 msgid "We maintain a Feed Generator example in TypeScript. Refer to the [tutorial](/guides/custom-feed-tutorial) to get started. \n"
-msgstr "[TypeScript](https://github.com/bluesky-social/feed-generator)でフィードジェネレーターの例を提供しています。始め方はGitHubのreadmeを参照してください。 \n"
+msgstr "TypeScriptフィードジェネレーターの例を提供しています。[チュートリアル](/guides/custom-feed-tutorial)を参照してください。 \n"
 
 #. type: Plain text
 #: src/guides/feeds/en.mdx:84

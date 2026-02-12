@@ -54,29 +54,19 @@ msgid ""
 "}\n"
 msgstr ""
 "export const header = {\n"
-"  title: '認可',\n"
-"  description: 'Atprotoアプリケーション開発者向けの認可ガイド',\n"
+"  title: '認証',\n"
+"  description: 'Atprotoアプリケーション開発者向けの認証・認可ガイド',\n"
 "}\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:9
-#, fuzzy, no-wrap
-#| msgid "## Getting started\n"
+#, no-wrap
 msgid "## Getting Started\n"
-msgstr "<Heading level={2} id=\"getting-started\">はじめる</Heading>\n"
+msgstr "<Heading level={2} id=\"getting-started\">はじめましょう</Heading>\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:18
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<TabGroup defaultValue=\"ts\">\n"
-#| "  <TabList>\n"
-#| "    <Tab value=\"ts\">TypeScript</Tab>\n"
-#| "    <Tab value=\"go\">Go</Tab>\n"
-#| "  </TabList>\n"
-#| "  <TabPanels>\n"
-#| "    <TabPanel value=\"ts\">\n"
-#| "    The first step when working with AT data is authenticating. You can authenticate using any [OAuth](/guides/auth) provider, or with [PasswordAgent](https://github.com/bluesky-social/atproto/tree/main/packages/lex/lex-password-agent) from our SDK if you are using password auth.\n"
+#, no-wrap
 msgid ""
 "<TabGroup defaultValue=\"ts\">\n"
 "  <TabList>\n"
@@ -94,25 +84,17 @@ msgstr ""
 "  </TabList>\n"
 "  <TabPanels>\n"
 "    <TabPanel value=\"ts\">\n"
-"    ATデータを扱う最初のステップは認証です。任意の[OAuth](/guides/auth)プロバイダを使用して認証することもできますし、パスワードを使う場合はSDKの[PasswordAgent](https://github.com/bluesky-social/atproto/tree/main/packages/lex/lex-password-agent)を使用して認証することもできます。\n"
+"    任意の[OAuth](/guides/auth)プロバイダでログインできます。SDKの[PasswordSession](https://github.com/bluesky-social/atproto/tree/main/packages/lex/lex-password-session)でパスワード認証もできます。\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:20 src/guides/auth/en.mdx:29
-#, fuzzy, no-wrap
-#| msgid "    Begin by installing the Atproto SDK packages:\n"
+#, no-wrap
 msgid "    Begin by installing the Atproto packages:\n"
-msgstr "    まずAtproto SDKパッケージをインストールしてください。\n"
+msgstr "    まずAtprotoパッケージをインストールしてください。\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:27
-#, fuzzy, no-wrap
-#| msgid ""
-#| "    ```bash\n"
-#| "    npm install @atproto/lex @atproto/lex-password-agent\n"
-#| "    ```\n"
-#| "    </TabPanel>\n"
-#| "    <TabPanel value=\"go\">\n"
-#| "    The first step when working with AT data is authenticating. You can authenticate using any [OAuth](/guides/auth) provider, or with password authentication from our SDK.\n"
+#, no-wrap
 msgid ""
 "    ```bash\n"
 "    npm install @atproto/lex @atproto/lex-password-session\n"
@@ -122,11 +104,11 @@ msgid ""
 "    You can log in using any [OAuth](/guides/auth) provider, or with password authentication from our SDK.\n"
 msgstr ""
 "    ```bash\n"
-"    npm install @atproto/lex @atproto/lex-password-agent\n"
+"    npm install @atproto/lex @atproto/lex-password-session\n"
 "    ```\n"
 "    </TabPanel>\n"
 "    <TabPanel value=\"go\">\n"
-"    ATデータを扱う最初のステップは認証です。任意の[OAuth](/guides/auth)プロバイダを使用して認証することもできますし、SDKのパスワード認証を使用することもできます。\n"
+"    任意の[OAuth](/guides/auth)プロバイダでログインすることもできますし、SDKのパスワード認証を使用することもできます。\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:36
@@ -150,26 +132,25 @@ msgstr ""
 #: src/guides/auth/en.mdx:38
 #, no-wrap
 msgid "Next, authenticate with an [SDK](/guides/sdk-auth).\n"
-msgstr ""
+msgstr "続いて、[SDK](/guides/sdk-auth)を使って認証します。\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:40
 #, no-wrap
 msgid "## About authorization\n"
-msgstr "<Heading level={2} id=\"about-authorization\">認可について</Heading>\n"
+msgstr "<Heading level={2} id=\"about-authorization\">認証について</Heading>\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:42
-#, fuzzy, no-wrap
-#| msgid "**Authorization is the first part of our docs for a reason!** You don't always need to be authenticated to [read data](/reading-data#unauthenticated-reads) from AT Protocol records or even to [stream data from the firehose](/guides/streaming-data). But if you're looking to build an application that integrates with the Atmosphere of Atproto apps in some way, you'll begin with authentication. You might start out by just using AT Protocol identities as an OAuth source — though you'll find that there's lots more you can do by building on top of the Atproto [social graph](/guides/social-graph).\n"
+#, no-wrap
 msgid "**Auth is the first part of our docs for a reason!** You don't need to be authed to [read records](/reading-data#unauthenticated-reads) or even to [stream data from the firehose](/guides/streaming-data). But if you're building an app that integrates with the Atmosphere, you'll begin with auth.\n"
-msgstr "**認可が最初のドキュメントであることには理由があります**。ATプロトコルのレコードから[データを読む](/reading-data#unauthenticated-reads)ために常に認証・認可が必要というわけではありませんし、[firehoseからデータをストリーム](/guides/streaming-data)する場合も同じです。ただしAtprotoアプリの環境（Atmosphere）に何らかの形で統合されるアプリケーションを構築したい場合は、認可から始めることになります。まずATプロトコルのIDをOAuthソースとして使うだけから始めるかもしれませんが、Atprotoの[ソーシャルグラフ](/guides/social-graph)上でさらに多くのことができることに気付くでしょう。\n"
+msgstr "**認証が最初のドキュメントであることには理由があります**。[レコードを読み出す](/reading-data#unauthenticated-reads)ために認証が必要というわけではありませんし、[firehoseからデータをストリーム](/guides/streaming-data)する場合も同じです。ただしAtmosphereに統合されるアプリケーションを構築する場合は、認証から始めることになります。\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:44
 #, no-wrap
 msgid "You might start out by just using Atproto identities as an OAuth source — though you'll find that there's lots more you can do by building on top of the Atproto [social graph](/guides/social-graph).\n"
-msgstr ""
+msgstr "最初はAtprotoのIDをOAuthソースとして使うだけかもしれませんが、Atprotoの[ソーシャルグラフ](/guides/social-graph)上でさらに多くのことができることに気付くでしょう。\n"
 
 #. type: Plain text
 #: src/guides/auth/en.mdx:46

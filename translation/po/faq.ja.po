@@ -44,7 +44,7 @@ msgstr "# FAQ\n"
 #: src/guides/faq/en.mdx:10
 #, no-wrap
 msgid "Frequently Asked Questions about the Authenticated Transfer Protocol (Atproto). For FAQ about Bluesky, visit [here](https://bsky.social/about/faq).\n"
-msgstr "Authenticated Transferプロトコル（Atproto）に関するよくある質問。Blueskyに関するよくある質問については、[こちら](https://bsky.social/about/faq)をご覧ください。\n"
+msgstr "Authenticated Transfer Protocol（Atproto）に関するよくある質問。Blueskyに関するよくある質問については、[こちら](https://bsky.social/about/faq)をご覧ください。\n"
 
 #. type: Plain text
 #: src/guides/faq/en.mdx:12
