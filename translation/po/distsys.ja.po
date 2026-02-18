@@ -506,7 +506,7 @@ msgstr "<Heading level={2} id=\"charting-the-flow-of-data\">データフロー�
 #: src/articles/atproto-for-distsys-engineers/en.mdx:170
 #, no-wrap
 msgid "Now that we've set up our high-scale decentralized backend, let's map out how an application actually works on ATProto.\n"
-msgstr "大規模な分散型バックエンドをセットアップしたので、ATプロトコルでアプリケーションが実際にどのように動作するかを図にしてみましょう。\n"
+msgstr "大規模な分散型バックエンドをセットアップしたので、Atprotoでアプリケーションが実際にどのように動作するかを図にしてみましょう。\n"
 
 #. type: Plain text
 #: src/articles/atproto-for-distsys-engineers/en.mdx:172
@@ -548,7 +548,7 @@ msgstr ""
 #: src/articles/atproto-for-distsys-engineers/en.mdx:184
 #, no-wrap
 msgid "We're off to a good start &mdash; we can read and write JSON documents in the user's repo. If they already have data from other apps (like a profile) we can read that data too. If we were building a singleplayer app, we'd already be done.\n"
-msgstr "順調なスタートです。ユーザーのリポジトリでJSONドキュメントを読み書きできます。他のアプリ（プロファイルなど）から既にデータがある場合は、そのデータも読み取ることができます。シングルプレイヤーアプリを作成している場合は、すでに完了しています。\n"
+msgstr "順調なスタートです。ユーザーのリポジトリでJSONドキュメントを読み書きできます。他のアプリから既にデータ（プロフィールなど）がある場合は、そのデータも読み取ることができます。シングルプレイヤーアプリを作成している場合は、すでに完了しています。\n"
 
 #. type: Plain text
 #: src/articles/atproto-for-distsys-engineers/en.mdx:186
@@ -668,7 +668,7 @@ msgstr "<Heading level={2} id=\"building-practical-open-systems\">実用的な�
 #: src/articles/atproto-for-distsys-engineers/en.mdx:224
 #, no-wrap
 msgid "The AT Protocol merges p2p tech with high-scale systems practices. Our founding engineers were core [IPFS](https://en.wikipedia.org/wiki/InterPlanetary_File_System) and [Dat](https://en.wikipedia.org/wiki/Dat_(software)) engineers, and Martin Kleppmann &mdash; the author of [Data Intensive Applications](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/) &mdash; is an active technical advisor.\n"
-msgstr "ATプロトコルは、P2Pテクノロジーと大規模システムの実践を融合します。当社の創設エンジニアは、[IPFS](https://en.wikipedia.org/wiki/InterPlanetary_File_System)および[Dat](https://en.wikipedia.org/wiki/Dat_(software))のコアエンジニアであり、[Data Intensive Applications](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/)の著者であるMartin Kleppmannは、アクティブな技術アドバイザーです。\n"
+msgstr "ATプロトコルは、P2Pテクノロジーと大規模システムの実践を融合します。Atprotoの原型を作ったエンジニアは、[IPFS](https://en.wikipedia.org/wiki/InterPlanetary_File_System)および[Dat](https://en.wikipedia.org/wiki/Dat_(software))のコアエンジニアであり、[Data Intensive Applications](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/)の著者であるMartin Kleppmannは、アクティブな技術アドバイザーです。\n"
 
 #. type: Plain text
 #: src/articles/atproto-for-distsys-engineers/en.mdx:226

@@ -158,6 +158,7 @@ msgid ""
 msgstr ""
 "以下をインストールしておいてください。\n"
 "- Node.js 18以上\n"
+"- Go 1.25以上\n"
 "- pnpmパッケージマネージャー\n"
 
 #. type: Plain text
@@ -1865,4 +1866,4 @@ msgstr "これで、OAuthログイン、カスタムLexiconによるステータ
 #: src/guides/statusphere-tutorial/en.mdx:731
 #, no-wrap
 msgid "This gives you all the tools you need to continue building on AT Protocol. You can find more guides and tutorials in our [Guides](/guides) section, and more example apps in the [Cookbook](https://github.com/bluesky-social/cookbook/) repository. Happy building!\n"
-msgstr "さらに多くのガイドやチュートリアルは[Guides](/guides)セクションで、より多くのサンプルアプリは[Cookbook](https://github.com/bluesky-social/cookbook/)リポジトリで確認できます。ぜひ開発を楽しんでください。\n"
+msgstr "これで、ATプロトコル上の開発に必要なツールがすべて揃いました。さらに多くのガイドやチュートリアルは[Guides](/guides)セクションで、より多くのサンプルアプリは[Cookbook](https://github.com/bluesky-social/cookbook/)リポジトリで確認できます。ぜひ開発を楽しんでください。\n"

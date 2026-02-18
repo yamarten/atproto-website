@@ -141,7 +141,7 @@ msgstr "現代のウェブは主にFacebookやYouTubeのような少数の巨大
 #: src/articles/atproto-ethos/en.mdx:37
 #, no-wrap
 msgid "This new web is significantly easier to participate in — you don't need to know how to run a server or have a static IP address in order to publish  content on the web. You can simply create an account. Perhaps most importantly, the modern web is capable of supporting richer and more dynamic content and interactions: real time conversations, global views of everything happening in a network, and algorithms that direct users' attention through these vast networks of data.\n"
-msgstr "この新しいウェブは参加がはるかに容易です。ウェブ上でコンテンツを公開するためにサーバーの運用方法や固定IPアドレスの取り方を知る必要はありません。アカウントを作成するだけでよいのです。そして最も重要なのは、現代のウェブがより豊かで動的なコンテンツと相互作用を支えられることです。リアルタイムの会話、ネットワーク内で起きるすべてのことのグローバルなビュー、そして膨大なデータのネットワークを通じてユーザーの注意を注意を惹くアルゴリズムなどです。\n"
+msgstr "この新しいウェブは参加がはるかに容易です。ウェブ上でコンテンツを公開するためにサーバーの運用方法や固定IPアドレスの取り方を知る必要はありません。アカウントを作成するだけでよいのです。そして最も重要なのは、現代のウェブがより豊かで動的なコンテンツと相互作用を支えられることです。リアルタイムの会話、ネットワーク内で起きるすべてのことのグローバルなビュー、そして膨大なデータのネットワークを通じてユーザーの注意を惹くアルゴリズムなどです。\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:39
@@ -379,13 +379,13 @@ msgstr "<Heading level={3} id=\"structure-gives-freedom\">構造が自由をも�
 #: src/articles/atproto-ethos/en.mdx:116
 #, no-wrap
 msgid "Atproto is a multi-party, low-coordination network. Services can join permissionlessly and operate under their own policies. While coordination pains are to some degree inevitable, atproto tries to head off the worst of it by being a very structured protocol. You'll see this reflected in many design decisions in the protocol: records encoded as canonical cbor, multiformats everywhere, a unicit (deterministic insertion-order-independent construction) data structure in the repository, a constrained set of allowed dids/hash functions, even things like requiring DPoP in OAuth.\n"
-msgstr "Atprotoは多者間・低調整のネットワークです。サービスは許可不要で参加し、それぞれのポリシーで運用できます。調整の痛みはある程度避けられませんが、Atprotoは非常に構造化されたプロトコルであることで、最悪の事態を避けようとしています。これはプロトコルの多くの設計判断に反映されています。例えば、正規化CBORでエンコードされたレコード、至る所に現れるmultiformats、unicit（挿入順序に依存しない決定的構成）なデータ構造を持つリポジトリ、許可されたDID/ハッシュ関数の制限、さらにはOAuthでDPoPを要求することなどです。\n"
+msgstr "Atprotoは多者間・低協調のネットワークです。サービスは許可不要で参加し、それぞれのポリシーで運用できます。調整の痛みはある程度避けられませんが、Atprotoは非常に構造化されたプロトコルであることで、最悪の事態を避けようとしています。これはプロトコルの多くの設計判断に反映されています。例えば、正規化CBORでエンコードされたレコード、至る所に現れるmultiformats、unicit（挿入順序に依存しない決定的構成）なデータ構造を持つリポジトリ、許可されたDID/ハッシュ関数の制限、さらにはOAuthでDPoPを要求することなどです。\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:118
 #, no-wrap
 msgid "While there's something empowering about the idea of being able to do *anything*, it's also easy for this to fall into the tyranny of structurelessness - a collapse in coordination that prevents anything from actually getting done. Without structure in the network, energy that could go into novel development gets redirected into facilitating interoperation, fixing edgecases between implementations, building up defenses to bad actors or security issues from other parties, and trying to coordinate evolution without a clear leader. \n"
-msgstr "*何でもできる*という考えには力強さがありますが、同時に構造なき専制へ陥りやすく、結果として調整が崩壊し、何も進まなくなります。ネットワークに構造がなければ、新しい開発に注げるはずのエネルギーは、相互運用の調整、実装間のエッジケース修正、悪意ある参加者や他者由来のセキュリティ問題への防御、明確なリーダー不在での進化の調整へと振り向けられてしまいます。 \n"
+msgstr "*何でもできる*という考えには力強さがありますが、同時に構造なき専制へ陥りやすく、結果として協調が崩壊し、何も進まなくなります。ネットワークに構造がなければ、新しい開発に注げるはずのエネルギーは、相互運用の協調、実装間のエッジケース修正、悪意ある参加者や他者由来のセキュリティ問題への防御、明確なリーダー不在での進化の調整へと振り向けられてしまいます。 \n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:120
@@ -397,7 +397,7 @@ msgstr "この構造は、おそらくAtprotoのスキーマ言語であるLexic
 #: src/articles/atproto-ethos/en.mdx:122
 #, no-wrap
 msgid "With this, atproto avoids the gray area of “we're sort of talking about the same thing but not really” and forces applications into the discrete choice that if you're talking about the same thing then you're talking about the *exact* same thing. Instead of trying to posit universality of semantics, atproto facilitates specific semantics and then allows for collaboration and extension of those semantics.\n"
-msgstr "これにより、Atprotoは「だいたい同じことを話しているけれど実は違う」というグレーゾーンを避け、同じことを話すなら*まったく*同じことを話すという離散的な選択をアプリケーションに強います。意味の普遍性を仮定しようとするのではなく、Atprotoは特定の意味を促進し、その意味の協調と拡張を可能にします。\n"
+msgstr "これにより、Atprotoは「だいたい同じことを話しているけれど実は違う」というグレーゾーンを避け、同じことを話すなら*まったく*同じことを話すという離散的な選択をアプリケーションに強います。意味の普遍性を仮定しようとするのではなく、Atprotoは特定のセマンティクスを促進し、その協力と拡張を可能にします。\n"
 
 #. type: Plain text
 #: src/articles/atproto-ethos/en.mdx:124

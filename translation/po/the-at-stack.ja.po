@@ -70,7 +70,7 @@ msgstr ""
 #: src/guides/the-at-stack/en.mdx:13
 #, no-wrap
 msgid "## The Authenticated Transfer Protocol\n"
-msgstr "<Heading level={2} id=\"the-authenticated-transfer-protocol\">Authenticated Transferプロトコル</Heading>\n"
+msgstr "<Heading level={2} id=\"the-authenticated-transfer-protocol\">Authenticated Transfer Protocol</Heading>\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:15
@@ -326,7 +326,7 @@ msgstr "<Heading level={2} id=\"feeds\">フィード</Heading>\n"
 #: src/guides/the-at-stack/en.mdx:107
 #, no-wrap
 msgid "As with Web search engines, users are free to select their aggregators. Feeds, search indices, and entire app views can be provided by independent third parties, with requests routed by the PDS based on user configuration.\n"
-msgstr "ウェブ検索エンジンがそうであるように、ユーザーはアグリゲーターを自由に選べます。フィード、検索インデックス、そしてアプリビュー全体を独立した第三者が提供でき、リクエストはユーザー設定に基づきPDSによってルーティングされます。\n"
+msgstr "ウェブ検索エンジンがそうであるように、ユーザーはアグリゲーターを自由に選べます。フィード、検索インデックス、そしてAppView全体を独立した第三者が提供でき、リクエストはユーザー設定に基づきPDSによってルーティングされます。\n"
 
 #. type: Plain text
 #: src/guides/the-at-stack/en.mdx:111

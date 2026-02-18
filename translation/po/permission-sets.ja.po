@@ -100,7 +100,7 @@ msgstr "<Heading level={2} id=\"requesting-permissions\">権限の要求</Headin
 #: src/guides/permission-sets/en.mdx:24
 #, no-wrap
 msgid "When your app initiates an OAuth flow with an Atproto identity provider, it can request specific permission sets by including them in the `scope` parameter of the authorization request. This should be supplied as a *space-separated list* in the [`oauth-client-metadata.json` file](/specs/oauth#clients) when registering your OAuth client:\n"
-msgstr "アプリがAtprotoのIDプロバイダーでOAuthフローを開始する際、認可リクエストの`scope`パラメーターに含めることで特定の権限セットを要求できます。これはOAuthクライアント登録時に[`oauth-client-metadata.json`ファイル](/specs/oauth#clients)へ*スペース区切りのリスト*として指定します。\n"
+msgstr "アプリがAtprotoのIDプロバイダーでOAuthフローを開始する際、認可リクエストの`scope`パラメータに含めることで特定の権限セットを要求できます。これはOAuthクライアント登録時に[`oauth-client-metadata.json`ファイル](/specs/oauth#clients)へ*スペース区切りのリスト*として指定します。\n"
 
 #. type: Plain text
 #: src/guides/permission-sets/en.mdx:31
@@ -124,7 +124,7 @@ msgstr ""
 #: src/guides/permission-sets/en.mdx:33
 #, no-wrap
 msgid "OAuth in AT uses [Pushed Authorization Requests](https://auth0.com/blog/what-are-oauth-push-authorization-requests-par/) (PAR). The client metadata file will be fetched dynamically during the session lifecycle, and the `scope` parameter in `oauth-client-metadata.json` *needs to match* the actual authorization HTTP request made by your app:\n"
-msgstr "ATにおけるOAuthは[Pushed Authorization Requests](https://auth0.com/blog/what-are-oauth-push-authorization-requests-par/)（PAR）を使用します。クライアントメタデータファイルはセッションライフサイクル中に動的に取得され、`oauth-client-metadata.json`の`scope`パラメーターはアプリが実際に行う認可HTTPリクエストと*一致している必要があります*。\n"
+msgstr "ATにおけるOAuthは[Pushed Authorization Requests](https://auth0.com/blog/what-are-oauth-push-authorization-requests-par/)（PAR）を使用します。クライアントメタデータファイルはセッションライフサイクル中に動的に取得され、`oauth-client-metadata.json`の`scope`パラメータはアプリが実際に行う認可HTTPリクエストと*一致している必要があります*。\n"
 
 #. type: Plain text
 #: src/guides/permission-sets/en.mdx:43
@@ -230,13 +230,13 @@ msgstr "<Heading level={2} id=\"for-lexicon-designers\">Lexicon設計者向け</
 #: src/guides/permission-sets/en.mdx:71
 #, no-wrap
 msgid "Lexicons are authored in JSON — you can find examples in the [Lexicon Guide](/guides/lexicon). Atmosphere HTTP API methods each scope and implement a particular set of Lexicons, so Lexicons must include valid query parameters, request bodies, and response bodies as appropriate. Each Lexicon, in turn, becomes a permission scope — in other words, `app.bsky.feed.post` is an AT record format, a web endpoint, and a granular permission all at once.\n"
-msgstr "LexiconはJSONで作成されます。例は[Lexiconガイド](/guides/lexicon)で確認できます。AtmosphereのHTTP APIメソッドは、それぞれ特定のLexiconセットをスコープし実装するため、Lexiconには適切なクエリパラメーター、リクエストボディ、レスポンスボディが含まれている必要があります。各Lexiconは権限スコープにもなります。つまり、`app.bsky.feed.post`はATレコード形式であり、ウェブエンドポイントであり、粒度の細かい権限でもあります。\n"
+msgstr "LexiconはJSONで作成されます。例は[Lexiconガイド](/guides/lexicon)で確認できます。AtmosphereのHTTP APIメソッドは、それぞれ特定のLexiconセットをスコープし実装するため、Lexiconには適切なクエリパラメータ、リクエストボディ、レスポンスボディが含まれている必要があります。各Lexiconは権限スコープにもなります。つまり、`app.bsky.feed.post`はATレコード形式であり、ウェブエンドポイントであり、粒度の細かい権限でもあります。\n"
 
 #. type: Plain text
 #: src/guides/permission-sets/en.mdx:73
 #, no-wrap
 msgid "Lexicon schemas are published publicly as records in ATProto Lexicon repositories. Refer to [Lexicon Publication and Resolution](/specs/lexicon#lexicon-publication-and-resolution) for technical details.\n"
-msgstr "LexiconスキーマはATプロトコルLexiconリポジトリのレコードとして公開されます。技術的な詳細は[Lexiconの発行と解決](/specs/lexicon#lexicon-publication-and-resolution)を参照してください。\n"
+msgstr "LexiconスキーマはAtproto上でLexiconリポジトリのレコードとして公開されます。技術的な詳細は[Lexiconの発行と解決](/specs/lexicon#lexicon-publication-and-resolution)を参照してください。\n"
 
 #. type: Plain text
 #: src/guides/permission-sets/en.mdx:75

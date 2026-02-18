@@ -350,7 +350,7 @@ msgstr ""
 #: src/guides/using-ozone/en.mdx:108
 #, no-wrap
 msgid "In this case, the most straightforward action is to acknowledge the report without taking further action. Select \"Ackonwledge\" from the drop-down, provide a note, then submit the action. You can use keyboard shortcuts to speed up moderation actions — for example, `S` for Submit.\n"
-msgstr "この場合、最も簡単なアクションは、それ以上のアクションをとらずにレポートを承認することです。ドロップダウンから「Ackonwledge」を選択し、メモを入力してアクションを送信します。キーボードショートカットを使用すると、モデレーションアクションを高速化できます。たとえば、Submitの「S」で送信できます。\n"
+msgstr "この場合、最も簡単なアクションは、それ以上のアクションをとらずにレポートを承認することです。ドロップダウンから「Ackonwledge」を選択し、メモを入力してアクションを送信します。キーボードショートカットを使用すると、モデレーションアクションを高速化できます。たとえば、Submitの`S`で送信できます。\n"
 
 #. type: Plain text
 #: src/guides/using-ozone/en.mdx:112

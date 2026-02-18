@@ -68,7 +68,7 @@ msgstr "<Heading level={2} id=\"at-protocol\">ATプロトコル</Heading>\n"
 #: src/guides/glossary/en.mdx:18
 #, no-wrap
 msgid "The AT Protocol stands for \"Authenticated Transfer Protocol,\" and is frequently shortened to \"atproto.\" The name is in reference to the fact that all user-data is signed by the authoring users, which makes it possible to broadcast the data through many services and prove it's real without having to speak directly to the originating server.\n"
-msgstr "ATプロトコルは、「Authenticated Transfer Protocol」の略です。この名前は、すべてのユーザーデータが作成ユーザーによって署名されているという事実に由来しています。これにより、多くのサービスを通じてデータをブロードキャストし、発信元サーバーと直接通信しなくても、データが本物であることを証明できます。\n"
+msgstr "ATプロトコルは、「Authenticated Transfer Protocol」の略で、よく「Atproto」と省略されます。この名前は、すべてのユーザーデータが作成ユーザーによって署名されているという事実に由来しています。これにより、多くのサービスを通じてデータをブロードキャストし、発信元サーバーと直接通信しなくても、データが本物であることを証明できます。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:20
@@ -92,7 +92,7 @@ msgstr "PDS（パーソナルデータサーバー）は、ユーザーをホス
 #: src/guides/glossary/en.mdx:26
 #, no-wrap
 msgid "A PDS communicates with [AppViews](#app-view) to run applications. A PDS doesn't typically run any applications itself, though it will have general account management interfaces such as the OAuth login screen. PDSes actively sync their [data repos](#data-repo) with [Relays](#relay).\n"
-msgstr "PDSは[AppView](#appview)と通信してアプリケーションを実行します。PDSは通常、それ自体ではアプリケーションを実行しませんが、OAuthログイン画面などの一般的なアカウント管理インターフェイスを備えています。PDSは[データリポジトリ](#data-repo)を[リレー](#relay)と積極的に同期します。\n"
+msgstr "PDSは[AppView](#app-view)と通信してアプリケーションを実行します。PDSは通常、それ自体ではアプリケーションを実行しませんが、OAuthログイン画面などの一般的なアカウント管理インターフェイスを備えています。PDSは[データリポジトリ](#data-repo)を[リレー](#relay)と積極的に同期します。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:28
@@ -122,13 +122,13 @@ msgstr "<Heading level={2} id=\"relay\">リレー</Heading>\n"
 #: src/guides/glossary/en.mdx:36
 #, no-wrap
 msgid "A Relay is an aggregator of [data repos](#data-repo) from across the [Atmosphere](#atmosphere). They sync the repos from [PDSes](#pds) and produce a firehose of change events. [AppViews](#app-view) use a Relay to fetch user data.\n"
-msgstr "リレーは、[Atmosphere](#atmosphere)全体からの[データリポジトリ](#data-repo)の集約機能です。[PDS](#pds)からリポジトリを同期し、変更イベントのfirehoseを生成します。[AppView](#appview)はリレーを使用してユーザーデータを取得します。\n"
+msgstr "リレーは、[Atmosphere](#atmosphere)全体からの[データリポジトリ](#data-repo)の集約機能です。[PDS](#pds)からリポジトリを同期し、変更イベントのfirehoseを生成します。[AppView](#app-view)はリレーを使用してユーザーデータを取得します。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:38
 #, no-wrap
 msgid "Relays are an optimization and are not strictly necessary. An [AppView](#app-view) could communicate directly with [PDSes](#pds) (in fact, this is encouraged if needed). The Relay serves to reduce the number of connections that are needed in the network.\n"
-msgstr "リレーは最適化用途であり、厳密には必要ではありません。[AppView](#appview)は[PDS](#pds)と直接通信できます（実際、それが推奨されることもあります）。リレーは、ネットワークで必要な接続の数を減らすのに役立ちます。\n"
+msgstr "リレーは最適化用途であり、厳密には必要ではありません。[AppView](#app-view)は[PDS](#pds)と直接通信できます（実際、それが推奨されることもあります）。リレーは、ネットワークで必要な接続の数を減らすのに役立ちます。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:40
@@ -196,7 +196,7 @@ msgstr "<Heading level={2} id=\"collection\">コレクション</Heading>\n"
 #: src/guides/glossary/en.mdx:60
 #, no-wrap
 msgid "The \"collection\" is a bucket of JSON [records](#record) in a [data repository](#data-repo). They support ordered list operations. Every collection is identified by an [NSID](#nsid-namespaced-id) which is expected to map to a [Lexicon](#lexicon) schema.\n"
-msgstr "「コレクション」は、[データリポジトリ](#data-repo)内のJSON[レコード](#record)のバケツです。順序付きリスト操作をサポートします。すべてのコレクションは、[NSID](#nsid-namespace-id)によって識別され、[Lexicon](#lexicon)スキーマにマップされることが想定されています。\n"
+msgstr "「コレクション」は、[データリポジトリ](#data-repo)内のJSON[レコード](#record)のバケツです。順序付きリスト操作をサポートします。すべてのコレクションは、[NSID](#nsid-namespaced-id)によって識別され、[Lexicon](#lexicon)スキーマにマップされることが想定されています。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:62
@@ -238,7 +238,7 @@ msgstr "<Heading level={2} id=\"label\">ラベル</Heading>\n"
 #: src/guides/glossary/en.mdx:74
 #, no-wrap
 msgid "Labels are metadata objects which are attached to accounts ([DIDs](#did-decentralized-id)) and [records](#record). They are typically referenced by their values, such as \"nudity\" or \"graphic-media,\" which identify the meaning of the label. Labels are primarily used by applications for moderation, but they can be used for other purposes.\n"
-msgstr "ラベルは、[リポジトリ](#data-repo)および[レコード](#record)に付与されるメタデータオブジェクトです。通常、ラベルの意味を識別する「nudity」や「graphic-media」などの値によって参照されます。ラベルは主にアプリケーションによってモデレーションに使用されますが、他の目的にも使用できます。\n"
+msgstr "ラベルは、アカウントの[DID](#did-decentralized-id)および[レコード](#record)に付与されるメタデータオブジェクトです。通常、ラベルの意味を識別する「nudity」や「graphic-media」などの値によって参照されます。ラベルは主にアプリケーションによってモデレーションに使用されますが、他の目的にも使用できます。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:76
@@ -368,7 +368,7 @@ msgstr "<Heading level={2} id=\"xrpc\">XRPC</Heading>\n"
 #: src/guides/glossary/en.mdx:117
 #, no-wrap
 msgid "XRPC is [atproto's](#at-protocol) HTTP API. It stands for \"Cross-organizational Remote Procedure Calls\" and is a thin wrapper around standard HTTPS. XRPC uses [Lexicon](#lexicon) schemas to define the valid parameters and responses for each API endpoint.\n"
-msgstr "XRPCは非推奨の用語ですが、歴史的には[Atproto](#at-protocol)のHTTP用法を説明するために使用されていました。これは「Cross-organizational Remote Procedure Calls」の略語ですが、実際にはHTTPを使用しているだけなので、この用語を発明したことを後悔しています。\n"
+msgstr "XRPCは[Atproto](#at-protocol)で用いるHTTP APIです。これは「Cross-organizational Remote Procedure Calls」の略語で、HTTPSの薄いラッパーです。XRPCでは[Lexicon](#lexicon)スキーマを使って、各APIエンドポイントの有効なパラメータやレスポンスを定義します。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:118

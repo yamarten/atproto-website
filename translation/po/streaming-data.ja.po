@@ -95,7 +95,7 @@ msgstr ""
 #: src/guides/streaming-data/en.mdx:21
 #, no-wrap
 msgid "From here, you would need to read each message as it comes in, and decode the associated data. Our [Go](https://github.com/bluesky-social/indigo) SDK is currently the most feature-complete for interacting with the firehose directly.\n"
-msgstr "ここから、入ってくる各メッセージを読み込み、関連するデータをデコードする必要があります。当社の[Go](https://github.com/bluesky-social/indigo) SDKは、現在firehoseと直接対話するには最も機能が揃っています。\n"
+msgstr "ここから、入ってくる各メッセージを読み込み、関連するデータをデコードする必要があります。私たちの[Go](https://github.com/bluesky-social/indigo) SDKは、現在firehoseと直接対話するには最も機能が揃っています。\n"
 
 #. type: Plain text
 #: src/guides/streaming-data/en.mdx:23

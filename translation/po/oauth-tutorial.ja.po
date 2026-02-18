@@ -196,7 +196,7 @@ msgid ""
 "</Note>\n"
 msgstr ""
 "<Note>\n"
-"一般に、OAuthを使用する場合は「localhost」ではなく「127.0.0.1」のURLを使用する必要があります。これは、OAuthリダイレクトフローが正しく機能するために重要です。\n"
+"一般に、OAuthを使用する場合は`localhost`ではなく`127.0.0.1`のURLを使用する必要があります。これは、OAuthリダイレクトフローが正しく機能するために重要です。\n"
 "</Note>\n"
 
 #. type: Plain text

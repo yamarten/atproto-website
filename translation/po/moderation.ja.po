@@ -92,7 +92,7 @@ msgstr "私たちのモデレーションアーキテクチャは2つのサー�
 #: src/guides/moderation/en.mdx:20
 #, no-wrap
 msgid "[Read more](https://docs.bsky.app/blog/blueskys-moderation-architecture) about moderation on our blog.\n"
-msgstr "当社のブログでモデレーションに関する[詳細な解説](https://docs.bsky.app/blog/blueskys-moderation-architecture)をご覧ください。\n"
+msgstr "Blueskyのブログでモデレーションに関する[詳細な解説](https://docs.bsky.app/blog/blueskys-moderation-architecture)をご覧ください。\n"
 
 #. type: Plain text
 #: src/guides/moderation/en.mdx:22

@@ -137,7 +137,7 @@ msgstr ""
 #: src/guides/applications/en.mdx:48
 #, no-wrap
 msgid "We're going to keep this light so you can quickly wrap your head around ATProto. There will be links with more information about each step. {{className: 'lead'}}\n"
-msgstr "ATプロトコルをすぐに理解できるように、ここでは簡単な内容に留めます。各ステップについて、詳細情報へのリンクがあります。 {{className: 'lead'}}\n"
+msgstr "Atprotoをすぐに理解できるように、ここでは簡単な内容に留めます。各ステップについて、詳細情報へのリンクがあります。 {{className: 'lead'}}\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:50
@@ -1125,7 +1125,7 @@ msgstr ""
 #: src/guides/applications/en.mdx:439
 #, no-wrap
 msgid "## Step 6. Listening to the firehose\n"
-msgstr "<Heading level={2} id=\"step-6-listening-to-the-firehose\">ステップ6. ファイアホースをリッスン</Heading>\n"
+msgstr "<Heading level={2} id=\"step-6-listening-to-the-firehose\">ステップ6. firehoseをリッスン</Heading>\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:441
@@ -1514,7 +1514,7 @@ msgstr "<Image alt=\"楽観的更新を示す図\" src={DiagramOptimisticUpdate}
 #: src/guides/applications/en.mdx:599
 #, no-wrap
 msgid "This is an important optimization to make, because it ensures that the user sees their own changes while using your app. When the event eventually arrives from the firehose, we just discard it since we already have it saved locally.\n"
-msgstr "これは、ユーザーがアプリの使用中に自分の変更を確認できるようにするため、重要な最適化です。最終的にイベントがファイアホースから到着すると、すでにローカルに保存されているため、それを破棄します。\n"
+msgstr "これは、ユーザーがアプリの使用中に自分の変更を確認できるようにするため、重要な最適化です。最終的にイベントがfirehoseから到着すると、すでにローカルに保存されているため、それを破棄します。\n"
 
 #. type: Plain text
 #: src/guides/applications/en.mdx:601

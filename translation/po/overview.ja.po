@@ -44,7 +44,7 @@ msgstr "# プロトコル概要\n"
 #: src/guides/overview/en.mdx:10
 #, no-wrap
 msgid "The **Authenticated Transfer Protocol**, aka **Atproto**, is a decentralized protocol for large-scale social web applications. This document will introduce you to the ideas behind the AT Protocol.\n"
-msgstr "**Authenticated Transfer Protocol**（別名**Atproto**）は、大規模な分散型ソーシャルアプリケーション用のフェデレーションプロトコルです。このドキュメントでは、ATプロトコルの背後にある考え方を紹介します。\n"
+msgstr "**Authenticated Transfer Protocol**（別名**Atproto**）は、大規模な分散型ソーシャルウェブアプリケーション用のフェデレーションプロトコルです。この文書では、ATプロトコルの背後にある考え方を紹介します。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:12
@@ -198,7 +198,7 @@ msgstr "署名鍵はPDSに委託され、ユーザーのデータを管理でき
 #: src/guides/overview/en.mdx:61
 #, no-wrap
 msgid "A backup of the user's data could be persistently synced to a user's own device as a backup (contingent on the disk space available), or mirrored by a third-party service. In the event their PDS disappears without notice, the user should be able to migrate to a new provider by updating their DID Document and uploading their data backup.\n"
-msgstr "ユーザーデータのバックアップは、バックアップとしてクライアントに永続的に同期することができます（使用可能なディスク領域によって異なります）。PDSが予告なく消えた場合、ユーザーはDIDドキュメントを更新してバックアップをアップロードすることで、新しいプロバイダーに移行できます。\n"
+msgstr "ユーザーデータのバックアップは、バックアップとしてクライアントに永続的に同期するか（使用可能なディスク容量依存）、サードパーティサービスでミラーリングすることができます。PDSが予告なく消えた場合、ユーザーはDIDドキュメントを更新してバックアップをアップロードすることで、新しいプロバイダーに移行できます。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:63

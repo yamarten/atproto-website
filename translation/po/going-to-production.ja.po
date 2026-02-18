@@ -114,7 +114,10 @@ msgid ""
 "- Setting `PDS_SQLITE_DISABLE_WAL_AUTO_CHECKPOINT` = `true` . This is in the [environment variable config](https://github.com/bluesky-social/atproto/blob/f8e56b387fcd3bc8405225c1bbdef66ca5dc1591/packages/pds/src/config/env.ts#L48) for your PDS. What this does is force the PDS SQLite client to keep write-ahead logging open and leave the actual checkpointing to Litestream.\n"
 "- Use [Litestream with systemd](https://litestream.io/guides/systemd/) or another scheduler to find the most recently updated DBs and back them up. By default, individual user databases are located in `/pds/actors/`. Litestream will clean the write-ahead log and checkpoint automatically, so there's no risk of WAL growing out of control.\n"
 "- If needed, ensure that this script also runs on SIGTERM when cleaning up containers or pods from your deployment.\n"
-msgstr "- `PDS_SQLITE_DISABLE_WAL_AUTO_CHECKPOINT` = `true`を設定します。これはPDSの[環境変数設定](https://github.com/bluesky-social/atproto/blob/f8e56b387fcd3bc8405225c1bbdef66ca5dc1591/packages/pds/src/config/env.ts#L48)にあります。これが行うことは、PDS SQLiteクライアントにライトアヘッドログ（WAL）を開いたままにして、実際のチェックポイント処理をLitestreamに任せることを強制することです。\n"
+msgstr ""
+"- `PDS_SQLITE_DISABLE_WAL_AUTO_CHECKPOINT` = `true`を設定します。これはPDSの[環境変数設定](https://github.com/bluesky-social/atproto/blob/f8e56b387fcd3bc8405225c1bbdef66ca5dc1591/packages/pds/src/config/env.ts#L48)にあります。これが行うことは、PDS SQLiteクライアントにライトアヘッドログ（WAL）を開いたままにして、実際のチェックポイント処理をLitestreamに任せることを強制することです。\n"
+"- [Litestream with systemd](https://litestream.io/guides/systemd/)または別のスケジューラーを使用して、直近で更新されたDBを見つけてバックアップします。デフォルトでは、個々のユーザーデータベースは`/pds/actors/`に配置されます。Litestreamはライトアヘッドログとチェックポイントを自動的にクリーンアップするため、WALが制御不能に増加するリスクはありません。\n"
+"- 必要に応じて、デプロイメントからコンテナまたはポッドをクリーンアップするときに、このスクリプトがSIGTERMでも実行されるようにしてください。\n"
 
 #. type: Plain text
 #: src/guides/going-to-production/en.mdx:36

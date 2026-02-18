@@ -38,7 +38,7 @@ msgstr ""
 #: src/guides/account-migration/en.mdx:8
 #, no-wrap
 msgid "This document complements the [Account Hosting](/specs/account) specification, which gives a high-level overview of account lifecycles. It breaks down the individual migration steps, both for an \"easy\" migration (when both PDS instances participate), and for account recovery scenarios. Note that these specific mechanisms are not a formal part of the protocol, and may evolve over time.\n"
-msgstr "この文書は[アカウントホスティング](/specs/account]仕様が与えるアカウントライフサイクル概要を補完します。両方のPDSが協力する簡単な移行と、アカウント復旧シナリオの双方における移行手順を詳細に示します。これらの具体的な仕組みはプロトコルの正式な一部ではなく、将来的に変更される可能性があることに注意してください。\n"
+msgstr "この文書は[アカウントホスティング](/specs/account)仕様が与えるアカウントライフサイクル概要を補完します。両方のPDSが協力する簡単な移行と、アカウント復旧シナリオの双方における移行手順を詳細に示します。これらの具体的な仕組みはプロトコルの正式な一部ではなく、将来的に変更される可能性があることに注意してください。\n"
 
 #. type: Plain text
 #: src/guides/account-migration/en.mdx:12
@@ -164,7 +164,7 @@ msgstr "コンテンツが移行されたら、ID（DIDとハンドル）を更�
 #: src/guides/account-migration/en.mdx:50
 #, no-wrap
 msgid "\"Recommended\" DID document parameters can be fetched from the new PDS using the `com.atproto.identity.getRecommendedDidCredentials` endpoint. This will include the DID service hostname, local handle (as requested during account creation), a PDS-managed atproto signing key (public key), and (if relevant) PLC rotation keys (public keys).\n"
-msgstr "推奨されるDIDドキュメントのパラメータは、新PDSの`com.atproto.identity.getRecommendedDidCredentials`エンドポイントから取得できます。これにはDIDのサービスホスト名、ローカルハンドル（アカウント作成時に要求したもの）、PDS管理のAtproto署名鍵（公開鍵）、および該当する場合はPLC回転鍵（公開鍵）が含まれます。\n"
+msgstr "推奨されるDIDドキュメントのパラメータは、新PDSの`com.atproto.identity.getRecommendedDidCredentials`エンドポイントから取得できます。これにはDIDのサービスホスト名、ローカルハンドル（アカウント作成時に要求したもの）、PDS管理のAtproto署名鍵（公開鍵）、および該当する場合はPLCローテーション鍵（公開鍵）が含まれます。\n"
 
 #. type: Plain text
 #: src/guides/account-migration/en.mdx:52
@@ -176,7 +176,7 @@ msgstr "秘密鍵の鍵ペアを安全に管理できるユーザー（例：パ
 #: src/guides/account-migration/en.mdx:54
 #, no-wrap
 msgid "For a self-controlled identity (eg, `did:web`, or `did:plc` with local rotation key), the identity update can be done directly by the user.\n"
-msgstr "自己管理型のID（例：`did:web`、またはローカル回転鍵を持つ`did:plc`）の場合、IDの更新はユーザー自身が直接行うことができます。\n"
+msgstr "自己管理型のID（例：`did:web`、またはローカルのローテーション鍵を持つ`did:plc`）の場合、IDの更新はユーザー自身が直接行うことができます。\n"
 
 #. type: Plain text
 #: src/guides/account-migration/en.mdx:56
@@ -206,7 +206,7 @@ msgstr "その後、ユーザーはそのオペレーションを新PDS（`com.a
 #: src/guides/account-migration/en.mdx:64
 #, no-wrap
 msgid "With the identity successfully updated, the new PDS is now the \"current\" host for the account from the perspective of the entire network. This will be immediately apparent to new services which resolve the identity. Existing services that consume from the firehose will be alerted by the `#identity` event. Other services, which may have now-stale cached identity metadata for the account, will either refresh when the cache expires, or should refresh their cache when they encounter errors (such as invalid service auth signatures).\n"
-msgstr "IDが正常に更新されると、新PDSはネットワーク全体でそのアカウントの現行ホストになります。これは新規サービスのID解決には即座に反映されます。firehoseを消費している既存サービスには`#identity`イベントで通知されます。古いIDメタデータのキャッシュを持つサービスは、キャッシュの期限切れ時に更新するか、署名失敗などのエラーに遭遇した際にキャッシュを更新します。\n"
+msgstr "IDが正常に更新されると、新PDSはネットワーク全体でそのアカウントの現行ホストになります。これは新規サービスのID解決には即座に反映されます。firehoseを消費している既存サービスには`#identity`イベントで通知されます。古いIDメタデータのキャッシュを持つサービスは、キャッシュの期限切れ時に更新するか、不正なサービス認証の署名などのエラーに遭遇した際にキャッシュを更新します。\n"
 
 #. type: Plain text
 #: src/guides/account-migration/en.mdx:66
@@ -224,7 +224,7 @@ msgstr "<Heading level={2} id=\"finalizing-account-status\">アカウント状�
 #: src/guides/account-migration/en.mdx:70
 #, no-wrap
 msgid "At this point, the user is still able to authenticate to both PDS instances. The new PDS knows that it is current for the account, but still has the account marked as \"deactivated\". The old PDS may not realize that it is no longer current.\n"
-msgstr "この時点ではユーザーは両方のPDSインスタンスに認証可能です。新PDSはアカウントの現行であることを認識していますが、アカウントはまだ無効化されたままです。旧PDSはもはや現行でないことに気づかない可能性があります。\n"
+msgstr "この時点ではユーザーは両方のPDSインスタンスに認証可能です。新PDSは自身がアカウントにとって現行であることを認識していますが、アカウントはまだ無効化されたままです。旧PDSはもはや現行でないことに気づかない可能性があります。\n"
 
 #. type: Plain text
 #: src/guides/account-migration/en.mdx:72
@@ -248,4 +248,4 @@ msgstr "この時点で移行は完了です。リポジトリへ書き込むこ
 #: src/guides/account-migration/en.mdx:77
 #, no-wrap
 msgid "It will still be possible to login and authenticate with the old PDS. The user may wish to fully terminated their old account eventually. This can be automated with the `deleteAfter` parameter to the `com.atproto.server.deactivateAccount` request. Note that the old PDS may be able to assist with PLC identity recovery during a fixed 72hr window, but only if the account was not fully deleted during that window.\n"
-msgstr "旧PDSでログインや認証を行うことは引き続き可能です。ユーザーは最終的に旧アカウントを完全に削除したい場合があります。これは`com.atproto.server.deactivateAccount`リクエストの`deleteAfter`パラメータで自動化できます。旧PDSは72時間固定のウィンドウ内でPLC識別子の復旧を支援できる場合がありますが、そのウィンドウ内でアカウントが完全に削除されていない場合に限ります。\n"
+msgstr "旧PDSでログインや認証を行うことは引き続き可能です。ユーザーは最終的に旧アカウントを完全に削除したい場合があります。これは`com.atproto.server.deactivateAccount`リクエストの`deleteAfter`パラメータで自動化できます。旧PDSは72時間固定のウィンドウ内でPLC IDの復旧を支援できる場合がありますが、そのウィンドウ内でアカウントが完全に削除されていない場合に限ります。\n"
