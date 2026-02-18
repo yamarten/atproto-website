@@ -93,21 +93,12 @@ export const Header = forwardRef<
         <TopLevelNavItem href="/sdks" className="hidden sm:block">
           SDKs
         </TopLevelNavItem>
+        <TopLevelNavItem href="/blog">Blog</TopLevelNavItem>
       </ul>
       <div className="hidden lg:block lg:h-5 lg:w-px lg:bg-zinc-900/10 lg:dark:bg-white/15" />
       <Search />
       <div className="hidden flex-1 sm:flex" />
       <div className="flex items-center gap-5">
-        <nav className="hidden pr-4 xl:block">
-          <ul role="list" className="flex items-center gap-8">
-            <TopLevelNavItem href="https://blueskydirectory.com/">
-              Showcase
-            </TopLevelNavItem>
-            <TopLevelNavItem href="https://docs.bsky.app/blog">
-              Blog
-            </TopLevelNavItem>
-          </ul>
-        </nav>
         <nav className="hidden md:block">
           <ul role="list" className="flex items-center gap-6">
             <TopLevelNavItem href="https://bsky.app/profile/atproto.com">
