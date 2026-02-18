@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-12 10:49+0900\n"
+"POT-Creation-Date: 2026-02-18 14:17+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,17 +44,11 @@ msgid "You should also have our `lex` CLI tool installed globally:\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/bot-tutorial/en.mdx:42 src/guides/statusphere-tutorial/en.mdx:46
-#, no-wrap
-msgid "## Part 1: Lexicons \n"
-msgstr ""
-
-#. type: Plain text
 #: src/guides/bot-tutorial/en.mdx:245
 #: src/guides/custom-feed-tutorial/en.mdx:387
 #: src/guides/oauth-tutorial/en.mdx:783
 #: src/guides/statusphere-tutorial/en.mdx:728
-#: src/articles/atproto-ethos/en.mdx:136
+#: src/articles/atproto-ethos/en.mdx:135
 #, no-wrap
 msgid "## Conclusion\n"
 msgstr ""
@@ -97,9 +91,9 @@ msgstr ""
 msgid ""
 "import {Container} from \"@/components/Container\"\n"
 "import setstatus from \"./set-status.png\"\n"
-"import pdsls from \"./pdsls-status.png\"\n"
 "import tap from \"./tap-status.png\"\n"
 "import feed from \"./feed-status.png\"\n"
+"import taproot from \"./taproot-status.png\"\n"
 msgstr ""
 
 #. type: Plain text
@@ -162,6 +156,12 @@ msgid ""
 "```bash\n"
 "pnpm add @atproto/common-web @atproto/lex @atproto/syntax @atproto/tap\n"
 "```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/statusphere-tutorial/en.mdx:46
+#, no-wrap
+msgid "## Part 1: Lexicons\n"
 msgstr ""
 
 #. type: Plain text
@@ -628,7 +628,7 @@ msgstr ""
 #. type: Plain text
 #: src/guides/statusphere-tutorial/en.mdx:306
 #, no-wrap
-msgid "You won't yet have a way to see your status in this app, but you can look up your account on [pdsls](https://pdsls.dev) and check the `xyz.statusphere.status` Lexicon to see this record.\n"
+msgid "You won't yet have a way to see your status in this app, but you can look up your account on [atproto.at](https://atproto.at/) and check the `xyz.statusphere.status` Lexicon to see this record.\n"
 msgstr ""
 
 #. type: Plain text
@@ -636,7 +636,7 @@ msgstr ""
 #, no-wrap
 msgid ""
 "<Container>\n"
-"  <Image src={pdsls} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
+"  <Image src={taproot} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
 "</Container>\n"
 msgstr ""
 

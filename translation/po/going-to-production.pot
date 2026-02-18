@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-11 10:36+0900\n"
+"POT-Creation-Date: 2026-02-18 14:17+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -206,7 +206,7 @@ msgstr ""
 #. type: Plain text
 #: src/guides/going-to-production/en.mdx:68
 #, no-wrap
-msgid "Moderation is almost always performed at the PDS level. However, if you are also running a Relay, you should be aware that the Relay admin web interface has forms for performing account-level and PDS-level actions if needed. There are also some moderation-related PDS endpoints not exposed via XRPC, which our [goat](https://github.com/bluesky-social/goat) CLI tool can interact with. Refer to [goat/pds_admin.go](https://github.com/bluesky-social/goat/blob/main/pds_admin.go) for examples.\n"
+msgid "Moderation actions can be applied at both the AppView and the PDS level. However, if you are also running a Relay, you should be aware that the Relay admin web interface has forms for performing account-level and PDS-level actions if needed. There are also some moderation-related PDS endpoints not exposed via XRPC, which our [goat](https://github.com/bluesky-social/goat) CLI tool can interact with. Refer to [goat/pds_admin.go](https://github.com/bluesky-social/goat/blob/main/pds_admin.go) for examples.\n"
 msgstr ""
 
 #. type: Plain text

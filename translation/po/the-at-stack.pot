@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-07 17:03+0900\n"
+"POT-Creation-Date: 2026-02-18 14:17+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -179,7 +179,7 @@ msgstr ""
 #: src/guides/the-at-stack/en.mdx:66
 #, no-wrap
 msgid ""
-"- https://pdsls.dev/, which lets you browse all the data stored in your own repository (and what PDS it's currently hosted on)\n"
+"- https://atproto.at/, which lets you browse all the data stored in your own repository (and what PDS it's currently hosted on)\n"
 "- https://pdsmoover.com/, a collection of tools for PDS migration\n"
 "- https://boat.kelinci.net/, a set of interfaces for repository import and export\n"
 "- https://github.com/bluesky-social/goat, our Go AT command-line tool.\n"

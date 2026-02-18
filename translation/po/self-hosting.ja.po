@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-07 17:03+0900\n"
+"POT-Creation-Date: 2026-02-18 14:17+0900\n"
 "PO-Revision-Date: 2026-01-07 19:40+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -101,10 +101,14 @@ msgstr "Blueskyは多くのPDSの前に「entryway」を置いて運用してい
 
 #. type: Plain text
 #: src/guides/self-hosting/en.mdx:29
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid ""
+#| "There are also several community PDS implementations! For example:\n"
+#| "- [Tranquil PDS](https://tangled.org/lewis.moe/bspds-sandbox), written in Rust.\n"
+#| "- [Cocoon](https://tangled.org/hailey.at/cocoon), written in Go.\n"
 msgid ""
 "There are also several community PDS implementations! For example:\n"
-"- [Tranquil PDS](https://tangled.org/lewis.moe/bspds-sandbox), written in Rust.\n"
+"- [Tranquil PDS](https://tangled.org/tranquil.farm/tranquil-pds), written in Rust.\n"
 "- [Cocoon](https://tangled.org/hailey.at/cocoon), written in Go.\n"
 msgstr ""
 "コミュニティによるPDS実装もあります。例えば、以下があります。\n"

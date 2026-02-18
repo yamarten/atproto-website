@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"POT-Creation-Date: 2026-02-18 14:17+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,18 +17,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: Plain text
-#: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:21
-#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:64
-#: src/guides/streaming-data/en.mdx:60 src/guides/video-handling/en.mdx:39
-#: src/guides/account-migration/en.mdx:74 src/guides/feeds/en.mdx:105
-#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:52
+#: src/guides/account-lifecycle/en.mdx:65
+#: src/guides/images-and-video/en.mdx:142 src/guides/moderation/en.mdx:30
+#: src/guides/reads-and-writes/en.mdx:73 src/guides/streaming-data/en.mdx:60
+#: src/guides/video-handling/en.mdx:41 src/guides/feeds/en.mdx:111
+#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:56
 #: src/guides/scopes/en.mdx:45 src/guides/subscriptions/en.mdx:78
 #: src/guides/writing-data/en.mdx:181 src/guides/creating-a-labeler/en.mdx:56
-#: src/guides/labels/en.mdx:110 src/guides/sdk-auth/en.mdx:145
-#: src/guides/sync/en.mdx:51 src/guides/auth/en.mdx:41
-#: src/guides/lexicon/en.mdx:128 src/guides/publishing-lexicons/en.mdx:53
+#: src/guides/labels/en.mdx:110 src/guides/sdk-auth/en.mdx:112
+#: src/guides/sync/en.mdx:51 src/guides/auth/en.mdx:74
+#: src/guides/lexicon/en.mdx:128 src/guides/publishing-lexicons/en.mdx:49
 #: src/guides/backfilling/en.mdx:60 src/guides/reading-data/en.mdx:165
-#: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
+#: src/guides/social-graph/en.mdx:19 src/guides/permission-sets/en.mdx:214
+#: src/guides/using-ozone/en.mdx:132
 #, no-wrap
 msgid "## Further Reading and Resources\n"
 msgstr ""
@@ -58,17 +59,23 @@ msgstr ""
 #. type: Plain text
 #: src/guides/video-handling/en.mdx:11
 #, no-wrap
-msgid "## Aspect ratios\n"
+msgid "For this reason, video uploads are typically handled by a side-car service before the final file(s) are uploaded to the PDS as blobs. For example, Bluesky has the `https://video.bsky.app` service for handling the upload and transcoding of videos before they are written to the PDS as a blob.\n"
 msgstr ""
 
 #. type: Plain text
 #: src/guides/video-handling/en.mdx:13
 #, no-wrap
+msgid "## Aspect ratios\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/video-handling/en.mdx:15
+#, no-wrap
 msgid "Depending on the requirements of your application, you may need to supply an aspect ratio along with video uploads. This metadata can be tricky to compute. If you're developing in a browser, you can load the video into a `<video>` and observe the dimensions when loaded. If you're in a native app, you'll most likely be able to get it via the media picker APIs. Alternatively, you can use a tool like `ffprobe` :\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/video-handling/en.mdx:16
+#: src/guides/video-handling/en.mdx:18
 #, no-wrap
 msgid ""
 "```jsx\n"
@@ -76,7 +83,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/video-handling/en.mdx:26
+#: src/guides/video-handling/en.mdx:28
 #, no-wrap
 msgid ""
 "export async function getAspectRatio(fileName: string) {\n"
@@ -91,31 +98,31 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/video-handling/en.mdx:28
+#: src/guides/video-handling/en.mdx:30
 #, no-wrap
 msgid "## Transcoding\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/video-handling/en.mdx:30
+#: src/guides/video-handling/en.mdx:32
 #, no-wrap
 msgid "Videos will need time to transcode using a tool like `ffmpeg` on the server side before they are available from the firehose. This can lead to UX gaps — if a video blob is accompanying a new post, the video service only knows about the video once the post appears in the firehose. This means that people will be able to see the post before processing is complete, which will show a missing video for several seconds.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/video-handling/en.mdx:32
+#: src/guides/video-handling/en.mdx:34
 #, no-wrap
 msgid "It is possible to design an application endpoint to allow submitting videos to a separate microservice for processing before creating a post. This method also allows for better UX, since you can show the processing state to the user and let them know if the processing job fails.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/video-handling/en.mdx:34
+#: src/guides/video-handling/en.mdx:36
 #, no-wrap
 msgid "There are client-side code samples for both methods here:\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/video-handling/en.mdx:37
+#: src/guides/video-handling/en.mdx:39
 #, no-wrap
 msgid ""
 "- [Simple Method](https://tangled.sh/strings/did:plc:p2cp5gopk7mgjegy6wadk3ep/3lw74be4dr422)\n"
@@ -123,7 +130,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/video-handling/en.mdx:44
+#: src/guides/video-handling/en.mdx:46
 #, no-wrap
 msgid ""
 "- [Images and Video](/guides/images-and-video)\n"

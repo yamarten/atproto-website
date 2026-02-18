@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-07 17:03+0900\n"
+"POT-Creation-Date: 2026-02-18 14:17+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,8 +17,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: Plain text
-#: src/guides/applications/en.mdx:677 src/articles/atproto-ethos/en.mdx:147
-#: src/articles/atproto-for-distsys-engineers/en.mdx:227
+#: src/guides/applications/en.mdx:677 src/articles/atproto-ethos/en.mdx:146
+#: src/articles/atproto-for-distsys-engineers/en.mdx:226
 #, no-wrap
 msgid "<FooterCTA href=\"/\" title=\"Ready to learn more?\" description=\"Specs, guides, and SDKs can be found here.\" />\n"
 msgstr "<FooterCTA href=\"/\" title=\"さらに学習する準備はできましたか？\" description=\"仕様、ガイド、SDKはここにあります。\" />\n"
@@ -83,14 +83,20 @@ msgstr ""
 "import image24 from './image24.png'\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:34
-#, no-wrap
+#: src/articles/atproto-for-distsys-engineers/en.mdx:33
+#, fuzzy, no-wrap
+#| msgid ""
+#| "export const header = {\n"
+#| "  title: 'ATProto for distributed systems engineers',\n"
+#| "  description:\n"
+#| "    'In this article we\\'re going to explore AT Proto from the perspective of distributed backend engineering.',\n"
+#| "  date: 'Sep 3, 2024',\n"
+#| "}\n"
 msgid ""
 "export const header = {\n"
 "  title: 'ATProto for distributed systems engineers',\n"
 "  description:\n"
 "    'In this article we\\'re going to explore AT Proto from the perspective of distributed backend engineering.',\n"
-"  date: 'Sep 3, 2024',\n"
 "}\n"
 msgstr ""
 "export const header = {\n"
@@ -101,25 +107,25 @@ msgstr ""
 "}\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:36
+#: src/articles/atproto-for-distsys-engineers/en.mdx:35
 #, no-wrap
 msgid "If you've ever built a backend with [stream-processing](https://milinda.pathirage.org/kappa-architecture.com/), then you're familiar with the kind of systems we'll be exploring. If you're not &mdash; no worries! We'll step through it. {{className: 'lead'}}\n"
 msgstr "[ストリーム処理](https://milinda.pathirage.org/kappa-architecture.com/)を使用してバックエンドを構築したことがある場合は、これから説明する種類のシステムに精通していることになります。そうでない場合も心配しないでください。順を追って説明します。{{className: 'lead'}}\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:38
+#: src/articles/atproto-for-distsys-engineers/en.mdx:37
 #, no-wrap
 msgid "## Scaling the traditional Web backend\n"
 msgstr "<Heading level={2} id=\"scaling-the-traditional-web-backend\">従来のウェブバックエンドのスケーリング</Heading>\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:40
+#: src/articles/atproto-for-distsys-engineers/en.mdx:39
 #, no-wrap
 msgid "The classic, happy Web architecture is the “one big SQL database” behind our app server. The app talks to the database and handles requests from the frontend.\n"
 msgstr "従来の、使いやすいウェブアーキテクチャは、アプリサーバーの背後にある「1つの大きなSQLデータベース」です。アプリはデータベースと通信し、フロントエンドからのリクエストを処理します。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:44
+#: src/articles/atproto-for-distsys-engineers/en.mdx:43
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -131,13 +137,13 @@ msgstr ""
 "</Container>\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:46
+#: src/articles/atproto-for-distsys-engineers/en.mdx:45
 #, no-wrap
 msgid "As our application grows, we hit some performance limits so we toss some caches into the stack.\n"
 msgstr "アプリケーションが大きくなるにつれて、パフォーマンスの限界に達するため、スタックにキャッシュをいくつか投入します。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:50
+#: src/articles/atproto-for-distsys-engineers/en.mdx:49
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -149,13 +155,13 @@ msgstr ""
 "</Container>\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:52
+#: src/articles/atproto-for-distsys-engineers/en.mdx:51
 #, no-wrap
 msgid "Then let's say we scale our database horizontally through sharding and replicas.\n"
 msgstr "次に、シャーディングとレプリカを使用してデータベースを水平方向にスケーリングするとします。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:56
+#: src/articles/atproto-for-distsys-engineers/en.mdx:55
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -167,19 +173,19 @@ msgstr ""
 "</Container>\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:58
+#: src/articles/atproto-for-distsys-engineers/en.mdx:57
 #, no-wrap
 msgid "This is pretty good, but we're building a social network with hundreds of millions of users; even this model hits limits. The problem is that our SQL database is “[strongly consistent](https://en.wikipedia.org/wiki/Strong_consistency)” which means the state is kept uniformly in sync across the system. Maintaining strong consistency incurs a performance cost which becomes our bottleneck. \n"
 msgstr "これはかなり良いですが、何億人ものユーザーを抱えるソーシャルネットワークを構築しているため、このモデルでも限界に達します。問題は、SQLデータベースが[強い一貫性](https://en.wikipedia.org/wiki/Strong_consistency)を持つことです。つまり、状態はシステム全体で均一に同期されています。強い一貫性を維持するとパフォーマンスコストが発生し、それがボトルネックになります。 \n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:60
+#: src/articles/atproto-for-distsys-engineers/en.mdx:59
 #, no-wrap
 msgid "If we can relax our system to use “[eventual consistency](https://en.wikipedia.org/wiki/Eventual_consistency),” we can scale much further. We start by switching to a NoSQL cluster.\n"
 msgstr "システムを緩和して[結果整合性](https://en.wikipedia.org/wiki/Eventual_consistency)を使用できれば、さらに拡張できます。まず、NoSQLクラスターに切り替えます。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:64
+#: src/articles/atproto-for-distsys-engineers/en.mdx:63
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -191,25 +197,25 @@ msgstr ""
 "</Container>\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:66
+#: src/articles/atproto-for-distsys-engineers/en.mdx:65
 #, no-wrap
 msgid "This is better for scaling, but without SQL it's becoming harder to build our queries. It turns out that SQL databases have a lot of useful features, like JOIN and aggregation queries. In fact, our NoSQL database is really just a key-value store. Writing features is becoming a pain!\n"
 msgstr "これは拡張には適していますが、SQLがないとクエリの構築が難しくなります。SQLデータベースには、JOINや集計クエリなど、多くの便利な機能があることがわかりました。実際、NoSQLデータベースは単なるキーバリューストアです。機能の作成は面倒になってしまいます。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:68
+#: src/articles/atproto-for-distsys-engineers/en.mdx:67
 #, no-wrap
 msgid "To fix this, we need to write programs which generate precomputed views of our dataset. These views are essentially like cached queries. We even duplicate the canonical data into these views so they're very fast.\n"
 msgstr "これを修正するには、データセットの事前計算済みビューを生成するプログラムを作成する必要があります。これらのビューは、本質的にはキャッシュされたクエリのようなものです。これらのビューに標準データを複製して、非常に高速にします。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:70
+#: src/articles/atproto-for-distsys-engineers/en.mdx:69
 #, no-wrap
 msgid "We'll call these our View servers.\n"
 msgstr "これらをビューサーバーと呼びます。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:74
+#: src/articles/atproto-for-distsys-engineers/en.mdx:73
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -221,19 +227,19 @@ msgstr ""
 "</Container>\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:76
+#: src/articles/atproto-for-distsys-engineers/en.mdx:75
 #, no-wrap
 msgid "Now we notice that keeping our view servers synced with the canonical data in the NoSQL cluster is tricky. Sometimes our view servers crash and miss updates. We need to make sure that our views stay reliably up-to-date.\n"
 msgstr "ここで、ビューサーバーをNoSQLクラスター内の正規データと同期させ続けるのは難しいことに気が付きました。ビューサーバーがクラッシュして更新が失われることがあります。ビューが確実に最新の状態に保たれるようにする必要があります。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:78
+#: src/articles/atproto-for-distsys-engineers/en.mdx:77
 #, no-wrap
 msgid "To solve this, we introduce an event log (such as [Kafka](https://kafka.apache.org/)). That log records and broadcasts all the changes to the NoSQL cluster. Our view servers listen to &mdash; and replay &mdash; that log to ensure they never miss an update, even when they need to restart.\n"
 msgstr "この問題を解決するために、イベントログ（[Kafka](https://kafka.apache.org/)など）を導入します。このログは、NoSQLクラスターへのすべての変更を記録してブロードキャストします。ビューサーバーは、再起動が必要な場合でも更新を見逃さないように、このログをリッスンして再生します。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:82
+#: src/articles/atproto-for-distsys-engineers/en.mdx:81
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -245,43 +251,43 @@ msgstr ""
 "</Container>\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:84
+#: src/articles/atproto-for-distsys-engineers/en.mdx:83
 #, no-wrap
 msgid "We've now arrived at a [stream processing architecture](https://milinda.pathirage.org/kappa-architecture.com/), and while there are a lot more details we could cover, this is enough for now.\n"
 msgstr "これで[ストリーム処理アーキテクチャ](https://milinda.pathirage.org/kappa-architecture.com/)に到達しました。さらに詳しく説明できる点はたくさんありますが、今のところはこれで十分です。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:86
+#: src/articles/atproto-for-distsys-engineers/en.mdx:85
 #, no-wrap
 msgid "The good news is that this architecture scales pretty well. We've given up strong consistency and sometimes our read queries lag behind the most up to date version of the data, but the service doesn't drop writes or enter an incorrect state.\n"
 msgstr "良いニュースは、このアーキテクチャの拡張性が非常に高いことです。強い一貫性はあきらめ、読み取りクエリがデータの最新バージョンより遅れることもありますが、サービスが書き込みをドロップしたり、誤った状態になったりすることはありません。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:88
+#: src/articles/atproto-for-distsys-engineers/en.mdx:87
 #, no-wrap
 msgid "In a way, what we've done is custom-built a database by [turning it inside-out](https://www.youtube.com/watch?v=fU9hR3kiOK0). We simplified the canonical storage into a NoSQL cluster, and then built our own querying engine with the view servers. It's a lot less convenient to build with, but it scales.\n"
 msgstr "ある意味、私たちが行ったのは[データベースを裏返しにして](https://www.youtube.com/watch?v=fU9hR3kiOK0)、データベースをカスタム構築したことです。標準ストレージをNoSQLクラスターに簡素化し、ビューサーバーを使用して独自のクエリエンジンを構築しました。構築の利便性は大幅に低下しますが、拡張性があります。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:90
+#: src/articles/atproto-for-distsys-engineers/en.mdx:89
 #, no-wrap
 msgid "## Decentralizing our high-scale backend\n"
 msgstr "<Heading level={2} id=\"decentralizing-our-high-scale-backend\">大規模バックエンドの分散化</Heading>\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:92
+#: src/articles/atproto-for-distsys-engineers/en.mdx:91
 #, no-wrap
 msgid "The goal of AT Protocol is to interconnect applications so that their backends share state, including user accounts and content.\n"
 msgstr "ATプロトコルの目標は、アプリケーションを相互接続して、バックエンド間でユーザーアカウントやコンテンツなどの状態を共有することです。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:94
+#: src/articles/atproto-for-distsys-engineers/en.mdx:93
 #, no-wrap
 msgid "How can we do that? If we look at our diagram, we can see that most of the system is isolated from the outside world, with only the App server providing a public interface.\n"
 msgstr "どうすればそれができるでしょうか。図を見ると、システムの大部分が外部から分離されており、アプリサーバーのみがパブリックインターフェイスを提供していることがわかります。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:98
+#: src/articles/atproto-for-distsys-engineers/en.mdx:97
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -293,19 +299,19 @@ msgstr ""
 "</Container>\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:100
+#: src/articles/atproto-for-distsys-engineers/en.mdx:99
 #, no-wrap
 msgid "Our goal is to break this isolation down so that other people can join our NoSQL cluster, our event log, our view servers, and so on.\n"
 msgstr "私たちの目標は、この分離を解消して、他の人がNoSQLクラスター、イベントログ、ビューサーバーなどに参加できるようにすることです。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:102
+#: src/articles/atproto-for-distsys-engineers/en.mdx:101
 #, no-wrap
 msgid "Here's how it's going to look:\n"
 msgstr "次のようになります。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:106
+#: src/articles/atproto-for-distsys-engineers/en.mdx:105
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -317,19 +323,19 @@ msgstr ""
 "</Container>\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:108
+#: src/articles/atproto-for-distsys-engineers/en.mdx:107
 #, no-wrap
 msgid "Each of these internal services are now external services. They have public APIs which anybody can consume. On top of that, anybody can create their own instances of these services.\n"
 msgstr "これらの内部サービスはそれぞれ外部サービスになりました。これらには、誰でも使用できるパブリックAPIがあります。さらに、誰でもこれらのサービスの独自のインスタンスを作成できます。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:110
+#: src/articles/atproto-for-distsys-engineers/en.mdx:109
 #, no-wrap
 msgid "Our goal is to make it so anybody can contribute to this decentralized backend. That means that we don't just want one NoSQL cluster, or one View server. We want lots of these servers working together. So really it's more like this:\n"
 msgstr "私たちの目標は、誰もがこの分散型バックエンドに貢献できるようにすることです。つまり、1つのNoSQLクラスターや1つのビューサーバーだけが必要なわけではありません。多数のサーバーが連携して動作することが必要です。したがって、実際には次のようになります。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:114
+#: src/articles/atproto-for-distsys-engineers/en.mdx:113
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -341,25 +347,25 @@ msgstr ""
 "</Container>\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:116
+#: src/articles/atproto-for-distsys-engineers/en.mdx:115
 #, no-wrap
 msgid "So how do we make all of these services work together?\n"
 msgstr "では、これらすべてのサービスを連携させるにはどうすればよいでしょうか?\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:118
+#: src/articles/atproto-for-distsys-engineers/en.mdx:117
 #, no-wrap
 msgid "## Unifying the data model\n"
 msgstr "<Heading level={2} id=\"unifying-the-data-model\">データモデルの統合</Heading>\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:120
+#: src/articles/atproto-for-distsys-engineers/en.mdx:119
 #, no-wrap
 msgid "We're going to establish a shared data model called the [“user data repository.”](/guides/data-repos)\n"
 msgstr "[ユーザーデータリポジトリ](/guides/data-repos)と呼ばれる共有データモデルを確立します。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:124
+#: src/articles/atproto-for-distsys-engineers/en.mdx:123
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -371,13 +377,13 @@ msgstr ""
 "</Container>\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:126
+#: src/articles/atproto-for-distsys-engineers/en.mdx:125
 #, no-wrap
 msgid "Every data repository contains JSON documents, which we'll call “records”.\n"
 msgstr "すべてのデータリポジトリには、JSONドキュメント（ここではレコードと呼びます）が含まれます。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:130
+#: src/articles/atproto-for-distsys-engineers/en.mdx:129
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -389,13 +395,13 @@ msgstr ""
 "</Container>\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:132
+#: src/articles/atproto-for-distsys-engineers/en.mdx:131
 #, no-wrap
 msgid "For organizational purposes, we'll bucket these records into “collections.”\n"
 msgstr "整理のため、これらのレコードをコレクションとしてまとめます。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:136
+#: src/articles/atproto-for-distsys-engineers/en.mdx:135
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -407,13 +413,13 @@ msgstr ""
 "</Container>\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:138
+#: src/articles/atproto-for-distsys-engineers/en.mdx:137
 #, no-wrap
 msgid "Now we're going to opinionate our NoSQL services so they all use this [data repository](/guides/data-repos) model.\n"
 msgstr "次に、NoSQLサービスに意見を表明して、すべてのサービスがこの[データリポジトリ](/guides/data-repos)モデルを使用するようにします。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:142
+#: src/articles/atproto-for-distsys-engineers/en.mdx:141
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -425,13 +431,13 @@ msgstr ""
 "</Container>\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:144
+#: src/articles/atproto-for-distsys-engineers/en.mdx:143
 #, no-wrap
 msgid "Remember: the data repo services are still basically NoSQL stores, it's just that they're now organized in a very specific way:\n"
 msgstr "振り返りましょう。データリポジトリサービスは基本的にNoSQLストアのままですが、明確に定められた方法で整理されるようになりました。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:148
+#: src/articles/atproto-for-distsys-engineers/en.mdx:147
 #, no-wrap
 msgid ""
 "1. Each user has a data repository.\n"
@@ -443,13 +449,13 @@ msgstr ""
 "3. 各コレクションは、JSONドキュメントの順序付けられたK/Vストアです。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:150
+#: src/articles/atproto-for-distsys-engineers/en.mdx:149
 #, no-wrap
 msgid "Since the data repositories can be hosted by anybody, we need to give them [URLs](/specs/at-uri-scheme).\n"
 msgstr "データリポジトリは誰でもホストできるため、[URL](/specs/at-uri-scheme)を指定する必要があります。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:154
+#: src/articles/atproto-for-distsys-engineers/en.mdx:153
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -461,13 +467,13 @@ msgstr ""
 "</Container>\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:156
+#: src/articles/atproto-for-distsys-engineers/en.mdx:155
 #, no-wrap
 msgid "While we're at it, let's create a [whole URL scheme](/specs/at-uri-scheme) for our records too.\n"
 msgstr "ついでに、レコード用の[URLスキーム全体](/specs/at-uri-scheme)も作成しましょう。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:160
+#: src/articles/atproto-for-distsys-engineers/en.mdx:159
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -479,13 +485,13 @@ msgstr ""
 "</Container>\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:162
+#: src/articles/atproto-for-distsys-engineers/en.mdx:161
 #, no-wrap
 msgid "Great! Also, since we're going to be syncing these records around the Internet, it would be a good idea to cryptographically sign them so that we know they're authentic.\n"
 msgstr "すばらしい！また、これらのレコードをインターネット上で同期するため、本物であることを確認するために暗号署名することをお勧めします。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:166
+#: src/articles/atproto-for-distsys-engineers/en.mdx:165
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -497,25 +503,25 @@ msgstr ""
 "</Container>\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:168
+#: src/articles/atproto-for-distsys-engineers/en.mdx:167
 #, no-wrap
 msgid "## Charting the flow of data\n"
 msgstr "<Heading level={2} id=\"charting-the-flow-of-data\">データフローを図に表す</Heading>\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:170
+#: src/articles/atproto-for-distsys-engineers/en.mdx:169
 #, no-wrap
 msgid "Now that we've set up our high-scale decentralized backend, let's map out how an application actually works on ATProto.\n"
 msgstr "大規模な分散型バックエンドをセットアップしたので、Atprotoでアプリケーションが実際にどのように動作するかを図にしてみましょう。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:172
+#: src/articles/atproto-for-distsys-engineers/en.mdx:171
 #, no-wrap
 msgid "Since we're making a new app, we're going to want two things: an app server (which hosts our API & frontend) and a view server (which collects data from the network for us). We often bundle the app & view servers, and so we can just call it an “Appview.” Let's start there:\n"
 msgstr "新しいアプリを作成するので、2つのものが必要になります。アプリサーバー（APIとフロントエンドをホスト）とビューサーバー（ネットワークからデータを収集する）です。アプリサーバーとビューサーバーはバンドルされることが多いため、単に「AppView」と呼ぶことができます。まずはそこから始めましょう。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:176
+#: src/articles/atproto-for-distsys-engineers/en.mdx:175
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -527,13 +533,13 @@ msgstr ""
 "</Container>\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:178
+#: src/articles/atproto-for-distsys-engineers/en.mdx:177
 #, no-wrap
 msgid "A user logs into our app using OAuth. In the process, they tell us which server hosts their data repository, _and_ they give us permission to read and write to it.\n"
 msgstr "ユーザーはOAuthを使用してアプリにログインします。その過程で、ユーザーはデータリポジトリをホストするサーバーを私たちに伝え、*そして*それを読み書きする権限を私たちに与えます。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:182
+#: src/articles/atproto-for-distsys-engineers/en.mdx:181
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -545,19 +551,19 @@ msgstr ""
 "</Container>\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:184
+#: src/articles/atproto-for-distsys-engineers/en.mdx:183
 #, no-wrap
 msgid "We're off to a good start &mdash; we can read and write JSON documents in the user's repo. If they already have data from other apps (like a profile) we can read that data too. If we were building a singleplayer app, we'd already be done.\n"
 msgstr "順調なスタートです。ユーザーのリポジトリでJSONドキュメントを読み書きできます。他のアプリから既にデータ（プロフィールなど）がある場合は、そのデータも読み取ることができます。シングルプレイヤーアプリを作成している場合は、すでに完了しています。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:186
+#: src/articles/atproto-for-distsys-engineers/en.mdx:185
 #, no-wrap
 msgid "But let's chart what happens when we write a JSON document.\n"
 msgstr "ただし、JSONドキュメントを書き込むと何が起こるかを図にしてみましょう。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:190
+#: src/articles/atproto-for-distsys-engineers/en.mdx:189
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -569,13 +575,13 @@ msgstr ""
 "</Container>\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:192
+#: src/articles/atproto-for-distsys-engineers/en.mdx:191
 #, no-wrap
 msgid "This commits the document to the repo, then fires off a write into the event logs which are listening to the repo.\n"
 msgstr "これにより、ドキュメントがリポジトリにコミットされ、リポジトリをリッスンしているイベントログへの書き込みが開始されます。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:196
+#: src/articles/atproto-for-distsys-engineers/en.mdx:195
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -587,13 +593,13 @@ msgstr ""
 "</Container>\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:198
+#: src/articles/atproto-for-distsys-engineers/en.mdx:197
 #, no-wrap
 msgid "From there, the event gets sent to any view services that are listening &mdash; including our own!\n"
 msgstr "そこから、イベントはリッスンしているすべてのビューサービスに送信されます。これには、私たち自身のサービスも含まれます。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:202
+#: src/articles/atproto-for-distsys-engineers/en.mdx:201
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -605,13 +611,13 @@ msgstr ""
 "</Container>\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:204
+#: src/articles/atproto-for-distsys-engineers/en.mdx:203
 #, no-wrap
 msgid "Why are we listening to the event stream if we're the one making the write? Because we're not the only ones making writes! There are lots of user repos generating events, and lots of apps writing to them!\n"
 msgstr "書き込みを行っているのに、なぜイベントストリームをリッスンしているのでしょうか。書き込みを行っているのは私たちだけではないからです。イベントを生成するユーザーリポジトリは多数あり、それらに書き込むアプリも多数あります。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:208
+#: src/articles/atproto-for-distsys-engineers/en.mdx:207
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -623,13 +629,13 @@ msgstr ""
 "</Container>\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:210
+#: src/articles/atproto-for-distsys-engineers/en.mdx:209
 #, no-wrap
 msgid "So we can see a kind of circular data flow throughout our decentralized backend, with writes being committed to the data repos, then emitted through the event logs into the view servers, where they can be read by our applications.\n"
 msgstr "このように、分散バックエンド全体で一種の循環データフローが見られます。書き込みはデータリポジトリにコミットされ、イベントログを通じてビューサーバーに送信され、アプリケーションで読み取ることができます。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:214
+#: src/articles/atproto-for-distsys-engineers/en.mdx:213
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -641,13 +647,13 @@ msgstr ""
 "</Container>\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:216
+#: src/articles/atproto-for-distsys-engineers/en.mdx:215
 #, no-wrap
 msgid "And (one hopes) that this network continues to scale: not just to add capacity, but to create a wider variety of applications sharing in this open applications network.\n"
 msgstr "そして、このネットワークが拡張され続けることを願っています。容量を増やすだけでなく、このオープンアプリケーションネットワークで共有されるアプリケーションの多様性を高めるためです。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:220
+#: src/articles/atproto-for-distsys-engineers/en.mdx:219
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -659,19 +665,19 @@ msgstr ""
 "</Container>\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:222
+#: src/articles/atproto-for-distsys-engineers/en.mdx:221
 #, no-wrap
 msgid "## Building practical open systems\n"
 msgstr "<Heading level={2} id=\"building-practical-open-systems\">実用的なオープンシステムの構築</Heading>\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:224
+#: src/articles/atproto-for-distsys-engineers/en.mdx:223
 #, no-wrap
 msgid "The AT Protocol merges p2p tech with high-scale systems practices. Our founding engineers were core [IPFS](https://en.wikipedia.org/wiki/InterPlanetary_File_System) and [Dat](https://en.wikipedia.org/wiki/Dat_(software)) engineers, and Martin Kleppmann &mdash; the author of [Data Intensive Applications](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/) &mdash; is an active technical advisor.\n"
 msgstr "ATプロトコルは、P2Pテクノロジーと大規模システムの実践を融合します。Atprotoの原型を作ったエンジニアは、[IPFS](https://en.wikipedia.org/wiki/InterPlanetary_File_System)および[Dat](https://en.wikipedia.org/wiki/Dat_(software))のコアエンジニアであり、[Data Intensive Applications](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/)の著者であるMartin Kleppmannは、アクティブな技術アドバイザーです。\n"
 
 #. type: Plain text
-#: src/articles/atproto-for-distsys-engineers/en.mdx:226
+#: src/articles/atproto-for-distsys-engineers/en.mdx:225
 #, no-wrap
 msgid "Before Bluesky was started, we established a clear requirement of “no steps backwards.” We wanted the network to feel as convenient and global as every social app before it, while still working as an open network. This is why, when we looked at federation and blockchains, the scaling limits of those architectures stood out to us. Our solution was to take standard practices for high scale backends, and then apply the techniques we used in peer-to-peer systems to create an open network.\n"
 msgstr "Blueskyを始める前に、私たちは「後退しない」という明確な要件を設定しました。ネットワークが、これまでのすべてのソーシャルアプリと同様に便利でグローバルでありながら、オープンネットワークとして機能することを望んでいました。そのため、フェデレーションとブロックチェーンを検討したときに、これらのアーキテクチャのスケーリングの限界が際立っていました。私たちの解決策は、大規模なバックエンドの標準的な方法を採用し、ピアツーピアシステムで使用した手法を適用してオープンネットワークを作成することでした。\n"

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-07 17:03+0900\n"
+"POT-Creation-Date: 2026-02-18 14:17+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -95,7 +95,7 @@ msgstr ""
 #, no-wrap
 msgid ""
 "There are also several community PDS implementations! For example:\n"
-"- [Tranquil PDS](https://tangled.org/lewis.moe/bspds-sandbox), written in Rust.\n"
+"- [Tranquil PDS](https://tangled.org/tranquil.farm/tranquil-pds), written in Rust.\n"
 "- [Cocoon](https://tangled.org/hailey.at/cocoon), written in Go.\n"
 msgstr ""
 
