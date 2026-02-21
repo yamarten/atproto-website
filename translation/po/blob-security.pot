@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-07 17:03+0900\n"
+"POT-Creation-Date: 2026-02-21 18:36+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,6 +20,17 @@ msgstr ""
 #: src/guides/blob-lifecycle/en.mdx:52 src/guides/blob-security/en.mdx:30
 #, no-wrap
 msgid "## Related resources\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/blob-lifecycle/en.mdx:57 src/guides/blob-security/en.mdx:35
+#, no-wrap
+msgid ""
+"- [Images and Video](/guides/images-and-video)\n"
+"- [Blob security](/guides/blob-security)\n"
+"- [Video handling](/guides/video-handling)\n"
+"- [Blob Specs](/specs/blob)\n"
+"- [Streamplace](https://stream.place/docs/) provides an implementation and related Lexicon for video streaming on atproto.\n"
 msgstr ""
 
 #. type: Plain text
@@ -94,15 +105,4 @@ msgstr ""
 #: src/guides/blob-security/en.mdx:28
 #, no-wrap
 msgid "Servers may need to take measures to prevent malicious resource consumption. For example, intentional exhaustion of disk space, network congestion, bandwidth utilization, etc. — rate-limits, size limits, and quotas are recommended.\n"
-msgstr ""
-
-#. type: Plain text
-#: src/guides/blob-security/en.mdx:35
-#, no-wrap
-msgid ""
-"- [Images and Video](/guides/images-and-video)\n"
-"- [Blob security](/guides/blob-security)\n"
-"- [Video handling](/guides/video-handling)\n"
-"- [Blob Specs](/specs/blob)\n"
-"- [Streamplace](https://stream.place/docs/) provides an implementation and related Lexicon for video streaming on ATProto.\n"
 msgstr ""

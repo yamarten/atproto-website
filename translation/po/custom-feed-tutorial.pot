@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-21 12:24+0900\n"
+"POT-Creation-Date: 2026-02-21 18:36+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,6 +21,8 @@ msgstr ""
 #: src/guides/custom-feed-tutorial/en.mdx:14
 #: src/guides/oauth-tutorial/en.mdx:18
 #: src/guides/statusphere-tutorial/en.mdx:17
+#: src/guides/go-oauth-cli-tutorial/en.mdx:11
+#: src/guides/oauth-cli-tutorial/en.mdx:11
 #, no-wrap
 msgid "## Prerequisites\n"
 msgstr ""
@@ -54,6 +56,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/bot-tutorial/en.mdx:13 src/guides/custom-feed-tutorial/en.mdx:16
+#: src/guides/oauth-cli-tutorial/en.mdx:13
 #, no-wrap
 msgid "This tutorial involves building a TypeScript application from scratch. You should have a working understanding of TypeScript and Node.js.\n"
 msgstr ""
@@ -76,6 +79,8 @@ msgstr ""
 #: src/guides/custom-feed-tutorial/en.mdx:387
 #: src/guides/oauth-tutorial/en.mdx:783
 #: src/guides/statusphere-tutorial/en.mdx:728
+#: src/guides/go-oauth-cli-tutorial/en.mdx:241
+#: src/guides/oauth-cli-tutorial/en.mdx:193
 #: src/articles/atproto-ethos/en.mdx:135
 #, no-wrap
 msgid "## Conclusion\n"
@@ -187,7 +192,7 @@ msgstr ""
 #. type: Plain text
 #: src/guides/custom-feed-tutorial/en.mdx:54
 #, no-wrap
-msgid "[Lexicons](/guides/lexicon) define Atproto records. A baseline feed generator requires the `app.bsky.feed.describeFeedGenerator` and `app.bsky.feed.getFeedSkeleton` Lexicons. You can use `lex` to download and build these Lexicons into your project:\n"
+msgid "[Lexicons](/guides/lexicon) define atproto records. A baseline feed generator requires the `app.bsky.feed.describeFeedGenerator` and `app.bsky.feed.getFeedSkeleton` Lexicons. You can use `lex` to download and build these Lexicons into your project:\n"
 msgstr ""
 
 #. type: Plain text
@@ -890,7 +895,7 @@ msgstr ""
 #. type: Plain text
 #: src/guides/custom-feed-tutorial/en.mdx:389
 #, no-wrap
-msgid "You've now built a custom Atproto feed that retrieves posts from the network, indexes them based on your own algorithm, and serves them via XRPC to clients like Bluesky.\n"
+msgid "You've now built a custom atproto feed that retrieves posts from the network, indexes them based on your own algorithm, and serves them via XRPC to clients like Bluesky.\n"
 msgstr ""
 
 #. type: Plain text
@@ -902,7 +907,7 @@ msgstr ""
 #. type: Plain text
 #: src/guides/custom-feed-tutorial/en.mdx:393
 #, no-wrap
-msgid "After that, you can clone down our original [feed-generator repo](https://github.com/bluesky-social/feed-generator) and run the [publishFeedGen.ts](https://github.com/bluesky-social/feed-generator/blob/main/scripts/publishFeedGen.ts) script interactively. This creates the necessary Atproto records to point to your feed server, and allow it to be discovered:\n"
+msgid "After that, you can clone down our original [feed-generator repo](https://github.com/bluesky-social/feed-generator) and run the [publishFeedGen.ts](https://github.com/bluesky-social/feed-generator/blob/main/scripts/publishFeedGen.ts) script interactively. This creates the necessary atproto records to point to your feed server, and allow it to be discovered:\n"
 msgstr ""
 
 #. type: Plain text

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-18 14:17+0900\n"
+"POT-Creation-Date: 2026-02-21 18:36+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,9 +60,9 @@ msgstr ""
 #, no-wrap
 msgid ""
 "export const header = {\n"
-"  title: 'ATProto for distributed systems engineers',\n"
+"  title: 'Atproto for distributed systems engineers',\n"
 "  description:\n"
-"    'In this article we\\'re going to explore AT Proto from the perspective of distributed backend engineering.',\n"
+"    'In this article we\\'re going to explore atproto from the perspective of distributed backend engineering.',\n"
 "}\n"
 msgstr ""
 
@@ -420,7 +420,7 @@ msgstr ""
 #. type: Plain text
 #: src/articles/atproto-for-distsys-engineers/en.mdx:169
 #, no-wrap
-msgid "Now that we've set up our high-scale decentralized backend, let's map out how an application actually works on ATProto.\n"
+msgid "Now that we've set up our high-scale decentralized backend, let's map out how an application actually works on atproto.\n"
 msgstr ""
 
 #. type: Plain text

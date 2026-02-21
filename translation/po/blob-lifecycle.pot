@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-11 10:36+0900\n"
+"POT-Creation-Date: 2026-02-21 18:36+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -159,12 +159,12 @@ msgid "## Related resources\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/blob-lifecycle/en.mdx:57
+#: src/guides/blob-lifecycle/en.mdx:57 src/guides/blob-security/en.mdx:35
 #, no-wrap
 msgid ""
 "- [Images and Video](/guides/images-and-video)\n"
 "- [Blob security](/guides/blob-security)\n"
 "- [Video handling](/guides/video-handling)\n"
 "- [Blob Specs](/specs/blob)\n"
-"- [Streamplace](https://stream.place/docs/) provides an implementation and related Lexicon for video streaming on Atproto.\n"
+"- [Streamplace](https://stream.place/docs/) provides an implementation and related Lexicon for video streaming on atproto.\n"
 msgstr ""

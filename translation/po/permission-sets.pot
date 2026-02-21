@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-11 10:36+0900\n"
+"POT-Creation-Date: 2026-02-21 18:36+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,18 +17,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: Plain text
-#: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:21
-#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:73
-#: src/guides/streaming-data/en.mdx:60 src/guides/video-handling/en.mdx:39
-#: src/guides/feeds/en.mdx:113 src/guides/installing-lexicons/en.mdx:53
-#: src/guides/oauth-patterns/en.mdx:56 src/guides/scopes/en.mdx:45
-#: src/guides/subscriptions/en.mdx:78 src/guides/writing-data/en.mdx:181
-#: src/guides/creating-a-labeler/en.mdx:56 src/guides/labels/en.mdx:110
-#: src/guides/sdk-auth/en.mdx:145 src/guides/sync/en.mdx:51
-#: src/guides/auth/en.mdx:41 src/guides/lexicon/en.mdx:128
-#: src/guides/publishing-lexicons/en.mdx:49 src/guides/backfilling/en.mdx:60
-#: src/guides/reading-data/en.mdx:165 src/guides/social-graph/en.mdx:21
-#: src/guides/permission-sets/en.mdx:214 src/guides/using-ozone/en.mdx:132
+#: src/guides/account-lifecycle/en.mdx:65
+#: src/guides/images-and-video/en.mdx:142 src/guides/moderation/en.mdx:30
+#: src/guides/reads-and-writes/en.mdx:73 src/guides/streaming-data/en.mdx:60
+#: src/guides/video-handling/en.mdx:41 src/guides/feeds/en.mdx:113
+#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:57
+#: src/guides/scopes/en.mdx:45 src/guides/subscriptions/en.mdx:78
+#: src/guides/writing-data/en.mdx:181 src/guides/creating-a-labeler/en.mdx:56
+#: src/guides/labels/en.mdx:110 src/guides/sdk-auth/en.mdx:116
+#: src/guides/sync/en.mdx:51 src/guides/auth/en.mdx:74
+#: src/guides/lexicon/en.mdx:128 src/guides/publishing-lexicons/en.mdx:49
+#: src/guides/backfilling/en.mdx:60 src/guides/reading-data/en.mdx:165
+#: src/guides/social-graph/en.mdx:19 src/guides/permission-sets/en.mdx:214
+#: src/guides/using-ozone/en.mdx:132
 #, no-wrap
 msgid "## Further Reading and Resources\n"
 msgstr ""
@@ -64,13 +65,13 @@ msgstr ""
 #. type: Plain text
 #: src/guides/permission-sets/en.mdx:16
 #, no-wrap
-msgid "This guide describes how to request permissions for your Atproto application. [OAuth](/guides/auth) is used to authorize third-party applications to access users' social graphs, and is a prerequisite for the concepts described here.\n"
+msgid "This guide describes how to request permissions for your atproto application. [OAuth](/guides/auth) is used to authorize third-party applications to access users' social graphs, and is a prerequisite for the concepts described here.\n"
 msgstr ""
 
 #. type: Plain text
 #: src/guides/permission-sets/en.mdx:18
 #, no-wrap
-msgid "Control over Atproto resources is described and granted using [permissions](/specs/permission). A group of a permissions related to a specific Lexicon namespace (record types and API endpoints) can be bundled together as a \"permission set\". Both are used in the context of [OAuth](/specs/auth) to grant client software access to account resources on a PDS: For example, the ability to write records of specific types to the user's public repository, or make authenticated API requests to remote services. Developers declare the permissions their app requires to function, and end users are shown the permissions when granting access to the app.\n"
+msgid "Control over atproto resources is described and granted using [permissions](/specs/permission). A group of a permissions related to a specific Lexicon namespace (record types and API endpoints) can be bundled together as a \"permission set\". Both are used in the context of [OAuth](/specs/auth) to grant client software access to account resources on a PDS: For example, the ability to write records of specific types to the user's public repository, or make authenticated API requests to remote services. Developers declare the permissions their app requires to function, and end users are shown the permissions when granting access to the app.\n"
 msgstr ""
 
 #. type: Plain text
@@ -88,7 +89,7 @@ msgstr ""
 #. type: Plain text
 #: src/guides/permission-sets/en.mdx:24
 #, no-wrap
-msgid "When your app initiates an OAuth flow with an Atproto identity provider, it can request specific permission sets by including them in the `scope` parameter of the authorization request. This should be supplied as a *space-separated list* in the [`oauth-client-metadata.json` file](/specs/oauth#clients) when registering your OAuth client:\n"
+msgid "When your app initiates an OAuth flow with an atproto identity provider, it can request specific permission sets by including them in the `scope` parameter of the authorization request. This should be supplied as a *space-separated list* in the [`oauth-client-metadata.json` file](/specs/oauth#clients) when registering your OAuth client:\n"
 msgstr ""
 
 #. type: Plain text
@@ -204,7 +205,7 @@ msgstr ""
 #. type: Plain text
 #: src/guides/permission-sets/en.mdx:73
 #, no-wrap
-msgid "Lexicon schemas are published publicly as records in ATProto Lexicon repositories. Refer to [Lexicon Publication and Resolution](/specs/lexicon#lexicon-publication-and-resolution) for technical details.\n"
+msgid "Lexicon schemas are published publicly as records in atproto Lexicon repositories. Refer to [Lexicon Publication and Resolution](/specs/lexicon#lexicon-publication-and-resolution) for technical details.\n"
 msgstr ""
 
 #. type: Plain text
@@ -408,7 +409,7 @@ msgstr ""
 #. type: Plain text
 #: src/guides/permission-sets/en.mdx:178
 #, no-wrap
-msgid "Permission sets can be revised, but removing them or making destructive changes can break existing applications. In general, permission sets should be closely tied to the applications they are designed for, but not necessarily 1:1. Remember that Atproto applications can utilize multiple different Lexicons.\n"
+msgid "Permission sets can be revised, but removing them or making destructive changes can break existing applications. In general, permission sets should be closely tied to the applications they are designed for, but not necessarily 1:1. Remember that atproto applications can utilize multiple different Lexicons.\n"
 msgstr ""
 
 #. type: Plain text
@@ -420,7 +421,7 @@ msgstr ""
 #. type: Plain text
 #: src/guides/permission-sets/en.mdx:182
 #, no-wrap
-msgid "Apps that are using Atproto identity providers *solely* for authentication [only need to request the `atproto` permission](/guides/scopes). This provides the same OAuth flow that you might expect from other identity providers; no features of the Atmosphere social graph are used, and no additional permissions are required:\n"
+msgid "Apps that are using atproto identity providers *solely* for authentication [only need to request the `atproto` permission](/guides/scopes). This provides the same OAuth flow that you might expect from other identity providers; no features of the Atmosphere social graph are used, and no additional permissions are required:\n"
 msgstr ""
 
 #. type: Plain text
@@ -477,7 +478,7 @@ msgstr ""
 #. type: Plain text
 #: src/guides/permission-sets/en.mdx:204
 #, no-wrap
-msgid "From the expanded Atproto and Bluesky permissions, you might recognize `atproto` (for OAuth login), `blob:*/*` (for image and video handling), and several other `app.bsky.*` permissions for profile and social graph interactions.\n"
+msgid "From the expanded atproto and Bluesky permissions, you might recognize `atproto` (for OAuth login), `blob:*/*` (for image and video handling), and several other `app.bsky.*` permissions for profile and social graph interactions.\n"
 msgstr ""
 
 #. type: Plain text

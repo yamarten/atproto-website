@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-11 10:36+0900\n"
+"POT-Creation-Date: 2026-02-21 18:36+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,12 +21,14 @@ msgstr ""
 #: src/guides/custom-feed-tutorial/en.mdx:14
 #: src/guides/oauth-tutorial/en.mdx:18
 #: src/guides/statusphere-tutorial/en.mdx:17
+#: src/guides/go-oauth-cli-tutorial/en.mdx:11
+#: src/guides/oauth-cli-tutorial/en.mdx:11
 #, no-wrap
 msgid "## Prerequisites\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/tutorials/en.mdx:29 src/guides/oauth-tutorial/en.mdx:16
+#: src/guides/tutorials/en.mdx:41 src/guides/oauth-tutorial/en.mdx:16
 #, no-wrap
 msgid "See a demo version running at: [https://nextjs-oauth-tutorial.up.railway.app/](https://nextjs-oauth-tutorial.up.railway.app/).\n"
 msgstr ""
@@ -36,7 +38,9 @@ msgstr ""
 #: src/guides/custom-feed-tutorial/en.mdx:387
 #: src/guides/oauth-tutorial/en.mdx:783
 #: src/guides/statusphere-tutorial/en.mdx:728
-#: src/articles/atproto-ethos/en.mdx:136
+#: src/guides/go-oauth-cli-tutorial/en.mdx:241
+#: src/guides/oauth-cli-tutorial/en.mdx:193
+#: src/articles/atproto-ethos/en.mdx:135
 #, no-wrap
 msgid "## Conclusion\n"
 msgstr ""
@@ -57,7 +61,7 @@ msgstr ""
 msgid ""
 "export const header = {\n"
 "  title: 'OAuth with NextJS Tutorial',\n"
-"  description: 'Build a Next.js app supporting OAuth with ATProto identity.',\n"
+"  description: 'Build a Next.js app supporting OAuth with atproto identity.',\n"
 "}\n"
 msgstr ""
 
@@ -76,7 +80,7 @@ msgstr ""
 #. type: Plain text
 #: src/guides/oauth-tutorial/en.mdx:20
 #, no-wrap
-msgid "This OAuth tutorial does not use many Atproto concepts or dependencies. You should have a working understanding of Next.js and TypeScript.\n"
+msgid "This OAuth tutorial does not use many atproto concepts or dependencies. You should have a working understanding of Next.js and TypeScript.\n"
 msgstr ""
 
 #. type: Plain text
@@ -105,6 +109,8 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/oauth-tutorial/en.mdx:32
+#: src/guides/go-oauth-cli-tutorial/en.mdx:26
+#: src/guides/oauth-cli-tutorial/en.mdx:26
 #, no-wrap
 msgid "## Part 1: Project Setup\n"
 msgstr ""
@@ -128,7 +134,7 @@ msgstr ""
 #. type: Plain text
 #: src/guides/oauth-tutorial/en.mdx:41
 #, no-wrap
-msgid "Next, add the `oauth-client-node` package from the Atproto ecosystem, which provides OAuth client functionality.\n"
+msgid "Next, add the `oauth-client-node` package from the atproto ecosystem, which provides OAuth client functionality.\n"
 msgstr ""
 
 #. type: Plain text
@@ -596,7 +602,7 @@ msgstr ""
 #. type: Plain text
 #: src/guides/oauth-tutorial/en.mdx:270
 #, no-wrap
-msgid "Finally, you'll make one last route, to expose the `oauth-client-metadata.json` at a well-known URL. This is [used in ATProto OAuth](/specs/oauth#clients) to discover client configuration. Create `app/oauth-client-metadata.json/route.ts`:\n"
+msgid "Finally, you'll make one last route, to expose the `oauth-client-metadata.json` at a well-known URL. This is [used in atproto OAuth](/specs/oauth#clients) to discover client configuration. Create `app/oauth-client-metadata.json/route.ts`:\n"
 msgstr ""
 
 #. type: Plain text
@@ -1576,5 +1582,5 @@ msgstr ""
 #. type: Plain text
 #: src/guides/oauth-tutorial/en.mdx:802
 #, no-wrap
-msgid "Congratulations on completing this tutorial! You now have a solid Next.js foundation for building Atproto apps with OAuth. From here, you can move on to our [**Statusphere Example App Tutorial**](/guides/statusphere-tutorial).\n"
+msgid "Congratulations on completing this tutorial! You now have a solid Next.js foundation for building atproto apps with OAuth. From here, you can move on to our [**Statusphere Example App Tutorial**](/guides/statusphere-tutorial).\n"
 msgstr ""

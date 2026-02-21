@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-21 12:24+0900\n"
+"POT-Creation-Date: 2026-02-21 18:36+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,7 +101,7 @@ msgstr ""
 #. type: Plain text
 #: src/guides/applications/en.mdx:48
 #, no-wrap
-msgid "We're going to keep this light so you can quickly wrap your head around ATProto. There will be links with more information about each step. {{className: 'lead'}}\n"
+msgid "We're going to keep this light so you can quickly wrap your head around atproto. There will be links with more information about each step. {{className: 'lead'}}\n"
 msgstr ""
 
 #. type: Plain text
@@ -1195,7 +1195,7 @@ msgstr ""
 #. type: Plain text
 #: src/guides/applications/en.mdx:652
 #, no-wrap
-msgid "## Thinking in AT Proto\n"
+msgid "## Thinking in atproto\n"
 msgstr ""
 
 #. type: Plain text

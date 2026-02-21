@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-18 14:17+0900\n"
+"POT-Creation-Date: 2026-02-21 18:36+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,6 +21,8 @@ msgstr ""
 #: src/guides/custom-feed-tutorial/en.mdx:14
 #: src/guides/oauth-tutorial/en.mdx:18
 #: src/guides/statusphere-tutorial/en.mdx:17
+#: src/guides/go-oauth-cli-tutorial/en.mdx:11
+#: src/guides/oauth-cli-tutorial/en.mdx:11
 #, no-wrap
 msgid "## Prerequisites\n"
 msgstr ""
@@ -48,6 +50,8 @@ msgstr ""
 #: src/guides/custom-feed-tutorial/en.mdx:387
 #: src/guides/oauth-tutorial/en.mdx:783
 #: src/guides/statusphere-tutorial/en.mdx:728
+#: src/guides/go-oauth-cli-tutorial/en.mdx:241
+#: src/guides/oauth-cli-tutorial/en.mdx:193
 #: src/articles/atproto-ethos/en.mdx:135
 #, no-wrap
 msgid "## Conclusion\n"
@@ -146,7 +150,7 @@ msgstr ""
 #. type: Plain text
 #: src/guides/statusphere-tutorial/en.mdx:32
 #, no-wrap
-msgid "Begin by adding these Atproto libraries to your existing project:\n"
+msgid "Begin by adding these atproto libraries to your existing project:\n"
 msgstr ""
 
 #. type: Plain text
@@ -167,7 +171,7 @@ msgstr ""
 #. type: Plain text
 #: src/guides/statusphere-tutorial/en.mdx:48
 #, no-wrap
-msgid "[Lexicons](/guides/lexicon) define the schema for records in Atproto. To create this tutorial, we've already published a new \"Statusphere\" Lexicon to our repository, available at `xyz.statusphere.status`. You can use `lex` to download and build this Lexicon into your project:\n"
+msgid "[Lexicons](/guides/lexicon) define the schema for records in atproto. To create this tutorial, we've already published a new \"Statusphere\" Lexicon to our repository, available at `xyz.statusphere.status`. You can use `lex` to download and build this Lexicon into your project:\n"
 msgstr ""
 
 #. type: Plain text
@@ -1318,7 +1322,7 @@ msgstr ""
 #. type: Plain text
 #: src/guides/statusphere-tutorial/en.mdx:730
 #, no-wrap
-msgid "You've now built a complete Atproto app that uses OAuth to sign in, a custom Lexicon to define status records, and Tap to synchronize records in real-time.\n"
+msgid "You've now built a complete atproto app that uses OAuth to sign in, a custom Lexicon to define status records, and Tap to synchronize records in real-time.\n"
 msgstr ""
 
 #. type: Plain text

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-11 10:36+0900\n"
+"POT-Creation-Date: 2026-02-21 18:36+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,18 +17,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: Plain text
-#: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:21
-#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:73
-#: src/guides/streaming-data/en.mdx:60 src/guides/video-handling/en.mdx:39
-#: src/guides/feeds/en.mdx:113 src/guides/installing-lexicons/en.mdx:53
-#: src/guides/oauth-patterns/en.mdx:56 src/guides/scopes/en.mdx:45
-#: src/guides/subscriptions/en.mdx:78 src/guides/writing-data/en.mdx:181
-#: src/guides/creating-a-labeler/en.mdx:56 src/guides/labels/en.mdx:110
-#: src/guides/sdk-auth/en.mdx:145 src/guides/sync/en.mdx:51
-#: src/guides/auth/en.mdx:41 src/guides/lexicon/en.mdx:128
-#: src/guides/publishing-lexicons/en.mdx:49 src/guides/backfilling/en.mdx:60
-#: src/guides/reading-data/en.mdx:165 src/guides/social-graph/en.mdx:21
-#: src/guides/permission-sets/en.mdx:214 src/guides/using-ozone/en.mdx:132
+#: src/guides/account-lifecycle/en.mdx:65
+#: src/guides/images-and-video/en.mdx:142 src/guides/moderation/en.mdx:30
+#: src/guides/reads-and-writes/en.mdx:73 src/guides/streaming-data/en.mdx:60
+#: src/guides/video-handling/en.mdx:41 src/guides/feeds/en.mdx:113
+#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:57
+#: src/guides/scopes/en.mdx:45 src/guides/subscriptions/en.mdx:78
+#: src/guides/writing-data/en.mdx:181 src/guides/creating-a-labeler/en.mdx:56
+#: src/guides/labels/en.mdx:110 src/guides/sdk-auth/en.mdx:116
+#: src/guides/sync/en.mdx:51 src/guides/auth/en.mdx:74
+#: src/guides/lexicon/en.mdx:128 src/guides/publishing-lexicons/en.mdx:49
+#: src/guides/backfilling/en.mdx:60 src/guides/reading-data/en.mdx:165
+#: src/guides/social-graph/en.mdx:19 src/guides/permission-sets/en.mdx:214
+#: src/guides/using-ozone/en.mdx:132
 #, no-wrap
 msgid "## Further Reading and Resources\n"
 msgstr ""
@@ -52,13 +53,13 @@ msgstr ""
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:9
 #, no-wrap
-msgid "The AT Protocol distributes user data across different nodes of your network, using the core building blocks of the web. The AT Protocol interconnects applications so that their backends share state, including user accounts and content, in individual data repositories. Many operations you'll perform when working with Atproto apps involve reading and writing these data repositories.\n"
+msgid "The AT Protocol distributes user data across different nodes of your network, using the core building blocks of the web. The AT Protocol interconnects applications so that their backends share state, including user accounts and content, in individual data repositories. Many operations you'll perform when working with atproto apps involve reading and writing these data repositories.\n"
 msgstr ""
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:11
 #, no-wrap
-msgid "For more context, see [Atproto for distributed systems engineers](/articles/atproto-for-distsys-engineers) and [The ATProto Ethos](/articles/atproto-ethos).\n"
+msgid "For more context, see [Atproto for distributed systems engineers](/articles/atproto-for-distsys-engineers) and [The Atproto Ethos](/articles/atproto-ethos).\n"
 msgstr ""
 
 #. type: Plain text
@@ -66,6 +67,8 @@ msgstr ""
 #: src/guides/custom-feed-tutorial/en.mdx:14
 #: src/guides/oauth-tutorial/en.mdx:18
 #: src/guides/statusphere-tutorial/en.mdx:17
+#: src/guides/go-oauth-cli-tutorial/en.mdx:11
+#: src/guides/oauth-cli-tutorial/en.mdx:11
 #, no-wrap
 msgid "## Prerequisites\n"
 msgstr ""
