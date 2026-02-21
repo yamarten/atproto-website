@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-07 17:03+0900\n"
+"POT-Creation-Date: 2026-02-21 18:36+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,8 +43,8 @@ msgstr "# プロトコル概要\n"
 #. type: Plain text
 #: src/guides/overview/en.mdx:10
 #, no-wrap
-msgid "The **Authenticated Transfer Protocol**, aka **Atproto**, is a decentralized protocol for large-scale social web applications. This document will introduce you to the ideas behind the AT Protocol.\n"
-msgstr "**Authenticated Transfer Protocol**（別名**Atproto**）は、大規模な分散型ソーシャルウェブアプリケーション用のフェデレーションプロトコルです。この文書では、ATプロトコルの背後にある考え方を紹介します。\n"
+msgid "The **Authenticated Transfer Protocol**, aka **atproto**, is a decentralized protocol for large-scale social web applications. This document will introduce you to the ideas behind the AT Protocol.\n"
+msgstr "**Authenticated Transfer Protocol**（別名**atproto**）は、大規模な分散型ソーシャルウェブアプリケーション用のフェデレーションプロトコルです。この文書では、ATプロトコルの背後にある考え方を紹介します。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:12
@@ -110,7 +110,7 @@ msgstr "[Lexicon](/specs/lexicon)と呼ばれるグローバルスキーマネ�
 #: src/guides/overview/en.mdx:32
 #, no-wrap
 msgid "While the Web exchanges documents, the AT Protocol exchanges schematic and semantic information, enabling the software from different organizations to understand each others' data. This gives atproto clients freedom to produce user interfaces independently of the servers, and removes the need to exchange rendering code (HTML/JS/CSS) while browsing content.\n"
-msgstr "ウェブがドキュメントを交換する一方で、ATプロトコルはスキーマ情報とセマンティック情報を交換し、異なる組織のソフトウェアが互いのデータを理解できるようにします。これにより、Atprotoクライアントはサーバーから独立してユーザーインターフェイスを自由に作成でき、コンテンツを閲覧する際にレンダリングコード（HTML/JS/CSS）を交換する必要がなくなります。\n"
+msgstr "ウェブがドキュメントを交換する一方で、ATプロトコルはスキーマ情報とセマンティック情報を交換し、異なる組織のソフトウェアが互いのデータを理解できるようにします。これにより、atprotoクライアントはサーバーから独立してユーザーインターフェイスを自由に作成でき、コンテンツを閲覧する際にレンダリングコード（HTML/JS/CSS）を交換する必要がなくなります。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:34
@@ -216,7 +216,7 @@ msgstr "ATプロトコルのモデルでは、*スピーチ*と*リーチ*は2�
 #: src/guides/overview/en.mdx:67
 #, no-wrap
 msgid "The base layer of atproto (personal data repositories and federated networking) creates a common space for speech where everyone is free to participate, analogous to the Web where anyone can put up a website. The indexing services then enable reach by aggregating content from the network, analogous to a search engine.\n"
-msgstr "Atprotoの基本レイヤー（パーソナルデータリポジトリとフェデレーションネットワーク）は、誰もが自由に参加できるスピーチのための共通スペースを作成します。これは、誰でもサイトを作成できるウェブに似ています。次に、インデックスサービスがネットワークからコンテンツを集約してリーチを有効にします。これは、検索エンジンに似ています。\n"
+msgstr "atprotoの基本レイヤー（パーソナルデータリポジトリとフェデレーションネットワーク）は、誰もが自由に参加できるスピーチのための共通スペースを作成します。これは、誰でもサイトを作成できるウェブに似ています。次に、インデックスサービスがネットワークからコンテンツを集約してリーチを有効にします。これは、検索エンジンに似ています。\n"
 
 #. type: Plain text
 #: src/guides/overview/en.mdx:69

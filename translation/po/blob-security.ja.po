@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-07 17:03+0900\n"
+"POT-Creation-Date: 2026-02-21 18:36+0900\n"
 "PO-Revision-Date: 2026-01-07 19:40+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -21,6 +21,22 @@ msgstr ""
 #, no-wrap
 msgid "## Related resources\n"
 msgstr "<Heading level={2} id=\"related-resources\">参考資料</Heading>\n"
+
+#. type: Plain text
+#: src/guides/blob-lifecycle/en.mdx:57 src/guides/blob-security/en.mdx:35
+#, no-wrap
+msgid ""
+"- [Images and Video](/guides/images-and-video)\n"
+"- [Blob security](/guides/blob-security)\n"
+"- [Video handling](/guides/video-handling)\n"
+"- [Blob Specs](/specs/blob)\n"
+"- [Streamplace](https://stream.place/docs/) provides an implementation and related Lexicon for video streaming on atproto.\n"
+msgstr ""
+"- [画像と動画](/guides/images-and-video)\n"
+"- [blobのセキュリティ](/guides/blob-security)\n"
+"- [動画の取り扱い](/guides/video-handling)\n"
+"- [blob仕様](/specs/blob)\n"
+"- [Streamplace](https://stream.place/docs/)はatproto上の動画ストリーミングの実装および関連Lexiconを提供します。\n"
 
 #. type: Plain text
 #: src/guides/blob-security/en.mdx:5
@@ -105,19 +121,3 @@ msgstr "リッチなメディアは有害・違法コンテンツのリスクを
 #, no-wrap
 msgid "Servers may need to take measures to prevent malicious resource consumption. For example, intentional exhaustion of disk space, network congestion, bandwidth utilization, etc. — rate-limits, size limits, and quotas are recommended.\n"
 msgstr "サーバーは悪意あるリソース消費を防ぐための対策が必要な場合があります。例えば、ディスク容量の枯渇、ネットワーク輻輳、帯域幅圧迫が考えられるため、レート制限、サイズ制限、クォータなどの対策を推奨します。\n"
-
-#. type: Plain text
-#: src/guides/blob-security/en.mdx:35
-#, no-wrap
-msgid ""
-"- [Images and Video](/guides/images-and-video)\n"
-"- [Blob security](/guides/blob-security)\n"
-"- [Video handling](/guides/video-handling)\n"
-"- [Blob Specs](/specs/blob)\n"
-"- [Streamplace](https://stream.place/docs/) provides an implementation and related Lexicon for video streaming on ATProto.\n"
-msgstr ""
-"- [画像と動画](/guides/images-and-video)\n"
-"- [blobのセキュリティ](/guides/blob-security)\n"
-"- [動画の取り扱い](/guides/video-handling)\n"
-"- [blob仕様](/specs/blob)\n"
-"- [Streamplace](https://stream.place/docs/)はAtproto上の動画ストリーミングの実装および関連Lexiconを提供します。\n"

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-21 12:24+0900\n"
+"POT-Creation-Date: 2026-02-21 18:36+0900\n"
 "PO-Revision-Date: 2026-02-07 17:03+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -21,6 +21,8 @@ msgstr ""
 #: src/guides/custom-feed-tutorial/en.mdx:14
 #: src/guides/oauth-tutorial/en.mdx:18
 #: src/guides/statusphere-tutorial/en.mdx:17
+#: src/guides/go-oauth-cli-tutorial/en.mdx:11
+#: src/guides/oauth-cli-tutorial/en.mdx:11
 #, no-wrap
 msgid "## Prerequisites\n"
 msgstr "<Heading level={2} id=\"prerequisites\">前提条件</Heading>\n"
@@ -82,12 +84,13 @@ msgstr "このチュートリアルでは、[アプリパスワード](/guides/s
 
 #. type: Plain text
 #: src/guides/bot-tutorial/en.mdx:13 src/guides/custom-feed-tutorial/en.mdx:16
+#: src/guides/oauth-cli-tutorial/en.mdx:13
 #, no-wrap
 msgid "This tutorial involves building a TypeScript application from scratch. You should have a working understanding of TypeScript and Node.js.\n"
 msgstr "このチュートリアルでは、TypeScriptアプリケーションをゼロから構築します。TypeScriptとNode.jsの基本的な理解を前提としています。\n"
 
 #. type: Plain text
-#: src/guides/bot-tutorial/en.mdx:16
+#: src/guides/bot-tutorial/en.mdx:16 src/guides/oauth-cli-tutorial/en.mdx:16
 #, no-wrap
 msgid ""
 "You should have installed:\n"
@@ -97,13 +100,14 @@ msgstr ""
 "- Node.js 18以上\n"
 
 #. type: Plain text
-#: src/guides/bot-tutorial/en.mdx:18
+#: src/guides/bot-tutorial/en.mdx:18 src/guides/go-oauth-cli-tutorial/en.mdx:18
+#: src/guides/oauth-cli-tutorial/en.mdx:18
 #, no-wrap
 msgid "On platforms supported by [homebrew](https://brew.sh/), you can install it with:\n"
 msgstr "[homebrew](https://brew.sh/)に対応したプラットフォームでは、次のコマンドでインストールできます。\n"
 
 #. type: Plain text
-#: src/guides/bot-tutorial/en.mdx:22
+#: src/guides/bot-tutorial/en.mdx:22 src/guides/oauth-cli-tutorial/en.mdx:22
 #, no-wrap
 msgid ""
 "```bash\n"
@@ -162,8 +166,8 @@ msgstr "<Heading level={2} id=\"part-1-lexicons\">パート1：Lexion</Heading> 
 #. type: Plain text
 #: src/guides/bot-tutorial/en.mdx:44
 #, no-wrap
-msgid "[Lexicons](/guides/lexicon) define Atproto records. Your bot will create Bluesky posts, using the [app.bsky.feed.post](https://lexicon.garden/lexicon/did:plc:4v4y5r3lwsbtmsxhile2ljac/app.bsky.feed.post) Lexicon. You can use `lex` to download and build this Lexicon into your project:\n"
-msgstr "[Lexicon](/guides/lexicon)はAtprotoのレコードを定義します。ボットは[app.bsky.feed.post](https://lexicon.garden/lexicon/did:plc:4v4y5r3lwsbtmsxhile2ljac/app.bsky.feed.post) Lexiconを使ってBluesky投稿を作成します。`lex`を使えば、このLexiconをダウンロードしてプロジェクトに組み込めます。\n"
+msgid "[Lexicons](/guides/lexicon) define atproto records. Your bot will create Bluesky posts, using the [app.bsky.feed.post](https://lexicon.garden/lexicon/did:plc:4v4y5r3lwsbtmsxhile2ljac/app.bsky.feed.post) Lexicon. You can use `lex` to download and build this Lexicon into your project:\n"
+msgstr "[Lexicon](/guides/lexicon)はatprotoのレコードを定義します。ボットは[app.bsky.feed.post](https://lexicon.garden/lexicon/did:plc:4v4y5r3lwsbtmsxhile2ljac/app.bsky.feed.post) Lexiconを使ってBluesky投稿を作成します。`lex`を使えば、このLexiconをダウンロードしてプロジェクトに組み込めます。\n"
 
 #. type: Plain text
 #: src/guides/bot-tutorial/en.mdx:48
@@ -700,6 +704,8 @@ msgstr ""
 #: src/guides/custom-feed-tutorial/en.mdx:387
 #: src/guides/oauth-tutorial/en.mdx:783
 #: src/guides/statusphere-tutorial/en.mdx:728
+#: src/guides/go-oauth-cli-tutorial/en.mdx:241
+#: src/guides/oauth-cli-tutorial/en.mdx:193
 #: src/articles/atproto-ethos/en.mdx:135
 #, no-wrap
 msgid "## Conclusion\n"
@@ -708,8 +714,8 @@ msgstr "<Heading level={2} id=\"conclusion\">結論</Heading>\n"
 #. type: Plain text
 #: src/guides/bot-tutorial/en.mdx:247
 #, no-wrap
-msgid "You've now built an automated Atproto app that creates records on the network!\n"
-msgstr "これで、ネットワーク上にレコードを作成する自動化されたAtprotoアプリを構築できました。\n"
+msgid "You've now built an automated atproto app that creates records on the network!\n"
+msgstr "これで、ネットワーク上にレコードを作成する自動化されたatprotoアプリを構築できました。\n"
 
 #. type: Plain text
 #: src/guides/bot-tutorial/en.mdx:248

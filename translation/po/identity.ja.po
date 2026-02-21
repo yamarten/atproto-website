@@ -44,7 +44,7 @@ msgstr ""
 #: src/guides/identity/en.mdx:10
 #, no-wrap
 msgid "The atproto identity system has a number of requirements:\n"
-msgstr "AtprotoのIDシステムには、いくつかの要件があります。\n"
+msgstr "atprotoのIDシステムには、いくつかの要件があります。\n"
 
 #. type: Plain text
 #: src/guides/identity/en.mdx:17
@@ -68,7 +68,7 @@ msgstr ""
 #: src/guides/identity/en.mdx:19
 #, no-wrap
 msgid "Using the atproto identity system gives applications the tools for end-to-end encryption, signed user data, service sign-in, and general interoperation.\n"
-msgstr "AtprotoのIDシステムを採用すると、エンドツーエンドの暗号化、署名されたユーザーデータ、サービスサインイン、および一般的な相互運用のためのツールがアプリケーションに提供されるはずです。\n"
+msgstr "atprotoのIDシステムを採用すると、エンドツーエンドの暗号化、署名されたユーザーデータ、サービスサインイン、および一般的な相互運用のためのツールがアプリケーションに提供されるはずです。\n"
 
 #. type: Plain text
 #: src/guides/identity/en.mdx:21
@@ -190,7 +190,7 @@ msgstr "<Heading level={2} id=\"did-methods\">DIDメソッド</Heading>\n"
 #: src/guides/identity/en.mdx:68
 #, no-wrap
 msgid "The [DID standard](https://www.w3.org/TR/did-core/) describes a framework for different \"methods\" of publishing and resolving DIDs to the [DID Document](https://www.w3.org/TR/did-core/#core-properties), instead of specifying a single mechanism. A variety of existing methods [have been registered](https://w3c.github.io/did-spec-registries/#did-methods), with different features and properties. We established the following criteria for use with atproto:\n"
-msgstr "[DID標準](https://www.w3.org/TR/did-core/)は、DIDを公開し、[DIDドキュメント](https://www.w3.org/TR/did-core/#core-properties)に解決する「メソッド」を、ただ一つに定めず多様に定義できるフレームワークを設けています。さまざまな既存のメソッドが[公開](https://w3c.github.io/did-spec-registries/#did-methods)されおり、それぞれ異なる機能や特徴を持ちます。Atprotoでの使用に際して、以下の基準を設定しました。\n"
+msgstr "[DID標準](https://www.w3.org/TR/did-core/)は、DIDを公開し、[DIDドキュメント](https://www.w3.org/TR/did-core/#core-properties)に解決する「メソッド」を、ただ一つに定めず多様に定義できるフレームワークを設けています。さまざまな既存のメソッドが[公開](https://w3c.github.io/did-spec-registries/#did-methods)されおり、それぞれ異なる機能や特徴を持ちます。atprotoでの使用に際して、以下の基準を設定しました。\n"
 
 #. type: Plain text
 #: src/guides/identity/en.mdx:76
@@ -228,7 +228,7 @@ msgstr "<Heading level={2} id=\"handle-resolution\">ハンドル解決</Heading>
 #: src/guides/identity/en.mdx:82
 #, no-wrap
 msgid "Handles in atproto are domain names which resolve to a DID, which in turn resolves to a DID Document containing the user's signing key and hosting service.\n"
-msgstr "Atprotoのハンドルは、DIDに解決されるドメイン名です。DIDは、ユーザーの署名公開鍵とホスティングサービスを含むDIDドキュメントに解決されます。\n"
+msgstr "atprotoのハンドルは、DIDに解決されるドメイン名です。DIDは、ユーザーの署名公開鍵とホスティングサービスを含むDIDドキュメントに解決されます。\n"
 
 #. type: Plain text
 #: src/guides/identity/en.mdx:84

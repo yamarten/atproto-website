@@ -97,7 +97,7 @@ msgstr "- [Indigo](https://github.com/bluesky-social/indigo/tree/main/atproto/au
 #: src/guides/oauth-patterns/en.mdx:22
 #, no-wrap
 msgid "## Atproto OAuth Example Apps\n"
-msgstr "<Heading level={2} id=\"atproto-oauth-example-apps\">Atproto OAuthサンプルアプリ</Heading>\n"
+msgstr "<Heading level={2} id=\"atproto-oauth-example-apps\">atproto OAuthサンプルアプリ</Heading>\n"
 
 #. type: Plain text
 #: src/guides/oauth-patterns/en.mdx:24

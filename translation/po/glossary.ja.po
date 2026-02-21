@@ -68,13 +68,13 @@ msgstr "<Heading level={2} id=\"at-protocol\">ATプロトコル</Heading>\n"
 #: src/guides/glossary/en.mdx:18
 #, no-wrap
 msgid "The AT Protocol stands for \"Authenticated Transfer Protocol,\" and is frequently shortened to \"atproto.\" The name is in reference to the fact that all user-data is signed by the authoring users, which makes it possible to broadcast the data through many services and prove it's real without having to speak directly to the originating server.\n"
-msgstr "ATプロトコルは、「Authenticated Transfer Protocol」の略で、よく「Atproto」と省略されます。この名前は、すべてのユーザーデータが作成ユーザーによって署名されているという事実に由来しています。これにより、多くのサービスを通じてデータをブロードキャストし、発信元サーバーと直接通信しなくても、データが本物であることを証明できます。\n"
+msgstr "ATプロトコルは、「Authenticated Transfer Protocol」の略で、よく「atproto」と省略されます。この名前は、すべてのユーザーデータが作成ユーザーによって署名されているという事実に由来しています。これにより、多くのサービスを通じてデータをブロードキャストし、発信元サーバーと直接通信しなくても、データが本物であることを証明できます。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:20
 #, no-wrap
 msgid "The name is also a play on the \"@\" symbol, aka the \"at\" symbol, since atproto is designed for social systems.\n"
-msgstr "この名前は、Atprotoがソーシャルシステム向けに設計されているため、「@」記号、別名「at」記号をもじったものです。\n"
+msgstr "この名前は、atprotoがソーシャルシステム向けに設計されているため、「@」記号、別名「at」記号をもじったものです。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:22
@@ -350,7 +350,7 @@ msgstr "<Heading level={2} id=\"dag-cbor\">DAG-CBOR</Heading>\n"
 #: src/guides/glossary/en.mdx:111
 #, no-wrap
 msgid "DAG-CBOR is a serialization format used by [atproto](#at-protocol). It was chosen because it provides a reliable canonical form, which is important for cryptographic verification.\n"
-msgstr "DAG-CBORは、[Atproto](#at-protocol)で使用されるシリアル化形式です。暗号検証に重要な信頼性の高い標準形式を提供するため、この形式が選択されました。\n"
+msgstr "DAG-CBORは、[atproto](#at-protocol)で使用されるシリアル化形式です。暗号検証に重要な信頼性の高い標準形式を提供するため、この形式が選択されました。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:113
@@ -368,7 +368,7 @@ msgstr "<Heading level={2} id=\"xrpc\">XRPC</Heading>\n"
 #: src/guides/glossary/en.mdx:117
 #, no-wrap
 msgid "XRPC is [atproto's](#at-protocol) HTTP API. It stands for \"Cross-organizational Remote Procedure Calls\" and is a thin wrapper around standard HTTPS. XRPC uses [Lexicon](#lexicon) schemas to define the valid parameters and responses for each API endpoint.\n"
-msgstr "XRPCは[Atproto](#at-protocol)で用いるHTTP APIです。これは「Cross-organizational Remote Procedure Calls」の略語で、HTTPSの薄いラッパーです。XRPCでは[Lexicon](#lexicon)スキーマを使って、各APIエンドポイントの有効なパラメータやレスポンスを定義します。\n"
+msgstr "XRPCは[atproto](#at-protocol)で用いるHTTP APIです。これは「Cross-organizational Remote Procedure Calls」の略語で、HTTPSの薄いラッパーです。XRPCでは[Lexicon](#lexicon)スキーマを使って、各APIエンドポイントの有効なパラメータやレスポンスを定義します。\n"
 
 #. type: Plain text
 #: src/guides/glossary/en.mdx:118

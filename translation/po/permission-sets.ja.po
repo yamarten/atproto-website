@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-11 10:36+0900\n"
+"POT-Creation-Date: 2026-02-21 18:36+0900\n"
 "PO-Revision-Date: 2026-01-11 22:40+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -17,18 +17,19 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. type: Plain text
-#: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:21
-#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:73
-#: src/guides/streaming-data/en.mdx:60 src/guides/video-handling/en.mdx:39
-#: src/guides/feeds/en.mdx:113 src/guides/installing-lexicons/en.mdx:53
-#: src/guides/oauth-patterns/en.mdx:56 src/guides/scopes/en.mdx:45
-#: src/guides/subscriptions/en.mdx:78 src/guides/writing-data/en.mdx:181
-#: src/guides/creating-a-labeler/en.mdx:56 src/guides/labels/en.mdx:110
-#: src/guides/sdk-auth/en.mdx:145 src/guides/sync/en.mdx:51
-#: src/guides/auth/en.mdx:41 src/guides/lexicon/en.mdx:128
-#: src/guides/publishing-lexicons/en.mdx:49 src/guides/backfilling/en.mdx:60
-#: src/guides/reading-data/en.mdx:165 src/guides/social-graph/en.mdx:21
-#: src/guides/permission-sets/en.mdx:214 src/guides/using-ozone/en.mdx:132
+#: src/guides/account-lifecycle/en.mdx:65
+#: src/guides/images-and-video/en.mdx:142 src/guides/moderation/en.mdx:30
+#: src/guides/reads-and-writes/en.mdx:73 src/guides/streaming-data/en.mdx:60
+#: src/guides/video-handling/en.mdx:41 src/guides/feeds/en.mdx:113
+#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:57
+#: src/guides/scopes/en.mdx:45 src/guides/subscriptions/en.mdx:78
+#: src/guides/writing-data/en.mdx:181 src/guides/creating-a-labeler/en.mdx:56
+#: src/guides/labels/en.mdx:110 src/guides/sdk-auth/en.mdx:116
+#: src/guides/sync/en.mdx:51 src/guides/auth/en.mdx:74
+#: src/guides/lexicon/en.mdx:128 src/guides/publishing-lexicons/en.mdx:49
+#: src/guides/backfilling/en.mdx:60 src/guides/reading-data/en.mdx:165
+#: src/guides/social-graph/en.mdx:19 src/guides/permission-sets/en.mdx:214
+#: src/guides/using-ozone/en.mdx:132
 #, no-wrap
 msgid "## Further Reading and Resources\n"
 msgstr "<Heading level={2} id=\"further-reading-and-resources\">関連・参考資料</Heading>\n"
@@ -75,14 +76,14 @@ msgstr "<Heading level={2} id=\"for-app-developers\">アプリ開発者向け</H
 #. type: Plain text
 #: src/guides/permission-sets/en.mdx:16
 #, no-wrap
-msgid "This guide describes how to request permissions for your Atproto application. [OAuth](/guides/auth) is used to authorize third-party applications to access users' social graphs, and is a prerequisite for the concepts described here.\n"
-msgstr "このガイドでは、Atprotoアプリケーションの権限リクエスト方法を説明します。[OAuth](/guides/auth)はサードパーティーアプリにユーザーのソーシャルグラフへのアクセス権を与えるために使用され、ここで説明する概念の前提条件です。\n"
+msgid "This guide describes how to request permissions for your atproto application. [OAuth](/guides/auth) is used to authorize third-party applications to access users' social graphs, and is a prerequisite for the concepts described here.\n"
+msgstr "このガイドでは、atprotoアプリケーションの権限リクエスト方法を説明します。[OAuth](/guides/auth)はサードパーティーアプリにユーザーのソーシャルグラフへのアクセス権を与えるために使用され、ここで説明する概念の前提条件です。\n"
 
 #. type: Plain text
 #: src/guides/permission-sets/en.mdx:18
 #, no-wrap
-msgid "Control over Atproto resources is described and granted using [permissions](/specs/permission). A group of a permissions related to a specific Lexicon namespace (record types and API endpoints) can be bundled together as a \"permission set\". Both are used in the context of [OAuth](/specs/auth) to grant client software access to account resources on a PDS: For example, the ability to write records of specific types to the user's public repository, or make authenticated API requests to remote services. Developers declare the permissions their app requires to function, and end users are shown the permissions when granting access to the app.\n"
-msgstr "Atprotoのリソース制御は[権限](/specs/permission)で説明され、付与されます。特定のLexicon名前空間（レコード型とAPIエンドポイント）に関連する権限のグループは「権限セット」としてまとめられます。どちらも[OAuth](/specs/auth)の文脈で使われ、PDS上のアカウントリソースへのクライアントアクセスを付与します。例えば、ユーザーの公開リポジトリに特定の型のレコードを書き込む権限や、リモートサービスへの認証付きAPIリクエストを行う権限です。開発者はアプリが動作に必要な権限を宣言し、エンドユーザーはアプリへのアクセス許可時にその権限を確認します。\n"
+msgid "Control over atproto resources is described and granted using [permissions](/specs/permission). A group of a permissions related to a specific Lexicon namespace (record types and API endpoints) can be bundled together as a \"permission set\". Both are used in the context of [OAuth](/specs/auth) to grant client software access to account resources on a PDS: For example, the ability to write records of specific types to the user's public repository, or make authenticated API requests to remote services. Developers declare the permissions their app requires to function, and end users are shown the permissions when granting access to the app.\n"
+msgstr "atprotoのリソース制御は[権限](/specs/permission)で説明され、付与されます。特定のLexicon名前空間（レコード型とAPIエンドポイント）に関連する権限のグループは「権限セット」としてまとめられます。どちらも[OAuth](/specs/auth)の文脈で使われ、PDS上のアカウントリソースへのクライアントアクセスを付与します。例えば、ユーザーの公開リポジトリに特定の型のレコードを書き込む権限や、リモートサービスへの認証付きAPIリクエストを行う権限です。開発者はアプリが動作に必要な権限を宣言し、エンドユーザーはアプリへのアクセス許可時にその権限を確認します。\n"
 
 #. type: Plain text
 #: src/guides/permission-sets/en.mdx:20
@@ -99,8 +100,8 @@ msgstr "<Heading level={2} id=\"requesting-permissions\">権限の要求</Headin
 #. type: Plain text
 #: src/guides/permission-sets/en.mdx:24
 #, no-wrap
-msgid "When your app initiates an OAuth flow with an Atproto identity provider, it can request specific permission sets by including them in the `scope` parameter of the authorization request. This should be supplied as a *space-separated list* in the [`oauth-client-metadata.json` file](/specs/oauth#clients) when registering your OAuth client:\n"
-msgstr "アプリがAtprotoのIDプロバイダーでOAuthフローを開始する際、認可リクエストの`scope`パラメータに含めることで特定の権限セットを要求できます。これはOAuthクライアント登録時に[`oauth-client-metadata.json`ファイル](/specs/oauth#clients)へ*スペース区切りのリスト*として指定します。\n"
+msgid "When your app initiates an OAuth flow with an atproto identity provider, it can request specific permission sets by including them in the `scope` parameter of the authorization request. This should be supplied as a *space-separated list* in the [`oauth-client-metadata.json` file](/specs/oauth#clients) when registering your OAuth client:\n"
+msgstr "アプリがatprotoのIDプロバイダーでOAuthフローを開始する際、認可リクエストの`scope`パラメータに含めることで特定の権限セットを要求できます。これはOAuthクライアント登録時に[`oauth-client-metadata.json`ファイル](/specs/oauth#clients)へ*スペース区切りのリスト*として指定します。\n"
 
 #. type: Plain text
 #: src/guides/permission-sets/en.mdx:31
@@ -235,8 +236,8 @@ msgstr "LexiconはJSONで作成されます。例は[Lexiconガイド](/guides/l
 #. type: Plain text
 #: src/guides/permission-sets/en.mdx:73
 #, no-wrap
-msgid "Lexicon schemas are published publicly as records in ATProto Lexicon repositories. Refer to [Lexicon Publication and Resolution](/specs/lexicon#lexicon-publication-and-resolution) for technical details.\n"
-msgstr "LexiconスキーマはAtproto上でLexiconリポジトリのレコードとして公開されます。技術的な詳細は[Lexiconの発行と解決](/specs/lexicon#lexicon-publication-and-resolution)を参照してください。\n"
+msgid "Lexicon schemas are published publicly as records in atproto Lexicon repositories. Refer to [Lexicon Publication and Resolution](/specs/lexicon#lexicon-publication-and-resolution) for technical details.\n"
+msgstr "Lexiconスキーマはatproto上でLexiconリポジトリのレコードとして公開されます。技術的な詳細は[Lexiconの発行と解決](/specs/lexicon#lexicon-publication-and-resolution)を参照してください。\n"
 
 #. type: Plain text
 #: src/guides/permission-sets/en.mdx:75
@@ -505,8 +506,8 @@ msgstr "<Heading level={2} id=\"revising-permission-sets\">権限セットの改
 #. type: Plain text
 #: src/guides/permission-sets/en.mdx:178
 #, no-wrap
-msgid "Permission sets can be revised, but removing them or making destructive changes can break existing applications. In general, permission sets should be closely tied to the applications they are designed for, but not necessarily 1:1. Remember that Atproto applications can utilize multiple different Lexicons.\n"
-msgstr "権限セットは改訂できますが、削除したり破壊的変更を行うと既存アプリケーションが壊れる可能性があります。一般に、権限セットは設計対象のアプリケーションに密接に結びつけるべきですが、必ずしも1:1である必要はありません。Atprotoアプリケーションは複数の異なるLexiconを利用できることを覚えておいてください。\n"
+msgid "Permission sets can be revised, but removing them or making destructive changes can break existing applications. In general, permission sets should be closely tied to the applications they are designed for, but not necessarily 1:1. Remember that atproto applications can utilize multiple different Lexicons.\n"
+msgstr "権限セットは改訂できますが、削除したり破壊的変更を行うと既存アプリケーションが壊れる可能性があります。一般に、権限セットは設計対象のアプリケーションに密接に結びつけるべきですが、必ずしも1:1である必要はありません。atprotoアプリケーションは複数の異なるLexiconを利用できることを覚えておいてください。\n"
 
 #. type: Plain text
 #: src/guides/permission-sets/en.mdx:180
@@ -517,8 +518,8 @@ msgstr "<Heading level={2} id=\"oauth-flow-examples\">OAuthフローの例</Head
 #. type: Plain text
 #: src/guides/permission-sets/en.mdx:182
 #, no-wrap
-msgid "Apps that are using Atproto identity providers *solely* for authentication [only need to request the `atproto` permission](/guides/scopes). This provides the same OAuth flow that you might expect from other identity providers; no features of the Atmosphere social graph are used, and no additional permissions are required:\n"
-msgstr "AtprotoのIDプロバイダーを認証*のみ*に利用するアプリは、[`atproto`権限を要求するだけで十分](/guides/scopes)です。これにより、他のIDプロバイダーで期待するのと同じOAuthフローが提供されます。Atmosphereのソーシャルグラフ機能は使われず、追加の権限も不要です。\n"
+msgid "Apps that are using atproto identity providers *solely* for authentication [only need to request the `atproto` permission](/guides/scopes). This provides the same OAuth flow that you might expect from other identity providers; no features of the Atmosphere social graph are used, and no additional permissions are required:\n"
+msgstr "atprotoのIDプロバイダーを認証*のみ*に利用するアプリは、[`atproto`権限を要求するだけで十分](/guides/scopes)です。これにより、他のIDプロバイダーで期待するのと同じOAuthフローが提供されます。Atmosphereのソーシャルグラフ機能は使われず、追加の権限も不要です。\n"
 
 #. type: Plain text
 #: src/guides/permission-sets/en.mdx:186
@@ -583,8 +584,8 @@ msgstr ""
 #. type: Plain text
 #: src/guides/permission-sets/en.mdx:204
 #, no-wrap
-msgid "From the expanded Atproto and Bluesky permissions, you might recognize `atproto` (for OAuth login), `blob:*/*` (for image and video handling), and several other `app.bsky.*` permissions for profile and social graph interactions.\n"
-msgstr "展開されたAtprotoとBlueskyの権限には、OAuthログイン用の`atproto`、画像・動画の取り扱い用の`blob:*/*`、そしてプロフィールやソーシャルグラフ操作のための複数の`app.bsky.*`権限が含まれていることが分かるでしょう。\n"
+msgid "From the expanded atproto and Bluesky permissions, you might recognize `atproto` (for OAuth login), `blob:*/*` (for image and video handling), and several other `app.bsky.*` permissions for profile and social graph interactions.\n"
+msgstr "展開されたatprotoとBlueskyの権限には、OAuthログイン用の`atproto`、画像・動画の取り扱い用の`blob:*/*`、そしてプロフィールやソーシャルグラフ操作のための複数の`app.bsky.*`権限が含まれていることが分かるでしょう。\n"
 
 #. type: Plain text
 #: src/guides/permission-sets/en.mdx:206
