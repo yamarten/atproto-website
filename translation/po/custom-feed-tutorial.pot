@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-11 10:36+0900\n"
+"POT-Creation-Date: 2026-02-21 12:24+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,7 +68,7 @@ msgstr ""
 #. type: Plain text
 #: src/guides/bot-tutorial/en.mdx:30 src/guides/custom-feed-tutorial/en.mdx:40
 #, no-wrap
-msgid "Now, create a new Typescript project directory and initialize your project:\n"
+msgid "Now, create a new TypeScript project directory and initialize your project:\n"
 msgstr ""
 
 #. type: Plain text
@@ -76,7 +76,7 @@ msgstr ""
 #: src/guides/custom-feed-tutorial/en.mdx:387
 #: src/guides/oauth-tutorial/en.mdx:783
 #: src/guides/statusphere-tutorial/en.mdx:728
-#: src/articles/atproto-ethos/en.mdx:136
+#: src/articles/atproto-ethos/en.mdx:135
 #, no-wrap
 msgid "## Conclusion\n"
 msgstr ""

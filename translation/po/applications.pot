@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-11 10:36+0900\n"
+"POT-Creation-Date: 2026-02-21 12:24+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -185,7 +185,7 @@ msgstr ""
 #: src/guides/applications/en.mdx:84
 #, no-wrap
 msgid ""
-"- Typescript\n"
+"- TypeScript\n"
 "- NodeJS web server ([express](https://expressjs.com/))\n"
 "- SQLite database ([Kysely](https://kysely.dev/))\n"
 "- Server-side rendering ([uhtml](https://www.npmjs.com/package/uhtml))\n"
@@ -744,7 +744,7 @@ msgstr ""
 #. type: Plain text
 #: src/guides/applications/en.mdx:389
 #, no-wrap
-msgid "This will produce Typescript interfaces as well as runtime validation functions that we can use in our app. Here's what that generated code looks like:\n"
+msgid "This will produce TypeScript interfaces as well as runtime validation functions that we can use in our app. Here's what that generated code looks like:\n"
 msgstr ""
 
 #. type: Plain text
@@ -1255,8 +1255,8 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/applications/en.mdx:677 src/articles/atproto-ethos/en.mdx:147
-#: src/articles/atproto-for-distsys-engineers/en.mdx:227
+#: src/guides/applications/en.mdx:677 src/articles/atproto-ethos/en.mdx:146
+#: src/articles/atproto-for-distsys-engineers/en.mdx:226
 #, no-wrap
 msgid "<FooterCTA href=\"/\" title=\"Ready to learn more?\" description=\"Specs, guides, and SDKs can be found here.\" />\n"
 msgstr ""

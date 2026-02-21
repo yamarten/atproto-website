@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-18 14:17+0900\n"
+"POT-Creation-Date: 2026-02-21 12:24+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: Plain text
-#: src/guides/creating-a-labeler/en.mdx:44 src/guides/self-hosting/en.mdx:45
+#: src/guides/creating-a-labeler/en.mdx:44 src/guides/self-hosting/en.mdx:53
 #, no-wrap
 msgid "## Ozone\n"
 msgstr ""
@@ -100,61 +100,82 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/self-hosting/en.mdx:31 src/guides/the-at-stack/en.mdx:68
+#: src/guides/self-hosting/en.mdx:31 src/guides/the-at-stack/en.mdx:69
 #, no-wrap
-msgid "## Tap\n"
+msgid "## Relays\n"
 msgstr ""
 
 #. type: Plain text
 #: src/guides/self-hosting/en.mdx:33
 #, no-wrap
-msgid "Tap is used for syncing existing records from the AT network and then continuing to receive new records from the firehose. For a guide to deploying Tap, refer to the [Tap readme](https://github.com/bluesky-social/indigo/blob/main/cmd/tap/README.md#distribution--deployment).\n"
-msgstr ""
-
-#. type: Plain text
-#: src/guides/self-hosting/en.mdx:35
-#, no-wrap
-msgid "We also provide a quick start guide for [deploying Tap](https://github.com/bluesky-social/indigo/blob/main/cmd/tap/RAILWAY_DEPLOY.md) to [Railway](https://railway.com/).\n"
+msgid "Hosting your own Relay is possible, though bandwidth intensive. Relays typically operate in a [full-network mode](/guides/the-at-stack#relays), where they replicate data from all PDSes and repositories on the AT Protocol network. However, operating a Relay is *not* storage-intensive, as Relays are not required to retain archival copies of network data as of [Sync 1.1](/blog/relay-updates-sync-v1-1).\n"
 msgstr ""
 
 #. type: Plain text
 #: src/guides/self-hosting/en.mdx:37
 #, no-wrap
-msgid "## AppViews or Relays\n"
+msgid ""
+"There are a few different relay implementations:\n"
+"- [Reference Implementation](https://github.com/bluesky-social/indigo/blob/main/cmd/relay/README.md), written in Go.\n"
+"- [Blacksky Relay](https://github.com/blacksky-algorithms/rsky/tree/main/rsky-relay#rsky-relay), written in Rust.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/self-hosting/en.mdx:39
+#: src/guides/self-hosting/en.mdx:39 src/guides/the-at-stack/en.mdx:86
 #, no-wrap
-msgid "Hosting your own AppView or Relay is possible, but resource intensive. Compared with hosting your own PDS, which is a way of personally controlling access to your own data repository, hosting an AppView or Relay is something that you would only do to provide application-level infrastructure. Generally, the first thing you would need to do here is replicate all of the data in the network for the Lexicons that your application handles. Refer to the [Sync](/guides/sync) docs for a starting point.\n"
+msgid "## Tap\n"
 msgstr ""
 
 #. type: Plain text
 #: src/guides/self-hosting/en.mdx:41
 #, no-wrap
-msgid "There are lots of other decisions that will go into designing and running your own Atmosphere apps! This will not be a comprehensive list of recommendations.\n"
+msgid "Tap is used for syncing existing records from the AT network and then continuing to receive new records from the firehose. For a guide to deploying Tap, refer to the [Tap readme](https://github.com/bluesky-social/indigo/blob/main/cmd/tap/README.md#distribution--deployment).\n"
 msgstr ""
 
 #. type: Plain text
 #: src/guides/self-hosting/en.mdx:43
 #, no-wrap
-msgid "- For your app's signup flow, you will need users to log in or create an account. We generally recommend hosting your own PDS alongside your app to allow first-time users of the Atmosphere — who may not yet be aware of the concept of a PDS — to sign up directly within your application. Your PDS and AppView should have [different domain names](/going-to-production#domain-names).\n"
+msgid "We also provide a quick start guide for [deploying Tap](https://github.com/bluesky-social/indigo/blob/main/cmd/tap/RAILWAY_DEPLOY.md) to [Railway](https://railway.com/).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/self-hosting/en.mdx:45
+#, no-wrap
+msgid "## AppViews\n"
 msgstr ""
 
 #. type: Plain text
 #: src/guides/self-hosting/en.mdx:47
 #, no-wrap
-msgid "Refer to [Using Ozone](/guides/using-ozone) for self-hosting guidance.\n"
+msgid "Creating or hosting your own AppView is possible, but resource intensive. Compared with hosting your own PDS, which is a way of personally controlling access to your own data repository, hosting an AppView is something that you would only do to provide application-level infrastructure. Generally, the first thing you would need to do here is replicate all of the data in the network for the Lexicons that your application handles. Refer to the [Sync](/guides/sync) docs for a starting point, or see the Tap section above.\n"
 msgstr ""
 
 #. type: Plain text
 #: src/guides/self-hosting/en.mdx:49
 #, no-wrap
+msgid "There are lots of other decisions that will go into designing and running your own Atmosphere apps! This will not be a comprehensive list of recommendations.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/self-hosting/en.mdx:51
+#, no-wrap
+msgid "- For your app's signup flow, you will need users to log in or create an account. We generally recommend hosting your own PDS alongside your app to allow first-time users of the Atmosphere — who may not yet be aware of the concept of a PDS — to sign up directly within your application. Your PDS and AppView should have [different domain names](/guides/going-to-production#domain-names).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/self-hosting/en.mdx:55
+#, no-wrap
+msgid "Refer to [Using Ozone](/guides/using-ozone) for self-hosting guidance.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/self-hosting/en.mdx:57
+#, no-wrap
 msgid "## Deploy Recipes\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/self-hosting/en.mdx:50
+#: src/guides/self-hosting/en.mdx:58
 #, no-wrap
 msgid "For community-contributed deployment solutions that do not use our official tooling, and may support different environments, refer to the [deploy-recipes](https://github.com/bluesky-social/deploy-recipes) Github repo. Contributions are welcome!\n"
 msgstr ""

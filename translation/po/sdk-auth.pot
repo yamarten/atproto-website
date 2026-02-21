@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-12 10:49+0900\n"
+"POT-Creation-Date: 2026-02-21 12:24+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,15 +20,15 @@ msgstr ""
 #: src/guides/account-lifecycle/en.mdx:65
 #: src/guides/images-and-video/en.mdx:142 src/guides/moderation/en.mdx:30
 #: src/guides/reads-and-writes/en.mdx:73 src/guides/streaming-data/en.mdx:60
-#: src/guides/video-handling/en.mdx:39 src/guides/feeds/en.mdx:111
-#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:56
+#: src/guides/video-handling/en.mdx:41 src/guides/feeds/en.mdx:113
+#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:57
 #: src/guides/scopes/en.mdx:45 src/guides/subscriptions/en.mdx:78
 #: src/guides/writing-data/en.mdx:181 src/guides/creating-a-labeler/en.mdx:56
-#: src/guides/labels/en.mdx:110 src/guides/sdk-auth/en.mdx:112
+#: src/guides/labels/en.mdx:110 src/guides/sdk-auth/en.mdx:116
 #: src/guides/sync/en.mdx:51 src/guides/auth/en.mdx:74
 #: src/guides/lexicon/en.mdx:128 src/guides/publishing-lexicons/en.mdx:49
 #: src/guides/backfilling/en.mdx:60 src/guides/reading-data/en.mdx:165
-#: src/guides/social-graph/en.mdx:21 src/guides/permission-sets/en.mdx:214
+#: src/guides/social-graph/en.mdx:19 src/guides/permission-sets/en.mdx:214
 #: src/guides/using-ozone/en.mdx:132
 #, no-wrap
 msgid "## Further Reading and Resources\n"
@@ -108,17 +108,23 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:39
+#: src/guides/sdk-auth/en.mdx:36
+#, no-wrap
+msgid "    Applications with an end user login flow should use [OAuth](/guides/oauth-cli-tutorial) authentication rather than app password sessions. Password auth is acceptable for bots and command line tools.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/sdk-auth/en.mdx:41
 #, no-wrap
 msgid ""
-"    Applications with an end user login flow should use [OAuth](/guides/auth) authentication rather than app password sessions. Password auth is acceptable for bots and command line tools. Both methods will produce the same authenticated `session`.\n"
+"    Both methods will produce the same authenticated `session`.\n"
 "    </TabPanel>\n"
 "    <TabPanel value=\"go\">\n"
 "    Start by importing the `atproto` and `xrpc` libraries, creating an `&xrpc.Client{}`, and providing credentials to call `ServerCreateSession()`:\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:46
+#: src/guides/sdk-auth/en.mdx:48
 #, no-wrap
 msgid ""
 "    ```go\n"
@@ -130,7 +136,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:49
+#: src/guides/sdk-auth/en.mdx:51
 #, no-wrap
 msgid ""
 "    func main() {\n"
@@ -138,7 +144,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:53
+#: src/guides/sdk-auth/en.mdx:55
 #, no-wrap
 msgid ""
 "      client := &xrpc.Client{\n"
@@ -147,7 +153,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:63
+#: src/guides/sdk-auth/en.mdx:62
 #, no-wrap
 msgid ""
 "      session, _ := comatproto.ServerCreateSession(ctx, client, &comatproto.ServerCreateSession_Input{\n"
@@ -156,19 +162,26 @@ msgid ""
 "      })\n"
 "    }\n"
 "    ```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/sdk-auth/en.mdx:67
+#, no-wrap
+msgid ""
+"    Applications with an end user login flow should use [OAuth](/guides/go-oauth-cli-tutorial) authentication rather than app password sessions. Password auth is acceptable for bots and command line tools.\n"
 "    </TabPanel>\n"
 "  </TabPanels>\n"
 "</TabGroup>\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:65
+#: src/guides/sdk-auth/en.mdx:69
 #, no-wrap
 msgid "## Client Sessions\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:74
+#: src/guides/sdk-auth/en.mdx:78
 #, no-wrap
 msgid ""
 "<TabGroup defaultValue=\"ts\">\n"
@@ -182,7 +195,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:78
+#: src/guides/sdk-auth/en.mdx:82
 #, no-wrap
 msgid ""
 "    ```tsx\n"
@@ -191,7 +204,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:85
+#: src/guides/sdk-auth/en.mdx:89
 #, no-wrap
 msgid ""
 "    // Make authenticated API calls\n"
@@ -203,7 +216,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:94
+#: src/guides/sdk-auth/en.mdx:98
 #, no-wrap
 msgid ""
 "    ```go\n"
@@ -217,7 +230,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:100
+#: src/guides/sdk-auth/en.mdx:104
 #, no-wrap
 msgid ""
 "    fmt.Printf(\"Logged in as: %s (%s)\\n\", session.Handle, session.Did)\n"
@@ -228,25 +241,25 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:102
+#: src/guides/sdk-auth/en.mdx:106
 #, no-wrap
 msgid "From here, you can go directly to [making API requests](/guides/reads-and-writes).\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:104
+#: src/guides/sdk-auth/en.mdx:108
 #, no-wrap
 msgid "## API Tokens\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:106
+#: src/guides/sdk-auth/en.mdx:110
 #, no-wrap
 msgid "Rate limits for logging in are generally lower than for other API operations. Calling the login method multiple times in a short period may trigger rate limits. You only need to call the login method once per session to authenticate.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:110
+#: src/guides/sdk-auth/en.mdx:114
 #, no-wrap
 msgid ""
 "The `com.atproto.server.createSession` API endpoint called by login methods returns a session object containing two API tokens:\n"
@@ -255,7 +268,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:118
+#: src/guides/sdk-auth/en.mdx:122
 #, no-wrap
 msgid ""
 "- [Auth](/guides/auth)\n"
