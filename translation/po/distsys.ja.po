@@ -84,14 +84,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/articles/atproto-for-distsys-engineers/en.mdx:33
-#, fuzzy, no-wrap
-#| msgid ""
-#| "export const header = {\n"
-#| "  title: 'ATProto for distributed systems engineers',\n"
-#| "  description:\n"
-#| "    'In this article we\\'re going to explore AT Proto from the perspective of distributed backend engineering.',\n"
-#| "  date: 'Sep 3, 2024',\n"
-#| "}\n"
+#, no-wrap
 msgid ""
 "export const header = {\n"
 "  title: 'ATProto for distributed systems engineers',\n"
@@ -103,7 +96,6 @@ msgstr ""
 "  title: '分散システムエンジニアのためのAtproto',\n"
 "  description:\n"
 "    'この記事では、分散バックエンドエンジニアリングの観点からAtprotoについて説明します。',\n"
-"  date: '2024年9月3日',\n"
 "}\n"
 
 #. type: Plain text

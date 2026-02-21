@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-18 14:17+0900\n"
+"POT-Creation-Date: 2026-02-21 12:24+0900\n"
 "PO-Revision-Date: 2026-01-07 19:40+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. type: Plain text
-#: src/guides/creating-a-labeler/en.mdx:44 src/guides/self-hosting/en.mdx:45
+#: src/guides/creating-a-labeler/en.mdx:44 src/guides/self-hosting/en.mdx:53
 #, no-wrap
 msgid "## Ozone\n"
 msgstr "<Heading level={2} id=\"ozone\">Ozone</Heading>\n"
@@ -101,76 +101,96 @@ msgstr "Blueskyは多くのPDSの前に「entryway」を置いて運用してい
 
 #. type: Plain text
 #: src/guides/self-hosting/en.mdx:29
-#, fuzzy, no-wrap
-#| msgid ""
-#| "There are also several community PDS implementations! For example:\n"
-#| "- [Tranquil PDS](https://tangled.org/lewis.moe/bspds-sandbox), written in Rust.\n"
-#| "- [Cocoon](https://tangled.org/hailey.at/cocoon), written in Go.\n"
+#, no-wrap
 msgid ""
 "There are also several community PDS implementations! For example:\n"
 "- [Tranquil PDS](https://tangled.org/tranquil.farm/tranquil-pds), written in Rust.\n"
 "- [Cocoon](https://tangled.org/hailey.at/cocoon), written in Go.\n"
 msgstr ""
 "コミュニティによるPDS実装もあります。例えば、以下があります。\n"
-"- [Tranquil PDS](https://tangled.org/lewis.moe/bspds-sandbox)（Rust）\n"
+"- [Tranquil PDS](https://tangled.org/tranquil.farm/tranquil-pds)（Rust）\n"
 "- [Cocoon](https://tangled.org/hailey.at/cocoon)（Go）\n"
 
 #. type: Plain text
-#: src/guides/self-hosting/en.mdx:31 src/guides/the-at-stack/en.mdx:68
+#: src/guides/self-hosting/en.mdx:31 src/guides/the-at-stack/en.mdx:69
+#, no-wrap
+msgid "## Relays\n"
+msgstr "<Heading level={2} id=\"relays\">リレー</Heading>\n"
+
+#. type: Plain text
+#: src/guides/self-hosting/en.mdx:33
+#, no-wrap
+msgid "Hosting your own Relay is possible, though bandwidth intensive. Relays typically operate in a [full-network mode](/guides/the-at-stack#relays), where they replicate data from all PDSes and repositories on the AT Protocol network. However, operating a Relay is *not* storage-intensive, as Relays are not required to retain archival copies of network data as of [Sync 1.1](/blog/relay-updates-sync-v1-1).\n"
+msgstr "独自のリレーをホストすることは可能ですが、帯域幅を大量に消費します。リレーは通常、ATプロトコルネットワーク上のすべてのPDSやリポジトリからデータを複製する[フルネットワークモード](/guides/the-at-stack#relays)で動作します。ただし、[Sync 1.1](/blog/relay-updates-sync-v1-1)以降のリレーはネットワークデータのアーカイブを保持する必要がないため、ストレージを大量に消費することは*ありません*。\n"
+
+#. type: Plain text
+#: src/guides/self-hosting/en.mdx:37
+#, no-wrap
+msgid ""
+"There are a few different relay implementations:\n"
+"- [Reference Implementation](https://github.com/bluesky-social/indigo/blob/main/cmd/relay/README.md), written in Go.\n"
+"- [Blacksky Relay](https://github.com/blacksky-algorithms/rsky/tree/main/rsky-relay#rsky-relay), written in Rust.\n"
+msgstr ""
+"いくつかの異なるリレー実装があります。\n"
+"- [リファレンス実装](https://github.com/bluesky-social/indigo/blob/main/cmd/relay/README.md)（Go）\n"
+"- [Blacksky Relay](https://github.com/blacksky-algorithms/rsky/tree/main/rsky-relay#rsky-relay)（Rust）\n"
+
+#. type: Plain text
+#: src/guides/self-hosting/en.mdx:39 src/guides/the-at-stack/en.mdx:86
 #, no-wrap
 msgid "## Tap\n"
 msgstr "<Heading level={2} id=\"tap\">Tap</Heading>\n"
 
 #. type: Plain text
-#: src/guides/self-hosting/en.mdx:33
+#: src/guides/self-hosting/en.mdx:41
 #, no-wrap
 msgid "Tap is used for syncing existing records from the AT network and then continuing to receive new records from the firehose. For a guide to deploying Tap, refer to the [Tap readme](https://github.com/bluesky-social/indigo/blob/main/cmd/tap/README.md#distribution--deployment).\n"
 msgstr "TapはATネットワークから既存のレコードを同期し、その後firehoseから新しいレコードを継続的に受信するために使用されます。Tapのデプロイ方法については[Tapのreadme](https://github.com/bluesky-social/indigo/blob/main/cmd/tap/README.md#distribution--deployment)を参照してください。\n"
 
 #. type: Plain text
-#: src/guides/self-hosting/en.mdx:35
+#: src/guides/self-hosting/en.mdx:43
 #, no-wrap
 msgid "We also provide a quick start guide for [deploying Tap](https://github.com/bluesky-social/indigo/blob/main/cmd/tap/RAILWAY_DEPLOY.md) to [Railway](https://railway.com/).\n"
 msgstr "また、[Railway](https://railway.com/)向けの[Tapデプロイのクイックスタートガイド](https://github.com/bluesky-social/indigo/blob/main/cmd/tap/RAILWAY_DEPLOY.md)も提供しています。\n"
 
 #. type: Plain text
-#: src/guides/self-hosting/en.mdx:37
+#: src/guides/self-hosting/en.mdx:45
 #, no-wrap
-msgid "## AppViews or Relays\n"
-msgstr "<Heading level={2} id=\"appviews-or-relays\">AppViewおよびリレー</Heading>\n"
+msgid "## AppViews\n"
+msgstr "<Heading level={2} id=\"app-views\">AppView</Heading>\n"
 
 #. type: Plain text
-#: src/guides/self-hosting/en.mdx:39
+#: src/guides/self-hosting/en.mdx:47
 #, no-wrap
-msgid "Hosting your own AppView or Relay is possible, but resource intensive. Compared with hosting your own PDS, which is a way of personally controlling access to your own data repository, hosting an AppView or Relay is something that you would only do to provide application-level infrastructure. Generally, the first thing you would need to do here is replicate all of the data in the network for the Lexicons that your application handles. Refer to the [Sync](/guides/sync) docs for a starting point.\n"
-msgstr "独自のAppViewやリレーをホスティングすることは可能ですが、リソースを大量に消費します。自身のデータリポジトリへのアクセスを個人的に制御する手段であるPDSのホスティングと比較すると、AppViewやリレーのホスティングはアプリケーションレベルのインフラを提供するために行うものです。通常は必要なLexiconに関するネットワーク上の全データを複製することが最初の作業になります。始めるには[同期](/guides/sync)のドキュメントを参照してください。\n"
+msgid "Creating or hosting your own AppView is possible, but resource intensive. Compared with hosting your own PDS, which is a way of personally controlling access to your own data repository, hosting an AppView is something that you would only do to provide application-level infrastructure. Generally, the first thing you would need to do here is replicate all of the data in the network for the Lexicons that your application handles. Refer to the [Sync](/guides/sync) docs for a starting point, or see the Tap section above.\n"
+msgstr "独自のAppViewを作成・ホスティングすることは可能ですが、リソースを大量に消費します。自身のデータリポジトリへのアクセスを個人的に制御する手段であるPDSのホスティングと比較すると、AppViewのホスティングはアプリケーションレベルのインフラを提供するために行うものです。通常は必要なLexiconに関するネットワーク上の全データを複製することが最初の作業になります。始めるには[同期](/guides/sync)のドキュメントや、後述のTapセクションを参照してください。\n"
 
 #. type: Plain text
-#: src/guides/self-hosting/en.mdx:41
+#: src/guides/self-hosting/en.mdx:49
 #, no-wrap
 msgid "There are lots of other decisions that will go into designing and running your own Atmosphere apps! This will not be a comprehensive list of recommendations.\n"
 msgstr "Atmosphereアプリを設計・運用する際には他にも多くの判断事項があります。このガイドは推奨事項の包括的なリストではありません。\n"
 
 #. type: Plain text
-#: src/guides/self-hosting/en.mdx:43
+#: src/guides/self-hosting/en.mdx:51
 #, no-wrap
-msgid "- For your app's signup flow, you will need users to log in or create an account. We generally recommend hosting your own PDS alongside your app to allow first-time users of the Atmosphere — who may not yet be aware of the concept of a PDS — to sign up directly within your application. Your PDS and AppView should have [different domain names](/going-to-production#domain-names).\n"
-msgstr "- アプリのサインアップフローでは、ユーザーがログインまたはアカウント作成を行う必要があります。Atmosphereを初めて利用するユーザー（まだPDSの概念を知らない可能性がある）に対してアプリ内で直接サインアップさせるため、アプリと一緒にPDSもホストすることを一般的に推奨します。PDSとAppViewは[異なるドメイン名](/going-to-production#domain-names)を使用してください。\n"
+msgid "- For your app's signup flow, you will need users to log in or create an account. We generally recommend hosting your own PDS alongside your app to allow first-time users of the Atmosphere — who may not yet be aware of the concept of a PDS — to sign up directly within your application. Your PDS and AppView should have [different domain names](/guides/going-to-production#domain-names).\n"
+msgstr "- アプリのサインアップフローでは、ユーザーがログインまたはアカウント作成を行う必要があります。Atmosphereを初めて利用するユーザー（まだPDSの概念を知らない可能性がある）に対してアプリ内で直接サインアップさせるため、アプリと一緒にPDSもホストすることを一般的に推奨します。PDSとAppViewは[異なるドメイン名](/guides/going-to-production#domain-names)を使用してください。\n"
 
 #. type: Plain text
-#: src/guides/self-hosting/en.mdx:47
+#: src/guides/self-hosting/en.mdx:55
 #, no-wrap
 msgid "Refer to [Using Ozone](/guides/using-ozone) for self-hosting guidance.\n"
 msgstr "[Ozoneの使用](/guides/using-ozone)を参照してください。\n"
 
 #. type: Plain text
-#: src/guides/self-hosting/en.mdx:49
+#: src/guides/self-hosting/en.mdx:57
 #, no-wrap
 msgid "## Deploy Recipes\n"
 msgstr "<Heading level={2} id=\"deploy-recipes\">デプロイレシピ</Heading>\n"
 
 #. type: Plain text
-#: src/guides/self-hosting/en.mdx:50
+#: src/guides/self-hosting/en.mdx:58
 #, no-wrap
 msgid "For community-contributed deployment solutions that do not use our official tooling, and may support different environments, refer to the [deploy-recipes](https://github.com/bluesky-social/deploy-recipes) Github repo. Contributions are welcome!\n"
 msgstr "公式ツールを使用しない、または異なる環境をサポートするコミュニティ提供のデプロイソリューションについては、[deploy-recipes](https://github.com/bluesky-social/deploy-recipes)のGitHubリポジトリを参照してください。貢献は歓迎します！\n"

@@ -205,10 +205,9 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/using-ozone/en.mdx:60
-#, fuzzy, no-wrap
-#| msgid "Finally, confirm that you will be using this account as a labeler service. This publishes an [AT Record](https://pdsls.dev/at://did:plc:wwjhjtgw5ksxrzdswtvnsnjs/app.bsky.labeler.service/self) of the type `app.bsky.labeler.service` to your account.\n"
+#, no-wrap
 msgid "Finally, confirm that you will be using this account as a labeler service. This publishes an [AT Record](https://atproto.at/viewer?uri=did:plc:wwjhjtgw5ksxrzdswtvnsnjs/app.bsky.labeler.service/self) of the type `app.bsky.labeler.service` to your account.\n"
-msgstr "最後に、このアカウントをラベラーサービスとして使用することを承認します。これにより、`app.bsky.labeler.service`型の[ATレコード](https://pdsls.dev/at://did:plc:wwjhjtgw5ksxrzdswtvnsnjs/app.bsky.labeler.service/self)がアカウントに公開されます。\n"
+msgstr "最後に、このアカウントをラベラーサービスとして使用することを承認します。これにより、`app.bsky.labeler.service`型の[ATレコード](https://atproto.at/viewer?uri=did:plc:wwjhjtgw5ksxrzdswtvnsnjs/app.bsky.labeler.service/self)がアカウントに公開されます。\n"
 
 #. type: Plain text
 #: src/guides/using-ozone/en.mdx:64

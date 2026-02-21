@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-18 14:17+0900\n"
+"POT-Creation-Date: 2026-02-21 12:24+0900\n"
 "PO-Revision-Date: 2026-02-07 17:03+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -124,7 +124,7 @@ msgstr "さらに、`lex` CLIツールをグローバルにインストールし
 #. type: Plain text
 #: src/guides/bot-tutorial/en.mdx:30 src/guides/custom-feed-tutorial/en.mdx:40
 #, no-wrap
-msgid "Now, create a new Typescript project directory and initialize your project:\n"
+msgid "Now, create a new TypeScript project directory and initialize your project:\n"
 msgstr "次に、新しいTypeScriptプロジェクトディレクトリを作成し、プロジェクトを初期化します。\n"
 
 #. type: Plain text
@@ -161,10 +161,9 @@ msgstr "<Heading level={2} id=\"part-1-lexicons\">パート1：Lexion</Heading> 
 
 #. type: Plain text
 #: src/guides/bot-tutorial/en.mdx:44
-#, fuzzy, no-wrap
-#| msgid "[Lexicons](/guides/lexicon) define Atproto records. Your bot will create Bluesky posts, using the [app.bsky.feed.post](https://pdsls.dev/at://did:plc:ewvi7nxzyoun6zhxrhs64oiz/app.bsky.feed.post/3juc4thkx452i#schema) Lexicon. You can use `lex` to download and build this Lexicon into your project:\n"
+#, no-wrap
 msgid "[Lexicons](/guides/lexicon) define Atproto records. Your bot will create Bluesky posts, using the [app.bsky.feed.post](https://lexicon.garden/lexicon/did:plc:4v4y5r3lwsbtmsxhile2ljac/app.bsky.feed.post) Lexicon. You can use `lex` to download and build this Lexicon into your project:\n"
-msgstr "[Lexicon](/guides/lexicon)はAtprotoのレコードを定義します。ボットは[app.bsky.feed.post](https://pdsls.dev/at://did:plc:ewvi7nxzyoun6zhxrhs64oiz/app.bsky.feed.post/3juc4thkx452i#schema) Lexiconを使ってBluesky投稿を作成します。`lex`を使えば、このLexiconをダウンロードしてプロジェクトに組み込めます。\n"
+msgstr "[Lexicon](/guides/lexicon)はAtprotoのレコードを定義します。ボットは[app.bsky.feed.post](https://lexicon.garden/lexicon/did:plc:4v4y5r3lwsbtmsxhile2ljac/app.bsky.feed.post) Lexiconを使ってBluesky投稿を作成します。`lex`を使えば、このLexiconをダウンロードしてプロジェクトに組み込めます。\n"
 
 #. type: Plain text
 #: src/guides/bot-tutorial/en.mdx:48

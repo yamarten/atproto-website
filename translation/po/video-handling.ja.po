@@ -66,7 +66,7 @@ msgstr "動画のアップロードは画像のアップロードとは少し異
 #: src/guides/video-handling/en.mdx:11
 #, no-wrap
 msgid "For this reason, video uploads are typically handled by a side-car service before the final file(s) are uploaded to the PDS as blobs. For example, Bluesky has the `https://video.bsky.app` service for handling the upload and transcoding of videos before they are written to the PDS as a blob.\n"
-msgstr ""
+msgstr "このため、動画のアップロードは通常、最終的なファイルがblobとしてPDSにアップロードされる前に補助サービスによって処理されます。例えば、Blueskyには`https://video.bsky.app`サービスがあり、動画がblobとしてPDSに書き込まれる前にアップロードとトランスコードを処理します。\n"
 
 #. type: Plain text
 #: src/guides/video-handling/en.mdx:13

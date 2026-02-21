@@ -198,8 +198,7 @@ msgstr "このトークンは、要求するDIDのフィールド（新しい署
 
 #. type: Plain text
 #: src/guides/account-migration/en.mdx:62
-#, fuzzy, no-wrap
-#| msgid "The user is then recommended to submit the operation to the new PDS (using the `com.atproto.identity.submitPlcOperation` endpoint), which will validate that the changes are \"safe\" (aka, that they enable the the PDS to help manage the identity and atproto account), and then submit it to the PLC directory.\n"
+#, no-wrap
 msgid "The user is then recommended to submit the operation to the new PDS (using the `com.atproto.identity.submitPlcOperation` endpoint), which will validate that the changes are \"safe\" (aka, that they enable the PDS to help manage the identity and atproto account), and then submit it to the PLC directory.\n"
 msgstr "その後、ユーザーはそのオペレーションを新PDS（`com.atproto.identity.submitPlcOperation`エンドポイント）に提出することが推奨されます。新PDSは変更が安全であること（すなわちPDSがIDとAtprotoアカウントの管理を支援できること）を検証した後、PLCディレクトリへ提出します。\n"
 

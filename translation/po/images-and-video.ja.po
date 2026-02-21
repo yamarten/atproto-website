@@ -312,10 +312,9 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/images-and-video/en.mdx:118
-#, fuzzy, no-wrap
-#| msgid "You can see what an existing Blob record looks like in [pdsls](https://pdsls.dev/at://did:plc:ewvi7nxzyoun6zhxrhs64oiz/app.bsky.feed.post/3juft56hdjg2o). It's this one right here:\n"
+#, no-wrap
 msgid "You can see what an existing Blob record looks like in [atproto.at](https://atproto.at/viewer?uri=did:plc:ewvi7nxzyoun6zhxrhs64oiz/app.bsky.feed.post/3juft56hdjg2o). It's this one right here:\n"
-msgstr "既存のblobレコードがどのようなものかは[pdsls](https://pdsls.dev/at://did:plc:ewvi7nxzyoun6zhxrhs64oiz/app.bsky.feed.post/3juft56hdjg2o)で確認できます。以下のような画像が見えるでしょう。\n"
+msgstr "既存のblobレコードがどのようなものかは[atproto.at](https://atproto.at/viewer?uri=did:plc:ewvi7nxzyoun6zhxrhs64oiz/app.bsky.feed.post/3juft56hdjg2o)で確認できます。以下のような画像が見えるでしょう。\n"
 
 #. type: Plain text
 #: src/guides/images-and-video/en.mdx:120

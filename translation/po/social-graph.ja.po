@@ -84,7 +84,7 @@ msgstr "ATプロトコルからソーシャルグラフデータを取得する�
 #: src/guides/social-graph/en.mdx:17
 #, no-wrap
 msgid "[Microcosm](https://constellation.microcosm.blue) provides a set of resources for working with backlinks. Because all AT Protocol records are openly available and addressible via an `at://` URI, this makes it possible to encode nested API queries into individual URLs. Microcosm [does this](https://constellation.microcosm.blue/xrpc/blue.microcosm.links.getBacklinks?subject=at%3A%2F%2Fdid%3Aplc%3Aa4pqq234yw7fqbddawjo7y35%2Fapp.bsky.feed.post%2F3m237ilwc372e&source=app.bsky.feed.like%3Asubject.uri&limit=16), for example.\n"
-msgstr ""
+msgstr "[Microcosm](https://constellation.microcosm.blue)はバックリンクを操作するための一連のリソースを提供します。ATプロトコルのレコードは全て誰でも取得可能で、`at://` URIで指定可能なため、これによりネストされたAPIクエリを個別のURLにエンコードできるようになります。一例として、Microcosmであれば[このように](https://constellation.microcosm.blue/xrpc/blue.microcosm.links.getBacklinks?subject=at%3A%2F%2Fdid%3Aplc%3Aa4pqq234yw7fqbddawjo7y35%2Fapp.bsky.feed.post%2F3m237ilwc372e&source=app.bsky.feed.like%3Asubject.uri&limit=16)します。\n"
 
 #. type: Plain text
 #: src/guides/social-graph/en.mdx:25

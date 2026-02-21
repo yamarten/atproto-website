@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-18 14:17+0900\n"
+"POT-Creation-Date: 2026-02-21 12:24+0900\n"
 "PO-Revision-Date: 2026-01-07 19:40+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. type: Plain text
-#: src/guides/feeds/en.mdx:66 src/guides/the-at-stack/en.mdx:117
+#: src/guides/feeds/en.mdx:66 src/guides/the-at-stack/en.mdx:135
 #, no-wrap
 msgid "A Feed Generator service can host one or more algorithms. The service itself is identified by DID, while each algorithm that it hosts is declared by a record in the repo of the account that created it. For instance, feeds offered by Bluesky will likely be declared in `@bsky.app`'s repo. Therefore, a given algorithm is identified by the at-uri of the declaration record. This declaration record includes a pointer to the service's DID along with some profile information for the feed.\n"
 msgstr "フィードジェネレーターサービスは1つ以上のアルゴリズムをホストできます。サービス自体はDIDで識別され、ホストする各アルゴリズムはそれを作成したアカウントのリポジトリ内のレコードで宣言されます。例えば、Blueskyが提供するフィードは`@bsky.app`のリポジトリで宣言されるでしょう。したがって、特定のアルゴリズムは宣言レコードのat-uriで識別されます。この宣言レコードには、サービスのDIDへのポインターとフィードのプロフィール情報が含まれます。\n"
@@ -30,7 +30,13 @@ msgid "## PDS\n"
 msgstr "<Heading level={2} id=\"pds\">PDS</Heading>\n"
 
 #. type: Plain text
-#: src/guides/self-hosting/en.mdx:31 src/guides/the-at-stack/en.mdx:68
+#: src/guides/self-hosting/en.mdx:31 src/guides/the-at-stack/en.mdx:69
+#, no-wrap
+msgid "## Relays\n"
+msgstr "<Heading level={2} id=\"relays\">リレー</Heading>\n"
+
+#. type: Plain text
+#: src/guides/self-hosting/en.mdx:39 src/guides/the-at-stack/en.mdx:86
 #, no-wrap
 msgid "## Tap\n"
 msgstr "<Heading level={2} id=\"tap\">Tap</Heading>\n"
@@ -169,7 +175,7 @@ msgid "The PDS handles:\n"
 msgstr "PDSは以下を担います。\n"
 
 #. type: Plain text
-#: src/guides/the-at-stack/en.mdx:59
+#: src/guides/the-at-stack/en.mdx:60
 #, no-wrap
 msgid ""
 "- account lifecycle: signup, deletion, migration\n"
@@ -180,6 +186,7 @@ msgid ""
 "- secret key management: AT signing key, and PLC rotation key\n"
 "- [PLC](https://web.plc.directory/) identity operations and endpoints: change handle; validate, sign, and submit PLC ops\n"
 "- email delivery: for reset flows, as well as forwarding moderation mail\n"
+"- data synchronisation using repository event streams\n"
 "- output `#identity` and `#account` (coming soon) events on repo event stream\n"
 "- usually the ability to manage a default handle namespace (base domain)\n"
 "- OAuth client flows, including web sign-in pages, and optional MFA\n"
@@ -192,49 +199,87 @@ msgstr ""
 "- 秘密鍵管理：AT署名鍵とPLCローテーション鍵\n"
 "- [PLC](https://web.plc.directory/)のID操作とエンドポイント：ハンドル変更、PLC操作の検証・署名・送信\n"
 "- メール配信：リセットフローおよびモデレーションメールの転送用\n"
+"- リポジトリイベントストリームによるデータ同期\n"
 "- リポジトリのイベントストリームで`#identity`と`#account`（近日追加）イベントを出力\n"
 "- デフォルトのハンドル名前空間（ベースドメイン）を管理（例外あり）\n"
 "- OAuthクライアントフロー（サインインページや任意のMFAを含む）\n"
 
 #. type: Plain text
-#: src/guides/the-at-stack/en.mdx:61
+#: src/guides/the-at-stack/en.mdx:62
 #, no-wrap
 msgid "You can migrate an individual account's data repository freely from one PDS to another. This involves the import and export of repositories as CAR files. There are some community tools that make this easier:\n"
 msgstr "個々のアカウントのデータリポジトリは、PDS間を自由に移行できます。これには、リポジトリをCARファイルとしてインポート/エクスポートすることが含まれます。これを容易にするコミュニティツールがいくつかあります。\n"
 
 #. type: Plain text
-#: src/guides/the-at-stack/en.mdx:66
-#, fuzzy, no-wrap
-#| msgid ""
-#| "- https://pdsls.dev/, which lets you browse all the data stored in your own repository (and what PDS it's currently hosted on)\n"
-#| "- https://pdsmoover.com/, a collection of tools for PDS migration\n"
-#| "- https://boat.kelinci.net/, a set of interfaces for repository import and export\n"
-#| "- https://github.com/bluesky-social/goat, our Go AT command-line tool.\n"
+#: src/guides/the-at-stack/en.mdx:67
+#, no-wrap
 msgid ""
 "- https://atproto.at/, which lets you browse all the data stored in your own repository (and what PDS it's currently hosted on)\n"
 "- https://pdsmoover.com/, a collection of tools for PDS migration\n"
 "- https://boat.kelinci.net/, a set of interfaces for repository import and export\n"
 "- https://github.com/bluesky-social/goat, our Go AT command-line tool.\n"
 msgstr ""
-"- https://pdsls.dev/, 自分のリポジトリに保存されたすべてのデータ（現在どのPDSにホストされているか）を閲覧できる\n"
+"- https://atproto.at/, 自分のリポジトリに保存されたすべてのデータ（現在どのPDSにホストされているか）を閲覧できる\n"
 "- https://pdsmoover.com/, PDS移行のためのツール集\n"
 "- https://boat.kelinci.net/, リポジトリのインポート/エクスポート用インターフェース群\n"
 "- https://github.com/bluesky-social/goat, 私たちのGo製ATコマンドラインツール。\n"
 
 #. type: Plain text
-#: src/guides/the-at-stack/en.mdx:70
+#: src/guides/the-at-stack/en.mdx:71
 #, no-wrap
-msgid "Tap is used for syncing existing records from the AT network and then continuing to receive new records from the firehose.\n"
-msgstr "TapはATネットワークから既存のレコードを同期し、その後firehoseから新しいレコードを継続的に受信するために使用されます。\n"
+msgid "**Relays** handle all of your events in real-time. The Relay also handles rate limiting and network abuse of individual PDSes to ensure that availability from across the network. Importantly, relays themselves do not interpret records in repositories; they simply store them temporarily and forward them to consumers. Relays produce a [**firehose**](/guides/streaming-data) of events, which combines the [event streams](/specs/event-stream) from multiple repositories and PDSes.\n"
+msgstr "**リレー**はリアルタイムであなたのすべてのイベントを処理します。リレーはPDS単位のレート制限やネットワーク乱用も処理して、ネットワーク全体からの可用性を確保します。重要なこととして、リレー自体はリポジトリ内のレコードを解釈せず、単に一時的に保存し、消費者に転送するだけです。リレーは複数のリポジトリやPDSからの[イベントストリーム](/specs/event-stream)を組み合わせた[**firehose**](/guides/streaming-data)を生成します。\n"
 
 #. type: Plain text
-#: src/guides/the-at-stack/en.mdx:72
+#: src/guides/the-at-stack/en.mdx:73
+#, no-wrap
+msgid "Relays can be operated at different scales. Full-network relays track all repositories across the entire network, providing complete coverage. Partial-network relays might focus on specific communities, applications, or regions, reducing resource requirements. Specialized relays could serve particular use cases, such as academic research, brand monitoring, or archive preservation.\n"
+msgstr "リレーはさまざまな規模で運用できます。フルネットワークリレーは、ネットワーク全体のすべてのリポジトリを追跡し、完全なカバレッジを提供します。パーシャルネットワークリレーは、特定のコミュニティ、アプリケーション、地域に焦点を当てることで、リソース要件を減らすことができます。特化型リレーは、学術研究、ブランドモニタリング、アーカイブ保存などの特定のユースケースに対応することができます。\n"
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:75
+#, no-wrap
+msgid "A full network relay isn't particularly expensive to operate, and doesn't require specialized hardware, though it does require significant ingress and egress network bandwidth, which is the main cost in operating a relay.\n"
+msgstr "フルネットワークリレーは特に高価ではなく、特殊なハードウェアも必要ありませんが、リレー運用の主なコストである大幅な入出力ネットワーク帯域幅が必要です。\n"
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:82
+#, no-wrap
+msgid ""
+"There are several relays available, each may have their own rate limits and network policies. Some of the available relays are:\n"
+"- `relay.fire.hose.cam` and `relay3.fr.hose.cam` from [microcosm](https://www.microcosm.blue/).\n"
+"- `atproto.africa` from [Blacksky](https://blackskyweb.xyz/)\n"
+"- `relay.upcloud.world` from [Upcloud](https://upcloud.com/)\n"
+"- The two from [Bluesky PBC](https://docs.bsky.app/docs/advanced-guides/firehose).\n"
+"- The three from [firehose.network](https://firehose.network)\n"
+msgstr ""
+"いくつかのリレーが利用可能で、それぞれ独自のレート制限やネットワークポリシーを持っている可能性があります。利用可能なリレーのいくつかは次のとおりです。\n"
+"- [microcosm](https://www.microcosm.blue/)の`relay.fire.hose.cam`と`relay3.fr.hose.cam`\n"
+"- [Blacksky](https://blackskyweb.xyz/)の`atproto.africa`\n"
+"- [Upcloud](https://upcloud.com/)の`relay.upcloud.world`\n"
+"- [Bluesky PBC](https://docs.bsky.app/docs/advanced-guides/firehose)の2つのリレー\n"
+"- [firehose.network](https://firehose.network)の3つのリレー\n"
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:84
+#, no-wrap
+msgid "The relays operated by [Bluesky PBC](https://docs.bsky.app/docs/advanced-guides/firehose) are probably the most commonly used since this is the default relay for the reference PDS server implementation which many PDS hosts use. They have documented their [rate limits](https://docs.bsky.app/docs/advanced-guides/rate-limits) on their website.\n"
+msgstr "[Bluesky PBC](https://docs.bsky.app/docs/advanced-guides/firehose)が運用するリレーは、PDSサーバーリファレンス実装のデフォルトリレーであり、多くのPDSホストが使用しているため、おそらく最も広く使用されているリレーです。ウェブサイトで[レート制限](https://docs.bsky.app/docs/advanced-guides/rate-limits)が公開されています。\n"
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:88
+#, no-wrap
+msgid "Tap is used for syncing existing records from the AT network from PDS repositories and then continuing to receive new records from the firehose via a relay.\n"
+msgstr "TapはATネットワークのPDSから既存のレコードを同期し、その後リレーのfirehoseから新しいレコードを継続的に受信するために使用されます。\n"
+
+#. type: Plain text
+#: src/guides/the-at-stack/en.mdx:90
 #, no-wrap
 msgid "Tap simplifies AT sync by handling the firehose connection, verification, backfill, and filtering. Your application connects to a Tap and receives simple JSON events for only the repos and collections you care about, no need to worry about binary formats for validating cryptographic signatures. Tap features:\n"
 msgstr "Tapはfirehose接続、検証、バックフィル、フィルタリングを処理することでAT同期を簡素化します。アプリケーションはTapに接続し、あなたが関心のあるリポジトリとコレクションのみのシンプルなJSONイベントを受け取ります。署名検証のためのバイナリ形式について心配する必要はありません。Tapは以下の特徴を持ちます。\n"
 
 #. type: Plain text
-#: src/guides/the-at-stack/en.mdx:81
+#: src/guides/the-at-stack/en.mdx:99
 #, no-wrap
 msgid ""
 "- verifies repo structure, MST integrity, and identity signatures\n"
@@ -256,85 +301,85 @@ msgstr ""
 "- 中規模スケール向け（数百万のリポジトリ、毎秒3万件超のイベント）\n"
 
 #. type: Plain text
-#: src/guides/the-at-stack/en.mdx:83
+#: src/guides/the-at-stack/en.mdx:101
 #, no-wrap
-msgid "There is a Typescript library for working with Tap at [@atproto/tap](https://www.npmjs.com/package/@atproto/tap).\n"
-msgstr "Tapを扱うためのTypescriptライブラリは[@atproto/tap](https://www.npmjs.com/package/@atproto/tap)にあります。\n"
+msgid "There is a TypeScript library for working with Tap at [@atproto/tap](https://www.npmjs.com/package/@atproto/tap).\n"
+msgstr "Tapを扱うためのTypeScriptライブラリは[@atproto/tap](https://www.npmjs.com/package/@atproto/tap)にあります。\n"
 
 #. type: Plain text
-#: src/guides/the-at-stack/en.mdx:85
+#: src/guides/the-at-stack/en.mdx:103
 #, no-wrap
-msgid "## App Views and Relay\n"
-msgstr "<Heading level={2} id=\"app-views-and-relay\">AppViewとリレー</Heading>\n"
+msgid "## App Views\n"
+msgstr "<Heading level={2} id=\"app-views\">AppView</Heading>\n"
 
 #. type: Plain text
-#: src/guides/the-at-stack/en.mdx:87
+#: src/guides/the-at-stack/en.mdx:105
 #, no-wrap
-msgid "**Relays** handle all of your events, like retrieving large-scale metrics (likes, reposts, followers), content discovery (algorithms), and user search. The Relay also handles [rate limiting](https://docs.bsky.app/docs/advanced-guides/rate-limits) of individual PDSes to ensure that content can be indexed from across the network.\n"
-msgstr "**リレー**は広域的な指標（いいね数、リポスト数、フォロワー数）の取得、コンテンツ発見（アルゴリズム）、ユーザー検索など、すべてのイベントを処理します。リレーは個々のPDSの[レート制限](https://docs.bsky.app/docs/advanced-guides/rate-limits)も処理し、ネットワーク全体からコンテンツをインデックスできるようにします。\n"
+msgid "**App Views** handle application specific logic like retrieving large-scale metrics (likes, reposts, followers), content discovery (algorithms), and user search.\n"
+msgstr "**AppView**は、広域的な指標（いいね数、リポスト数、フォロワー数）の取得、コンテンツ発見（アルゴリズム）、ユーザー検索など、アプリケーション固有のロジックを処理します。\n"
 
 #. type: Plain text
-#: src/guides/the-at-stack/en.mdx:89
+#: src/guides/the-at-stack/en.mdx:107
 #, no-wrap
 msgid "An App View is the piece that actually assembles your feed and all the other data you see in the app, and is downstream from a Relay's firehose of data. This is a semantically-aware service that produces aggregations across the network and views over some subset of the network. For example, the Relay might crawl to grab data such as a certain post's likes and reposts, and the app view will output the count of those metrics.\n"
 msgstr "AppViewは、アプリで見るフィードやその他すべてのデータを実際に組み立てる部分で、リレーのfirehoseデータの下流に位置します。これはセマンティクスに基づくサービスで、ネットワーク全体にわたる集計や、ネットワークの一部に対するビューを生成します。例えば、リレーが特定の投稿のいいねやリポストなどのデータをクロールして取得し、AppViewがそれらの指標のカウントを出力します。\n"
 
 #. type: Plain text
-#: src/guides/the-at-stack/en.mdx:91
+#: src/guides/the-at-stack/en.mdx:109
 #, no-wrap
 msgid "There can be an ecosystem of App Views for each lexicon deployed on the network. For example, *Bluesky* currently supports a micro-blogging mode: the `app.bsky` Lexicon. Developers who create new lexicons could deploy a corresponding App View that understands their Lexicon to service their users. Other lexicons could include [video](https://stream.place/), or [long-form blogging](https://leaflet.pub/), or [collaborative coding](https://tangled.org/). By bootstrapping off of an existing Relay, data collation will already be taken care of for these new applications. They can benefit from the critical mass of users already posting on Bluesky and populating their repositories with other Lexicons; they only need to provide the indexing behaviors necessary for their application.\n"
 msgstr "ネットワークに展開された各Lexiconごとに、AppViewのエコシステムが存在し得ます。例えば、*Bluesky*は現在マイクロブログの側面、つまり`app.bsky` Lexiconをサポートしています。新しいLexiconを作成する開発者は、ユーザーに提供するために、そのLexiconを理解するAppViewをデプロイできます。他のLexiconの例としては、[動画](https://stream.place/)や[長文ブログ](https://leaflet.pub/)や[共同コーディング](https://tangled.org/)などが挙げられます。既存のリレーでブートストラップすることで、新しいアプリケーションのためのデータ収集が行われている状態から始められます。これにより、Blueskyに投稿し、他のLexiconでリポジトリを使っているクリティカルマスの既存ユーザーから恩恵を受けることができます。必要なのは、自分のアプリケーションに必要なインデックス処理を提供することだけです。\n"
 
 #. type: Plain text
-#: src/guides/the-at-stack/en.mdx:93
+#: src/guides/the-at-stack/en.mdx:111
 #, no-wrap
-msgid "App Views and Relays are both application-level tooling, rather than inherent parts of the AT protocol. Our App View implementation responds to [XRPC](/specs/xrpc) calls — our HTTP API.\n"
-msgstr "AppViewとリレーはいずれもATプロトコルに固有の部品ではなく、アプリケーションレベルのツールです。私たちのAppView実装は[XRPC](/specs/xrpc)呼び出し（私たちのHTTP API）に応答します。\n"
+msgid "App Views are application-level tooling, rather than inherent parts of the AT protocol. App Views respond to [XRPC](/specs/xrpc) calls over HTTP.\n"
+msgstr "AppViewはATプロトコルに固有の部品ではなく、アプリケーションレベルのツールです。AppViewはHTTP上で[XRPC](/specs/xrpc)呼び出しに応答します。\n"
 
 #. type: Plain text
-#: src/guides/the-at-stack/en.mdx:95
+#: src/guides/the-at-stack/en.mdx:113
 #, no-wrap
-msgid "You can find a well-documented example of other App View and Relay implementations in [The Blacksky Architecture](https://blackskyweb.xyz/overview/#blacksky-architecture). Different Atmosphere applications may make different implementation choices.\n"
-msgstr "他のAppViewとリレー実装のよく文書化された例は、[The Blacksky Architecture](https://blackskyweb.xyz/overview/#blacksky-architecture)で見つけられます。各Atmosphereアプリケーションによって実装上の判断が異なる場合があります。\n"
+msgid "You can find a well-documented example of other App View implementations in [The Blacksky Architecture](https://blackskyweb.xyz/overview/#blacksky-architecture). Different Atmosphere applications may make different implementation choices.\n"
+msgstr "他のAppView実装のよく文書化された例は、[The Blacksky Architecture](https://blackskyweb.xyz/overview/#blacksky-architecture)で見つけられます。各Atmosphereアプリケーションによって実装上の判断が異なる場合があります。\n"
 
 #. type: Plain text
-#: src/guides/the-at-stack/en.mdx:97
+#: src/guides/the-at-stack/en.mdx:115
 #, no-wrap
 msgid "## DID PLC\n"
 msgstr "<Heading level={2} id=\"did-plc\">DID PLC</Heading>\n"
 
 #. type: Plain text
-#: src/guides/the-at-stack/en.mdx:99
+#: src/guides/the-at-stack/en.mdx:117
 #, no-wrap
 msgid "[DID PLC](https://web.plc.directory/) is a self-authenticating DID which is strongly-consistent, recoverable, and allows for key rotation. Each identity is made up of a series of signed operations that each reference the preceding operation in a chain back to the genesis operation. Any observer can verify the chain of operations in order to verify the current state of the identity.\n"
 msgstr "[DID PLC](https://web.plc.directory/)は自己認証型のDIDで、強い一貫性があり、復旧可能で、鍵のローテーションを可能にします。各IDは、前のオペレーションを連鎖的に参照する署名付きオペレーションの系列で構成され、ID作成オペレーションまで遡ります。任意の観測者はオペレーションの連鎖を検証することで、IDの現在の状態を検証できます。\n"
 
 #. type: Plain text
-#: src/guides/the-at-stack/en.mdx:101
+#: src/guides/the-at-stack/en.mdx:119
 #, no-wrap
 msgid "PLC operations are stored in a directory (currently run at [plc.directory](http://plc.directory)) which is a centralized service that validates operations, stores them, and serves those operations as well as computed views of the identities derived from the operations. The trust model for the directory is fairly limited as it is unable to modify identities without a signed operation on their behalf.\n"
 msgstr "PLCオペレーションはディレクトリ（現在は[plc.directory](http://plc.directory)で運用）に保存されます。このディレクトリはオペレーションを検証・保存し、オペレーションそのものと、オペレーションから導出されたIDのビューを提供する中央集権型サービスです。ディレクトリは署名付きのオペレーションがなければIDを変更できないため、信頼モデルは比較的限定的です。\n"
 
 #. type: Plain text
-#: src/guides/the-at-stack/en.mdx:103
+#: src/guides/the-at-stack/en.mdx:121
 #, no-wrap
 msgid "For guidance on PLC mirroring, refer to [this developer blog](https://dholms.leaflet.pub/3m6zswymcqk2p).\n"
 msgstr "PLCミラーリングのガイダンスは[この開発者ブログ](https://dholms.leaflet.pub/3m6zswymcqk2p)を参照してください。\n"
 
 #. type: Plain text
-#: src/guides/the-at-stack/en.mdx:105
+#: src/guides/the-at-stack/en.mdx:123
 #, no-wrap
 msgid "## Feeds\n"
 msgstr "<Heading level={2} id=\"feeds\">フィード</Heading>\n"
 
 #. type: Plain text
-#: src/guides/the-at-stack/en.mdx:107
+#: src/guides/the-at-stack/en.mdx:125
 #, no-wrap
 msgid "As with Web search engines, users are free to select their aggregators. Feeds, search indices, and entire app views can be provided by independent third parties, with requests routed by the PDS based on user configuration.\n"
 msgstr "ウェブ検索エンジンがそうであるように、ユーザーはアグリゲーターを自由に選べます。フィード、検索インデックス、そしてAppView全体を独立した第三者が提供でき、リクエストはユーザー設定に基づきPDSによってルーティングされます。\n"
 
 #. type: Plain text
-#: src/guides/the-at-stack/en.mdx:111
+#: src/guides/the-at-stack/en.mdx:129
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -346,49 +391,49 @@ msgstr ""
 "</Container>\n"
 
 #. type: Plain text
-#: src/guides/the-at-stack/en.mdx:113
+#: src/guides/the-at-stack/en.mdx:131
 #, no-wrap
 msgid "Custom feeds, or feed generators, are services that provide custom algorithms to users through the AT Protocol. This allows users to choose their own timelines, whether it's an algorithmic For You page or a feed of entirely cat photos.\n"
 msgstr "カスタムフィード（フィードジェネレーター）は、ATプロトコルを通じてユーザーにカスタムアルゴリズムを提供するサービスです。これにより、ユーザーはアルゴリズムによるFor Youページや猫の写真だけのフィード等、自分のタイムラインを選択できます。\n"
 
 #. type: Plain text
-#: src/guides/the-at-stack/en.mdx:115
+#: src/guides/the-at-stack/en.mdx:133
 #, no-wrap
 msgid "Custom feeds work straightforwardly: the server receives a request from a user's server and returns a list of post URIs with some optional metadata attached. Those posts are then hydrated into full views by the requesting server and sent back to the client.\n"
 msgstr "カスタムフィードの仕組みは単純です。サーバーはユーザーのサーバーからリクエストを受け取り、オプションのメタデータが付加された投稿URIのリストを返します。これらの投稿はリクエスト元のサーバーによって完全なビューに変換され、クライアントに送り返されます。\n"
 
 #. type: Plain text
-#: src/guides/the-at-stack/en.mdx:119
+#: src/guides/the-at-stack/en.mdx:137
 #, no-wrap
 msgid "[Browse](https://blueskydirectory.com/feeds/all) custom feeds.\n"
 msgstr "[カスタムフィードを探す](https://blueskydirectory.com/feeds/all)\n"
 
 #. type: Plain text
-#: src/guides/the-at-stack/en.mdx:121
+#: src/guides/the-at-stack/en.mdx:139
 #, no-wrap
 msgid "## Osprey and Ozone\n"
 msgstr "<Heading level={2} id=\"osprey-and-ozone\">OspreyとOzone</Heading>\n"
 
 #. type: Plain text
-#: src/guides/the-at-stack/en.mdx:123
+#: src/guides/the-at-stack/en.mdx:141
 #, no-wrap
 msgid "Moderation is handled by two parts of our stack: [*Osprey*](https://github.com/roostorg/osprey), an event stream decisions engine and analysis UI designed to investigate and take automatic action; and [*Ozone*](/guides/using-ozone), a labeling service and web frontend for making moderation decisions.\n"
 msgstr "モデレーションはスタックの2箇所で処理されます。[*Osprey*](https://github.com/roostorg/osprey)はイベントストリームの判定エンジンと分析用UIで、自動的な調査と措置の実行を目的としています。[*Ozone*](/guides/using-ozone)はラベリングサービスとモデレーション判断のためのウェブフロントエンドです。\n"
 
 #. type: Plain text
-#: src/guides/the-at-stack/en.mdx:125
+#: src/guides/the-at-stack/en.mdx:143
 #, no-wrap
 msgid "## Tools and SDKs\n"
 msgstr "<Heading level={2} id=\"tools-and-sdks\">ツールとSDK</Heading>\n"
 
 #. type: Plain text
-#: src/guides/the-at-stack/en.mdx:127
+#: src/guides/the-at-stack/en.mdx:145
 #, no-wrap
 msgid "Most AT tooling is implemented in Go and TypeScript.\n"
 msgstr "ATの主要なツール群はGoとTypeScriptで実装されています。\n"
 
 #. type: Plain text
-#: src/guides/the-at-stack/en.mdx:131
+#: src/guides/the-at-stack/en.mdx:149
 #, no-wrap
 msgid ""
 "- The [indigo](https://github.com/bluesky-social/indigo) repository contains most of our Go tooling, including the code for the [Relay](https://github.com/bluesky-social/indigo/blob/main/cmd/relay/README.md) and the Go SDK.\n"

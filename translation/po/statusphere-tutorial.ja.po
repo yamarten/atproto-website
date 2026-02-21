@@ -94,13 +94,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/statusphere-tutorial/en.mdx:6
-#, fuzzy, no-wrap
-#| msgid ""
-#| "import {Container} from \"@/components/Container\"\n"
-#| "import setstatus from \"./set-status.png\"\n"
-#| "import pdsls from \"./pdsls-status.png\"\n"
-#| "import tap from \"./tap-status.png\"\n"
-#| "import feed from \"./feed-status.png\"\n"
+#, no-wrap
 msgid ""
 "import {Container} from \"@/components/Container\"\n"
 "import setstatus from \"./set-status.png\"\n"
@@ -111,9 +105,9 @@ msgstr ""
 "import {Container} from \"@/components/Container\"\n"
 "import {Heading} from \"@/components/Heading\"\n"
 "import setstatus from \"./set-status.png\"\n"
-"import pdsls from \"./pdsls-status.png\"\n"
 "import tap from \"./tap-status.png\"\n"
 "import feed from \"./feed-status.png\"\n"
+"import taproot from \"./taproot-status.png\"\n"
 
 #. type: Plain text
 #: src/guides/statusphere-tutorial/en.mdx:11
@@ -193,10 +187,9 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/statusphere-tutorial/en.mdx:46
-#, fuzzy, no-wrap
-#| msgid "## Part 1: Lexicons \n"
+#, no-wrap
 msgid "## Part 1: Lexicons\n"
-msgstr "<Heading level={2} id=\"part-1-lexicons\">パート1：Lexion</Heading> \n"
+msgstr "<Heading level={2} id=\"part-1-lexicons\">パート1：Lexion</Heading>\n"
 
 #. type: Plain text
 #: src/guides/statusphere-tutorial/en.mdx:48
@@ -851,25 +844,20 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/statusphere-tutorial/en.mdx:306
-#, fuzzy, no-wrap
-#| msgid "You won't yet have a way to see your status in this app, but you can look up your account on [pdsls](https://pdsls.dev) and check the `xyz.statusphere.status` Lexicon to see this record.\n"
+#, no-wrap
 msgid "You won't yet have a way to see your status in this app, but you can look up your account on [atproto.at](https://atproto.at/) and check the `xyz.statusphere.status` Lexicon to see this record.\n"
-msgstr "この時点ではアプリ内で自分のステータスを表示できませんが、[pdsls](https://pdsls.dev)でアカウントを確認し、`xyz.statusphere.status` Lexiconを見るとレコードを確認できます。\n"
+msgstr "この時点ではアプリ内で自分のステータスを表示できませんが、[atproto.at](https://atproto.at/)でアカウントを確認し、`xyz.statusphere.status` Lexiconを見るとレコードを確認できます。\n"
 
 #. type: Plain text
 #: src/guides/statusphere-tutorial/en.mdx:310
-#, fuzzy, no-wrap
-#| msgid ""
-#| "<Container>\n"
-#| "  <Image src={tap} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
-#| "</Container>\n"
+#, no-wrap
 msgid ""
 "<Container>\n"
 "  <Image src={taproot} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
 "</Container>\n"
 msgstr ""
 "<Container>\n"
-"  <Image src={tap} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
+"  <Image src={taproot} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
 "</Container>\n"
 
 #. type: Plain text

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-07 17:03+0900\n"
+"POT-Creation-Date: 2026-02-21 12:24+0900\n"
 "PO-Revision-Date: 2026-02-07 17:03+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -91,47 +91,83 @@ msgstr "[**カスタムフィードチュートリアル**](/guides/custom-feed-
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:25
 #, no-wrap
+msgid "## OAuth with Go\n"
+msgstr "<Heading level={2} id=\"oauth-with-go\">OAuth with Go</Heading>\n"
+
+#. type: Plain text
+#: src/guides/tutorials/en.mdx:27
+#, no-wrap
+msgid "Authenticate with AT Protocol OAuth from a minimal Go CLI app.\n"
+msgstr "最小限のGo CLIアプリからATプロトコルOAuthで認証します。\n"
+
+#. type: Plain text
+#: src/guides/tutorials/en.mdx:29
+#, no-wrap
+msgid "[**OAuth with Go Tutorial**](/guides/go-oauth-cli-tutorial)\n"
+msgstr "[**OAuth with Goチュートリアル**](/guides/go-oauth-cli-tutorial)\n"
+
+#. type: Plain text
+#: src/guides/tutorials/en.mdx:31
+#, no-wrap
+msgid "## OAuth with Node.js\n"
+msgstr "<Heading level={2} id=\"oauth-with-nodejs\">OAuth with Node.js</Heading>\n"
+
+#. type: Plain text
+#: src/guides/tutorials/en.mdx:33
+#, no-wrap
+msgid "Authenticate with AT Protocol OAuth from a minimal Node.js CLI app. A good starting point for understanding how ATProto OAuth works.\n"
+msgstr "最小限のNode.js CLIアプリからATプロトコルOAuthで認証します。ATProto OAuthの仕組みを理解するための良い出発点となります。\n"
+
+#. type: Plain text
+#: src/guides/tutorials/en.mdx:35
+#, no-wrap
+msgid "[**OAuth with Node.js Tutorial**](/guides/oauth-cli-tutorial)\n"
+msgstr "[**OAuth with Node.jsチュートリアル**](/guides/oauth-cli-tutorial)\n"
+
+#. type: Plain text
+#: src/guides/tutorials/en.mdx:37
+#, no-wrap
 msgid "## OAuth with NextJS\n"
 msgstr "<Heading level={2} id=\"oauth-with-nextjs\">OAuth with NextJS</Heading>\n"
 
 #. type: Plain text
-#: src/guides/tutorials/en.mdx:27
+#: src/guides/tutorials/en.mdx:39
 #, no-wrap
 msgid "Build a Next.js app where users can log in with their AT Protocol identity using OAuth.\n"
 msgstr "OAuthを使ってユーザーがATプロトコルのIDでログインできるNext.jsアプリを構築します。\n"
 
 #. type: Plain text
-#: src/guides/tutorials/en.mdx:29 src/guides/oauth-tutorial/en.mdx:16
+#: src/guides/tutorials/en.mdx:41 src/guides/oauth-tutorial/en.mdx:16
 #, no-wrap
 msgid "See a demo version running at: [https://nextjs-oauth-tutorial.up.railway.app/](https://nextjs-oauth-tutorial.up.railway.app/).\n"
 msgstr "動作デモはこちら [https://nextjs-oauth-tutorial.up.railway.app/](https://nextjs-oauth-tutorial.up.railway.app/)\n"
 
 #. type: Plain text
-#: src/guides/tutorials/en.mdx:31
+#: src/guides/tutorials/en.mdx:43
 #, no-wrap
 msgid "[**OAuth with NextJS Tutorial**](/guides/oauth-tutorial)\n"
 msgstr "[**OAuth with NextJSチュートリアル**](/guides/oauth-tutorial)\n"
 
 #. type: Plain text
-#: src/guides/tutorials/en.mdx:33
+#: src/guides/tutorials/en.mdx:45
 #, no-wrap
 msgid "## Statusphere Example App\n"
 msgstr "<Heading level={2} id=\"statusphere-example-apps\">Statusphereサンプルアプリ</Heading>\n"
 
 #. type: Plain text
-#: src/guides/tutorials/en.mdx:35
+#: src/guides/tutorials/en.mdx:47
 #, no-wrap
 msgid "Build an app that lets you broadcast a \"status\" message using custom Lexicons, and see a live feed of other statuses.\n"
 msgstr "カスタムLexiconを使って「ステータス」メッセージを配信し、他のステータスをライブフィードで確認できるアプリを構築します。\n"
 
 #. type: Plain text
-#: src/guides/tutorials/en.mdx:37
+#: src/guides/tutorials/en.mdx:49
 #, no-wrap
 msgid "This is a revision of our original Statusphere tutorial.\n"
 msgstr "これは元のStatusphereチュートリアルを改訂したものです。\n"
 
 #. type: Plain text
-#: src/guides/tutorials/en.mdx:38
+#: src/guides/tutorials/en.mdx:50
 #, no-wrap
 msgid "[**Statusphere Example App Tutorial**](/guides/statusphere-tutorial)\n"
 msgstr "[**Statusphereサンプルアプリチュートリアル**](/guides/statusphere-tutorial)\n"
