@@ -1,0 +1,470 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Bluesky Social PBC
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-02-21 13:18+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: src/guides/reads-and-writes/en.mdx:13 src/guides/bot-tutorial/en.mdx:11
+#: src/guides/custom-feed-tutorial/en.mdx:14
+#: src/guides/oauth-tutorial/en.mdx:18
+#: src/guides/statusphere-tutorial/en.mdx:17
+#: src/guides/go-oauth-cli-tutorial/en.mdx:11
+#: src/guides/oauth-cli-tutorial/en.mdx:11
+#, no-wrap
+msgid "## Prerequisites\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:13 src/guides/custom-feed-tutorial/en.mdx:16
+#: src/guides/oauth-cli-tutorial/en.mdx:13
+#, no-wrap
+msgid "This tutorial involves building a TypeScript application from scratch. You should have a working understanding of TypeScript and Node.js.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:16 src/guides/oauth-cli-tutorial/en.mdx:16
+#, no-wrap
+msgid ""
+"You should have installed:\n"
+"- Node.js 18+\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:18 src/guides/go-oauth-cli-tutorial/en.mdx:18
+#: src/guides/oauth-cli-tutorial/en.mdx:18
+#, no-wrap
+msgid "On platforms supported by [homebrew](https://brew.sh/), you can install it with:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:22 src/guides/oauth-cli-tutorial/en.mdx:22
+#, no-wrap
+msgid ""
+"```bash\n"
+"brew install node\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:245
+#: src/guides/custom-feed-tutorial/en.mdx:387
+#: src/guides/oauth-tutorial/en.mdx:783
+#: src/guides/statusphere-tutorial/en.mdx:728
+#: src/guides/go-oauth-cli-tutorial/en.mdx:241
+#: src/guides/oauth-cli-tutorial/en.mdx:193
+#: src/articles/atproto-ethos/en.mdx:135
+#, no-wrap
+msgid "## Conclusion\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-tutorial/en.mdx:32
+#: src/guides/go-oauth-cli-tutorial/en.mdx:26
+#: src/guides/oauth-cli-tutorial/en.mdx:26
+#, no-wrap
+msgid "## Part 1: Project Setup\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/go-oauth-cli-tutorial/en.mdx:24
+#: src/guides/oauth-cli-tutorial/en.mdx:24
+#, no-wrap
+msgid "You should also have an Atproto handle to test with.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/go-oauth-cli-tutorial/en.mdx:39
+#: src/guides/oauth-cli-tutorial/en.mdx:48
+#, no-wrap
+msgid "## Part 2: Build the OAuth Client\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/go-oauth-cli-tutorial/en.mdx:99
+#: src/guides/oauth-cli-tutorial/en.mdx:87
+#, no-wrap
+msgid ""
+"<Note>\n"
+"OAuth loopback works by using a special redirect URI (like `http://127.0.0.1:PORT/callback`) to send authorization codes directly back to an app, which listens on a local port, avoiding browser-based callbacks and enabling secure, direct communication for token exchange. Instead of a web redirect, the app opens a local listener, you can auth in a browser, and the server redirects back to the app's local URI, letting the app grab the code and exchange it for a token. It's particularly useful for development scenarios.\n"
+"</Note>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/go-oauth-cli-tutorial/en.mdx:103
+#: src/guides/oauth-cli-tutorial/en.mdx:91
+#, no-wrap
+msgid "## Part 3: Login Flow\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/go-oauth-cli-tutorial/en.mdx:129
+#: src/guides/oauth-cli-tutorial/en.mdx:125
+#, no-wrap
+msgid "The flow works like this:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/go-oauth-cli-tutorial/en.mdx:135
+#: src/guides/oauth-cli-tutorial/en.mdx:132
+#, no-wrap
+msgid "## Part 4: Use the Session\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/go-oauth-cli-tutorial/en.mdx:245
+#: src/guides/oauth-cli-tutorial/en.mdx:197
+#, no-wrap
+msgid "A few things to keep in mind:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/go-oauth-cli-tutorial/en.mdx:250
+#: src/guides/oauth-cli-tutorial/en.mdx:202
+#, no-wrap
+msgid "You can find more guides and tutorials in our [Docs](/guides), and more example apps in the [Cookbook](https://github.com/bluesky-social/cookbook/) repository. Happy building!\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-cli-tutorial/en.mdx:5
+#, no-wrap
+msgid ""
+"export const header = {\n"
+"  title: 'OAuth with Node Tutorial',\n"
+"  description: 'Authenticate with Atproto OAuth from Node.js',\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-cli-tutorial/en.mdx:7
+#, no-wrap
+msgid "In this tutorial, you'll build a minimal Node.js tool that authenticates a user with [Atproto OAuth](/guides/auth) and fetches their profile. The entire app fits in a single TypeScript file.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-cli-tutorial/en.mdx:9
+#, no-wrap
+msgid "This is a good starting point for understanding how OAuth works in AT Protocol. For building production web apps, see the full [OAuth with NextJS Tutorial](/guides/oauth-tutorial).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-cli-tutorial/en.mdx:28
+#, no-wrap
+msgid "Create a new project directory and install the [SDK](https://www.npmjs.com/package/@atproto/lex) and other project dependencies:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-cli-tutorial/en.mdx:36
+#, no-wrap
+msgid ""
+"```bash\n"
+"mkdir oauth-cli\n"
+"cd oauth-cli\n"
+"npm init -y\n"
+"npm i -D typescript @types/node @atproto/oauth-client-node @atproto/lex open\n"
+"npx tsc --init --target ES2022 --module NodeNext --moduleResolution NodeNext --types node --strict --esModuleInterop --skipLibCheck --verbatimModuleSyntax false\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-cli-tutorial/en.mdx:38
+#, no-wrap
+msgid "You'll also need the `lex` CLI tool installed globally, and the `app.bsky.actor.profile` Lexicon installed in this project to fetch the user's profile:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-cli-tutorial/en.mdx:44
+#, no-wrap
+msgid ""
+"```bash\n"
+"npm i -g @atproto/lex\n"
+"lex install app.bsky.actor.profile\n"
+"lex build\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-cli-tutorial/en.mdx:46
+#, no-wrap
+msgid "This generates TypeScript types for the Lexicon in your project, which you'll use later to read the authenticated user's profile.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-cli-tutorial/en.mdx:50
+#, no-wrap
+msgid "Create a new file at `src/index.ts`. This file will contain all of the code for your CLI tool.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-cli-tutorial/en.mdx:52
+#, no-wrap
+msgid "Start by importing the packages you'll need, and setting up the OAuth client:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-cli-tutorial/en.mdx:60
+#, no-wrap
+msgid ""
+"```ts\n"
+"import http from 'node:http'\n"
+"import { NodeOAuthClient, buildAtprotoLoopbackClientMetadata } from '@atproto/oauth-client-node'\n"
+"import type { NodeSavedSession, NodeSavedState } from '@atproto/oauth-client-node'\n"
+"import { Client } from '@atproto/lex'\n"
+"import open from 'open'\n"
+"import * as app from './lexicons/app.js'\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-cli-tutorial/en.mdx:63
+#, no-wrap
+msgid ""
+"const stateStore = new Map<string, NodeSavedState>()\n"
+"const sessionStore = new Map<string, NodeSavedSession>()\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-cli-tutorial/en.mdx:81
+#, no-wrap
+msgid ""
+"const oauthClient = new NodeOAuthClient({\n"
+"  clientMetadata: buildAtprotoLoopbackClientMetadata({\n"
+"    scope: 'atproto',\n"
+"    redirect_uris: ['http://127.0.0.1:3000/callback'],\n"
+"  }),\n"
+"  stateStore: {\n"
+"    async get(key: string) { return stateStore.get(key) },\n"
+"    async set(key: string, value: NodeSavedState) { stateStore.set(key, value) },\n"
+"    async del(key: string) { stateStore.delete(key) },\n"
+"  },\n"
+"  sessionStore: {\n"
+"    async get(key: string) { return sessionStore.get(key) },\n"
+"    async set(key: string, value: NodeSavedSession) { sessionStore.set(key, value) },\n"
+"    async del(key: string) { sessionStore.delete(key) },\n"
+"  },\n"
+"})\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-cli-tutorial/en.mdx:83
+#, no-wrap
+msgid "The `NodeOAuthClient` manages the OAuth flow. `buildAtprotoLoopbackClientMetadata` configures it for local development using loopback.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-cli-tutorial/en.mdx:89
+#, no-wrap
+msgid "The `stateStore` and `sessionStore` are in-memory Maps. The state store holds temporary data during the OAuth handshake; the session store holds the authenticated session keyed by DID. In a production app, you'd use a database for these.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-cli-tutorial/en.mdx:93
+#, no-wrap
+msgid "Now add the login flow. You'll start a temporary HTTP server to receive the OAuth callback, then open the user's browser to authorize the app:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-cli-tutorial/en.mdx:99
+#, no-wrap
+msgid ""
+"```ts\n"
+"async function login(handle: string) {\n"
+"  // Start the OAuth flow — this resolves the handle, finds their auth\n"
+"  // server (PDS), and returns a URL to redirect the user to\n"
+"  const authUrl = await oauthClient.authorize(handle, { scope: 'atproto' })\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-cli-tutorial/en.mdx:117
+#, no-wrap
+msgid ""
+"  // Wait for the callback from the authorization server\n"
+"  const params = await new Promise<URLSearchParams>((resolve, reject) => {\n"
+"    const server = http.createServer((req, res) => {\n"
+"      const url = new URL(req.url!, 'http://127.0.0.1:3000')\n"
+"      if (url.pathname === '/callback') {\n"
+"        res.writeHead(200, { 'Content-Type': 'text/html' })\n"
+"        res.end('<h1>Authorized! You can close this tab.</h1>')\n"
+"        resolve(url.searchParams)\n"
+"        server.close()\n"
+"      }\n"
+"    })\n"
+"    server.listen(3000, '127.0.0.1', () => {\n"
+"      console.log('Listening on http://127.0.0.1:3000/callback for OAuth redirect...')\n"
+"      open(authUrl.toString())\n"
+"    })\n"
+"    server.on('error', reject)\n"
+"  })\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-cli-tutorial/en.mdx:123
+#, no-wrap
+msgid ""
+"  // Exchange the authorization code for a session\n"
+"  const { session } = await oauthClient.callback(params)\n"
+"  return session\n"
+"}\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-cli-tutorial/en.mdx:130
+#, no-wrap
+msgid ""
+"1. `oauthClient.authorize(handle)` resolves the user's handle, discovers their PDS, and returns an authorization URL.\n"
+"2. The `open` package opens that URL in the user's browser, where they'll see a consent screen.\n"
+"3. After the user approves, their PDS redirects back to `http://127.0.0.1:3000/callback` with an authorization code.\n"
+"4. `oauthClient.callback(params)` exchanges that code for an authenticated session.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-cli-tutorial/en.mdx:134
+#, no-wrap
+msgid "With the session in hand, you can create a lex `Client` to interact with the AT Protocol. Add a `main()` function that ties it all together:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-cli-tutorial/en.mdx:142
+#, no-wrap
+msgid ""
+"```ts\n"
+"async function main() {\n"
+"  const handle = process.argv[2]\n"
+"  if (!handle) {\n"
+"    console.error('Usage: npx tsx src/index.ts <your-handle>')\n"
+"    process.exit(1)\n"
+"  }\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-cli-tutorial/en.mdx:146
+#, no-wrap
+msgid ""
+"  console.log(`Logging in as ${handle}...`)\n"
+"  const session = await login(handle)\n"
+"  console.log(`Logged in! DID: ${session.did}`)\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-cli-tutorial/en.mdx:149
+#, no-wrap
+msgid ""
+"  // Create a lex Client with the authenticated session\n"
+"  const client = new Client(session)\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-cli-tutorial/en.mdx:154
+#, no-wrap
+msgid ""
+"  // Fetch the user's profile\n"
+"  const profile = await client.get(app.bsky.actor.profile, {\n"
+"    repo: session.did,\n"
+"  })\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-cli-tutorial/en.mdx:161
+#, no-wrap
+msgid ""
+"  console.log('\\nProfile:')\n"
+"  console.log(`  Handle: ${handle}`)\n"
+"  console.log(`  DID: ${session.did}`)\n"
+"  console.log(`  Display name: ${profile.value?.displayName ?? '(not set)'}`)\n"
+"  console.log(`  Description: ${profile.value?.description ?? '(not set)'}`)\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-cli-tutorial/en.mdx:167
+#, no-wrap
+msgid ""
+"main().catch((err) => {\n"
+"  console.error(err)\n"
+"  process.exit(1)\n"
+"})\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-cli-tutorial/en.mdx:169
+#, no-wrap
+msgid "The `Client` from `@atproto/lex` accepts the OAuth session directly — the same way it accepts a `PasswordSession` in the [Build an Agent tutorial](/guides/bot-tutorial). From here you can `.get()`, `.list()`, `.create()`, and `.call()` any installed Lexicon.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-cli-tutorial/en.mdx:171
+#, no-wrap
+msgid "## Part 5: Run It\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-cli-tutorial/en.mdx:173
+#, no-wrap
+msgid "Run your CLI tool with `npx tsx`, passing your handle as an argument:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-cli-tutorial/en.mdx:177
+#, no-wrap
+msgid ""
+"```bash\n"
+"npx tsx src/index.ts your-handle.bsky.social\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-cli-tutorial/en.mdx:179
+#, no-wrap
+msgid "Your browser should open to a consent screen. After you approve, the CLI will print your profile:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-cli-tutorial/en.mdx:184
+#, no-wrap
+msgid ""
+"```\n"
+"Logging in as your-handle.bsky.social...\n"
+"Listening on http://127.0.0.1:3000/callback for OAuth redirect...\n"
+"Logged in! DID: did:plc:xxxxx\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-cli-tutorial/en.mdx:191
+#, no-wrap
+msgid ""
+"Profile:\n"
+"  Handle: your-handle.bsky.social\n"
+"  DID: did:plc:xxxxx\n"
+"  Display name: Your Name\n"
+"  Description: Your bio here\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-cli-tutorial/en.mdx:195
+#, no-wrap
+msgid "You've built a minimal OAuth CLI tool that authenticates with the AT Protocol. The full source is about 80 lines of code.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-cli-tutorial/en.mdx:201
+#, no-wrap
+msgid ""
+"- **This is for local development.** The loopback client won't work in production — see the [OAuth with NextJS Tutorial](/guides/oauth-tutorial) for deploying a real app.\n"
+"- **Sessions are in-memory.** Every run requires re-authorization. For persistent sessions, use a database as shown in the [NextJS tutorial](/guides/oauth-tutorial#part-3-adding-database-persistence).\n"
+"- **Scopes.** This tutorial requests only the base `atproto` scope. To read or write data on behalf of the user, you'll need additional [scopes](/guides/scopes).\n"
+msgstr ""
