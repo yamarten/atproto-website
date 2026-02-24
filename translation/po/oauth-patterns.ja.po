@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-21 12:24+0900\n"
+"POT-Creation-Date: 2026-02-24 09:53+0900\n"
 "PO-Revision-Date: 2026-01-07 19:40+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -21,7 +21,7 @@ msgstr ""
 #: src/guides/images-and-video/en.mdx:142 src/guides/moderation/en.mdx:30
 #: src/guides/reads-and-writes/en.mdx:73 src/guides/streaming-data/en.mdx:60
 #: src/guides/video-handling/en.mdx:41 src/guides/feeds/en.mdx:113
-#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:57
+#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:58
 #: src/guides/scopes/en.mdx:45 src/guides/subscriptions/en.mdx:78
 #: src/guides/writing-data/en.mdx:181 src/guides/creating-a-labeler/en.mdx:56
 #: src/guides/labels/en.mdx:110 src/guides/sdk-auth/en.mdx:116
@@ -106,7 +106,7 @@ msgid "These simple example apps demonstrate usage of their respective SDKs.\n"
 msgstr "これらのシンプルなサンプルアプリは、各SDKの使用方法を示しています。\n"
 
 #. type: Plain text
-#: src/guides/oauth-patterns/en.mdx:35
+#: src/guides/oauth-patterns/en.mdx:36
 #, no-wrap
 msgid ""
 "<ResponsiveTable\n"
@@ -114,6 +114,7 @@ msgid ""
 "  rows={[\n"
 "    [{label: 'cookbook/react-native-oauth', href:' https://github.com/bluesky-social/cookbook/tree/main/react-native-oauth#readme' }, {label: 'TypeScript'}, {label: '@atproto/oauth-client-expo'}, {label: 'Mobile App (no backend)'}, {label: 'No'}, {label: 'No (requires hosted client metadata)'},],\n"
 "    [{label: 'cookbook/vanillajs-oauth-web-app', href:' https://github.com/bluesky-social/cookbook/tree/main/vanillajs-oauth-web-app#readme' }, {label: 'JavaScript'}, {label: '@atproto/oauth-client-browser'}, {label: 'Web SPA (no backend)'}, {label: 'No'}, {label: 'Optionally'},],\n"
+"    [{label: 'cookbook/nextjs-oauth', href:' https://github.com/bluesky-social/nextjs-oauth-tutorial/tree/129cf28b4146ae709e0dac43ce20154ab5237559#readme' }, {label: 'TypeScript'}, {label: '@atproto/oauth-client-node'}, {label: 'Web BFF'}, {label: 'Optionally'}, {label: 'Optionally'},],\n"
 "    [{label: 'cookbook/go-oauth-web-app', href:' https://github.com/bluesky-social/cookbook/tree/main/go-oauth-web-app#readme' }, {label: 'Go'}, {label: 'indigo'}, {label: 'Web BFF'}, {label: 'Optionally'}, {label: 'Optionally'},],\n"
 "    [{label: 'cookbook/go-oauth-cli-app', href:' https://github.com/bluesky-social/cookbook/tree/main/go-oauth-cli-app#readme' }, {label: 'Go'}, {label: 'indigo'}, {label: 'Native CLI'}, {label: 'No'}, {label: 'No (requires hosted client metadata)'},],\n"
 "    [{label: 'cookbook/python-oauth-web-app', href:' https://github.com/bluesky-social/cookbook/tree/main/python-oauth-web-app#readme' }, {label: 'Python'}, {label: 'None'}, {label: 'Web BFF'}, {label: 'Optionally'}, {label: 'Optionally'},]\n"
@@ -125,6 +126,7 @@ msgstr ""
 "  rows={[\n"
 "    [{label: 'cookbook/react-native-oauth', href:' https://github.com/bluesky-social/cookbook/tree/main/react-native-oauth#readme' }, {label: 'TypeScript'}, {label: '@atproto/oauth-client-expo'}, {label: 'モバイルアプリ（バックエンドなし）'}, {label: '非対応'}, {label: '非対応（ホストされたメタデータが必要）'},],\n"
 "    [{label: 'cookbook/vanillajs-oauth-web-app', href:' https://github.com/bluesky-social/cookbook/tree/main/vanillajs-oauth-web-app#readme' }, {label: 'JavaScript'}, {label: '@atproto/oauth-client-browser'}, {label: 'Web SPA（バックエンドなし）'}, {label: '非対応'}, {label: '選択可'},],\n"
+"    [{label: 'cookbook/nextjs-oauth', href:' https://github.com/bluesky-social/nextjs-oauth-tutorial/tree/129cf28b4146ae709e0dac43ce20154ab5237559#readme' }, {label: 'TypeScript'}, {label: '@atproto/oauth-client-node'}, {label: 'Web BFF'}, {label: '選択可'}, {label: '選択可'},],\n"
 "    [{label: 'cookbook/go-oauth-web-app', href:' https://github.com/bluesky-social/cookbook/tree/main/go-oauth-web-app#readme' }, {label: 'Go'}, {label: 'indigo'}, {label: 'Web BFF'}, {label: '選択可'}, {label: '選択可'},],\n"
 "    [{label: 'cookbook/go-oauth-cli-app', href:' https://github.com/bluesky-social/cookbook/tree/main/go-oauth-cli-app#readme' }, {label: 'Go'}, {label: 'indigo'}, {label: 'ネイティブCLI'}, {label: '非対応'}, {label: '非対応（ホストされたメタデータが必要）'},],\n"
 "    [{label: 'cookbook/python-oauth-web-app', href:' https://github.com/bluesky-social/cookbook/tree/main/python-oauth-web-app#readme' }, {label: 'Python'}, {label: 'None'}, {label: 'Web BFF'}, {label: '選択可'}, {label: '選択可'},]\n"
@@ -132,7 +134,7 @@ msgstr ""
 "/>\n"
 
 #. type: Plain text
-#: src/guides/oauth-patterns/en.mdx:39
+#: src/guides/oauth-patterns/en.mdx:40
 #, no-wrap
 msgid ""
 "<Note>\n"
@@ -144,37 +146,37 @@ msgstr ""
 "</Note>\n"
 
 #. type: Plain text
-#: src/guides/oauth-patterns/en.mdx:41
+#: src/guides/oauth-patterns/en.mdx:42
 #, no-wrap
 msgid "## Types of App\n"
 msgstr "<Heading level={2} id=\"types-of-app\">アプリケーションの種類</Heading>\n"
 
 #. type: Plain text
-#: src/guides/oauth-patterns/en.mdx:43
+#: src/guides/oauth-patterns/en.mdx:44
 #, no-wrap
 msgid "The *simplest* type of app is one where the OAuth session is established directly between the user's device and the PDS, as demonstrated in the [cookbook/vanillajs-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/vanillajs-oauth-web-app#readme) example. It's simple because it doesn't require a dedicated backend service, only hosting static resources.\n"
 msgstr "*最もシンプル*な種類のアプリケーションは、[cookbook/vanillajs-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/vanillajs-oauth-web-app#readme)の例に示されているように、ユーザーのデバイスとPDSの間でOAuthセッションが直接確立されるものです。専用のバックエンドサービスが不要で、静的リソースをホストするだけでよいため、シンプルです。\n"
 
 #. type: Plain text
-#: src/guides/oauth-patterns/en.mdx:45
+#: src/guides/oauth-patterns/en.mdx:46
 #, no-wrap
 msgid "If your app doesn't need long-lived sessions, then this approach is completely fine. But for other use cases, session lifetime will be limited because the app is a \"public client\", as opposed to a \"confidential client\". Becoming a confidential client involves establishing a secret key, bound to the client ID. If the client is publicly available and runs on the user's own device, it cannot protect a client secret. Thus, implementing a confidential client necessitates hosting some backend infrastructure, which the [cookbook/go-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/go-oauth-web-app#readme) and [cookbook/python-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/python-oauth-web-app#readme) examples demonstrate (both using the \"BFF\" pattern, see below).\n"
 msgstr "アプリケーションが長期のセッションを必要としない場合は、このアプローチで問題ありません。ただし、他のユースケースでは、アプリケーションが「機密クライアント」ではなく「パブリッククライアント」であるせいで、セッションの有効期限が制限されます。機密クライアントになるには、クライアントIDに紐付けられた秘密鍵を用意する必要があります。クライアントが公開されていてユーザーのデバイスで実行される場合、クライアントシークレットを保護することができません。したがって、機密クライアントの実装には、[cookbook/go-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/go-oauth-web-app#readme)や[cookbook/python-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/python-oauth-web-app#readme)の例（両方とも後述の\"BFF\"パターンを使用しています）で示されているバックエンドインフラをホストする必要があります。\n"
 
 #. type: Plain text
-#: src/guides/oauth-patterns/en.mdx:47
+#: src/guides/oauth-patterns/en.mdx:48
 #, no-wrap
 msgid "See [Types of Clients](/specs/oauth#types-of-clients) for more technical details on confidential vs. public clients.\n"
 msgstr "機密クライアントとパブリッククライアントの詳細な技術情報については、[クライアントの種類](/specs/oauth#types-of-clients)を参照してください。\n"
 
 #. type: Plain text
-#: src/guides/oauth-patterns/en.mdx:49
+#: src/guides/oauth-patterns/en.mdx:50
 #, no-wrap
 msgid "There are several design strategies that can be used to \"upgrade\" a public client into a confidential client:\n"
 msgstr "パブリッククライアントを機密クライアントにアップグレードするために使用できるいくつかの設計手法があります。\n"
 
 #. type: Plain text
-#: src/guides/oauth-patterns/en.mdx:53
+#: src/guides/oauth-patterns/en.mdx:54
 #, no-wrap
 msgid ""
 "- [Backend For Frontend (BFF)](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps#name-backend-for-frontend-bff): The OAuth session is established between the app backend server and the PDS. This server-side session is associated with the user's frontend session via mechanisms such as session cookies. The frontend makes requests to the PDS by proxying them through the backend, which handles the OAuth authorization.\n"
@@ -186,13 +188,13 @@ msgstr ""
 "- [Client Assertion Backend](https://github.com/bluesky-social/proposals/tree/main/0010-client-assertion-backend)：サーバーサイドロジックを簡略化したTMBパターンの代替案です。\n"
 
 #. type: Plain text
-#: src/guides/oauth-patterns/en.mdx:55
+#: src/guides/oauth-patterns/en.mdx:56
 #, no-wrap
 msgid "Of these three, the BFF pattern is the currently recommended approach for building confidential-client applications. This is demonstrated in the [cookbook/go-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/go-oauth-web-app#readme) and [cookbook/python-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/python-oauth-web-app#readme) examples.\n"
 msgstr "この3つのうち、BFFパターンが機密クライアントアプリケーションを構築するための現在推奨されているアプローチです。これは[cookbook/go-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/go-oauth-web-app#readme)と[cookbook/python-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/python-oauth-web-app#readme)の例で示されています。\n"
 
 #. type: Plain text
-#: src/guides/oauth-patterns/en.mdx:63
+#: src/guides/oauth-patterns/en.mdx:64
 #, no-wrap
 msgid ""
 "- [Auth](/guides/auth)\n"
