@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-21 18:36+0900\n"
+"POT-Creation-Date: 2026-02-24 09:53+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgstr ""
 #: src/guides/images-and-video/en.mdx:142 src/guides/moderation/en.mdx:30
 #: src/guides/reads-and-writes/en.mdx:73 src/guides/streaming-data/en.mdx:60
 #: src/guides/video-handling/en.mdx:41 src/guides/feeds/en.mdx:113
-#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:57
+#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:58
 #: src/guides/scopes/en.mdx:45 src/guides/subscriptions/en.mdx:78
 #: src/guides/writing-data/en.mdx:181 src/guides/creating-a-labeler/en.mdx:56
 #: src/guides/labels/en.mdx:110 src/guides/sdk-auth/en.mdx:116
@@ -135,7 +135,7 @@ msgstr ""
 #. type: Plain text
 #: src/guides/backfilling/en.mdx:43
 #, no-wrap
-msgid "We also provide a [TypeScript library](https://www.npmjs.com/package/@atproto/tap) for working with Tap. For more information, refer to [The AT Stack](/guides/the-at-stack#tap) and the [tap repository](https://github.com/bluesky-social/indigo/tree/main/cmd/tap).\n"
+msgid "We also provide a [TypeScript library](https://www.npmjs.com/package/@atproto/tap) for working with Tap. For more information, refer to [The AT Stack](/guides/the-at-stack#tap) and the [tap repository](https://github.com/bluesky-social/indigo/tree/main/cmd/tap). If you are backfilling a large number of records with Tap and need a scalable database service, we've had good experiences with [ClickHouse](https://clickhouse.com/).\n"
 msgstr ""
 
 #. type: Plain text
