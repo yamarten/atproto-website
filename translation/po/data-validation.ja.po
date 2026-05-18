@@ -74,7 +74,7 @@ msgstr "以下は非公式なガイドラインであり、主に大まかな期
 #: src/guides/data-validation/en.mdx:21
 #, no-wrap
 msgid "**CBOR Record Size:** try to keep individual records to a few dozen KBytes. If you need to store more data, even text data, consider using a blob instead. A reasonable maximum record size limit (`MAX_CBOR_RECORD_SIZE`) is 1 MiByte (1 mebibyte, or 1,048,576 bytes). Note that as of August 2025, the `subscribeRepos` Lexicon limits `#commit` message block size to 2,000,000 bytes (not mebibytes), so only a single 1 MiByte record can be created or updated per commit.\n"
-msgstr "**CBORレコードサイズ：**個別のレコードを数十キロバイト程度に抑えるようにしてください。テキストデータを含め、より大きなデータを保存する必要がある場合は、代わりにblobの使用を検討してください。合理的な最大レコードサイズ制限（`MAX_CBOR_RECORD_SIZE`）は1 MiByte（1メビバイト、または1,048,576バイト）です。2025年8月の時点では、`subscribeRepos`のLexiconは`#commit`メッセージブロックサイズを2,000,000バイト（メビバイトではない）に制限しているため、コミットごとに1 MiByteレコードは1つだけ作成または更新できます。\n"
+msgstr "**CBORレコードサイズ**：個別のレコードを数十キロバイト程度に抑えるようにしてください。テキストデータを含め、より大きなデータを保存する必要がある場合は、代わりにblobの使用を検討してください。合理的な最大レコードサイズ制限（`MAX_CBOR_RECORD_SIZE`）は1 MiByte（1メビバイト、または1,048,576バイト）です。2025年8月の時点では、`subscribeRepos`のLexiconは`#commit`メッセージブロックサイズを2,000,000バイト（メビバイトではない）に制限しているため、コミットごとに1 MiByteレコードは1つだけ作成または更新できます。\n"
 
 #. type: Plain text
 #: src/guides/data-validation/en.mdx:23
@@ -86,49 +86,49 @@ msgstr "イベントストリーム（firehose）の\"フレーム\"は複数の
 #: src/guides/data-validation/en.mdx:25
 #, no-wrap
 msgid "**JSON Record Size:** the CBOR encoding is \"canonical\" for records, so focusing only on that encoding would make sense. But sometimes it is good to also have a limit on JSON encoding size. A reasonable limit (`MAX_JSON_RECORD_SIZE`) is 2 MiByte (2,097,152 bytes).\n"
-msgstr "**JSONレコードサイズ：**CBORエンコーディングはレコードの正規形であるため、そのエンコーディングのみに焦点を当てることは理にかなっています。ただし、JSONエンコーディングのサイズに制限を設けることが良い場合もあります。合理的な制限（`MAX_JSON_RECORD_SIZE`）は2 MiByte（2,097,152バイト）です。\n"
+msgstr "**JSONレコードサイズ**：CBORエンコーディングはレコードの正規形であるため、そのエンコーディングのみに焦点を当てることは理にかなっています。ただし、JSONエンコーディングのサイズに制限を設けることが良い場合もあります。合理的な制限（`MAX_JSON_RECORD_SIZE`）は2 MiByte（2,097,152バイト）です。\n"
 
 #. type: Plain text
 #: src/guides/data-validation/en.mdx:27
 #, no-wrap
 msgid "**General string length:** an overall length limit on strings within a record, including both those with and without Lexicon-specified string lengths. Measured as bytes (UTF-8 encoded). Should try to keep these to tens of KBytes at most. For an upper-bound limit (`MAX_RECORD_STRING_LEN`), reasonable to just rely on the overall CBOR record size limit. Notably, some early implementations had a 8 KByte (8192 bytes) limit.\n"
-msgstr "**一般的な文字列長：**Lexiconによる文字列長指定の有無を問わない、レコード内の文字列全般に対する長さ制限。バイト（UTF-8エンコード）で測定されます。これらは最大でも数十キロバイト程度に保つようにしてください。上限（`MAX_RECORD_STRING_LEN`）については、全体的なCBORレコードサイズ制限に従うのが妥当でしょう。なお、初期の一部実装では8キロバイト（8192バイト）の制限を持っていました。\n"
+msgstr "**一般的な文字列長**：Lexiconによる文字列長指定の有無を問わない、レコード内の文字列全般に対する長さ制限。バイト（UTF-8エンコード）で測定されます。これらは最大でも数十キロバイト程度に保つようにしてください。上限（`MAX_RECORD_STRING_LEN`）については、全体的なCBORレコードサイズ制限に従うのが妥当でしょう。なお、初期の一部実装では8キロバイト（8192バイト）の制限を持っていました。\n"
 
 #. type: Plain text
 #: src/guides/data-validation/en.mdx:29
 #, no-wrap
 msgid "**General `bytes` length:** same as the string limit, but for binary data (`MAX_RECORD_BYTES_LEN`). Recommend relying on the overall CBOR record size limit. As with record size overall, if more than a few dozen KBytes are needed, recommendation is to use blobs.\n"
-msgstr "**一般的な`bytes`長：**文字列制限と同じですが、バイナリデータ（`MAX_RECORD_BYTES_LEN`）の場合。CBORレコード全体のサイズ制限に従うことをお勧めします。レコードサイズと同様に、数十キロバイト以上が必要な場合、推奨はblobを使用することです。\n"
+msgstr "**一般的な`bytes`長**：文字列制限と同じですが、バイナリデータ（`MAX_RECORD_BYTES_LEN`）の場合。CBORレコード全体のサイズ制限に従うことをお勧めします。レコードサイズと同様に、数十キロバイト以上が必要な場合、推奨はblobを使用することです。\n"
 
 #. type: Plain text
 #: src/guides/data-validation/en.mdx:31
 #, no-wrap
 msgid "**CID binary encoding size:** recommend an overall limit (`MAX_CID_BYTES`) of 100 bytes.\n"
-msgstr "**CIDバイナリエンコーディングサイズ：**全体で100バイトの制限（`MAX_CID_BYTES`）を推奨します。\n"
+msgstr "**CIDバイナリエンコーディングサイズ**：全体で100バイトの制限（`MAX_CID_BYTES`）を推奨します。\n"
 
 #. type: Plain text
 #: src/guides/data-validation/en.mdx:33
 #, no-wrap
 msgid "**Container nesting depth:** for example, how many layers of map inside an array inside an array, etc. If your CBOR or JSON parsing library supports a limit, the default is probably fine. A reasonable limit (`MAX_CBOR_NESTED_LEVELS`) is 32 levels of nesting.\n"
-msgstr "**コンテナネストの深さ：**例えば、配列内の配列内のマップが何層あるかなど。CBORまたはJSONパースライブラリが制限をサポートしている場合、おそらくデフォルトで問題ありません。合理的な制限（`MAX_CBOR_NESTED_LEVELS`）は32レベルのネストです。\n"
+msgstr "**コンテナネストの深さ**：例えば、配列内の配列内のマップが何層あるかなど。CBORまたはJSONパースライブラリが制限をサポートしている場合、おそらくデフォルトで問題ありません。合理的な制限（`MAX_CBOR_NESTED_LEVELS`）は32レベルのネストです。\n"
 
 #. type: Plain text
 #: src/guides/data-validation/en.mdx:35
 #, no-wrap
 msgid "**Container element count:** for example, how many keys in a map, or elements in an array. If your CBOR or JSON parsing library supports a limit, the default is probably fine. A reasonable limit (`MAX_CBOR_CONTAINER_LEN`) is 128 x 1024 = 131,072 elements.\n"
-msgstr "**コンテナ要素数：**例えば、マップ内のキーの数、または配列内の要素の数。CBORまたはJSONパースライブラリが制限をサポートしている場合、おそらくデフォルトで問題ありません。合理的な制限（`MAX_CBOR_CONTAINER_LEN`）は128 x 1024 = 131,072要素です。\n"
+msgstr "**コンテナ要素数**：例えば、マップ内のキーの数、または配列内の要素の数。CBORまたはJSONパースライブラリが制限をサポートしている場合、おそらくデフォルトで問題ありません。合理的な制限（`MAX_CBOR_CONTAINER_LEN`）は128 x 1024 = 131,072要素です。\n"
 
 #. type: Plain text
 #: src/guides/data-validation/en.mdx:37
 #, no-wrap
 msgid "**Object key string length:** for example, how many bytes (UTF-8 encoded) are allowed in any key of an object. If your CBOR or JSON parsing library supports a limit, the default is probably fine. A reasonable limit (`MAX_CBOR_OBJECT_KEY_LEN`) is 8 KByte (8192).\n"
-msgstr "**オブジェクトキー文字列長：**例えば、オブジェクトのキーで許可されるバイト数（UTF-8エンコード）。CBORまたはJSONパーシングライブラリが制限をサポートしている場合、おそらくデフォルトで問題ありません。合理的な制限（`MAX_CBOR_OBJECT_KEY_LEN`）は8キロバイト（8192）です。\n"
+msgstr "**オブジェクトキー文字列長**：例えば、オブジェクトのキーで許可されるバイト数（UTF-8エンコード）。CBORまたはJSONパーシングライブラリが制限をサポートしている場合、おそらくデフォルトで問題ありません。合理的な制限（`MAX_CBOR_OBJECT_KEY_LEN`）は8キロバイト（8192）です。\n"
 
 #. type: Plain text
 #: src/guides/data-validation/en.mdx:39
 #, no-wrap
 msgid "**Integers:** as mentioned [in the atproto specification](https://atproto.com/specs/data-model#data-types), it is a strongly recommended best practice to keep integer values \"64-bit float safe\", meaning restricting them to 53 bits of precision. This ensures compatibility with JavaScript without loss of numeric precision. The specific values are `MAX_SAFE_INTEGER: 9007199254740991` and `MIN_SAFE_INTEGER: -9007199254740991`.\n"
-msgstr "**整数：**[atproto仕様](https://atproto.com/specs/data-model#data-types)で述べられているように、整数値を\"64ビットフロートセーフ\"に保つこと、つまり53ビットの精度に制限することは強く推奨されるベストプラクティスです。これにより、精度の損失なくJavaScriptとの互換性が保証されます。具体的な値としては`MAX_SAFE_INTEGER: 9007199254740991`および`MIN_SAFE_INTEGER: -9007199254740991`です。\n"
+msgstr "**整数**：[atproto仕様](https://atproto.com/specs/data-model#data-types)で述べられているように、整数値を\"64ビットフロートセーフ\"に保つこと、つまり53ビットの精度に制限することは強く推奨されるベストプラクティスです。これにより、精度の損失なくJavaScriptとの互換性が保証されます。具体的な値としては`MAX_SAFE_INTEGER: 9007199254740991`および`MIN_SAFE_INTEGER: -9007199254740991`です。\n"
 
 #. type: Plain text
 #: src/guides/data-validation/en.mdx:42

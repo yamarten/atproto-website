@@ -187,7 +187,7 @@ msgid ""
 msgstr ""
 "- `repo`：公開リポジトリ（レコードとコレクション）\n"
 "- `rpc`：サービス認証（外部サービスへのAPI呼び出し）\n"
-"- `blob`：アップロードされたメディアファイル\n"
+"- `blob`：メディアファイルのアップロード\n"
 "- `identity`：DIDとハンドル\n"
 "- `account`：ホスティング状態、メールアドレス\n"
 
@@ -255,7 +255,7 @@ msgstr "フル機能のクライアントアプリは、多数の細かな権限
 #: src/guides/permission-sets/en.mdx:79
 #, no-wrap
 msgid "For example, your application could request a permission set like `include:com.example.authBasicFeatures?aud=did:web:api.example.com%23svc_appview`. This would resolve to a Lexicon that defines a set of permissions required for the app to function:\n"
-msgstr "例えば、アプリケーションは`include:com.example.authBasicFeatures?aud=did:web:api.example.com%23svc_appview`のような権限セットtを要求できます。これはアプリの動作に必要な権限の集まりを定義するLexiconに解決されます。\n"
+msgstr "例えば、アプリケーションは`include:com.example.authBasicFeatures?aud=did:web:api.example.com%23svc_appview`のような権限セットを要求できます。これはアプリの動作に必要な権限の集まりを定義するLexiconに解決されます。\n"
 
 #. type: Plain text
 #: src/guides/permission-sets/en.mdx:110

@@ -78,7 +78,7 @@ msgstr "<Heading level={2} id=\"backlinks\">バックリンク</Heading>\n"
 #: src/guides/social-graph/en.mdx:15
 #, no-wrap
 msgid "One of the most powerful ways to get social graph data from AT Protocol is through the use of **backlinks**. Querying backlinks lets you resolve all of the records linking *to* any given record, *or* identity.\n"
-msgstr "ATプロトコルからソーシャルグラフデータを取得する強力な方法として、**バックリンク**があります。バックリンクを取得すると、特定のレコード*や*ID*に*リンクしているすべてのレコードを解決できます。\n"
+msgstr "ATプロトコルからソーシャルグラフデータを取得する強力な方法として、**バックリンク**があります。バックリンクを取得すると、特定のレコードまたはIDへとリンクしているすべてのレコードを解決できます。\n"
 
 #. type: Plain text
 #: src/guides/social-graph/en.mdx:17

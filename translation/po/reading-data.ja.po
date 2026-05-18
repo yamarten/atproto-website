@@ -76,7 +76,7 @@ msgstr ""
 "  </TabList>\n"
 "  <TabPanels>\n"
 "    <TabPanel value=\"ts\">\n"
-"    `client.list()`を使用してユーザーのテータリポジトリからレコードを読み取ることができます。\n"
+"    `client.list()`を使用してユーザーのデータリポジトリからレコードを読み取ることができます。\n"
 
 #. type: Plain text
 #: src/guides/reading-data/en.mdx:23
