@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"POT-Creation-Date: 2026-05-18 11:10+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,13 +17,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: Plain text
-#: src/guides/data-repos/en.mdx:2 src/guides/identity/en.mdx:2
+#: src/guides/identity/en.mdx:6
 #, no-wrap
-msgid "import {DescriptionList, Description} from '@/components/DescriptionList'\n"
+msgid ""
+"import {DescriptionList, Description} from '@/components/DescriptionList'\n"
+"import ValidIdentifiers from './_snippets/valid-identifiers.mdx'\n"
+"import DidResolutionDiagram from './_snippets/did-resolution-diagram.mdx'\n"
+"import ResolvePlcTs from './_snippets/resolve-plc-ts.mdx'\n"
+"import ResolveWebTs from './_snippets/resolve-web-ts.mdx'\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/identity/en.mdx:8
+#: src/guides/identity/en.mdx:12
 #, no-wrap
 msgid ""
 "export const header = {\n"
@@ -34,13 +39,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/identity/en.mdx:10
+#: src/guides/identity/en.mdx:14
 #, no-wrap
 msgid "The atproto identity system has a number of requirements:\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/identity/en.mdx:17
+#: src/guides/identity/en.mdx:21
 #, no-wrap
 msgid ""
 "* **ID provision.** Users should be able to create global IDs which are stable across services. These IDs should never change, to ensure that links to their content are stable.\n"
@@ -52,25 +57,25 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/identity/en.mdx:19
+#: src/guides/identity/en.mdx:23
 #, no-wrap
 msgid "Using the atproto identity system gives applications the tools for end-to-end encryption, signed user data, service sign-in, and general interoperation.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/identity/en.mdx:21
+#: src/guides/identity/en.mdx:25
 #, no-wrap
 msgid "## Identifiers\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/identity/en.mdx:23
+#: src/guides/identity/en.mdx:27
 #, no-wrap
 msgid "We use two interrelated forms of identifiers: _handles_ and _DIDs_. Handles are DNS names while DIDs are a [W3C standard](https://www.w3.org/TR/did-core/) with multiple implementations which provide secure & stable IDs. AT Protocol supports the DID PLC and DID Web variants.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/identity/en.mdx:25
+#: src/guides/identity/en.mdx:29
 #, no-wrap
 msgid "The following are all valid user identifiers:\n"
 msgstr ""
@@ -78,12 +83,7 @@ msgstr ""
 #. type: Plain text
 #: src/guides/identity/en.mdx:31
 #, no-wrap
-msgid ""
-"```\n"
-"alice.host.com\n"
-"at://alice.host.com\n"
-"did:plc:bv6ggog3tya2z3vxsub7hnal\n"
-"```\n"
+msgid "<ValidIdentifiers />\n"
 msgstr ""
 
 #. type: Plain text
@@ -93,33 +93,19 @@ msgid "The relationship between them can be visualized as:\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/identity/en.mdx:48
+#: src/guides/identity/en.mdx:35
 #, no-wrap
-msgid ""
-"```\n"
-"┌──────────────────┐                 ┌───────────────┐\n"
-"│ DNS name         ├──resolves to──→ │ DID           │\n"
-"│ (alice.host.com) │                 │ (did:plc:...) │\n"
-"└──────────────────┘                 └─────┬─────────┘\n"
-"       ↑                                   │\n"
-"       │                               resolves to\n"
-"       │                                   │\n"
-"       │                                   ↓\n"
-"       │                            ┌───────────────┐\n"
-"       └───────────references───────┤ DID Document  │\n"
-"                                    │ {\"id\":\"...\"}  │\n"
-"                                    └───────────────┘\n"
-"```\n"
+msgid "<DidResolutionDiagram />\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/identity/en.mdx:50
+#: src/guides/identity/en.mdx:37
 #, no-wrap
 msgid "The DNS handle is a user-facing identifier — it should be displayed in user interfaces and promoted as a way to find users. Applications resolve handles to DIDs and then use the DID as the canonical identifier for accounts. Any DID can be rapidly resolved to a DID document which includes public keys and user services.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/identity/en.mdx:63
+#: src/guides/identity/en.mdx:50
 #, no-wrap
 msgid ""
 "<DescriptionList>\n"
@@ -130,26 +116,26 @@ msgid ""
 "    <ul>\n"
 "      <li>The handle associated with the DID.</li>\n"
 "      <li>The signing key.</li>\n"
-"      <li>The URL of the user’s PDS.</li>\n"
+"      <li>The URL of the user's PDS.</li>\n"
 "    </ul>\n"
 "  </Description>\n"
 "</DescriptionList>\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/identity/en.mdx:66
+#: src/guides/identity/en.mdx:53
 #, no-wrap
 msgid "## DID Methods\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/identity/en.mdx:68
+#: src/guides/identity/en.mdx:55
 #, no-wrap
 msgid "The [DID standard](https://www.w3.org/TR/did-core/) describes a framework for different \"methods\" of publishing and resolving DIDs to the [DID Document](https://www.w3.org/TR/did-core/#core-properties), instead of specifying a single mechanism. A variety of existing methods [have been registered](https://w3c.github.io/did-spec-registries/#did-methods), with different features and properties. We established the following criteria for use with atproto:\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/identity/en.mdx:76
+#: src/guides/identity/en.mdx:63
 #, no-wrap
 msgid ""
 "- **Strong consistency.** For a given DID, a resolution query should produce only one valid document at any time. (In some networks, this may be subject to probabilistic transaction finality.)\n"
@@ -162,43 +148,43 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/identity/en.mdx:78
+#: src/guides/identity/en.mdx:65
 #, no-wrap
 msgid "When we started the project, none of the existing DID methods met all of these criteria. Therefore, we chose to support both the existing [did-web](https://w3c-ccg.github.io/did-method-web/) method (which is simple), and a novel method we created called [DID PLC](https://github.com/bluesky-social/did-method-plc).\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/identity/en.mdx:80
+#: src/guides/identity/en.mdx:67
 #, no-wrap
 msgid "## Handle Resolution\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/identity/en.mdx:82
+#: src/guides/identity/en.mdx:69
 #, no-wrap
 msgid "Handles in atproto are domain names which resolve to a DID, which in turn resolves to a DID Document containing the user's signing key and hosting service.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/identity/en.mdx:84
+#: src/guides/identity/en.mdx:71
 #, no-wrap
 msgid "Handle resolution uses either a DNS TXT record, or an HTTPS well-known endpoint. Details can be found in the [Handle specification](/specs/handle).\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/identity/en.mdx:87
+#: src/guides/identity/en.mdx:74
 #, no-wrap
 msgid "### Example: Hosting service\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/identity/en.mdx:89
+#: src/guides/identity/en.mdx:76
 #, no-wrap
 msgid "Consider a scenario where a hosting service is using PLC and is providing the handle for the user as a subdomain:\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/identity/en.mdx:93
+#: src/guides/identity/en.mdx:80
 #, no-wrap
 msgid ""
 "- The handle: `alice.pds.com`\n"
@@ -207,51 +193,43 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/identity/en.mdx:95
+#: src/guides/identity/en.mdx:82
 #, no-wrap
 msgid "At first, all we know is `alice.pds.com`, so we look up the DNS TXT record `_atproto.alice.pds.com`. This tells us the DID: `did:plc:12345`.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/identity/en.mdx:97
+#: src/guides/identity/en.mdx:84
 #, no-wrap
 msgid "Next we query the PLC directory for the DID, so that we can learn the hosting service's endpoint and the user's key material.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/identity/en.mdx:106
+#: src/guides/identity/en.mdx:86
 #, no-wrap
-msgid ""
-"```typescript\n"
-"await didPlc.resolve('did:plc:12345') /* => {\n"
-"  id: 'did:plc:12345',\n"
-"  alsoKnownAs: `https://alice.pds.com`,\n"
-"  verificationMethod: [...],\n"
-"  service: [{serviceEndpoint: 'https://pds.com', ...}]\n"
-"}*/\n"
-"```\n"
+msgid "<ResolvePlcTs />\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/identity/en.mdx:108
+#: src/guides/identity/en.mdx:88
 #, no-wrap
 msgid "We can now communicate with `https://pds.com` to access Alice's data.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/identity/en.mdx:110
+#: src/guides/identity/en.mdx:90
 #, no-wrap
 msgid "### Example: Self-hosted\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/identity/en.mdx:112
+#: src/guides/identity/en.mdx:92
 #, no-wrap
 msgid "Let's consider a self-hosting scenario. If it's using `did:plc`, it would look something like:\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/identity/en.mdx:116
+#: src/guides/identity/en.mdx:96
 #, no-wrap
 msgid ""
 "- The handle: `alice.com`\n"
@@ -260,13 +238,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/identity/en.mdx:118
+#: src/guides/identity/en.mdx:98
 #, no-wrap
 msgid "However, **if the self-hoster is confident they will retain ownership of the domain name**, they can use `did:web` instead of `did:plc`:\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/identity/en.mdx:122
+#: src/guides/identity/en.mdx:102
 #, no-wrap
 msgid ""
 "- The handle: `alice.com`\n"
@@ -275,27 +253,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/identity/en.mdx:124
+#: src/guides/identity/en.mdx:104
 #, no-wrap
 msgid "We can resolve the handle the same way, resolving `_atproto.alice.com`, which returns the DID: `did:web:alice.com`\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/identity/en.mdx:126
+#: src/guides/identity/en.mdx:106
 #, no-wrap
 msgid "Which we then resolve:\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/identity/en.mdx:134
+#: src/guides/identity/en.mdx:107
 #, no-wrap
-msgid ""
-"```typescript\n"
-"await didWeb.resolve('did:web:alice.com') /* => {\n"
-"  id: 'did:web:alice.com',\n"
-"  alsoKnownAs: `https://alice.com`,\n"
-"  verificationMethod: [...],\n"
-"  service: [{serviceEndpoint: 'https://alice.com', ...}]\n"
-"}*/\n"
-"```\n"
+msgid "<ResolveWebTs />\n"
 msgstr ""

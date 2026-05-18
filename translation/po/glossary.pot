@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-11 10:36+0900\n"
+"POT-Creation-Date: 2026-05-18 11:10+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,7 +120,7 @@ msgstr ""
 #. type: Plain text
 #: src/guides/glossary/en.mdx:38
 #, no-wrap
-msgid "Relays are an optimization and are not strictly necessary. An [AppView](#app-view) could communicate directly with [PDSes](#pds) (in fact, this is encouraged if needed). The Relay serves to reduce the number of connections that are needed in the network.\n"
+msgid "Relays are an optimization and are not strictly necessary. An [AppView](#app-view) could communicate directly with [PDSes](#pds) (in a smaller-scale application). The Relay serves to reduce the number of connections that are needed in the network.\n"
 msgstr ""
 
 #. type: Plain text

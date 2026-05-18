@@ -1,0 +1,235 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Bluesky Social PBC
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-05-18 11:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:68
+#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:60
+#: src/guides/streaming-data/en.mdx:42 src/guides/video-handling/en.mdx:32
+#: src/guides/feeds/en.mdx:90 src/guides/installing-lexicons/en.mdx:41
+#: src/guides/oauth-patterns/en.mdx:125
+#: src/guides/permission-requests/en.mdx:125 src/guides/subscriptions/en.mdx:40
+#: src/guides/writing-data/en.mdx:126 src/guides/creating-a-labeler/en.mdx:35
+#: src/guides/labels/en.mdx:95 src/guides/sdk-auth/en.mdx:70
+#: src/guides/sync/en.mdx:47 src/guides/auth/en.mdx:60
+#: src/guides/lexicon/en.mdx:68 src/guides/publishing-lexicons/en.mdx:60
+#: src/guides/backfilling/en.mdx:64 src/guides/reading-data/en.mdx:113
+#: src/guides/social-graph/en.mdx:25 src/guides/permission-sets/en.mdx:83
+#: src/guides/using-ozone/en.mdx:132 src/guides/about-oauth/en.mdx:81
+#, no-wrap
+msgid "## Further Reading and Resources\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/about-oauth/en.mdx:3
+#, no-wrap
+msgid ""
+"import {Container} from \"@/components/Container\"\n"
+"import {ResponsiveTable} from '@/components/ResponsiveTable'\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/about-oauth/en.mdx:8
+#, no-wrap
+msgid ""
+"export const header = {\n"
+"  title: 'About OAuth',\n"
+"  description: 'OAuth implementation patterns for atproto applications',\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/about-oauth/en.mdx:10
+#, no-wrap
+msgid "This page covers the OAuth libraries and implementation patterns available for atproto applications. If you're new to atproto OAuth, we recommend starting with one of our hands-on tutorials:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/about-oauth/en.mdx:14
+#, no-wrap
+msgid ""
+"- [OAuth with Node.js](/guides/oauth-cli-tutorial) - A minimal CLI app, good for understanding how atproto OAuth works\n"
+"- [OAuth with Go](/guides/go-oauth-cli-tutorial) - OAuth from a Go CLI app\n"
+"- [OAuth with Next.js](/guides/oauth-tutorial) - Build a web app with AT Protocol login\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/about-oauth/en.mdx:16
+#, no-wrap
+msgid "For a conceptual overview of how OAuth works in atproto (including how it differs from other OAuth systems), see the [Auth overview](/guides/auth#what-is-o-auth).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/about-oauth/en.mdx:18
+#, no-wrap
+msgid "## SDK Libraries\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/about-oauth/en.mdx:20
+#, no-wrap
+msgid "The following libraries handle the OAuth flow, including [DPoP](/guides/oauth-patterns#understanding-d-po-p), token refresh, and session management.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/about-oauth/en.mdx:22
+#, no-wrap
+msgid "### TypeScript\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/about-oauth/en.mdx:29
+#, no-wrap
+msgid ""
+"- [@atproto/oauth-client-browser](https://github.com/bluesky-social/atproto/tree/main/packages/oauth/oauth-client-browser#readme) ([npmx](https://www.npmx.dev/package/@atproto/oauth-client-browser)) - Suitable for frontend-only applications (e.g. SPAs).\n"
+"- [@atproto/oauth-client-node](https://github.com/bluesky-social/atproto/tree/main/packages/oauth/oauth-client-node#readme) ([npmx](https://www.npmx.dev/package/@atproto/oauth-client-node)) - Suitable for Electron desktop apps or server-side deployments.\n"
+"- [@atproto/oauth-client-expo](https://github.com/bluesky-social/atproto/tree/main/packages/oauth/oauth-client-expo#readme) ([npmx](https://www.npmx.dev/package/@atproto/oauth-client-expo)) - For use in React Native projects (e.g. mobile apps)\n"
+"- [@atproto/oauth-client](https://github.com/bluesky-social/atproto/tree/main/packages/oauth/oauth-client#readme) ([npmx](https://www.npmx.dev/package/@atproto/oauth-client)) (This is the core implementation on which the above three libraries depend)\n"
+"- [@fujocoded/authproto](https://github.com/FujoWebDev/fujocoded-plugins/tree/main/astro-authproto) ([npmx](https://www.npmx.dev/package/@fujocoded/authproto)) - Community implementation for Astro apps\n"
+"- [@atcute/oauth-browser-client](https://github.com/mary-ext/atcute/tree/HEAD/packages/oauth/browser-client) ([npmx](https://npmx.dev/package/@atcute/oauth-browser-client)) - Community browser client implementation\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/about-oauth/en.mdx:31
+#, no-wrap
+msgid "### Go\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/about-oauth/en.mdx:33
+#, no-wrap
+msgid "- [Indigo](https://github.com/bluesky-social/indigo/tree/main/atproto/auth/oauth) ([Online API Docs](https://pkg.go.dev/github.com/bluesky-social/indigo/atproto/auth/oauth)) - Suitable for native apps or server-side deployments\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/about-oauth/en.mdx:35
+#, no-wrap
+msgid "## Atproto OAuth Example Apps\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/about-oauth/en.mdx:37
+#, no-wrap
+msgid "These simple example apps demonstrate usage of their respective SDKs.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/about-oauth/en.mdx:49
+#, no-wrap
+msgid ""
+"<ResponsiveTable\n"
+"  columns={[{label: 'Example App'}, {label: 'Language'}, {label: 'SDK'}, {label: 'Architecture'}, {label: 'Confidential Client?'}, {label: 'Localhost development client ID?', href: '/specs/oauth#localhost-client-development'}]}\n"
+"  rows={[\n"
+"    [{label: 'cookbook/react-native-oauth', href:' https://github.com/bluesky-social/cookbook/tree/main/react-native-oauth#readme' }, {label: 'TypeScript'}, {label: '@atproto/oauth-client-expo'}, {label: 'Mobile App (no backend)'}, {label: 'No'}, {label: 'No (requires hosted client metadata)'},],\n"
+"    [{label: 'cookbook/vanillajs-oauth-web-app', href:' https://github.com/bluesky-social/cookbook/tree/main/vanillajs-oauth-web-app#readme' }, {label: 'JavaScript'}, {label: '@atproto/oauth-client-browser'}, {label: 'Web SPA (no backend)'}, {label: 'No'}, {label: 'Optionally'},],\n"
+"    [{label: 'cookbook/nextjs-oauth', href:' https://github.com/bluesky-social/nextjs-oauth-tutorial/tree/129cf28b4146ae709e0dac43ce20154ab5237559#readme' }, {label: 'TypeScript'}, {label: '@atproto/oauth-client-node'}, {label: 'Web BFF'}, {label: 'Optionally'}, {label: 'Optionally'},],\n"
+"    [{label: 'cookbook/go-oauth-web-app', href:' https://github.com/bluesky-social/cookbook/tree/main/go-oauth-web-app#readme' }, {label: 'Go'}, {label: 'indigo'}, {label: 'Web BFF'}, {label: 'Optionally'}, {label: 'Optionally'},],\n"
+"    [{label: 'cookbook/go-oauth-cli-app', href:' https://github.com/bluesky-social/cookbook/tree/main/go-oauth-cli-app#readme' }, {label: 'Go'}, {label: 'indigo'}, {label: 'Native CLI'}, {label: 'No'}, {label: 'No (requires hosted client metadata)'},],\n"
+"    [{label: 'cookbook/python-oauth-web-app', href:' https://github.com/bluesky-social/cookbook/tree/main/python-oauth-web-app#readme' }, {label: 'Python'}, {label: 'None'}, {label: 'Web BFF'}, {label: 'Optionally'}, {label: 'Optionally'},]\n"
+"  ]}\n"
+"/>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/about-oauth/en.mdx:53
+#, no-wrap
+msgid ""
+"<Note>\n"
+"The Python example does not use an SDK! It may be useful as reference when building an OAuth SDK from scratch, alongside the advanced [OAuth client implementation guide](https://docs.bsky.app/docs/advanced-guides/oauth-client)\n"
+"</Note>\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/about-oauth/en.mdx:55
+#, no-wrap
+msgid "## How the OAuth flow works\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/about-oauth/en.mdx:61
+#, no-wrap
+msgid ""
+"1. Your app [redirects the user](/guides/permission-requests) to their PDS's authorization endpoint with your requested scopes\n"
+"2. The user reviews the permissions and approves (or denies) access\n"
+"3. The PDS redirects back to your `redirect_uri` with an authorization code\n"
+"4. Your app (or the SDK) exchanges the code for access and refresh tokens\n"
+"5. You use the access token to make authenticated API requests\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/about-oauth/en.mdx:63
+#, no-wrap
+msgid "The SDKs handle steps 3-5 automatically. Your callback endpoint just needs to call the SDK's callback handler, which completes the token exchange and returns an authenticated session. From there, you can make API calls — see [Reads and Writes](/guides/reads-and-writes).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/about-oauth/en.mdx:65
+#, no-wrap
+msgid "## Types of App\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/about-oauth/en.mdx:67
+#, no-wrap
+msgid "The *simplest* type of app is one where the OAuth session is established directly between the user's device and the PDS, as demonstrated in the [cookbook/vanillajs-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/vanillajs-oauth-web-app#readme) example. It's simple because it doesn't require a dedicated backend service, only hosting static resources.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/about-oauth/en.mdx:69
+#, no-wrap
+msgid "If your app doesn't need long-lived sessions, then this approach is completely fine. But for other use cases, session lifetime will be limited because the app is a \"public client\", as opposed to a \"confidential client\". Becoming a confidential client involves establishing a secret key, bound to the client ID. If the client is publicly available and runs on the user's own device, it cannot protect a client secret. Thus, implementing a confidential client necessitates hosting some backend infrastructure, which the [cookbook/go-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/go-oauth-web-app#readme) and [cookbook/python-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/python-oauth-web-app#readme) examples demonstrate (both using the \"BFF\" pattern, see below).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/about-oauth/en.mdx:71
+#, no-wrap
+msgid "See [Types of Clients](/specs/oauth#types-of-clients) for more technical details on confidential vs. public clients.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/about-oauth/en.mdx:73
+#, no-wrap
+msgid "There are several design strategies that can be used to \"upgrade\" a public client into a confidential client:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/about-oauth/en.mdx:77
+#, no-wrap
+msgid ""
+"- [Backend For Frontend (BFF)](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps#name-backend-for-frontend-bff): The OAuth session is established between the app backend server and the PDS. This server-side session is associated with the user's frontend session via mechanisms such as session cookies. The frontend makes requests to the PDS by proxying them through the backend, which handles the OAuth authorization.\n"
+"- [Token-Mediating Backend (TMB)](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps#name-token-mediating-backend): Similar to the BFF pattern, except the backend passes OAuth access tokens to the frontend once the session has been established, allowing the frontend to make direct requests to the PDS.\n"
+"- [Client Assertion Backend](https://github.com/bluesky-social/proposals/tree/main/0010-client-assertion-backend): A proposed alternative to the TMB pattern with simplified server-side logic.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/about-oauth/en.mdx:79
+#, no-wrap
+msgid "Of these three, the BFF pattern is the currently recommended approach for building confidential-client applications. This is demonstrated in the [cookbook/go-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/go-oauth-web-app#readme) and [cookbook/python-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/python-oauth-web-app#readme) examples.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/about-oauth/en.mdx:88
+#, no-wrap
+msgid ""
+"- [Auth](/guides/auth)\n"
+"- [SDK authentication](/guides/sdk-auth)\n"
+"- [Permission Requests](/guides/permission-requests)\n"
+"- [Permission Sets](/guides/permission-sets)\n"
+"- [OAuth Patterns](/guides/oauth-patterns)\n"
+"- [OAuth spec](/specs/oauth)\n"
+"- [Permissions spec](/specs/permission)\n"
+msgstr ""

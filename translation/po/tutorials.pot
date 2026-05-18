@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-21 18:36+0900\n"
+"POT-Creation-Date: 2026-05-18 11:10+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,8 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: Plain text
-#: src/guides/subscriptions/en.mdx:2 src/guides/labels/en.mdx:2
-#: src/guides/sdk-auth/en.mdx:2 src/guides/auth/en.mdx:2
 #: src/guides/tutorials/en.mdx:2
 #, no-wrap
 msgid "import {Container} from \"@/components/Container\"\n"
@@ -47,121 +45,154 @@ msgid "Our tutorials are organized to be completed in order, but each tutorial i
 msgstr ""
 
 #. type: Plain text
-#: src/guides/tutorials/en.mdx:13
-#, no-wrap
-msgid "## Build-a-Bot\n"
-msgstr ""
-
-#. type: Plain text
 #: src/guides/tutorials/en.mdx:15
 #, no-wrap
-msgid "Create an agent that can interact with the AT Protocol, post content, and respond to user actions.\n"
+msgid ""
+"<Note>\n"
+"These tutorials are written to be cross-platform. In general, we recommend using platforms supported by [homebrew](https://brew.sh/): macOS, Linux, or [WSL](https://docs.microsoft.com/en-us/windows/wsl/) on Windows. There is also an outstanding [DNS bug](https://github.com/nodejs/node/issues/62347) affecting Node.js on Windows when not using WSL, which can break `lex` resolution.\n"
+"</Note>\n"
 msgstr ""
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:17
 #, no-wrap
-msgid "[**Build a Bot Tutorial**](/guides/bot-tutorial)\n"
+msgid "## Build-a-Bot\n"
 msgstr ""
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:19
 #, no-wrap
-msgid "## Custom Feed Algorithms\n"
+msgid "Create an agent that can interact with the AT Protocol, post content, and respond to user actions.\n"
 msgstr ""
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:21
 #, no-wrap
-msgid "Learn how to create and deploy custom feeds to curate content for users based on specific criteria.\n"
+msgid "[**Build a Bot Tutorial**](/guides/bot-tutorial)\n"
 msgstr ""
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:23
 #, no-wrap
-msgid "[**Custom Feed Tutorial**](/guides/custom-feed-tutorial)\n"
+msgid "## Custom Feed Algorithms\n"
 msgstr ""
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:25
 #, no-wrap
-msgid "## OAuth with Go\n"
+msgid "Learn how to create and deploy custom feeds to curate content for users based on specific criteria.\n"
 msgstr ""
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:27
 #, no-wrap
-msgid "Authenticate with AT Protocol OAuth from a minimal Go CLI app.\n"
+msgid "[**Custom Feed Tutorial**](/guides/custom-feed-tutorial)\n"
 msgstr ""
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:29
 #, no-wrap
-msgid "[**OAuth with Go Tutorial**](/guides/go-oauth-cli-tutorial)\n"
+msgid "## OAuth with Go\n"
 msgstr ""
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:31
 #, no-wrap
-msgid "## OAuth with Node.js\n"
+msgid "Authenticate with AT Protocol OAuth from a minimal Go CLI app.\n"
 msgstr ""
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:33
 #, no-wrap
-msgid "Authenticate with AT Protocol OAuth from a minimal Node.js CLI app. A good starting point for understanding how atproto OAuth works.\n"
+msgid "[**OAuth with Go Tutorial**](/guides/go-oauth-cli-tutorial)\n"
 msgstr ""
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:35
 #, no-wrap
-msgid "[**OAuth with Node.js Tutorial**](/guides/oauth-cli-tutorial)\n"
+msgid "## OAuth with Node.js\n"
 msgstr ""
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:37
 #, no-wrap
-msgid "## OAuth with NextJS\n"
+msgid "Authenticate with AT Protocol OAuth from a minimal Node.js CLI app. A good starting point for understanding how atproto OAuth works.\n"
 msgstr ""
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:39
 #, no-wrap
-msgid "Build a Next.js app where users can log in with their AT Protocol identity using OAuth.\n"
+msgid "[**OAuth with Node.js Tutorial**](/guides/oauth-cli-tutorial)\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/tutorials/en.mdx:41 src/guides/oauth-tutorial/en.mdx:16
+#: src/guides/tutorials/en.mdx:41
 #, no-wrap
-msgid "See a demo version running at: [https://nextjs-oauth-tutorial.up.railway.app/](https://nextjs-oauth-tutorial.up.railway.app/).\n"
+msgid "## OAuth with NextJS\n"
 msgstr ""
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:43
 #, no-wrap
-msgid "[**OAuth with NextJS Tutorial**](/guides/oauth-tutorial)\n"
+msgid "Build a Next.js app where users can log in with their AT Protocol identity using OAuth.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/tutorials/en.mdx:45
+#: src/guides/tutorials/en.mdx:45 src/guides/oauth-tutorial/en.mdx:43
 #, no-wrap
-msgid "## Statusphere Example App\n"
+msgid "See a demo version running at: [https://nextjs-oauth-tutorial.up.railway.app/](https://nextjs-oauth-tutorial.up.railway.app/).\n"
 msgstr ""
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:47
 #, no-wrap
-msgid "Build an app that lets you broadcast a \"status\" message using custom Lexicons, and see a live feed of other statuses.\n"
+msgid "[**OAuth with NextJS Tutorial**](/guides/oauth-tutorial)\n"
 msgstr ""
 
 #. type: Plain text
 #: src/guides/tutorials/en.mdx:49
 #, no-wrap
+msgid "## Statusphere Example App\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/tutorials/en.mdx:51
+#, no-wrap
+msgid "Build an app that lets you broadcast a \"status\" message using custom Lexicons, and see a live feed of other statuses.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/tutorials/en.mdx:53
+#, no-wrap
 msgid "This is a revision of our original Statusphere tutorial.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/tutorials/en.mdx:50
+#: src/guides/tutorials/en.mdx:55
 #, no-wrap
 msgid "[**Statusphere Example App Tutorial**](/guides/statusphere-tutorial)\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/tutorials/en.mdx:57
+#, no-wrap
+msgid "You can also refer to [this](https://github.com/flo-bit/svelte-cloudflare-statusphere) community-contributed clone of Statusphere using serverless workers.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/tutorials/en.mdx:59
+#, no-wrap
+msgid "## Add Labels to Your App\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/tutorials/en.mdx:61
+#, no-wrap
+msgid "Extend the Statusphere app with consumption of moderator-issued labels and a report flow that submits to your own Ozone labeler service.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/tutorials/en.mdx:62
+#, no-wrap
+msgid "[**Labeler Tutorial**](/guides/labels-tutorial)\n"
 msgstr ""

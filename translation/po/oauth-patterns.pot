@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-24 09:53+0900\n"
+"POT-Creation-Date: 2026-05-18 11:10+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,161 +17,337 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: Plain text
-#: src/guides/account-lifecycle/en.mdx:65
-#: src/guides/images-and-video/en.mdx:142 src/guides/moderation/en.mdx:30
-#: src/guides/reads-and-writes/en.mdx:73 src/guides/streaming-data/en.mdx:60
-#: src/guides/video-handling/en.mdx:41 src/guides/feeds/en.mdx:113
-#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:58
-#: src/guides/scopes/en.mdx:45 src/guides/subscriptions/en.mdx:78
-#: src/guides/writing-data/en.mdx:181 src/guides/creating-a-labeler/en.mdx:56
-#: src/guides/labels/en.mdx:110 src/guides/sdk-auth/en.mdx:116
-#: src/guides/sync/en.mdx:51 src/guides/auth/en.mdx:74
-#: src/guides/lexicon/en.mdx:128 src/guides/publishing-lexicons/en.mdx:49
-#: src/guides/backfilling/en.mdx:60 src/guides/reading-data/en.mdx:165
-#: src/guides/social-graph/en.mdx:19 src/guides/permission-sets/en.mdx:214
-#: src/guides/using-ozone/en.mdx:132
+#: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:68
+#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:60
+#: src/guides/streaming-data/en.mdx:42 src/guides/video-handling/en.mdx:32
+#: src/guides/feeds/en.mdx:90 src/guides/installing-lexicons/en.mdx:41
+#: src/guides/oauth-patterns/en.mdx:125
+#: src/guides/permission-requests/en.mdx:125 src/guides/subscriptions/en.mdx:40
+#: src/guides/writing-data/en.mdx:126 src/guides/creating-a-labeler/en.mdx:35
+#: src/guides/labels/en.mdx:95 src/guides/sdk-auth/en.mdx:70
+#: src/guides/sync/en.mdx:47 src/guides/auth/en.mdx:60
+#: src/guides/lexicon/en.mdx:68 src/guides/publishing-lexicons/en.mdx:60
+#: src/guides/backfilling/en.mdx:64 src/guides/reading-data/en.mdx:113
+#: src/guides/social-graph/en.mdx:25 src/guides/permission-sets/en.mdx:83
+#: src/guides/using-ozone/en.mdx:132 src/guides/about-oauth/en.mdx:81
 #, no-wrap
 msgid "## Further Reading and Resources\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/installing-lexicons/en.mdx:11 src/guides/oauth-patterns/en.mdx:10
-#, no-wrap
-msgid "## TypeScript\n"
-msgstr ""
-
-#. type: Plain text
-#: src/guides/oauth-patterns/en.mdx:3
-#, no-wrap
-msgid ""
-"import {Container} from \"@/components/Container\"\n"
-"import {ResponsiveTable} from '@/components/ResponsiveTable'\n"
-msgstr ""
-
-#. type: Plain text
-#: src/guides/oauth-patterns/en.mdx:8
+#: src/guides/oauth-patterns/en.mdx:5
 #, no-wrap
 msgid ""
 "export const header = {\n"
 "  title: 'OAuth Patterns',\n"
-"  description: 'OAuth implementation examples',\n"
+"  description: 'Advanced OAuth implementation patterns for atproto applications',\n"
 "}\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/oauth-patterns/en.mdx:16
+#: src/guides/oauth-patterns/en.mdx:7
+#, no-wrap
+msgid "This page covers advanced OAuth implementation details that most developers won't need to handle directly. If you're using one of the [reference SDKs](/guides/about-oauth#typescript), these details are handled automatically.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-patterns/en.mdx:9
+#, no-wrap
+msgid "For getting started with OAuth, see [About OAuth](/guides/about-oauth). For understanding permission scopes, see [Permission Sets](/guides/permission-sets). For the full specification, see the [OAuth spec](/specs/oauth).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-patterns/en.mdx:11
+#, no-wrap
+msgid "## How is OAuth Different in AT Protocol?\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-patterns/en.mdx:13
+#, no-wrap
+msgid "Atproto [specifies](/specs/oauth) a particular \"profile\" of the OAuth standards, using [OAuth 2.1](https://www.ietf.org/archive/id/draft-ietf-oauth-v2-1-13.html) as the foundation.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-patterns/en.mdx:15
+#, no-wrap
+msgid "There are a few details that might catch you off guard if you're used to using other OAuth systems.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-patterns/en.mdx:17
+#, no-wrap
+msgid "- **Atproto is distributed**: Usually, when an app has a \"sign in with...\" button, it provides a choice of which authorities it allows to authenticate users (usually one of a few big corporations). With atproto OAuth, the app has no prior relationship with the authentication provider: a user's [PDS](/guides/the-at-stack#pds). This is also the reason why atproto OAuth is not compatible with OIDC, which requires a pre-established relationship.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-patterns/en.mdx:19
+#, no-wrap
+msgid "- **Migration**: Atproto users can migrate their accounts between servers ([PDSes](/guides/glossary#pds-personal-data-server)) over time. To facilitate this atproto has a flexible [Identity](/guides/identity) layer, which allows usernames ([handles](/specs/handle)) to be resolved to a static user ID ([DID](/specs/did)), which in turn can be resolved to locate the user's PDS. When a user logs in to an app, the OAuth client dynamically resolves these relationships.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-patterns/en.mdx:21
+#, no-wrap
+msgid "- **Client IDs**: In other OAuth ecosystems, it is often necessary for client apps to pre-register themselves with the resource server. This is not viable in a decentralized system (with many clients and many resource servers). In atproto, the client ID is a URL, which is fetched at auth time to determine OAuth features like redirect URI and scopes. See [Client ID Metadata Documents](/specs/oauth#client-id-metadata-document).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-patterns/en.mdx:23
+#, no-wrap
+msgid "## Understanding DPoP\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-patterns/en.mdx:25
+#, no-wrap
+msgid "[DPoP (Demonstrating Proof of Possession)](https://datatracker.ietf.org/doc/html/rfc9449) cryptographically binds OAuth tokens to a key held by the client. Even if an attacker intercepts your access token, they can't use it without your private key. This is especially important for confidential clients with long-lived sessions (up to 2 years).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-patterns/en.mdx:27
+#, no-wrap
+msgid "DPoP is mandatory in atproto OAuth. **If you're using an SDK**, it's handled automatically. If you're implementing OAuth manually (e.g., for a sidecar that writes records), the key things to know are:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-patterns/en.mdx:33
 #, no-wrap
 msgid ""
-"- [@atproto/oauth-client-browser](https://github.com/bluesky-social/atproto/tree/main/packages/oauth/oauth-client-browser#readme) ([npmjs](https://www.npmjs.com/package/@atproto/oauth-client-browser)) - Suitable for frontend-only applications (e.g. SPAs).\n"
-"- [@atproto/oauth-client-node](https://github.com/bluesky-social/atproto/tree/main/packages/oauth/oauth-client-node#readme) ([npmjs](https://www.npmjs.com/package/@atproto/oauth-client-node)) - Suitable for Electron desktop apps or server-side deployments.\n"
-"- [@atproto/oauth-client-expo](https://github.com/bluesky-social/atproto/tree/main/packages/oauth/oauth-client-expo#readme) ([npmjs](https://www.npmjs.com/package/@atproto/oauth-client-expo)) - For use in React Native projects (e.g. mobile apps)\n"
-"- [@atproto/oauth-client](https://github.com/bluesky-social/atproto/tree/main/packages/oauth/oauth-client#readme) ([npmjs](https://www.npmjs.com/package/@atproto/oauth-client)) (This is the core implementation on which the above three libraries depend)\n"
-"- [@fujocoded/authproto](https://github.com/FujoWebDev/fujocoded-plugins/tree/main/astro-authproto) ([npmjs](https://www.npmjs.com/package/@fujocoded/authproto)) - Community implementation for Astro apps\n"
+"- Generate an ES256 key pair once per session and reuse it for all requests\n"
+"- Every request needs a fresh DPoP proof JWT in the `DPoP` header, with `Authorization: DPoP {access_token}`\n"
+"- Track nonces separately for the authorization server and PDS — they may differ\n"
+"- When you get a 401 with `error=\"use_dpop_nonce\"`, retry with the nonce from the `DPoP-Nonce` response header\n"
+"- For PDS requests, include an `ath` claim containing the SHA-256 hash of the access token\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/oauth-patterns/en.mdx:18
+#: src/guides/oauth-patterns/en.mdx:35
 #, no-wrap
-msgid "## Go\n"
+msgid "The [cookbook/python-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/python-oauth-web-app) contains a complete manual DPoP implementation in `atproto_oauth.py`. For the full specification, see [DPoP in the OAuth spec](/specs/oauth#demonstrating-proof-of-possession-d-po-p).\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/oauth-patterns/en.mdx:20
+#: src/guides/oauth-patterns/en.mdx:37
 #, no-wrap
-msgid "- [Indigo](https://github.com/bluesky-social/indigo/tree/main/atproto/auth/oauth) ([Online API Docs](https://pkg.go.dev/github.com/bluesky-social/indigo/atproto/auth/oauth)) - Suitable for native apps or server-side deployments\n"
+msgid "## PKCE and PAR\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/oauth-patterns/en.mdx:22
+#: src/guides/oauth-patterns/en.mdx:39
 #, no-wrap
-msgid "## Atproto OAuth Example Apps\n"
+msgid "Two other security mechanisms are mandatory in atproto OAuth:\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/oauth-patterns/en.mdx:24
+#: src/guides/oauth-patterns/en.mdx:41
 #, no-wrap
-msgid "These simple example apps demonstrate usage of their respective SDKs.\n"
+msgid "- **[PKCE (Proof Key for Code Exchange)](/specs/oauth#proof-key-for-code-exchange-pkce)** prevents authorization code interception attacks. The client generates a random secret for each authorization request and proves possession of it when exchanging the code for tokens.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/oauth-patterns/en.mdx:36
+#: src/guides/oauth-patterns/en.mdx:43
 #, no-wrap
-msgid ""
-"<ResponsiveTable\n"
-"  columns={[{label: 'Example App'}, {label: 'Language'}, {label: 'SDK'}, {label: 'Architecture'}, {label: 'Confidential Client?'}, {label: 'Localhost development client ID?', href: '/specs/oauth#localhost-client-development'}]}\n"
-"  rows={[\n"
-"    [{label: 'cookbook/react-native-oauth', href:' https://github.com/bluesky-social/cookbook/tree/main/react-native-oauth#readme' }, {label: 'TypeScript'}, {label: '@atproto/oauth-client-expo'}, {label: 'Mobile App (no backend)'}, {label: 'No'}, {label: 'No (requires hosted client metadata)'},],\n"
-"    [{label: 'cookbook/vanillajs-oauth-web-app', href:' https://github.com/bluesky-social/cookbook/tree/main/vanillajs-oauth-web-app#readme' }, {label: 'JavaScript'}, {label: '@atproto/oauth-client-browser'}, {label: 'Web SPA (no backend)'}, {label: 'No'}, {label: 'Optionally'},],\n"
-"    [{label: 'cookbook/nextjs-oauth', href:' https://github.com/bluesky-social/nextjs-oauth-tutorial/tree/129cf28b4146ae709e0dac43ce20154ab5237559#readme' }, {label: 'TypeScript'}, {label: '@atproto/oauth-client-node'}, {label: 'Web BFF'}, {label: 'Optionally'}, {label: 'Optionally'},],\n"
-"    [{label: 'cookbook/go-oauth-web-app', href:' https://github.com/bluesky-social/cookbook/tree/main/go-oauth-web-app#readme' }, {label: 'Go'}, {label: 'indigo'}, {label: 'Web BFF'}, {label: 'Optionally'}, {label: 'Optionally'},],\n"
-"    [{label: 'cookbook/go-oauth-cli-app', href:' https://github.com/bluesky-social/cookbook/tree/main/go-oauth-cli-app#readme' }, {label: 'Go'}, {label: 'indigo'}, {label: 'Native CLI'}, {label: 'No'}, {label: 'No (requires hosted client metadata)'},],\n"
-"    [{label: 'cookbook/python-oauth-web-app', href:' https://github.com/bluesky-social/cookbook/tree/main/python-oauth-web-app#readme' }, {label: 'Python'}, {label: 'None'}, {label: 'Web BFF'}, {label: 'Optionally'}, {label: 'Optionally'},]\n"
-"  ]}\n"
-"/>\n"
+msgid "- **[PAR (Pushed Authorization Requests)](/specs/oauth#pushed-authorization-requests-par)** sends authorization parameters directly to the server before redirecting the user, reducing URL exposure and enabling better request validation.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/oauth-patterns/en.mdx:40
+#: src/guides/oauth-patterns/en.mdx:45
 #, no-wrap
-msgid ""
-"<Note>\n"
-"The Python example does not use an SDK! It may be useful as reference when building an OAuth SDK from scratch, alongside the advanced [OAuth client implementation guide](https://docs.bsky.app/docs/advanced-guides/oauth-client)\n"
-"</Note>\n"
+msgid "Like DPoP, both are handled automatically by the SDKs. If implementing OAuth manually, see the [OAuth spec](/specs/oauth) for requirements.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/oauth-patterns/en.mdx:42
+#: src/guides/oauth-patterns/en.mdx:47
 #, no-wrap
-msgid "## Types of App\n"
+msgid "## Token Refresh\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/oauth-patterns/en.mdx:44
+#: src/guides/oauth-patterns/en.mdx:49
 #, no-wrap
-msgid "The *simplest* type of app is one where the OAuth session is established directly between the user's device and the PDS, as demonstrated in the [cookbook/vanillajs-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/vanillajs-oauth-web-app#readme) example. It's simple because it doesn't require a dedicated backend service, only hosting static resources.\n"
+msgid "OAuth access tokens in atproto have a limited lifetime. When a token expires, you'll need to use the refresh token to obtain a new access token. The SDKs handle this automatically, but if you're implementing OAuth manually:\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/oauth-patterns/en.mdx:46
-#, no-wrap
-msgid "If your app doesn't need long-lived sessions, then this approach is completely fine. But for other use cases, session lifetime will be limited because the app is a \"public client\", as opposed to a \"confidential client\". Becoming a confidential client involves establishing a secret key, bound to the client ID. If the client is publicly available and runs on the user's own device, it cannot protect a client secret. Thus, implementing a confidential client necessitates hosting some backend infrastructure, which the [cookbook/go-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/go-oauth-web-app#readme) and [cookbook/python-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/python-oauth-web-app#readme) examples demonstrate (both using the \"BFF\" pattern, see below).\n"
-msgstr ""
-
-#. type: Plain text
-#: src/guides/oauth-patterns/en.mdx:48
-#, no-wrap
-msgid "See [Types of Clients](/specs/oauth#types-of-clients) for more technical details on confidential vs. public clients.\n"
-msgstr ""
-
-#. type: Plain text
-#: src/guides/oauth-patterns/en.mdx:50
-#, no-wrap
-msgid "There are several design strategies that can be used to \"upgrade\" a public client into a confidential client:\n"
-msgstr ""
-
-#. type: Plain text
-#: src/guides/oauth-patterns/en.mdx:54
+#: src/guides/oauth-patterns/en.mdx:53
 #, no-wrap
 msgid ""
-"- [Backend For Frontend (BFF)](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps#name-backend-for-frontend-bff): The OAuth session is established between the app backend server and the PDS. This server-side session is associated with the user's frontend session via mechanisms such as session cookies. The frontend makes requests to the PDS by proxying them through the backend, which handles the OAuth authorization.\n"
-"- [Token-Mediating Backend (TMB)](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps#name-token-mediating-backend): Similar to the BFF pattern, except the backend passes OAuth access tokens to the frontend once the session has been established, allowing the frontend to make direct requests to the PDS.\n"
-"- [Client Assertion Backend](https://github.com/bluesky-social/proposals/tree/main/0010-client-assertion-backend): A proposed alternative to the TMB pattern with simplified server-side logic.\n"
+"- Store the refresh token securely alongside the access token\n"
+"- When an API call fails with a 401, attempt a token refresh before retrying\n"
+"- The new access token will be bound to the same DPoP key pair\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/oauth-patterns/en.mdx:56
+#: src/guides/oauth-patterns/en.mdx:55
 #, no-wrap
-msgid "Of these three, the BFF pattern is the currently recommended approach for building confidential-client applications. This is demonstrated in the [cookbook/go-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/go-oauth-web-app#readme) and [cookbook/python-oauth-web-app](https://github.com/bluesky-social/cookbook/tree/main/python-oauth-web-app#readme) examples.\n"
+msgid "## Session Storage\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/oauth-patterns/en.mdx:64
+#: src/guides/oauth-patterns/en.mdx:57
+#, no-wrap
+msgid "For web applications using the BFF pattern, you'll need to associate OAuth sessions with user sessions. Common approaches include:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-patterns/en.mdx:60
+#, no-wrap
+msgid ""
+"- **Cookie-based sessions**: Store the OAuth tokens server-side, keyed by a session ID stored in an HTTP-only cookie\n"
+"- **Database-backed sessions**: Store tokens in a database with the user's account, enabling multi-device sessions\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-patterns/en.mdx:62
+#, no-wrap
+msgid "See [Types of App](/guides/about-oauth#types-of-app) for architectural patterns.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-patterns/en.mdx:64 src/guides/permission-sets/en.mdx:79
+#, no-wrap
+msgid "## Progressive scope requests\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-patterns/en.mdx:66
+#, no-wrap
+msgid "An application does not always need all of its permissions at sign-in. The `scope` parameter in the [client metadata document](/specs/oauth#client-id-metadata-document) declares the maximum set of scopes the application may ever request, but individual authorization flows can request a subset. This makes it possible to start with minimal scopes and request more later, as the user opts into features that need them.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-patterns/en.mdx:68
+#, no-wrap
+msgid "### Selecting scopes before authorization\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-patterns/en.mdx:70
+#, no-wrap
+msgid "For client-side applications where different users have different needs, one approach is to let users choose which [permissions](/specs/permission) to grant before the OAuth redirect. The application builds the [scope string](/specs/permission#scope-string-syntax) from the user's selections and passes it to [`authorize()`](https://github.com/bluesky-social/atproto/tree/main/packages/oauth/oauth-client#readme):\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-patterns/en.mdx:73
+#, no-wrap
+msgid ""
+"```typescript\n"
+"const BASE_SCOPES = [\"atproto\"];\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-patterns/en.mdx:83
+#, no-wrap
+msgid ""
+"// Request specific record collection access instead of broad permissions\n"
+"const OPTIONAL_SCOPES = [\n"
+"  // Access to your app's Lexicon records\n"
+"  { id: \"posts\", scope: \"repo:com.example.post\", label: \"Create posts\" },\n"
+"  { id: \"likes\", scope: \"repo:com.example.like\", label: \"Like content\" },\n"
+"  // Or access to Bluesky profile data\n"
+"  { id: \"profile\", scope: \"rpc:app.bsky.actor.getProfile?aud=did:web:api.bsky.app#bsky_appview\", label: \"Read profile\" },\n"
+"  { id: \"blob\",  scope: \"blob:*/*\", label: \"Upload images/video\" },\n"
+"];\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-patterns/en.mdx:90
+#, no-wrap
+msgid ""
+"function buildScopeString(selected: Set<string>): string {\n"
+"  const granular = OPTIONAL_SCOPES\n"
+"    .filter((s) => selected.has(s.id))\n"
+"    .map((s) => s.scope);\n"
+"  return [...BASE_SCOPES, ...granular].join(\" \");\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-patterns/en.mdx:96
+#, no-wrap
+msgid ""
+"// pass the built scope string to the authorization flow\n"
+"const url = await oauthClient.authorize(handle, {\n"
+"  scope: buildScopeString(userSelections),\n"
+"});\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-patterns/en.mdx:98
+#, no-wrap
+msgid "Note that `repo:com.example.post` grants full create/update/delete access to that collection. You can restrict to specific actions with query parameters: `repo:com.example.post?action=create&action=update`. See the [permission spec](/specs/permission#resource-types) for full syntax.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-patterns/en.mdx:100
+#, no-wrap
+msgid "After the callback, the application tracks which scopes were granted for the session, so that features can be shown or hidden accordingly.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-patterns/en.mdx:102
+#, no-wrap
+msgid "### Upgrading scopes for an existing session\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-patterns/en.mdx:104
+#, no-wrap
+msgid "For applications using the [BFF pattern](/guides/about-oauth#types-of-app) with optional integrations — features that require scopes outside the application's primary [namespace authority](/specs/permission#namespace-authority) — scope upgrades can happen after the user is already signed in. The application stores the user's preference, initiates a new OAuth flow with the expanded scope set, and replaces the old session on callback:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-patterns/en.mdx:109
+#, no-wrap
+msgid ""
+"```typescript\n"
+"// Your app's core permissions\n"
+"const BASE_SCOPE =\n"
+"  \"atproto blob:*/* repo:com.example.post repo:com.example.like\";\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-patterns/en.mdx:113
+#, no-wrap
+msgid ""
+"// Add permissions for another app's Lexicon (cross-namespace integration)\n"
+"const EXTENDED_SCOPE =\n"
+"  `${BASE_SCOPE} repo:social.othernet.feed.play repo:social.othernet.actor.status`;\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-patterns/en.mdx:119
+#, no-wrap
+msgid ""
+"// start a new OAuth flow with the expanded scope\n"
+"const url = await oauthClient.authorize(handle, {\n"
+"  scope: wantsIntegration ? EXTENDED_SCOPE : BASE_SCOPE,\n"
+"});\n"
+"```\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-patterns/en.mdx:121
+#, no-wrap
+msgid "The server stores the old session identifier alongside the OAuth state so the callback handler knows to replace it. On subsequent logins, the server can look up the user's stored preferences and include the expanded scopes automatically.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-patterns/en.mdx:123
+#, no-wrap
+msgid "Note that [permission sets](/specs/permission#permission-sets) can reduce the need for explicit scope upgrades: when a client refreshes its tokens, the computed permissions may be updated to reflect changes to the resolved sets. If a new capability falls within an existing permission set's [namespace authority](/specs/permission#namespace-authority), updating the published set is sufficient — no re-authorization required. Cross-namespace integrations will still require an explicit upgrade. See [Rolling out changes](/guides/permission-requests#rolling-out-changes) for guidance on coordinating scope changes with application releases.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/oauth-patterns/en.mdx:131
 #, no-wrap
 msgid ""
 "- [Auth](/guides/auth)\n"
-"- [SDK authentication](/guides/sdk-auth)\n"
-"- [Scopes](/guides/scopes)\n"
-"- [Permission requests](/guides/permission-sets)\n"
+"- [About OAuth](/guides/about-oauth)\n"
+"- [Permission Requests](/guides/permission-requests)\n"
+"- [Permission Sets](/guides/permission-sets)\n"
 "- [OAuth spec](/specs/oauth)\n"
 "- [Permissions spec](/specs/permission)\n"
 msgstr ""

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"POT-Creation-Date: 2026-05-18 11:10+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,30 +17,39 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: Plain text
-#: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:21
-#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:64
-#: src/guides/streaming-data/en.mdx:60 src/guides/video-handling/en.mdx:39
-#: src/guides/account-migration/en.mdx:74 src/guides/feeds/en.mdx:105
-#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:52
-#: src/guides/scopes/en.mdx:45 src/guides/subscriptions/en.mdx:78
-#: src/guides/writing-data/en.mdx:181 src/guides/creating-a-labeler/en.mdx:56
-#: src/guides/labels/en.mdx:110 src/guides/sdk-auth/en.mdx:145
-#: src/guides/sync/en.mdx:51 src/guides/auth/en.mdx:41
-#: src/guides/lexicon/en.mdx:128 src/guides/publishing-lexicons/en.mdx:53
-#: src/guides/backfilling/en.mdx:60 src/guides/reading-data/en.mdx:165
-#: src/guides/social-graph/en.mdx:21 src/guides/using-ozone/en.mdx:134
+#: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:68
+#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:60
+#: src/guides/streaming-data/en.mdx:42 src/guides/video-handling/en.mdx:32
+#: src/guides/feeds/en.mdx:90 src/guides/installing-lexicons/en.mdx:41
+#: src/guides/oauth-patterns/en.mdx:125
+#: src/guides/permission-requests/en.mdx:125 src/guides/subscriptions/en.mdx:40
+#: src/guides/writing-data/en.mdx:126 src/guides/creating-a-labeler/en.mdx:35
+#: src/guides/labels/en.mdx:95 src/guides/sdk-auth/en.mdx:70
+#: src/guides/sync/en.mdx:47 src/guides/auth/en.mdx:60
+#: src/guides/lexicon/en.mdx:68 src/guides/publishing-lexicons/en.mdx:60
+#: src/guides/backfilling/en.mdx:64 src/guides/reading-data/en.mdx:113
+#: src/guides/social-graph/en.mdx:25 src/guides/permission-sets/en.mdx:83
+#: src/guides/using-ozone/en.mdx:132 src/guides/about-oauth/en.mdx:81
 #, no-wrap
 msgid "## Further Reading and Resources\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/overview/en.mdx:16 src/guides/sync/en.mdx:15
+#: src/guides/overview/en.mdx:16 src/guides/sync/en.mdx:18
 #, no-wrap
 msgid "## Data Repositories\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sync/en.mdx:5
+#: src/guides/sync/en.mdx:3
+#, no-wrap
+msgid ""
+"import AtUriExample from './_snippets/at-uri-example.mdx'\n"
+"import WriteResponse from './_snippets/write-response.mdx'\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/sync/en.mdx:8
 #, no-wrap
 msgid ""
 "export const header = {\n"
@@ -50,13 +59,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sync/en.mdx:7
+#: src/guides/sync/en.mdx:10
 #, no-wrap
 msgid "## Handles and DIDs\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sync/en.mdx:11
+#: src/guides/sync/en.mdx:14
 #, no-wrap
 msgid ""
 "In AT, handles are resolved through [DIDs](/specs/did), also known as [Decentralized Identifiers](https://en.wikipedia.org/wiki/Decentralized_identifier). Currently, two different DID prefixes are supported:\n"
@@ -65,25 +74,25 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sync/en.mdx:13
+#: src/guides/sync/en.mdx:16
 #, no-wrap
 msgid "When you sign up for a new account using an Atmosphere app, that app will communicate with a PDS to register a new handle for you, using its domain name (for example, `*.bsky.social`).\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sync/en.mdx:17 src/guides/data-repos/en.mdx:12
+#: src/guides/sync/en.mdx:20 src/guides/data-repos/en.mdx:14
 #, no-wrap
 msgid "A data repository is a collection of data published by a single user. Repositories are self-authenticating data structures, meaning each update is signed and can be verified by anyone.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sync/en.mdx:19
+#: src/guides/sync/en.mdx:22
 #, no-wrap
 msgid "Multiple types of identifiers are used within a data repository:\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sync/en.mdx:24
+#: src/guides/sync/en.mdx:27
 #, no-wrap
 msgid ""
 "- [**Decentralized IDs (DIDs)**](https://w3c.github.io/did/) identify data repositories. They are broadly used as user IDs, but since every user has one data repository then a DID can be considered a reference to a data repository.\n"
@@ -93,77 +102,68 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sync/en.mdx:26
+#: src/guides/sync/en.mdx:29
 #, no-wrap
 msgid "Take, for example, a single AT record:\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sync/en.mdx:30
+#: src/guides/sync/en.mdx:31
 #, no-wrap
-msgid ""
-"```\n"
-"at://did:plc:vmt7o7y6titkqzzxav247zrn/app.bsky.feed.post/3m72rq2hgss2a\n"
-"```\n"
+msgid "<AtUriExample />\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sync/en.mdx:32
+#: src/guides/sync/en.mdx:33
 #, no-wrap
 msgid "This can be broken down as `at://DID/NSID/rkey` , or `at://repository/collection/record`. It has a corresponding CID of `bafyreidgbehqwweghrrddfu6jgj7lyr6fwhzgazhirnszdb5lvr7iynkiy`.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sync/en.mdx:34
+#: src/guides/sync/en.mdx:35
 #, no-wrap
 msgid "When making a write request to an AT API endpoint — such as when creating a new post — this full repository path will be returned as a response:\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sync/en.mdx:41
+#: src/guides/sync/en.mdx:37
 #, no-wrap
-msgid ""
-"```json\n"
-"{\n"
-"  \"uri\": \"at://did:plc:u5cwb2mwiv2bfq53cjufe6yn/app.bsky.feed.post/3k4duaz5vfs2b\",\n"
-"  \"cid\": \"bafyreibjifzpqj6o6wcq3hejh7y4z4z2vmiklkvykc57tw3pcbx3kxifpm\"\n"
-"}\n"
-"```\n"
+msgid "<WriteResponse />\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sync/en.mdx:43
+#: src/guides/sync/en.mdx:39
 #, no-wrap
 msgid "This is how individual records are uniquely identified and stored within AT data repositories.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sync/en.mdx:45 src/guides/going-to-production/en.mdx:12
+#: src/guides/sync/en.mdx:41 src/guides/going-to-production/en.mdx:12
 #: src/guides/self-hosting/en.mdx:10 src/guides/the-at-stack/en.mdx:35
 #, no-wrap
 msgid "## PDS\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sync/en.mdx:47
+#: src/guides/sync/en.mdx:43
 #, no-wrap
 msgid "A PDS, or Personal Data Server, is a server that hosts users' individual data repositories, such as posts, followers, and profile information. The PDS handles account lifecycle features, identity management, and key resolution for hosted user accounts.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sync/en.mdx:49
+#: src/guides/sync/en.mdx:45
 #, no-wrap
 msgid "You can [host your own PDS](/guides/self-hosting), and [migrate individual accounts](/guides/account-migration) from one PDS to another. Refer to [The AT Stack](/guides/the-at-stack#pds) for more information.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sync/en.mdx:53
+#: src/guides/sync/en.mdx:49
 #, no-wrap
 msgid "There are many ways of synchronizing and streaming AT data. You can use [Jetstream](/guides/streaming-data) to stream real-time updates, or locally [Backfill](/guides/backfilling) the data that already exists on the network.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/sync/en.mdx:60
+#: src/guides/sync/en.mdx:56
 #, no-wrap
 msgid ""
 "- [Streaming data](/guides/streaming-data)\n"

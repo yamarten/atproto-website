@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-18 14:17+0900\n"
+"POT-Creation-Date: 2026-05-18 11:10+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,18 +17,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: Plain text
-#: src/guides/applications/en.mdx:677 src/articles/atproto-ethos/en.mdx:146
-#: src/articles/atproto-for-distsys-engineers/en.mdx:226
-#, no-wrap
-msgid "<FooterCTA href=\"/\" title=\"Ready to learn more?\" description=\"Specs, guides, and SDKs can be found here.\" />\n"
-msgstr ""
-
-#. type: Plain text
-#: src/guides/bot-tutorial/en.mdx:245
-#: src/guides/custom-feed-tutorial/en.mdx:387
-#: src/guides/oauth-tutorial/en.mdx:783
-#: src/guides/statusphere-tutorial/en.mdx:728
-#: src/articles/atproto-ethos/en.mdx:135
+#: src/guides/bot-tutorial/en.mdx:137
+#: src/guides/custom-feed-tutorial/en.mdx:146
+#: src/guides/oauth-tutorial/en.mdx:242
+#: src/guides/statusphere-tutorial/en.mdx:200
+#: src/guides/go-oauth-cli-tutorial/en.mdx:98
+#: src/guides/oauth-cli-tutorial/en.mdx:92
+#: src/guides/labels-tutorial/en.mdx:149 src/articles/atproto-ethos/en.mdx:135
 #, no-wrap
 msgid "## Conclusion\n"
 msgstr ""
@@ -452,4 +447,11 @@ msgstr ""
 #: src/articles/atproto-ethos/en.mdx:145
 #, no-wrap
 msgid "If this sounds exciting to you, you can dive in further by checking out the [protocol specs](https://atproto.com/specs/atp), or getting hands on with the [Statusphere](https://github.com/bluesky-social/statusphere-example-app) example app built on the protocol.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/articles/atproto-ethos/en.mdx:146
+#: src/articles/atproto-for-distsys-engineers/en.mdx:226
+#, no-wrap
+msgid "<FooterCTA href=\"/\" title=\"Ready to learn more?\" description=\"Specs, guides, and SDKs can be found here.\" />\n"
 msgstr ""

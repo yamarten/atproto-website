@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-21 18:36+0900\n"
+"POT-Creation-Date: 2026-05-18 11:10+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,25 +17,35 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: Plain text
-#: src/guides/account-lifecycle/en.mdx:65
-#: src/guides/images-and-video/en.mdx:142 src/guides/moderation/en.mdx:30
-#: src/guides/reads-and-writes/en.mdx:73 src/guides/streaming-data/en.mdx:60
-#: src/guides/video-handling/en.mdx:41 src/guides/feeds/en.mdx:113
-#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:57
-#: src/guides/scopes/en.mdx:45 src/guides/subscriptions/en.mdx:78
-#: src/guides/writing-data/en.mdx:181 src/guides/creating-a-labeler/en.mdx:56
-#: src/guides/labels/en.mdx:110 src/guides/sdk-auth/en.mdx:116
-#: src/guides/sync/en.mdx:51 src/guides/auth/en.mdx:74
-#: src/guides/lexicon/en.mdx:128 src/guides/publishing-lexicons/en.mdx:49
-#: src/guides/backfilling/en.mdx:60 src/guides/reading-data/en.mdx:165
-#: src/guides/social-graph/en.mdx:19 src/guides/permission-sets/en.mdx:214
-#: src/guides/using-ozone/en.mdx:132
+#: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:68
+#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:60
+#: src/guides/streaming-data/en.mdx:42 src/guides/video-handling/en.mdx:32
+#: src/guides/feeds/en.mdx:90 src/guides/installing-lexicons/en.mdx:41
+#: src/guides/oauth-patterns/en.mdx:125
+#: src/guides/permission-requests/en.mdx:125 src/guides/subscriptions/en.mdx:40
+#: src/guides/writing-data/en.mdx:126 src/guides/creating-a-labeler/en.mdx:35
+#: src/guides/labels/en.mdx:95 src/guides/sdk-auth/en.mdx:70
+#: src/guides/sync/en.mdx:47 src/guides/auth/en.mdx:60
+#: src/guides/lexicon/en.mdx:68 src/guides/publishing-lexicons/en.mdx:60
+#: src/guides/backfilling/en.mdx:64 src/guides/reading-data/en.mdx:113
+#: src/guides/social-graph/en.mdx:25 src/guides/permission-sets/en.mdx:83
+#: src/guides/using-ozone/en.mdx:132 src/guides/about-oauth/en.mdx:81
 #, no-wrap
 msgid "## Further Reading and Resources\n"
 msgstr ""
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:5
+#, no-wrap
+msgid ""
+"import NpmLexInstall from './_snippets/npm-lex-install.mdx'\n"
+"import LexImportTs from './_snippets/lex-import-ts.mdx'\n"
+"import GoImports from './_snippets/go-imports.mdx'\n"
+"import GoBlankImports from './_snippets/go-blank-imports.mdx'\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/reads-and-writes/en.mdx:10
 #, no-wrap
 msgid ""
 "export const header = {\n"
@@ -45,54 +55,54 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/reads-and-writes/en.mdx:7
+#: src/guides/reads-and-writes/en.mdx:12
 #, no-wrap
 msgid "## AT Records\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/reads-and-writes/en.mdx:9
+#: src/guides/reads-and-writes/en.mdx:14
 #, no-wrap
 msgid "The AT Protocol distributes user data across different nodes of your network, using the core building blocks of the web. The AT Protocol interconnects applications so that their backends share state, including user accounts and content, in individual data repositories. Many operations you'll perform when working with atproto apps involve reading and writing these data repositories.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/reads-and-writes/en.mdx:11
+#: src/guides/reads-and-writes/en.mdx:16
 #, no-wrap
 msgid "For more context, see [Atproto for distributed systems engineers](/articles/atproto-for-distsys-engineers) and [The Atproto Ethos](/articles/atproto-ethos).\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/reads-and-writes/en.mdx:13 src/guides/bot-tutorial/en.mdx:11
-#: src/guides/custom-feed-tutorial/en.mdx:14
-#: src/guides/oauth-tutorial/en.mdx:18
-#: src/guides/statusphere-tutorial/en.mdx:17
-#: src/guides/go-oauth-cli-tutorial/en.mdx:11
-#: src/guides/oauth-cli-tutorial/en.mdx:11
+#: src/guides/reads-and-writes/en.mdx:18 src/guides/bot-tutorial/en.mdx:28
+#: src/guides/custom-feed-tutorial/en.mdx:28
+#: src/guides/oauth-tutorial/en.mdx:45
+#: src/guides/statusphere-tutorial/en.mdx:38
+#: src/guides/go-oauth-cli-tutorial/en.mdx:21
+#: src/guides/oauth-cli-tutorial/en.mdx:20 src/guides/labels-tutorial/en.mdx:24
 #, no-wrap
 msgid "## Prerequisites\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/reads-and-writes/en.mdx:15
+#: src/guides/reads-and-writes/en.mdx:20
 #, no-wrap
-msgid "Reading and writing AT data repositories requires an authenticated client. You can authenticate with [password authentication](/guides/sdk-auth) or [OAuth](/guides/oauth-patterns). The guides in this section assume you have already set up an authenticated client.\n"
+msgid "Reading and writing AT data repositories requires an authenticated client. You can authenticate with [password authentication](/guides/sdk-auth) or [OAuth](/guides/about-oauth). The guides in this section assume you have already set up an authenticated client.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/reads-and-writes/en.mdx:17
+#: src/guides/reads-and-writes/en.mdx:22
 #, no-wrap
 msgid "## API Methods\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/reads-and-writes/en.mdx:19
+#: src/guides/reads-and-writes/en.mdx:24
 #, no-wrap
 msgid "After [authenticating](/guides/sdk-auth#creating-a-client), you'll be able to make other API requests.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/reads-and-writes/en.mdx:28
+#: src/guides/reads-and-writes/en.mdx:33
 #, no-wrap
 msgid ""
 "<TabGroup defaultValue=\"ts\">\n"
@@ -106,65 +116,47 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/reads-and-writes/en.mdx:30
+#: src/guides/reads-and-writes/en.mdx:35
 #, no-wrap
 msgid "    Use `lex` to install the `app.bsky.feed.post` and `app.bsky.actor.profile` Lexicons as described in [Installing Lexicons](/guides/installing-lexicons):\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/reads-and-writes/en.mdx:36
+#: src/guides/reads-and-writes/en.mdx:37
 #, no-wrap
-msgid ""
-"    ```bash\n"
-"    npm install -g @atproto/lex\n"
-"    lex install app.bsky.feed.post app.bsky.actor.profile\n"
-"    lex build\n"
-"    ```\n"
+msgid "    <NpmLexInstall />\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/reads-and-writes/en.mdx:38
+#: src/guides/reads-and-writes/en.mdx:39
 #, no-wrap
 msgid "    This will generate TypeScript types for the Lexicons in your project. You can use this `import` statement to access all installed Lexicons:\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/reads-and-writes/en.mdx:42
+#: src/guides/reads-and-writes/en.mdx:41
 #, no-wrap
-msgid ""
-"    ```tsx\n"
-"    import * as app from './lexicons/app.js'\n"
-"    ```\n"
+msgid "    <LexImportTs />\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/reads-and-writes/en.mdx:54
+#: src/guides/reads-and-writes/en.mdx:46
 #, no-wrap
 msgid ""
 "    This will give you access to the API methods for your Lexicons. Now you are ready to start [making requests](/guides/reading-data)!\n"
 "    </TabPanel>\n"
 "    <TabPanel value=\"go\">\n"
-"    ```go\n"
-"    import (\n"
-"      \"context\"\n"
-"      appbsky \"github.com/bluesky-social/indigo/api/bsky\"\n"
-"      comatproto \"github.com/bluesky-social/indigo/api/atproto\"\n"
-"      lexutil \"github.com/bluesky-social/indigo/lex/util\"\n"
-"      \"github.com/bluesky-social/indigo/xrpc\"\n"
-"    )\n"
+"    <GoImports />\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/reads-and-writes/en.mdx:58
+#: src/guides/reads-and-writes/en.mdx:48
 #, no-wrap
-msgid ""
-"    ctx := context.Background()\n"
-"    ```\n"
-"    Import the SDK libraries and go directly to [making requests](/guides/reading-data)!\n"
+msgid "    Import the SDK libraries and go directly to [making requests](/guides/reading-data)!\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/reads-and-writes/en.mdx:61
+#: src/guides/reads-and-writes/en.mdx:51
 #, no-wrap
 msgid ""
 "    <Note>\n"
@@ -172,18 +164,15 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/reads-and-writes/en.mdx:67
+#: src/guides/reads-and-writes/en.mdx:54
 #, no-wrap
 msgid ""
-"    ```go\n"
-"    _ \"github.com/bluesky-social/indigo/api/bsky\"\n"
-"    _ \"github.com/bluesky-social/indigo/lex/util\"\n"
-"    ```\n"
+"    <GoBlankImports />\n"
 "    </Note>\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/reads-and-writes/en.mdx:71
+#: src/guides/reads-and-writes/en.mdx:58
 #, no-wrap
 msgid ""
 "    </TabPanel>\n"
@@ -192,7 +181,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/reads-and-writes/en.mdx:79
+#: src/guides/reads-and-writes/en.mdx:66
 #, no-wrap
 msgid ""
 "- [Reading data](/guides/reading-data)\n"

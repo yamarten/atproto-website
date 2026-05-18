@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-18 14:17+0900\n"
+"POT-Creation-Date: 2026-05-18 11:10+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,7 +57,7 @@ msgstr ""
 #. type: Plain text
 #: src/guides/account-migration/en.mdx:18
 #, no-wrap
-msgid "To create a PDS account with an existing identity, it is necessary to prove control the identity.\n"
+msgid "To create a PDS account with an existing identity, it is necessary to prove control of the identity.\n"
 msgstr ""
 
 #. type: Plain text

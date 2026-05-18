@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-21 18:36+0900\n"
+"POT-Creation-Date: 2026-05-18 11:10+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,6 +15,13 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: src/guides/permission-requests/en.mdx:20
+#: src/guides/lexicon-style-guide/en.mdx:8
+#, no-wrap
+msgid "## Overview\n"
+msgstr ""
 
 #. type: Plain text
 #: src/guides/lexicon-style-guide/en.mdx:6
@@ -25,12 +32,6 @@ msgid ""
 "  description:\n"
 "    'A style guide for creating new atproto Lexicons',\n"
 "}\n"
-msgstr ""
-
-#. type: Plain text
-#: src/guides/lexicon-style-guide/en.mdx:8
-#, no-wrap
-msgid "## Overview\n"
 msgstr ""
 
 #. type: Plain text

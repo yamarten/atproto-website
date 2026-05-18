@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-21 18:36+0900\n"
+"POT-Creation-Date: 2026-05-18 11:10+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,25 +17,31 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: Plain text
-#: src/guides/account-lifecycle/en.mdx:65
-#: src/guides/images-and-video/en.mdx:142 src/guides/moderation/en.mdx:30
-#: src/guides/reads-and-writes/en.mdx:73 src/guides/streaming-data/en.mdx:60
-#: src/guides/video-handling/en.mdx:41 src/guides/feeds/en.mdx:113
-#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:57
-#: src/guides/scopes/en.mdx:45 src/guides/subscriptions/en.mdx:78
-#: src/guides/writing-data/en.mdx:181 src/guides/creating-a-labeler/en.mdx:56
-#: src/guides/labels/en.mdx:110 src/guides/sdk-auth/en.mdx:116
-#: src/guides/sync/en.mdx:51 src/guides/auth/en.mdx:74
-#: src/guides/lexicon/en.mdx:128 src/guides/publishing-lexicons/en.mdx:49
-#: src/guides/backfilling/en.mdx:60 src/guides/reading-data/en.mdx:165
-#: src/guides/social-graph/en.mdx:19 src/guides/permission-sets/en.mdx:214
-#: src/guides/using-ozone/en.mdx:132
+#: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:68
+#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:60
+#: src/guides/streaming-data/en.mdx:42 src/guides/video-handling/en.mdx:32
+#: src/guides/feeds/en.mdx:90 src/guides/installing-lexicons/en.mdx:41
+#: src/guides/oauth-patterns/en.mdx:125
+#: src/guides/permission-requests/en.mdx:125 src/guides/subscriptions/en.mdx:40
+#: src/guides/writing-data/en.mdx:126 src/guides/creating-a-labeler/en.mdx:35
+#: src/guides/labels/en.mdx:95 src/guides/sdk-auth/en.mdx:70
+#: src/guides/sync/en.mdx:47 src/guides/auth/en.mdx:60
+#: src/guides/lexicon/en.mdx:68 src/guides/publishing-lexicons/en.mdx:60
+#: src/guides/backfilling/en.mdx:64 src/guides/reading-data/en.mdx:113
+#: src/guides/social-graph/en.mdx:25 src/guides/permission-sets/en.mdx:83
+#: src/guides/using-ozone/en.mdx:132 src/guides/about-oauth/en.mdx:81
 #, no-wrap
 msgid "## Further Reading and Resources\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/video-handling/en.mdx:5
+#: src/guides/video-handling/en.mdx:2
+#, no-wrap
+msgid "import FfprobeAspectRatio from './_snippets/ffprobe-aspect-ratio.mdx'\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/video-handling/en.mdx:7
 #, no-wrap
 msgid ""
 "export const header = {\n"
@@ -45,84 +51,67 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/video-handling/en.mdx:7
+#: src/guides/video-handling/en.mdx:9
 #, no-wrap
 msgid "## Video uploads\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/video-handling/en.mdx:9
+#: src/guides/video-handling/en.mdx:11
 #, no-wrap
 msgid "Video uploads differ slightly from image uploads, since they are typically much larger files and have a significantly long processing time. Individual Atmosphere apps or CDNs may impose additional limits on video uploads.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/video-handling/en.mdx:11
+#: src/guides/video-handling/en.mdx:13
 #, no-wrap
 msgid "For this reason, video uploads are typically handled by a side-car service before the final file(s) are uploaded to the PDS as blobs. For example, Bluesky has the `https://video.bsky.app` service for handling the upload and transcoding of videos before they are written to the PDS as a blob.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/video-handling/en.mdx:13
+#: src/guides/video-handling/en.mdx:15
 #, no-wrap
 msgid "## Aspect ratios\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/video-handling/en.mdx:15
+#: src/guides/video-handling/en.mdx:17
 #, no-wrap
 msgid "Depending on the requirements of your application, you may need to supply an aspect ratio along with video uploads. This metadata can be tricky to compute. If you're developing in a browser, you can load the video into a `<video>` and observe the dimensions when loaded. If you're in a native app, you'll most likely be able to get it via the media picker APIs. Alternatively, you can use a tool like `ffprobe` :\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/video-handling/en.mdx:18
+#: src/guides/video-handling/en.mdx:19
 #, no-wrap
-msgid ""
-"```jsx\n"
-"import { ffprobe } from \"https://deno.land/x/fast_forward@0.1.6/ffprobe.ts\";\n"
+msgid "<FfprobeAspectRatio />\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/video-handling/en.mdx:28
-#, no-wrap
-msgid ""
-"export async function getAspectRatio(fileName: string) {\n"
-"  const { streams } = await ffprobe(fileName, {});\n"
-"  const videoSteam = streams.find((stream) => stream.codec_type === \"video\");\n"
-"  return {\n"
-"    width: videoSteam.width,\n"
-"    height: videoSteam.height,\n"
-"  };\n"
-"}\n"
-"```\n"
-msgstr ""
-
-#. type: Plain text
-#: src/guides/video-handling/en.mdx:30
+#: src/guides/video-handling/en.mdx:21
 #, no-wrap
 msgid "## Transcoding\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/video-handling/en.mdx:32
+#: src/guides/video-handling/en.mdx:23
 #, no-wrap
 msgid "Videos will need time to transcode using a tool like `ffmpeg` on the server side before they are available from the firehose. This can lead to UX gaps — if a video blob is accompanying a new post, the video service only knows about the video once the post appears in the firehose. This means that people will be able to see the post before processing is complete, which will show a missing video for several seconds.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/video-handling/en.mdx:34
+#: src/guides/video-handling/en.mdx:25
 #, no-wrap
 msgid "It is possible to design an application endpoint to allow submitting videos to a separate microservice for processing before creating a post. This method also allows for better UX, since you can show the processing state to the user and let them know if the processing job fails.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/video-handling/en.mdx:36
+#: src/guides/video-handling/en.mdx:27
 #, no-wrap
 msgid "There are client-side code samples for both methods here:\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/video-handling/en.mdx:39
+#: src/guides/video-handling/en.mdx:30
 #, no-wrap
 msgid ""
 "- [Simple Method](https://tangled.sh/strings/did:plc:p2cp5gopk7mgjegy6wadk3ep/3lw74be4dr422)\n"
@@ -130,7 +119,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/video-handling/en.mdx:46
+#: src/guides/video-handling/en.mdx:37
 #, no-wrap
 msgid ""
 "- [Images and Video](/guides/images-and-video)\n"
