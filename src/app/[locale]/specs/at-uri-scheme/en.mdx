@@ -6,12 +6,12 @@ export const header = {
 
 # AT URI Scheme (at://)
 
-The AT URI scheme (`at://`) makes it easy to reference individual records in a specific repository, identified by either DID or handle. AT URIs can also be used to reference a collection within a repository, or an entire repository (aka, an identity). {{ className: 'lead' }}
+The AT URI scheme (`at://`) makes it easy to reference individual records in a specific repository, identified by either DID or handle. {{ className: 'lead' }}
 
 Both of these AT URIs reference the same record in the same repository; one uses the account's DID, and one uses the account's handle.
 
-- `at://did:plc:44ybard66vv44zksje25o7dz/app.bsky.feed.post/3jwdwj2ctlk26`
-- `at://bnewbold.bsky.team/app.bsky.feed.post/3jwdwj2ctlk26`
+- `at://did:plc:vwzwgnygau7ed7b7wt5ux7y2/app.bsky.feed.post/3k5nobkf2w72g`
+- `at://retr0.id/app.bsky.feed.post/3k5nobkf2w72g`
 
 <Note>
 **Caveats for Handle-based AT URIs**
@@ -39,7 +39,7 @@ In current atproto Lexicon use, the **query** and **fragment** parts are not yet
 "at://" AUTHORITY [ "/" COLLECTION [ "/" RKEY ] ]
 ```
 
-The **authority** section is required, and should be normalized. Similar to the rules for DID syntax elsewhere in atproto, it is syntaxtually valid to have AT URIs with unsupported DID methods, though the URI will not resolve or function properly. The optional **collection** part of the path must be a normalized [NSID](./nsid). The optional **rkey** part of the path must be a valid [Record Key](./record-key).
+The **authority** section is required, and should be normalized. Similar to the rules for DID syntax elsewhere in atproto, it is syntaxtually valid to have AT URIs with unsupported DID methods, though the URI will not resolve or function properly. The optional **collection** part of the path must be a normalized [NSID](/specs/nsid). The optional **rkey** part of the path must be a valid [record key](/specs/record-key).
 
 An AT URI pointing to a specific record in a repository is not a *strong* reference, in that it is not content-addressed. The record may change or be removed over time, or the DID itself may be deleted or unavailable. For `did:web`, control of the DID (and thus repository) may change over time. For AT URIs with a handle in the authority section, the handle-to-DID mapping can also change.
 
@@ -68,11 +68,11 @@ The full syntax for AT URIs is flexible to a variety of future use cases, includ
 - The overall URI is restricted to a subset of ASCII characters
 - For reference below, the set of unreserved characters, as defined in [RFC-3986](https://www.rfc-editor.org/rfc/rfc3986), includes alphanumeric (`A-Za-z0-9`), period, hyphen, underscore, and tilde (`.-_~`)
 - Maximum overall length is 8 kilobytes (which may be shortened in the future)
-- Hex-encoding of characters is permitted (but in practice not necessary)
-- The URI scheme is `at`, and an authority part preceded with double slashes is always required, so the URI always starts `at://`
-- An authority section is required and must be non-empty. the authority can be either an atproto Handle, or a DID meeting the restrictions for use with atproto. note that the authority part can *not* be interpreted as a host:port pair, because of the use of colon characters (`:`) in DIDs. Colons and unreserved characters should not be escaped in DIDs, but other reserved characters (including `#`, `/`, `$`, `&`, `@`) must be escaped.
+- Hex-encoding of characters is permitted (but in practice not necessary and should be avoided to keep the URI normalized and human-readable)
+- The URI scheme is `at`, and an authority part preceded with double slashes is always required. AT URIs always start with `at://`.
+- An authority section is required and must be non-empty. the authority can be either an atproto Handle, or a DID meeting the restrictions for use with atproto. The authority part can *not* be interpreted as a host:port pair, because of the use of colon characters (`:`) in DIDs. Colons and unreserved characters should not be escaped in DIDs, but other reserved characters (including `#`, `/`, `$`, `&`, `@`) must be escaped.
     - Note that none of the current "blessed" DID methods for atproto allow these characters in DID identifiers
-- An optional path section may follow the authority. The path may contain multiple segments separated by a single slash (`/`). Generic URI path normalization rules may be used.
+- An optional path section may follow the authority. The path may contain multiple segments separated by a single slash (`/`). Generic URI path normalization rules may be used. Tailing slashes are not allowed.
 - An optional query part is allowed, following generic URI syntax restrictions
 - An optional fragment part is allowed, using JSON Path syntax
 
@@ -102,7 +102,7 @@ Particularly when included in atproto records, strict normalization should be fo
 - No trailing slashes in path part
 - No duplicate slashes or "dot" sections in path part (`/./` or `/abc/../` for example)
 - NSID in path: domain authority part lowercased
-- Record Key is case-sensitive and not normalized
+- Record key is case-sensitive and not normalized
 - Query and fragment parts should not be included when referencing repositories or records in Lexicon records
 
 Refer to [RFC-3986](https://www.rfc-editor.org/rfc/rfc3986) for generic rules to normalize paths and remove `..` / `.` relative references.

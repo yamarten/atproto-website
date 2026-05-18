@@ -1,35 +1,37 @@
+import TapRun from './_snippets/tap-run.mdx'
+import TapInstall from './_snippets/tap-install.mdx'
+
 export const header = {
   title: 'Backfilling',
   description: 'Replicating the network',
 }
 
-## About backfilling
+## When to backfill
 
-Backfilling is the process of syncing all the data in the network from scratch. You may want to do this if you're running a service that requires a complete copy of the data in the network. This is not generally necessary for running feed generators, labelers, or bots, as most of the time they are fine handling live data off of the firehose. However, backfilling may be of interest if you want to perform large-scale data analysis.
+Backfilling is the process of syncing all the data in the network from scratch. You may want to do this if you're running a service that requires a complete copy of the data in the network.
 
-For the entire network to be backfillable by third parties at all is a novel concept for atproto. Other, monolithic social networks generally only offer an large-scale event stream (like our firehose) from the current date and time, making it difficult to perform longitudinal data analysis without additional data vendors. With the AT Protocol and adequate resources, you can *always* backfill the entire network on your own. This, in turn, benefits researchers and other forms of data analysis — if you can provision enough storage, you can have your own local copy of the entire Atmosphere.
+Backfilling the Bluesky Lexicons in particular is resource-intensive and time consuming. Backfilling other Lexicons typically is not. If you are developing your own application, using its own set of Lexicons, you can backfill all of the data that you are writing, as you write it, using the same code paths. Our [Statusphere tutorial](/guides/statusphere-tutorial) provides an example of this.
 
+If you are doing large-scale lookups, you can also make use of [backlinks](/guides/social-graph#backlinks) in combination with selective backfilling.
+
+For the entire network to be backfillable by third parties at all is a novel concept for atproto. Other, monolithic social networks generally only offer an large-scale event stream (like our firehose) from the current date and time, making it difficult to perform data analysis without an intermediary.
+
+With the AT Protocol and adequate resources, you can *always* backfill the entire network on your own. This, in turn, benefits researchers and other forms of data analysis — if you can provision enough storage, you can have your own local copy of the entire Atmosphere.
+
+Feed generators, labelers, and bots that consume data directly from the firehose may or may not require backfilling.
 When backfilling, you generally need to maintain 'up to date' replica of the data, which requires a cutover to streaming firehose data once the backfill is complete. We created `tap` to streamline this process.
 
 ## Using tap
 
 `tap` simplifies AT sync by handling the firehose connection, verification, backfill, and filtering. Your application connects to a Tap and receives simple JSON events for only the repos and collections you care about, no need to worry about binary formats for validating cryptographic signatures.
 
-Tap can be run from the command line:
+Install `tap` from the [indigo](https://github.com/bluesky-social/indigo) repo after installing Go:
 
-```shell
-# Run tap
-go run ./cmd/tap run --disable-acks=true
-# By default, the service uses SQLite at `./tap.db` and binds to port `:2480`.
+<TapInstall />
 
-# In a separate terminal, connect to receive events:
-websocat ws://localhost:2480/channel
+Then, run `tap` from the command line:
 
-#  Add a repo to track
-curl -X POST http://localhost:2480/repos/add \
-  -H "Content-Type: application/json" \
-  -d '{"dids": ["did:plc:ewvi7nxzyoun6zhxrhs64oiz"]}' # @atproto.com repo
-```
+<TapRun />
 
 When a repo is added, tap provides:
 
@@ -40,6 +42,8 @@ When a repo is added, tap provides:
 5. Live streaming: New firehose events are delivered immediately (marked live: true)
 
 We also provide a [TypeScript library](https://www.npmjs.com/package/@atproto/tap) for working with Tap. For more information, refer to [The AT Stack](/guides/the-at-stack#tap) and the [tap repository](https://github.com/bluesky-social/indigo/tree/main/cmd/tap). If you are backfilling a large number of records with Tap and need a scalable database service, we've had good experiences with [ClickHouse](https://clickhouse.com/).
+
+You can backfill from individual PDSes or from a Relay — they implement the same endpoints. For a list of available Relays, see [The AT Stack](/guides/the-at-stack#relays).
 
 ## How backfilling works
 

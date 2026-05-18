@@ -8,11 +8,69 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: 'report-based-moderation',
+    title: 'Report-Based Moderation in Ozone',
+    description: 'A report-centric workflow for Ozone with new queues, assignments, real-time collaboration, and a per-report activity log.',
+    date: 'May 11, 2026',
+    author: 'AT Protocol Team',
+  },
+  {
+    slug: 'serving-the-for-you-feed',
+    title: 'Serving the For You Feed',
+    description: 'How the maintainer of the popular For You feed serves it from their living room!',
+    date: 'April 21, 2026',
+    author: 'spacecowboy',
+  },
+  {
+    slug: 'indexing-standard-site',
+    title: 'Indexing Standard Site',
+    description: 'This guest post from Steve Simkins, creator of Sequoia and docs.surf, outlines the strategy he used to index standard.site records.',
+    date: 'April 14, 2026',
+    author: 'Steve Simkins',
+  },
+  {
+    slug: 'kicking-off-the-atp-working-group',
+    title: 'Kicking off the ATP Working Group at the IETF',
+    description: 'The Authenticated Transfer Protocol working group has been created at the IETF. Now that we have a charter, we are looking forward to participation from the broader ATP ecosystem. ',
+    date: 'April 2, 2026',
+    author: 'AT Protocol Team',
+  },
+  {
+    slug: '2026-spring-roadmap',
+    title: 'AT Protocol Roadmap (Spring 2026)',
+    description: 'Updates to the AT Protocol roadmap, including Permissioned Data and Account Experience.',
+    date: 'March 24, 2026',
+    author: 'Bluesky Protocol Team',
+  },
+  {
+    slug: 'introducing-hubble-a-public-mirror-for-the-whole-atmosphere',
+    title: 'Introducing Hubble: A Public Mirror for the Whole Atmosphere',
+    description: 'Bluesky is providing a grant to the creator of Microcosm to build a full mirror of public data on the Atmosphere to help make the network more resilient.',
+    date: 'March 20, 2026',
+    author: 'fig',
+  },
+  {
+    slug: 'working-to-decentralize-fedcm',
+    title: 'Working to Decentralize FedCM',
+    description: 'Bluesky Social PBC have given a grant to Emelia Smith, an Invited Expert with the FedID Working Group, to work on FedCM with the goal of making FedCM really work for the decentralized web.',
+    date: 'March 9, 2026',
+    author: 'Emelia Smith',
+  },
+  {
+    slug: 'npmx-alpha-launch',
+    title: 'Supporting the npmx Alpha Launch',
+    description: 'The launch of npmx is an incredible showcase for how open source communities can build quickly on top of atproto.',
+    date: 'March 3, 2026',
+    author: 'Jim Ray',
+
+  },
+  {
     slug: 'plc-replicas',
     title: 'PLC Read Replicas',
     description: 'Introducing a self-hostable did:plc read-replica service.',
     date: 'February 18, 2026',
     author: 'David Buchanan',
+
   },
   {
     slug: 'new-site-2026',
@@ -20,13 +78,14 @@ export const posts: BlogPost[] = [
     description: 'We\'ve updated just about everything about atproto.com to make it easier for developers to just build things.',
     date: 'February 17, 2026',
     author: 'Alex Garnett',
+
   },
   {
     slug: 'relay-rollout',
     title: 'Upcoming Relay Transition',
     description: 'What the new relay rollout means for consumers of the firehose.',
     date: 'January 24, 2026',
-    author: 'AT Protocol Team',
+    author: 'Bryan Newbold',
   },
   {
     slug: 'introducing-tap',
@@ -35,6 +94,7 @@ export const posts: BlogPost[] = [
       'We recently released Tap, a tool designed to handle the hard parts of repo synchronization, so you can focus on building your application.',
     date: 'December 12, 2025',
     author: 'Jim Ray',
+
   },
   {
     slug: 'protocol-check-in-fall-2025',

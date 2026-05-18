@@ -20,12 +20,35 @@ The page auto-updates as you edit the file.
 
 ---
 
-### Creating a new blog post
+### Blog tools
 
-Run the blog post generator:
+All blog-related commands are available through a single entry point:
 
 ```bash
-npm run blog
+npm run blog <command>
+```
+
+| Command | Description |
+|---------|-------------|
+| `npm run blog create` | Create a new blog post |
+| `npm run blog remove` | Remove a blog post |
+| `npm run blog ssite <slug>` | Publish a post as a standard-site record |
+| `npm run blog hide-reply <url>` | Hide a reply or detach a quote post |
+| `npm run blog create-publication` | Create the publication record (one-time setup) |
+
+Run `npm run blog` with no arguments to see this list.
+
+#### Configure credentials (one-time)
+
+```bash
+cp .env.example .env
+```
+Fill in your `ATPROTO_HANDLE` and `ATPROTO_APP_PASSWORD` (create an app password in Bluesky settings).
+
+### Creating a new blog post
+
+```bash
+npm run blog create
 ```
 
 This will prompt you for:
@@ -33,13 +56,22 @@ This will prompt you for:
 - **Slug** - URL-friendly identifier (auto-suggested from title)
 - **Description** - Short summary for the blog index
 - **Author** - Defaults to "AT Protocol Team"
+- **Bluesky DID** - If the author isn't in the registry, you'll be prompted for their DID (optional)
 
 The script creates the necessary files and updates the blog index automatically.
+
+#### Author bylines
+
+Individual blog post pages display an author byline below the date. Named authors with a Bluesky DID are linked to their `bsky.app` profile.
+
+Author-to-DID mappings are stored in `src/lib/authors.json`, which serves as the single source of truth. The `PageHeader` component looks up the DID at render time based on the `author` name from the post's MDX header — no need to store DIDs in individual posts.
+
+When creating a new post, if the author name isn't found in the registry, the script will prompt for a DID and automatically add it to `authors.json` for future posts. Authors without a DID (e.g. guest authors) simply get a plain text byline with no link.
 
 ### Removing a blog post
 
 ```bash
-npm run rmblog
+npm run blog remove
 ```
 
 This displays a paginated list of blog posts (10 at a time, most recent first). Select a post by number to remove it. The script will:
@@ -63,33 +95,33 @@ Each feed includes the 50 most recent posts. Post data is shared from `src/lib/p
 
 Blog posts can be published to the AT Protocol using the [site.standard](https://standard.site/) lexicon. This enables decentralized discovery and verification of content.
 
-#### Setup (one-time)
+#### Install and build Lexicons
 
-1. **Configure credentials:**
-   ```bash
-   cp .env.example .env
-   ```
-   Fill in your `ATPROTO_HANDLE` and `ATPROTO_APP_PASSWORD` (create an app password in Bluesky settings).
+```bash
+lex install site.standard.document
+lex build
+```
 
-2. **Create the publication record:**
-   ```bash
-   npm run create-publication
-   ```
-   Save the returned AT-URI to your `.env` as `ATPROTO_PUBLICATION_URI`.
+#### Create the publication record
+
+```bash
+npm run blog create-publication
+```
+Save the returned AT-URI to your `.env` as `ATPROTO_PUBLICATION_URI`.
 
 #### Publishing a post
 
 ```bash
-npm run publish-post <slug>
+npm run blog ssite <slug>
 ```
 
 For example:
 ```bash
-npm run publish-post welcome-to-the-blog
+npm run blog ssite welcome-to-the-blog
 ```
 
 This will:
-- Create a `site.standard.document` record on your PDS
+- Create a `standard.site` document record on your PDS
 - Save the AT-URI back to the post's MDX file for verification
 - Update the record if it already exists
 
@@ -104,6 +136,215 @@ The site implements [site.standard verification](https://standard.site/):
 - **Documents:** Each published post includes a `<link rel="site.standard.document">` tag
 
 For production, set `ATPROTO_PUBLICATION_URI` in your deployment environment.
+
+---
+
+### Bluesky Discussion Component
+
+Blog posts can display a conversation section powered by Bluesky. The `<bsky-conversation>` web component fetches replies, quote posts, and reposts for a given Bluesky post and renders them as a threaded timeline.
+
+#### How it works
+
+1. Post the blog link from the account on Bluesky
+2. Add the post URL (using the DID, not the handle) to the blog post's MDX header:
+   ```js
+   export const header = {
+     // ...
+     blueskyPostUrl: 'https://bsky.app/profile/did:plc:ewvi7nxzyoun6zhxrhs64oiz/post/3mf2y35apvc2i'
+   }
+   ```
+3. The conversation section renders automatically below the post content
+
+#### Standalone usage
+
+The web component at `public/bsky-conversation.js` has zero dependencies and can be used on any site:
+
+```html
+<script src="/bsky-conversation.js"></script>
+<bsky-conversation uri="https://bsky.app/profile/did:plc:.../post/..."></bsky-conversation>
+```
+
+#### Attributes
+
+| Attribute | Default | Description |
+|-----------|---------|-------------|
+| `uri` | (required) | The bsky.app post URL. Use DID-based URLs for reliability. |
+| `max-depth` | `3` | How many levels of nested replies to show. Also controls how deep the API fetches. At the cutoff, a "More of the conversation on Bluesky" link appears. |
+| `show-original-post` | `false` | Set to `"true"` to include the root post in the timeline. |
+| `engage-text` | `"Add your thoughts on Bluesky"` | CTA link text shown in the header and at the bottom of the conversation. Set to `""` to hide both. |
+| `header-template` | (none) | Custom header template string. Overrides the default `<ul>` header format. |
+
+#### Template syntax
+
+The `header-template` attribute supports a mini template language for interpolating conversation data.
+
+**Simple tokens** — replaced with their value:
+
+| Token | Value |
+|-------|-------|
+| `{replies}` | Raw reply count |
+| `{quotes}` | Raw quote count |
+| `{reposts}` | Raw repost count |
+| `{repostedBy}` | Linked names, e.g. `@alice, @bob, and 3 others` |
+| `{postUrl}` | The bsky.app post URL |
+
+**Pluralization** — `{name|singular|plural}` outputs nothing when the count is 0, `"1 singular"` when 1, `"N plural"` when 2+:
+
+```
+{replies|reply|replies}        → "" or "1 reply" or "17 replies"
+{quotes|quote|quotes}          → "" or "1 quote" or "5 quotes"
+```
+
+**Conditional blocks** — `{name?content}` renders content only if the value is truthy (non-zero, non-empty). Use this to wrap text around tokens that might be absent:
+
+```
+{repostedBy?Reposted by {repostedBy}.}    → "" or "Reposted by @alice, @bob."
+{replies?{replies|reply|replies} so far}   → "" or "17 replies so far"
+```
+
+**Full example:**
+
+```html
+<bsky-conversation
+  uri="https://bsky.app/profile/did:plc:.../post/..."
+  header-template="This post has {replies?{replies|reply|replies}}{quotes?, {quotes|quote|quotes}}{repostedBy?, and has been reposted by {repostedBy}}."
+/>
+```
+
+When no template is provided, the component falls back to its default `<ul>`-based header with individual stats items.
+
+#### Site-wide defaults
+
+The header template for this site is configured as a constant in `src/components/Page.tsx`. Per-page overrides are possible via the MDX header:
+
+```js
+export const header = {
+  // ...
+  blueskyHeaderTemplate: "...",
+}
+```
+
+#### CSS custom properties
+
+The component defines design tokens with sensible defaults, overridable from the host page. More to come!
+
+| Property | Light default | Dark default | Controls |
+|----------|--------------|-------------|----------|
+| `--bsky-border-color` | `#e5e7eb` | `#374151` | Separators, thread lines |
+| `--bsky-muted-color` | `#6b7280` | `#9ca3af` | Handles, timestamps, secondary text |
+| `--bsky-link-color` | `black` | `#60a5fa` | Link text color |
+| `--bsky-link-hover` | `#2563eb` | `#3b82f6` | Link hover color |
+| `--bsky-link-underline` | `rgba(82,82,91,0.5)` | `rgba(59,130,246,0.3)` | Link underline color |
+| `--bsky-link-underline-hover` | `rgba(59,130,246,0.3)` | `rgba(59,130,246,0.3)` | Link underline hover color |
+
+Override example:
+```css
+bsky-conversation {
+  --bsky-link-color: #333;
+  --bsky-muted-color: #888;
+}
+```
+
+The component inherits all typography (font-family, font-size, line-height, color) from its parent. All internal sizing uses `em` units so it scales with the inherited font size.
+
+#### Behavior notes
+
+- The root post author's direct replies are filtered out (they're extensions of the original post, not conversation). The author's replies to *other people's* comments are shown.
+- **Hidden replies are filtered out.** If you hide a reply on bsky.app (click the `···` menu on a reply → "Hide reply for everyone"), it won't appear in the conversation component. This works at all nesting levels. Note: "Hide reply for me" is a personal mute and won't affect what the component shows — you need "Hide reply for everyone" to write to the public threadgate record.
+- Reply threads are capped at 3 levels deep by default (configurable via `max-depth`). A "More of the conversation on Bluesky" link appears at the cutoff.
+- Reply threads stay grouped — nested replies are not flattened into the timeline.
+- **Detached quote posts are filtered out.** If you detach a quote on bsky.app (or via the script below), it won't appear in the conversation component.
+- Quote posts are interleaved chronologically with top-level reply threads.
+- Reposts appear only in the header summary, not as timeline items.
+- API failures (e.g., `getRepostedBy` returning 500) degrade gracefully — the rest of the conversation still renders.
+
+#### Moderation script
+
+The `hide-reply` script lets you hide replies or detach quote posts from the conversation component via the command line. It auto-detects the post type:
+
+```bash
+# Hide a reply (adds to threadgate hiddenReplies)
+npm run blog hide-reply https://bsky.app/profile/did:plc:.../post/...
+
+# Detach a quote post (adds to postgate detachedEmbeddingUris)
+npm run blog hide-reply https://bsky.app/profile/did:plc:.../post/...
+```
+
+Requires `ATPROTO_HANDLE` and `ATPROTO_APP_PASSWORD` in `.env`. The authenticated user must own the root post being replied to or quoted.
+
+- **Replies**: The script walks up the thread to find the root post and adds the reply URI to the root post's `app.bsky.feed.threadgate` record. This is equivalent to "Hide reply for everyone" on bsky.app.
+- **Quote posts**: The script detects the embedded post and adds the quote URI to the root post's `app.bsky.feed.postgate` record. This is equivalent to "Detach quote" on bsky.app.
+
+#### TODO
+- handle newlines in replies
+- handle images in replies (or don't!)
+- lots of styling
+- more templating
+- how should quote posts appear differently from replies?
+- extract into standalone project(?)
+
+---
+
+### Off Protocol (Podcast)
+
+The site hosts the *Off Protocol* podcast at `/off-protocol`. Episodes follow the same MDX-per-directory pattern as the blog, with podcast-specific additions: native `<audio>` playback, optional transcripts, an RSS feed for podcatchers, and subscribe links.
+
+#### Add an episode
+
+```sh
+npm run podcast create
+```
+
+Prompts for title, slug, episode number, description, audio URL, guests, and an optional Bluesky discussion link. The script HEADs the audio URL (failing if unreachable) and probes its duration via `ffprobe` if installed (falling back to a manual prompt). It scaffolds:
+
+- `src/app/[locale]/off-protocol/<slug>/page.tsx`
+- `src/app/[locale]/off-protocol/<slug>/en.mdx` (show notes)
+- `src/app/[locale]/off-protocol/<slug>/transcript.mdx` (optional transcript stub)
+
+…and prepends a new entry to `src/lib/episodes.ts`.
+
+To remove an episode:
+
+```sh
+npm run podcast remove
+```
+
+This deletes local files only. Once a feed `guid` has been distributed to subscribers, you cannot retroactively unsubscribe them — be deliberate.
+
+#### Why two date fields and two duration fields
+
+`src/lib/episodes.ts` stores both `date` (`"May 7, 2026"`) and `pubDate` (ISO 8601), and both `duration` (`"HH:MM:SS"`) and `durationSeconds` (a number). This is deliberate:
+
+- Display formats and machine formats serve different consumers.
+- Deriving one from the other at render time means re-parsing on every page load and risks subtle locale bugs.
+- The RSS spec wants specific formats (`pubDate` in RFC 822, `<itunes:duration>` in `HH:MM:SS`).
+
+The `npm run podcast create` script populates both fields in sync. They cannot drift unless edited by hand.
+
+#### Pre-launch checklist
+
+Things that must happen **before** submitting the feed to Apple Podcasts or Spotify:
+
+- [ ] At least one episode added via `npm run podcast create`
+
+#### RSS feed validation
+
+Before announcing the show or submitting to directories:
+
+1. Run `npm run dev` and visit `http://localhost:3000/off-protocol/rss.xml`
+2. Validate against [validator.podcastindex.org](https://validator.podcastindex.org/) and [castfeedvalidator.com](https://castfeedvalidator.com/) — both must pass
+3. Subscribe to the local feed in Pocket Casts (it accepts arbitrary URLs) and confirm episodes appear with art, duration, and show notes
+4. Confirm audio plays from each episode page on desktop and mobile
+
+#### Post-launch: subscribe links
+
+Once Apple/Spotify/Overcast/Pocket Casts have ingested the feed (typically 24–72h after submission), populate the corresponding URLs in `SHOW.subscribe` in `src/lib/episodes.ts`. The `SubscribeLinks` component renders a button only for non-null entries — at launch only RSS and the generic `podcast://` link are populated.
+
+#### GUID stability
+
+Episode RSS GUIDs are `off-protocol-ep-<episodeNumber>` and **must never change**. Slugs may be renamed; GUIDs may not. Renaming a GUID makes every podcatcher re-download the episode as new.
+
+The feed builder validates inputs at render time — invalid `pubDate` or `audioSizeBytes` will throw rather than emit a malformed feed.
 
 ---
 

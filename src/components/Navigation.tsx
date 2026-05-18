@@ -248,6 +248,7 @@ export const navigation: Array<NavGroup> = [
             title: 'Create a Social App',
             href: '/guides/statusphere-tutorial',
           },
+          { title: 'Adding Labels', href: '/guides/labels-tutorial' },
         ],
       },
       {
@@ -280,9 +281,10 @@ export const navigation: Array<NavGroup> = [
         href: '/guides/auth',
         links: [
           { title: 'SDK authentication', href: '/guides/sdk-auth' },
-          { title: 'OAuth patterns', href: '/guides/oauth-patterns' },
-          { title: 'Scopes', href: '/guides/scopes' },
-          { title: 'Permission Requests', href: '/guides/permission-sets' },
+          { title: 'About OAuth', href: '/guides/about-oauth' },
+          { title: 'Permission Requests', href: '/guides/permission-requests' },
+          { title: 'Permission Sets', href: '/guides/permission-sets' },
+          { title: 'OAuth Patterns', href: '/guides/oauth-patterns' },
         ],
       },
       {
@@ -360,6 +362,9 @@ export const navigation: Array<NavGroup> = [
         title: 'Account migration',
         href: '/guides/account-migration',
         icon: 'paper-airplane',
+        links: [
+          { title: 'Account Recovery', href: '/guides/account-recovery' },
+        ]
       },
       {
         title: 'Deploy recipes',

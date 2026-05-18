@@ -137,12 +137,10 @@ function parseDate(dateStr) {
   return date.toISOString()
 }
 
-async function main() {
-  const slug = process.argv[2]
-
+export async function main(slug) {
   if (!slug) {
-    console.error('Usage: npm run publish-post <slug>')
-    console.error('Example: npm run publish-post welcome-to-the-blog')
+    console.error('Usage: npm run blog ssite <slug>')
+    console.error('Example: npm run blog ssite welcome-to-the-blog')
     process.exit(1)
   }
 
@@ -257,18 +255,18 @@ async function main() {
   // Save the AT-URI back to the MDX file for verification
   let updatedMdx = fs.readFileSync(mdxPath, 'utf-8')
 
-  // Check if atUri already exists in header
-  if (updatedMdx.match(/atUri:\s*['"]/)) {
-    // Update existing atUri
+  // Check if standardSiteUri already exists in header
+  if (updatedMdx.match(/standardSiteUri:\s*['"]/)) {
+    // Update existing standardSiteUri
     updatedMdx = updatedMdx.replace(
-      /atUri:\s*['"].*?['"]/,
-      `atUri: '${documentUri}'`
+      /standardSiteUri:\s*['"].*?['"]/,
+      `standardSiteUri: '${documentUri}'`
     )
   } else {
-    // Add atUri to header (after the opening brace)
+    // Add standardSiteUri to header (after the opening brace)
     updatedMdx = updatedMdx.replace(
       /export\s+const\s+header\s*=\s*\{/,
-      `export const header = {\n  atUri: '${documentUri}',`
+      `export const header = {\n  standardSiteUri: '${documentUri}',`
     )
   }
 
@@ -276,7 +274,3 @@ async function main() {
   console.log(`\n📎 Saved AT-URI to ${path.basename(mdxPath)}`)
 }
 
-main().catch((err) => {
-  console.error('Unexpected error:', err)
-  process.exit(1)
-})

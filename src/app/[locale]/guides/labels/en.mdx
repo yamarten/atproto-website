@@ -1,4 +1,4 @@
-import {Container} from "@/components/Container"
+import LabelObject from './_snippets/label-object.mdx'
 
 export const header = {
   title: 'Labels',
@@ -15,27 +15,11 @@ Moderation in atproto consists of multiple, stackable systems, including:
 
 Developers building client applications should understand how to apply labels and user controls.
 
-**Labels** are a form of metadata about any account or content in the AT ecosystem. Labels are published by *moderation services*, which are either hardcoded into the application or chosen by the user. They are attached to records in the responses under the `labels` key.
+**Labels** are a form of metadata about any account or content in the AT ecosystem. Labels are published by *moderation services*, which are either hardcoded into the application or chosen by the user. They are attached to records in the responses under the `labels` key. Labels can be time-limited.
 
 A label is published with the following information:
 
-```markdown
-{
-  /** DID of the actor who created this label. */
-  src: string
-  /** AT URI of the record, repository (account), or other resource that this label applies to. */
-  uri: string
-  /** Optionally, CID specifying the specific version of 'uri' resource this label applies to. */
-  cid?: string
-  /** The short string name of the value or type of this label. */
-  val: string
-  /** If true, this is a negation label, overwriting a previous label. */
-  neg?: boolean
-  /** Timestamp when this label was created. */
-  cts: string
-}
-
-```
+<LabelObject />
 
 ## **Label values**
 
@@ -63,6 +47,7 @@ There are a few label values which are defined by the protocol. They are:
 - `sexual` which behaves like `porn` but is meant to handle less intense sexual content.
 - `graphic-media` which behaves like `porn` but is for violence / gore.
 - `nudity` which puts a warning on images but isn't 18+ and defaults to ignore.
+- `bot` which indicates than an account is automated.
 
 There are two reasons global label values exist.
 

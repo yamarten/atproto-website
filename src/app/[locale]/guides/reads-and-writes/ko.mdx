@@ -1,6 +1,11 @@
+import NpmLexInstall from './_snippets/npm-lex-install.mdx'
+import LexImportTs from './_snippets/lex-import-ts.mdx'
+import GoImports from './_snippets/go-imports.mdx'
+import GoBlankImports from './_snippets/go-blank-imports.mdx'
+
 export const header = {
-  title: 'Reads and Writes',
-  description: 'Read and Write from the Atmosphere',
+  title: '읽기와 쓰기',
+  description: 'Atmosphere에서 데이터 읽기 및 쓰기',
 }
 
 ## AT 레코드
@@ -8,10 +13,10 @@ AT 프로토콜은 웹의 핵심 구성 요소를 활용하여 사용자 데이�
 
 더 자세한 내용은 [분산 시스템 엔지니어를 위한 Atproto](/articles/atproto-for-distsys-engineers) 및 [Atproto의 정신](/articles/atproto-ethos) 을 참조하세요.
 ## 필수 조건
-AT 데이터 저장소의 읽기 및 쓰기에는 인증된 클라이언트가 필요합니다. [비밀번호 인증](/guides/sdk-auth) 또는 [OAuth](/guides/oauth-patterns) 로 인증할 수 있습니다. 이 섹션의 가이드는 이미 인증된 클라이언트를 설정했다고 가정합니다.
+AT 데이터 저장소의 읽기 및 쓰기에는 인증된 클라이언트가 필요합니다. [비밀번호 인증](/guides/sdk-auth) 또는 [OAuth](/guides/about-oauth) 로 인증할 수 있습니다. 이 섹션의 가이드는 이미 인증된 클라이언트를 설정했다고 가정합니다.
 ## API 메서드
 [인증](/guides/sdk-auth#creating-a-client) 후에는 다른 API 요청을 수행할 수 있습니다.
-<TabGroup defaultValue = "ts" >
+<TabGroup defaultValue="ts">
   <TabList>
   <Tab value="ts" > TypeScript </Tab>
     <Tab value="go" > Go </Tab>
@@ -21,39 +26,20 @@ AT 데이터 저장소의 읽기 및 쓰기에는 인증된 클라이언트가 �
         API 요청을 수행하려면 특정 [Lexicon](/guides/lexicon) 을 지정해야 합니다.예를 들어, Bluesky 게시물은 `app.bsky.feed.post` 어휘에서 사용할 수 있습니다.
 
     [어휘 설치](/guides/installing-lexicons) 에 설명된 대로 `lex`를 사용하여 `app.bsky.feed.post` 및 `app.bsky.actor.profile` 어휘를 설치하세요:
-```bash
-npm install -g @atproto/lex
-    
-lex install app.bsky.feed.post app.bsky.actor.profile
-lex build
-```
+    <NpmLexInstall />
     이렇게 하면 프로젝트에 Lexicons에 대한 TypeScript 타입이 생성됩니다.설치된 모든 Lexicons에 접근하려면 이 `import` 문을 사용하세요:
-```tsx
-import * as app from './lexicons/app.js'
-```
+    <LexImportTs />
     
 이를 통해 Lexicons의 API 메서드에 접근할 수 있습니다. 이제 [요청을 시작](/guides/reading-data) 할 준비가 되었습니다!
   </TabPanel>
   <TabPanel value = "go" >
-```go
-import (
-  “context”
-  appbsky “github.com/bluesky-social/indigo/api/bsky”
-  comatproto “github.com/bluesky-social/indigo/api/atproto”
-  lexutil “github.com/bluesky-social/indigo/lex/util”
-  “github.com/bluesky-social/indigo/xrpc”
-)
-ctx := context.Background()
-```
+<GoImports />
     SDK 라이브러리를 임포트하고 [요청하기](/guides/reading-data) 로 바로 이동하세요!
 
   <Note>
     Go의 임포트 방식 때문에 `bsky` 및 `util` 라이브러리를 직접 사용하지 않는 경우[빈 임포트](https://www.oreilly.com/library/view/the-go-programming/9780134190570/ebook_split_100.html)해야 합니다:
 
-    ```go
-    _ “github.com/bluesky-social/indigo/api/bsky”
-    _ “github.com/bluesky-social/indigo/lex/util”
-    ```
+    <GoBlankImports />
     </Note>
   </TabPanel>
   </TabPanels>
