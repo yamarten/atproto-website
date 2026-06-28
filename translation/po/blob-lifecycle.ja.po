@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-21 18:36+0900\n"
+"POT-Creation-Date: 2026-05-18 11:10+0900\n"
 "PO-Revision-Date: 2026-01-07 19:40+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -17,7 +17,15 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. type: Plain text
-#: src/guides/blob-lifecycle/en.mdx:5
+#: src/guides/blob-lifecycle/en.mdx:2
+#, no-wrap
+msgid "import UploadBlobTs from './_snippets/upload-blob-ts.mdx'\n"
+msgstr ""
+"import {Heading} from '@/components/Heading'\n"
+"import UploadBlobTs from './_snippets/upload-blob-ts.mdx'\n"
+
+#. type: Plain text
+#: src/guides/blob-lifecycle/en.mdx:7
 #, no-wrap
 msgid ""
 "export const header = {\n"
@@ -25,153 +33,139 @@ msgid ""
 "  description: 'How blobs are uploaded, referenced, and deleted',\n"
 "}\n"
 msgstr ""
-"import {Heading} from '@/components/Heading'\n"
-"\n"
 "export const header = {\n"
 "  title: 'blobライフサイクル',\n"
 "  description: 'blobのアップロード、参照、削除の方法',\n"
 "}\n"
 
 #. type: Plain text
-#: src/guides/blob-lifecycle/en.mdx:7
+#: src/guides/blob-lifecycle/en.mdx:9
 #, no-wrap
 msgid "## Uploading blobs\n"
 msgstr "<Heading level={2} id=\"uploading-blob\">blobのアップロード</Heading>\n"
 
 #. type: Plain text
-#: src/guides/blob-lifecycle/en.mdx:9
+#: src/guides/blob-lifecycle/en.mdx:11
 #, no-wrap
 msgid "Blobs must be uploaded to the PDS before a record can be created referencing that blob. Note that the server does not know the intended Lexicon when receiving an upload, so can only apply generic blob limits and restrictions at initial upload time, and then enforce Lexicon-defined limits later when the record is created.\n"
 msgstr "blobは、それを参照するレコードより前にPDSにアップロードする必要があります。サーバーはアップロード時や受信時に目的のLexiconを知らないため、アップロード時には汎用的なblob制限と制約のみが適用可能であり、その後レコード作成時にLexiconで定義される制限を適用します。\n"
 
 #. type: Plain text
-#: src/guides/blob-lifecycle/en.mdx:11
+#: src/guides/blob-lifecycle/en.mdx:13
 #, no-wrap
 msgid "Clients use the **`com.atproto.repo.uploadBlob`** endpoint on their PDS, which will return verified metadata in the form of a Lexicon blob object. Clients should set the HTTP **`Content-Type`** header and should set the **`Content-Length`** headers on the upload request. SDKs can handle this automatically:\n"
 msgstr "クライアントはPDS上の **`com.atproto.repo.uploadBlob`** エンドポイントを使用します。このエンドポイントはLexiconにおけるblobオブジェクト形式の検証済みメタデータを返します。クライアントはアップロードリクエストHTTPの  **`Content-Type`** ヘッダーと **`Content-Length`** ヘッダーを設定する必要があります。SDKはこれを自動的に処理できます。\n"
 
 #. type: Plain text
-#: src/guides/blob-lifecycle/en.mdx:18
+#: src/guides/blob-lifecycle/en.mdx:15
 #, no-wrap
-msgid ""
-"```typescript\n"
-"const image = 'data:image/png;base64,...'\n"
-"const { data } = await agent.uploadBlob(convertDataURIToUint8Array(image), {\n"
-"  encoding,\n"
-"})\n"
-"```\n"
-msgstr ""
-"```typescript\n"
-"const image = 'data:image/png;base64,...'\n"
-"const { data } = await agent.uploadBlob(convertDataURIToUint8Array(image), {\n"
-"  encoding,\n"
-"})\n"
-"```\n"
+msgid "<UploadBlobTs />\n"
+msgstr "<UploadBlobTs />\n"
 
 #. type: Plain text
-#: src/guides/blob-lifecycle/en.mdx:20
+#: src/guides/blob-lifecycle/en.mdx:17
 #, no-wrap
 msgid "This `data` object could then be referenced in another record, e.g. as an `embed`.\n"
 msgstr "この`data`オブジェクトは別のレコードで参照できます。例えば`embed`として使用できます。\n"
 
 #. type: Plain text
-#: src/guides/blob-lifecycle/en.mdx:22
+#: src/guides/blob-lifecycle/en.mdx:19
 #, no-wrap
 msgid "Chunked transfer encoding may also be permitted for uploads. Servers *may* sniff the blob mimetype to validate against the declared **`Content-Type`** header, and either return a modified mimetype in the response, or reject the upload. See [\"Security Considerations\"](/specs/blob#security-considerations). If the actual blob upload size differs from the **`Content-Length`** header, the server should reject the upload.\n"
 msgstr "チャンク転送エンコーディングによるアップロードも許可されている場合があります。サーバーはblobのmimetypeをスニッフィングして宣言された **`Content-Type`** ヘッダーに対して検証し、レスポンスで修正されたmimetypeを返すか、アップロードを拒否する場合があります。[『Security Considerations』](/specs/blob#security-considerations)を参照してください。実際のblobアップロードサイズが **`Content-Length`** ヘッダーと異なる場合、サーバーはアップロードを拒否します。\n"
 
 #. type: Plain text
-#: src/guides/blob-lifecycle/en.mdx:24
+#: src/guides/blob-lifecycle/en.mdx:21
 #, no-wrap
 msgid "## Garbage collecting\n"
 msgstr "<Heading level={2} id=\"garbage-collection\">ガベージコレクション</Heading>\n"
 
 #. type: Plain text
-#: src/guides/blob-lifecycle/en.mdx:26
+#: src/guides/blob-lifecycle/en.mdx:23
 #, no-wrap
 msgid "After a successful upload, blobs are placed in temporary storage. They are not accessible for download or distribution while in this state. Servers should \"garbage collect\" (delete) un-referenced temporary blobs after an appropriate time span (see [implementation guidelines](#web-accessibility)). Blobs which are in temporary storage should not be included in the **`listBlobs`** output.\n"
 msgstr "アップロードに成功した後、blobは一時ストレージに配置されます。この状態では、ダウンロードや配送はできません。サーバーは適切な時間経過後に、参照されていない一時blobをガベージコレクション（削除）すべきです（[実装ガイドライン](#web-accessibility)を参照）。一時ストレージのblobは **`listBlobs`** の出力に含められません。\n"
 
 #. type: Plain text
-#: src/guides/blob-lifecycle/en.mdx:28
+#: src/guides/blob-lifecycle/en.mdx:25
 #, no-wrap
 msgid "## Referencing blobs\n"
 msgstr "<Heading level={2} id=\"referencing-blobs\">blobの参照</Heading>\n"
 
 #. type: Plain text
-#: src/guides/blob-lifecycle/en.mdx:30
+#: src/guides/blob-lifecycle/en.mdx:27
 #, no-wrap
 msgid "The upload blob can now be referenced from records by including the returned blob metadata in a record. When processing record creation, the server extracts the set of all referenced blobs, and checks that they are either already referenced, or are in temporary storage. Once the record creation succeeds, the server makes the blob publicly accessible.\n"
 msgstr "アップロードされたblobは、返されたblobメタデータをレコードに含めることで、レコードから参照できます。レコード作成時に、サーバーは参照されているすべてのblobを抽出し、それらが既に参照されているか、一時ストレージにあるかを確認します。レコード作成に成功すると、サーバーはblobを公開アクセス可能にします。\n"
 
 #. type: Plain text
-#: src/guides/blob-lifecycle/en.mdx:32
+#: src/guides/blob-lifecycle/en.mdx:29
 #, no-wrap
 msgid "The same blob can be referenced by multiple records in the same repository. Re-uploading a blob which has already been stored and referenced results in no change to the existing blobs or records.\n"
 msgstr "blobは同じリポジトリ内の複数のレコードから参照できます。既に参照されている保存済みのblobを再度アップロードしても、既存のblobやレコードに変更は生じません。\n"
 
 #. type: Plain text
-#: src/guides/blob-lifecycle/en.mdx:34
+#: src/guides/blob-lifecycle/en.mdx:31
 #, no-wrap
 msgid "Creation of new individual records which reference a blob which does not exist should be rejected at the time of creation (or update). However, it is possible for servers to host repository records which reference blobs which are not available locally. For example, during a bulk repository import or account migration; data loss; or content deletion/removal for policy reasons.\n"
 msgstr "存在しないblobを参照する新しいレコードの作成は、作成（または更新）時に拒否されるべきです。ただし、サーバーがローカルで利用できないblobを参照するレコードをホストすることは可能です。例えば、リポジトリの一括インポート、アカウント移行、データ損失、またはポリシー上の理由によるコンテンツ削除/消去の場合などです。\n"
 
 #. type: Plain text
-#: src/guides/blob-lifecycle/en.mdx:36
+#: src/guides/blob-lifecycle/en.mdx:33
 #, no-wrap
 msgid "## Deleting blobs\n"
 msgstr "<Heading level={2} id=\"deleting-blobs\">blobの削除</Heading>\n"
 
 #. type: Plain text
-#: src/guides/blob-lifecycle/en.mdx:38
+#: src/guides/blob-lifecycle/en.mdx:35
 #, no-wrap
 msgid "When a record referencing blobs is deleted, the server checks if any other current records from the same repository reference the blob. If not, the blob is deleted along with the record.\n"
 msgstr "blobを参照するレコードが削除されると、サーバーは同じリポジトリの他の現存レコードがblobを参照しているかどうかを確認します。参照されていない場合、blobはレコードと一緒に削除されます。\n"
 
 #. type: Plain text
-#: src/guides/blob-lifecycle/en.mdx:40
+#: src/guides/blob-lifecycle/en.mdx:37
 #, no-wrap
 msgid "When an account is deleted, all the hosted blobs are deleted, within some reasonable time frame. When an account is deactivated, takendown, or suspended, blobs should not be publicly accessible.\n"
 msgstr "アカウントが削除されると、ホストされているすべてのblobが適切な期間内に削除されます。アカウントが無効化、停止、または凍結された場合、blobは公開アクセス可能にすべきではありません。\n"
 
 #. type: Plain text
-#: src/guides/blob-lifecycle/en.mdx:42
+#: src/guides/blob-lifecycle/en.mdx:39
 #, no-wrap
 msgid "Servers may decide to make individual blobs inaccessible, separately from any account takedown or other account lifecycle events.\n"
 msgstr "サーバーは、アカウント停止または他のアカウントライフサイクルイベントとは別に、個別のblobにアクセス不可能にすることを決定する場合があります。\n"
 
 #. type: Plain text
-#: src/guides/blob-lifecycle/en.mdx:44
+#: src/guides/blob-lifecycle/en.mdx:41
 #, no-wrap
 msgid "## Web accessibility\n"
 msgstr "<Heading level={2} id=\"web-accessibillity\">ウェブアクセシビリティ</Heading>\n"
 
 #. type: Plain text
-#: src/guides/blob-lifecycle/en.mdx:46
+#: src/guides/blob-lifecycle/en.mdx:43
 #, no-wrap
 msgid "Original blobs can be fetched from the PDS using the **`com.atproto.sync.getBlob`** endpoint. The server should return appropriate **`Content-Type`** and **`Content-Length`** HTTP headers. It is not a recommended or required pattern to serve media directly from the PDS to end-user browsers, and servers do not need to support or facilitate this use case. See \"Security Considerations\" for more.\n"
 msgstr "オリジナルのblobは **`com.atproto.sync.getBlob`** エンドポイントを使用してPDSから取得できます。サーバーは適切な **`Content-Type`** と **`Content-Length`** HTTPヘッダーを返します。PDSからエンドユーザーのブラウザにメディアを直接提供することは推奨されるパターンではなく、サーバーはこのユースケースをサポート、または推進する必要はありません。詳細は『セキュリティに関する考慮事項』を参照してください。\n"
 
 #. type: Plain text
-#: src/guides/blob-lifecycle/en.mdx:48
+#: src/guides/blob-lifecycle/en.mdx:45
 #, no-wrap
 msgid "Servers may have their own generic limits and policies for blobs, separate from any Lexicon-defined constraints. They might implement account-wide quotas on data storage; maximum blob sizes; content policies; etc. Any of these restrictions might be enforced at the initial upload. Server operators should be aware that limits and other restrictions may impact functionality with existing and future applications. To maximize interoperability, operators are recommended to prefer limits on overall account resource consumption (e.g., \"total blob size\" quota, not \"per blob\" size limits).\n"
 msgstr "サーバーはLexicon定義の制約とは別に、blob一般に対する独自の制限とポリシーを持つ場合があります。アカウント全体のデータストレージ割り当て、最大blobサイズ、コンテンツポリシーなどを実装する場合があります。これらの制限はアップロード時に適用される場合があります。サーバーオペレーターは、制限と他の制約が既存および将来のアプリケーションの機能に影響を与える可能性があることに注意すべきです。相互運用性を最大化するために、オペレーターは全体的なアカウントリソース消費に対する制限を優先することを推奨します（例：「1つのblob当たり」のサイズ制限ではなく「総blobサイズ」割り当て）。\n"
 
 #. type: Plain text
-#: src/guides/blob-lifecycle/en.mdx:50
+#: src/guides/blob-lifecycle/en.mdx:47
 #, no-wrap
 msgid "Some applications may have a long delay between blob upload and reference from a record. To maximize interoperability, server implementations and operators are recommended to allow several hours of grace time before \"garbage collecting\", with at least one hour a firm lower bound.\n"
 msgstr "一部のアプリケーションでは、blobアップロードからレコードによる参照までの間に長い遅延がある場合があります。相互運用性を最大化するために、サーバー実装とオペレーターはガベージコレクション前になるべく数時間、最低でも1時間の猶予を設けてください。\n"
 
 #. type: Plain text
-#: src/guides/blob-lifecycle/en.mdx:52 src/guides/blob-security/en.mdx:30
+#: src/guides/blob-lifecycle/en.mdx:49 src/guides/blob-security/en.mdx:29
 #, no-wrap
 msgid "## Related resources\n"
 msgstr "<Heading level={2} id=\"related-resources\">参考資料</Heading>\n"
 
 #. type: Plain text
-#: src/guides/blob-lifecycle/en.mdx:57 src/guides/blob-security/en.mdx:35
+#: src/guides/blob-lifecycle/en.mdx:54 src/guides/blob-security/en.mdx:34
 #, no-wrap
 msgid ""
 "- [Images and Video](/guides/images-and-video)\n"

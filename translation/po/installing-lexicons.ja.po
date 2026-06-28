@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-01-07 19:40+0900\n"
+"POT-Creation-Date: 2026-05-18 11:10+0900\n"
 "PO-Revision-Date: 2026-01-07 19:40+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -17,11 +17,19 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. type: Plain text
-#: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:21
-#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:64
-#: src/guides/streaming-data/en.mdx:60 src/guides/video-handling/en.mdx:39
-#: src/guides/account-migration/en.mdx:74 src/guides/feeds/en.mdx:105
-#: src/guides/installing-lexicons/en.mdx:53
+#: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:68
+#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:60
+#: src/guides/streaming-data/en.mdx:42 src/guides/video-handling/en.mdx:32
+#: src/guides/feeds/en.mdx:90 src/guides/installing-lexicons/en.mdx:41
+#: src/guides/oauth-patterns/en.mdx:125
+#: src/guides/permission-requests/en.mdx:125 src/guides/subscriptions/en.mdx:40
+#: src/guides/writing-data/en.mdx:126 src/guides/creating-a-labeler/en.mdx:35
+#: src/guides/labels/en.mdx:95 src/guides/sdk-auth/en.mdx:70
+#: src/guides/sync/en.mdx:47 src/guides/auth/en.mdx:60
+#: src/guides/lexicon/en.mdx:68 src/guides/publishing-lexicons/en.mdx:60
+#: src/guides/backfilling/en.mdx:64 src/guides/reading-data/en.mdx:113
+#: src/guides/social-graph/en.mdx:25 src/guides/permission-sets/en.mdx:83
+#: src/guides/using-ozone/en.mdx:132 src/guides/about-oauth/en.mdx:81
 #, no-wrap
 msgid "## Further Reading and Resources\n"
 msgstr "<Heading level={2} id=\"further-reading-and-resources\">関連・参考資料</Heading>\n"
@@ -30,80 +38,81 @@ msgstr "<Heading level={2} id=\"further-reading-and-resources\">関連・参考�
 #: src/guides/installing-lexicons/en.mdx:5
 #, no-wrap
 msgid ""
+"import NpmInstall from './_snippets/npm-install.mdx'\n"
+"import LexInstallLexicons from './_snippets/lex-install-lexicons.mdx'\n"
+"import LexBuild from './_snippets/lex-build.mdx'\n"
+"import ClientUsageTs from './_snippets/client-usage-ts.mdx'\n"
+msgstr ""
+"import {Heading} from '@/components/Heading'\n"
+"import NpmInstall from './_snippets/npm-install.mdx'\n"
+"import LexInstallLexicons from './_snippets/lex-install-lexicons.mdx'\n"
+"import LexBuild from './_snippets/lex-build.mdx'\n"
+"import ClientUsageTs from './_snippets/client-usage-ts.mdx'\n"
+
+#. type: Plain text
+#: src/guides/installing-lexicons/en.mdx:10
+#, no-wrap
+msgid ""
 "export const header = {\n"
 "  title: 'Installing Lexicons',\n"
 "  description: 'Using Lexicons in your dev environment',\n"
 "}\n"
 msgstr ""
-"import {Heading} from '@/components/Heading'\n"
-"\n"
 "export const header = {\n"
 "  title: 'Lexiconのインストール',\n"
 "  description: '開発環境におけるLexiconの利用',\n"
 "}\n"
 
 #. type: Plain text
-#: src/guides/installing-lexicons/en.mdx:7
+#: src/guides/installing-lexicons/en.mdx:12
 #, no-wrap
 msgid "## Using lex\n"
 msgstr "<Heading level={2} id=\"using-lex\">lexの利用</Heading>\n"
 
 #. type: Plain text
-#: src/guides/installing-lexicons/en.mdx:9
+#: src/guides/installing-lexicons/en.mdx:14
 #, no-wrap
 msgid "Lexicon schemas enable code generation with types and validation. Our SDKs each install a `lex` tool that lets you generate a type-safe client that knows which parameters each AT endpoint expects.\n"
 msgstr "Lexiconスキーマは、型と検証を備えたコード生成を実現します。SDKには、各ATエンドポイントが期待するパラメータを知っている型安全なクライアントを生成できる`lex`ツールがインストールされています。\n"
 
 #. type: Plain text
-#: src/guides/installing-lexicons/en.mdx:11
+#: src/guides/installing-lexicons/en.mdx:16
 #, no-wrap
 msgid "## TypeScript\n"
-msgstr "<Heading level={2} id=\"typescript\">TypeScript</Heading>\n"
+msgstr "<Heading level={2} id=\"type-script\">TypeScript</Heading>\n"
 
 #. type: Plain text
-#: src/guides/installing-lexicons/en.mdx:13
+#: src/guides/installing-lexicons/en.mdx:18
 #, no-wrap
 msgid "First, install the `@atproto/lex` package:\n"
 msgstr "まず、`@atproto/lex`パッケージをインストールします。\n"
 
 #. type: Plain text
-#: src/guides/installing-lexicons/en.mdx:17
+#: src/guides/installing-lexicons/en.mdx:20
 #, no-wrap
-msgid ""
-"```bash\n"
-"npm install -g @atproto/lex\n"
-"```\n"
-msgstr ""
-"```bash\n"
-"npm install -g @atproto/lex\n"
-"```\n"
+msgid "<NpmInstall />\n"
+msgstr "<NpmInstall />\n"
 
 #. type: Plain text
-#: src/guides/installing-lexicons/en.mdx:19
+#: src/guides/installing-lexicons/en.mdx:22
 #, no-wrap
 msgid "This provides the `lex` command, which you can use to install Lexicons into a local project:\n"
 msgstr "これにより`lex`コマンドが提供され、ローカルプロジェクトにLexiconをインストールできます。\n"
 
 #. type: Plain text
-#: src/guides/installing-lexicons/en.mdx:23
+#: src/guides/installing-lexicons/en.mdx:24
 #, no-wrap
-msgid ""
-"```bash\n"
-"lex install app.bsky.feed.post app.bsky.feed.like\n"
-"```\n"
-msgstr ""
-"```bash\n"
-"lex install app.bsky.feed.post app.bsky.feed.like\n"
-"```\n"
+msgid "<LexInstallLexicons />\n"
+msgstr "<LexInstallLexicons />\n"
 
 #. type: Plain text
-#: src/guides/installing-lexicons/en.mdx:25
+#: src/guides/installing-lexicons/en.mdx:26
 #, no-wrap
 msgid "This creates:\n"
 msgstr "これにより以下が作成されます。\n"
 
 #. type: Plain text
-#: src/guides/installing-lexicons/en.mdx:28
+#: src/guides/installing-lexicons/en.mdx:29
 #, no-wrap
 msgid ""
 "- `lexicons.json` - manifest tracking installed Lexicons and their versions (CIDs)\n"
@@ -113,75 +122,37 @@ msgstr ""
 "- `lexicons/` - Lexicon JSONファイルを含むディレクトリ\n"
 
 #. type: Plain text
-#: src/guides/installing-lexicons/en.mdx:30
+#: src/guides/installing-lexicons/en.mdx:31
 #, no-wrap
 msgid "Finally, generate TypeScript schemas from the installed Lexicons:\n"
 msgstr "最後に、インストールされたLexiconからTypeScriptスキーマを生成します。\n"
 
 #. type: Plain text
-#: src/guides/installing-lexicons/en.mdx:34
+#: src/guides/installing-lexicons/en.mdx:33
 #, no-wrap
-msgid ""
-"```bash\n"
-"lex build\n"
-"```\n"
-msgstr ""
-"```bash\n"
-"lex build\n"
-"```\n"
+msgid "<LexBuild />\n"
+msgstr "<LexBuild />\n"
 
 #. type: Plain text
-#: src/guides/installing-lexicons/en.mdx:36
+#: src/guides/installing-lexicons/en.mdx:35
 #, no-wrap
 msgid "This generates TypeScript files in `./src/lexicons`. Now, you'll have these functions available to use in your code:\n"
 msgstr "これにより`./src/lexicons`にTypeScriptファイルが生成されます。これで、コードでこれらの関数が利用可能になります。\n"
 
 #. type: Plain text
-#: src/guides/installing-lexicons/en.mdx:40
+#: src/guides/installing-lexicons/en.mdx:37
 #, no-wrap
-msgid ""
-"```tsx\n"
-"import { Client } from '@atproto/lex'\n"
-"import * as app from './lexicons/app.js'\n"
-msgstr ""
-"```tsx\n"
-"import { Client } from '@atproto/lex'\n"
-"import * as app from './lexicons/app.js'\n"
+msgid "<ClientUsageTs />\n"
+msgstr "<ClientUsageTs />\n"
 
 #. type: Plain text
-#: src/guides/installing-lexicons/en.mdx:43
+#: src/guides/installing-lexicons/en.mdx:39
 #, no-wrap
-msgid ""
-"// Create an unauthenticated client instance\n"
-"const client = new Client('https://public.api.bsky.app')\n"
-msgstr ""
-"// 認証無しのクライアントインスタンスを作成\n"
-"const client = new Client('https://public.api.bsky.app')\n"
+msgid "For more guidance on working with `lex`, refer to the [readme](https://github.com/bluesky-social/atproto/tree/main/packages/lex/lex#lexicon-schemas).\n"
+msgstr "`lex`の使用方法に関する詳細については、[readme](https://github.com/bluesky-social/atproto/tree/main/packages/lex/lex#lexicon-schemas)を参照してください。\n"
 
 #. type: Plain text
-#: src/guides/installing-lexicons/en.mdx:49
-#, no-wrap
-msgid ""
-"// Start making requests using generated schemas\n"
-"const response = await client.call(app.bsky.actor.getProfile, {\n"
-"  actor: 'pfrazee.com',\n"
-"})\n"
-"```\n"
-msgstr ""
-"// 生成されたスキーマを使用してリクエストの作成を開始する\n"
-"const response = await client.call(app.bsky.actor.getProfile, {\n"
-"  actor: 'pfrazee.com',\n"
-"})\n"
-"```\n"
-
-#. type: Plain text
-#: src/guides/installing-lexicons/en.mdx:51
-#, no-wrap
-msgid "For more guidance on working with `lex`, refer to the [readme](https://github.com/bluesky-social/atproto-internal/blob/msi/lex/packages/lex/lex/README.md#json-schemas).\n"
-msgstr "`lex`の使用方法に関する詳細については、[readme](https://github.com/bluesky-social/atproto-internal/blob/msi/lex/packages/lex/lex/README.md#json-schemas)を参照してください。\n"
-
-#. type: Plain text
-#: src/guides/installing-lexicons/en.mdx:56
+#: src/guides/installing-lexicons/en.mdx:44
 #, no-wrap
 msgid ""
 "- [Publishing Lexicons](/guides/publishing-lexicons)\n"

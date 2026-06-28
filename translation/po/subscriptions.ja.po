@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-11 10:36+0900\n"
+"POT-Creation-Date: 2026-05-18 11:10+0900\n"
 "PO-Revision-Date: 2026-01-07 19:40+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -17,34 +17,40 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. type: Plain text
-#: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:21
-#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:73
-#: src/guides/streaming-data/en.mdx:60 src/guides/video-handling/en.mdx:39
-#: src/guides/feeds/en.mdx:113 src/guides/installing-lexicons/en.mdx:53
-#: src/guides/oauth-patterns/en.mdx:56 src/guides/scopes/en.mdx:45
-#: src/guides/subscriptions/en.mdx:78 src/guides/writing-data/en.mdx:181
-#: src/guides/creating-a-labeler/en.mdx:56 src/guides/labels/en.mdx:110
-#: src/guides/sdk-auth/en.mdx:145 src/guides/sync/en.mdx:51
-#: src/guides/auth/en.mdx:41 src/guides/lexicon/en.mdx:128
-#: src/guides/publishing-lexicons/en.mdx:49 src/guides/backfilling/en.mdx:60
-#: src/guides/reading-data/en.mdx:165 src/guides/social-graph/en.mdx:21
-#: src/guides/permission-sets/en.mdx:214 src/guides/using-ozone/en.mdx:132
+#: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:68
+#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:60
+#: src/guides/streaming-data/en.mdx:42 src/guides/video-handling/en.mdx:32
+#: src/guides/feeds/en.mdx:90 src/guides/installing-lexicons/en.mdx:41
+#: src/guides/oauth-patterns/en.mdx:125
+#: src/guides/permission-requests/en.mdx:125 src/guides/subscriptions/en.mdx:40
+#: src/guides/writing-data/en.mdx:126 src/guides/creating-a-labeler/en.mdx:35
+#: src/guides/labels/en.mdx:95 src/guides/sdk-auth/en.mdx:70
+#: src/guides/sync/en.mdx:47 src/guides/auth/en.mdx:60
+#: src/guides/lexicon/en.mdx:68 src/guides/publishing-lexicons/en.mdx:60
+#: src/guides/backfilling/en.mdx:64 src/guides/reading-data/en.mdx:113
+#: src/guides/social-graph/en.mdx:25 src/guides/permission-sets/en.mdx:83
+#: src/guides/using-ozone/en.mdx:132 src/guides/about-oauth/en.mdx:81
 #, no-wrap
 msgid "## Further Reading and Resources\n"
 msgstr "<Heading level={2} id=\"further-reading-and-resources\">関連・参考資料</Heading>\n"
 
 #. type: Plain text
-#: src/guides/subscriptions/en.mdx:2 src/guides/labels/en.mdx:2
-#: src/guides/sdk-auth/en.mdx:2 src/guides/auth/en.mdx:2
-#: src/guides/tutorials/en.mdx:2
+#: src/guides/subscriptions/en.mdx:5
 #, no-wrap
-msgid "import {Container} from \"@/components/Container\"\n"
+msgid ""
+"import {Container} from \"@/components/Container\"\n"
+"import AcceptLabelersCurl from './_snippets/accept-labelers-curl.mdx'\n"
+"import LabelerConfigTs from './_snippets/labeler-config-ts.mdx'\n"
+"import CreateReportTs from './_snippets/create-report-ts.mdx'\n"
 msgstr ""
 "import {Container} from \"@/components/Container\"\n"
 "import {Heading} from \"@/components/Heading\"\n"
+"import AcceptLabelersCurl from './_snippets/accept-labelers-curl.mdx'\n"
+"import LabelerConfigTs from './_snippets/labeler-config-ts.mdx'\n"
+"import CreateReportTs from './_snippets/create-report-ts.mdx'\n"
 
 #. type: Plain text
-#: src/guides/subscriptions/en.mdx:7
+#: src/guides/subscriptions/en.mdx:10
 #, no-wrap
 msgid ""
 "export const header = {\n"
@@ -58,37 +64,31 @@ msgstr ""
 "}\n"
 
 #. type: Plain text
-#: src/guides/subscriptions/en.mdx:9
+#: src/guides/subscriptions/en.mdx:12
 #, no-wrap
 msgid "## Labeler Subscriptions\n"
 msgstr "<Heading level={2} id=\"labeler-subscriptions\">ラベラー登録</Heading>\n"
 
 #. type: Plain text
-#: src/guides/subscriptions/en.mdx:11
+#: src/guides/subscriptions/en.mdx:14
 #, no-wrap
 msgid "Labeler services each have a service identity, meaning a DID document. This is the DID that appears in the label source (**`src`**) field.\n"
 msgstr "ラベラーサービスはそれぞれサービスIDを持ち、DIDドキュメントを意味します。これはラベルのソース（**`src`**）フィールドに表示されるDIDです。\n"
 
 #. type: Plain text
-#: src/guides/subscriptions/en.mdx:13
+#: src/guides/subscriptions/en.mdx:16
 #, no-wrap
 msgid "To include labels from a given labeler, set the `atproto-accept-labelers` header on an XRPC request to a comma-separated list of the DIDs of the labelers you want to include, like so:\n"
 msgstr "特定のラベラーからのラベルを含めるには、XRPCリクエストの`atproto-accept-labelers`ヘッダーを、含めたいラベラーのDIDのカンマ区切りリストに設定します。\n"
 
 #. type: Plain text
-#: src/guides/subscriptions/en.mdx:17
+#: src/guides/subscriptions/en.mdx:18
 #, no-wrap
-msgid ""
-"```bash\n"
-"curl -H \"atproto-accept-labelers: did:plc:vmt7o7y6titkqzzxav247zrn, did:plc:vmt7o7y6titkqzzxav247zrn\"\n"
-"```\n"
-msgstr ""
-"```bash\n"
-"curl -H \"atproto-accept-labelers: did:plc:vmt7o7y6titkqzzxav247zrn, did:plc:vmt7o7y6titkqzzxav247zrn\"\n"
-"```\n"
+msgid "<AcceptLabelersCurl />\n"
+msgstr "<AcceptLabelersCurl />\n"
 
 #. type: Plain text
-#: src/guides/subscriptions/en.mdx:19
+#: src/guides/subscriptions/en.mdx:20
 #, no-wrap
 msgid "You can also add labelers using the TypeScript SDK:\n"
 msgstr "TypeScript SDKを使用してラベラーを追加することもできます。\n"
@@ -96,87 +96,23 @@ msgstr "TypeScript SDKを使用してラベラーを追加することもでき�
 #. type: Plain text
 #: src/guides/subscriptions/en.mdx:22
 #, no-wrap
-msgid ""
-"```tsx\n"
-"import { Client } from '@atproto/lex'\n"
-msgstr ""
-"```tsx\n"
-"import { Client } from '@atproto/lex'\n"
+msgid "<LabelerConfigTs />\n"
+msgstr "<LabelerConfigTs />\n"
 
 #. type: Plain text
-#: src/guides/subscriptions/en.mdx:27
-#, no-wrap
-msgid ""
-"// Global app-level labelers\n"
-"Client.configure({\n"
-"  appLabelers: ['did:plc:labeler1', 'did:plc:labeler2'],\n"
-"})\n"
-msgstr ""
-"// アプリレベルのグローバルなラベラー\n"
-"Client.configure({\n"
-"  appLabelers: ['did:plc:labeler1', 'did:plc:labeler2'],\n"
-"})\n"
-
-#. type: Plain text
-#: src/guides/subscriptions/en.mdx:32
-#, no-wrap
-msgid ""
-"// Client-specific labelers\n"
-"const client = new Client(session, {\n"
-"  labelers: ['did:plc:labeler3'],\n"
-"})\n"
-msgstr ""
-"// Clientインスタンス固有のラベラー\n"
-"const client = new Client(session, {\n"
-"  labelers: ['did:plc:labeler3'],\n"
-"})\n"
-
-#. type: Plain text
-#: src/guides/subscriptions/en.mdx:35
-#, no-wrap
-msgid ""
-"// Add labelers dynamically\n"
-"client.addLabelers(['did:plc:labeler4'])\n"
-msgstr ""
-"// ラベラーを動的に追加\n"
-"client.addLabelers(['did:plc:labeler4'])\n"
-
-#. type: Plain text
-#: src/guides/subscriptions/en.mdx:38
-#, no-wrap
-msgid ""
-"// Replace all labelers\n"
-"client.setLabelers(['did:plc:labeler5'])\n"
-msgstr ""
-"// すべてのラベラーを置き換える\n"
-"client.setLabelers(['did:plc:labeler5'])\n"
-
-#. type: Plain text
-#: src/guides/subscriptions/en.mdx:42
-#, no-wrap
-msgid ""
-"// Clear labelers\n"
-"client.clearLabelers()\n"
-"```\n"
-msgstr ""
-"// ラベラーをクリア\n"
-"client.clearLabelers()\n"
-" ```\n"
-
-#. type: Plain text
-#: src/guides/subscriptions/en.mdx:44
+#: src/guides/subscriptions/en.mdx:24
 #, no-wrap
 msgid "## Use labels in your app\n"
 msgstr "<Heading level={2} id=\"use-labelers-in-your-app\">アプリでラベルを使う</Heading>\n"
 
 #. type: Plain text
-#: src/guides/subscriptions/en.mdx:46
+#: src/guides/subscriptions/en.mdx:26
 #, no-wrap
 msgid "Labels may be placed on accounts or records. Apps can interprets targets in different ways:\n"
 msgstr "ラベルはアカウントやレコードに紐付けられます。アプリはターゲットを異なる方法で解釈できます。\n"
 
 #. type: Plain text
-#: src/guides/subscriptions/en.mdx:50
+#: src/guides/subscriptions/en.mdx:30
 #, no-wrap
 msgid ""
 "- On an account: has account-wide effects\n"
@@ -188,77 +124,31 @@ msgstr ""
 "- コンテンツに対して：コンテンツ毎に固有の影響があります（投稿レコード、リスト、フィードなど）。\n"
 
 #. type: Plain text
-#: src/guides/subscriptions/en.mdx:52
+#: src/guides/subscriptions/en.mdx:32
 #, no-wrap
 msgid "## Reporting\n"
 msgstr "<Heading level={2} id=\"reporting\">報告</Heading>\n"
 
 #. type: Plain text
-#: src/guides/subscriptions/en.mdx:54
+#: src/guides/subscriptions/en.mdx:34
 #, no-wrap
 msgid "To send a report to a Labeler, use the `com.atproto.moderation.createReport` procedure. Users may send reports to any of their labelers.\n"
 msgstr "ラベラーに報告を送信するには、`com.atproto.moderation.createReport`を使用します。ユーザーはどのラベラーにでも報告を送信できます。\n"
 
 #. type: Plain text
-#: src/guides/subscriptions/en.mdx:56
+#: src/guides/subscriptions/en.mdx:36
 #, no-wrap
 msgid "To specify which labeler should receive the report, set the `atproto-proxy` header with the DID of the labeler and the service key of `atproto_labeler`. In the TypeScript SDK, it looks like this:\n"
 msgstr "どのラベラーが報告を受け取るべきかを指定するには、ラベラーのDIDと`atproto_labeler`サービスキーを`atproto-proxy`ヘッダーを設定します。TypeScript SDKでは、次のようになります。\n"
 
 #. type: Plain text
-#: src/guides/subscriptions/en.mdx:59
+#: src/guides/subscriptions/en.mdx:38
 #, no-wrap
-msgid ""
-"```typescript\n"
-"import { AtpAgent } from '@atproto/api'\n"
-msgstr ""
-"```typescript\n"
-"import { AtpAgent } from '@atproto/api'\n"
+msgid "<CreateReportTs />\n"
+msgstr "<CreateReportTs />\n"
 
 #. type: Plain text
-#: src/guides/subscriptions/en.mdx:67
-#, no-wrap
-msgid ""
-"const agent = new AtpAgent({\n"
-"    service: 'https://bsky.social'\n"
-"})\n"
-"await agent.login({\n"
-"    identifier: 'alex.bsky.team',\n"
-"    password: 'your-app-password'\n"
-"})\n"
-msgstr ""
-"const agent = new AtpAgent({\n"
-"    service: 'https://bsky.social'\n"
-"})\n"
-"await agent.login({\n"
-"    identifier: 'alex.bsky.team',\n"
-"    password: 'your-app-password'\n"
-"})\n"
-
-#. type: Plain text
-#: src/guides/subscriptions/en.mdx:76
-#, no-wrap
-msgid ""
-"agent\n"
-"  .withProxy('atproto_labeler', 'did:web:my-labeler.com')\n"
-"  .createModerationReport({\n"
-"    reasonType: 'com.atproto.moderation.defs#reasonViolation',\n"
-"    reason: 'They were being such a jerk to me!',\n"
-"    subject: { did: 'did:web:bob.com' },\n"
-"  })\n"
-"```\n"
-msgstr ""
-"agent\n"
-"  .withProxy('atproto_labeler', 'did:web:my-labeler.com')\n"
-"  .createModerationReport({\n"
-"    reasonType: 'com.atproto.moderation.defs#reasonViolation',\n"
-"    reason: 'They were being such a jerk to me!',\n"
-"    subject: { did: 'did:web:bob.com' },\n"
-"  })\n"
-"```\n"
-
-#. type: Plain text
-#: src/guides/subscriptions/en.mdx:83
+#: src/guides/subscriptions/en.mdx:45
 #, no-wrap
 msgid ""
 "- [Moderation](/guides/moderation)\n"

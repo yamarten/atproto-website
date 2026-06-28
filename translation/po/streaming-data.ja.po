@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-21 18:36+0900\n"
+"POT-Creation-Date: 2026-05-18 11:10+0900\n"
 "PO-Revision-Date: 2026-01-07 19:40+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -17,25 +17,36 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. type: Plain text
-#: src/guides/account-lifecycle/en.mdx:65
-#: src/guides/images-and-video/en.mdx:142 src/guides/moderation/en.mdx:30
-#: src/guides/reads-and-writes/en.mdx:73 src/guides/streaming-data/en.mdx:60
-#: src/guides/video-handling/en.mdx:41 src/guides/feeds/en.mdx:113
-#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:57
-#: src/guides/scopes/en.mdx:45 src/guides/subscriptions/en.mdx:78
-#: src/guides/writing-data/en.mdx:181 src/guides/creating-a-labeler/en.mdx:56
-#: src/guides/labels/en.mdx:110 src/guides/sdk-auth/en.mdx:116
-#: src/guides/sync/en.mdx:51 src/guides/auth/en.mdx:74
-#: src/guides/lexicon/en.mdx:128 src/guides/publishing-lexicons/en.mdx:49
-#: src/guides/backfilling/en.mdx:60 src/guides/reading-data/en.mdx:165
-#: src/guides/social-graph/en.mdx:19 src/guides/permission-sets/en.mdx:214
-#: src/guides/using-ozone/en.mdx:132
+#: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:68
+#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:60
+#: src/guides/streaming-data/en.mdx:42 src/guides/video-handling/en.mdx:32
+#: src/guides/feeds/en.mdx:90 src/guides/installing-lexicons/en.mdx:41
+#: src/guides/oauth-patterns/en.mdx:125
+#: src/guides/permission-requests/en.mdx:125 src/guides/subscriptions/en.mdx:40
+#: src/guides/writing-data/en.mdx:126 src/guides/creating-a-labeler/en.mdx:35
+#: src/guides/labels/en.mdx:95 src/guides/sdk-auth/en.mdx:70
+#: src/guides/sync/en.mdx:47 src/guides/auth/en.mdx:60
+#: src/guides/lexicon/en.mdx:68 src/guides/publishing-lexicons/en.mdx:60
+#: src/guides/backfilling/en.mdx:64 src/guides/reading-data/en.mdx:113
+#: src/guides/social-graph/en.mdx:25 src/guides/permission-sets/en.mdx:83
+#: src/guides/using-ozone/en.mdx:132 src/guides/about-oauth/en.mdx:81
 #, no-wrap
 msgid "## Further Reading and Resources\n"
 msgstr "<Heading level={2} id=\"further-reading-and-resources\">関連・参考資料</Heading>\n"
 
 #. type: Plain text
-#: src/guides/streaming-data/en.mdx:5
+#: src/guides/streaming-data/en.mdx:3
+#, no-wrap
+msgid ""
+"import FirehoseConnect from './_snippets/firehose-connect.mdx'\n"
+"import JetstreamPython from './_snippets/jetstream-python.mdx'\n"
+msgstr ""
+"import {Heading} from '@/components/Heading'\n"
+"import FirehoseConnect from './_snippets/firehose-connect.mdx'\n"
+"import JetstreamPython from './_snippets/jetstream-python.mdx'\n"
+
+#. type: Plain text
+#: src/guides/streaming-data/en.mdx:8
 #, no-wrap
 msgid ""
 "export const header = {\n"
@@ -43,81 +54,73 @@ msgid ""
 "  description: 'Working with the Firehose and Jetstream',\n"
 "}\n"
 msgstr ""
-"import {Heading} from '@/components/Heading'\n"
-"\n"
 "export const header = {\n"
 "  title: 'データストリーミング',\n"
 "  description: 'firehoseとJetstreamの使用',\n"
 "}\n"
 
 #. type: Plain text
-#: src/guides/streaming-data/en.mdx:7
+#: src/guides/streaming-data/en.mdx:10
 #, no-wrap
 msgid "## Streaming data\n"
 msgstr "<Heading level={2} id=\"streaming-data\">データストリーミング</Heading>\n"
 
 #. type: Plain text
-#: src/guides/streaming-data/en.mdx:9
+#: src/guides/streaming-data/en.mdx:12
 #, no-wrap
 msgid "One of the core primitives of the AT Protocol is the *firehose*. It is an authenticated stream of events used to efficiently sync user updates (posts, likes, follows, handle changes, etc).\n"
 msgstr "ATプロトコルのコアプリミティブの一つは*firehose*です。これは、ユーザーの更新（投稿、いいね、フォロー、ハンドル変更など）を効率的に同期するために使用される署名付きイベントストリームです。\n"
 
 #. type: Plain text
-#: src/guides/streaming-data/en.mdx:11
+#: src/guides/streaming-data/en.mdx:14
 #, no-wrap
 msgid "Many AT applications that need to stream incoming data will utilize the firehose — from feed generators to labelers, to bots and search engines. In the AT ecosystem, there are many different endpoints that seed these firehose APIs. Each PDS serves a stream of all of the activity on the repos it is responsible for. From there, Relays aggregate the streams of each participating PDS into a single unified stream — the firehose.\n"
 msgstr "ストリーミングデータ受信を必要とする多くのATアプリケーションは、フィードジェネレーターからラベラー、ボット、検索エンジンに至るまで、firehoseを利用します。ATエコシステムには、これらのfirehose APIを提供する多くの異なるエンドポイントがあります。各PDSは、担当するリポジトリ上のすべてのアクティビティのストリームを提供します。そこから、リレーは参加している各PDSのストリームを単一の統合ストリーム（firehose）に集約します。\n"
 
 #. type: Plain text
-#: src/guides/streaming-data/en.mdx:13
+#: src/guides/streaming-data/en.mdx:16
 #, no-wrap
 msgid "## Firehose\n"
 msgstr "<Heading level={2} id=\"firehose\">firehose</Heading>\n"
 
 #. type: Plain text
-#: src/guides/streaming-data/en.mdx:15
+#: src/guides/streaming-data/en.mdx:18
 #, no-wrap
 msgid "Anyone can connect to the firehose without authentication — this is a core feature of the protocol. To get started, open a WebSocket connection to any provider of the `com.atproto.sync.subscribeRepos` endpoint:\n"
 msgstr "誰でも認証なしでfirehoseに接続できます。これはプロトコルのコア機能です。開始するには、`com.atproto.sync.subscribeRepos`エンドポイントのプロバイダーへのWebSocket接続を開きます。\n"
 
 #. type: Plain text
-#: src/guides/streaming-data/en.mdx:19
+#: src/guides/streaming-data/en.mdx:20
 #, no-wrap
-msgid ""
-"```shell \n"
-"$ websocat wss://bsky.network/xrpc/com.atproto.sync.subscribeRepos\n"
-"```\n"
-msgstr ""
-"```shell\n"
-"$ websocat wss://bsky.network/xrpc/com.atproto.sync.subscribeRepos\n"
-"```\n"
+msgid "<FirehoseConnect />\n"
+msgstr "<FirehoseConnect />\n"
 
 #. type: Plain text
-#: src/guides/streaming-data/en.mdx:21
+#: src/guides/streaming-data/en.mdx:22
 #, no-wrap
 msgid "From here, you would need to read each message as it comes in, and decode the associated data. Our [Go](https://github.com/bluesky-social/indigo) SDK is currently the most feature-complete for interacting with the firehose directly.\n"
 msgstr "ここから、入ってくる各メッセージを読み込み、関連するデータをデコードする必要があります。私たちの[Go](https://github.com/bluesky-social/indigo) SDKは、現在firehoseと直接対話するには最も機能が揃っています。\n"
 
 #. type: Plain text
-#: src/guides/streaming-data/en.mdx:23
+#: src/guides/streaming-data/en.mdx:24
 #, no-wrap
 msgid "Bear in mind that firehose output format is one of the more complex parts of atproto, involving decoding binary [CBOR](/specs/data-model) data and [CAR](/specs/repository#car-file-serialization) files. Additionally, the volume of data has increased rapidly as the network has grown. The full synchronization firehose is core network infrastructure, but for end users such as [feed developers](/guides/feeds), we provide an alternative streaming solution called **Jetstream.**\n"
 msgstr "firehose出力形式はatprotoの特に複雑な部分の一つであり、バイナリ[CBOR](/specs/data-model)データと[CAR](/specs/repository#car-file-serialization)ファイルのデコードが含まれることに注意してください。さらに、ネットワークが成長するにつれてデータの量は急速に増加しています。完全な同期firehoseはコアネットワークインフラストラクチャですが、[フィード開発者](/guides/feeds)などのエンドユーザーのために、**Jetstream**という代替ストリーミングソリューションを提供しています。\n"
 
 #. type: Plain text
-#: src/guides/streaming-data/en.mdx:25
+#: src/guides/streaming-data/en.mdx:26
 #, no-wrap
 msgid "## Jetstream\n"
 msgstr "<Heading level={2} id=\"jetstream\">Jetstream</Heading>\n"
 
 #. type: Plain text
-#: src/guides/streaming-data/en.mdx:27
+#: src/guides/streaming-data/en.mdx:28
 #, no-wrap
 msgid "Jetstream has a few key advantages:\n"
 msgstr "Jetstreamにはいくつかの大きな利点があります。\n"
 
 #. type: Plain text
-#: src/guides/streaming-data/en.mdx:31
+#: src/guides/streaming-data/en.mdx:32
 #, no-wrap
 msgid ""
 "- simple JSON encoding\n"
@@ -129,81 +132,31 @@ msgstr ""
 "- コレクション（NSID）またはリポジトリ（DID）でフィルタリングする機能\n"
 
 #. type: Plain text
-#: src/guides/streaming-data/en.mdx:33
+#: src/guides/streaming-data/en.mdx:34
 #, no-wrap
 msgid "A Jetstream server consumes from the firehose and fans out to many subscribers. It is [open source](https://github.com/bluesky-social/jetstream), implemented in Go, simple to self-host. There is an official client library included (in Go), and [community client libraries](https://skyware.js.org/guides/jetstream/introduction/getting-started/) have been developed.\n"
 msgstr "Jetstreamサーバーはfirehoseを受け取り、多くの利用者に配信します。[オープンソース](https://github.com/bluesky-social/jetstream)で、Goで実装されており、セルフホストが簡単です。公式Goクライアントライブラリがあり、[コミュニティクライアントライブラリ](https://skyware.js.org/guides/jetstream/introduction/getting-started/)も開発されています。\n"
 
 #. type: Plain text
-#: src/guides/streaming-data/en.mdx:35
+#: src/guides/streaming-data/en.mdx:36
 #, no-wrap
 msgid "You can work with Jetstream like any other websocket. Just provide a Jetstream endpoint like `wss://jetstream2.us-east.bsky.network/subscribe`, and a `wantedCollections` parameter, like `?wantedCollections=app.bsky.feed.post`.\n"
 msgstr "Jetstreamは他のWebSocketと同じように操作できます。`wss://jetstream2.us-east.bsky.network/subscribe`のようなJetstreamエンドポイントと、`?wantedCollections=app.bsky.feed.post`のような`wantedCollections`パラメータを指定するだけです。\n"
 
 #. type: Plain text
-#: src/guides/streaming-data/en.mdx:37
+#: src/guides/streaming-data/en.mdx:38
 #, no-wrap
 msgid "Here is a Python example:\n"
 msgstr "Pythonの例を次に示します。\n"
 
 #. type: Plain text
-#: src/guides/streaming-data/en.mdx:41
+#: src/guides/streaming-data/en.mdx:40
 #, no-wrap
-msgid ""
-"```python\n"
-"import asyncio\n"
-"import websockets\n"
-msgstr ""
-"```python\n"
-"import asyncio\n"
-"import websockets\n"
+msgid "<JetstreamPython />\n"
+msgstr "<JetstreamPython />\n"
 
 #. type: Plain text
-#: src/guides/streaming-data/en.mdx:43
-#, no-wrap
-msgid "uri = \"wss://jetstream2.us-east.bsky.network/subscribe?wantedCollections=app.bsky.feed.post\"\n"
-msgstr "uri = \"wss://jetstream2.us-east.bsky.network/subscribe?wantedCollections=app.bsky.feed.post\"\n"
-
-#. type: Plain text
-#: src/guides/streaming-data/en.mdx:55
-#, no-wrap
-msgid ""
-"async def listen_to_websocket():\n"
-"  async with websockets.connect(uri) as websocket:\n"
-"    while True:\n"
-"      try:\n"
-"        message = await websocket.recv()\n"
-"        print(message)\n"
-"      except websockets.ConnectionClosed as e:\n"
-"        print(f\"Connection closed: {e}\")\n"
-"        break\n"
-"      except Exception as e:\n"
-"        print(f\"Error: {e}\")\n"
-msgstr ""
-"async def listen_to_websocket():\n"
-"  async with websockets.connect(uri) as websocket:\n"
-"    while True:\n"
-"      try:\n"
-"        message = await websocket.recv()\n"
-"        print(message)\n"
-"      except websockets.ConnectionClosed as e:\n"
-"        print(f\"Connection closed: {e}\")\n"
-"        break\n"
-"      except Exception as e:\n"
-"        print(f\"Error: {e}\")\n"
-
-#. type: Plain text
-#: src/guides/streaming-data/en.mdx:58
-#, no-wrap
-msgid ""
-"asyncio.get_event_loop().run_until_complete(listen_to_websocket())\n"
-"```\n"
-msgstr ""
-"asyncio.get_event_loop().run_until_complete(listen_to_websocket())\n"
-"```\n"
-
-#. type: Plain text
-#: src/guides/streaming-data/en.mdx:67
+#: src/guides/streaming-data/en.mdx:49
 #, no-wrap
 msgid ""
 "- [Sync](/guides/sync)\n"

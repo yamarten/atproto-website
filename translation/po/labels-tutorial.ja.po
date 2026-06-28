@@ -1,0 +1,520 @@
+# Japanese translations for PACKAGE package
+# Copyright (C) 2026 Bluesky Social PBC
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-05-18 11:10+0900\n"
+"PO-Revision-Date: 2026-05-18 11:10+0900\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. type: Plain text
+#: src/guides/reads-and-writes/en.mdx:18 src/guides/bot-tutorial/en.mdx:28
+#: src/guides/custom-feed-tutorial/en.mdx:28
+#: src/guides/oauth-tutorial/en.mdx:45
+#: src/guides/statusphere-tutorial/en.mdx:38
+#: src/guides/go-oauth-cli-tutorial/en.mdx:21
+#: src/guides/oauth-cli-tutorial/en.mdx:20 src/guides/labels-tutorial/en.mdx:24
+#, no-wrap
+msgid "## Prerequisites\n"
+msgstr "<Heading level={2} id=\"prerequisites\">前提条件</Heading>\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:37 src/guides/custom-feed-tutorial/en.mdx:38
+#: src/guides/oauth-tutorial/en.mdx:55
+#: src/guides/statusphere-tutorial/en.mdx:53
+#: src/guides/go-oauth-cli-tutorial/en.mdx:30
+#: src/guides/oauth-cli-tutorial/en.mdx:29 src/guides/labels-tutorial/en.mdx:46
+#, no-wrap
+msgid "<S01 />\n"
+msgstr "<S01 />\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:41 src/guides/custom-feed-tutorial/en.mdx:42
+#: src/guides/oauth-tutorial/en.mdx:61
+#: src/guides/statusphere-tutorial/en.mdx:57
+#: src/guides/go-oauth-cli-tutorial/en.mdx:38
+#: src/guides/oauth-cli-tutorial/en.mdx:37 src/guides/labels-tutorial/en.mdx:50
+#, no-wrap
+msgid "<S02 />\n"
+msgstr "<S02 />\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:45 src/guides/custom-feed-tutorial/en.mdx:46
+#: src/guides/oauth-tutorial/en.mdx:65
+#: src/guides/statusphere-tutorial/en.mdx:61
+#: src/guides/go-oauth-cli-tutorial/en.mdx:46
+#: src/guides/oauth-cli-tutorial/en.mdx:41 src/guides/labels-tutorial/en.mdx:64
+#, no-wrap
+msgid "<S03 />\n"
+msgstr "<S03 />\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:53 src/guides/custom-feed-tutorial/en.mdx:50
+#: src/guides/oauth-tutorial/en.mdx:69 src/guides/oauth-tutorial/en.mdx:149
+#: src/guides/oauth-tutorial/en.mdx:201
+#: src/guides/statusphere-tutorial/en.mdx:69
+#: src/guides/go-oauth-cli-tutorial/en.mdx:50
+#: src/guides/oauth-cli-tutorial/en.mdx:51 src/guides/labels-tutorial/en.mdx:68
+#, no-wrap
+msgid "<S04 />\n"
+msgstr "<S04 />\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:57 src/guides/custom-feed-tutorial/en.mdx:58
+#: src/guides/oauth-tutorial/en.mdx:95
+#: src/guides/statusphere-tutorial/en.mdx:73
+#: src/guides/go-oauth-cli-tutorial/en.mdx:64
+#: src/guides/oauth-cli-tutorial/en.mdx:65 src/guides/labels-tutorial/en.mdx:84
+#, no-wrap
+msgid "<S05 />\n"
+msgstr "<S05 />\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:67 src/guides/custom-feed-tutorial/en.mdx:62
+#: src/guides/oauth-tutorial/en.mdx:107
+#: src/guides/statusphere-tutorial/en.mdx:81
+#: src/guides/go-oauth-cli-tutorial/en.mdx:76
+#: src/guides/oauth-cli-tutorial/en.mdx:78 src/guides/labels-tutorial/en.mdx:88
+#, no-wrap
+msgid "<S06 />\n"
+msgstr "<S06 />\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:71 src/guides/custom-feed-tutorial/en.mdx:68
+#: src/guides/oauth-tutorial/en.mdx:111
+#: src/guides/statusphere-tutorial/en.mdx:89
+#: src/guides/go-oauth-cli-tutorial/en.mdx:84
+#: src/guides/oauth-cli-tutorial/en.mdx:86 src/guides/labels-tutorial/en.mdx:94
+#, no-wrap
+msgid "<S07 />\n"
+msgstr "<S07 />\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:75 src/guides/custom-feed-tutorial/en.mdx:87
+#: src/guides/oauth-tutorial/en.mdx:115
+#: src/guides/statusphere-tutorial/en.mdx:93
+#: src/guides/go-oauth-cli-tutorial/en.mdx:92
+#: src/guides/oauth-cli-tutorial/en.mdx:90
+#: src/guides/labels-tutorial/en.mdx:106
+#, no-wrap
+msgid "<S08 />\n"
+msgstr "<S08 />\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:91 src/guides/custom-feed-tutorial/en.mdx:101
+#: src/guides/oauth-tutorial/en.mdx:121
+#: src/guides/statusphere-tutorial/en.mdx:101
+#: src/guides/go-oauth-cli-tutorial/en.mdx:96
+#: src/guides/labels-tutorial/en.mdx:112
+#, no-wrap
+msgid "<S09 />\n"
+msgstr "<S09 />\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:95 src/guides/custom-feed-tutorial/en.mdx:113
+#: src/guides/oauth-tutorial/en.mdx:125
+#: src/guides/statusphere-tutorial/en.mdx:107
+#: src/guides/labels-tutorial/en.mdx:118
+#, no-wrap
+msgid "<S10 />\n"
+msgstr "<S10 />\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:137
+#: src/guides/custom-feed-tutorial/en.mdx:146
+#: src/guides/oauth-tutorial/en.mdx:242
+#: src/guides/statusphere-tutorial/en.mdx:200
+#: src/guides/go-oauth-cli-tutorial/en.mdx:98
+#: src/guides/oauth-cli-tutorial/en.mdx:92
+#: src/guides/labels-tutorial/en.mdx:149 src/articles/atproto-ethos/en.mdx:135
+#, no-wrap
+msgid "## Conclusion\n"
+msgstr "<Heading level={2} id=\"conclusion\">結論</Heading>\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:15
+#, no-wrap
+msgid ""
+"import {Container} from \"@/components/Container\"\n"
+"import S01 from './_snippets/01-env-vars.mdx'\n"
+"import S02 from './_snippets/02-scope-update.mdx'\n"
+"import S03 from './_snippets/03-lex-install.mdx'\n"
+"import S04 from './_snippets/04-lib-labels.mdx'\n"
+"import S05 from './_snippets/05-schema-cid.mdx'\n"
+"import S06 from './_snippets/06-migration-cid.mdx'\n"
+"import S07 from './_snippets/07-webhook-cid.mdx'\n"
+"import S08 from './_snippets/08-report-route.mdx'\n"
+"import S09 from './_snippets/09-report-button.mdx'\n"
+"import S10 from './_snippets/10-page-with-labels.mdx'\n"
+"import reportbutton from './report-button.png'\n"
+"import ozonereport from './ozone-report.png'\n"
+"import labelapplied from './label-applied.png'\n"
+msgstr ""
+"import {Container} from \"@/components/Container\"\n"
+"import {Heading} from \"@/components/Heading\"\n"
+"import S01 from './_snippets/01-env-vars.mdx'\n"
+"import S02 from './_snippets/02-scope-update.mdx'\n"
+"import S03 from './_snippets/03-lex-install.mdx'\n"
+"import S04 from './_snippets/04-lib-labels.mdx'\n"
+"import S05 from './_snippets/05-schema-cid.mdx'\n"
+"import S06 from './_snippets/06-migration-cid.mdx'\n"
+"import S07 from './_snippets/07-webhook-cid.mdx'\n"
+"import S08 from './_snippets/08-report-route.mdx'\n"
+"import S09 from './_snippets/09-report-button.mdx'\n"
+"import S10 from './_snippets/10-page-with-labels.mdx'\n"
+"import reportbutton from './report-button.png'\n"
+"import ozonereport from './ozone-report.png'\n"
+"import labelapplied from './label-applied.png'\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:20
+#, no-wrap
+msgid ""
+"export const header = {\n"
+"  title: 'Add Labels to Your App',\n"
+"  description: 'Wire your Statusphere app to an Ozone labeler service to display and create labels.',\n"
+"}\n"
+msgstr ""
+"export const header = {\n"
+"  title: 'アプリにラベルを追加する',\n"
+"  description: 'StatusphereアプリをOzoneラベラーサービスに接続してラベルを表示・作成する',\n"
+"}\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:22
+#, no-wrap
+msgid "In this tutorial, you'll connect the Statusphere app from the previous tutorial to a labeler service running [Ozone](https://github.com/bluesky-social/ozone). Users will see moderator-issued labels alongside statuses in the feed, and will be able to report statuses to your labeler for review.\n"
+msgstr "このチュートリアルでは、前のチュートリアルで作成したStatusphereアプリを[Ozone](https://github.com/bluesky-social/ozone)のラベラーサービスに接続します。ユーザーはフィード上でモデレーターが付与したラベルを確認でき、ステータスをラベラーに報告して審査を依頼できるようになります。\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:26
+#, no-wrap
+msgid "This tutorial builds on the completed [Create a Social App](/guides/statusphere-tutorial) tutorial. You should have it running before starting here.\n"
+msgstr "このチュートリアルは、[ソーシャルアプリの作成](/guides/statusphere-tutorial)チュートリアルの完了を前提としています。始める前にそちらのチュートリアルを動作させてください。\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:28
+#, no-wrap
+msgid "You'll also need a running Ozone instance that you can administer. Follow the [Ozone HOSTING guide](https://github.com/bluesky-social/ozone/blob/main/HOSTING.md) to stand one up. By the end of that setup you should have:\n"
+msgstr "管理下のOzoneインスタンスも動作している必要があります。[OzoneのHOSTINGガイド](https://github.com/bluesky-social/ozone/blob/main/HOSTING.md)に従って立ち上げてください。セットアップが完了すると、次のものが揃っているはずです。\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:32
+#, no-wrap
+msgid ""
+"- A **labeler DID** (`did:web:...` or `did:plc:...`) with `#atproto_labeler` and `#atproto_label` entries in its DID document. This happens when you [configure an account as a labeler](/guides/using-ozone#configuring-ozone).\n"
+"- A **public service URL** that responds to `GET /xrpc/com.atproto.label.queryLabels?uriPatterns=*`. Ozone implements this endpoint.\n"
+"- An **admin login** for the Ozone UI\n"
+msgstr ""
+"- **ラベラーDID**（`did:web:...`または`did:plc:...`）が存在し、そのDIDドキュメントに`#atproto_labeler`と`#atproto_label`のエントリが含まれていること。これは[ラベラーとしてアカウントを設定する](/guides/using-ozone#configuring-ozone)ときに作られます。\n"
+"- **公開サービスURL**があり、`GET /xrpc/com.atproto.label.queryLabels?uriPatterns=*`に応答すること。Ozoneはこのエンドポイントを実装します。\n"
+"- Ozone UIの**管理者ログイン**\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:34
+#, no-wrap
+msgid "A quick way to confirm the labeler is reachable:\n"
+msgstr "ラベラーに到達できるかは以下のように確認できます。\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:38
+#, no-wrap
+msgid ""
+"```bash\n"
+"curl \"https://<your-ozone-host>/xrpc/com.atproto.label.queryLabels?uriPatterns=*&limit=1\"\n"
+"```\n"
+msgstr ""
+"```bash\n"
+"curl \"https://<your-ozone-host>/xrpc/com.atproto.label.queryLabels?uriPatterns=*&limit=1\"\n"
+"```\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:40
+#, no-wrap
+msgid "On a fresh Ozone install, this should return `{\"labels\":[]}`.\n"
+msgstr "インストールしたばかりのOzoneでは、`{\"labels\":[]}`が返るはずです。\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:42
+#, no-wrap
+msgid "## Part 1: Wiring the Labeler Into Your App\n"
+msgstr "<Heading level={2} id=\"part-1-wiring-the-labeler-into-your-app\">パート1：ラベラーをアプリと接続</Heading>\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:44
+#, no-wrap
+msgid "Add the labeler's DID to your environment:\n"
+msgstr "ラベラーのDIDを環境に追加します。\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:48
+#, no-wrap
+msgid "Then update the OAuth `SCOPE` constant in `lib/auth/client.ts` so your app can submit reports through the user's PDS:\n"
+msgstr "`lib/auth/client.ts`の`SCOPE`定数を更新することで、アプリがユーザーのPDS経由でレポートを送信できるようになります。\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:54
+#, no-wrap
+msgid ""
+"<Note>\n"
+"The `rpc:` scope authorizes XRPC method calls. The `?aud=<labeler-did>#atproto_labeler` suffix is what binds the scope to your specific labeler — the PDS will reject the proxied report without it.\n"
+"</Note>\n"
+msgstr ""
+"<Note>\n"
+"`rpc:`スコープはXRPCメソッド呼び出しを許可します。`?aud=<labeler-did>#atproto_labeler`を後ろに付けると、そのスコープを特定のラベラーに紐付けます。これがないとPDSはレポートのプロキシを拒否します。\n"
+"</Note>\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:56
+#, no-wrap
+msgid "You'll need to log out and log back in for the new scope to take effect on existing sessions.\n"
+msgstr "新しいスコープを既存セッションに反映させるには、ログアウトして再度ログインしてください。\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:58
+#, no-wrap
+msgid "## Part 2: Querying Labels\n"
+msgstr "<Heading level={2} id=\"part-2-querying-labels\">パート2：ラベルの照会</Heading>\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:60
+#, no-wrap
+msgid "Labels live on the labeler service, not in any user's repo. You'll query the labeler directly each time the feed renders.\n"
+msgstr "ラベルはラベラーサービス上に保存され、各ユーザーのリポジトリには保存されません。フィードをレンダリングするたびにラベラーに直接問い合わせます。\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:62
+#, no-wrap
+msgid "You'll be making typed XRPC calls to both the labeler (to read labels) and the user's PDS (to submit reports), so install both lexicons up front:\n"
+msgstr "ラベラー（ラベル取得）とユーザーPDS（レポート送信）の両方に対して型付きXRPC呼び出しを行うため、事前に両方のLexiconをインストールしてください。\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:66
+#, no-wrap
+msgid "Now create `lib/labels.ts`:\n"
+msgstr "そうしたら、`lib/labels.ts`を作成します。\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:70
+#, no-wrap
+msgid "A few things worth pointing out:\n"
+msgstr "以下の点に注意してください。\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:74
+#, no-wrap
+msgid ""
+"- The endpoint URL comes from the labeler's DID document. The DID is the trust anchor — its document is signed and tells you where the `#atproto_labeler` service actually lives. Tap caches the underlying DID resolution.\n"
+"- The lex `Client` is constructed against that resolved URL and used unauthenticated — `queryLabels` is a public endpoint.\n"
+"- Each label's `src` is the DID of the labeler that issued it. Those are resolved to handles (deduped per call) and attached to each `Label` as `srcHandle`, so the UI can show *who* labeled a status rather than just an opaque DID.\n"
+msgstr ""
+"- エンドポイントURLはラベラーのDIDドキュメントから取得されます。DIDは信頼のアンカーです。DIDドキュメントは署名されており、`#atproto_labeler`サービスの実際の場所を示します。TapはDID解決をキャッシュします。\n"
+"- lexの`Client`は解決されたURLに対して構築され、認証なしで使用されます。`queryLabels`は公開エンドポイントです。\n"
+"- 各ラベルの`src`はそれを発行したラベラーのDIDです。これはハンドルに解決され（呼び出しごとに重複除去され）、各`Label`に`srcHandle`として添付されます。これによりUIは不透明なDIDの代わりに『誰が』ラベルを付けたかを表示できます。\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:76
+#, no-wrap
+msgid "The three helpers (`isHidden`, `isWarned`, `displayLabels`) interpret the values. `!hide` and `!warn` are system-level labels with prescribed UI behavior; anything else is a descriptive label like `spam` or `joke` that you can render however you want.\n"
+msgstr "3つのヘルパー（`isHidden`, `isWarned`, `displayLabels`）は値を解釈します。`!hide`と`!warn`はシステムレベルのラベルで、UI上の挙動が定められています。それ以外は`spam`や`joke`のような説明的ラベルで、任意の方法でレンダリングできます。\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:78
+#, no-wrap
+msgid "## Part 3: Capturing Record CIDs\n"
+msgstr "<Heading level={2} id=\"part-3-capturing-record-cids\">パート3：レコードCIDの取得</Heading>\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:80
+#, no-wrap
+msgid "A report subject needs both the URI and the CID of the record being reported. Tap webhook events already carry the CID alongside everything else, but the existing schema drops it. You'll extend the `status` table to keep it.\n"
+msgstr "レポート対象の指定には、報告されるレコードのURIとCIDの両方が必要です。TapのwebhookイベントはCIDを含んでいますが、既存スキーマではそれを破棄しています。`status`テーブルを拡張してCIDを保持するようにします。\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:82
+#, no-wrap
+msgid "Add the `cid` column to the `StatusTable` interface in `lib/db/index.ts`:\n"
+msgstr "`lib/db/index.ts`の`StatusTable`インターフェースに`cid`列を追加します。\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:86
+#, no-wrap
+msgid "Add a new migration in `lib/db/migrations.ts`:\n"
+msgstr "`lib/db/migrations.ts`に新しいマイグレーションを追加します。\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:90
+#, no-wrap
+msgid "Run `pnpm migrate` to apply it. The default empty string is for any pre-existing rows — new statuses will get the real CID from the webhook.\n"
+msgstr "適用するには`pnpm migrate`を実行します。既存の行にはデフォルトの空文字列が設定されますが、新しいステータスはwebhookから実際のCIDを取得します。\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:92
+#, no-wrap
+msgid "Update the `insertStatus` call in `app/api/webhook/route.ts` to pass the CID through:\n"
+msgstr "`app/api/webhook/route.ts`の`insertStatus`呼び出しを更新してCIDを渡すようにします。\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:98
+#, no-wrap
+msgid ""
+"<Note>\n"
+"If you started from the [statusphere-example-app](https://github.com/bluesky-social/statusphere-example-app) clone (rather than building up the previous tutorial by hand), `app/api/status/route.ts` also does an optimistic local insert after writing to the user's PDS. Pass `cid: res.cid` through that `insertStatus` call too — otherwise the user's own posts will sit in the DB with an empty `cid` until the Tap webhook catches up.\n"
+"</Note>\n"
+msgstr ""
+"<Note>\n"
+"[statusphere-example-app](https://github.com/bluesky-social/statusphere-example-app)のクローンから始めた場合（前のチュートリアルを手動作成した場合）、ユーザーのPDSに書き込んだ後、`app/api/status/route.ts`が楽観的にローカル挿入を行います。その`insertStatus`呼び出しにも`cid: res.cid`を渡してください。そうしないと、ユーザー自身の投稿にTapのwebhookが追いつくまで、DBに空の`cid`のまま残ることがあります。\n"
+"</Note>\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:100
+#, no-wrap
+msgid "`getRecentStatuses` already uses `selectAll()`, so the new column flows out to the feed page without further changes.\n"
+msgstr "`getRecentStatuses`は既に`selectAll()`を使用しているため、新しいカラムは他の変更なしにフィードページへ反映されます。\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:102
+#, no-wrap
+msgid "## Part 4: Reporting Statuses\n"
+msgstr "<Heading level={2} id=\"part-4-reporting-statuses\">パート4：ステータスの報告</Heading>\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:104
+#, no-wrap
+msgid "Create `app/api/report/route.ts`:\n"
+msgstr "`app/api/report/route.ts`を作成します。\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:108
+#, no-wrap
+msgid "The route reads both `uri` and `cid` from the request body, so no record lookup is needed at report time. The `service: '${LABELER_DID}#atproto_labeler'` option tells the lex Client to set the `atproto-proxy` header on the outgoing request, so the user's PDS forwards the report to your Ozone instance.\n"
+msgstr "ルートはリクエストボディから`uri`と`cid`の両方を読み取るため、レポート時にレコードの検索は不要です。`service: '${LABELER_DID}#atproto_labeler'`オプションはlex Clientに対して送信リクエストの`atproto-proxy`ヘッダを設定させ、ユーザーのPDSがレポートをOzoneインスタンスへ転送するようにします。\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:110
+#, no-wrap
+msgid "Then add `components/ReportButton.tsx`:\n"
+msgstr "同様に`components/ReportButton.tsx`も作成します。\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:114
+#, no-wrap
+msgid "## Part 5: Displaying Labels in the Feed\n"
+msgstr "<Heading level={2} id=\"part-5-displaying-labels-in-the-feed\">パート5：フィードにラベルを表示</Heading>\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:116
+#, no-wrap
+msgid "Now wire everything together. Update `app/page.tsx` to fetch labels for the visible statuses, drop any that are hidden, dim any that are warned, render the rest of the label values as badges, and surface the `ReportButton` on each row. Only the changed sections are shown below — the header, session block, and top statuses block from the previous tutorial are unchanged:\n"
+msgstr "ここで全てを連携させます。`app/page.tsx`を更新して表示されているステータスのラベルを取得し、非表示ラベルなら除外、警告ラベルは表示を薄くし、残りのラベル値をバッジとしてレンダリングして、各行に`ReportButton`を表示するようにします。以下には変更されたセクションのみを示しています。ヘッダー、セッションブロック、トップステータスブロックは前のチュートリアルから変更ありません。\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:120
+#, no-wrap
+msgid "Before testing, you should still have `tap` running from the previous tutorial:\n"
+msgstr "テストする前に、前のチュートリアルで起動した`tap`をまだ実行していることを確認してください。\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:127
+#, no-wrap
+msgid ""
+"```bash\n"
+"tap run \\\n"
+"  --webhook-url=http://localhost:3000/api/webhook \\\n"
+"  --collection-filters=xyz.statusphere.status \\\n"
+"  --signal-collection=xyz.statusphere.status\n"
+"```\n"
+msgstr ""
+"```bash\n"
+"tap run \\\n"
+"  --webhook-url=http://localhost:3000/api/webhook \\\n"
+"  --collection-filters=xyz.statusphere.status \\\n"
+"  --signal-collection=xyz.statusphere.status\n"
+"```\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:129
+#, no-wrap
+msgid "Restart `pnpm dev`. Logged-in users should see a small \"report\" affordance next to other users' statuses. Submitting a report sends it through their PDS to your labeler.\n"
+msgstr "`pnpm dev`を再起動します。ログイン中のユーザーは他ユーザーのステータス横に小さな「report」UIを見るはずです。レポートを送信すると、ユーザーのPDS経由であなたのラベラーに送信されます。\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:133
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={reportbutton} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
+"</Container>\n"
+msgstr ""
+"<Container>\n"
+"  <Image src={reportbutton} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
+"</Container>\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:135
+#, no-wrap
+msgid "Open the Ozone UI, find the report in the queue, and apply a label — either a custom value like `spam`, or one of the system values `!warn` or `!hide`.\n"
+msgstr "OzoneのUIを開き、キュー内のレポートを見つけてラベルを適用します。`spam`のようなカスタム値、またはシステム値の`!warn`や`!hide`が使えます。\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:139
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={ozonereport} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
+"</Container>\n"
+msgstr ""
+"<Container>\n"
+"  <Image src={ozonereport} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
+"</Container>\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:141
+#, no-wrap
+msgid "Refresh the feed in your app and the label should appear (or hide the status entirely).\n"
+msgstr "アプリのフィードを更新すると、ラベルが表示されたり、ステータスが非表示になるはずです。\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:145
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={labelapplied} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
+"</Container>\n"
+msgstr ""
+"<Container>\n"
+"  <Image src={labelapplied} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
+"</Container>\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:147
+#, no-wrap
+msgid "A thumbs-up emoji can be considered very graphic!\n"
+msgstr "親指を立てる絵文字は非常に残虐（graphic）だとみなされたようです。\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:151
+#, no-wrap
+msgid "You now have an atproto app that consumes signed labels from a labeler service and lets users submit reports to it. Querying on every render works for a small app, but production-shaped consumption should use the WebSocket stream at `com.atproto.label.subscribeLabels` to keep a local cache up to date — that's the next step from here.\n"
+msgstr "これで、ラベラーサービスから署名付きラベルを取得し、ユーザーがレポートを送信できるatprotoアプリができました。小さなアプリではレンダリングごとにクエリする方法でも動作しますが、本番環境向けには`com.atproto.label.subscribeLabels`のWebSocketストリームを利用してローカルキャッシュを最新に保つことを推奨します。これが次のステップです。\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:153
+#, no-wrap
+msgid "This setup also doesn't assume anything Bluesky-specific: the same Ozone instance, the same protocol endpoints, and the same client patterns work for any atproto app that wants community moderation.\n"
+msgstr "このセットアップにBluesky固有の前提はありません。同じOzoneインスタンス、同じプロトコルエンドポイント、同じクライアントパターンは、コミュニティ運営を行いたい任意のatprotoアプリで機能します。\n"
+
+#. type: Plain text
+#: src/guides/labels-tutorial/en.mdx:154
+#, no-wrap
+msgid "Next, read more about [Labels](/guides/labels).\n"
+msgstr "続けて[ラベル](/guides/labels)の章をお読みください。\n"

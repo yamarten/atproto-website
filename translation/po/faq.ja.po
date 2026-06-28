@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-21 18:36+0900\n"
+"POT-Creation-Date: 2026-05-18 11:10+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: Plain text
-#: src/guides/faq/en.mdx:6
+#: src/guides/faq/en.mdx:3
+#, no-wrap
+msgid ""
+"import ListRecordsCallTs from './_snippets/list-records-call-ts.mdx'\n"
+"import ListRecordsHttp from './_snippets/list-records-http.mdx'\n"
+msgstr ""
+"import {Heading} from '@/components/Heading'\n"
+"import ListRecordsCallTs from './_snippets/list-records-call-ts.mdx'\n"
+"import ListRecordsHttp from './_snippets/list-records-http.mdx'\n"
+
+#. type: Plain text
+#: src/guides/faq/en.mdx:9
 #, no-wrap
 msgid ""
 "export const header = {\n"
@@ -26,8 +37,6 @@ msgid ""
 "    'Frequently Asked Questions about AT Protocol.',\n"
 "}\n"
 msgstr ""
-"import {Heading} from '@/components/Heading'\n"
-"\n"
 "export const header = {\n"
 "  title: 'FAQ',\n"
 "  description:\n"
@@ -35,149 +44,127 @@ msgstr ""
 "}\n"
 
 #. type: Plain text
-#: src/guides/faq/en.mdx:8
+#: src/guides/faq/en.mdx:11
 #, no-wrap
 msgid "# FAQ\n"
 msgstr "# FAQ\n"
 
 #. type: Plain text
-#: src/guides/faq/en.mdx:10
+#: src/guides/faq/en.mdx:13
 #, no-wrap
 msgid "Frequently Asked Questions about the Authenticated Transfer Protocol (atproto). For FAQ about Bluesky, visit [here](https://bsky.social/about/faq).\n"
 msgstr "Authenticated Transfer Protocol（atproto）に関するよくある質問。Blueskyに関するよくある質問については、[こちら](https://bsky.social/about/faq)をご覧ください。\n"
 
 #. type: Plain text
-#: src/guides/faq/en.mdx:12
+#: src/guides/faq/en.mdx:15
 #, no-wrap
 msgid "## Is the AT Protocol a blockchain?\n"
 msgstr "<Heading level={2} id=\"is-the-at-protocol-a-blockchain\">ATプロトコルはブロックチェーンですか？</Heading>\n"
 
 #. type: Plain text
-#: src/guides/faq/en.mdx:14
+#: src/guides/faq/en.mdx:17
 #, no-wrap
 msgid "No. The AT Protocol is a [federated protocol](https://en.wikipedia.org/wiki/Federation_(information_technology)). It's not a blockchain nor does it use a blockchain.\n"
 msgstr "いいえ。ATプロトコルは[フェデレーションプロトコル](https://en.wikipedia.org/wiki/Federation_(information_technology))です。ブロックチェーンではありませんし、ブロックチェーンを使用していません。\n"
 
 #. type: Plain text
-#: src/guides/faq/en.mdx:16
+#: src/guides/faq/en.mdx:19
 #, no-wrap
 msgid "## Why not use ActivityPub?\n"
-msgstr "<Heading level={2} id=\"why-not-use-activitypub\">ActivityPubを使用しないのはなぜですか？</Heading>\n"
+msgstr "<Heading level={2} id=\"why-not-use-activity-pub\">ActivityPubを使用しないのはなぜですか？</Heading>\n"
 
 #. type: Plain text
-#: src/guides/faq/en.mdx:18
+#: src/guides/faq/en.mdx:21
 #, no-wrap
 msgid "[ActivityPub](https://en.wikipedia.org/wiki/ActivityPub) is a federated social networking technology popularized by [Mastodon](https://joinmastodon.org/).\n"
 msgstr "[ActivityPub](https://en.wikipedia.org/wiki/ActivityPub)は、[Mastodon](https://joinmastodon.org/)によって普及したフェデレーションソーシャルネットワーキングテクノロジーです。\n"
 
 #. type: Plain text
-#: src/guides/faq/en.mdx:20
+#: src/guides/faq/en.mdx:23
 #, no-wrap
 msgid "Account portability is a major reason why we chose to build a separate protocol. We consider portability to be crucial because it protects users from sudden bans, server shutdowns, and policy disagreements. Our solution for portability requires both [signed data repositories](/guides/data-repos) and [DIDs](/guides/identity), neither of which are easy to retrofit into ActivityPub. The migration tools for ActivityPub are comparatively limited; they require the original server to provide a redirect and cannot migrate the user's previous data.\n"
 msgstr "アカウントのポータビリティは、新しいプロトコルを構築することを選択した主な理由です。ポータビリティは、突然のBAN、サーバーのシャットダウン、ポリシーの不一致からユーザーを保護するため、非常に重要であると考えています。ポータビリティのソリューションには、[署名付きデータリポジトリ](/guides/data-repos)と[DID](/guides/identity)の両方が必要ですが、どちらもActivityPubに後から簡単に組み込むことはできません。ActivityPubの移行ツールは比較的制限されており、元のサーバーがリダイレクトを提供する必要があり、ユーザーの以前のデータを移行することはできません。\n"
 
 #. type: Plain text
-#: src/guides/faq/en.mdx:22
+#: src/guides/faq/en.mdx:25
 #, no-wrap
 msgid "Another major reason is scalability. ActivityPub depends heavily on delivering messages between a wide network of small-to-medium sized nodes, which can cause individual nodes to be flooded with traffic and generally struggles to provide global views of activity. The AT Protocol uses aggregating applications to merge activity from the users' hosts, reducing the overall traffic and dramatically reducing the load on individual hosts.\n"
 msgstr "もう一つの大きな理由は、スケーラビリティです。ActivityPubは、小規模から中規模のノードの広範なネットワーク間でメッセージを配信することに大きく依存しているため、個々のノードにトラフィックが殺到し、アクティビティのグローバルビューを提供するのが困難になることがあります。ATプロトコルは、集約アプリケーションを使用してユーザーのホストからのアクティビティをマージし、全体的なトラフィックを削減して、個々のホストの負荷を大幅に削減します。\n"
 
 #. type: Plain text
-#: src/guides/faq/en.mdx:24
+#: src/guides/faq/en.mdx:27
 #, no-wrap
 msgid "Other smaller differences include: a different viewpoint about how schemas should be handled, a preference for domain usernames over AP's double-@ email usernames, and the goal of having large scale search and algorithmic feeds.\n"
 msgstr "その他の小さな違いとしては、スキーマの扱い方に関する異なる視点、APの@を二重にしたメール式ユーザー名よりもドメインユーザー名を優先すること、大規模な検索とアルゴリズムフィードを実現するという目標などがあります。\n"
 
 #. type: Plain text
-#: src/guides/faq/en.mdx:26
+#: src/guides/faq/en.mdx:29
 #, no-wrap
 msgid "## Why create Lexicon instead of using JSON-LD or RDF?\n"
 msgstr "<Heading level={2} id=\"why-create-lexicon-instead-of-using-json-ld-or-rdf\">JSON-LDやRDFを使用する代わりにLexiconを作成する理由</Heading>\n"
 
 #. type: Plain text
-#: src/guides/faq/en.mdx:28
+#: src/guides/faq/en.mdx:31
 #, no-wrap
 msgid "Atproto exchanges data and RPC commands across organizations. For the data and RPC to be useful, the software needs to correctly handle schemas created by separate teams. This is the purpose of [Lexicon](/guides/lexicon).\n"
 msgstr "atprotoは組織間でデータとRPCコマンドを交換します。データとRPCが有用であるためには、ソフトウェアが別のチームによって作成されたスキーマを正しく処理する必要があります。これが[Lexicon](/guides/lexicon)の目的です。\n"
 
 #. type: Plain text
-#: src/guides/faq/en.mdx:30
+#: src/guides/faq/en.mdx:33
 #, no-wrap
 msgid "We want engineers to feel comfortable using and creating new schemas, and we want developers to enjoy the DX of the system. Lexicon helps us produce strongly typed APIs which are extremely familiar to developers and which provides a variety of runtime correctness checks.\n"
 msgstr "私たちは、エンジニアが新しいスキーマを快適に使用および作成できるようにし、開発者がシステムのDXを楽しめるようにしたいと考えています。Lexiconは、開発者にとって非常に馴染み深く、さまざまな実行時正確性チェックを提供する、厳密に型指定されたAPIの作成に役立ちます。\n"
 
 #. type: Plain text
-#: src/guides/faq/en.mdx:32
+#: src/guides/faq/en.mdx:35
 #, no-wrap
 msgid "[RDF](https://en.wikipedia.org/wiki/Resource_Description_Framework) is intended for extremely general cases in which the systems share very little infrastructure. It's conceptually elegant but difficult to use, often adding a lot of syntax which devs don't understand. JSON-LD simplifies the task of consuming RDF vocabularies, but it does so by hiding the underlying concepts, not by making RDF more legible.\n"
 msgstr "[RDF](https://en.wikipedia.org/wiki/Resource_Description_Framework)は、システムがほとんどインフラストラクチャを共有しない、極めて一般的なケースを対象としています。概念的にはエレガントですが、使いにくく、開発者が理解できない構文が多数追加されることがよくあります。JSON-LDはRDFボキャブラリの使用タスクを簡素化しますがRDFを読みやすくするのではなく、基礎となる概念を隠すことによって簡素化します。\n"
 
 #. type: Plain text
-#: src/guides/faq/en.mdx:34
+#: src/guides/faq/en.mdx:37
 #, no-wrap
 msgid "We looked very closely at using RDF but just didn't love the developer experience (DX) or the tooling it offered.\n"
 msgstr "私たちはRDFの使用を非常に詳しく検討しましたが、開発者体験（DX）や提供ツールが気に入りませんでした。\n"
 
 #. type: Plain text
-#: src/guides/faq/en.mdx:36
+#: src/guides/faq/en.mdx:39
 #, no-wrap
-msgid "## What is “XRPC,” and why not use ___?\n"
+msgid "## What is \"XRPC,\" and why not use ___?\n"
 msgstr "<Heading level={2} id=\"what-is-xrpc-and-why-not-use-___\">XRPCとは何ですか。なぜ___を使用しないのですか?</Heading>\n"
 
 #. type: Plain text
-#: src/guides/faq/en.mdx:38
+#: src/guides/faq/en.mdx:41
 #, no-wrap
 msgid "[XRPC](/specs/xrpc) is HTTP with some added conventions.\n"
 msgstr "[XRPC](/specs/xrpc)は、いくつかの規則が追加されたHTTPです。\n"
 
 #. type: Plain text
-#: src/guides/faq/en.mdx:40
+#: src/guides/faq/en.mdx:43
 #, no-wrap
 msgid "XRPC uses [Lexicons](/guides/lexicon) to describe HTTP calls and maps them to `/xrpc/{methodId}`. For example, this API call:\n"
 msgstr "XRPCは[Lexicon](/guides/lexicon)を使用してHTTP呼び出しを記述し、それらを`/xrpc/{methodId}`にマッピングします。たとえば、次のようなAPI呼び出しを考えます。\n"
 
 #. type: Plain text
-#: src/guides/faq/en.mdx:47
+#: src/guides/faq/en.mdx:45
 #, no-wrap
-msgid ""
-"```typescript\n"
-"await api.com.atproto.repo.listRecords({\n"
-"  user: 'alice.com',\n"
-"  collection: 'app.bsky.feed.post'\n"
-"})\n"
-"```\n"
-msgstr ""
-"```typescript\n"
-"await api.com.atproto.repo.listRecords({\n"
-"  user: 'alice.com',\n"
-"  collection: 'app.bsky.feed.post'\n"
-"})\n"
-"```\n"
+msgid "<ListRecordsCallTs />\n"
+msgstr "<ListRecordsCallTs />\n"
 
 #. type: Plain text
-#: src/guides/faq/en.mdx:49
+#: src/guides/faq/en.mdx:47
 #, no-wrap
 msgid "...maps to:\n"
 msgstr "これは以下のようにマップされます。\n"
 
 #. type: Plain text
-#: src/guides/faq/en.mdx:55
+#: src/guides/faq/en.mdx:49
 #, no-wrap
-msgid ""
-"```text\n"
-"GET /xrpc/com.atproto.repo.listRecords\n"
-"  ?user=alice.com\n"
-"  &collection=app.bsky.feed.post\n"
-"```\n"
-msgstr ""
-"```text\n"
-"GET /xrpc/com.atproto.repo.listRecords\n"
-"  ?user=alice.com\n"
-"  &collection=app.bsky.feed.post\n"
-"```\n"
+msgid "<ListRecordsHttp />\n"
+msgstr "<ListRecordsHttp />\n"
 
 #. type: Plain text
-#: src/guides/faq/en.mdx:56
+#: src/guides/faq/en.mdx:50
 #, no-wrap
 msgid "Lexicons establish shared method id (`com.atproto.repo.listRecords`) and the expected query params, input body, and output body. By using Lexicons we get runtime checks on the inputs and outputs of the call, and can generate typed code like the API call example above.\n"
 msgstr "Lexiconは、共有メソッドID（`com.atproto.repo.listRecords`）と、予想されるクエリパラメータ、入力および出力を明示します。Lexiconを使用すると、呼び出しの入力と出力の実行時チェックが実行され、上記のAPI呼び出しの例のような型付きコードを生成できます。\n"

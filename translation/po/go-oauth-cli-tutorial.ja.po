@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-21 18:36+0900\n"
+"POT-Creation-Date: 2026-05-18 11:10+0900\n"
 "PO-Revision-Date: 2026-02-21 13:18+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -17,45 +17,162 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. type: Plain text
-#: src/guides/reads-and-writes/en.mdx:13 src/guides/bot-tutorial/en.mdx:11
-#: src/guides/custom-feed-tutorial/en.mdx:14
-#: src/guides/oauth-tutorial/en.mdx:18
-#: src/guides/statusphere-tutorial/en.mdx:17
-#: src/guides/go-oauth-cli-tutorial/en.mdx:11
-#: src/guides/oauth-cli-tutorial/en.mdx:11
+#: src/guides/reads-and-writes/en.mdx:18 src/guides/bot-tutorial/en.mdx:28
+#: src/guides/custom-feed-tutorial/en.mdx:28
+#: src/guides/oauth-tutorial/en.mdx:45
+#: src/guides/statusphere-tutorial/en.mdx:38
+#: src/guides/go-oauth-cli-tutorial/en.mdx:21
+#: src/guides/oauth-cli-tutorial/en.mdx:20 src/guides/labels-tutorial/en.mdx:24
 #, no-wrap
 msgid "## Prerequisites\n"
 msgstr "<Heading level={2} id=\"prerequisites\">前提条件</Heading>\n"
 
 #. type: Plain text
-#: src/guides/bot-tutorial/en.mdx:18 src/guides/go-oauth-cli-tutorial/en.mdx:18
-#: src/guides/oauth-cli-tutorial/en.mdx:18
+#: src/guides/bot-tutorial/en.mdx:35 src/guides/go-oauth-cli-tutorial/en.mdx:28
+#: src/guides/oauth-cli-tutorial/en.mdx:27
 #, no-wrap
 msgid "On platforms supported by [homebrew](https://brew.sh/), you can install it with:\n"
 msgstr "[homebrew](https://brew.sh/)に対応したプラットフォームでは、次のコマンドでインストールできます。\n"
 
 #. type: Plain text
-#: src/guides/bot-tutorial/en.mdx:245
-#: src/guides/custom-feed-tutorial/en.mdx:387
-#: src/guides/oauth-tutorial/en.mdx:783
-#: src/guides/statusphere-tutorial/en.mdx:728
-#: src/guides/go-oauth-cli-tutorial/en.mdx:241
-#: src/guides/oauth-cli-tutorial/en.mdx:193
-#: src/articles/atproto-ethos/en.mdx:135
+#: src/guides/bot-tutorial/en.mdx:37 src/guides/custom-feed-tutorial/en.mdx:38
+#: src/guides/oauth-tutorial/en.mdx:55
+#: src/guides/statusphere-tutorial/en.mdx:53
+#: src/guides/go-oauth-cli-tutorial/en.mdx:30
+#: src/guides/oauth-cli-tutorial/en.mdx:29 src/guides/labels-tutorial/en.mdx:46
+#, no-wrap
+msgid "<S01 />\n"
+msgstr "<S01 />\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:41 src/guides/custom-feed-tutorial/en.mdx:42
+#: src/guides/oauth-tutorial/en.mdx:61
+#: src/guides/statusphere-tutorial/en.mdx:57
+#: src/guides/go-oauth-cli-tutorial/en.mdx:38
+#: src/guides/oauth-cli-tutorial/en.mdx:37 src/guides/labels-tutorial/en.mdx:50
+#, no-wrap
+msgid "<S02 />\n"
+msgstr "<S02 />\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:45 src/guides/custom-feed-tutorial/en.mdx:46
+#: src/guides/oauth-tutorial/en.mdx:65
+#: src/guides/statusphere-tutorial/en.mdx:61
+#: src/guides/go-oauth-cli-tutorial/en.mdx:46
+#: src/guides/oauth-cli-tutorial/en.mdx:41 src/guides/labels-tutorial/en.mdx:64
+#, no-wrap
+msgid "<S03 />\n"
+msgstr "<S03 />\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:53 src/guides/custom-feed-tutorial/en.mdx:50
+#: src/guides/oauth-tutorial/en.mdx:69 src/guides/oauth-tutorial/en.mdx:149
+#: src/guides/oauth-tutorial/en.mdx:201
+#: src/guides/statusphere-tutorial/en.mdx:69
+#: src/guides/go-oauth-cli-tutorial/en.mdx:50
+#: src/guides/oauth-cli-tutorial/en.mdx:51 src/guides/labels-tutorial/en.mdx:68
+#, no-wrap
+msgid "<S04 />\n"
+msgstr "<S04 />\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:57 src/guides/custom-feed-tutorial/en.mdx:58
+#: src/guides/oauth-tutorial/en.mdx:95
+#: src/guides/statusphere-tutorial/en.mdx:73
+#: src/guides/go-oauth-cli-tutorial/en.mdx:64
+#: src/guides/oauth-cli-tutorial/en.mdx:65 src/guides/labels-tutorial/en.mdx:84
+#, no-wrap
+msgid "<S05 />\n"
+msgstr "<S05 />\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:67 src/guides/custom-feed-tutorial/en.mdx:62
+#: src/guides/oauth-tutorial/en.mdx:107
+#: src/guides/statusphere-tutorial/en.mdx:81
+#: src/guides/go-oauth-cli-tutorial/en.mdx:76
+#: src/guides/oauth-cli-tutorial/en.mdx:78 src/guides/labels-tutorial/en.mdx:88
+#, no-wrap
+msgid "<S06 />\n"
+msgstr "<S06 />\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:71 src/guides/custom-feed-tutorial/en.mdx:68
+#: src/guides/oauth-tutorial/en.mdx:111
+#: src/guides/statusphere-tutorial/en.mdx:89
+#: src/guides/go-oauth-cli-tutorial/en.mdx:84
+#: src/guides/oauth-cli-tutorial/en.mdx:86 src/guides/labels-tutorial/en.mdx:94
+#, no-wrap
+msgid "<S07 />\n"
+msgstr "<S07 />\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:75 src/guides/custom-feed-tutorial/en.mdx:87
+#: src/guides/oauth-tutorial/en.mdx:115
+#: src/guides/statusphere-tutorial/en.mdx:93
+#: src/guides/go-oauth-cli-tutorial/en.mdx:92
+#: src/guides/oauth-cli-tutorial/en.mdx:90
+#: src/guides/labels-tutorial/en.mdx:106
+#, no-wrap
+msgid "<S08 />\n"
+msgstr "<S08 />\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:91 src/guides/custom-feed-tutorial/en.mdx:101
+#: src/guides/oauth-tutorial/en.mdx:121
+#: src/guides/statusphere-tutorial/en.mdx:101
+#: src/guides/go-oauth-cli-tutorial/en.mdx:96
+#: src/guides/labels-tutorial/en.mdx:112
+#, no-wrap
+msgid "<S09 />\n"
+msgstr "<S09 />\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:137
+#: src/guides/custom-feed-tutorial/en.mdx:146
+#: src/guides/oauth-tutorial/en.mdx:242
+#: src/guides/statusphere-tutorial/en.mdx:200
+#: src/guides/go-oauth-cli-tutorial/en.mdx:98
+#: src/guides/oauth-cli-tutorial/en.mdx:92
+#: src/guides/labels-tutorial/en.mdx:149 src/articles/atproto-ethos/en.mdx:135
 #, no-wrap
 msgid "## Conclusion\n"
 msgstr "<Heading level={2} id=\"conclusion\">結論</Heading>\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:32
-#: src/guides/go-oauth-cli-tutorial/en.mdx:26
-#: src/guides/oauth-cli-tutorial/en.mdx:26
+#: src/guides/oauth-tutorial/en.mdx:57
+#: src/guides/go-oauth-cli-tutorial/en.mdx:34
+#: src/guides/oauth-cli-tutorial/en.mdx:33
 #, no-wrap
 msgid "## Part 1: Project Setup\n"
 msgstr "<Heading level={2} id=\"part-1-project-setup\">パート1：セットアップ</Heading>\n"
 
 #. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:5
+#: src/guides/go-oauth-cli-tutorial/en.mdx:10
+#, no-wrap
+msgid ""
+"import S01 from './_snippets/01-install-go.mdx'\n"
+"import S02 from './_snippets/02-project-setup.mdx'\n"
+"import S03 from './_snippets/03-package-main.mdx'\n"
+"import S04 from './_snippets/04-run-part1-callback-client.mdx'\n"
+"import S05 from './_snippets/05-run-part2-login-flow.mdx'\n"
+"import S06 from './_snippets/06-run-part3-use-session.mdx'\n"
+"import S07 from './_snippets/07-helper-functions.mdx'\n"
+"import S08 from './_snippets/08-run-command.mdx'\n"
+"import S09 from './_snippets/09-output-example.mdx'\n"
+msgstr ""
+"import {Heading} from '@/components/Heading'\n"
+"import S01 from './_snippets/01-install-go.mdx'\n"
+"import S02 from './_snippets/02-project-setup.mdx'\n"
+"import S03 from './_snippets/03-package-main.mdx'\n"
+"import S04 from './_snippets/04-run-part1-callback-client.mdx'\n"
+"import S05 from './_snippets/05-run-part2-login-flow.mdx'\n"
+"import S06 from './_snippets/06-run-part3-use-session.mdx'\n"
+"import S07 from './_snippets/07-helper-functions.mdx'\n"
+"import S08 from './_snippets/08-run-command.mdx'\n"
+"import S09 from './_snippets/09-output-example.mdx'\n"
+
+#. type: Plain text
+#: src/guides/go-oauth-cli-tutorial/en.mdx:15
 #, no-wrap
 msgid ""
 "export const header = {\n"
@@ -63,33 +180,31 @@ msgid ""
 "  description: 'Authenticate with atproto OAuth from a Go app',\n"
 "}\n"
 msgstr ""
-"import {Heading} from '@/components/Heading'\n"
-"\n"
 "export const header = {\n"
 "  title: 'OAuth with Goチュートリアル',\n"
 "  description: 'Goアプリからatproto OAuthで認証する',\n"
 "}\n"
 
 #. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:7
+#: src/guides/go-oauth-cli-tutorial/en.mdx:17
 #, no-wrap
 msgid "In this tutorial, you'll build a minimal Go tool that authenticates a user with [atproto OAuth](/guides/auth) and fetches their session info. The entire app fits in a single file.\n"
 msgstr "このチュートリアルでは、[atproto OAuth](/guides/auth)でユーザー認証し、セッション情報を取得する最小構成のGoツールを作成します。アプリ全体は1つのファイルに収まります。\n"
 
 #. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:9
+#: src/guides/go-oauth-cli-tutorial/en.mdx:19
 #, no-wrap
 msgid "This is a good starting point for understanding how OAuth works in AT Protocol. For a TypeScript version, see the [OAuth with Node Tutorial](/guides/oauth-cli-tutorial). For building production web apps, see the [OAuth with NextJS Tutorial](/guides/oauth-tutorial).\n"
 msgstr "これはATプロトコルでOAuthがどう動くかを理解するための良い出発点です。TypeScript版は[OAuth with Nodeチュートリアル](/guides/oauth-cli-tutorial)、本番向けウェブアプリ構築は[OAuth with NextJSチュートリアル](/guides/oauth-tutorial)を参照してください。\n"
 
 #. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:13
+#: src/guides/go-oauth-cli-tutorial/en.mdx:23
 #, no-wrap
 msgid "You should have a working understanding of Go.\n"
 msgstr "Goの基本的な理解を前提としています。\n"
 
 #. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:16
+#: src/guides/go-oauth-cli-tutorial/en.mdx:26
 #, no-wrap
 msgid ""
 "You should have installed:\n"
@@ -99,212 +214,52 @@ msgstr ""
 "- Go 1.24以上\n"
 
 #. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:22
-#, no-wrap
-msgid ""
-"```bash\n"
-"brew install go\n"
-"```\n"
-msgstr ""
-"```bash\n"
-"brew install go\n"
-"```\n"
-
-#. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:24
-#: src/guides/oauth-cli-tutorial/en.mdx:24
+#: src/guides/go-oauth-cli-tutorial/en.mdx:32
+#: src/guides/oauth-cli-tutorial/en.mdx:31
 #, no-wrap
 msgid "You should also have an atproto handle to test with.\n"
 msgstr "テスト用atprotoハンドルも用意しておいてください。\n"
 
 #. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:28
+#: src/guides/go-oauth-cli-tutorial/en.mdx:36
 #, no-wrap
 msgid "Create a new Go module and install the [Go SDK](https://github.com/bluesky-social/indigo):\n"
 msgstr "新しいGoモジュールを作成し、[Go SDK](https://github.com/bluesky-social/indigo)をインストールします。\n"
 
 #. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:35
-#, no-wrap
-msgid ""
-"```bash\n"
-"mkdir go-oauth-cli\n"
-"cd go-oauth-cli\n"
-"go mod init go-oauth-cli\n"
-"go get github.com/bluesky-social/indigo/atproto/auth/oauth\n"
-"```\n"
-msgstr ""
-"```bash\n"
-"mkdir go-oauth-cli\n"
-"cd go-oauth-cli\n"
-"go mod init go-oauth-cli\n"
-"go get github.com/bluesky-social/indigo/atproto/auth/oauth\n"
-"```\n"
-
-#. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:37
+#: src/guides/go-oauth-cli-tutorial/en.mdx:40
 #, no-wrap
 msgid "That's it — the Go SDK includes everything you need for OAuth, including an in-memory session store for development.\n"
 msgstr "以上です。Go SDKにはOAuthに必要なものがすべて含まれており、開発用のインメモリセッションストアも利用できます。\n"
 
 #. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:39
-#: src/guides/oauth-cli-tutorial/en.mdx:48
+#: src/guides/go-oauth-cli-tutorial/en.mdx:42
+#: src/guides/oauth-cli-tutorial/en.mdx:45
 #, no-wrap
 msgid "## Part 2: Build the OAuth Client\n"
-msgstr "<Heading level={2} id=\"part-2-build-the-oauth-client\">パート2：OAuthクライアントを作る</Heading>\n"
+msgstr "<Heading level={2} id=\"part-2-build-the-o-auth-client\">パート2：OAuthクライアントを作る</Heading>\n"
 
 #. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:41
+#: src/guides/go-oauth-cli-tutorial/en.mdx:44
 #, no-wrap
 msgid "Create `main.go`. Start with the imports and the OAuth client setup:\n"
 msgstr "`main.go`を作成します。まずはインポートとOAuthクライアントのセットアップから始めます。\n"
 
 #. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:44
-#, no-wrap
-msgid ""
-"```go\n"
-"package main\n"
-msgstr ""
-"```go\n"
-"package main\n"
-
-#. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:57
-#, no-wrap
-msgid ""
-"import (\n"
-"\t\"context\"\n"
-"\t\"errors\"\n"
-"\t\"fmt\"\n"
-"\t\"log\"\n"
-"\t\"net\"\n"
-"\t\"net/http\"\n"
-"\t\"net/url\"\n"
-"\t\"os\"\n"
-"\t\"os/exec\"\n"
-"\t\"runtime\"\n"
-"\t\"strings\"\n"
-msgstr ""
-"import (\n"
-"\t\"context\"\n"
-"\t\"errors\"\n"
-"\t\"fmt\"\n"
-"\t\"log\"\n"
-"\t\"net\"\n"
-"\t\"net/http\"\n"
-"\t\"net/url\"\n"
-"\t\"os\"\n"
-"\t\"os/exec\"\n"
-"\t\"runtime\"\n"
-"\t\"strings\"\n"
-
-#. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:60
-#, no-wrap
-msgid ""
-"\t\"github.com/bluesky-social/indigo/atproto/auth/oauth\"\n"
-")\n"
-msgstr ""
-"\t\"github.com/bluesky-social/indigo/atproto/auth/oauth\"\n"
-")\n"
-
-#. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:67
-#, no-wrap
-msgid ""
-"func main() {\n"
-"\tif len(os.Args) < 2 {\n"
-"\t\tfmt.Fprintln(os.Stderr, \"Usage: go run main.go <your-handle>\")\n"
-"\t\tos.Exit(1)\n"
-"\t}\n"
-"\thandle := os.Args[1]\n"
-msgstr ""
-"func main() {\n"
-"\tif len(os.Args) < 2 {\n"
-"\t\tfmt.Fprintln(os.Stderr, \"Usage: go run main.go <your-handle>\")\n"
-"\t\tos.Exit(1)\n"
-"\t}\n"
-"\thandle := os.Args[1]\n"
-
-#. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:73
-#, no-wrap
-msgid ""
-"\tif err := run(context.Background(), handle); err != nil {\n"
-"\t\tlog.Fatal(err)\n"
-"\t}\n"
-"}\n"
-"```\n"
-msgstr ""
-"\tif err := run(context.Background(), handle); err != nil {\n"
-"\t\tlog.Fatal(err)\n"
-"\t}\n"
-"}\n"
-"```\n"
-
-#. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:75
+#: src/guides/go-oauth-cli-tutorial/en.mdx:48
 #, no-wrap
 msgid "Now add the `run` function. First, set up a callback server on a random port, then configure the OAuth client:\n"
 msgstr "次に`run`関数を追加します。まずランダムなポートでコールバックサーバーを立て、その後OAuthクライアントを設定します。\n"
 
 #. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:85
-#, no-wrap
-msgid ""
-"```go\n"
-"func run(ctx context.Context, handle string) error {\n"
-"\t// Start the callback server on a random available port\n"
-"\tcallbackCh := make(chan url.Values, 1)\n"
-"\tport, server, err := listenForCallback(ctx, callbackCh)\n"
-"\tif err != nil {\n"
-"\t\treturn err\n"
-"\t}\n"
-"\tdefer server.Close()\n"
-msgstr ""
-"```go\n"
-"func run(ctx context.Context, handle string) error {\n"
-"\t// 利用可能なランダムポートでコールバックサーバーを起動\n"
-"\tcallbackCh := make(chan url.Values, 1)\n"
-"\tport, server, err := listenForCallback(ctx, callbackCh)\n"
-"\tif err != nil {\n"
-"\t\treturn err\n"
-"\t}\n"
-"\tdefer server.Close()\n"
-
-#. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:87
-#, no-wrap
-msgid "\tcallbackURL := fmt.Sprintf(\"http://127.0.0.1:%d/callback\", port)\n"
-msgstr "\tcallbackURL := fmt.Sprintf(\"http://127.0.0.1:%d/callback\", port)\n"
-
-#. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:93
-#, no-wrap
-msgid ""
-"\t// Create an OAuth client with localhost config and in-memory storage\n"
-"\tconfig := oauth.NewLocalhostConfig(callbackURL, []string{\"atproto\"})\n"
-"\tstore := oauth.NewMemStore()\n"
-"\toauthClient := oauth.NewClientApp(&config, store)\n"
-"```\n"
-msgstr ""
-"\t// localhost設定とインメモリストレージでOAuthクライアントを作成\n"
-"\tconfig := oauth.NewLocalhostConfig(callbackURL, []string{\"atproto\"})\n"
-"\tstore := oauth.NewMemStore()\n"
-"\toauthClient := oauth.NewClientApp(&config, store)\n"
-"```\n"
-
-#. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:95
+#: src/guides/go-oauth-cli-tutorial/en.mdx:52
 #, no-wrap
 msgid "`NewLocalhostConfig` sets up a loopback client.\n"
 msgstr "`NewLocalhostConfig`はループバッククライアントを設定します。\n"
 
 #. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:99
-#: src/guides/oauth-cli-tutorial/en.mdx:87
+#: src/guides/go-oauth-cli-tutorial/en.mdx:56
+#: src/guides/oauth-cli-tutorial/en.mdx:57
 #, no-wrap
 msgid ""
 "<Note>\n"
@@ -313,89 +268,33 @@ msgid ""
 msgstr "OAuthループバックは、特別なリダイレクトURI（例：`http://127.0.0.1:PORT/callback`）を使って認可コードをアプリへ直接返す仕組みです。アプリはローカルポートで待ち受けるため、ブラウザベースのコールバックを避けつつ安全にトークン交換できます。ウェブへのリダイレクトの代わりに、アプリがローカルリスナーを開き、ブラウザで認証したあとサーバーがアプリのローカルURIに戻すことで、アプリがコードを受け取ってトークンに交換します。特に開発時に有用です。\n"
 
 #. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:101
+#: src/guides/go-oauth-cli-tutorial/en.mdx:58
 #, no-wrap
 msgid "`NewMemStore` provides in-memory session storage for development.\n"
 msgstr "`NewMemStore`は開発向けのインメモリセッションストレージを提供します。\n"
 
 #. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:103
-#: src/guides/oauth-cli-tutorial/en.mdx:91
+#: src/guides/go-oauth-cli-tutorial/en.mdx:60
+#: src/guides/oauth-cli-tutorial/en.mdx:61
 #, no-wrap
 msgid "## Part 3: Login Flow\n"
 msgstr "<Heading level={2} id=\"part-3-login-flow\">パート3：ログインフロー</Heading>\n"
 
 #. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:105
+#: src/guides/go-oauth-cli-tutorial/en.mdx:62
 #, no-wrap
 msgid "Continue the `run` function with the login flow. This resolves the handle, opens the browser, and waits for the callback:\n"
 msgstr "引き続き`run`関数にログインフローを実装します。ここではハンドルを解決し、ブラウザを開き、コールバックを待ちます。\n"
 
 #. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:113
-#, no-wrap
-msgid ""
-"```go\n"
-"\t// Start the OAuth flow\n"
-"\tfmt.Printf(\"Logging in as %s...\\n\", handle)\n"
-"\tauthURL, err := oauthClient.StartAuthFlow(ctx, handle)\n"
-"\tif err != nil {\n"
-"\t\treturn fmt.Errorf(\"starting auth flow: %w\", err)\n"
-"\t}\n"
-msgstr ""
-"```go\n"
-"\t// OAuthフローを開始\n"
-"\tfmt.Printf(\"Logging in as %s...\\n\", handle)\n"
-"\tauthURL, err := oauthClient.StartAuthFlow(ctx, handle)\n"
-"\tif err != nil {\n"
-"\t\treturn fmt.Errorf(\"starting auth flow: %w\", err)\n"
-"\t}\n"
-
-#. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:122
-#, no-wrap
-msgid ""
-"\t// Open the browser to the authorization URL\n"
-"\tfmt.Printf(\"Opening browser...\\n\")\n"
-"\tif !strings.HasPrefix(authURL, \"https://\") {\n"
-"\t\treturn fmt.Errorf(\"unexpected non-https auth URL\")\n"
-"\t}\n"
-"\tif err := openBrowser(authURL); err != nil {\n"
-"\t\tfmt.Printf(\"Could not open browser automatically.\\nPlease visit: %s\\n\", authURL)\n"
-"\t}\n"
-msgstr ""
-"\t// 認可URLをブラウザで開く\n"
-"\tfmt.Printf(\"Opening browser...\\n\")\n"
-"\tif !strings.HasPrefix(authURL, \"https://\") {\n"
-"\t\treturn fmt.Errorf(\"unexpected non-https auth URL\")\n"
-"\t}\n"
-"\tif err := openBrowser(authURL); err != nil {\n"
-"\t\tfmt.Printf(\"Could not open browser automatically.\\nPlease visit: %s\\n\", authURL)\n"
-"\t}\n"
-
-#. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:127
-#, no-wrap
-msgid ""
-"\t// Wait for the OAuth callback\n"
-"\tfmt.Println(\"Waiting for authorization...\")\n"
-"\tparams := <-callbackCh\n"
-"```\n"
-msgstr ""
-"\t// OAuthコールバックを待つ\n"
-"\tfmt.Println(\"Waiting for authorization...\")\n"
-"\tparams := <-callbackCh\n"
-"```\n"
-
-#. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:129
-#: src/guides/oauth-cli-tutorial/en.mdx:125
+#: src/guides/go-oauth-cli-tutorial/en.mdx:66
+#: src/guides/oauth-cli-tutorial/en.mdx:67
 #, no-wrap
 msgid "The flow works like this:\n"
 msgstr "フローは次のように進みます。\n"
 
 #. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:133
+#: src/guides/go-oauth-cli-tutorial/en.mdx:70
 #, no-wrap
 msgid ""
 "1. `StartAuthFlow` resolves the user's handle, discovers their PDS, sends a [Pushed Authorization Request (PAR)](/guides/permission-sets#requesting-permissions), and returns an authorization URL.\n"
@@ -407,320 +306,88 @@ msgstr ""
 "3. ユーザーが承認すると、PDSが認可コード付きで `http://127.0.0.1:<port>/callback` にリダイレクトします。\n"
 
 #. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:135
-#: src/guides/oauth-cli-tutorial/en.mdx:132
+#: src/guides/go-oauth-cli-tutorial/en.mdx:72
+#: src/guides/oauth-cli-tutorial/en.mdx:74
 #, no-wrap
 msgid "## Part 4: Use the Session\n"
 msgstr "<Heading level={2} id=\"part-4-use-the-session\">パート4：セッションを使う</Heading>\n"
 
 #. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:137
+#: src/guides/go-oauth-cli-tutorial/en.mdx:74
 #, no-wrap
 msgid "Complete the `run` function by exchanging the callback for a session and making an authenticated API call:\n"
 msgstr "コールバックをセッションに交換し、認証付きAPI呼び出しを行う処理を追加して`run`関数を完成させます。\n"
 
 #. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:145
-#, no-wrap
-msgid ""
-"```go\n"
-"\t// Exchange the authorization code for a session\n"
-"\tsessData, err := oauthClient.ProcessCallback(ctx, params)\n"
-"\tif err != nil {\n"
-"\t\treturn fmt.Errorf(\"processing callback: %w\", err)\n"
-"\t}\n"
-"\tfmt.Printf(\"Logged in! DID: %s\\n\", sessData.AccountDID)\n"
-msgstr ""
-"```go\n"
-"\t// 認可コードをセッションに交換\n"
-"\tsessData, err := oauthClient.ProcessCallback(ctx, params)\n"
-"\tif err != nil {\n"
-"\t\treturn fmt.Errorf(\"processing callback: %w\", err)\n"
-"\t}\n"
-"\tfmt.Printf(\"Logged in! DID: %s\\n\", sessData.AccountDID)\n"
-
-#. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:151
-#, no-wrap
-msgid ""
-"\t// Resume the session to get an API client\n"
-"\tsession, err := oauthClient.ResumeSession(ctx, sessData.AccountDID, sessData.SessionID)\n"
-"\tif err != nil {\n"
-"\t\treturn fmt.Errorf(\"resuming session: %w\", err)\n"
-"\t}\n"
-msgstr ""
-"\t// セッションを再開してAPIクライアントを取得\n"
-"\tsession, err := oauthClient.ResumeSession(ctx, sessData.AccountDID, sessData.SessionID)\n"
-"\tif err != nil {\n"
-"\t\treturn fmt.Errorf(\"resuming session: %w\", err)\n"
-"\t}\n"
-
-#. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:161
-#, no-wrap
-msgid ""
-"\t// Fetch the user's session info to prove it works\n"
-"\tclient := session.APIClient()\n"
-"\tvar resp struct {\n"
-"\t\tDID    string `json:\"did\"`\n"
-"\t\tHandle string `json:\"handle\"`\n"
-"\t}\n"
-"\tif err := client.Get(ctx, \"com.atproto.server.getSession\", nil, &resp); err != nil {\n"
-"\t\treturn fmt.Errorf(\"fetching session: %w\", err)\n"
-"\t}\n"
-msgstr ""
-"\t// 動作確認としてユーザーのセッション情報を取得\n"
-"\tclient := session.APIClient()\n"
-"\tvar resp struct {\n"
-"\t\tDID    string `json:\"did\"`\n"
-"\t\tHandle string `json:\"handle\"`\n"
-"\t}\n"
-"\tif err := client.Get(ctx, \"com.atproto.server.getSession\", nil, &resp); err != nil {\n"
-"\t\treturn fmt.Errorf(\"fetching session: %w\", err)\n"
-"\t}\n"
-
-#. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:166
-#, no-wrap
-msgid ""
-"\tfmt.Printf(\"\\nSession:\\n\")\n"
-"\tfmt.Printf(\"  Handle: %s\\n\", resp.Handle)\n"
-"\tfmt.Printf(\"  DID:    %s\\n\", resp.DID)\n"
-"\tfmt.Printf(\"  Host:   %s\\n\", sessData.HostURL)\n"
-msgstr ""
-"\tfmt.Printf(\"\\nSession:\\n\")\n"
-"\tfmt.Printf(\"  Handle: %s\\n\", resp.Handle)\n"
-"\tfmt.Printf(\"  DID:    %s\\n\", resp.DID)\n"
-"\tfmt.Printf(\"  Host:   %s\\n\", sessData.HostURL)\n"
-
-#. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:170
-#, no-wrap
-msgid ""
-"\treturn nil\n"
-"}\n"
-"```\n"
-msgstr ""
-"\treturn nil\n"
-"}\n"
-"```\n"
-
-#. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:172
+#: src/guides/go-oauth-cli-tutorial/en.mdx:78
 #, no-wrap
 msgid "`ProcessCallback` exchanges the authorization code for tokens. `ResumeSession` wraps those tokens in a session that handles DPoP signing and token refresh automatically. `APIClient()` returns an HTTP client pre-configured with the user's credentials — you can use it to make any [XRPC](/specs/xrpc) call.\n"
 msgstr "`ProcessCallback`は認可コードをトークンに交換します。`ResumeSession`はそのトークンを、DPoP署名とトークン更新を自動処理するセッションとしてラップします。`APIClient()`はユーザー資格情報で事前設定済みのHTTPクライアントを返し、任意の[XRPC](/specs/xrpc)呼び出しに利用できます。\n"
 
 #. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:174
+#: src/guides/go-oauth-cli-tutorial/en.mdx:80
 #, no-wrap
 msgid "## Part 5: Helper Functions\n"
 msgstr "<Heading level={2} id=\"part-5-helper-functions\">パート5：ヘルパー関数</Heading>\n"
 
 #. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:176
+#: src/guides/go-oauth-cli-tutorial/en.mdx:82
 #, no-wrap
 msgid "Add the callback server and browser-opening helpers:\n"
 msgstr "コールバックサーバーとブラウザ起動のヘルパー関数を追加します。\n"
 
 #. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:183
-#, no-wrap
-msgid ""
-"```go\n"
-"func listenForCallback(ctx context.Context, res chan url.Values) (int, *http.Server, error) {\n"
-"\tlistener, err := net.Listen(\"tcp\", \"127.0.0.1:0\")\n"
-"\tif err != nil {\n"
-"\t\treturn 0, nil, err\n"
-"\t}\n"
-msgstr ""
-"```go\n"
-"func listenForCallback(ctx context.Context, res chan url.Values) (int, *http.Server, error) {\n"
-"\tlistener, err := net.Listen(\"tcp\", \"127.0.0.1:0\")\n"
-"\tif err != nil {\n"
-"\t\treturn 0, nil, err\n"
-"\t}\n"
-
-#. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:186
-#, no-wrap
-msgid ""
-"\tmux := http.NewServeMux()\n"
-"\tserver := &http.Server{Handler: mux}\n"
-msgstr ""
-"\tmux := http.NewServeMux()\n"
-"\tserver := &http.Server{Handler: mux}\n"
-
-#. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:194
-#, no-wrap
-msgid ""
-"\tmux.HandleFunc(\"/callback\", func(w http.ResponseWriter, r *http.Request) {\n"
-"\t\tres <- r.URL.Query()\n"
-"\t\tw.Header().Set(\"Content-Type\", \"text/html\")\n"
-"\t\tw.WriteHeader(200)\n"
-"\t\tw.Write([]byte(\"<h1>Authorized! You can close this tab.</h1>\"))\n"
-"\t\tgo server.Shutdown(ctx)\n"
-"\t})\n"
-msgstr ""
-"\tmux.HandleFunc(\"/callback\", func(w http.ResponseWriter, r *http.Request) {\n"
-"\t\tres <- r.URL.Query()\n"
-"\t\tw.Header().Set(\"Content-Type\", \"text/html\")\n"
-"\t\tw.WriteHeader(200)\n"
-"\t\tw.Write([]byte(\"<h1>Authorized! You can close this tab.</h1>\"))\n"
-"\t\tgo server.Shutdown(ctx)\n"
-"\t})\n"
-
-#. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:200
-#, no-wrap
-msgid ""
-"\tgo func() {\n"
-"\t\tif err := server.Serve(listener); !errors.Is(err, http.ErrServerClosed) {\n"
-"\t\t\tlog.Fatal(err)\n"
-"\t\t}\n"
-"\t}()\n"
-msgstr ""
-"\tgo func() {\n"
-"\t\tif err := server.Serve(listener); !errors.Is(err, http.ErrServerClosed) {\n"
-"\t\t\tlog.Fatal(err)\n"
-"\t\t}\n"
-"\t}()\n"
-
-#. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:203
-#, no-wrap
-msgid ""
-"\treturn listener.Addr().(*net.TCPAddr).Port, server, nil\n"
-"}\n"
-msgstr ""
-"\treturn listener.Addr().(*net.TCPAddr).Port, server, nil\n"
-"}\n"
-
-#. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:215
-#, no-wrap
-msgid ""
-"func openBrowser(url string) error {\n"
-"\tswitch runtime.GOOS {\n"
-"\tcase \"darwin\":\n"
-"\t\treturn exec.Command(\"open\", url).Run()\n"
-"\tcase \"windows\":\n"
-"\t\treturn exec.Command(\"cmd\", \"/c\", \"start\", url).Run()\n"
-"\tdefault:\n"
-"\t\treturn exec.Command(\"xdg-open\", url).Run()\n"
-"\t}\n"
-"}\n"
-"```\n"
-msgstr ""
-"func openBrowser(url string) error {\n"
-"\tswitch runtime.GOOS {\n"
-"\tcase \"darwin\":\n"
-"\t\treturn exec.Command(\"open\", url).Run()\n"
-"\tcase \"windows\":\n"
-"\t\treturn exec.Command(\"cmd\", \"/c\", \"start\", url).Run()\n"
-"\tdefault:\n"
-"\t\treturn exec.Command(\"xdg-open\", url).Run()\n"
-"\t}\n"
-"}\n"
-"```\n"
-
-#. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:217
+#: src/guides/go-oauth-cli-tutorial/en.mdx:86
 #, no-wrap
 msgid "The callback server listens on `127.0.0.1:0`, which tells the OS to assign any available port. When the callback arrives, it sends the query parameters through a channel back to the main flow and shuts itself down.\n"
 msgstr "コールバックサーバーは`127.0.0.1:0`でリッスンします。これはOSに利用可能な任意ポートの割り当てを指示します。コールバックが届くと、クエリパラメーターをチャネル経由でメインフローへ渡し、自身をシャットダウンします。\n"
 
 #. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:219
+#: src/guides/go-oauth-cli-tutorial/en.mdx:88
 #, no-wrap
 msgid "## Part 6: Run It\n"
 msgstr "<Heading level={2} id=\"part-6-run-it\">パート6：実行する</Heading>\n"
 
 #. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:221
+#: src/guides/go-oauth-cli-tutorial/en.mdx:90
 #, no-wrap
 msgid "Run your CLI tool, passing your handle as an argument:\n"
 msgstr "CLIツールを実行し、引数に自分のハンドルを渡します。\n"
 
 #. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:225
-#, no-wrap
-msgid ""
-"```bash\n"
-"go run main.go your-handle.bsky.social\n"
-"```\n"
-msgstr ""
-"```bash\n"
-"go run main.go your-handle.bsky.social\n"
-"```\n"
-
-#. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:227
+#: src/guides/go-oauth-cli-tutorial/en.mdx:94
 #, no-wrap
 msgid "Your browser should open to a consent screen. After you approve, the CLI will print your session info:\n"
 msgstr "ブラウザで同意画面が開きます。承認後、CLIにセッション情報が表示されます。\n"
 
 #. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:233
-#, no-wrap
-msgid ""
-"```\n"
-"Logging in as your-handle.bsky.social...\n"
-"Opening browser...\n"
-"Waiting for authorization...\n"
-"Logged in! DID: did:plc:xxxxx\n"
-msgstr ""
-"```\n"
-"Logging in as your-handle.bsky.social...\n"
-"Opening browser...\n"
-"Waiting for authorization...\n"
-"Logged in! DID: did:plc:xxxxx\n"
-
-#. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:239
-#, no-wrap
-msgid ""
-"Session:\n"
-"  Handle: your-handle.bsky.social\n"
-"  DID:    did:plc:xxxxx\n"
-"  Host:   https://shimeji.us-east.host.bsky.network\n"
-"```\n"
-msgstr ""
-"Session:\n"
-"  Handle: your-handle.bsky.social\n"
-"  DID:    did:plc:xxxxx\n"
-"  Host:   https://shimeji.us-east.host.bsky.network\n"
-"```\n"
-
-#. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:243
+#: src/guides/go-oauth-cli-tutorial/en.mdx:100
 #, no-wrap
 msgid "You've built a minimal OAuth CLI tool in Go that authenticates with the AT Protocol. The full source is about 120 lines of code.\n"
 msgstr "ATプロトコルで認証する最小構成のGo製OAuth CLIツールが完成しました。ソースコード全体はおよそ120行です。\n"
 
 #. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:245
-#: src/guides/oauth-cli-tutorial/en.mdx:197
+#: src/guides/go-oauth-cli-tutorial/en.mdx:102
+#: src/guides/oauth-cli-tutorial/en.mdx:96
 #, no-wrap
 msgid "A few things to keep in mind:\n"
 msgstr "以下のことを覚えておいてください。\n"
 
 #. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:249
+#: src/guides/go-oauth-cli-tutorial/en.mdx:106
 #, no-wrap
 msgid ""
 "- **This is for local development.** The localhost client won't work in production. For a production-ready Go example with SQLite persistence and multiple commands, see the [go-oauth-cli-app](https://github.com/bluesky-social/cookbook/tree/main/go-oauth-cli-app) in the Cookbook.\n"
 "- **Sessions are in-memory.** Every run requires re-authorization. The Cookbook example shows how to persist sessions with SQLite.\n"
-"- **Scopes.** This tutorial requests only the base `atproto` scope. To read or write data on behalf of the user, you'll need additional [scopes](/guides/scopes).\n"
+"- **Scopes.** This tutorial requests only the base `atproto` scope. To read or write data on behalf of the user, you'll need additional [scopes](/guides/permission-sets).\n"
 msgstr ""
 "- **これはローカル開発向けです**。localhostクライアントは本番環境では動作しません。SQLite永続化と複数のコマンドを備えた本番向けGoの実装例は、Cookbookの[go-oauth-cli-app](https://github.com/bluesky-social/cookbook/tree/main/go-oauth-cli-app)を参照してください。\n"
 "- **セッションはメモリ上に保持されます**。実行のたびに再認可が必要です。Cookbookの例ではSQLiteでセッションを永続化する方法を示しています。\n"
-"- **スコープに注意してください**。このチュートリアルが要求するのは基本の`atproto`スコープのみです。ユーザーに代わってデータを読み書きするには、追加の[スコープ](/guides/scopes)が必要です。\n"
+"- **スコープに注意してください**。このチュートリアルが要求するのは基本の`atproto`スコープのみです。ユーザーに代わってデータを読み書きするには、追加の[スコープ](/guides/permission-sets)が必要です。\n"
 
 #. type: Plain text
-#: src/guides/go-oauth-cli-tutorial/en.mdx:250
-#: src/guides/oauth-cli-tutorial/en.mdx:202
+#: src/guides/go-oauth-cli-tutorial/en.mdx:107
+#: src/guides/oauth-cli-tutorial/en.mdx:101
 #, no-wrap
 msgid "You can find more guides and tutorials in our [Docs](/guides), and more example apps in the [Cookbook](https://github.com/bluesky-social/cookbook/) repository. Happy building!\n"
 msgstr "さらに多くのガイドやチュートリアルは[Docs](/guides)で、より多くのサンプルアプリは[Cookbook](https://github.com/bluesky-social/cookbook/)リポジトリで確認できます。ぜひ開発を楽しんでください。\n"

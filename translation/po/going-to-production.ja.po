@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-18 14:17+0900\n"
+"POT-Creation-Date: 2026-05-18 11:10+0900\n"
 "PO-Revision-Date: 2026-01-07 19:40+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. type: Plain text
-#: src/guides/sync/en.mdx:45 src/guides/going-to-production/en.mdx:12
+#: src/guides/sync/en.mdx:41 src/guides/going-to-production/en.mdx:12
 #: src/guides/self-hosting/en.mdx:10 src/guides/the-at-stack/en.mdx:35
 #, no-wrap
 msgid "## PDS\n"
@@ -62,53 +62,65 @@ msgstr "リソースが限定されたVPS上で独自のPDSを起動して実行
 #. type: Plain text
 #: src/guides/going-to-production/en.mdx:16
 #, no-wrap
+msgid "## Hardening\n"
+msgstr "<Heading level={2} id=\"hardening\">セキュリティ強化</Heading>\n"
+
+#. type: Plain text
+#: src/guides/going-to-production/en.mdx:18
+#, no-wrap
+msgid "[PDS Gatekeeper](https://tangled.org/baileytownsend.dev/pds-gatekeeper) is a community project that adds 2FA and other security features to a self-hosted PDS.\n"
+msgstr "[PDS Gatekeeper](https://tangled.org/baileytownsend.dev/pds-gatekeeper)は、セルフホストPDSに2FAやセキュリティ機能を追加するコミュニティプロジェクトです。\n"
+
+#. type: Plain text
+#: src/guides/going-to-production/en.mdx:20
+#, no-wrap
 msgid "## Domain names\n"
 msgstr "<Heading level={2} id=\"domain-names\">ドメイン名</Heading>\n"
 
 #. type: Plain text
-#: src/guides/going-to-production/en.mdx:18
+#: src/guides/going-to-production/en.mdx:22
 #, no-wrap
 msgid "If you are running a non-Bluesky app in addition to a PDS deployment, **you will need separate domain names** for your PDS hosting and your app. This is because image and video blobs would otherwise be served from the same domain name as the OAuth and session management pages. This could lead to security issues such as credential theft, and means that using subdomains isn't a practical solution.\n"
 msgstr "PDSデプロイメントに加えてBluesky以外のアプリを実行している場合、PDSホスティングとアプリには**異なるドメイン名が必要**です。そうしないと、画像や動画のblobがOAuthやセッション管理ページと同じドメイン名から提供されることになります。これは認証情報盗難などのセキュリティ問題につながる可能性があり、サブドメインの使用は実用的ではないことを意味します。\n"
 
 #. type: Plain text
-#: src/guides/going-to-production/en.mdx:20
+#: src/guides/going-to-production/en.mdx:24
 #, no-wrap
 msgid "In other words, if you have an app at `https://greensky.app`, you should not use `https://pds.greensky.app` as a PDS hostname, you should use something like `https://greensky-pds.net`. If you used `https://pds.greensky.social` (which would make sense), it might rule out an OAuth client app at `https://chat.greensky.social` in the future. But you could do something like `https://chat.greensky.app`.\n"
 msgstr "言い換えれば、`https://greensky.app`にアプリがある場合、`https://pds.greensky.app`をPDSホスト名として使用するのではなく、`https://greensky-pds.net`のようなものを使用する必要があります。`https://pds.greensky.social`を使用した場合（一見理にかなっています）、将来`https://chat.greensky.social`にOAuthクライアントアプリを置くことができなくなります。しかし、`https://chat.greensky.app`のようにすることはできます。\n"
 
 #. type: Plain text
-#: src/guides/going-to-production/en.mdx:22
+#: src/guides/going-to-production/en.mdx:26
 #, no-wrap
 msgid "The PDS has restrictive CORS headers by default. \n"
 msgstr "PDSはデフォルトで制限的なCORSヘッダーを持っています。 \n"
 
 #. type: Plain text
-#: src/guides/going-to-production/en.mdx:24
+#: src/guides/going-to-production/en.mdx:28
 #, no-wrap
 msgid "It is difficult to change a PDS hostname once it has active accounts — every account needs to be migrated individually. This is absolutely possible using [PLC rotation keys](https://web.plc.directory/spec/v0.1/did-plc), but migrating is not turnkey. Also note that the PDS is the domain that users will enter their passwords on (and therefore remembered in password managers).\n"
 msgstr "アクティブなアカウントを持つようになると、PDSホスト名の変更は困難です。すべてのアカウントを個別に移行する必要があります。これは[PLCローテーション鍵](https://web.plc.directory/spec/v0.1/did-plc)を使えば間違いなく可能ですが、移行は簡単ではありません。また、PDSはユーザーがパスワードを入力するドメインである（したがってパスワードマネージャーで記憶される）ことに注意してください。\n"
 
 #. type: Plain text
-#: src/guides/going-to-production/en.mdx:26
+#: src/guides/going-to-production/en.mdx:30
 #, no-wrap
 msgid "## Backups and Recovery\n"
 msgstr "<Heading level={2} id=\"backup-and-recovery\">バックアップと復旧</Heading>\n"
 
 #. type: Plain text
-#: src/guides/going-to-production/en.mdx:28
+#: src/guides/going-to-production/en.mdx:32
 #, no-wrap
 msgid "Our [official PDS install script](https://github.com/bluesky-social/pds) configures SQLite as a database backend. Specifically, it uses one SQLite DB for each user's [data repository](https://atproto.com/guides/data-repos), and a few others for PDS-wide data. This may be surprising, since SQLite doesn't have any mechanism for handling backups or replications out of the box, but SQLite has increasingly been found to [scale very well](https://fly.io/blog/sqlite-internals-rollback-journal/) with some additional tooling.\n"
 msgstr "公式の[PDSインストールスクリプト](https://github.com/bluesky-social/pds)はSQLiteをデータベースバックエンドとして構成します。具体的には、各ユーザーの[データリポジトリ](https://atproto.com/guides/data-repos)に対して1つのSQLite DBを使用し、PDS全体のデータ用にいくつかのDBを使用します。SQLiteにはボックスの外からバックアップまたはレプリケーションを処理するメカニズムがないため、これは驚くかもしれませんが、SQLiteは追加のツールを使用すると[非常にうまくスケール](https://fly.io/blog/sqlite-internals-rollback-journal/)する事例が増えています。\n"
 
 #. type: Plain text
-#: src/guides/going-to-production/en.mdx:30
+#: src/guides/going-to-production/en.mdx:34
 #, no-wrap
 msgid "The secret sauce here is [Litestream](https://fly.io/blog/litestream-v050-is-here/), which does exactly that — [Backups and Recovery for SQLite](https://github.com/benbjohnson/litestream). To get a recoverable, scalable PDS SQLite deployment with Litestream, we recommend:\n"
 msgstr "秘訣は[Litestream](https://fly.io/blog/litestream-v050-is-here/)です。これはまさしく[SQLiteのバックアップと復旧](https://github.com/benbjohnson/litestream)を行います。Litestreamで復旧可能でスケーラブルなPDS SQLiteデプロイメントを取得するには、以下をお勧めします。\n"
 
 #. type: Plain text
-#: src/guides/going-to-production/en.mdx:34
+#: src/guides/going-to-production/en.mdx:38
 #, no-wrap
 msgid ""
 "- Setting `PDS_SQLITE_DISABLE_WAL_AUTO_CHECKPOINT` = `true` . This is in the [environment variable config](https://github.com/bluesky-social/atproto/blob/f8e56b387fcd3bc8405225c1bbdef66ca5dc1591/packages/pds/src/config/env.ts#L48) for your PDS. What this does is force the PDS SQLite client to keep write-ahead logging open and leave the actual checkpointing to Litestream.\n"
@@ -120,25 +132,25 @@ msgstr ""
 "- 必要に応じて、デプロイメントからコンテナまたはポッドをクリーンアップするときに、このスクリプトがSIGTERMでも実行されるようにしてください。\n"
 
 #. type: Plain text
-#: src/guides/going-to-production/en.mdx:36
+#: src/guides/going-to-production/en.mdx:40
 #, no-wrap
 msgid "In a disaster recovery scenario, you'd pull down all the most recent account database files (which might be missing a few hours of data) and the PDS-wide database files (which should be roughly complete). Then, run a recovery script which applies any repo operations from the PDS-level firehose output. This includes identity and account updates. Then, start the PDS back up.\n"
 msgstr "災害復旧シナリオでは、最新のアカウントデータベースファイル（数時間分のデータが失われている可能性があります）とPDS全体のデータベースファイル（ほぼ完全であるはず）をすべてプルダウンします。次に、PDSのfirehose出力からリポジトリ操作を適用する復旧スクリプトを実行します。これにはIDとアカウントの更新が含まれます。その後、PDSを再起動します。\n"
 
 #. type: Plain text
-#: src/guides/going-to-production/en.mdx:38
+#: src/guides/going-to-production/en.mdx:42
 #, no-wrap
 msgid "## PLC key management\n"
 msgstr "<Heading level={2} id=\"plc-key-management\">PLC鍵管理</Heading>\n"
 
 #. type: Plain text
-#: src/guides/going-to-production/en.mdx:40
+#: src/guides/going-to-production/en.mdx:44
 #, no-wrap
 msgid "It's important to secure the extra PLC identity rotation key for hosted accounts — e.g., in a [Key Management System](https://developer.hashicorp.com/vault/docs/secrets/key-management) or [Hardware Security Module](https://csrc.nist.gov/glossary/term/hardware_security_module_hsm). Pay attention to these two environment variables:\n"
 msgstr "ホストされたアカウント用の追加のPLC IDローテーション鍵を安全に保管することが重要です。例えば、[鍵管理システム](https://developer.hashicorp.com/vault/docs/secrets/key-management)または[HSM](https://csrc.nist.gov/glossary/term/hardware_security_module_hsm)内で。以下の2つの環境変数に注意してください。\n"
 
 #. type: Plain text
-#: src/guides/going-to-production/en.mdx:43
+#: src/guides/going-to-production/en.mdx:47
 #, no-wrap
 msgid ""
 "- `PDS_PLC_ROTATION_KEY_K256_PRIVATE_KEY_HEX`: used by the PDS service to perform operations on the PLC including recovering user accounts. If you are using AWS, this is configurable with the [AWS Key Management Service](https://aws.amazon.com/kms/), using `PDS_PLC_ROTATION_KEY_KMS_KEY_ID`.\n"
@@ -148,49 +160,49 @@ msgstr ""
 "- `PDS_RECOVERY_DID_KEY`：ユーザーDIDに追加される公開鍵。対応する秘密鍵は安全な場所に保存**されなければならず**、`PDS_PLC_ROTATION_KEY_K256_PRIVATE_KEY_HEX`を含むデータの壊滅的な損失の場合にユーザーアカウントを復旧するために使用できます。\n"
 
 #. type: Plain text
-#: src/guides/going-to-production/en.mdx:45
+#: src/guides/going-to-production/en.mdx:49
 #, no-wrap
 msgid "## Object storage\n"
 msgstr "<Heading level={2} id=\"object-storage\">オブジェクトストレージ</Heading>\n"
 
 #. type: Plain text
-#: src/guides/going-to-production/en.mdx:47
+#: src/guides/going-to-production/en.mdx:51
 #, no-wrap
 msgid "By default, the PDS install script configures local disk storage for blobs (images, video, etc). This is fine for small deployments, but not recommended for production deployments.\n"
 msgstr "デフォルトでは、PDSインストールスクリプトはblob（画像、動画など）のローカルディスクストレージを構成します。これは小規模なデプロイメントには問題ありませんが、本番環境のデプロイメントには推奨されません。\n"
 
 #. type: Plain text
-#: src/guides/going-to-production/en.mdx:49
+#: src/guides/going-to-production/en.mdx:53
 #, no-wrap
 msgid "Storage needs will vary, but we strongly recommend using S3-compatible storage (e.g. [Minio](https://github.com/minio/minio) or a block storage offering from a VPS provider) instead of storing images and video on local disk.\n"
 msgstr "ストレージの需要は様々ですが、ローカルディスクに画像と動画を保存する代わりに、S3互換ストレージ（例：[Minio](https://github.com/minio/minio)やVPSプロバイダーからのブロックストレージオファリング）を使用することを強くお勧めします。\n"
 
 #. type: Plain text
-#: src/guides/going-to-production/en.mdx:51
+#: src/guides/going-to-production/en.mdx:55
 #, no-wrap
 msgid "## Rate limits\n"
 msgstr "<Heading level={2} id=\"rate-limits\">レート制限</Heading>\n"
 
 #. type: Plain text
-#: src/guides/going-to-production/en.mdx:53
+#: src/guides/going-to-production/en.mdx:57
 #, no-wrap
 msgid "The PDS implementation includes [repo operation limits](https://docs.bsky.app/docs/advanced-guides/rate-limits) by default. \n"
 msgstr "PDS実装にはデフォルトで[リポジトリ操作制限](https://docs.bsky.app/docs/advanced-guides/rate-limits)が含まれています。 \n"
 
 #. type: Plain text
-#: src/guides/going-to-production/en.mdx:55
+#: src/guides/going-to-production/en.mdx:59
 #, no-wrap
 msgid "If you remove those limits, then the entire PDS might get limited at the [Relay](https://github.com/bluesky-social/indigo/tree/main/cmd/relay) (which itself has default event rate-limits for each PDS host), so be mindful of this if you are not also running your own Relay.\n"
 msgstr "これらの制限を撤廃すると、PDS全体が[リレー](https://github.com/bluesky-social/indigo/tree/main/cmd/relay)で制限される可能性があるため（リレーはPDSホスト毎にデフォルトのイベントレート制限を持ちます）、独自のリレーを実行していない場合は注意してください。\n"
 
 #. type: Plain text
-#: src/guides/going-to-production/en.mdx:57
+#: src/guides/going-to-production/en.mdx:61
 #, no-wrap
 msgid "By default, our PDS install script will set up a single Node application process. These are stateless backend applications that run on top of SQLite. If you scale horizontally to run multiple Node processes, you'll also need to use [Redis](https://redis.io/) to allow them to share state. There are two environment variables used to configure Redis:\n"
 msgstr "デフォルトでは、PDSインストールスクリプトは単一のNodeアプリケーションプロセスをセットアップします。これはSQLiteの上で実行されるステートレスバックエンドアプリケーションです。複数のNodeプロセスを実行して水平スケールする場合、状態を共有するために[Redis](https://redis.io/)も使用する必要があります。Redisを構成するために使用される2つの環境変数があります。\n"
 
 #. type: Plain text
-#: src/guides/going-to-production/en.mdx:60
+#: src/guides/going-to-production/en.mdx:64
 #, no-wrap
 msgid ""
 "- `PDS_REDIS_SCRATCH_ADDRESS`  — your Redis instance (e.g. localhost:6379)\n"
@@ -200,37 +212,37 @@ msgstr ""
 "- `PDS_REDIS_SCRATCH_PASSWORD` — Redis認証情報\n"
 
 #. type: Plain text
-#: src/guides/going-to-production/en.mdx:62
+#: src/guides/going-to-production/en.mdx:66
 #, no-wrap
 msgid "This allows your rate limiting to scale gracefully.\n"
 msgstr "これにより、レート制限を段階的にスケールできます。\n"
 
 #. type: Plain text
-#: src/guides/going-to-production/en.mdx:64
+#: src/guides/going-to-production/en.mdx:68
 #, no-wrap
 msgid "If you are running multiple processes in parallel, you may also want to leverage [sidecar containers](https://litestream.io/guides/docker/#why-sidecar-containers-work) for your SQLite databases.\n"
 msgstr "複数プロセスを並列実行する場合、SQLiteデータベースに[サイドカーコンテナ](https://litestream.io/guides/docker/#why-sidecar-containers-work)を利用することもできます。\n"
 
 #. type: Plain text
-#: src/guides/going-to-production/en.mdx:66
+#: src/guides/going-to-production/en.mdx:70
 #, no-wrap
 msgid "## Moderation\n"
 msgstr "<Heading level={2} id=\"moderation\">モデレーション</Heading>\n"
 
 #. type: Plain text
-#: src/guides/going-to-production/en.mdx:68
+#: src/guides/going-to-production/en.mdx:72
 #, no-wrap
 msgid "Moderation actions can be applied at both the AppView and the PDS level. However, if you are also running a Relay, you should be aware that the Relay admin web interface has forms for performing account-level and PDS-level actions if needed. There are also some moderation-related PDS endpoints not exposed via XRPC, which our [goat](https://github.com/bluesky-social/goat) CLI tool can interact with. Refer to [goat/pds_admin.go](https://github.com/bluesky-social/goat/blob/main/pds_admin.go) for examples.\n"
 msgstr "モデレーションはほとんどがAppViewおよびPDSレベルで実施されます。ただし、リレーも実行している場合は、必要に応じてアカウントレベルおよびPDSレベルのアクションを実行するためのフォームがリレー管理ウェブインターフェースにあることに注意してください。XRPC経由で公開されていないモデレーション関連のPDSエンドポイントもいくつかあり、[goat](https://github.com/bluesky-social/goat) CLIツールがこれらと対話できます。例については[goat/pds_admin.go](https://github.com/bluesky-social/goat/blob/main/pds_admin.go)を参照してください。\n"
 
 #. type: Plain text
-#: src/guides/going-to-production/en.mdx:70
+#: src/guides/going-to-production/en.mdx:74
 #, no-wrap
 msgid "[Ozone](https://github.com/bluesky-social/ozone) is our labeling service and moderation interface. If you are building your own AppView, AppViews can use the Ozone `subscribeLabel` \"firehose\" to receive updates. Ozone can also be granted permission to read additional PDS-level private information, such as the account email. This is helpful for things like account recovery.\n"
 msgstr "[Ozone](https://github.com/bluesky-social/ozone)はラベリングサービスおよびモデレーションインターフェースです。独自のAppViewを構築している場合、AppViewはOzoneの`subscribeLabel` firehoseを使用して更新を受け取ることができます。Ozoneにはアカウントメールのような追加のPDSレベルのプライベート情報を読み取る権限を与えることもできます。これはアカウント復旧などに役立ちます。\n"
 
 #. type: Plain text
-#: src/guides/going-to-production/en.mdx:71
+#: src/guides/going-to-production/en.mdx:75
 #, no-wrap
 msgid "You should generally run separate Ozone instances for moderating the PDS (since they can see private account info) and standalone AppViews, unless there is actually a single administrative org doing the moderation for both.\n"
 msgstr "PDSのモデレーション（プライベートアカウント情報が表示される）とスタンドアロンAppView用に、通常は個別のOzoneインスタンスを実行する必要がありますが、実際に両方をモデレーションしている単一の管理組織がある場合は別です。\n"

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-21 18:36+0900\n"
+"POT-Creation-Date: 2026-05-18 11:10+0900\n"
 "PO-Revision-Date: 2026-01-07 19:40+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -15,6 +15,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#. type: Plain text
+#: src/guides/permission-requests/en.mdx:20
+#: src/guides/lexicon-style-guide/en.mdx:8
+#, no-wrap
+msgid "## Overview\n"
+msgstr "<Heading level={2} id=\"overview\">概要</Heading>\n"
 
 #. type: Plain text
 #: src/guides/lexicon-style-guide/en.mdx:6
@@ -33,12 +40,6 @@ msgstr ""
 "  description:\n"
 "    'ATプロトコルのLexicon作成のためのスタイルガイド',\n"
 "}\n"
-
-#. type: Plain text
-#: src/guides/lexicon-style-guide/en.mdx:8
-#, no-wrap
-msgid "## Overview\n"
-msgstr "<Heading level={2} id=\"overview\">概要</Heading>\n"
 
 #. type: Plain text
 #: src/guides/lexicon-style-guide/en.mdx:10

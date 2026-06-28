@@ -24,6 +24,7 @@ const navTranslations: Record<string, Record<string, string>> = {
     '/guides/oauth-tutorial': 'OAuth with Next.JS',
     '/guides/oauth-cli-tutorial': 'OAuth with Node.js',
     '/guides/go-oauth-cli-tutorial': 'OAuth with Go',
+    '/guides/labels-tutorial': 'ラベル機能',
     '/guides/statusphere-tutorial': 'ソーシャルアプリの作成',
     '/guides/understanding-atproto': 'atprotoを知る',
     '/articles/atproto-for-distsys-engineers': '分散システムエンジニアのためのatproto',
@@ -61,6 +62,7 @@ const navTranslations: Record<string, Record<string, string>> = {
     '/guides/self-hosting': 'セルフホスティング',
     '/guides/going-to-production': '本番環境への移行',
     '/guides/account-migration': 'アカウント移行',
+    '/guides/account-recovery': 'アカウント復旧',
     '/guides/glossary': '用語集',
   },
   ko: {

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-21 18:36+0900\n"
+"POT-Creation-Date: 2026-05-18 11:10+0900\n"
 "PO-Revision-Date: 2026-01-07 19:40+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -17,25 +17,46 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. type: Plain text
-#: src/guides/account-lifecycle/en.mdx:65
-#: src/guides/images-and-video/en.mdx:142 src/guides/moderation/en.mdx:30
-#: src/guides/reads-and-writes/en.mdx:73 src/guides/streaming-data/en.mdx:60
-#: src/guides/video-handling/en.mdx:41 src/guides/feeds/en.mdx:113
-#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:57
-#: src/guides/scopes/en.mdx:45 src/guides/subscriptions/en.mdx:78
-#: src/guides/writing-data/en.mdx:181 src/guides/creating-a-labeler/en.mdx:56
-#: src/guides/labels/en.mdx:110 src/guides/sdk-auth/en.mdx:116
-#: src/guides/sync/en.mdx:51 src/guides/auth/en.mdx:74
-#: src/guides/lexicon/en.mdx:128 src/guides/publishing-lexicons/en.mdx:49
-#: src/guides/backfilling/en.mdx:60 src/guides/reading-data/en.mdx:165
-#: src/guides/social-graph/en.mdx:19 src/guides/permission-sets/en.mdx:214
-#: src/guides/using-ozone/en.mdx:132
+#: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:68
+#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:60
+#: src/guides/streaming-data/en.mdx:42 src/guides/video-handling/en.mdx:32
+#: src/guides/feeds/en.mdx:90 src/guides/installing-lexicons/en.mdx:41
+#: src/guides/oauth-patterns/en.mdx:125
+#: src/guides/permission-requests/en.mdx:125 src/guides/subscriptions/en.mdx:40
+#: src/guides/writing-data/en.mdx:126 src/guides/creating-a-labeler/en.mdx:35
+#: src/guides/labels/en.mdx:95 src/guides/sdk-auth/en.mdx:70
+#: src/guides/sync/en.mdx:47 src/guides/auth/en.mdx:60
+#: src/guides/lexicon/en.mdx:68 src/guides/publishing-lexicons/en.mdx:60
+#: src/guides/backfilling/en.mdx:64 src/guides/reading-data/en.mdx:113
+#: src/guides/social-graph/en.mdx:25 src/guides/permission-sets/en.mdx:83
+#: src/guides/using-ozone/en.mdx:132 src/guides/about-oauth/en.mdx:81
 #, no-wrap
 msgid "## Further Reading and Resources\n"
 msgstr "<Heading level={2} id=\"further-reading-and-resources\">関連・参考資料</Heading>\n"
 
 #. type: Plain text
-#: src/guides/images-and-video/en.mdx:5
+#: src/guides/images-and-video/en.mdx:8
+#, no-wrap
+msgid ""
+"import UploadBlobTs from './_snippets/upload-blob-ts.mdx'\n"
+"import UploadBlobResponseTs from './_snippets/upload-blob-response-ts.mdx'\n"
+"import PostWithEmbedTs from './_snippets/post-with-embed-ts.mdx'\n"
+"import UploadBlobGo from './_snippets/upload-blob-go.mdx'\n"
+"import UploadBlobResponseGo from './_snippets/upload-blob-response-go.mdx'\n"
+"import PostWithEmbedGo from './_snippets/post-with-embed-go.mdx'\n"
+"import CdnUrlExample from './_snippets/cdn-url-example.mdx'\n"
+msgstr ""
+"import {Heading} from '@/components/Heading'\n"
+"import UploadBlobTs from './_snippets/upload-blob-ts.mdx'\n"
+"import UploadBlobResponseTs from './_snippets/upload-blob-response-ts.mdx'\n"
+"import PostWithEmbedTs from './_snippets/post-with-embed-ts.mdx'\n"
+"import UploadBlobGo from './_snippets/upload-blob-go.mdx'\n"
+"import UploadBlobResponseGo from './_snippets/upload-blob-response-go.mdx'\n"
+"import PostWithEmbedGo from './_snippets/post-with-embed-go.mdx'\n"
+"import CdnUrlExample from './_snippets/cdn-url-example.mdx'\n"
+
+#. type: Plain text
+#: src/guides/images-and-video/en.mdx:13
 #, no-wrap
 msgid ""
 "export const header = {\n"
@@ -43,27 +64,25 @@ msgid ""
 "  description: 'Working with image and video blobs',\n"
 "}\n"
 msgstr ""
-"import {Heading} from '@/components/Heading'\n"
-"\n"
 "export const header = {\n"
 "  title: '画像と動画',\n"
 "  description: '画像と動画blobの活用',\n"
 "}\n"
 
 #. type: Plain text
-#: src/guides/images-and-video/en.mdx:7
+#: src/guides/images-and-video/en.mdx:15
 #, no-wrap
 msgid "## Using blobs\n"
 msgstr "<Heading level={2} id=\"using-blobs\">blobの利用</Heading>\n"
 
 #. type: Plain text
-#: src/guides/images-and-video/en.mdx:9
+#: src/guides/images-and-video/en.mdx:17
 #, no-wrap
 msgid "\"Blobs\" are media files stored alongside an account's repository. They include images, video, and audio, but could also include any other file format. Blobs are referenced by individual records by the **`blob`** lexicon datatype, which includes a content hash (CID; `ref`) for the blob .\n"
 msgstr "「blob」はアカウントのリポジトリと共に保存されるメディアファイルです。画像、動画、音声データを含みますが、他のファイル形式も可能です。blobは個別のレコードからLexiconの **`blob`** データ型によって参照され、blobのコンテンツハッシュ（CIDまたは`ref`）を含みます。\n"
 
 #. type: Plain text
-#: src/guides/images-and-video/en.mdx:19
+#: src/guides/images-and-video/en.mdx:26
 #, no-wrap
 msgid ""
 "<TabGroup defaultValue=\"ts\">\n"
@@ -73,8 +92,7 @@ msgid ""
 "  </TabList>\n"
 "  <TabPanels>\n"
 "    <TabPanel value=\"ts\">\n"
-"    ```typescript\n"
-"    const imageBytes = fs.readFileSync('./photo.jpg')\n"
+"    <UploadBlobTs />\n"
 msgstr ""
 "<TabGroup defaultValue=\"ts\">\n"
 "  <TabList>\n"
@@ -83,307 +101,118 @@ msgstr ""
 "  </TabList>\n"
 "  <TabPanels>\n"
 "    <TabPanel value=\"ts\">\n"
-"    ```typescript\n"
-"    const imageBytes = fs.readFileSync('./photo.jpg')\n"
-
-#. type: Plain text
-#: src/guides/images-and-video/en.mdx:24
-#, no-wrap
-msgid ""
-"    const uploadRes = await client.call(com.atproto.repo.uploadBlob, {\n"
-"      encoding: 'image/jpeg',\n"
-"      data: imageBytes,\n"
-"    })\n"
-msgstr ""
-"    const uploadRes = await client.call(com.atproto.repo.uploadBlob, {\n"
-"      encoding: 'image/jpeg',\n"
-"      data: imageBytes,\n"
-"    })\n"
+"    <UploadBlobTs />\n"
 
 #. type: Plain text
 #: src/guides/images-and-video/en.mdx:28
 #, no-wrap
-msgid ""
-"    const blob = uploadRes.data.blob\n"
-"    console.log(JSON.stringify(blob, null, 2))\n"
-"    ```\n"
-msgstr ""
-"    const blob = uploadRes.data.blob\n"
-"    console.log(JSON.stringify(blob, null, 2))\n"
-"    ```\n"
+msgid "    <UploadBlobResponseTs />\n"
+msgstr "    <UploadBlobResponseTs />\n"
 
 #. type: Plain text
-#: src/guides/images-and-video/en.mdx:39
-#, no-wrap
-msgid ""
-"    ```\n"
-"    {\n"
-"      \"$type\": \"blob\",\n"
-"      \"ref\": {\n"
-"        \"$link\": \"bafkreihdwdcefgh4dqkjv67uzcmw7ojee6xedzdetojuzjevtenxquvyku\"\n"
-"      },\n"
-"      \"mimeType\": \"image/jpeg\",\n"
-"      \"size\": 354028\n"
-"    }\n"
-"    ```\n"
-msgstr ""
-"    ```\n"
-"    {\n"
-"      \"$type\": \"blob\",\n"
-"      \"ref\": {\n"
-"        \"$link\": \"bafkreihdwdcefgh4dqkjv67uzcmw7ojee6xedzdetojuzjevtenxquvyku\"\n"
-"      },\n"
-"      \"mimeType\": \"image/jpeg\",\n"
-"      \"size\": 354028\n"
-"    }\n"
-"    ```\n"
-
-#. type: Plain text
-#: src/guides/images-and-video/en.mdx:41 src/guides/images-and-video/en.mdx:88
+#: src/guides/images-and-video/en.mdx:30 src/guides/images-and-video/en.mdx:39
 #, no-wrap
 msgid "    Blob files are uploaded and distributed separately from records:\n"
 msgstr "    blobファイルのアップロードや配信はレコードとは別で行います。\n"
 
 #. type: Plain text
-#: src/guides/images-and-video/en.mdx:65
+#: src/guides/images-and-video/en.mdx:35
 #, no-wrap
 msgid ""
-"    ```typescript\n"
-"    await client.create(app.bsky.feed.post, {\n"
-"      text: 'Using a previously uploaded image',\n"
-"      createdAt: new Date().toISOString(),\n"
-"      embed: {\n"
-"        $type: 'app.bsky.embed.images',\n"
-"        images: [\n"
-"          {\n"
-"            alt: 'A photo uploaded earlier',\n"
-"            image: blobRef,\n"
-"            aspectRatio: { width: 1200, height: 800 },\n"
-"          },\n"
-"        ],\n"
-"      },\n"
-"    })\n"
-"    ```\n"
+"    <PostWithEmbedTs />\n"
 "    </TabPanel>\n"
 "    <TabPanel value=\"go\">\n"
-"    ```go\n"
-"    imgBytes, err := os.ReadFile(\"./photo.jpg\")\n"
-"    if err != nil {\n"
-"      panic(err)\n"
-"    }\n"
+"    <UploadBlobGo />\n"
 msgstr ""
-"    ```typescript\n"
-"    await client.create(app.bsky.feed.post, {\n"
-"      text: 'Using a previously uploaded image',\n"
-"      createdAt: new Date().toISOString(),\n"
-"      embed: {\n"
-"        $type: 'app.bsky.embed.images',\n"
-"        images: [\n"
-"          {\n"
-"            alt: 'A photo uploaded earlier',\n"
-"            image: blobRef,\n"
-"            aspectRatio: { width: 1200, height: 800 },\n"
-"          },\n"
-"        ],\n"
-"      },\n"
-"    })\n"
-"    ```\n"
-"    </TabPanel>\n"
-"    <TabPanel value=\"go\">\n"
-"    ```go\n"
-"    imgBytes, err := os.ReadFile(\"./photo.jpg\")\n"
-"    if err != nil {\n"
-"      panic(err)\n"
-"    }\n"
 
 #. type: Plain text
-#: src/guides/images-and-video/en.mdx:70
+#: src/guides/images-and-video/en.mdx:37
 #, no-wrap
-msgid ""
-"    uploadResp, err := comatproto.RepoUploadBlob(ctx, xrpcc, bytes.NewReader(imgBytes))\n"
-"    if err != nil {\n"
-"      panic(err)\n"
-"    }\n"
-msgstr ""
-"    uploadResp, err := comatproto.RepoUploadBlob(ctx, xrpcc, bytes.NewReader(imgBytes))\n"
-"    if err != nil {\n"
-"      panic(err)\n"
-"    }\n"
+msgid "    <UploadBlobResponseGo />\n"
+msgstr "    <UploadBlobResponseGo />\n"
 
 #. type: Plain text
-#: src/guides/images-and-video/en.mdx:73
+#: src/guides/images-and-video/en.mdx:44
 #, no-wrap
 msgid ""
-"    fmt.Println(string(json.MarshalIndent(uploadResp, \"\", \"  \")))\n"
-"    ```\n"
-msgstr ""
-"    fmt.Println(string(json.MarshalIndent(uploadResp, \"\", \"  \")))\n"
-"    ```\n"
-
-#. type: Plain text
-#: src/guides/images-and-video/en.mdx:86
-#, no-wrap
-msgid ""
-"    ```\n"
-"    {\n"
-"      \"blob\": {\n"
-"        \"$type\": \"blob\",\n"
-"        \"ref\": {\n"
-"          \"$link\": \"bafkreihdwdcefgh4dqkjv67uzcmw7ojee6xedzdetojuzjevtenxquvyku\"\n"
-"        },\n"
-"        \"mimeType\": \"image/jpeg\",\n"
-"        \"size\": 354028\n"
-"      }\n"
-"    }\n"
-"    ```\n"
-msgstr ""
-"    ```\n"
-"    {\n"
-"      \"blob\": {\n"
-"        \"$type\": \"blob\",\n"
-"        \"ref\": {\n"
-"          \"$link\": \"bafkreihdwdcefgh4dqkjv67uzcmw7ojee6xedzdetojuzjevtenxquvyku\"\n"
-"        },\n"
-"        \"mimeType\": \"image/jpeg\",\n"
-"        \"size\": 354028\n"
-"      }\n"
-"    }\n"
-"    ```\n"
-
-#. type: Plain text
-#: src/guides/images-and-video/en.mdx:116
-#, no-wrap
-msgid ""
-"    ```go\n"
-"    post := &bsky.FeedPost{\n"
-"        Text:      \"Using a previously uploaded image\",\n"
-"        CreatedAt: time.Now().UTC().Format(time.RFC3339),\n"
-"        Embed: &bsky.FeedPost_Embed{\n"
-"          EmbedImages: &bsky.EmbedImages{\n"
-"            Images: []*bsky.EmbedImages_Image{\n"
-"              {\n"
-"                Alt: \"A photo uploaded earlier\",\n"
-"                Image: &lexutil.LexBlob{\n"
-"                  Ref:      uploadResp.Blob.Ref,\n"
-"                  MimeType: http.DetectContentType(imgBytes),\n"
-"                  Size:     uploadResp.Blob.Size,\n"
-"                },\n"
-"                AspectRatio: &bsky.EmbedDefs_AspectRatio{\n"
-"                  Width:  1200,\n"
-"                  Height: 800,\n"
-"                },\n"
-"              },\n"
-"            },\n"
-"          },\n"
-"        },\n"
-"      }\n"
-"    ```\n"
+"    <PostWithEmbedGo />\n"
 "    </TabPanel>\n"
 "  </TabPanels>\n"
 "</TabGroup>\n"
 msgstr ""
-"    ```go\n"
-"    post := &bsky.FeedPost{\n"
-"        Text:      \"Using a previously uploaded image\",\n"
-"        CreatedAt: time.Now().UTC().Format(time.RFC3339),\n"
-"        Embed: &bsky.FeedPost_Embed{\n"
-"          EmbedImages: &bsky.EmbedImages{\n"
-"            Images: []*bsky.EmbedImages_Image{\n"
-"              {\n"
-"                Alt: \"A photo uploaded earlier\",\n"
-"                Image: &lexutil.LexBlob{\n"
-"                  Ref:      uploadResp.Blob.Ref,\n"
-"                  MimeType: http.DetectContentType(imgBytes),\n"
-"                  Size:     uploadResp.Blob.Size,\n"
-"                },\n"
-"                AspectRatio: &bsky.EmbedDefs_AspectRatio{\n"
-"                  Width:  1200,\n"
-"                  Height: 800,\n"
-"                },\n"
-"              },\n"
-"            },\n"
-"          },\n"
-"        },\n"
-"      }\n"
-"    ```\n"
+"    <PostWithEmbedGo />\n"
 "    </TabPanel>\n"
 "  </TabPanels>\n"
 "</TabGroup>\n"
 
 #. type: Plain text
-#: src/guides/images-and-video/en.mdx:118
+#: src/guides/images-and-video/en.mdx:46
 #, no-wrap
 msgid "You can see what an existing Blob record looks like in [atproto.at](https://atproto.at/viewer?uri=did:plc:ewvi7nxzyoun6zhxrhs64oiz/app.bsky.feed.post/3juft56hdjg2o). It's this one right here:\n"
 msgstr "既存のblobレコードがどのようなものかは[atproto.at](https://atproto.at/viewer?uri=did:plc:ewvi7nxzyoun6zhxrhs64oiz/app.bsky.feed.post/3juft56hdjg2o)で確認できます。以下のような画像が見えるでしょう。\n"
 
 #. type: Plain text
-#: src/guides/images-and-video/en.mdx:120
+#: src/guides/images-and-video/en.mdx:48
 #, no-wrap
 msgid "![https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ewvi7nxzyoun6zhxrhs64oiz/bafkreiebtvblnu4jwu66y57kakido7uhiigenznxdlh6r6wiswblv5m4py@jpeg](https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ewvi7nxzyoun6zhxrhs64oiz/bafkreiebtvblnu4jwu66y57kakido7uhiigenznxdlh6r6wiswblv5m4py@jpeg)\n"
 msgstr "![https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ewvi7nxzyoun6zhxrhs64oiz/bafkreiebtvblnu4jwu66y57kakido7uhiigenznxdlh6r6wiswblv5m4py@jpeg](https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ewvi7nxzyoun6zhxrhs64oiz/bafkreiebtvblnu4jwu66y57kakido7uhiigenznxdlh6r6wiswblv5m4py@jpeg)\n"
 
 #. type: Plain text
-#: src/guides/images-and-video/en.mdx:122
+#: src/guides/images-and-video/en.mdx:50
 #, no-wrap
 msgid "And here's what the URL to that beautiful blob looks like when served from a CDN:\n"
 msgstr "CDNから提供される場合、この美しいblobのURLは次のようになります。\n"
 
 #. type: Plain text
-#: src/guides/images-and-video/en.mdx:126
+#: src/guides/images-and-video/en.mdx:52
 #, no-wrap
-msgid ""
-"```\n"
-"https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ewvi7nxzyoun6zhxrhs64oiz/bafkreiebtvblnu4jwu66y57kakido7uhiigenznxdlh6r6wiswblv5m4py\n"
-"```\n"
-msgstr ""
-"```\n"
-"https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ewvi7nxzyoun6zhxrhs64oiz/bafkreiebtvblnu4jwu66y57kakido7uhiigenznxdlh6r6wiswblv5m4py\n"
-"```\n"
+msgid "<CdnUrlExample />\n"
+msgstr "<CdnUrlExample />\n"
 
 #. type: Plain text
-#: src/guides/images-and-video/en.mdx:128
+#: src/guides/images-and-video/en.mdx:54
 #, no-wrap
 msgid "Note the URL structure: the blob is served from the CDN, but the path includes the DID of the account that uploaded it, as well as the CID of the blob itself.\n"
 msgstr "URLをよく見てください。blobはCDNから提供されていますが、パスにはblobのCIDだけでなく、アップロードしたアカウントのDIDが含まれています。\n"
 
 #. type: Plain text
-#: src/guides/images-and-video/en.mdx:130
+#: src/guides/images-and-video/en.mdx:56
 #, no-wrap
 msgid "## Blob objects\n"
 msgstr "<Heading level={2} id=\"blob-object\">blobオブジェクト</Heading>\n"
 
 #. type: Plain text
-#: src/guides/images-and-video/en.mdx:132
+#: src/guides/images-and-video/en.mdx:58
 #, no-wrap
 msgid "Blobs are authoritatively stored by the account's PDS instance, but views are commonly served by CDNs associated with individual applications (\"AppViews\"), to reduce traffic on the PDS. CDNs may serve transformed (resized, transcoded, etc) versions of the original blob.\n"
 msgstr "blobはアカウントのPDSインスタンスに権威的に保存されますが、ビューは通常、PDSトラフィックを削減するために個別のアプリケーション（AppView）に関連付けられたCDNによって提供されます。CDNは元のblobの変換版（リサイズ、トランスコード等）を提供することがあります。\n"
 
 #. type: Plain text
-#: src/guides/images-and-video/en.mdx:134
+#: src/guides/images-and-video/en.mdx:60
 #, no-wrap
 msgid "While blobs are universally content addressed (by CID), they are always referenced and managed in the context of an individual account (DID).\n"
 msgstr "blobは（CIDによって）ユニバーサルにコンテンツアドレス指定されていますが、常に個別のアカウント（DID）のコンテキストで参照および管理されます。\n"
 
 #. type: Plain text
-#: src/guides/images-and-video/en.mdx:136
+#: src/guides/images-and-video/en.mdx:62
 #, no-wrap
 msgid "The empty blob (zero bytes) is valid in general, though it may be disallowed by individual Lexicons/applications.\n"
 msgstr "空のblob（ゼロバイト）は一般的に有効ですが、個別のLexiconやアプリケーションによっては禁止される場合があります。\n"
 
 #. type: Plain text
-#: src/guides/images-and-video/en.mdx:138
+#: src/guides/images-and-video/en.mdx:64
 #, no-wrap
 msgid "Creating blobs requires the permission scope **`blob:*/*` .**\n"
 msgstr "blobを作成するには権限スコープ **`blob:*/*`** が必要です。\n"
 
 #. type: Plain text
-#: src/guides/images-and-video/en.mdx:140
+#: src/guides/images-and-video/en.mdx:66
 #, no-wrap
 msgid "It is generally recommended to use an object storage implementation for working with blobs if you are hosting your own PDS. See [going to production](/guides/going-to-production#object-storage) for more.\n"
 msgstr "自分自身のPDSをホストしている場合、blobを操作するにはオブジェクトストレージ実装の利用を一般的にお勧めします。詳細は[本番環境への移行](/guides/going-to-production#object-storage)を参照してください。\n"
 
 #. type: Plain text
-#: src/guides/images-and-video/en.mdx:147
+#: src/guides/images-and-video/en.mdx:73
 #, no-wrap
 msgid ""
 "- [Blob lifecycle](/guides/blob-lifecycle)\n"

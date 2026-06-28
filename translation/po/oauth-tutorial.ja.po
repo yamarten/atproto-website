@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-21 18:36+0900\n"
+"POT-Creation-Date: 2026-05-18 11:10+0900\n"
 "PO-Revision-Date: 2026-02-07 17:03+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -17,51 +17,251 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. type: Plain text
-#: src/guides/reads-and-writes/en.mdx:13 src/guides/bot-tutorial/en.mdx:11
-#: src/guides/custom-feed-tutorial/en.mdx:14
-#: src/guides/oauth-tutorial/en.mdx:18
-#: src/guides/statusphere-tutorial/en.mdx:17
-#: src/guides/go-oauth-cli-tutorial/en.mdx:11
-#: src/guides/oauth-cli-tutorial/en.mdx:11
+#: src/guides/reads-and-writes/en.mdx:18 src/guides/bot-tutorial/en.mdx:28
+#: src/guides/custom-feed-tutorial/en.mdx:28
+#: src/guides/oauth-tutorial/en.mdx:45
+#: src/guides/statusphere-tutorial/en.mdx:38
+#: src/guides/go-oauth-cli-tutorial/en.mdx:21
+#: src/guides/oauth-cli-tutorial/en.mdx:20 src/guides/labels-tutorial/en.mdx:24
 #, no-wrap
 msgid "## Prerequisites\n"
 msgstr "<Heading level={2} id=\"prerequisites\">前提条件</Heading>\n"
 
 #. type: Plain text
-#: src/guides/tutorials/en.mdx:41 src/guides/oauth-tutorial/en.mdx:16
+#: src/guides/tutorials/en.mdx:45 src/guides/oauth-tutorial/en.mdx:43
 #, no-wrap
 msgid "See a demo version running at: [https://nextjs-oauth-tutorial.up.railway.app/](https://nextjs-oauth-tutorial.up.railway.app/).\n"
 msgstr "動作デモはこちら [https://nextjs-oauth-tutorial.up.railway.app/](https://nextjs-oauth-tutorial.up.railway.app/)\n"
 
 #. type: Plain text
-#: src/guides/bot-tutorial/en.mdx:245
-#: src/guides/custom-feed-tutorial/en.mdx:387
-#: src/guides/oauth-tutorial/en.mdx:783
-#: src/guides/statusphere-tutorial/en.mdx:728
-#: src/guides/go-oauth-cli-tutorial/en.mdx:241
-#: src/guides/oauth-cli-tutorial/en.mdx:193
-#: src/articles/atproto-ethos/en.mdx:135
+#: src/guides/bot-tutorial/en.mdx:37 src/guides/custom-feed-tutorial/en.mdx:38
+#: src/guides/oauth-tutorial/en.mdx:55
+#: src/guides/statusphere-tutorial/en.mdx:53
+#: src/guides/go-oauth-cli-tutorial/en.mdx:30
+#: src/guides/oauth-cli-tutorial/en.mdx:29 src/guides/labels-tutorial/en.mdx:46
+#, no-wrap
+msgid "<S01 />\n"
+msgstr "<S01 />\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:41 src/guides/custom-feed-tutorial/en.mdx:42
+#: src/guides/oauth-tutorial/en.mdx:61
+#: src/guides/statusphere-tutorial/en.mdx:57
+#: src/guides/go-oauth-cli-tutorial/en.mdx:38
+#: src/guides/oauth-cli-tutorial/en.mdx:37 src/guides/labels-tutorial/en.mdx:50
+#, no-wrap
+msgid "<S02 />\n"
+msgstr "<S02 />\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:45 src/guides/custom-feed-tutorial/en.mdx:46
+#: src/guides/oauth-tutorial/en.mdx:65
+#: src/guides/statusphere-tutorial/en.mdx:61
+#: src/guides/go-oauth-cli-tutorial/en.mdx:46
+#: src/guides/oauth-cli-tutorial/en.mdx:41 src/guides/labels-tutorial/en.mdx:64
+#, no-wrap
+msgid "<S03 />\n"
+msgstr "<S03 />\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:53 src/guides/custom-feed-tutorial/en.mdx:50
+#: src/guides/oauth-tutorial/en.mdx:69 src/guides/oauth-tutorial/en.mdx:149
+#: src/guides/oauth-tutorial/en.mdx:201
+#: src/guides/statusphere-tutorial/en.mdx:69
+#: src/guides/go-oauth-cli-tutorial/en.mdx:50
+#: src/guides/oauth-cli-tutorial/en.mdx:51 src/guides/labels-tutorial/en.mdx:68
+#, no-wrap
+msgid "<S04 />\n"
+msgstr "<S04 />\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:57 src/guides/custom-feed-tutorial/en.mdx:58
+#: src/guides/oauth-tutorial/en.mdx:95
+#: src/guides/statusphere-tutorial/en.mdx:73
+#: src/guides/go-oauth-cli-tutorial/en.mdx:64
+#: src/guides/oauth-cli-tutorial/en.mdx:65 src/guides/labels-tutorial/en.mdx:84
+#, no-wrap
+msgid "<S05 />\n"
+msgstr "<S05 />\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:67 src/guides/custom-feed-tutorial/en.mdx:62
+#: src/guides/oauth-tutorial/en.mdx:107
+#: src/guides/statusphere-tutorial/en.mdx:81
+#: src/guides/go-oauth-cli-tutorial/en.mdx:76
+#: src/guides/oauth-cli-tutorial/en.mdx:78 src/guides/labels-tutorial/en.mdx:88
+#, no-wrap
+msgid "<S06 />\n"
+msgstr "<S06 />\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:71 src/guides/custom-feed-tutorial/en.mdx:68
+#: src/guides/oauth-tutorial/en.mdx:111
+#: src/guides/statusphere-tutorial/en.mdx:89
+#: src/guides/go-oauth-cli-tutorial/en.mdx:84
+#: src/guides/oauth-cli-tutorial/en.mdx:86 src/guides/labels-tutorial/en.mdx:94
+#, no-wrap
+msgid "<S07 />\n"
+msgstr "<S07 />\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:75 src/guides/custom-feed-tutorial/en.mdx:87
+#: src/guides/oauth-tutorial/en.mdx:115
+#: src/guides/statusphere-tutorial/en.mdx:93
+#: src/guides/go-oauth-cli-tutorial/en.mdx:92
+#: src/guides/oauth-cli-tutorial/en.mdx:90
+#: src/guides/labels-tutorial/en.mdx:106
+#, no-wrap
+msgid "<S08 />\n"
+msgstr "<S08 />\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:91 src/guides/custom-feed-tutorial/en.mdx:101
+#: src/guides/oauth-tutorial/en.mdx:121
+#: src/guides/statusphere-tutorial/en.mdx:101
+#: src/guides/go-oauth-cli-tutorial/en.mdx:96
+#: src/guides/labels-tutorial/en.mdx:112
+#, no-wrap
+msgid "<S09 />\n"
+msgstr "<S09 />\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:95 src/guides/custom-feed-tutorial/en.mdx:113
+#: src/guides/oauth-tutorial/en.mdx:125
+#: src/guides/statusphere-tutorial/en.mdx:107
+#: src/guides/labels-tutorial/en.mdx:118
+#, no-wrap
+msgid "<S10 />\n"
+msgstr "<S10 />\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:109
+#: src/guides/custom-feed-tutorial/en.mdx:117
+#: src/guides/oauth-tutorial/en.mdx:135
+#: src/guides/statusphere-tutorial/en.mdx:111
+#, no-wrap
+msgid "<S11 />\n"
+msgstr "<S11 />\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:113
+#: src/guides/custom-feed-tutorial/en.mdx:132
+#: src/guides/oauth-tutorial/en.mdx:139
+#: src/guides/statusphere-tutorial/en.mdx:131
+#, no-wrap
+msgid "<S12 />\n"
+msgstr "<S12 />\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:117
+#: src/guides/custom-feed-tutorial/en.mdx:138
+#: src/guides/oauth-tutorial/en.mdx:143
+#: src/guides/statusphere-tutorial/en.mdx:135
+#, no-wrap
+msgid "<S13 />\n"
+msgstr "<S13 />\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:125 src/guides/oauth-tutorial/en.mdx:173
+#: src/guides/statusphere-tutorial/en.mdx:147
+#, no-wrap
+msgid "<S15 />\n"
+msgstr "<S15 />\n"
+
+#. type: Plain text
+#: src/guides/bot-tutorial/en.mdx:137
+#: src/guides/custom-feed-tutorial/en.mdx:146
+#: src/guides/oauth-tutorial/en.mdx:242
+#: src/guides/statusphere-tutorial/en.mdx:200
+#: src/guides/go-oauth-cli-tutorial/en.mdx:98
+#: src/guides/oauth-cli-tutorial/en.mdx:92
+#: src/guides/labels-tutorial/en.mdx:149 src/articles/atproto-ethos/en.mdx:135
 #, no-wrap
 msgid "## Conclusion\n"
 msgstr "<Heading level={2} id=\"conclusion\">結論</Heading>\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:5
+#: src/guides/custom-feed-tutorial/en.mdx:144
+#: src/guides/oauth-tutorial/en.mdx:171
+#, no-wrap
+msgid ""
+"<S14 />\n"
+"</Note>\n"
+msgstr ""
+"<S14 />\n"
+"</Note>\n"
+
+#. type: Plain text
+#: src/guides/oauth-tutorial/en.mdx:32
 #, no-wrap
 msgid ""
 "import {Container} from \"@/components/Container\"\n"
 "import workingauth from \"./authentication-working.png\"\n"
 "import starter from \"./nextjs-starter.png\"\n"
 "import metadata from \"./client-metadata.png\"\n"
+"import S01 from './_snippets/01-install-brew.mdx'\n"
+"import S02 from './_snippets/02-create-next-app.mdx'\n"
+"import S03 from './_snippets/03-pnpm-add-oauth-client.mdx'\n"
+"import S04 from './_snippets/04-pnpm-dev.mdx'\n"
+"import S05 from './_snippets/05-lib-auth-client.mdx'\n"
+"import S06 from './_snippets/06-lib-auth-session.mdx'\n"
+"import S07 from './_snippets/07-oauth-login-route.mdx'\n"
+"import S08 from './_snippets/08-oauth-callback-route.mdx'\n"
+"import S09 from './_snippets/09-oauth-logout-route.mdx'\n"
+"import S10 from './_snippets/10-oauth-client-metadata-route.mdx'\n"
+"import S11 from './_snippets/11-login-form.mdx'\n"
+"import S12 from './_snippets/12-logout-button.mdx'\n"
+"import S13 from './_snippets/13-app-page.mdx'\n"
+"import S14 from './_snippets/14-pnpm-workspace-yaml.mdx'\n"
+"import S15 from './_snippets/15-pnpm-add-sqlite.mdx'\n"
+"import S16 from './_snippets/16-next-config.mdx'\n"
+"import S17 from './_snippets/17-lib-db-index.mdx'\n"
+"import S18 from './_snippets/18-lib-db-migrations.mdx'\n"
+"import S19 from './_snippets/19-scripts-migrate.mdx'\n"
+"import S20 from './_snippets/20-package-json-migrate.mdx'\n"
+"import S21 from './_snippets/21-client-ts-db-stores.mdx'\n"
+"import S22 from './_snippets/22-jwks-route.mdx'\n"
+"import S23 from './_snippets/23-client-ts-production.mdx'\n"
+"import S24 from './_snippets/24-scripts-gen-key.mdx'\n"
+"import S25 from './_snippets/25-package-json-gen-key.mdx'\n"
+"import S26 from './_snippets/26-env-vars.mdx'\n"
+"import S27 from './_snippets/27-scope-constant.mdx'\n"
 msgstr ""
 "import {Container} from \"@/components/Container\"\n"
 "import {Heading} from \"@/components/Heading\"\n"
 "import workingauth from \"./authentication-working.png\"\n"
 "import starter from \"./nextjs-starter.png\"\n"
 "import metadata from \"./client-metadata.png\"\n"
+"import S01 from './_snippets/01-install-brew.mdx'\n"
+"import S02 from './_snippets/02-create-next-app.mdx'\n"
+"import S03 from './_snippets/03-pnpm-add-oauth-client.mdx'\n"
+"import S04 from './_snippets/04-pnpm-dev.mdx'\n"
+"import S05 from './_snippets/05-lib-auth-client.mdx'\n"
+"import S06 from './_snippets/06-lib-auth-session.mdx'\n"
+"import S07 from './_snippets/07-oauth-login-route.mdx'\n"
+"import S08 from './_snippets/08-oauth-callback-route.mdx'\n"
+"import S09 from './_snippets/09-oauth-logout-route.mdx'\n"
+"import S10 from './_snippets/10-oauth-client-metadata-route.mdx'\n"
+"import S11 from './_snippets/11-login-form.mdx'\n"
+"import S12 from './_snippets/12-logout-button.mdx'\n"
+"import S13 from './_snippets/13-app-page.mdx'\n"
+"import S14 from './_snippets/14-pnpm-workspace-yaml.mdx'\n"
+"import S15 from './_snippets/15-pnpm-add-sqlite.mdx'\n"
+"import S16 from './_snippets/16-next-config.mdx'\n"
+"import S17 from './_snippets/17-lib-db-index.mdx'\n"
+"import S18 from './_snippets/18-lib-db-migrations.mdx'\n"
+"import S19 from './_snippets/19-scripts-migrate.mdx'\n"
+"import S20 from './_snippets/20-package-json-migrate.mdx'\n"
+"import S21 from './_snippets/21-client-ts-db-stores.mdx'\n"
+"import S22 from './_snippets/22-jwks-route.mdx'\n"
+"import S23 from './_snippets/23-client-ts-production.mdx'\n"
+"import S24 from './_snippets/24-scripts-gen-key.mdx'\n"
+"import S25 from './_snippets/25-package-json-gen-key.mdx'\n"
+"import S26 from './_snippets/26-env-vars.mdx'\n"
+"import S27 from './_snippets/27-scope-constant.mdx'\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:10
+#: src/guides/oauth-tutorial/en.mdx:37
 #, no-wrap
 msgid ""
 "export const header = {\n"
@@ -75,25 +275,25 @@ msgstr ""
 "}\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:12
+#: src/guides/oauth-tutorial/en.mdx:39
 #, no-wrap
 msgid "In this tutorial, you'll build a Next.js app where users can log in with their AT Protocol identity using OAuth. If you [host your own PDS](/guides/self-hosting), that means you can provide your own auth source for any apps in the Atmosphere.\n"
 msgstr "このチュートリアルでは、OAuthを使ってユーザーがATプロトコルのIDでログインできるNext.jsアプリを作成します。[自分のPDSをホスト](/guides/self-hosting)している場合、Atmosphere上の任意のアプリに対して独自の認証ソースを提供できます。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:14
+#: src/guides/oauth-tutorial/en.mdx:41
 #, no-wrap
 msgid "You can find the source code for this tutorial, along with other example projects, in the [Cookbook](https://github.com/bluesky-social/cookbook/) repository, under `nextjs-oauth`.\n"
 msgstr "このチュートリアルのソースコードは、他のサンプルプロジェクトとあわせて[Cookbook](https://github.com/bluesky-social/cookbook/)リポジトリの`nextjs-oauth`にあります。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:20
+#: src/guides/oauth-tutorial/en.mdx:47
 #, no-wrap
 msgid "This OAuth tutorial does not use many atproto concepts or dependencies. You should have a working understanding of Next.js and TypeScript.\n"
 msgstr "このOAuthチュートリアルではatprotoの概念や依存関係をあまり使いません。Next.jsとTypeScriptの実用的な理解があることを前提とします。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:24
+#: src/guides/oauth-tutorial/en.mdx:51
 #, no-wrap
 msgid ""
 "You should have installed:\n"
@@ -105,96 +305,45 @@ msgstr ""
 "- pnpmパッケージマネージャー\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:26
+#: src/guides/oauth-tutorial/en.mdx:53
 #, no-wrap
 msgid "On platforms supported by [homebrew](https://brew.sh/), you can install these with:\n"
 msgstr "[homebrew](https://brew.sh/)に対応したプラットフォームでは、次のコマンドでインストールできます。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:30
-#, no-wrap
-msgid ""
-"```bash\n"
-"brew install node pnpm\n"
-"```\n"
-msgstr ""
-"```bash\n"
-"brew install node pnpm\n"
-"```\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:32
-#: src/guides/go-oauth-cli-tutorial/en.mdx:26
-#: src/guides/oauth-cli-tutorial/en.mdx:26
+#: src/guides/oauth-tutorial/en.mdx:57
+#: src/guides/go-oauth-cli-tutorial/en.mdx:34
+#: src/guides/oauth-cli-tutorial/en.mdx:33
 #, no-wrap
 msgid "## Part 1: Project Setup\n"
 msgstr "<Heading level={2} id=\"part-1-project-setup\">パート1：セットアップ</Heading>\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:34
+#: src/guides/oauth-tutorial/en.mdx:59
 #, no-wrap
 msgid "You'll start by creating a new Next.js project using the `create-next-app` command.\n"
 msgstr "まず`create-next-app`コマンドで新しいNext.jsプロジェクトを作成します。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:39
-#, no-wrap
-msgid ""
-"```bash\n"
-"npx create-next-app@latest my-app --yes\n"
-"cd my-app\n"
-"```\n"
-msgstr ""
-"```bash\n"
-"npx create-next-app@latest my-app --yes\n"
-"cd my-app\n"
-"```\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:41
+#: src/guides/oauth-tutorial/en.mdx:63
 #, no-wrap
 msgid "Next, add the `oauth-client-node` package from the atproto ecosystem, which provides OAuth client functionality.\n"
 msgstr "次に、OAuthクライアント機能を提供するatprotoエコシステムの`oauth-client-node`パッケージを追加します。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:45
-#, no-wrap
-msgid ""
-"```bash\n"
-"pnpm add @atproto/oauth-client-node\n"
-"```\n"
-msgstr ""
-"```bash\n"
-"pnpm add @atproto/oauth-client-node\n"
-"```\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:47
+#: src/guides/oauth-tutorial/en.mdx:67
 #, no-wrap
 msgid "That's all you need to get started! You can now run the development server with:\n"
 msgstr "準備はこれで完了です。次のコマンドで開発サーバーを起動できます。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:51 src/guides/oauth-tutorial/en.mdx:435
-#: src/guides/oauth-tutorial/en.mdx:648
-#, no-wrap
-msgid ""
-"```bash\n"
-"pnpm dev\n"
-"```\n"
-msgstr ""
-"```bash\n"
-"pnpm dev\n"
-"```\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:53
+#: src/guides/oauth-tutorial/en.mdx:71
 #, no-wrap
 msgid "Navigate to your app in a browser at [http://127.0.0.1:3000](http://127.0.0.1:3000).\n"
 msgstr "ブラウザで[http://127.0.0.1:3000](http://127.0.0.1:3000)にアクセスしてください。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:57
+#: src/guides/oauth-tutorial/en.mdx:75
 #, no-wrap
 msgid ""
 "<Note>\n"
@@ -206,13 +355,13 @@ msgstr ""
 "</Note>\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:59
+#: src/guides/oauth-tutorial/en.mdx:77
 #, no-wrap
 msgid "You should receive the Next.js starter page:\n"
 msgstr "Next.jsのスターターページが表示されるはずです。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:63
+#: src/guides/oauth-tutorial/en.mdx:81
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -224,207 +373,55 @@ msgstr ""
 "</Container>\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:65
+#: src/guides/oauth-tutorial/en.mdx:83
 #, no-wrap
 msgid "Next, you'll implement baseline OAuth functionality.\n"
 msgstr "次に、基本となるOAuth機能を実装します。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:67
+#: src/guides/oauth-tutorial/en.mdx:85
 #, no-wrap
 msgid "## Part 2: Implementing OAuth\n"
-msgstr "<Heading level={2} id=\"part-2-implementing-oauth\">パート2：OAuthの実装</Heading>\n"
+msgstr "<Heading level={2} id=\"part-2-implementing-o-auth\">パート2：OAuthの実装</Heading>\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:69
+#: src/guides/oauth-tutorial/en.mdx:87
 #, no-wrap
 msgid "You'll start out implementing OAuth using a local *loopback* client with in-memory storage.\n"
 msgstr "まず、インメモリストレージを使うローカルの*ループバック*クライアントでOAuthを実装します。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:71
+#: src/guides/oauth-tutorial/en.mdx:89
 #, no-wrap
 msgid "OAuth loopback works by using a special redirect URI (like http://127.0.0.1:PORT/callback) to send authorization codes directly back to an app, which listens on a local port, avoiding browser-based callbacks and enabling secure, direct communication for token exchange. Instead of a web redirect, the app opens a local listener, you can auth in a browser, and the server redirects back to the app's local URI, letting the app grab the code and exchange it for a token. It's particularly useful for development scenarios.\n"
 msgstr "OAuthループバックは、特別なリダイレクトURI（例：`http://127.0.0.1:PORT/callback`）を使って認可コードをアプリへ直接返す仕組みです。アプリはローカルポートで待ち受けるため、ブラウザベースのコールバックを避けつつ安全にトークン交換できます。ウェブへのリダイレクトの代わりに、アプリがローカルリスナーを開き、ブラウザで認証したあとサーバーがアプリのローカルURIに戻すことで、アプリがコードを受け取ってトークンに交換します。特に開発時に有用です。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:73
+#: src/guides/oauth-tutorial/en.mdx:91
 #, no-wrap
 msgid "To do this, you'll implement a [confidential client](/specs/oauth#types-of-clients). Your Next.js server will hold credentials for talking to a user's PDS. The server will verify incoming requests from the browser using cookies for session auth.\n"
 msgstr "これをするために[機密クライアント](/specs/oauth#types-of-clients)を実装します。Next.jsサーバーがユーザーのPDSと通信するための資格情報を保持し、ブラウザからのリクエストをクッキーでセッション認証して検証します。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:75
+#: src/guides/oauth-tutorial/en.mdx:93
 #, no-wrap
 msgid "First, create `lib/auth/client.ts`:\n"
 msgstr "まず`lib/auth/client.ts`を作成します。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:85
-#, no-wrap
-msgid ""
-"```typescript\n"
-"import {\n"
-"  NodeOAuthClient,\n"
-"  buildAtprotoLoopbackClientMetadata,\n"
-"} from \"@atproto/oauth-client-node\";\n"
-"import type {\n"
-"  NodeSavedSession,\n"
-"  NodeSavedState,\n"
-"} from \"@atproto/oauth-client-node\";\n"
-msgstr ""
-"```typescript\n"
-"import {\n"
-"  NodeOAuthClient,\n"
-"  buildAtprotoLoopbackClientMetadata,\n"
-"} from \"@atproto/oauth-client-node\";\n"
-"import type {\n"
-"  NodeSavedSession,\n"
-"  NodeSavedState,\n"
-"} from \"@atproto/oauth-client-node\";\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:87 src/guides/oauth-tutorial/en.mdx:700
-#, no-wrap
-msgid "export const SCOPE = \"atproto\";\n"
-msgstr "export const SCOPE = \"atproto\";\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:95
-#, no-wrap
-msgid ""
-"// Use globalThis to persist across Next.js hot reloads\n"
-"const globalAuth = globalThis as unknown as {\n"
-"  stateStore: Map<string, NodeSavedState>;\n"
-"  sessionStore: Map<string, NodeSavedSession>;\n"
-"};\n"
-"globalAuth.stateStore ??= new Map();\n"
-"globalAuth.sessionStore ??= new Map();\n"
-msgstr ""
-"// Next.jsのホットリロードで消えないよう、globalThisを使います\n"
-"const globalAuth = globalThis as unknown as {\n"
-"  stateStore: Map<string, NodeSavedState>;\n"
-"  sessionStore: Map<string, NodeSavedSession>;\n"
-"};\n"
-"globalAuth.stateStore ??= new Map();\n"
-"globalAuth.sessionStore ??= new Map();\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:97 src/guides/oauth-tutorial/en.mdx:702
-#, no-wrap
-msgid "let client: NodeOAuthClient | null = null;\n"
-msgstr "let client: NodeOAuthClient | null = null;\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:100
-#, no-wrap
-msgid ""
-"export async function getOAuthClient(): Promise<NodeOAuthClient> {\n"
-"  if (client) return client;\n"
-msgstr ""
-"export async function getOAuthClient(): Promise<NodeOAuthClient> {\n"
-"  if (client) return client;\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:106
-#, no-wrap
-msgid ""
-"  client = new NodeOAuthClient({\n"
-"    clientMetadata: buildAtprotoLoopbackClientMetadata({\n"
-"      scope: SCOPE,\n"
-"      redirect_uris: [\"http://127.0.0.1:3000/oauth/callback\"],\n"
-"    }),\n"
-msgstr ""
-"  client = new NodeOAuthClient({\n"
-"    clientMetadata: buildAtprotoLoopbackClientMetadata({\n"
-"      scope: SCOPE,\n"
-"      redirect_uris: [\"http://127.0.0.1:3000/oauth/callback\"],\n"
-"    }),\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:118
-#, no-wrap
-msgid ""
-"    stateStore: {\n"
-"      async get(key: string) {\n"
-"        return globalAuth.stateStore.get(key);\n"
-"      },\n"
-"      async set(key: string, value: NodeSavedState) {\n"
-"        globalAuth.stateStore.set(key, value);\n"
-"      },\n"
-"      async del(key: string) {\n"
-"        globalAuth.stateStore.delete(key);\n"
-"      },\n"
-"    },\n"
-msgstr ""
-"    stateStore: {\n"
-"      async get(key: string) {\n"
-"        return globalAuth.stateStore.get(key);\n"
-"      },\n"
-"      async set(key: string, value: NodeSavedState) {\n"
-"        globalAuth.stateStore.set(key, value);\n"
-"      },\n"
-"      async del(key: string) {\n"
-"        globalAuth.stateStore.delete(key);\n"
-"      },\n"
-"    },\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:131
-#, no-wrap
-msgid ""
-"    sessionStore: {\n"
-"      async get(key: string) {\n"
-"        return globalAuth.sessionStore.get(key);\n"
-"      },\n"
-"      async set(key: string, value: NodeSavedSession) {\n"
-"        globalAuth.sessionStore.set(key, value);\n"
-"      },\n"
-"      async del(key: string) {\n"
-"        globalAuth.sessionStore.delete(key);\n"
-"      },\n"
-"    },\n"
-"  });\n"
-msgstr ""
-"    sessionStore: {\n"
-"      async get(key: string) {\n"
-"        return globalAuth.sessionStore.get(key);\n"
-"      },\n"
-"      async set(key: string, value: NodeSavedSession) {\n"
-"        globalAuth.sessionStore.set(key, value);\n"
-"      },\n"
-"      async del(key: string) {\n"
-"        globalAuth.sessionStore.delete(key);\n"
-"      },\n"
-"    },\n"
-"  });\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:135
-#, no-wrap
-msgid ""
-"  return client;\n"
-"}\n"
-"```\n"
-msgstr ""
-"  return client;\n"
-"}\n"
-"```\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:137
+#: src/guides/oauth-tutorial/en.mdx:97
 #, no-wrap
 msgid "`stateStore` is temporary storage using during the OAuth flow; `sessionStore` is persistent storage keyed by a user's DID. The `globalThis` pattern is a standard Next.js technique for persisting data across hot module reloads in development. Without this, the in-memory stores would be wiped every time you edit a file.\n"
 msgstr "`stateStore`はOAuthフロー中に使う一時ストレージ、`sessionStore`はユーザーDIDをキーにした永続ストレージです。`globalThis`パターンは、開発中のホットリロードをまたいでデータを保持するためのNext.jsの定番手法です。これがないと、ファイル編集のたびにインメモリストアが消えます。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:139
+#: src/guides/oauth-tutorial/en.mdx:99
 #, no-wrap
 msgid "AT Protocol OAuth has a special carveout for local development. The `client_id` must be `localhost` and the `redirect_uri` must be on host 127.0.0.1. Read more in the [Localhost Client Development specs](/specs/oauth#localhost-client-development).\n"
 msgstr "ATプロトコルOAuthにはローカル開発向けの特例があります。`client_id`は`localhost`、`redirect_uri`のホストは127.0.0.1である必要があります。詳細は仕様の[Localhost Client Development](/specs/oauth#localhost-client-development)を参照してください。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:143
+#: src/guides/oauth-tutorial/en.mdx:103
 #, no-wrap
 msgid ""
 "<Note>\n"
@@ -436,395 +433,49 @@ msgstr ""
 "</Note>\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:145
+#: src/guides/oauth-tutorial/en.mdx:105
 #, no-wrap
 msgid "Next, create `lib/auth/session.ts` to manage user sessions:\n"
 msgstr "次に、ユーザーセッションを管理する`lib/auth/session.ts`を作成します。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:150
-#, no-wrap
-msgid ""
-"```typescript\n"
-"import { cookies } from \"next/headers\";\n"
-"import { getOAuthClient } from \"./client\";\n"
-"import type { OAuthSession } from \"@atproto/oauth-client-node\";\n"
-msgstr ""
-"```typescript\n"
-"import { cookies } from \"next/headers\";\n"
-"import { getOAuthClient } from \"./client\";\n"
-"import type { OAuthSession } from \"@atproto/oauth-client-node\";\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:154
-#, no-wrap
-msgid ""
-"export async function getSession(): Promise<OAuthSession | null> {\n"
-"  const did = await getDid();\n"
-"  if (!did) return null;\n"
-msgstr ""
-"export async function getSession(): Promise<OAuthSession | null> {\n"
-"  const did = await getDid();\n"
-"  if (!did) return null;\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:162
-#, no-wrap
-msgid ""
-"  try {\n"
-"    const client = await getOAuthClient();\n"
-"    return await client.restore(did);\n"
-"  } catch {\n"
-"    return null;\n"
-"  }\n"
-"}\n"
-msgstr ""
-"  try {\n"
-"    const client = await getOAuthClient();\n"
-"    return await client.restore(did);\n"
-"  } catch {\n"
-"    return null;\n"
-"  }\n"
-"}\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:168
-#, no-wrap
-msgid ""
-"export async function getDid(): Promise<string | null> {\n"
-"  const cookieStore = await cookies();\n"
-"  return cookieStore.get(\"did\")?.value ?? null;\n"
-"}\n"
-"```\n"
-msgstr ""
-"export async function getDid(): Promise<string | null> {\n"
-"  const cookieStore = await cookies();\n"
-"  return cookieStore.get(\"did\")?.value ?? null;\n"
-"}\n"
-"```\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:170
+#: src/guides/oauth-tutorial/en.mdx:109
 #, no-wrap
 msgid "Then, create `app/oauth/login/route.ts`. This route initiates the login flow. You only need the user's handle — with it, you can resolve the user's Authorization Server (their PDS) and redirect them there:\n"
 msgstr "続いて`app/oauth/login/route.ts`を作成します。このルートはログインフローを開始します。必要なのはユーザーのハンドルだけで、そこからユーザーの認可サーバー（PDS）へ解決してリダイレクトできます。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:174
-#, no-wrap
-msgid ""
-"```typescript\n"
-"import { NextRequest, NextResponse } from \"next/server\";\n"
-"import { getOAuthClient, SCOPE } from \"@/lib/auth/client\";\n"
-msgstr ""
-"```typescript\n"
-"import { NextRequest, NextResponse } from \"next/server\";\n"
-"import { getOAuthClient, SCOPE } from \"@/lib/auth/client\";\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:178
-#, no-wrap
-msgid ""
-"export async function POST(request: NextRequest) {\n"
-"  try {\n"
-"    const { handle } = await request.json();\n"
-msgstr ""
-"export async function POST(request: NextRequest) {\n"
-"  try {\n"
-"    const { handle } = await request.json();\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:185
-#, no-wrap
-msgid ""
-"    if (!handle || typeof handle !== \"string\") {\n"
-"      return NextResponse.json(\n"
-"        { error: \"Handle is required\" },\n"
-"        { status: 400 }\n"
-"      );\n"
-"    }\n"
-msgstr ""
-"    if (!handle || typeof handle !== \"string\") {\n"
-"      return NextResponse.json(\n"
-"        { error: \"Handle is required\" },\n"
-"        { status: 400 }\n"
-"      );\n"
-"    }\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:187
-#, no-wrap
-msgid "    const client = await getOAuthClient();\n"
-msgstr "    const client = await getOAuthClient();\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:192
-#, no-wrap
-msgid ""
-"    // Resolves handle, finds their auth server, returns authorization URL\n"
-"    const authUrl = await client.authorize(handle, {\n"
-"      scope: SCOPE,\n"
-"    });\n"
-msgstr ""
-"    // ハンドルを解決し、認可サーバーを見つけ、認可URLを返す\n"
-"    const authUrl = await client.authorize(handle, {\n"
-"      scope: SCOPE,\n"
-"    });\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:203
-#, no-wrap
-msgid ""
-"    return NextResponse.json({ redirectUrl: authUrl.toString() });\n"
-"  } catch (error) {\n"
-"    console.error(\"OAuth login error:\", error);\n"
-"    return NextResponse.json(\n"
-"      { error: error instanceof Error ? error.message : \"Login failed\" },\n"
-"      { status: 500 }\n"
-"    );\n"
-"  }\n"
-"}\n"
-"```\n"
-msgstr ""
-"    return NextResponse.json({ redirectUrl: authUrl.toString() });\n"
-"  } catch (error) {\n"
-"    console.error(\"OAuth login error:\", error);\n"
-"    return NextResponse.json(\n"
-"      { error: error instanceof Error ? error.message : \"Login failed\" },\n"
-"      { status: 500 }\n"
-"    );\n"
-"  }\n"
-"}\n"
-"```\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:205
+#: src/guides/oauth-tutorial/en.mdx:113
 #, no-wrap
 msgid "After a user approves the authorization consent screen, they'll be redirected to a callback route. Here, you'll exchange the code from the redirect for actual credentials, then set a cookie for the user's DID. Create `app/oauth/callback/route.ts`:\n"
 msgstr "ユーザーが同意画面で認可を許可すると、コールバックルートへリダイレクトされます。ここでリダイレクトで受け取ったコードを実際の認証情報に交換し、ユーザーDIDのクッキーを設定します。`app/oauth/callback/route.ts`を作成してください。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:209
-#, no-wrap
-msgid ""
-"```typescript\n"
-"import { NextRequest, NextResponse } from \"next/server\";\n"
-"import { getOAuthClient } from \"@/lib/auth/client\";\n"
-msgstr ""
-"```typescript\n"
-"import { NextRequest, NextResponse } from \"next/server\";\n"
-"import { getOAuthClient } from \"@/lib/auth/client\";\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:211
-#, no-wrap
-msgid "const PUBLIC_URL = process.env.PUBLIC_URL || \"http://127.0.0.1:3000\";\n"
-msgstr "const PUBLIC_URL = process.env.PUBLIC_URL || \"http://127.0.0.1:3000\";\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:216
-#, no-wrap
-msgid ""
-"export async function GET(request: NextRequest) {\n"
-"  try {\n"
-"    const params = request.nextUrl.searchParams;\n"
-"    const client = await getOAuthClient();\n"
-msgstr ""
-"export async function GET(request: NextRequest) {\n"
-"  try {\n"
-"    const params = request.nextUrl.searchParams;\n"
-"    const client = await getOAuthClient();\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:219
-#, no-wrap
-msgid ""
-"    // Exchange code for session\n"
-"    const { session } = await client.callback(params);\n"
-msgstr ""
-"    // コードを交換してセッション取得\n"
-"    const { session } = await client.callback(params);\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:221
-#, no-wrap
-msgid "    const response = NextResponse.redirect(new URL(\"/\", PUBLIC_URL));\n"
-msgstr "    const response = NextResponse.redirect(new URL(\"/\", PUBLIC_URL));\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:230
-#, no-wrap
-msgid ""
-"    // Set DID cookie\n"
-"    response.cookies.set(\"did\", session.did, {\n"
-"      httpOnly: true,\n"
-"      secure: process.env.NODE_ENV === \"production\",\n"
-"      sameSite: \"lax\",\n"
-"      maxAge: 60 * 60 * 24 * 7, // 1 week\n"
-"      path: \"/\",\n"
-"    });\n"
-msgstr ""
-"    // DIDクッキーを設定\n"
-"    response.cookies.set(\"did\", session.did, {\n"
-"      httpOnly: true,\n"
-"      secure: process.env.NODE_ENV === \"production\",\n"
-"      sameSite: \"lax\",\n"
-"      maxAge: 60 * 60 * 24 * 7, // 1 week\n"
-"      path: \"/\",\n"
-"    });\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:238
-#, no-wrap
-msgid ""
-"    return response;\n"
-"  } catch (error) {\n"
-"    console.error(\"OAuth callback error:\", error);\n"
-"    return NextResponse.redirect(new URL(\"/?error=login_failed\", PUBLIC_URL));\n"
-"  }\n"
-"}\n"
-"```\n"
-msgstr ""
-"    return response;\n"
-"  } catch (error) {\n"
-"    console.error(\"OAuth callback error:\", error);\n"
-"    return NextResponse.redirect(new URL(\"/?error=login_failed\", PUBLIC_URL));\n"
-"  }\n"
-"}\n"
-"```\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:240
+#: src/guides/oauth-tutorial/en.mdx:117
 #, no-wrap
 msgid "`PUBLIC_URL` falls back to `127.0.0.1:3000` to ensure you always redirect to the correct host. This avoids cookie issues that arise from `localhost` vs `127.0.0.1` mismatches.\n"
 msgstr "`PUBLIC_URL`は`127.0.0.1:3000`にフォールバックして、常に正しいホストへリダイレクトするようにしています。これにより`localhost`と`127.0.0.1`の不一致で発生するクッキー問題を回避できます。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:242
+#: src/guides/oauth-tutorial/en.mdx:119
 #, no-wrap
 msgid "Next, you should also create a logout route at `app/oauth/logout/route.ts` to clear the user's session:\n"
 msgstr "次に、ユーザーセッションをクリアするため`app/oauth/logout/route.ts`にログアウトルートも作成します。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:247
-#, no-wrap
-msgid ""
-"```typescript\n"
-"import { NextResponse } from \"next/server\";\n"
-"import { cookies } from \"next/headers\";\n"
-"import { getOAuthClient } from \"@/lib/auth/client\";\n"
-msgstr ""
-"```typescript\n"
-"import { NextResponse } from \"next/server\";\n"
-"import { cookies } from \"next/headers\";\n"
-"import { getOAuthClient } from \"@/lib/auth/client\";\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:252
-#, no-wrap
-msgid ""
-"export async function POST() {\n"
-"  try {\n"
-"    const cookieStore = await cookies();\n"
-"    const did = cookieStore.get(\"did\")?.value;\n"
-msgstr ""
-"export async function POST() {\n"
-"  try {\n"
-"    const cookieStore = await cookies();\n"
-"    const did = cookieStore.get(\"did\")?.value;\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:257
-#, no-wrap
-msgid ""
-"    if (did) {\n"
-"      const client = await getOAuthClient();\n"
-"      await client.revoke(did);\n"
-"    }\n"
-msgstr ""
-"    if (did) {\n"
-"      const client = await getOAuthClient();\n"
-"      await client.revoke(did);\n"
-"    }\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:268
-#, no-wrap
-msgid ""
-"    cookieStore.delete(\"did\");\n"
-"    return NextResponse.json({ success: true });\n"
-"  } catch (error) {\n"
-"    console.error(\"Logout error:\", error);\n"
-"    const cookieStore = await cookies();\n"
-"    cookieStore.delete(\"did\");\n"
-"    return NextResponse.json({ success: true });\n"
-"  }\n"
-"}\n"
-"```\n"
-msgstr ""
-"    cookieStore.delete(\"did\");\n"
-"    return NextResponse.json({ success: true });\n"
-"  } catch (error) {\n"
-"    console.error(\"Logout error:\", error);\n"
-"    const cookieStore = await cookies();\n"
-"    cookieStore.delete(\"did\");\n"
-"    return NextResponse.json({ success: true });\n"
-"  }\n"
-"}\n"
-"```\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:270
+#: src/guides/oauth-tutorial/en.mdx:123
 #, no-wrap
 msgid "Finally, you'll make one last route, to expose the `oauth-client-metadata.json` at a well-known URL. This is [used in atproto OAuth](/specs/oauth#clients) to discover client configuration. Create `app/oauth-client-metadata.json/route.ts`:\n"
 msgstr "最後にもう1つルートを作成し、`oauth-client-metadata.json`をwell-known URLで公開します。これはatproto OAuthでクライアント設定の検出に[使われます](/specs/oauth#clients)。`app/oauth-client-metadata.json/route.ts`を作成してください。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:274
-#, no-wrap
-msgid ""
-"```typescript\n"
-"import { getOAuthClient } from \"@/lib/auth/client\";\n"
-"import { NextResponse } from \"next/server\";\n"
-msgstr ""
-"```typescript\n"
-"import { getOAuthClient } from \"@/lib/auth/client\";\n"
-"import { NextResponse } from \"next/server\";\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:277
-#, no-wrap
-msgid ""
-"// The URL of this endpoint IS your client_id\n"
-"// Authorization servers fetch this to learn about your app\n"
-msgstr ""
-"// このエンドポイントのURLがclient_idになる\n"
-"// 認可サーバーはこの情報を取得してアプリ設定を把握する\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:283
-#, no-wrap
-msgid ""
-"export async function GET() {\n"
-"  const client = await getOAuthClient();\n"
-"  return NextResponse.json(client.clientMetadata);\n"
-"}\n"
-"```\n"
-msgstr ""
-"export async function GET() {\n"
-"  const client = await getOAuthClient();\n"
-"  return NextResponse.json(client.clientMetadata);\n"
-"}\n"
-"```\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:285
+#: src/guides/oauth-tutorial/en.mdx:127
 #, no-wrap
 msgid "You can visit http://127.0.0.1:3000/oauth-client-metadata.json to see your client configuration.\n"
 msgstr "http://127.0.0.1:3000/oauth-client-metadata.json にアクセスすると、クライアント設定を確認できます。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:289
+#: src/guides/oauth-tutorial/en.mdx:131
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -836,365 +487,37 @@ msgstr ""
 "</Container>\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:291
+#: src/guides/oauth-tutorial/en.mdx:133
 #, no-wrap
 msgid "Now you just need to add a few forms. Create `components/LoginForm.tsx`:\n"
 msgstr "あとはフォームをいくつか追加するだけです。`components/LoginForm.tsx`を作成します。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:294 src/guides/oauth-tutorial/en.mdx:362
-#: src/guides/statusphere-tutorial/en.mdx:189
-#, no-wrap
-msgid ""
-"```tsx\n"
-"\"use client\";\n"
-msgstr ""
-"```tsx\n"
-"\"use client\";\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:296
-#, no-wrap
-msgid "import { useState } from \"react\";\n"
-msgstr "import { useState } from \"react\";\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:301
-#, no-wrap
-msgid ""
-"export function LoginForm() {\n"
-"  const [handle, setHandle] = useState(\"\");\n"
-"  const [loading, setLoading] = useState(false);\n"
-"  const [error, setError] = useState<string | null>(null);\n"
-msgstr ""
-"export function LoginForm() {\n"
-"  const [handle, setHandle] = useState(\"\");\n"
-"  const [loading, setLoading] = useState(false);\n"
-"  const [error, setError] = useState<string | null>(null);\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:306
-#, no-wrap
-msgid ""
-"  async function handleSubmit(e: React.FormEvent) {\n"
-"    e.preventDefault();\n"
-"    setLoading(true);\n"
-"    setError(null);\n"
-msgstr ""
-"  async function handleSubmit(e: React.FormEvent) {\n"
-"    e.preventDefault();\n"
-"    setLoading(true);\n"
-"    setError(null);\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:313
-#, no-wrap
-msgid ""
-"    try {\n"
-"      const res = await fetch(\"/oauth/login\", {\n"
-"        method: \"POST\",\n"
-"        headers: { \"Content-Type\": \"application/json\" },\n"
-"        body: JSON.stringify({ handle }),\n"
-"      });\n"
-msgstr ""
-"    try {\n"
-"      const res = await fetch(\"/oauth/login\", {\n"
-"        method: \"POST\",\n"
-"        headers: { \"Content-Type\": \"application/json\" },\n"
-"        body: JSON.stringify({ handle }),\n"
-"      });\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:315
-#, no-wrap
-msgid "      const data = await res.json();\n"
-msgstr "      const data = await res.json();\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:319
-#, no-wrap
-msgid ""
-"      if (!res.ok) {\n"
-"        throw new Error(data.error || \"Login failed\");\n"
-"      }\n"
-msgstr ""
-"      if (!res.ok) {\n"
-"        throw new Error(data.error || \"Login failed\");\n"
-"      }\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:327
-#, no-wrap
-msgid ""
-"      // Redirect to authorization server\n"
-"      window.location.href = data.redirectUrl;\n"
-"    } catch (err) {\n"
-"      setError(err instanceof Error ? err.message : \"Login failed\");\n"
-"      setLoading(false);\n"
-"    }\n"
-"  }\n"
-msgstr ""
-"      // 認可サーバーにリダイレクト\n"
-"      window.location.href = data.redirectUrl;\n"
-"    } catch (err) {\n"
-"      setError(err instanceof Error ? err.message : \"Login failed\");\n"
-"      setLoading(false);\n"
-"    }\n"
-"  }\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:343
-#, no-wrap
-msgid ""
-"  return (\n"
-"    <form onSubmit={handleSubmit} className=\"space-y-4\">\n"
-"      <div>\n"
-"        <label className=\"block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-1\">\n"
-"          Handle\n"
-"        </label>\n"
-"        <input\n"
-"          type=\"text\"\n"
-"          value={handle}\n"
-"          onChange={(e) => setHandle(e.target.value)}\n"
-"          placeholder=\"user.example.com\"\n"
-"          className=\"w-full px-3 py-2 border border-zinc-300 dark:border-zinc-700 rounded-lg bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100\"\n"
-"          disabled={loading}\n"
-"        />\n"
-"      </div>\n"
-msgstr ""
-"  return (\n"
-"    <form onSubmit={handleSubmit} className=\"space-y-4\">\n"
-"      <div>\n"
-"        <label className=\"block text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-1\">\n"
-"          Handle\n"
-"        </label>\n"
-"        <input\n"
-"          type=\"text\"\n"
-"          value={handle}\n"
-"          onChange={(e) => setHandle(e.target.value)}\n"
-"          placeholder=\"user.example.com\"\n"
-"          className=\"w-full px-3 py-2 border border-zinc-300 dark:border-zinc-700 rounded-lg bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100\"\n"
-"          disabled={loading}\n"
-"        />\n"
-"      </div>\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:345
-#, no-wrap
-msgid "      {error && <p className=\"text-red-500 text-sm\">{error}</p>}\n"
-msgstr "      {error && <p className=\"text-red-500 text-sm\">{error}</p>}\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:357
-#, no-wrap
-msgid ""
-"      <button\n"
-"        type=\"submit\"\n"
-"        disabled={loading || !handle}\n"
-"        className=\"w-full py-2 px-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50\"\n"
-"      >\n"
-"        {loading ? \"Signing in...\" : \"Sign in\"}\n"
-"      </button>\n"
-"    </form>\n"
-"  );\n"
-"}\n"
-"```\n"
-msgstr ""
-"      <button\n"
-"        type=\"submit\"\n"
-"        disabled={loading || !handle}\n"
-"        className=\"w-full py-2 px-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50\"\n"
-"      >\n"
-"        {loading ? \"Signing in...\" : \"Sign in\"}\n"
-"      </button>\n"
-"    </form>\n"
-"  );\n"
-"}\n"
-"```\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:359
+#: src/guides/oauth-tutorial/en.mdx:137
 #, no-wrap
 msgid "Do the same for `components/LogoutButton.tsx`:\n"
 msgstr "同様に`components/LogoutButton.tsx`も作成します。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:364
-#, no-wrap
-msgid "import { useRouter } from \"next/navigation\";\n"
-msgstr "import { useRouter } from \"next/navigation\";\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:367
-#, no-wrap
-msgid ""
-"export function LogoutButton() {\n"
-"  const router = useRouter();\n"
-msgstr ""
-"export function LogoutButton() {\n"
-"  const router = useRouter();\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:372
-#, no-wrap
-msgid ""
-"  async function handleLogout() {\n"
-"    await fetch(\"/oauth/logout\", { method: \"POST\" });\n"
-"    router.refresh();\n"
-"  }\n"
-msgstr ""
-"  async function handleLogout() {\n"
-"    await fetch(\"/oauth/logout\", { method: \"POST\" });\n"
-"    router.refresh();\n"
-"  }\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:383
-#, no-wrap
-msgid ""
-"  return (\n"
-"    <button\n"
-"      onClick={handleLogout}\n"
-"      className=\"text-sm text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200\"\n"
-"    >\n"
-"      Sign out\n"
-"    </button>\n"
-"  );\n"
-"}\n"
-"```\n"
-msgstr ""
-"  return (\n"
-"    <button\n"
-"      onClick={handleLogout}\n"
-"      className=\"text-sm text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200\"\n"
-"    >\n"
-"      Sign out\n"
-"    </button>\n"
-"  );\n"
-"}\n"
-"```\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:385
+#: src/guides/oauth-tutorial/en.mdx:141
 #, no-wrap
 msgid "And, finally, replace the starter `app/page.tsx` to use these components and show the user's DID when logged in:\n"
 msgstr "最後に、スターターの`app/page.tsx`を置き換えてこれらのコンポーネントを使い、ログイン時にユーザーDIDを表示します。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:390
-#, no-wrap
-msgid ""
-"```tsx\n"
-"import { getSession } from \"@/lib/auth/session\";\n"
-"import { LoginForm } from \"@/components/LoginForm\";\n"
-"import { LogoutButton } from \"@/components/LogoutButton\";\n"
-msgstr ""
-"```tsx\n"
-"import { getSession } from \"@/lib/auth/session\";\n"
-"import { LoginForm } from \"@/components/LoginForm\";\n"
-"import { LogoutButton } from \"@/components/LogoutButton\";\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:393
-#: src/guides/statusphere-tutorial/en.mdx:265
-#, no-wrap
-msgid ""
-"export default async function Home() {\n"
-"  const session = await getSession();\n"
-msgstr ""
-"export default async function Home() {\n"
-"  const session = await getSession();\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:405
-#, no-wrap
-msgid ""
-"  return (\n"
-"    <div className=\"flex min-h-screen items-center justify-center bg-zinc-50 dark:bg-zinc-950\">\n"
-"      <main className=\"w-full max-w-md mx-auto p-8\">\n"
-"        <div className=\"text-center mb-8\">\n"
-"          <h1 className=\"text-3xl font-bold text-zinc-900 dark:text-zinc-100 mb-2\">\n"
-"            AT Protocol OAuth\n"
-"          </h1>\n"
-"          <p className=\"text-zinc-600 dark:text-zinc-400\">\n"
-"            Sign in with your AT Protocol account\n"
-"          </p>\n"
-"        </div>\n"
-msgstr ""
-"  return (\n"
-"    <div className=\"flex min-h-screen items-center justify-center bg-zinc-50 dark:bg-zinc-950\">\n"
-"      <main className=\"w-full max-w-md mx-auto p-8\">\n"
-"        <div className=\"text-center mb-8\">\n"
-"          <h1 className=\"text-3xl font-bold text-zinc-900 dark:text-zinc-100 mb-2\">\n"
-"            AT Protocol OAuth\n"
-"          </h1>\n"
-"          <p className=\"text-zinc-600 dark:text-zinc-400\">\n"
-"            Sign in with your AT Protocol account\n"
-"          </p>\n"
-"        </div>\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:427
-#, no-wrap
-msgid ""
-"        <div className=\"bg-white dark:bg-zinc-900 rounded-lg border border-zinc-200 dark:border-zinc-800 p-6\">\n"
-"          {session ? (\n"
-"            <div className=\"space-y-4\">\n"
-"              <div className=\"flex items-center justify-between\">\n"
-"                <p className=\"text-sm text-zinc-600 dark:text-zinc-400\">\n"
-"                  Signed in as{\" \"}\n"
-"                  <span className=\"font-mono\">{session.did}</span>\n"
-"                </p>\n"
-"                <LogoutButton />\n"
-"              </div>\n"
-"              <p className=\"text-green-600\">Authentication working!</p>\n"
-"            </div>\n"
-"          ) : (\n"
-"            <LoginForm />\n"
-"          )}\n"
-"        </div>\n"
-"      </main>\n"
-"    </div>\n"
-"  );\n"
-"}\n"
-"```\n"
-msgstr ""
-"        <div className=\"bg-white dark:bg-zinc-900 rounded-lg border border-zinc-200 dark:border-zinc-800 p-6\">\n"
-"          {session ? (\n"
-"            <div className=\"space-y-4\">\n"
-"              <div className=\"flex items-center justify-between\">\n"
-"                <p className=\"text-sm text-zinc-600 dark:text-zinc-400\">\n"
-"                  Signed in as{\" \"}\n"
-"                  <span className=\"font-mono\">{session.did}</span>\n"
-"                </p>\n"
-"                <LogoutButton />\n"
-"              </div>\n"
-"              <p className=\"text-green-600\">Authentication working!</p>\n"
-"            </div>\n"
-"          ) : (\n"
-"            <LoginForm />\n"
-"          )}\n"
-"        </div>\n"
-"      </main>\n"
-"    </div>\n"
-"  );\n"
-"}\n"
-"```\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:429
+#: src/guides/oauth-tutorial/en.mdx:145
 #, no-wrap
 msgid "At this point, you should be able to test the OAuth flow!\n"
 msgstr "この時点でOAuthフローをテストできるはずです。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:431
+#: src/guides/oauth-tutorial/en.mdx:147
 #, no-wrap
 msgid "If your app isn't already running from Part 1, start it with:\n"
 msgstr "パート1からアプリをまだ起動していない場合は、次のように起動します。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:441
+#: src/guides/oauth-tutorial/en.mdx:155
 #, no-wrap
 msgid ""
 "Then:\n"
@@ -1209,7 +532,7 @@ msgstr ""
 "4. DIDとともに\"Authentication working!\"と表示される\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:445
+#: src/guides/oauth-tutorial/en.mdx:159
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -1221,25 +544,25 @@ msgstr ""
 "</Container>\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:447
+#: src/guides/oauth-tutorial/en.mdx:161
 #, no-wrap
 msgid "Congratulations — you've now implemented working OAuth as a baseline, and can move on to more exciting features.\n"
 msgstr "おめでとうございます。これで動作するOAuthの土台ができたので、次はより発展的な機能に進めます。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:449
+#: src/guides/oauth-tutorial/en.mdx:163
 #, no-wrap
 msgid "## Part 3: Adding Database Persistence\n"
 msgstr "<Heading level={2} id=\"part-3-adding-database-persistence\">パート3：データベース永続化の追加</Heading>\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:451
+#: src/guides/oauth-tutorial/en.mdx:165
 #, no-wrap
 msgid "The in-memory approach used so far works for local development, but for production you'll want a proper database. Let's add SQLite and some other dependencies to manage this:\n"
 msgstr "ここまで使ってきたインメモリ方式はローカル開発には十分ですが、本番では適切なデータベースが必要です。SQLiteとその依存関係を追加しましょう。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:454
+#: src/guides/oauth-tutorial/en.mdx:168
 #, no-wrap
 msgid ""
 "<Note>\n"
@@ -1249,507 +572,103 @@ msgstr ""
 "推奨通り`pnpm`をパッケージマネージャーとして使用している場合は、次のステップで`better-sqlite3`が正しくビルドされるように、次の内容を含む`pnpm-workspace.yaml`というファイルをプロジェクトのルートに作成する必要があります。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:460
-#, no-wrap
-msgid ""
-"```\n"
-"onlyBuiltDependencies:\n"
-"  - better-sqlite3\n"
-"```\n"
-"</Note>\n"
-msgstr ""
-"```\n"
-"onlyBuiltDependencies:\n"
-"  - better-sqlite3\n"
-"```\n"
-"</Note>\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:465
-#, no-wrap
-msgid ""
-"```bash\n"
-"pnpm add better-sqlite3 kysely\n"
-"pnpm add -D @types/better-sqlite3 tsx\n"
-"```\n"
-msgstr ""
-"```bash\n"
-"pnpm add better-sqlite3 kysely\n"
-"pnpm add -D @types/better-sqlite3 tsx\n"
-"```\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:467
+#: src/guides/oauth-tutorial/en.mdx:175
 #, no-wrap
 msgid "Next, replace the contents of `next.config.ts` to use `better-sqlite3` server-side:\n"
 msgstr "次に、`next.config.ts`の内容を置き換えてサーバー側で`better-sqlite3`を使うようにします。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:470
+#: src/guides/oauth-tutorial/en.mdx:177
+#: src/guides/statusphere-tutorial/en.mdx:153
 #, no-wrap
-msgid ""
-"```typescript\n"
-"import type { NextConfig } from \"next\";\n"
-msgstr ""
-"```typescript\n"
-"import type { NextConfig } from \"next\";\n"
+msgid "<S16 />\n"
+msgstr "<S16 />\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:474
-#, no-wrap
-msgid ""
-"const nextConfig: NextConfig = {\n"
-"  serverExternalPackages: [\"better-sqlite3\"],\n"
-"};\n"
-msgstr ""
-"const nextConfig: NextConfig = {\n"
-"  serverExternalPackages: [\"better-sqlite3\"],\n"
-"};\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:477
-#, no-wrap
-msgid ""
-"export default nextConfig;\n"
-"```\n"
-msgstr ""
-"export default nextConfig;\n"
-"```\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:479
+#: src/guides/oauth-tutorial/en.mdx:179
 #, no-wrap
 msgid "Then, add the actual database connection in `lib/db/index.ts`:\n"
 msgstr "続いて、実際のデータベース接続を`lib/db/index.ts`に追加します。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:483
+#: src/guides/oauth-tutorial/en.mdx:181
+#: src/guides/statusphere-tutorial/en.mdx:162
 #, no-wrap
-msgid ""
-"```typescript\n"
-"import Database from \"better-sqlite3\";\n"
-"import { Kysely, SqliteDialect } from \"kysely\";\n"
-msgstr ""
-"```typescript\n"
-"import Database from \"better-sqlite3\";\n"
-"import { Kysely, SqliteDialect } from \"kysely\";\n"
+msgid "<S17 />\n"
+msgstr "<S17 />\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:485
-#, no-wrap
-msgid "const DATABASE_PATH = process.env.DATABASE_PATH || \"app.db\";\n"
-msgstr "const DATABASE_PATH = process.env.DATABASE_PATH || \"app.db\";\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:487
-#, no-wrap
-msgid "let _db: Kysely<DatabaseSchema> | null = null;\n"
-msgstr "let _db: Kysely<DatabaseSchema> | null = null;\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:492
-#, no-wrap
-msgid ""
-"export const getDb = (): Kysely<DatabaseSchema> => {\n"
-"  if (!_db) {\n"
-"    const sqlite = new Database(DATABASE_PATH);\n"
-"    sqlite.pragma(\"journal_mode = WAL\");\n"
-msgstr ""
-"export const getDb = (): Kysely<DatabaseSchema> => {\n"
-"  if (!_db) {\n"
-"    const sqlite = new Database(DATABASE_PATH);\n"
-"    sqlite.pragma(\"journal_mode = WAL\");\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:499
-#, no-wrap
-msgid ""
-"    _db = new Kysely<DatabaseSchema>({\n"
-"      dialect: new SqliteDialect({ database: sqlite }),\n"
-"    });\n"
-"  }\n"
-"  return _db;\n"
-"};\n"
-msgstr ""
-"    _db = new Kysely<DatabaseSchema>({\n"
-"      dialect: new SqliteDialect({ database: sqlite }),\n"
-"    });\n"
-"  }\n"
-"  return _db;\n"
-"};\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:504
-#, no-wrap
-msgid ""
-"export interface DatabaseSchema {\n"
-"  auth_state: AuthStateTable;\n"
-"  auth_session: AuthSessionTable;\n"
-"}\n"
-msgstr ""
-"export interface DatabaseSchema {\n"
-"  auth_state: AuthStateTable;\n"
-"  auth_session: AuthSessionTable;\n"
-"}\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:509
-#, no-wrap
-msgid ""
-"interface AuthStateTable {\n"
-"  key: string;\n"
-"  value: string;\n"
-"}\n"
-msgstr ""
-"interface AuthStateTable {\n"
-"  key: string;\n"
-"  value: string;\n"
-"}\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:515
-#, no-wrap
-msgid ""
-"interface AuthSessionTable {\n"
-"  key: string;\n"
-"  value: string;\n"
-"}\n"
-"```\n"
-msgstr ""
-"interface AuthSessionTable {\n"
-"  key: string;\n"
-"  value: string;\n"
-"}\n"
-"```\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:517
+#: src/guides/oauth-tutorial/en.mdx:183
 #, no-wrap
 msgid "Next, create the \"migrations\" that you'll run to populate the database schema. Create `lib/db/migrations.ts`:\n"
 msgstr "次に、データベーススキーマを作成するための\"migrations\"を作ります。`lib/db/migrations.ts`を作成してください。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:521
+#: src/guides/oauth-tutorial/en.mdx:185
+#: src/guides/statusphere-tutorial/en.mdx:176
 #, no-wrap
-msgid ""
-"```typescript\n"
-"import { Kysely, Migration, Migrator } from \"kysely\";\n"
-"import { getDb } from \".\";\n"
-msgstr ""
-"```typescript\n"
-"import { Kysely, Migration, Migrator } from \"kysely\";\n"
-"import { getDb } from \".\";\n"
+msgid "<S18 />\n"
+msgstr "<S18 />\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:530
-#, no-wrap
-msgid ""
-"const migrations: Record<string, Migration> = {\n"
-"  \"001\": {\n"
-"    async up(db: Kysely<unknown>) {\n"
-"      await db.schema\n"
-"        .createTable(\"auth_state\")\n"
-"        .addColumn(\"key\", \"text\", (col) => col.primaryKey())\n"
-"        .addColumn(\"value\", \"text\", (col) => col.notNull())\n"
-"        .execute();\n"
-msgstr ""
-"const migrations: Record<string, Migration> = {\n"
-"  \"001\": {\n"
-"    async up(db: Kysely<unknown>) {\n"
-"      await db.schema\n"
-"        .createTable(\"auth_state\")\n"
-"        .addColumn(\"key\", \"text\", (col) => col.primaryKey())\n"
-"        .addColumn(\"value\", \"text\", (col) => col.notNull())\n"
-"        .execute();\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:543
-#, no-wrap
-msgid ""
-"      await db.schema\n"
-"        .createTable(\"auth_session\")\n"
-"        .addColumn(\"key\", \"text\", (col) => col.primaryKey())\n"
-"        .addColumn(\"value\", \"text\", (col) => col.notNull())\n"
-"        .execute();\n"
-"    },\n"
-"    async down(db: Kysely<unknown>) {\n"
-"      await db.schema.dropTable(\"auth_session\").execute();\n"
-"      await db.schema.dropTable(\"auth_state\").execute();\n"
-"    },\n"
-"  },\n"
-"};\n"
-msgstr ""
-"      await db.schema\n"
-"        .createTable(\"auth_session\")\n"
-"        .addColumn(\"key\", \"text\", (col) => col.primaryKey())\n"
-"        .addColumn(\"value\", \"text\", (col) => col.notNull())\n"
-"        .execute();\n"
-"    },\n"
-"    async down(db: Kysely<unknown>) {\n"
-"      await db.schema.dropTable(\"auth_session\").execute();\n"
-"      await db.schema.dropTable(\"auth_state\").execute();\n"
-"    },\n"
-"  },\n"
-"};\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:554
-#, no-wrap
-msgid ""
-"export function getMigrator() {\n"
-"  const db = getDb();\n"
-"  return new Migrator({\n"
-"    db,\n"
-"    provider: {\n"
-"      getMigrations: async () => migrations,\n"
-"    },\n"
-"  });\n"
-"}\n"
-"```\n"
-msgstr ""
-"export function getMigrator() {\n"
-"  const db = getDb();\n"
-"  return new Migrator({\n"
-"    db,\n"
-"    provider: {\n"
-"      getMigrations: async () => migrations,\n"
-"    },\n"
-"  });\n"
-"}\n"
-"```\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:556
+#: src/guides/oauth-tutorial/en.mdx:187
 #, no-wrap
 msgid "Next, create `scripts/migrate.ts` so the migrations can be run from the command line:\n"
 msgstr "次に、コマンドラインからマイグレーションを実行できるよう`scripts/migrate.ts`を作成します。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:559
+#: src/guides/oauth-tutorial/en.mdx:189
+#: src/guides/statusphere-tutorial/en.mdx:180
 #, no-wrap
-msgid ""
-"```typescript\n"
-"import { getMigrator } from \"@/lib/db/migrations\";\n"
-msgstr ""
-"```typescript\n"
-"import { getMigrator } from \"@/lib/db/migrations\";\n"
+msgid "<S19 />\n"
+msgstr "<S19 />\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:566
-#, no-wrap
-msgid ""
-"async function main() {\n"
-"  const migrator = getMigrator();\n"
-"  const { error } = await migrator.migrateToLatest();\n"
-"  if (error) throw error;\n"
-"  console.log(\"Migrations complete.\");\n"
-"}\n"
-msgstr ""
-"async function main() {\n"
-"  const migrator = getMigrator();\n"
-"  const { error } = await migrator.migrateToLatest();\n"
-"  if (error) throw error;\n"
-"  console.log(\"Migrations complete.\");\n"
-"}\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:569 src/guides/oauth-tutorial/en.mdx:761
-#, no-wrap
-msgid ""
-"main();\n"
-"```\n"
-msgstr ""
-"main();\n"
-"```\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:571
+#: src/guides/oauth-tutorial/en.mdx:191
 #, no-wrap
 msgid "Add those command line scrips to `package.json`:\n"
 msgstr "これらのコマンドラインスクリプトを`package.json`に追加します。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:584
+#: src/guides/oauth-tutorial/en.mdx:193
+#: src/guides/statusphere-tutorial/en.mdx:184
 #, no-wrap
-msgid ""
-"```json\n"
-"{\n"
-"  \"scripts\": {\n"
-"    \"dev\": \"pnpm migrate && next dev\",\n"
-"    \"build\": \"next build\",\n"
-"    \"start\": \"pnpm migrate && next start\",\n"
-"    \"lint\": \"eslint\",\n"
-"    // Add this line:\n"
-"    \"migrate\": \"tsx scripts/migrate.ts\",\n"
-"  }\n"
-"}\n"
-"```\n"
-msgstr ""
-"```json\n"
-"{\n"
-"  \"scripts\": {\n"
-"    \"dev\": \"pnpm migrate && next dev\",\n"
-"    \"build\": \"next build\",\n"
-"    \"start\": \"pnpm migrate && next start\",\n"
-"    \"lint\": \"eslint\",\n"
-"    // Add this line:\n"
-"    \"migrate\": \"tsx scripts/migrate.ts\",\n"
-"  }\n"
-"}\n"
-"```\n"
+msgid "<S20 />\n"
+msgstr "<S20 />\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:586
+#: src/guides/oauth-tutorial/en.mdx:195
 #, no-wrap
 msgid "And finally, update the `stateStore:` and `sessionStore` code blocks in `lib/auth/client.ts` to use the database. You'll need to import `getDb` at the top too:\n"
 msgstr "最後に、`lib/auth/client.ts`の`stateStore:`と`sessionStore`のコードをデータベース用に更新します。先頭で`getDb`のimportも必要です。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:589
+#: src/guides/oauth-tutorial/en.mdx:197
+#: src/guides/statusphere-tutorial/en.mdx:192
 #, no-wrap
-msgid ""
-"```typescript\n"
-"import { getDb } from \"../db\";\n"
-msgstr ""
-"```typescript\n"
-"import { getDb } from \"../db\";\n"
+msgid "<S21 />\n"
+msgstr "<S21 />\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:591
-#, no-wrap
-msgid "...\n"
-msgstr "...\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:616
-#, no-wrap
-msgid ""
-"stateStore: {\n"
-"  async get(key: string) {\n"
-"    const db = getDb();\n"
-"    const row = await db\n"
-"      .selectFrom(\"auth_state\")\n"
-"      .select(\"value\")\n"
-"      .where(\"key\", \"=\", key)\n"
-"      .executeTakeFirst();\n"
-"    return row ? JSON.parse(row.value) : undefined;\n"
-"  },\n"
-"  async set(key: string, value: NodeSavedState) {\n"
-"    const db = getDb();\n"
-"    const valueJson = JSON.stringify(value);\n"
-"    await db\n"
-"      .insertInto(\"auth_state\")\n"
-"      .values({ key, value: valueJson })\n"
-"      .onConflict((oc) => oc.column(\"key\").doUpdateSet({ value: valueJson }))\n"
-"      .execute();\n"
-"  },\n"
-"  async del(key: string) {\n"
-"    const db = getDb();\n"
-"    await db.deleteFrom(\"auth_state\").where(\"key\", \"=\", key).execute();\n"
-"  },\n"
-"},\n"
-msgstr ""
-"stateStore: {\n"
-"  async get(key: string) {\n"
-"    const db = getDb();\n"
-"    const row = await db\n"
-"      .selectFrom(\"auth_state\")\n"
-"      .select(\"value\")\n"
-"      .where(\"key\", \"=\", key)\n"
-"      .executeTakeFirst();\n"
-"    return row ? JSON.parse(row.value) : undefined;\n"
-"  },\n"
-"  async set(key: string, value: NodeSavedState) {\n"
-"    const db = getDb();\n"
-"    const valueJson = JSON.stringify(value);\n"
-"    await db\n"
-"      .insertInto(\"auth_state\")\n"
-"      .values({ key, value: valueJson })\n"
-"      .onConflict((oc) => oc.column(\"key\").doUpdateSet({ value: valueJson }))\n"
-"      .execute();\n"
-"  },\n"
-"  async del(key: string) {\n"
-"    const db = getDb();\n"
-"    await db.deleteFrom(\"auth_state\").where(\"key\", \"=\", key).execute();\n"
-"  },\n"
-"},\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:642
-#, no-wrap
-msgid ""
-"sessionStore: {\n"
-"  async get(key: string) {\n"
-"    const db = getDb();\n"
-"    const row = await db\n"
-"      .selectFrom(\"auth_session\")\n"
-"      .select(\"value\")\n"
-"      .where(\"key\", \"=\", key)\n"
-"      .executeTakeFirst();\n"
-"    return row ? JSON.parse(row.value) : undefined;\n"
-"  },\n"
-"  async set(key: string, value: NodeSavedSession) {\n"
-"    const db = getDb();\n"
-"    const valueJson = JSON.stringify(value);\n"
-"    await db\n"
-"      .insertInto(\"auth_session\")\n"
-"      .values({ key, value: valueJson })\n"
-"      .onConflict((oc) => oc.column(\"key\").doUpdateSet({ value: valueJson }))\n"
-"      .execute();\n"
-"  },\n"
-"  async del(key: string) {\n"
-"    const db = getDb();\n"
-"    await db.deleteFrom(\"auth_session\").where(\"key\", \"=\", key).execute();\n"
-"  },\n"
-"}\n"
-"```\n"
-msgstr ""
-"sessionStore: {\n"
-"  async get(key: string) {\n"
-"    const db = getDb();\n"
-"    const row = await db\n"
-"      .selectFrom(\"auth_session\")\n"
-"      .select(\"value\")\n"
-"      .where(\"key\", \"=\", key)\n"
-"      .executeTakeFirst();\n"
-"    return row ? JSON.parse(row.value) : undefined;\n"
-"  },\n"
-"  async set(key: string, value: NodeSavedSession) {\n"
-"    const db = getDb();\n"
-"    const valueJson = JSON.stringify(value);\n"
-"    await db\n"
-"      .insertInto(\"auth_session\")\n"
-"      .values({ key, value: valueJson })\n"
-"      .onConflict((oc) => oc.column(\"key\").doUpdateSet({ value: valueJson }))\n"
-"      .execute();\n"
-"  },\n"
-"  async del(key: string) {\n"
-"    const db = getDb();\n"
-"    await db.deleteFrom(\"auth_session\").where(\"key\", \"=\", key).execute();\n"
-"  },\n"
-"}\n"
-"```\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:644
+#: src/guides/oauth-tutorial/en.mdx:199
 #, no-wrap
 msgid "All set! You can Ctrl+C the dev server if it's running, then start it again with:\n"
 msgstr "以上です。開発サーバーが起動中ならCtrl+Cで停止し、次で再起動します。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:650
+#: src/guides/oauth-tutorial/en.mdx:203
 #, no-wrap
 msgid "You should see \"Migrations complete.\" and an `app.db` file created. Now this app will persist state and sessions across restarts.\n"
 msgstr "\"Migrations complete.\"と表示され、`app.db`ファイルが作成されるはずです。これで再起動しても状態とセッションが保持されます。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:652
+#: src/guides/oauth-tutorial/en.mdx:205
 #, no-wrap
 msgid "## Part 4: Deploying to Production\n"
 msgstr "<Heading level={2} id=\"part-4-deploying-to-production\">パート4：本番環境へのデプロイ</Heading>\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:657
+#: src/guides/oauth-tutorial/en.mdx:210
 #, no-wrap
 msgid ""
 "For production, you need a \"confidential client\" instead of the loopback client you used. This requires:\n"
@@ -1763,351 +682,127 @@ msgstr ""
 "- クライアントメタデータとJWKSの公開エンドポイント\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:659
+#: src/guides/oauth-tutorial/en.mdx:212
 #, no-wrap
 msgid "You don't need your own domain name to test the app at a public URL. You can host it on [Railway](https://railway.app/) by following our [deployment guide](https://github.com/bluesky-social/nextjs-oauth-tutorial/blob/main/RAILWAY_DEPLOY.md). First, follow these steps.\n"
 msgstr "公開URLでアプリを試すのに独自ドメインは不要です。[デプロイガイド](https://github.com/bluesky-social/nextjs-oauth-tutorial/blob/main/RAILWAY_DEPLOY.md)に従って[Railway](https://railway.app/)へホスティングできます。まず以下の手順を進めてください。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:661
+#: src/guides/oauth-tutorial/en.mdx:214
 #, no-wrap
 msgid "Create a `well-known` JWKS endpoint that advertises your client's public key at `app/.well-known/jwks.json/route.ts`:\n"
 msgstr "`app/.well-known/jwks.json/route.ts`に、クライアント公開鍵を公開する`well-known` JWKSエンドポイントを作成します。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:665
+#: src/guides/oauth-tutorial/en.mdx:216
 #, no-wrap
-msgid ""
-"```typescript\n"
-"import { NextResponse } from \"next/server\";\n"
-"import { JoseKey } from \"@atproto/oauth-client-node\";\n"
-msgstr ""
-"```typescript\n"
-"import { NextResponse } from \"next/server\";\n"
-"import { JoseKey } from \"@atproto/oauth-client-node\";\n"
+msgid "<S22 />\n"
+msgstr "<S22 />\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:668
-#, no-wrap
-msgid ""
-"// Serves the public keys for the OAuth client\n"
-"// Required for confidential clients using private_key_jwt authentication\n"
-msgstr ""
-"// OAuthクライアントの公開鍵を配信する\n"
-"// private_key_jwtを使う機密クライアントでは必須\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:670
-#, no-wrap
-msgid "const PRIVATE_KEY = process.env.PRIVATE_KEY;\n"
-msgstr "const PRIVATE_KEY = process.env.PRIVATE_KEY;\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:675
-#, no-wrap
-msgid ""
-"export async function GET() {\n"
-"  if (!PRIVATE_KEY) {\n"
-"    return NextResponse.json({ keys: [] });\n"
-"  }\n"
-msgstr ""
-"export async function GET() {\n"
-"  if (!PRIVATE_KEY) {\n"
-"    return NextResponse.json({ keys: [] });\n"
-"  }\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:682
-#, no-wrap
-msgid ""
-"  const key = await JoseKey.fromJWK(JSON.parse(PRIVATE_KEY));\n"
-"  return NextResponse.json({\n"
-"    keys: [key.publicJwk],\n"
-"  });\n"
-"}\n"
-"```\n"
-msgstr ""
-"  const key = await JoseKey.fromJWK(JSON.parse(PRIVATE_KEY));\n"
-"  return NextResponse.json({\n"
-"    keys: [key.publicJwk],\n"
-"  });\n"
-"}\n"
-"```\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:684
+#: src/guides/oauth-tutorial/en.mdx:218
 #, no-wrap
 msgid "Next, update `lib/auth/client.ts` once more to use the confidential client configuration when in production:\n"
 msgstr "次に、`lib/auth/client.ts`をもう一度更新し、本番時に機密クライアント設定を使うようにします。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:698
+#: src/guides/oauth-tutorial/en.mdx:220
 #, no-wrap
-msgid ""
-"```typescript\n"
-"import {\n"
-"    JoseKey,\n"
-"    Keyset,\n"
-"    NodeOAuthClient,\n"
-"    buildAtprotoLoopbackClientMetadata,\n"
-"} from \"@atproto/oauth-client-node\";\n"
-"import type {\n"
-"    NodeSavedSession,\n"
-"    NodeSavedState,\n"
-"    OAuthClientMetadataInput,\n"
-"} from \"@atproto/oauth-client-node\";\n"
-"import { getDb } from \"../db\";\n"
-msgstr ""
-"```typescript\n"
-"import {\n"
-"    JoseKey,\n"
-"    Keyset,\n"
-"    NodeOAuthClient,\n"
-"    buildAtprotoLoopbackClientMetadata,\n"
-"} from \"@atproto/oauth-client-node\";\n"
-"import type {\n"
-"    NodeSavedSession,\n"
-"    NodeSavedState,\n"
-"    OAuthClientMetadataInput,\n"
-"} from \"@atproto/oauth-client-node\";\n"
-"import { getDb } from \"../db\";\n"
+msgid "<S23 />\n"
+msgstr "<S23 />\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:705
-#, no-wrap
-msgid ""
-"const PUBLIC_URL = process.env.PUBLIC_URL;\n"
-"const PRIVATE_KEY = process.env.PRIVATE_KEY;\n"
-msgstr ""
-"const PUBLIC_URL = process.env.PUBLIC_URL;\n"
-"const PRIVATE_KEY = process.env.PRIVATE_KEY;\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:728
-#, no-wrap
-msgid ""
-"function getClientMetadata(): OAuthClientMetadataInput {\n"
-"    if (PUBLIC_URL) {\n"
-"        return {\n"
-"            client_id: `${PUBLIC_URL}/oauth-client-metadata.json`,\n"
-"            client_name: \"OAuth Tutorial\",\n"
-"            client_uri: PUBLIC_URL,\n"
-"            redirect_uris: [`${PUBLIC_URL}/oauth/callback`],\n"
-"            grant_types: [\"authorization_code\", \"refresh_token\"],\n"
-"            response_types: [\"code\"],\n"
-"            scope: SCOPE,\n"
-"            token_endpoint_auth_method: \"private_key_jwt\" as const,\n"
-"            token_endpoint_auth_signing_alg: \"ES256\" as const, // must match the alg in scripts/gen-key.ts\n"
-"            jwks_uri: `${PUBLIC_URL}/.well-known/jwks.json`,\n"
-"            dpop_bound_access_tokens: true,\n"
-"        };\n"
-"    } else {\n"
-"        return buildAtprotoLoopbackClientMetadata({\n"
-"            scope: SCOPE,\n"
-"            redirect_uris: [\"http://127.0.0.1:3000/oauth/callback\"],\n"
-"        });\n"
-"    }\n"
-"}\n"
-msgstr ""
-"function getClientMetadata(): OAuthClientMetadataInput {\n"
-"    if (PUBLIC_URL) {\n"
-"        return {\n"
-"            client_id: `${PUBLIC_URL}/oauth-client-metadata.json`,\n"
-"            client_name: \"OAuth Tutorial\",\n"
-"            client_uri: PUBLIC_URL,\n"
-"            redirect_uris: [`${PUBLIC_URL}/oauth/callback`],\n"
-"            grant_types: [\"authorization_code\", \"refresh_token\"],\n"
-"            response_types: [\"code\"],\n"
-"            scope: SCOPE,\n"
-"            token_endpoint_auth_method: \"private_key_jwt\" as const,\n"
-"            token_endpoint_auth_signing_alg: \"ES256\" as const, // must match the alg in scripts/gen-key.ts\n"
-"            jwks_uri: `${PUBLIC_URL}/.well-known/jwks.json`,\n"
-"            dpop_bound_access_tokens: true,\n"
-"        };\n"
-"    } else {\n"
-"        return buildAtprotoLoopbackClientMetadata({\n"
-"            scope: SCOPE,\n"
-"            redirect_uris: [\"http://127.0.0.1:3000/oauth/callback\"],\n"
-"        });\n"
-"    }\n"
-"}\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:736
-#, no-wrap
-msgid ""
-"async function getKeyset(): Promise<Keyset | undefined> {\n"
-"    if (PUBLIC_URL && PRIVATE_KEY) {\n"
-"        return new Keyset([await JoseKey.fromJWK(JSON.parse(PRIVATE_KEY))]);\n"
-"    } else {\n"
-"        return undefined;\n"
-"    }\n"
-"}\n"
-msgstr ""
-"async function getKeyset(): Promise<Keyset | undefined> {\n"
-"    if (PUBLIC_URL && PRIVATE_KEY) {\n"
-"        return new Keyset([await JoseKey.fromJWK(JSON.parse(PRIVATE_KEY))]);\n"
-"    } else {\n"
-"        return undefined;\n"
-"    }\n"
-"}\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:739
-#, no-wrap
-msgid ""
-"export async function getOAuthClient(): Promise<NodeOAuthClient> {\n"
-"    if (client) return client;\n"
-msgstr ""
-"export async function getOAuthClient(): Promise<NodeOAuthClient> {\n"
-"    if (client) return client;\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:745
-#, no-wrap
-msgid ""
-"    client = new NodeOAuthClient({\n"
-"        clientMetadata: getClientMetadata(),\n"
-"        keyset: await getKeyset(),\n"
-"...\n"
-"```\n"
-msgstr ""
-"    client = new NodeOAuthClient({\n"
-"        clientMetadata: getClientMetadata(),\n"
-"        keyset: await getKeyset(),\n"
-"...\n"
-"```\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:747
+#: src/guides/oauth-tutorial/en.mdx:222
 #, no-wrap
 msgid "This will serve a [client metadata document](/specs/oauth#client-id-metadata-document).\n"
-msgstr "これで[client metadata document](/specs/oauth#client-id-metadata-document)を配信できます。\n"
+msgstr "これで[クライアントメタデータドキュメント](/specs/oauth#client-id-metadata-document)を配信できます。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:749
+#: src/guides/oauth-tutorial/en.mdx:226
+#, no-wrap
+msgid ""
+"<Note>\n"
+"The `dpop_bound_access_tokens: true` setting enables [DPoP (Demonstrating Proof of Possession)](/specs/oauth#demonstrating-proof-of-possession-d-po-p), which cryptographically binds access tokens to a specific client. This protects long-lived sessions from token theft. The SDK handles all DPoP operations automatically — generating proofs, managing server-provided nonces, and retrying requests when nonces rotate. If you're implementing OAuth without an SDK (e.g., for a sidecar service), see the [OAuth Patterns guide](/guides/oauth-patterns#understanding-d-po-p) for implementation details.\n"
+"</Note>\n"
+msgstr ""
+"<Note>\n"
+"`dpop_bound_access_tokens: true`設定は、アクセストークンを暗号的に特定のクライアントに紐付ける[DPoP（Demonstrating Proof of Possession）](/specs/oauth#demonstating-proof-of-possession-d-po-p)を有効にします。これにより、存続期間の長いセッションがトークンの盗難から保護されます。SDKはすべてのDPoP操作を自動的に処理します。proofの生成、サーバーから提供されるnonceの管理、nonceローテーション時のリクエストの再試行などです。SDKなしでOAuthを実装している場合（サイドカーサービスなど）、実装の詳細については[OAuthパターンガイド](/guides/oauth-patterns#understanding-d-po-p)を参照してください。\n"
+"</Note>\n"
+
+#. type: Plain text
+#: src/guides/oauth-tutorial/en.mdx:228
 #, no-wrap
 msgid "Finally, you'll need to generate a private key for signing. Create a script for that in `scripts/gen-key.ts`:\n"
 msgstr "最後に、署名用の秘密鍵を生成する必要があります。`scripts/gen-key.ts`にスクリプトを作成します。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:752
+#: src/guides/oauth-tutorial/en.mdx:230
 #, no-wrap
-msgid ""
-"```typescript\n"
-"import { JoseKey } from \"@atproto/oauth-client-node\";\n"
-msgstr ""
-"```typescript\n"
-"import { JoseKey } from \"@atproto/oauth-client-node\";\n"
+msgid "<S24 />\n"
+msgstr "<S24 />\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:758
-#, no-wrap
-msgid ""
-"async function main() {\n"
-"  const kid = Date.now().toString();\n"
-"  const key = await JoseKey.generate([\"ES256\"], kid);\n"
-"  console.log(JSON.stringify(key.privateJwk));\n"
-"};\n"
-msgstr ""
-"async function main() {\n"
-"  const kid = Date.now().toString();\n"
-"  const key = await JoseKey.generate([\"ES256\"], kid);\n"
-"  console.log(JSON.stringify(key.privateJwk));\n"
-"};\n"
-
-#. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:763
+#: src/guides/oauth-tutorial/en.mdx:232
 #, no-wrap
 msgid "Add this script to `package.json`:\n"
 msgstr "このスクリプトを`package.json`に追加します。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:772
+#: src/guides/oauth-tutorial/en.mdx:234
 #, no-wrap
-msgid ""
-"```json\n"
-"{\n"
-"  \"scripts\": {\n"
-"    // Add this line:\n"
-"    \"gen-key\": \"tsx scripts/gen-key.ts\",\n"
-"  }\n"
-"}\n"
-"```\n"
-msgstr ""
-"```json\n"
-"{\n"
-"  \"scripts\": {\n"
-"    // この行を追加\n"
-"    \"gen-key\": \"tsx scripts/gen-key.ts\",\n"
-"  }\n"
-"}\n"
-"```\n"
+msgid "<S25 />\n"
+msgstr "<S25 />\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:774
+#: src/guides/oauth-tutorial/en.mdx:236
 #, no-wrap
 msgid "Run the script as `pnpm gen-key` and save the output. This will be `PRIVATE_KEY`, one of two environment variables needed for your deployment:\n"
 msgstr "`pnpm gen-key`でスクリプトを実行し、出力を保存してください。これが`PRIVATE_KEY`になり、デプロイに必要な2つの環境変数の1つです。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:779
+#: src/guides/oauth-tutorial/en.mdx:238
 #, no-wrap
-msgid ""
-"```bash\n"
-"PRIVATE_KEY={\"kty\":\"EC\",\"kid\":\"...\",\"alg\":\"ES256\",...}\n"
-"PUBLIC_URL=https://your-app.example.com\n"
-"```\n"
-msgstr ""
-"```bash\n"
-"PRIVATE_KEY={\"kty\":\"EC\",\"kid\":\"...\",\"alg\":\"ES256\",...}\n"
-"PUBLIC_URL=https://your-app.example.com\n"
-"```\n"
+msgid "<S26 />\n"
+msgstr "<S26 />\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:781
+#: src/guides/oauth-tutorial/en.mdx:240
 #, no-wrap
 msgid "You can provide these as part of our Railway [deployment guide](https://github.com/bluesky-social/nextjs-oauth-tutorial/blob/main/RAILWAY_DEPLOY.md). Follow those steps, and this app should then work from a public URL just like our [demo instance](https://nextjs-oauth-tutorial.up.railway.app/).\n"
 msgstr "これらはRailwayの[デプロイガイド](https://github.com/bluesky-social/nextjs-oauth-tutorial/blob/main/RAILWAY_DEPLOY.md)に沿って設定できます。手順どおり進めれば、このアプリは[デモインスタンス](https://nextjs-oauth-tutorial.up.railway.app/)と同様に公開URLで動作するはずです。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:785
+#: src/guides/oauth-tutorial/en.mdx:244
 #, no-wrap
 msgid "You now have a complete, production-deployed app with persistent storage. However, it doesn't actually do anything with the AT Protocol yet! As you add features from here, you'll need to request additional permission scopes during the OAuth flow.\n"
 msgstr "これで永続ストレージ付きの本番デプロイ済みアプリが完成しました。ただし、まだATプロトコルを使った具体的な機能は実装していません。ここから機能を追加する際は、OAuthフローで追加の権限スコープを要求する必要があります。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:787
+#: src/guides/oauth-tutorial/en.mdx:246
 #, no-wrap
-msgid "By default, the app requests only the `atproto` scope. The `atproto` scope is required and offers basic authentication for an `atproto` identity, but it does not authorize the client to access any privileged information or perform any actions on behalf of the user. Refer to the [Scopes guide](/guides/scopes) for more information.\n"
-msgstr "デフォルトでは、アプリは`atproto`スコープのみを要求します。`atproto`スコープは必須で、`atproto` IDの基本認証を提供しますが、特権情報へのアクセスやユーザーの代理操作は許可しません。詳細は[スコープガイド](/guides/scopes)を参照してください。\n"
+msgid "By default, the app requests only the `atproto` scope. The `atproto` scope is required and offers basic authentication for an `atproto` identity, but it does not authorize the client to access any privileged information or perform any actions on behalf of the user. Refer to the [Permission Sets guide](/guides/permission-sets) for more information.\n"
+msgstr "デフォルトでは、アプリは`atproto`スコープのみを要求します。`atproto`スコープは必須で、`atproto` IDの基本認証を提供しますが、特権情報へのアクセスやユーザーの代理操作は許可しません。詳細は[権限セットガイド](/guides/permission-sets)を参照してください。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:789
+#: src/guides/oauth-tutorial/en.mdx:248
 #, no-wrap
 msgid "To change the requested scope, update the SCOPE constant in `lib/auth/client.ts`. It should be a space-delimited string:\n"
 msgstr "要求するスコープを変更するには、`lib/auth/client.ts`のSCOPE定数を更新します。スペース区切り文字列で指定します。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:793
+#: src/guides/oauth-tutorial/en.mdx:250
 #, no-wrap
-msgid ""
-"```typescript\n"
-"export const SCOPE = \"atproto account:email repo:com.example.record\";\n"
-"```\n"
-msgstr ""
-"```typescript\n"
-"export const SCOPE = \"atproto account:email repo:com.example.record\";\n"
-"```\n"
+msgid "<S27 />\n"
+msgstr "<S27 />\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:795
+#: src/guides/oauth-tutorial/en.mdx:252
 #, no-wrap
 msgid "This constant is used in three places:\n"
 msgstr "この定数は次の3か所で使われます。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:799
+#: src/guides/oauth-tutorial/en.mdx:256
 #, no-wrap
 msgid ""
 "- The loopback client metadata (for local development)\n"
@@ -2119,13 +814,13 @@ msgstr ""
 "- ログインルートのauthorize呼び出し\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:801
+#: src/guides/oauth-tutorial/en.mdx:258
 #, no-wrap
 msgid "By centralizing it in one constant, you only need to change it in one place. Now, when you log in to your app again, you'll be prompted to approve the additional scopes.\n"
 msgstr "1つの定数に集約しておくことで、変更箇所は1か所で済みます。これで再度ログインすると、追加スコープの承認を求められます。\n"
 
 #. type: Plain text
-#: src/guides/oauth-tutorial/en.mdx:802
+#: src/guides/oauth-tutorial/en.mdx:259
 #, no-wrap
 msgid "Congratulations on completing this tutorial! You now have a solid Next.js foundation for building atproto apps with OAuth. From here, you can move on to our [**Statusphere Example App Tutorial**](/guides/statusphere-tutorial).\n"
 msgstr "おめでとうございます、チュートリアルは完了です。これでOAuthを使ったatprotoアプリを作るための堅実なNext.js基盤ができました。次は[**Statusphereサンプルアプリチュートリアル**](/guides/statusphere-tutorial)に進めます。\n"

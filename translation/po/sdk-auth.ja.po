@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-21 12:24+0900\n"
+"POT-Creation-Date: 2026-05-18 11:10+0900\n"
 "PO-Revision-Date: 2026-01-07 19:40+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -17,35 +17,40 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. type: Plain text
-#: src/guides/account-lifecycle/en.mdx:65
-#: src/guides/images-and-video/en.mdx:142 src/guides/moderation/en.mdx:30
-#: src/guides/reads-and-writes/en.mdx:73 src/guides/streaming-data/en.mdx:60
-#: src/guides/video-handling/en.mdx:41 src/guides/feeds/en.mdx:113
-#: src/guides/installing-lexicons/en.mdx:53 src/guides/oauth-patterns/en.mdx:57
-#: src/guides/scopes/en.mdx:45 src/guides/subscriptions/en.mdx:78
-#: src/guides/writing-data/en.mdx:181 src/guides/creating-a-labeler/en.mdx:56
-#: src/guides/labels/en.mdx:110 src/guides/sdk-auth/en.mdx:116
-#: src/guides/sync/en.mdx:51 src/guides/auth/en.mdx:74
-#: src/guides/lexicon/en.mdx:128 src/guides/publishing-lexicons/en.mdx:49
-#: src/guides/backfilling/en.mdx:60 src/guides/reading-data/en.mdx:165
-#: src/guides/social-graph/en.mdx:19 src/guides/permission-sets/en.mdx:214
-#: src/guides/using-ozone/en.mdx:132
+#: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:68
+#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:60
+#: src/guides/streaming-data/en.mdx:42 src/guides/video-handling/en.mdx:32
+#: src/guides/feeds/en.mdx:90 src/guides/installing-lexicons/en.mdx:41
+#: src/guides/oauth-patterns/en.mdx:125
+#: src/guides/permission-requests/en.mdx:125 src/guides/subscriptions/en.mdx:40
+#: src/guides/writing-data/en.mdx:126 src/guides/creating-a-labeler/en.mdx:35
+#: src/guides/labels/en.mdx:95 src/guides/sdk-auth/en.mdx:70
+#: src/guides/sync/en.mdx:47 src/guides/auth/en.mdx:60
+#: src/guides/lexicon/en.mdx:68 src/guides/publishing-lexicons/en.mdx:60
+#: src/guides/backfilling/en.mdx:64 src/guides/reading-data/en.mdx:113
+#: src/guides/social-graph/en.mdx:25 src/guides/permission-sets/en.mdx:83
+#: src/guides/using-ozone/en.mdx:132 src/guides/about-oauth/en.mdx:81
 #, no-wrap
 msgid "## Further Reading and Resources\n"
 msgstr "<Heading level={2} id=\"further-reading-and-resources\">関連・参考資料</Heading>\n"
 
 #. type: Plain text
-#: src/guides/subscriptions/en.mdx:2 src/guides/labels/en.mdx:2
-#: src/guides/sdk-auth/en.mdx:2 src/guides/auth/en.mdx:2
-#: src/guides/tutorials/en.mdx:2
+#: src/guides/sdk-auth/en.mdx:5
 #, no-wrap
-msgid "import {Container} from \"@/components/Container\"\n"
+msgid ""
+"import {Container} from \"@/components/Container\"\n"
+"import PasswordSessionTs from './_snippets/password-session-ts.mdx'\n"
+"import LoginWithPasswordGo from './_snippets/login-with-password-go.mdx'\n"
+"import ClientSessionTs from './_snippets/client-session-ts.mdx'\n"
 msgstr ""
 "import {Container} from \"@/components/Container\"\n"
 "import {Heading} from \"@/components/Heading\"\n"
+"import PasswordSessionTs from './_snippets/password-session-ts.mdx'\n"
+"import LoginWithPasswordGo from './_snippets/login-with-password-go.mdx'\n"
+"import ClientSessionTs from './_snippets/client-session-ts.mdx'\n"
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:7
+#: src/guides/sdk-auth/en.mdx:10
 #, no-wrap
 msgid ""
 "export const header = {\n"
@@ -59,19 +64,19 @@ msgstr ""
 "}\n"
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:9
+#: src/guides/sdk-auth/en.mdx:12
 #, no-wrap
 msgid "## Password Authentication\n"
 msgstr "<Heading level={2} id=\"password-authentication\">パスワード認証</Heading>\n"
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:11
+#: src/guides/sdk-auth/en.mdx:14
 #, no-wrap
 msgid "If you are using password auth, you should generate an [app password](/specs/xrpc#app-passwords) for your account rather than using your main account password. If you are using Bluesky, you can generate an app password in your [account settings](https://bsky.app/settings/app-passwords).\n"
 msgstr "パスワード認証を使用している場合は、メインのアカウントパスワードではなく[アプリパスワード](/specs/xrpc#app-passwords)を生成するべきです。Blueskyを使用している場合は、[アカウント設定](https://bsky.app/settings/app-passwords)でアプリパスワードを生成できます。\n"
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:20
+#: src/guides/sdk-auth/en.mdx:23
 #, no-wrap
 msgid ""
 "<TabGroup defaultValue=\"ts\">\n"
@@ -93,125 +98,39 @@ msgstr ""
 "    まずは`PasswordSession`をインポートし、`PasswordSession.login()`に資格情報を与えて`session`を生成します。\n"
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:23
+#: src/guides/sdk-auth/en.mdx:25
 #, no-wrap
-msgid ""
-"    ```tsx\n"
-"    import { PasswordSession } from '@atproto/lex-password-session'\n"
-msgstr ""
-"    ```tsx\n"
-"    import { PasswordSession } from '@atproto/lex-password-session'\n"
+msgid "    <PasswordSessionTs />\n"
+msgstr "    <PasswordSessionTs />\n"
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:29
-#, no-wrap
-msgid ""
-"    const result = await PasswordSession.login({\n"
-"      service: 'https://bsky.social', // or your PDS host\n"
-"      identifier: 'your-handle.bsky.social',\n"
-"      password: 'your-app-password',\n"
-"    })\n"
-msgstr ""
-"    const result = await PasswordSession.login({\n"
-"      service: 'https://bsky.social', // or your PDS host\n"
-"      identifier: 'your-handle.bsky.social',\n"
-"      password: 'your-app-password',\n"
-"    })\n"
-
-#. type: Plain text
-#: src/guides/sdk-auth/en.mdx:34
-#, no-wrap
-msgid ""
-"    if (result.success) {\n"
-"        const session = result.value\n"
-"    }\n"
-"    ```\n"
-msgstr ""
-"    if (result.success) {\n"
-"        const session = result.value\n"
-"    }\n"
-"    ```\n"
-
-#. type: Plain text
-#: src/guides/sdk-auth/en.mdx:36
+#: src/guides/sdk-auth/en.mdx:27
 #, no-wrap
 msgid "    Applications with an end user login flow should use [OAuth](/guides/oauth-cli-tutorial) authentication rather than app password sessions. Password auth is acceptable for bots and command line tools.\n"
 msgstr "    エンドユーザーログインフローを備えるアプリケーションは、アプリパスワードセッションではなく[OAuth](/guides/oauth-cli-tutorial)認証を使用しましょう。パスワード認証はボットやコマンドラインツールに適しています。\n"
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:41
+#: src/guides/sdk-auth/en.mdx:32
 #, no-wrap
 msgid ""
 "    Both methods will produce the same authenticated `session`.\n"
 "    </TabPanel>\n"
 "    <TabPanel value=\"go\">\n"
-"    Start by importing the `atproto` and `xrpc` libraries, creating an `&xrpc.Client{}`, and providing credentials to call `ServerCreateSession()`:\n"
+"    Start by importing the `atclient` library and calling `LoginWithPassword()`:\n"
 msgstr ""
 "    どちらの方法でも同じ認証済み`session`が生成されます。\n"
 "    </TabPanel>\n"
 "    <TabPanel value=\"go\">\n"
-"    まずは`atproto`と`xrpc`ライブラリをインポートし、`&xrpc.Client{}`を作って`ServerCreateSession()`に資格情報を与えます。\n"
+"    まずは`atclient`ライブラリをインポートし、`LoginWithPassword()`を呼び出します。\n"
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:48
+#: src/guides/sdk-auth/en.mdx:34
 #, no-wrap
-msgid ""
-"    ```go\n"
-"    import (\n"
-"      \"context\"\n"
-"      comatproto \"github.com/bluesky-social/indigo/api/atproto\"\n"
-"      \"github.com/bluesky-social/indigo/xrpc\"\n"
-"    )\n"
-msgstr ""
-"    ```go\n"
-"    import (\n"
-"      \"context\"\n"
-"      comatproto \"github.com/bluesky-social/indigo/api/atproto\"\n"
-"      \"github.com/bluesky-social/indigo/xrpc\"\n"
-"    )\n"
+msgid "    <LoginWithPasswordGo />\n"
+msgstr "    <LoginWithPasswordGo />\n"
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:51
-#, no-wrap
-msgid ""
-"    func main() {\n"
-"      ctx := context.Background()\n"
-msgstr ""
-"    func main() {\n"
-"      ctx := context.Background()\n"
-
-#. type: Plain text
-#: src/guides/sdk-auth/en.mdx:55
-#, no-wrap
-msgid ""
-"      client := &xrpc.Client{\n"
-"        Host: \"https://bsky.social\", // or your PDS host\n"
-"      }\n"
-msgstr ""
-"      client := &xrpc.Client{\n"
-"        Host: \"https://bsky.social\", // or your PDS host\n"
-"      }\n"
-
-#. type: Plain text
-#: src/guides/sdk-auth/en.mdx:62
-#, no-wrap
-msgid ""
-"      session, _ := comatproto.ServerCreateSession(ctx, client, &comatproto.ServerCreateSession_Input{\n"
-"        Identifier: \"your-handle.bsky.social\",\n"
-"        Password:   \"your-app-password\",\n"
-"      })\n"
-"    }\n"
-"    ```\n"
-msgstr ""
-"      session, _ := comatproto.ServerCreateSession(ctx, client, &comatproto.ServerCreateSession_Input{\n"
-"        Identifier: \"your-handle.bsky.social\",\n"
-"        Password:   \"your-app-password\",\n"
-"      })\n"
-"    }\n"
-"    ```\n"
-
-#. type: Plain text
-#: src/guides/sdk-auth/en.mdx:67
+#: src/guides/sdk-auth/en.mdx:39
 #, no-wrap
 msgid ""
 "    Applications with an end user login flow should use [OAuth](/guides/go-oauth-cli-tutorial) authentication rather than app password sessions. Password auth is acceptable for bots and command line tools.\n"
@@ -225,13 +144,13 @@ msgstr ""
 "</TabGroup>\n"
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:69
+#: src/guides/sdk-auth/en.mdx:41
 #, no-wrap
 msgid "## Client Sessions\n"
 msgstr "<Heading level={2} id=\"client-sessions\">クライアントセッション</Heading>\n"
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:78
+#: src/guides/sdk-auth/en.mdx:50
 #, no-wrap
 msgid ""
 "<TabGroup defaultValue=\"ts\">\n"
@@ -253,93 +172,45 @@ msgstr ""
 "    ログインした`session`が取得できたら、`Client`インスタンスを作成してデータの読み書きができます。\n"
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:82
+#: src/guides/sdk-auth/en.mdx:58
 #, no-wrap
 msgid ""
-"    ```tsx\n"
-"    import { Client } from '@atproto/lex'\n"
-"    const client = new Client(session)\n"
-msgstr ""
-"    ```tsx\n"
-"    import { Client } from '@atproto/lex'\n"
-"    const client = new Client(session)\n"
-
-#. type: Plain text
-#: src/guides/sdk-auth/en.mdx:89
-#, no-wrap
-msgid ""
-"    // Make authenticated API calls\n"
-"    console.log('Logged in as:', session.did)\n"
-"    ```\n"
+"    <ClientSessionTs />\n"
 "    </TabPanel>\n"
 "    <TabPanel value=\"go\">\n"
-"    Once you have an authed `client`, you can store auth info and make API calls:\n"
-msgstr ""
-"    // 認証付きでAPIを呼び出す\n"
-"    console.log('Logged in as:', session.did)\n"
-"    ```\n"
-"    </TabPanel>\n"
-"    <TabPanel value=\"go\">\n"
-"    ログインした`client`が取得できたら、認証情報を入力してAPIを呼び出します。\n"
-
-#. type: Plain text
-#: src/guides/sdk-auth/en.mdx:98
-#, no-wrap
-msgid ""
-"    ```go\n"
-"    // Store auth info on the client for subsequent requests\n"
-"    client.Auth = &xrpc.AuthInfo{\n"
-"      AccessJwt:  session.AccessJwt,\n"
-"      RefreshJwt: session.RefreshJwt,\n"
-"      Handle:     session.Handle,\n"
-"      Did:        session.Did,\n"
-"    }\n"
-msgstr ""
-"    ```go\n"
-"    // 後続のリクエストのために認証情報をクライアントに保存します\n"
-"    client.Auth = &xrpc.AuthInfo{\n"
-"      AccessJwt:  session.AccessJwt,\n"
-"      RefreshJwt: session.RefreshJwt,\n"
-"      Handle:     session.Handle,\n"
-"      Did:        session.Did,\n"
-"    }\n"
-
-#. type: Plain text
-#: src/guides/sdk-auth/en.mdx:104
-#, no-wrap
-msgid ""
-"    fmt.Printf(\"Logged in as: %s (%s)\\n\", session.Handle, session.Did)\n"
-"    ```\n"
+"    The `client` returned by `LoginWithPassword()` is authenticated and ready to make API calls.\n"
 "    </TabPanel>\n"
 "  </TabPanels>\n"
 "</TabGroup>\n"
 msgstr ""
-"    fmt.Printf(\"Logged in as: %s (%s)\\n\", session.Handle, session.Did)\n"
-"    ```\n"
+"    <ClientSessionTs />\n"
+"    </TabPanel>\n"
+"    <TabPanel value=\"go\">\n"
+"    `LoginWithPassword()`が返す`client`は認証済みで、APIを呼び出すことができます。\n"
 "    </TabPanel>\n"
 "  </TabPanels>\n"
 "</TabGroup>\n"
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:106
+#: src/guides/sdk-auth/en.mdx:60
 #, no-wrap
 msgid "From here, you can go directly to [making API requests](/guides/reads-and-writes).\n"
 msgstr "ここから直接[APIリクエストの作成](/guides/reads-and-writes)に進めます。\n"
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:108
+#: src/guides/sdk-auth/en.mdx:62
 #, no-wrap
 msgid "## API Tokens\n"
 msgstr "<Heading level={2} id=\"api-tokens\">APIトークン</Heading>\n"
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:110
+#: src/guides/sdk-auth/en.mdx:64
 #, no-wrap
 msgid "Rate limits for logging in are generally lower than for other API operations. Calling the login method multiple times in a short period may trigger rate limits. You only need to call the login method once per session to authenticate.\n"
 msgstr "ログインのレート制限は一般的に他のAPI操作よりも低く設定されています。短期間に何度もログインメソッドを呼び出すとレート制限が発動する可能性があります。認証するためにログイン用メソッドを呼ぶのはセッション毎に一度だけで十分です。\n"
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:114
+#: src/guides/sdk-auth/en.mdx:68
 #, no-wrap
 msgid ""
 "The `com.atproto.server.createSession` API endpoint called by login methods returns a session object containing two API tokens:\n"
@@ -351,19 +222,21 @@ msgstr ""
 "* `refreshJwt`：期限が長く、アクセストークンを更新するためだけに使用されるリフレッシュトークン\n"
 
 #. type: Plain text
-#: src/guides/sdk-auth/en.mdx:122
+#: src/guides/sdk-auth/en.mdx:77
 #, no-wrap
 msgid ""
 "- [Auth](/guides/auth)\n"
-"- [OAuth patterns](/guides/oauth-patterns)\n"
-"- [Scopes](/guides/scopes)\n"
-"- [Permission requests](/guides/permission-sets)\n"
+"- [About OAuth](/guides/about-oauth)\n"
+"- [Permission Requests](/guides/permission-requests)\n"
+"- [Permission Sets](/guides/permission-sets)\n"
+"- [OAuth Patterns](/guides/oauth-patterns)\n"
 "- [OAuth spec](/specs/oauth)\n"
 "- [Permissions spec](/specs/permission)\n"
 msgstr ""
 "- [認証](/guides/auth)\n"
+"- [OAuthについて](/guides/about-oauth)\n"
+"- [権限リクエスト](/guides/permission-requests)\n"
+"- [権限セット](/guides/permission-sets)\n"
 "- [OAuthパターン](/guides/oauth-patterns)\n"
-"- [スコープ](/guides/scopes)\n"
-"- [権限リクエスト](/guides/permission-sets)\n"
 "- [OAuth仕様](/specs/oauth)\n"
 "- [権限仕様](/specs/permission)\n"
