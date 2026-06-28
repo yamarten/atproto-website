@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Bluesky Social PBC
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-06-29 00:49+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:68
+#: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:60
+#: src/guides/streaming-data/en.mdx:42 src/guides/video-handling/en.mdx:32
+#: src/guides/feeds/en.mdx:90 src/guides/installing-lexicons/en.mdx:68
+#: src/guides/oauth-patterns/en.mdx:125
+#: src/guides/permission-requests/en.mdx:147 src/guides/subscriptions/en.mdx:40
+#: src/guides/writing-data/en.mdx:126 src/guides/creating-a-labeler/en.mdx:43
+#: src/guides/labels/en.mdx:95 src/guides/sdk-auth/en.mdx:70
+#: src/guides/sync/en.mdx:47 src/guides/auth/en.mdx:60
+#: src/guides/lexicon/en.mdx:68 src/guides/publishing-lexicons/en.mdx:60
+#: src/guides/backfilling/en.mdx:64 src/guides/reading-data/en.mdx:113
+#: src/guides/social-graph/en.mdx:25 src/guides/permission-sets/en.mdx:83
+#: src/guides/using-ozone/en.mdx:134 src/guides/about-oauth/en.mdx:81
+#: src/guides/scope-builder/en.mdx:21
+#, no-wrap
+msgid "## Further Reading and Resources\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/scope-builder/en.mdx:2
+#, no-wrap
+msgid "import { ScopeBuilderLoader } from '@/components/ScopeBuilder'\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/scope-builder/en.mdx:7
+#, no-wrap
+msgid ""
+"export const header = {\n"
+"  title: 'Scope Builder',\n"
+"  description: 'Compose an OAuth scope string for your app',\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/scope-builder/en.mdx:9
+#, no-wrap
+msgid "OAuth scopes are how an app requests permission to create, update, and delete records from a repo, call XRPC methods, or perform certain account management functions. This is critical to [how OAuth works](/guides/auth#what-is-o-auth) and how an app establishes trust with the people using it.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/scope-builder/en.mdx:11
+#, no-wrap
+msgid "An app can request individual scopes, which tend to correspond to specific [Lexicons](/guides/lexicon), XRPC methods, or management actions.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/scope-builder/en.mdx:13
+#, no-wrap
+msgid "However, requesting many individual scopes tends to be confusing, and requesing blanket permission to a PDS is overly permissive, so apps can bundle permissions together into [Permission Sets](/guides/permission-sets). Since their introduction in late 2025, permission sets have been the recommended way for apps to manage OAuth permissions. Note that some scopes, such as uploading files or managing an account's email, can not be bundled into a set and must be requested individually.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/scope-builder/en.mdx:15
+#, no-wrap
+msgid "This tool lets you interactively select the scopes your app requires and generates the appropriate [scope string](specs/permission#scope-string-syntax). We've included permission sets for Bluesky as well as many popular apps in the atproto ecosystem; if you'd like to have your apps' permission set included, [let us know](https://github.com/bluesky-social/atproto-website/issues/676). You can even provide a link to a specific permission set (either an `at://` URL or a link from [lexicon.garden](https://lexicon.garden)) if you are building your own.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/scope-builder/en.mdx:17
+#, no-wrap
+msgid "A note about security: an OAuth scope is a request from an app, not an explicit grant. The generated scope string is meant for developers to paste into their own OAuth request and permission must still be given by the person using the app. The generated scopes have been tested to work with atproto OAuth, developers are still responsible for [requesting only the level of access their app requires](/guides/permission-requests#requesting-permissions).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/scope-builder/en.mdx:19
+#, no-wrap
+msgid "<ScopeBuilderLoader />\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/scope-builder/en.mdx:28
+#, no-wrap
+msgid ""
+"- [About OAuth](/guides/about-oauth)\n"
+"- [Permission Requests](/guides/permission-requests)\n"
+"- [Permission Sets](/guides/permission-sets)\n"
+"- [Auth](/guides/auth)\n"
+"- [OAuth Patterns](/guides/oauth-patterns)\n"
+"- [OAuth spec](/specs/oauth)\n"
+"- [Permissions spec](/specs/permission)\n"
+msgstr ""

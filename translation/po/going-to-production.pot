@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-05-18 11:10+0900\n"
+"POT-Creation-Date: 2026-06-28 20:00+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,7 +61,7 @@ msgstr ""
 #. type: Plain text
 #: src/guides/going-to-production/en.mdx:18
 #, no-wrap
-msgid "[PDS Gatekeeper](https://tangled.org/baileytownsend.dev/pds-gatekeeper) is a community project that adds 2FA and other security features to a self-hosted PDS.\n"
+msgid "[PDS Gatekeeper](https://tangled.org/pds.dad/pds-gatekeeper) is a community project that adds 2FA and other security features to a self-hosted PDS.\n"
 msgstr ""
 
 #. type: Plain text

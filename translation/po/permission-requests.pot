@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-05-18 11:10+0900\n"
+"POT-Creation-Date: 2026-06-28 20:00+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,16 +20,16 @@ msgstr ""
 #: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:68
 #: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:60
 #: src/guides/streaming-data/en.mdx:42 src/guides/video-handling/en.mdx:32
-#: src/guides/feeds/en.mdx:90 src/guides/installing-lexicons/en.mdx:41
+#: src/guides/feeds/en.mdx:90 src/guides/installing-lexicons/en.mdx:68
 #: src/guides/oauth-patterns/en.mdx:125
-#: src/guides/permission-requests/en.mdx:125 src/guides/subscriptions/en.mdx:40
-#: src/guides/writing-data/en.mdx:126 src/guides/creating-a-labeler/en.mdx:35
+#: src/guides/permission-requests/en.mdx:147 src/guides/subscriptions/en.mdx:40
+#: src/guides/writing-data/en.mdx:126 src/guides/creating-a-labeler/en.mdx:43
 #: src/guides/labels/en.mdx:95 src/guides/sdk-auth/en.mdx:70
 #: src/guides/sync/en.mdx:47 src/guides/auth/en.mdx:60
 #: src/guides/lexicon/en.mdx:68 src/guides/publishing-lexicons/en.mdx:60
 #: src/guides/backfilling/en.mdx:64 src/guides/reading-data/en.mdx:113
 #: src/guides/social-graph/en.mdx:25 src/guides/permission-sets/en.mdx:83
-#: src/guides/using-ozone/en.mdx:132 src/guides/about-oauth/en.mdx:81
+#: src/guides/using-ozone/en.mdx:134 src/guides/about-oauth/en.mdx:81
 #, no-wrap
 msgid "## Further Reading and Resources\n"
 msgstr ""
@@ -182,17 +182,83 @@ msgstr ""
 #. type: Plain text
 #: src/guides/permission-requests/en.mdx:63
 #, no-wrap
-msgid "## Clients\n"
+msgid "## Permission sets\n"
 msgstr ""
 
 #. type: Plain text
 #: src/guides/permission-requests/en.mdx:65
 #, no-wrap
-msgid "OAuth client software is identified by a globally unique `client_id`. Distinct variants of client software may have distinct `client_id` values; for example the browser app and Android (mobile OS) variants of the same software might have different `client_id` values. The `client_id` must be a fully-qualified web URL from which the client-metadata JSON document can be fetched. For example, `https://app.example.com/oauth-client-metadata.json`. Some more about the `client_id`:\n"
+msgid "Recall that the point of OAuth is to let applications act on a user's behalf without requiring the user to hand over their username and password. For atproto apps, that means an OAuth request will ask for permission to write records to the user's PDS, call API endpoints on their behalf, upload media — everything outlined in the permission types above.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/permission-requests/en.mdx:67
+#, no-wrap
+msgid "Even relatively simple apps can end up requesting several permissions, and the OAuth authorization dialog listing them all individually can be confusing to the people using your app. To solve this, permission sets let you logically group permissions together and present them with a human-readable title and description.\n"
 msgstr ""
 
 #. type: Plain text
 #: src/guides/permission-requests/en.mdx:69
+#, no-wrap
+msgid "Bluesky has published a number of permission sets for the various ways people might want to build Bluesky-specific applications. For example, if you're building a full-featured microblogging client, you probably want to request the [`app.bsky.authFullApp` permission set](https://lexicon.garden/lexicon/did:plc:4v4y5r3lwsbtmsxhile2ljac/app.bsky.authFullApp), which grants a comprehensive set of permissions covering posts, settings, and subscriptions.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/permission-requests/en.mdx:71
+#, no-wrap
+msgid "If, however, you only want to build an app that posts to someone's timeline, you can request the much more narrowly scoped [`app.bsky.authCreatePosts` permission set](https://lexicon.garden/lexicon/did:plc:4v4y5r3lwsbtmsxhile2ljac/app.bsky.authCreatePosts).\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/permission-requests/en.mdx:73
+#, no-wrap
+msgid "When requesting OAuth permissions, keep these rules of thumb in mind:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/permission-requests/en.mdx:75
+#, no-wrap
+msgid "1. If you are building a client app for an existing service, use a permission set published by that service if one is available. For example, a streaming video client for Stream.place would request the [`place.stream.authFull` permission set](https://lexicon.garden/lexicon/did:plc:gqtagsooi75obldmytuow57q/place.stream.authFull), which grants full access to Stream.place on the user's behalf.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/permission-requests/en.mdx:77
+#, no-wrap
+msgid "2. If you are building your own Lexicons, author a permission set that bundles the related record types and API endpoints your app exposes. See [Permission Sets](/guides/permission-sets) for the design guide.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/permission-requests/en.mdx:79
+#, no-wrap
+msgid "3. Request individual scopes directly when your app only needs a few permissions, or when you need `blob`, `account`, or `identity` scopes — those can never be included in a permission set and must always be requested on their own.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/permission-requests/en.mdx:81
+#, no-wrap
+msgid "These approaches compose: apps often request one or more permission sets plus a handful of individual scopes in the same OAuth flow.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/permission-requests/en.mdx:83
+#, no-wrap
+msgid "And if you need help building your own permission sets, or requesting Bluesky permissions, we've built a [scope builder](/guides/scope-builder) page to help.\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/permission-requests/en.mdx:85
+#, no-wrap
+msgid "## Clients\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/permission-requests/en.mdx:87
+#, no-wrap
+msgid "OAuth client software is identified by a globally unique `client_id`. Distinct variants of client software may have distinct `client_id` values; for example the browser app and Android (mobile OS) variants of the same software might have different `client_id` values. The `client_id` must be a fully-qualified web URL from which the client-metadata JSON document can be fetched. For example, `https://app.example.com/oauth-client-metadata.json`. Some more about the `client_id`:\n"
+msgstr ""
+
+#. type: Plain text
+#: src/guides/permission-requests/en.mdx:91
 #, no-wrap
 msgid ""
 "- it must be a well-formed URL, following the W3C URL specification\n"
@@ -201,7 +267,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:73
+#: src/guides/permission-requests/en.mdx:95
 #, no-wrap
 msgid ""
 "<Note>\n"
@@ -210,7 +276,7 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:77
+#: src/guides/permission-requests/en.mdx:99
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -219,55 +285,55 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:79
+#: src/guides/permission-requests/en.mdx:101
 #, no-wrap
 msgid "The auth flow page will display all the relevant permissions being granted. This is true both for apps using [granular permissions](/specs/permission), and for those using the [transitional](/specs/oauth#authorization-scopes) OAuth scopes.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:81
+#: src/guides/permission-requests/en.mdx:103
 #, no-wrap
 msgid "Client Apps should be sure to check which auth scopes were actually approved during the auth flow. In particular, when requesting permission to read an account email address (`account:email`), the user might decline that permission while granting others. In theory, any individual permission might be denied while the overall request is granted.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:83
+#: src/guides/permission-requests/en.mdx:105
 #, no-wrap
 msgid "## Rolling out changes\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:85
+#: src/guides/permission-requests/en.mdx:107
 #, no-wrap
 msgid "When you update your app to use new permission sets, it's important to coordinate the software release with the permission-set updates. If you add new permission sets that require user approval, users will need to re-authorize your app to grant these new permissions.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:87
+#: src/guides/permission-requests/en.mdx:109
 #, no-wrap
 msgid "Your release and deployment process for the [client metadata document](/specs/oauth#clients) may be separate from your app's code deployment process. Make sure to plan accordingly — an updated `oauth-client-metadata.json` that requests new permissions must be live before a version of your app that requires those permissions.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:89
+#: src/guides/permission-requests/en.mdx:111
 #, no-wrap
 msgid "Permission sets can be revised, but removing them or making destructive changes can break existing applications. In general, permission sets should be closely tied to the applications they are designed for, but not necessarily 1:1. Remember that atproto applications can utilize multiple different Lexicons.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:91
+#: src/guides/permission-requests/en.mdx:113
 #, no-wrap
 msgid "## OAuth flow examples\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:93
+#: src/guides/permission-requests/en.mdx:115
 #, no-wrap
 msgid "Apps that are using atproto identity providers *solely* for authentication [only need to request the `atproto` permission](/guides/permission-sets). This provides the same OAuth flow that you might expect from other identity providers; no features of the Atmosphere social graph are used, and no additional permissions are required:\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:97
+#: src/guides/permission-requests/en.mdx:119
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -276,19 +342,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:99
+#: src/guides/permission-requests/en.mdx:121
 #, no-wrap
 msgid "This is a fully usable Atmosphere integration, and many applications will use this as a starting point. Note that it produces a straightforward, readable \"Authorize\" flow. The URL of the requesting app is clearly visible, and the permissions dialog states that the app \"wants to uniquely identify you,\" but nothing else.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:101
+#: src/guides/permission-requests/en.mdx:123
 #, no-wrap
 msgid "Next, consider a more complex integration, that requests additional permissions. By default, these will be presented in a summarized view:\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:105
+#: src/guides/permission-requests/en.mdx:127
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -297,19 +363,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:107
+#: src/guides/permission-requests/en.mdx:129
 #, no-wrap
 msgid "In this image, note that there are two different Lexicon groupings: *Bluesky* permissions, and *Skyblur* permissions. Each Lexicon defines its own permission sets, as well as its own grouping and presentation of those permissions.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:109
+#: src/guides/permission-requests/en.mdx:131
 #, no-wrap
 msgid "You can click through on the **?** icons to see the details of each permission set:\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:113
+#: src/guides/permission-requests/en.mdx:135
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -318,19 +384,19 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:115
+#: src/guides/permission-requests/en.mdx:137
 #, no-wrap
 msgid "From the expanded atproto and Bluesky permissions, you might recognize `atproto` (for OAuth login), `blob:*/*` (for image and video handling), and several other `app.bsky.*` permissions for profile and social graph interactions.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:117
+#: src/guides/permission-requests/en.mdx:139
 #, no-wrap
 msgid "The *Skyblur* Lexicon permissions are defined and summarized differently:\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:121
+#: src/guides/permission-requests/en.mdx:143
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -339,13 +405,13 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:123
+#: src/guides/permission-requests/en.mdx:145
 #, no-wrap
 msgid "This is all at the discretion of app developers and Lexicon designers. We provide a model for using different Lexicons side by side, and for each Lexicon to define its own permission sets and presentation.\n"
 msgstr ""
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:133
+#: src/guides/permission-requests/en.mdx:155
 #, no-wrap
 msgid ""
 "- [Auth](/guides/auth)\n"
