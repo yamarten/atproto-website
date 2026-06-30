@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-05-18 11:10+0900\n"
+"POT-Creation-Date: 2026-06-30 10:47+0900\n"
 "PO-Revision-Date: 2026-05-18 11:10+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -102,30 +102,30 @@ msgstr "PDSの鍵よりも優先度の高い独自のローテーション鍵を
 #. type: Plain text
 #: src/guides/account-recovery/en.mdx:30
 #, no-wrap
-msgid "## Recovery Keys\n"
-msgstr "<Heading level={2} id=\"recovery-keys\">復旧鍵</Heading>\n"
+msgid "## Rotation Keys\n"
+msgstr "<Heading level={2} id=\"rotation-keys\">ローテーション鍵</Heading>\n"
 
 #. type: Plain text
 #: src/guides/account-recovery/en.mdx:32
 #, no-wrap
-msgid "Each DID document publishes two public keys: a signing key and a recovery key.\n"
-msgstr "各DIDドキュメントは、署名鍵と復旧鍵の2つの公開鍵を公開します。\n"
+msgid "Each DID uses two kinds of keys: a signing key and rotation keys.\n"
+msgstr "各DIDドキュメントは、署名鍵とローテーション鍵の2種類の公開鍵を利用します。\n"
 
 #. type: Plain text
 #: src/guides/account-recovery/en.mdx:35
 #, no-wrap
 msgid ""
-"- **Signing key**: Asserts changes to the DID Document and to the user's data repository.\n"
-"- **Recovery key**: Asserts changes to the DID Document; may override the signing key within a **72-hour window**.\n"
+"- **Signing key**: Asserts changes to the user's data repository.\n"
+"- **Rotation key**: Asserts changes to the DID Document; can update the signing key.\n"
 msgstr ""
-"- **署名鍵**：DIDドキュメントおよびユーザーのデータリポジトリへの変更を保証します。\n"
-"- **復旧鍵**：DIDドキュメントへの変更を保証し、**72時間のウィンドウ**内では署名鍵を上書きできる場合があります。\n"
+"- **署名鍵**：ユーザーのデータリポジトリへの変更を保証します。\n"
+"- **ローテーション鍵**：DIDドキュメントへの変更を保証し、署名鍵を更新することもできます。\n"
 
 #. type: Plain text
 #: src/guides/account-recovery/en.mdx:37
 #, no-wrap
-msgid "The signing key is entrusted to the PDS so that it can manage the user's data, but the recovery key is saved by the user, e.g. as a paper key. This makes it possible for the user to update their account to a new PDS without the original host's help.\n"
-msgstr "署名鍵はPDSに委託され、ユーザーのデータを管理できるようにしますが、復旧鍵はユーザーが保持することもできます（紙に印刷するなど）。これにより、ユーザーは元のホストの助けを借りずにアカウントを新しいPDSに変更できます。\n"
+msgid "The signing key is entrusted to the PDS so that it can manage the user's data. A rotation key can also be saved by the user, e.g. as a paper key. This makes it possible for the user to update their account to a new PDS without the original host's help.\n"
+msgstr "署名鍵はPDSに委託され、ユーザーのデータを管理できるようにします。ローテーション鍵はユーザーが保存することもできます（紙に印刷するなど）。これにより、ユーザーは元のホストの助けを借りずにアカウントを新しいPDSに更新できます。\n"
 
 #. type: Plain text
 #: src/guides/account-recovery/en.mdx:39
@@ -153,6 +153,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/account-recovery/en.mdx:49
+#: src/guides/account-management/en.mdx:76
 #, no-wrap
 msgid ""
 "```bash\n"
