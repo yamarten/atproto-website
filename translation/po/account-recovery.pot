@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-05-18 11:10+0900\n"
+"POT-Creation-Date: 2026-06-30 10:47+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -93,27 +93,27 @@ msgstr ""
 #. type: Plain text
 #: src/guides/account-recovery/en.mdx:30
 #, no-wrap
-msgid "## Recovery Keys\n"
+msgid "## Rotation Keys\n"
 msgstr ""
 
 #. type: Plain text
 #: src/guides/account-recovery/en.mdx:32
 #, no-wrap
-msgid "Each DID document publishes two public keys: a signing key and a recovery key.\n"
+msgid "Each DID uses two kinds of keys: a signing key and rotation keys.\n"
 msgstr ""
 
 #. type: Plain text
 #: src/guides/account-recovery/en.mdx:35
 #, no-wrap
 msgid ""
-"- **Signing key**: Asserts changes to the DID Document and to the user's data repository.\n"
-"- **Recovery key**: Asserts changes to the DID Document; may override the signing key within a **72-hour window**.\n"
+"- **Signing key**: Asserts changes to the user's data repository.\n"
+"- **Rotation key**: Asserts changes to the DID Document; can update the signing key.\n"
 msgstr ""
 
 #. type: Plain text
 #: src/guides/account-recovery/en.mdx:37
 #, no-wrap
-msgid "The signing key is entrusted to the PDS so that it can manage the user's data, but the recovery key is saved by the user, e.g. as a paper key. This makes it possible for the user to update their account to a new PDS without the original host's help.\n"
+msgid "The signing key is entrusted to the PDS so that it can manage the user's data. A rotation key can also be saved by the user, e.g. as a paper key. This makes it possible for the user to update their account to a new PDS without the original host's help.\n"
 msgstr ""
 
 #. type: Plain text
@@ -139,6 +139,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/account-recovery/en.mdx:49
+#: src/guides/account-management/en.mdx:76
 #, no-wrap
 msgid ""
 "```bash\n"
