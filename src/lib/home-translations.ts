@@ -23,7 +23,7 @@ const homeTranslations: Record<string, Record<string, string>> = {
     'Next': '次へ',
 
     // Firehose
-    'Public Firehose': 'パブリックファイアホース',
+    'Public Firehose': 'パブリックfirehose',
     'Tap into the event stream for all public activity. Build feeds, bots, search engines, and applications using live activity. No API key required.':
       'すべての公開アクティビティのイベントストリームにアクセスできます。ライブアクティビティを使ってフィード、ボット、検索エンジン、アプリを構築しましょう。APIキーは不要です。',
     'Stop stream': '停止',
@@ -35,7 +35,7 @@ const homeTranslations: Record<string, Record<string, string>> = {
       '共有のAtmosphereネットワークを活用して次のアプリを作りましょう。',
     'Build an Agent': 'エージェントを作る',
     'Listen to the firehose for mentions and reply to users automatically.':
-      'ファイアホースでメンションを受信し、自動返信しましょう。',
+      'firehoseでメンションを受信し、自動返信しましょう。',
     'Write an Algorithm': 'アルゴリズムを書く',
     'Use simple rules or advanced ML to create custom feeds.':
       'シンプルなルールや高度な機械学習でカスタムフィードを作りましょう。',
