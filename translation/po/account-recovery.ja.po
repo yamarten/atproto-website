@@ -37,7 +37,7 @@ msgstr ""
 #: src/guides/account-recovery/en.mdx:8
 #, no-wrap
 msgid "This guide explains how to pre-register your own cryptographic rotation key with your `did:plc` identity, enabling you to recover your account even if your PDS becomes uncooperative or goes offline.\n"
-msgstr "このガイドでは、`did:plc`アイデンティティに独自の暗号ローテーション鍵を事前登録する方法を説明します。PDSが非協力的になったりオフラインになった場合でも、アカウントを回復できるようになります。\n"
+msgstr "このガイドでは、`did:plc` IDに独自の暗号ローテーション鍵を事前登録する方法を説明します。PDSが非協力的になったりオフラインになった場合でも、アカウントを復旧できるようになります。\n"
 
 #. type: Plain text
 #: src/guides/account-recovery/en.mdx:10
@@ -67,13 +67,13 @@ msgid ""
 msgstr ""
 "- あらゆるサービスプロバイダーから独立して自分のアイデンティティを最大限に管理したい\n"
 "- 暗号鍵を安全に管理することに技術的に慣れている\n"
-"- 鍵を失うとこの回復手段も失われることを理解している\n"
+"- 鍵を失うとこの復旧手段も失われることを理解している\n"
 
 #. type: Plain text
 #: src/guides/account-recovery/en.mdx:20
 #, no-wrap
 msgid "If your PDS goes offline and you *don't* have a self-custodied rotation key, you may still be able to recover your account via your PDS operator or by working with the [PLC directory](/guides/the-at-stack#did-plc) during the [72-hour recovery window](#recovery-keys). Pre-registering a rotation key is an additional safeguard, not a replacement for trusting your PDS provider.\n"
-msgstr "PDSがオフラインになり、自己管理されたローテーション鍵を持っていない場合でも、PDS運営者を通じて、あるいは[72時間復旧ウィンドウ](#recovery-keys)中に[PLCディレクトリ](/guides/the-at-stack#did-plc)と連携することでアカウントを回復できる可能性があります。ローテーション鍵の事前登録は追加の保護策であり、PDSプロバイダーを信頼することの代替ではありません。\n"
+msgstr "PDSがオフラインになり、自己管理されたローテーション鍵を持っていない場合でも、PDS運営者を通じて、あるいは[72時間復旧ウィンドウ](#recovery-keys)中に[PLCディレクトリ](/guides/the-at-stack#did-plc)と連携することでアカウントを復旧できる可能性があります。ローテーション鍵の事前登録は追加の保護策であり、PDSプロバイダーを信頼することの代替ではありません。\n"
 
 #. type: Plain text
 #: src/guides/account-recovery/en.mdx:22
@@ -91,7 +91,7 @@ msgstr "ATプロトコルアカウントには、人間が読める**ハンド�
 #: src/guides/account-recovery/en.mdx:26
 #, no-wrap
 msgid "Most atproto accounts use `did:plc`, a DID method that relies on **rotation keys** to authorize identity updates. These keys are arranged in priority order: earlier keys in the list can override changes made by later keys. By default, your PDS holds the only rotation key for your identity.\n"
-msgstr "ほとんどのatprotoアカウントは、アイデンティティ更新に**ローテーション鍵**を使用するDIDメソッドである`did:plc`を利用しています。これらの鍵は優先順位順に並んでおり、リストの前の鍵は後の鍵による変更を上書きできます。デフォルトでは、PDSがあなたのIDの唯一のローテーション鍵を保持します。\n"
+msgstr "ほとんどのatprotoアカウントは、ID更新に**ローテーション鍵**を使用するDIDメソッドである`did:plc`を利用しています。これらの鍵は優先順位順に並んでおり、リストの前の鍵は後の鍵による変更を上書きできます。デフォルトでは、PDSがあなたのIDの唯一のローテーション鍵を保持します。\n"
 
 #. type: Plain text
 #: src/guides/account-recovery/en.mdx:28

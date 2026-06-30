@@ -124,6 +124,10 @@ msgid ""
 "    <TabPanel value=\"go\">\n"
 "    <UploadBlobGo />\n"
 msgstr ""
+"    <PostWithEmbedTs />\n"
+"    </TabPanel>\n"
+"    <TabPanel value=\"go\">\n"
+"    <UploadBlobGo />\n"
 
 #. type: Plain text
 #: src/guides/images-and-video/en.mdx:37

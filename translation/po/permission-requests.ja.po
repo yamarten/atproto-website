@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-05-18 11:10+0900\n"
+"POT-Creation-Date: 2026-06-28 20:00+0900\n"
 "PO-Revision-Date: 2026-01-07 19:40+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -20,16 +20,16 @@ msgstr ""
 #: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:68
 #: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:60
 #: src/guides/streaming-data/en.mdx:42 src/guides/video-handling/en.mdx:32
-#: src/guides/feeds/en.mdx:90 src/guides/installing-lexicons/en.mdx:41
+#: src/guides/feeds/en.mdx:90 src/guides/installing-lexicons/en.mdx:68
 #: src/guides/oauth-patterns/en.mdx:125
-#: src/guides/permission-requests/en.mdx:125 src/guides/subscriptions/en.mdx:40
-#: src/guides/writing-data/en.mdx:126 src/guides/creating-a-labeler/en.mdx:35
+#: src/guides/permission-requests/en.mdx:147 src/guides/subscriptions/en.mdx:40
+#: src/guides/writing-data/en.mdx:126 src/guides/creating-a-labeler/en.mdx:43
 #: src/guides/labels/en.mdx:95 src/guides/sdk-auth/en.mdx:70
 #: src/guides/sync/en.mdx:47 src/guides/auth/en.mdx:60
 #: src/guides/lexicon/en.mdx:68 src/guides/publishing-lexicons/en.mdx:60
 #: src/guides/backfilling/en.mdx:64 src/guides/reading-data/en.mdx:113
 #: src/guides/social-graph/en.mdx:25 src/guides/permission-sets/en.mdx:83
-#: src/guides/using-ozone/en.mdx:132 src/guides/about-oauth/en.mdx:81
+#: src/guides/using-ozone/en.mdx:134 src/guides/about-oauth/en.mdx:81
 #, no-wrap
 msgid "## Further Reading and Resources\n"
 msgstr "<Heading level={2} id=\"further-reading-and-resources\">関連・参考資料</Heading>\n"
@@ -134,7 +134,7 @@ msgstr "<OauthScopeMetadata />\n"
 #: src/guides/permission-requests/en.mdx:36
 #, no-wrap
 msgid "OAuth in AT uses [Pushed Authorization Requests](https://auth0.com/blog/what-are-oauth-push-authorization-requests-par/) (PAR). The client metadata file will be fetched dynamically during the session lifecycle, and the `scope` parameter in `oauth-client-metadata.json` *needs to match* the actual authorization HTTP request made by your app:\n"
-msgstr "ATにおけるOAuthは[Pushed Authorization Requests](https://auth0.com/blog/what-are-oauth-push-authorization-requests-par/)（PAR）を使用します。クライアントメタデータファイルはセッションライフサイクル中に動的に取得され、`oauth-client-metadata.json`の`scope`パラメータはアプリが実際に行う認可HTTPリクエストと*一致している必要があります*。\n"
+msgstr "ATにおけるOAuthは[Pushed Authorization Requests](https://auth0.com/blog/what-are-oauth-push-authorization-requests-par/)（PAR）を使用します。クライアントメタデータファイルはセッションライフサイクル中に動的に取得され、`oauth-client-metadata.json`の`scope`パラメータはアプリが実際に行う認可HTTPリクエストを*含んでいる必要があります*。\n"
 
 #. type: Plain text
 #: src/guides/permission-requests/en.mdx:38
@@ -207,17 +207,83 @@ msgstr "権限セット自体もLexiconスキーマであり、他のLexiconと�
 #. type: Plain text
 #: src/guides/permission-requests/en.mdx:63
 #, no-wrap
+msgid "## Permission sets\n"
+msgstr "<Heading level={2} id=\"permission-sets\">権限セット</Heading>\n"
+
+#. type: Plain text
+#: src/guides/permission-requests/en.mdx:65
+#, no-wrap
+msgid "Recall that the point of OAuth is to let applications act on a user's behalf without requiring the user to hand over their username and password. For atproto apps, that means an OAuth request will ask for permission to write records to the user's PDS, call API endpoints on their behalf, upload media — everything outlined in the permission types above.\n"
+msgstr "OAuthの目的は、ユーザーが自分のユーザー名とパスワードを渡すことなく、アプリケーションがユーザーに代わって動作できるようにすることです。atprotoアプリの場合、OAuthリクエストは、ユーザーのPDSへのレコード書き込み、APIエンドポイントの呼び出し、メディアのアップロードなど、上記の権限タイプで概説されたあらゆる操作を行うための権限を要求します。\n"
+
+#. type: Plain text
+#: src/guides/permission-requests/en.mdx:67
+#, no-wrap
+msgid "Even relatively simple apps can end up requesting several permissions, and the OAuth authorization dialog listing them all individually can be confusing to the people using your app. To solve this, permission sets let you logically group permissions together and present them with a human-readable title and description.\n"
+msgstr "比較的シンプルなアプリでも、最終的にはいくつもの権限を要求することになり、OAuth認可ダイアログでそれらを個別に列挙すると、アプリを使用する人々にとって混乱を招く可能性があります。これを解決するために、権限セットは権限を論理的にグループ化し、人間に優しいタイトルと説明を提示できるようにします。\n"
+
+#. type: Plain text
+#: src/guides/permission-requests/en.mdx:69
+#, no-wrap
+msgid "Bluesky has published a number of permission sets for the various ways people might want to build Bluesky-specific applications. For example, if you're building a full-featured microblogging client, you probably want to request the [`app.bsky.authFullApp` permission set](https://lexicon.garden/lexicon/did:plc:4v4y5r3lwsbtmsxhile2ljac/app.bsky.authFullApp), which grants a comprehensive set of permissions covering posts, settings, and subscriptions.\n"
+msgstr "Blueskyは、Bluesky固有のアプリケーションを構築するさまざまな方法に対応するための権限セットを公開しています。例えば、フル機能のマイクロブログクライアントを構築している場合、投稿、設定、購読をカバーする包括的な権限セットを付与する[`app.bsky.authFullApp`権限セット](https://lexicon.garden/lexicon/did:plc:4v4y5r3lwsbtmsxhile2ljac/app.bsky.authFullApp)を要求することになるでしょう。\n"
+
+#. type: Plain text
+#: src/guides/permission-requests/en.mdx:71
+#, no-wrap
+msgid "If, however, you only want to build an app that posts to someone's timeline, you can request the much more narrowly scoped [`app.bsky.authCreatePosts` permission set](https://lexicon.garden/lexicon/did:plc:4v4y5r3lwsbtmsxhile2ljac/app.bsky.authCreatePosts).\n"
+msgstr "しかし、タイムラインに投稿するだけのアプリを構築したい場合は、より狭いスコープの[`app.bsky.authCreatePosts`権限セット](https://lexicon.garden/lexicon/did:plc:4v4y5r3lwsbtmsxhile2ljac/app.bsky.authCreatePosts)を要求できます。\n"
+
+#. type: Plain text
+#: src/guides/permission-requests/en.mdx:73
+#, no-wrap
+msgid "When requesting OAuth permissions, keep these rules of thumb in mind:\n"
+msgstr "OAuth権限を要求する際には、次のルールを念頭に置いてください。\n"
+
+#. type: Plain text
+#: src/guides/permission-requests/en.mdx:75
+#, no-wrap
+msgid "1. If you are building a client app for an existing service, use a permission set published by that service if one is available. For example, a streaming video client for Stream.place would request the [`place.stream.authFull` permission set](https://lexicon.garden/lexicon/did:plc:gqtagsooi75obldmytuow57q/place.stream.authFull), which grants full access to Stream.place on the user's behalf.\n"
+msgstr "1. 既存サービスのクライアントアプリを構築している場合、利用可能であればそのサービスが公開している権限セットを使用してください。例えば、Stream.placeのストリーミングクライアントは、ユーザーに代わってStream.placeへの完全なアクセス権を付与する[`place.stream.authFull`権限セット](https://lexicon.garden/lexicon/did:plc:gqtagsooi75obldmytuow57q/place.stream.authFull)を要求します。\n"
+
+#. type: Plain text
+#: src/guides/permission-requests/en.mdx:77
+#, no-wrap
+msgid "2. If you are building your own Lexicons, author a permission set that bundles the related record types and API endpoints your app exposes. See [Permission Sets](/guides/permission-sets) for the design guide.\n"
+msgstr "2. 独自のLexiconを構築している場合、アプリが公開する関連レコードタイプとAPIエンドポイントをまとめた権限セットを作成してください。設計ガイドについては[権限セット](/guides/permission-sets)を参照してください。\n"
+
+#. type: Plain text
+#: src/guides/permission-requests/en.mdx:79
+#, no-wrap
+msgid "3. Request individual scopes directly when your app only needs a few permissions, or when you need `blob`, `account`, or `identity` scopes — those can never be included in a permission set and must always be requested on their own.\n"
+msgstr "3. アプリが少数の権限しか必要としない場合、または`blob`、`account`、`identity`スコープが必要な場合は、個々のスコープを直接要求してください。これらは権限セットに含めることはできず、常に個別に要求する必要があります。\n"
+
+#. type: Plain text
+#: src/guides/permission-requests/en.mdx:81
+#, no-wrap
+msgid "These approaches compose: apps often request one or more permission sets plus a handful of individual scopes in the same OAuth flow.\n"
+msgstr "これらのアプローチは組み合わせることができます。アプリは、同じOAuthフローで1つ以上の権限セットと少数の個別スコープを要求することがよくあります。\n"
+
+#. type: Plain text
+#: src/guides/permission-requests/en.mdx:83
+#, no-wrap
+msgid "And if you need help building your own permission sets, or requesting Bluesky permissions, we've built a [scope builder](/guides/scope-builder) page to help.\n"
+msgstr "独自の権限セットを構築したり、Blueskyの権限を要求する際に支援が必要な場合は、[スコープビルダー](/guides/scope-builder)ページを用意しています。\n"
+
+#. type: Plain text
+#: src/guides/permission-requests/en.mdx:85
+#, no-wrap
 msgid "## Clients\n"
 msgstr "<Heading level={2} id=\"clients\">クライアント</Heading>\n"
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:65
+#: src/guides/permission-requests/en.mdx:87
 #, no-wrap
 msgid "OAuth client software is identified by a globally unique `client_id`. Distinct variants of client software may have distinct `client_id` values; for example the browser app and Android (mobile OS) variants of the same software might have different `client_id` values. The `client_id` must be a fully-qualified web URL from which the client-metadata JSON document can be fetched. For example, `https://app.example.com/oauth-client-metadata.json`. Some more about the `client_id`:\n"
 msgstr "OAuthクライアントソフトウェアはグローバルに一意な`client_id`で識別されます。クライアントソフトウェアの各バリアントは異なる`client_id`を持つことがあります。例えば同じソフトウェアのブラウザ版とAndroid（モバイル）版は異なる`client_id`を持つかもしれません。`client_id`は、クライアントメタデータJSONドキュメントが取得できる完全修飾のウェブURLでなければなりません。例えば`https://app.example.com/oauth-client-metadata.json`のようなものです。\n"
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:69
+#: src/guides/permission-requests/en.mdx:91
 #, no-wrap
 msgid ""
 "- it must be a well-formed URL, following the W3C URL specification\n"
@@ -229,7 +295,7 @@ msgstr ""
 "- パスに`oauth-client-metadata.json`を含める必要はありませんが、慣例としては役立ちます。\n"
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:73
+#: src/guides/permission-requests/en.mdx:95
 #, no-wrap
 msgid ""
 "<Note>\n"
@@ -241,7 +307,7 @@ msgstr ""
 "</Note>\n"
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:77
+#: src/guides/permission-requests/en.mdx:99
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -253,55 +319,55 @@ msgstr ""
 "</Container>\n"
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:79
+#: src/guides/permission-requests/en.mdx:101
 #, no-wrap
 msgid "The auth flow page will display all the relevant permissions being granted. This is true both for apps using [granular permissions](/specs/permission), and for those using the [transitional](/specs/oauth#authorization-scopes) OAuth scopes.\n"
 msgstr "認可フローのページは付与される関連権限をすべて表示します。これは[細分化されたスコープ](/specs/permission)を使うアプリでも、[トランジションスコープ](/specs/oauth#authorization-scopes)を使うものでも同様です。\n"
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:81
+#: src/guides/permission-requests/en.mdx:103
 #, no-wrap
 msgid "Client Apps should be sure to check which auth scopes were actually approved during the auth flow. In particular, when requesting permission to read an account email address (`account:email`), the user might decline that permission while granting others. In theory, any individual permission might be denied while the overall request is granted.\n"
 msgstr "クライアントアプリは認可フロー中に実際に承認された認可スコープを必ず確認してください。特にアカウントのメールアドレス読み取り権限（`account:email`）を要求した場合、ユーザーはその権限だけを拒否して他の権限を承認する可能性があります。理論上はどの個別の権限も拒否された上で、リクエスト全体としては承認されることがあり得ます。\n"
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:83
+#: src/guides/permission-requests/en.mdx:105
 #, no-wrap
 msgid "## Rolling out changes\n"
 msgstr "<Heading level={2} id=\"rolling-out-changes\">変更の展開</Heading>\n"
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:85
+#: src/guides/permission-requests/en.mdx:107
 #, no-wrap
 msgid "When you update your app to use new permission sets, it's important to coordinate the software release with the permission-set updates. If you add new permission sets that require user approval, users will need to re-authorize your app to grant these new permissions.\n"
 msgstr "アプリを新しい権限セットに対応させる際は、ソフトウェアのリリースと権限セットの更新を同期させることが重要です。ユーザーの承認が必要な新しい権限セットを追加すると、ユーザーは新しい権限を付与するためにアプリを再認可する必要があります。\n"
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:87
+#: src/guides/permission-requests/en.mdx:109
 #, no-wrap
 msgid "Your release and deployment process for the [client metadata document](/specs/oauth#clients) may be separate from your app's code deployment process. Make sure to plan accordingly — an updated `oauth-client-metadata.json` that requests new permissions must be live before a version of your app that requires those permissions.\n"
 msgstr "[クライアントメタデータドキュメント](/specs/oauth#clients)のリリース/デプロイの手順は、アプリのコードデプロイ手順とは別である場合があります。適切に計画してください。新しい権限を要求する更新済みの`oauth-client-metadata.json`は、その権限を必要とするアプリのバージョンより先に公開されている必要があります。\n"
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:89
+#: src/guides/permission-requests/en.mdx:111
 #, no-wrap
 msgid "Permission sets can be revised, but removing them or making destructive changes can break existing applications. In general, permission sets should be closely tied to the applications they are designed for, but not necessarily 1:1. Remember that atproto applications can utilize multiple different Lexicons.\n"
 msgstr "権限セットは改訂できますが、削除したり破壊的変更を行うと既存アプリケーションが壊れる可能性があります。一般に、権限セットは設計対象のアプリケーションに密接に結びつけるべきですが、必ずしも1:1である必要はありません。atprotoアプリケーションは複数の異なるLexiconを利用できることを覚えておいてください。\n"
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:91
+#: src/guides/permission-requests/en.mdx:113
 #, no-wrap
 msgid "## OAuth flow examples\n"
 msgstr "<Heading level={2} id=\"o-auth-flow-examples\">OAuthフローの例</Heading>\n"
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:93
+#: src/guides/permission-requests/en.mdx:115
 #, no-wrap
 msgid "Apps that are using atproto identity providers *solely* for authentication [only need to request the `atproto` permission](/guides/permission-sets). This provides the same OAuth flow that you might expect from other identity providers; no features of the Atmosphere social graph are used, and no additional permissions are required:\n"
 msgstr "atprotoのIDプロバイダーを認証*のみ*に利用するアプリは、[`atproto`権限を要求するだけで十分](/guides/permission-sets)です。これにより、他のIDプロバイダーで期待するのと同じOAuthフローが提供されます。Atmosphereのソーシャルグラフ機能は使われず、追加の権限も不要です。\n"
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:97
+#: src/guides/permission-requests/en.mdx:119
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -313,19 +379,19 @@ msgstr ""
 "</Container>\n"
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:99
+#: src/guides/permission-requests/en.mdx:121
 #, no-wrap
 msgid "This is a fully usable Atmosphere integration, and many applications will use this as a starting point. Note that it produces a straightforward, readable \"Authorize\" flow. The URL of the requesting app is clearly visible, and the permissions dialog states that the app \"wants to uniquely identify you,\" but nothing else.\n"
 msgstr "これは十分に実用的なAtmosphere連携で、多くのアプリが出発点として利用します。ここでは明快で読みやすい「Authorize」フローが提示されます。要求元アプリのURLが明確に表示され、権限ダイアログにはアプリが「wants to uniquely identify you（あなたを識別しようとしています）」とだけ示され、それ以外はありません。\n"
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:101
+#: src/guides/permission-requests/en.mdx:123
 #, no-wrap
 msgid "Next, consider a more complex integration, that requests additional permissions. By default, these will be presented in a summarized view:\n"
 msgstr "次に、追加の権限を要求する、より複雑な連携を考えます。デフォルトでは、これらは要約で提示されます。\n"
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:105
+#: src/guides/permission-requests/en.mdx:127
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -337,19 +403,19 @@ msgstr ""
 "</Container>\n"
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:107
+#: src/guides/permission-requests/en.mdx:129
 #, no-wrap
 msgid "In this image, note that there are two different Lexicon groupings: *Bluesky* permissions, and *Skyblur* permissions. Each Lexicon defines its own permission sets, as well as its own grouping and presentation of those permissions.\n"
 msgstr "この画像では、*Bluesky*権限と*Skyblur*権限という2つの異なるLexiconのグループがあることに注目してください。各Lexiconは独自の権限セットを定義し、それらのグループと表示方法も独自に定義します。\n"
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:109
+#: src/guides/permission-requests/en.mdx:131
 #, no-wrap
 msgid "You can click through on the **?** icons to see the details of each permission set:\n"
 msgstr "「**?**」アイコンをクリックすると、各権限セットの詳細を確認できます。\n"
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:113
+#: src/guides/permission-requests/en.mdx:135
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -361,19 +427,19 @@ msgstr ""
 "</Container>\n"
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:115
+#: src/guides/permission-requests/en.mdx:137
 #, no-wrap
 msgid "From the expanded atproto and Bluesky permissions, you might recognize `atproto` (for OAuth login), `blob:*/*` (for image and video handling), and several other `app.bsky.*` permissions for profile and social graph interactions.\n"
 msgstr "展開されたatprotoとBlueskyの権限には、OAuthログイン用の`atproto`、画像・動画の取り扱い用の`blob:*/*`、そしてプロフィールやソーシャルグラフ操作のための複数の`app.bsky.*`権限が含まれていることが分かるでしょう。\n"
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:117
+#: src/guides/permission-requests/en.mdx:139
 #, no-wrap
 msgid "The *Skyblur* Lexicon permissions are defined and summarized differently:\n"
 msgstr "*Skyblur*のLexicon権限は、異なる方法で定義・要約されています。\n"
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:121
+#: src/guides/permission-requests/en.mdx:143
 #, no-wrap
 msgid ""
 "<Container>\n"
@@ -385,13 +451,13 @@ msgstr ""
 "</Container>\n"
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:123
+#: src/guides/permission-requests/en.mdx:145
 #, no-wrap
 msgid "This is all at the discretion of app developers and Lexicon designers. We provide a model for using different Lexicons side by side, and for each Lexicon to define its own permission sets and presentation.\n"
 msgstr "これらはすべてアプリ開発者とLexicon設計者の裁量に委ねられています。私たちは、異なるLexiconを並行して利用し、各Lexiconが独自の権限セットと表示を定義するためのモデルを提供しています。\n"
 
 #. type: Plain text
-#: src/guides/permission-requests/en.mdx:133
+#: src/guides/permission-requests/en.mdx:155
 #, no-wrap
 msgid ""
 "- [Auth](/guides/auth)\n"

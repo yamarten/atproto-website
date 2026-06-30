@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-05-18 11:10+0900\n"
+"POT-Creation-Date: 2026-06-28 20:00+0900\n"
 "PO-Revision-Date: 2026-01-07 19:40+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -68,8 +68,8 @@ msgstr "<Heading level={2} id=\"hardening\">セキュリティ強化</Heading>\n
 #. type: Plain text
 #: src/guides/going-to-production/en.mdx:18
 #, no-wrap
-msgid "[PDS Gatekeeper](https://tangled.org/baileytownsend.dev/pds-gatekeeper) is a community project that adds 2FA and other security features to a self-hosted PDS.\n"
-msgstr "[PDS Gatekeeper](https://tangled.org/baileytownsend.dev/pds-gatekeeper)は、セルフホストPDSに2FAやセキュリティ機能を追加するコミュニティプロジェクトです。\n"
+msgid "[PDS Gatekeeper](https://tangled.org/pds.dad/pds-gatekeeper) is a community project that adds 2FA and other security features to a self-hosted PDS.\n"
+msgstr "[PDS Gatekeeper](https://tangled.org/pds.dad/pds-gatekeeper)は、セルフホストPDSに2FAやセキュリティ機能を追加するコミュニティプロジェクトです。\n"
 
 #. type: Plain text
 #: src/guides/going-to-production/en.mdx:20

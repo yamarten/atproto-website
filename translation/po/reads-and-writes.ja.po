@@ -193,6 +193,8 @@ msgid ""
 "    <GoBlankImports />\n"
 "    </Note>\n"
 msgstr ""
+"    <GoBlankImports />\n"
+"    </Note>\n"
 
 #. type: Plain text
 #: src/guides/reads-and-writes/en.mdx:58

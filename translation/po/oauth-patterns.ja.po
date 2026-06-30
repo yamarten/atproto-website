@@ -280,14 +280,7 @@ msgstr ""
 
 #. type: Plain text
 #: src/guides/oauth-patterns/en.mdx:90
-#, fuzzy, no-wrap
-#| msgid ""
-#| "function buildScopeString(selected: Set<string>): string {\n"
-#| "  const granular = OPTIONAL_SCOPES\n"
-#| "    .filter((s) => selected.has(s.id))\n"
-#| "    .map((s) => s.scope);\n"
-#| "  return [...BASE_SCOPES, ...granular].join(\" \" );\n"
-#| "}\n"
+#, no-wrap
 msgid ""
 "function buildScopeString(selected: Set<string>): string {\n"
 "  const granular = OPTIONAL_SCOPES\n"
@@ -300,7 +293,7 @@ msgstr ""
 "  const granular = OPTIONAL_SCOPES\n"
 "    .filter((s) => selected.has(s.id))\n"
 "    .map((s) => s.scope);\n"
-"  return [...BASE_SCOPES, ...granular].join(\" \" );\n"
+"  return [...BASE_SCOPES, ...granular].join(\" \");\n"
 "}\n"
 
 #. type: Plain text

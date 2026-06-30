@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-05-18 11:10+0900\n"
+"POT-Creation-Date: 2026-06-28 20:00+0900\n"
 "PO-Revision-Date: 2026-01-07 19:40+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -20,16 +20,16 @@ msgstr ""
 #: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:68
 #: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:60
 #: src/guides/streaming-data/en.mdx:42 src/guides/video-handling/en.mdx:32
-#: src/guides/feeds/en.mdx:90 src/guides/installing-lexicons/en.mdx:41
+#: src/guides/feeds/en.mdx:90 src/guides/installing-lexicons/en.mdx:68
 #: src/guides/oauth-patterns/en.mdx:125
-#: src/guides/permission-requests/en.mdx:125 src/guides/subscriptions/en.mdx:40
-#: src/guides/writing-data/en.mdx:126 src/guides/creating-a-labeler/en.mdx:35
+#: src/guides/permission-requests/en.mdx:147 src/guides/subscriptions/en.mdx:40
+#: src/guides/writing-data/en.mdx:126 src/guides/creating-a-labeler/en.mdx:43
 #: src/guides/labels/en.mdx:95 src/guides/sdk-auth/en.mdx:70
 #: src/guides/sync/en.mdx:47 src/guides/auth/en.mdx:60
 #: src/guides/lexicon/en.mdx:68 src/guides/publishing-lexicons/en.mdx:60
 #: src/guides/backfilling/en.mdx:64 src/guides/reading-data/en.mdx:113
 #: src/guides/social-graph/en.mdx:25 src/guides/permission-sets/en.mdx:83
-#: src/guides/using-ozone/en.mdx:132 src/guides/about-oauth/en.mdx:81
+#: src/guides/using-ozone/en.mdx:134 src/guides/about-oauth/en.mdx:81
 #, no-wrap
 msgid "## Further Reading and Resources\n"
 msgstr "<Heading level={2} id=\"further-reading-and-resources\">関連・参考資料</Heading>\n"
@@ -54,65 +54,71 @@ msgstr ""
 #, no-wrap
 msgid ""
 "export const header = {\n"
-"  title: 'Installing Lexicons',\n"
+"  title: 'Developing with Lexicons',\n"
 "  description: 'Using Lexicons in your dev environment',\n"
 "}\n"
 msgstr ""
 "export const header = {\n"
-"  title: 'Lexiconのインストール',\n"
+"  title: 'Lexiconを用いた開発',\n"
 "  description: '開発環境におけるLexiconの利用',\n"
 "}\n"
 
 #. type: Plain text
 #: src/guides/installing-lexicons/en.mdx:12
 #, no-wrap
-msgid "## Using lex\n"
-msgstr "<Heading level={2} id=\"using-lex\">lexの利用</Heading>\n"
+msgid "Lexicon schemas drive code generation, request validation, and client typing across the AT Protocol stack.\n"
+msgstr "Lexiconスキーマは、コード生成、リクエストの検証、およびATプロトコルスタック全体のクライアント型付けを推進します。\n"
 
 #. type: Plain text
 #: src/guides/installing-lexicons/en.mdx:14
 #, no-wrap
-msgid "Lexicon schemas enable code generation with types and validation. Our SDKs each install a `lex` tool that lets you generate a type-safe client that knows which parameters each AT endpoint expects.\n"
-msgstr "Lexiconスキーマは、型と検証を備えたコード生成を実現します。SDKには、各ATエンドポイントが期待するパラメータを知っている型安全なクライアントを生成できる`lex`ツールがインストールされています。\n"
+msgid "## Installing Lexicons with lex\n"
+msgstr "<Heading level={2} id=\"installing-lexicons-with-lex\">lexによるLexiconのインストール</Heading>\n"
 
 #. type: Plain text
 #: src/guides/installing-lexicons/en.mdx:16
 #, no-wrap
-msgid "## TypeScript\n"
-msgstr "<Heading level={2} id=\"type-script\">TypeScript</Heading>\n"
+msgid "Our SDKs each install a `lex` tool that lets you generate a type-safe client that knows which parameters each AT endpoint expects.\n"
+msgstr "SDKには、各ATエンドポイントが期待するパラメータを知っている型安全なクライアントを生成できる`lex`ツールがインストールされています。\n"
 
 #. type: Plain text
-#: src/guides/installing-lexicons/en.mdx:18
+#: src/guides/installing-lexicons/en.mdx:18 src/guides/about-oauth/en.mdx:22
+#, no-wrap
+msgid "### TypeScript\n"
+msgstr "<Heading level={3} id=\"type-script\">TypeScript</Heading>\n"
+
+#. type: Plain text
+#: src/guides/installing-lexicons/en.mdx:20
 #, no-wrap
 msgid "First, install the `@atproto/lex` package:\n"
 msgstr "まず、`@atproto/lex`パッケージをインストールします。\n"
 
 #. type: Plain text
-#: src/guides/installing-lexicons/en.mdx:20
+#: src/guides/installing-lexicons/en.mdx:22
 #, no-wrap
 msgid "<NpmInstall />\n"
 msgstr "<NpmInstall />\n"
 
 #. type: Plain text
-#: src/guides/installing-lexicons/en.mdx:22
+#: src/guides/installing-lexicons/en.mdx:24
 #, no-wrap
 msgid "This provides the `lex` command, which you can use to install Lexicons into a local project:\n"
 msgstr "これにより`lex`コマンドが提供され、ローカルプロジェクトにLexiconをインストールできます。\n"
 
 #. type: Plain text
-#: src/guides/installing-lexicons/en.mdx:24
+#: src/guides/installing-lexicons/en.mdx:26
 #, no-wrap
 msgid "<LexInstallLexicons />\n"
 msgstr "<LexInstallLexicons />\n"
 
 #. type: Plain text
-#: src/guides/installing-lexicons/en.mdx:26
+#: src/guides/installing-lexicons/en.mdx:28
 #, no-wrap
 msgid "This creates:\n"
 msgstr "これにより以下が作成されます。\n"
 
 #. type: Plain text
-#: src/guides/installing-lexicons/en.mdx:29
+#: src/guides/installing-lexicons/en.mdx:31
 #, no-wrap
 msgid ""
 "- `lexicons.json` - manifest tracking installed Lexicons and their versions (CIDs)\n"
@@ -122,37 +128,113 @@ msgstr ""
 "- `lexicons/` - Lexicon JSONファイルを含むディレクトリ\n"
 
 #. type: Plain text
-#: src/guides/installing-lexicons/en.mdx:31
+#: src/guides/installing-lexicons/en.mdx:33
 #, no-wrap
 msgid "Finally, generate TypeScript schemas from the installed Lexicons:\n"
 msgstr "最後に、インストールされたLexiconからTypeScriptスキーマを生成します。\n"
 
 #. type: Plain text
-#: src/guides/installing-lexicons/en.mdx:33
+#: src/guides/installing-lexicons/en.mdx:35
 #, no-wrap
 msgid "<LexBuild />\n"
 msgstr "<LexBuild />\n"
 
 #. type: Plain text
-#: src/guides/installing-lexicons/en.mdx:35
+#: src/guides/installing-lexicons/en.mdx:37
 #, no-wrap
-msgid "This generates TypeScript files in `./src/lexicons`. Now, you'll have these functions available to use in your code:\n"
-msgstr "これにより`./src/lexicons`にTypeScriptファイルが生成されます。これで、コードでこれらの関数が利用可能になります。\n"
+msgid "This writes TypeScript files to `./src/lexicons`. Once you've run `lex build`, calling a method is a typed `client.call` against the generated definition:\n"
+msgstr "これによりTypeScriptファイルが`./src/lexicons`に書き込まれます。`lex build`を実行した後は、生成された定義に対して型付きの`client.call`を呼び出すことができます。\n"
 
 #. type: Plain text
-#: src/guides/installing-lexicons/en.mdx:37
+#: src/guides/installing-lexicons/en.mdx:39
 #, no-wrap
 msgid "<ClientUsageTs />\n"
 msgstr "<ClientUsageTs />\n"
 
 #. type: Plain text
-#: src/guides/installing-lexicons/en.mdx:39
+#: src/guides/installing-lexicons/en.mdx:41
 #, no-wrap
 msgid "For more guidance on working with `lex`, refer to the [readme](https://github.com/bluesky-social/atproto/tree/main/packages/lex/lex#lexicon-schemas).\n"
 msgstr "`lex`の使用方法に関する詳細については、[readme](https://github.com/bluesky-social/atproto/tree/main/packages/lex/lex#lexicon-schemas)を参照してください。\n"
 
 #. type: Plain text
-#: src/guides/installing-lexicons/en.mdx:44
+#: src/guides/installing-lexicons/en.mdx:43
+#, no-wrap
+msgid "## XRPC Methods\n"
+msgstr "<Heading level={2} id=\"xrpc-methods\">XRPCメソッド</Heading>\n"
+
+#. type: Plain text
+#: src/guides/installing-lexicons/en.mdx:45
+#, no-wrap
+msgid "A Lexicon whose `main` definition is a method describes one of three kinds of XRPC call:\n"
+msgstr "Lexiconの`main`定義がメソッドである場合、3種類のXRPC呼び出しのいずれかを示します。\n"
+
+#. type: Plain text
+#: src/guides/installing-lexicons/en.mdx:49
+#, no-wrap
+msgid ""
+"- **`query`** — a read, served over HTTP `GET`, parameters in the query string. See [Reading Data](/guides/reading-data) for end-to-end examples.\n"
+"- **`procedure`** — a side-effectful call, served over HTTP `POST`, input as a JSON body (or another MIME type if declared). See [Writing Data](/guides/writing-data).\n"
+"- **`subscription`** — a server-pushed WebSocket stream with DAG-CBOR frames, used for the firehose.\n"
+msgstr ""
+"- **`query`** — 読み取り。HTTP `GET`で提供され、パラメータはクエリ文字列に含まれます。エンドツーエンドの例については[データの読み取り](/guides/reading-data)を参照してください。\n"
+"- **`procedure`** — 副作用のある呼び出し。HTTP `POST`で提供され、入力はJSONボディ（または宣言された場合は別のMIMEタイプ）として行われます。[データ書き込み](/guides/writing-data)を参照してください。\n"
+"- **`subscription`** — DAG-CBORフレームを使用したサーバープッシュWebSocketストリームで、firehoseに使用されます。\n"
+
+#. type: Plain text
+#: src/guides/installing-lexicons/en.mdx:51
+#, no-wrap
+msgid "Each method is reachable at `/xrpc/<nsid>` on whatever service implements it — `app.bsky.actor.getProfile` lives at `https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile`. The NSID *is* the URL path.\n"
+msgstr "各メソッドは、それを実装するサービスの`/xrpc/<nsid>`でアクセス可能です。例えば、`app.bsky.actor.getProfile`は`https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile`に存在します。NSIDはURLパスそのものです。\n"
+
+#. type: Plain text
+#: src/guides/installing-lexicons/en.mdx:53
+#, no-wrap
+msgid "Parameters, input body, and output are all type-checked at compile time and validated at runtime against the Lexicon shape.\n"
+msgstr "パラメータ、入力ボディ、および出力はすべて、コンパイル時に型検査され、実行時にLexiconの形状に対して検証されます。\n"
+
+#. type: Plain text
+#: src/guides/installing-lexicons/en.mdx:55
+#, no-wrap
+msgid "## Using the .internal TLD\n"
+msgstr "<Heading level={2} id=\"using-the-internal-tld\">.internal TLDの利用</Heading>\n"
+
+#. type: Plain text
+#: src/guides/installing-lexicons/en.mdx:57
+#, no-wrap
+msgid "NSIDs use reverse DNS lookup — `app.bsky.*` resolves under `bsky.app`, `com.atproto.*` under `atproto.com`. But for **service-to-service calls between components of the same operator**, there's no public schema to publish or resolve.\n"
+msgstr "NSIDは逆引きDNSを使用します。例えば、`app.bsky.*`は`bsky.app`の下で解決され、`com.atproto.*`は`atproto.com`の下で解決されます。しかし、**同じオペレーターのコンポーネント間のサービス間呼び出し**では、発行して解決する公開スキーマはありません。\n"
+
+#. type: Plain text
+#: src/guides/installing-lexicons/en.mdx:59
+#, no-wrap
+msgid "For those, you can use NSIDs prefixed with `internal.`, taking advantage of [`.internal` being a reserved TLD](https://www.iana.org/assignments/special-use-domain-names/special-use-domain-names.xhtml) that can never be registered. For example, the reference implementation includes [`internal.bsky.actor.getProfiles`](https://github.com/bluesky-social/atproto/blob/main/lexicons/internal/bsky/actor/getProfiles.json), a variant of `app.bsky.actor.getProfiles`.\n"
+msgstr "その場合、`internal.`で始まるNSIDを使用できます。[`.internal`が予約済みのTLD](https://www.iana.org/assignments/special-use-domain-names/special-use-domain-names.xhtml)であり、登録されることはないためです。例えば、リファレンス実装には`app.bsky.actor.getProfiles`のバリアントである[`internal.bsky.actor.getProfiles`](https://github.com/bluesky-social/atproto/blob/main/lexicons/internal/bsky/actor/getProfiles.json)が含まれています。\n"
+
+#. type: Plain text
+#: src/guides/installing-lexicons/en.mdx:61
+#, no-wrap
+msgid "This gives you:\n"
+msgstr "これは以下の利点があります。\n"
+
+#. type: Plain text
+#: src/guides/installing-lexicons/en.mdx:64
+#, no-wrap
+msgid ""
+"- **Built-in SDK exclusion.** The codegen filter in `@atproto/lex` treats `*.internal.*` as the canonical exclude pattern, so internal endpoints never appear in your published client SDK.\n"
+"- **All of the XRPC machinery.** Same codegen, typed handlers, request/response validation, inter-service auth, and `/xrpc/<nsid>` routing, but without committing the endpoint to your public protocol surface.\n"
+msgstr ""
+"- **SDK組み込みの除外機能**。`@atproto/lex`のコード生成フィルターは`*.internal.*`を標準的な除外パターンとして扱うため、内部エンドポイントは公開クライアントSDKに表示されません。\n"
+"- **XRPC機構の全て**。同じコード生成、型付きハンドラー、リクエスト/レスポンスの検証、サービス間認証、および`/xrpc/<nsid>`ルーティングが可能ですが、エンドポイントを公開プロトコルの界面にコミットする必要はありません。\n"
+
+#. type: Plain text
+#: src/guides/installing-lexicons/en.mdx:66
+#, no-wrap
+msgid "Use `internal.*` whenever an XRPC method is plumbing for your own infrastructure: optimizations specific to one caller, admin or operational queries, or anything you wouldn't want a third-party implementer to feel obligated to support.\n"
+msgstr "XRPCメソッドが自分のインフラストラクチャの配管である場合は、`internal.*`を使用してください。特定の呼び出し元に固有の最適化、管理または運用クエリ、またはサードパーティの実装者がサポートする責任を感じるべきでないものなどです。\n"
+
+#. type: Plain text
+#: src/guides/installing-lexicons/en.mdx:71
 #, no-wrap
 msgid ""
 "- [Publishing Lexicons](/guides/publishing-lexicons)\n"

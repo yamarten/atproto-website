@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-02-12 10:49+0900\n"
+"POT-Creation-Date: 2026-06-28 20:00+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,7 +61,7 @@ msgstr ""
 "}\n"
 
 #. type: Plain text
-#: src/docs/en.tsx:107
+#: src/docs/en.tsx:113
 #, no-wrap
 msgid ""
 "export default function DocsHome() {\n"
@@ -143,6 +143,12 @@ msgid ""
 "              <strong>A Social Filesystem</strong>\n"
 "            </Link>{' '}\n"
 "            - Formats over apps.\n"
+"          </li>\n"
+"          <li>\n"
+"            <Link href=\"https://overreacted.io/there-are-no-instances-in-atproto/\">\n"
+"              <strong>There Are No Instances in atproto</strong>\n"
+"            </Link>{' '}\n"
+"            - On big world decentralization.\n"
 "          </li>\n"
 "        </ul>\n"
 "        <p>\n"
@@ -231,6 +237,12 @@ msgstr ""
 "            </Link>{' '}\n"
 "            - フォーマットはアプリを超える\n"
 "          </li>\n"
+"          <li>\n"
+"            <Link href=\"https://overreacted.io/there-are-no-instances-in-atproto/\">\n"
+"              <strong>There Are No Instances in atproto</strong>\n"
+"            </Link>{' '}\n"
+"            - 大きな世界の分散化\n"
+"          </li>\n"
 "        </ul>\n"
 "        <p>\n"
 "          さらに学びたければ、<Link href=\"/guides/understanding-atproto\">導入</Link>をお読みください。\n"
@@ -241,7 +253,7 @@ msgstr ""
 "}\n"
 
 #. type: Plain text
-#: src/docs/en.tsx:137
+#: src/docs/en.tsx:143
 #, no-wrap
 msgid ""
 "function NavItem({\n"

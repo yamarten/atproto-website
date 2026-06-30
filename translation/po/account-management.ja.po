@@ -1,0 +1,256 @@
+# Japanese translations for PACKAGE package
+# Copyright (C) 2026 Bluesky Social PBC
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-06-29 00:49+0900\n"
+"PO-Revision-Date: 2026-06-28 22:08+0900\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. type: Plain text
+#: src/guides/account-lifecycle/en.mdx:24
+#: src/guides/account-management/en.mdx:80
+#, no-wrap
+msgid "## Account Migration\n"
+msgstr "<Heading level={2} id=\"account-migration\">アカウント移行</Heading>\n"
+
+#. type: Plain text
+#: src/guides/account-recovery/en.mdx:49
+#: src/guides/account-management/en.mdx:76
+#, no-wrap
+msgid ""
+"```bash\n"
+"brew install goat\n"
+"```\n"
+msgstr ""
+"```bash\n"
+"brew install goat\n"
+"```\n"
+
+#. type: Plain text
+#: src/guides/account-management/en.mdx:6
+#, no-wrap
+msgid ""
+"import {Container} from \"@/components/Container\"\n"
+"import devices from \"./pds-devices.png\"\n"
+"import apps from \"./pds-apps.png\"\n"
+"import password from \"./pds-password.png\"\n"
+"import email from \"./pds-email.png\"\n"
+msgstr ""
+"import {Container} from \"@/components/Container\"\n"
+"import {Heading} from \"@/components/Heading\"\n"
+"import devices from \"./pds-devices.png\"\n"
+"import apps from \"./pds-apps.png\"\n"
+"import password from \"./pds-password.png\"\n"
+"import email from \"./pds-email.png\"\n"
+
+#. type: Plain text
+#: src/guides/account-management/en.mdx:12
+#, no-wrap
+msgid ""
+"export const header = {\n"
+"  title: 'Account Management',\n"
+"  description:\n"
+"    'How to manage your Atmosphere account',\n"
+"}\n"
+msgstr ""
+"export const header = {\n"
+"  title: 'アカウント管理',\n"
+"  description:\n"
+"    'Atmosphereアカウントの管理方法',\n"
+"}\n"
+
+#. type: Plain text
+#: src/guides/account-management/en.mdx:14
+#, no-wrap
+msgid "## Account Creation\n"
+msgstr "<Heading level={2} id=\"account-creation\">アカウント作成</Heading>\n"
+
+#. type: Plain text
+#: src/guides/account-management/en.mdx:16
+#, no-wrap
+msgid "Atmospheric apps should generally implement an account creation flow of their own — e.g., \"Log in or sign up.\" They may or may not run their own [PDS](/guides/the-at-stack#pds) as a default home for new accounts. Once a user has created an account on any PDS, including a Bluesky PDS, they can log in to any atproto app using that account. This works via [DID resolution](/guides/the-at-stack#did-plc), which allows apps to find the PDS that's hosting a given account and trigger the [auth flow](/guides/permission-requests) on that PDS.\n"
+msgstr "Atmosphericアプリは、なるべく「Log in or sign up」のような独自のアカウント作成フローを実装するべきです。新しいアカウントのホームとして独自の[PDS](/guides/the-at-stack#pds)を運用する場合もあれば、そうでない場合もあります。Bluesky PDSを含む、いずれかのPDSでユーザーがアカウントを作成すると、そのアカウントを使用してどのatprotoアプリにもログインできるようになります。これは[DID解決](/guides/the-at-stack#did-plc)を通じて動作し、アプリが対象アカウントをホストしているPDSを見つけて、そのPDS上で[認証フロー](/guides/permission-requests)を開始できるようにします。\n"
+
+#. type: Plain text
+#: src/guides/account-management/en.mdx:18
+#, no-wrap
+msgid "## Account Management\n"
+msgstr "<Heading level={2} id=\"account-management\">アカウント管理</Heading>\n"
+
+#. type: Plain text
+#: src/guides/account-management/en.mdx:20
+#, no-wrap
+msgid "Once you have an account, you can manage it via the host PDS. Our [reference PDS](https://github.com/bluesky-social/pds) includes a basic account management interface that is accessible at `https://pds.example.com/account`. From this interface, you can:\n"
+msgstr "アカウントを作った後は、ホストPDSを通じて管理できます。私たちの[リファレンスPDS](https://github.com/bluesky-social/pds)には、`https://pds.example.com/account`からアクセスできる基本的なアカウント管理インターフェースが含まれています。このインターフェースから、次の操作ができます。\n"
+
+#. type: Plain text
+#: src/guides/account-management/en.mdx:22
+#, no-wrap
+msgid "- See a list of devices that are currently logged in to your account, and log out of any of them:\n"
+msgstr "- 現在アカウントにログインしているデバイスを一覧し、その中から選んでログアウトできます。\n"
+
+#. type: Plain text
+#: src/guides/account-management/en.mdx:26
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={devices} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
+"</Container>\n"
+msgstr ""
+"<Container>\n"
+"  <Image src={devices} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
+"</Container>\n"
+
+#. type: Plain text
+#: src/guides/account-management/en.mdx:28
+#, no-wrap
+msgid "- See a list of apps that have permission to access your account, and revoke any of those permissions:\n"
+msgstr "- アカウントにアクセスする権限を持つアプリを一覧し、権限を取り消すことができます。\n"
+
+#. type: Plain text
+#: src/guides/account-management/en.mdx:32
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={apps} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
+"</Container>\n"
+msgstr ""
+"<Container>\n"
+"  <Image src={apps} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
+"</Container>\n"
+
+#. type: Plain text
+#: src/guides/account-management/en.mdx:34
+#, no-wrap
+msgid "- Change your password:\n"
+msgstr "- パスワードを変更できます。\n"
+
+#. type: Plain text
+#: src/guides/account-management/en.mdx:38
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={password} alt=\"\" className=\"w-full max-w-md mx-auto\" /> \n"
+"</Container>\n"
+msgstr ""
+"<Container>\n"
+"  <Image src={password} alt=\"\" className=\"w-full max-w-md mx-auto\" /> \n"
+"</Container>\n"
+
+#. type: Plain text
+#: src/guides/account-management/en.mdx:40
+#, no-wrap
+msgid "- Change the email address associated with your account:\n"
+msgstr "- アカウントに関連付けられたメールアドレスを変更できます。\n"
+
+#. type: Plain text
+#: src/guides/account-management/en.mdx:44
+#, no-wrap
+msgid ""
+"<Container>\n"
+"  <Image src={email} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
+"</Container>\n"
+msgstr ""
+"<Container>\n"
+"  <Image src={email} alt=\"\" className=\"w-full max-w-md mx-auto\" />\n"
+"</Container>\n"
+
+#. type: Plain text
+#: src/guides/account-management/en.mdx:46
+#, no-wrap
+msgid "You can also perform some account actions — including on PDSes that do not implement this interface — using `goat`, our CLI tool.\n"
+msgstr "このインターフェースを実装していないPDSでも、一部のアカウント操作はCLIツール`goat`を使って実行できます。\n"
+
+#. type: Plain text
+#: src/guides/account-management/en.mdx:51
+#, no-wrap
+msgid ""
+"```bash\n"
+"$ goat account\n"
+"NAME:\n"
+"   goat account - commands for auth session and account management\n"
+msgstr ""
+"```bash\n"
+"$ goat account\n"
+"NAME:\n"
+"   goat account - commands for auth session and account management\n"
+
+#. type: Plain text
+#: src/guides/account-management/en.mdx:54
+#, no-wrap
+msgid ""
+"USAGE:\n"
+"   goat account [command [command options]]\n"
+msgstr ""
+"USAGE:\n"
+"   goat account [command [command options]]\n"
+
+#. type: Plain text
+#: src/guides/account-management/en.mdx:70
+#, no-wrap
+msgid ""
+"COMMANDS:\n"
+"   login                 create session with PDS instance\n"
+"   logout                delete any current session\n"
+"   activate              (re)activate current account\n"
+"   deactivate            deactivate current account\n"
+"   status                show basic account hosting status for any account\n"
+"   update-handle         change handle for current account\n"
+"   check-auth            check session auth and current account status\n"
+"   missing-blobs         list any missing blobs for current account\n"
+"   service-auth          ask the PDS to create a service auth token\n"
+"   service-auth-offline  create service auth token via locally-held signing key\n"
+"   create                create a new account on the indicated PDS host\n"
+"   migrate               move account to a new PDS. requires full auth (not app password)\n"
+"   plc                   commands for managing PLC identity (DID) via PDS host\n"
+"```\n"
+msgstr ""
+"COMMANDS:\n"
+"   login                 create session with PDS instance\n"
+"   logout                delete any current session\n"
+"   activate              (re)activate current account\n"
+"   deactivate            deactivate current account\n"
+"   status                show basic account hosting status for any account\n"
+"   update-handle         change handle for current account\n"
+"   check-auth            check session auth and current account status\n"
+"   missing-blobs         list any missing blobs for current account\n"
+"   service-auth          ask the PDS to create a service auth token\n"
+"   service-auth-offline  create service auth token via locally-held signing key\n"
+"   create                create a new account on the indicated PDS host\n"
+"   migrate               move account to a new PDS. requires full auth (not app password)\n"
+"   plc                   commands for managing PLC identity (DID) via PDS host\n"
+"```\n"
+
+#. type: Plain text
+#: src/guides/account-management/en.mdx:72
+#, no-wrap
+msgid "You can install `goat` via homebrew:\n"
+msgstr "`goat`はhomebrewでインストールできます。\n"
+
+#. type: Plain text
+#: src/guides/account-management/en.mdx:78
+#, no-wrap
+msgid "Refer to the [goat](https://github.com/bluesky-social/goat) repository for more details.\n"
+msgstr "詳細は[goat](https://github.com/bluesky-social/goat)のリポジトリを参照してください。\n"
+
+#. type: Plain text
+#: src/guides/account-management/en.mdx:82
+#, no-wrap
+msgid "To migrate your account to another PDS, see [Account Migration](/guides/account-migration).\n"
+msgstr "アカウントを別のPDSに移行する場合は、[アカウント移行](/guides/account-migration)を参照してください。\n"
+
+#. type: Plain text
+#: src/guides/account-management/en.mdx:83
+#, no-wrap
+msgid "If your host PDS becomes unavailable, see [Account Recovery](/guides/account-recovery).\n"
+msgstr "ホストPDSが利用できなくなった場合は、[アカウント回復](/guides/account-recovery)を参照してください。\n"

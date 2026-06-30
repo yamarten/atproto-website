@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-05-18 11:10+0900\n"
+"POT-Creation-Date: 2026-06-28 20:00+0900\n"
 "PO-Revision-Date: 2026-01-07 19:40+0900\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -20,16 +20,16 @@ msgstr ""
 #: src/guides/account-lifecycle/en.mdx:65 src/guides/images-and-video/en.mdx:68
 #: src/guides/moderation/en.mdx:30 src/guides/reads-and-writes/en.mdx:60
 #: src/guides/streaming-data/en.mdx:42 src/guides/video-handling/en.mdx:32
-#: src/guides/feeds/en.mdx:90 src/guides/installing-lexicons/en.mdx:41
+#: src/guides/feeds/en.mdx:90 src/guides/installing-lexicons/en.mdx:68
 #: src/guides/oauth-patterns/en.mdx:125
-#: src/guides/permission-requests/en.mdx:125 src/guides/subscriptions/en.mdx:40
-#: src/guides/writing-data/en.mdx:126 src/guides/creating-a-labeler/en.mdx:35
+#: src/guides/permission-requests/en.mdx:147 src/guides/subscriptions/en.mdx:40
+#: src/guides/writing-data/en.mdx:126 src/guides/creating-a-labeler/en.mdx:43
 #: src/guides/labels/en.mdx:95 src/guides/sdk-auth/en.mdx:70
 #: src/guides/sync/en.mdx:47 src/guides/auth/en.mdx:60
 #: src/guides/lexicon/en.mdx:68 src/guides/publishing-lexicons/en.mdx:60
 #: src/guides/backfilling/en.mdx:64 src/guides/reading-data/en.mdx:113
 #: src/guides/social-graph/en.mdx:25 src/guides/permission-sets/en.mdx:83
-#: src/guides/using-ozone/en.mdx:132 src/guides/about-oauth/en.mdx:81
+#: src/guides/using-ozone/en.mdx:134 src/guides/about-oauth/en.mdx:81
 #, no-wrap
 msgid "## Further Reading and Resources\n"
 msgstr "<Heading level={2} id=\"further-reading-and-resources\">関連・参考資料</Heading>\n"
@@ -243,7 +243,7 @@ msgstr "<Heading level={2} id=\"submitting-and-managing-reports\">報告の送�
 #: src/guides/using-ozone/en.mdx:74
 #, no-wrap
 msgid "Now, you'll create and action an example moderation report. In Bluesky or another application, sign back in to a regular (non-labeler) account. Then, navigate to the account page for your labeler service.\n"
-msgstr "次に、モデレーション報告をの例を作成して処理します。Blueskyまたは別のアプリケーションで、通常の（ラベラーではない）アカウントにサインインし直します。次に、ラベラーサービスのアカウントページに移動します。\n"
+msgstr "次に、モデレーション報告の例を作成して処理します。Blueskyまたは別のアプリケーションで、通常の（ラベラーではない）アカウントにサインインし直します。次に、ラベラーサービスのアカウントページに移動します。\n"
 
 #. type: Plain text
 #: src/guides/using-ozone/en.mdx:78
@@ -344,8 +344,8 @@ msgstr ""
 #. type: Plain text
 #: src/guides/using-ozone/en.mdx:108
 #, no-wrap
-msgid "In this case, the most straightforward action is to acknowledge the report without taking further action. Select \"Ackonwledge\" from the drop-down, provide a note, then submit the action. You can use keyboard shortcuts to speed up moderation actions — for example, `S` for Submit.\n"
-msgstr "この場合、最も簡単なアクションは、それ以上のアクションをとらずにレポートを承認することです。ドロップダウンから「Ackonwledge」を選択し、メモを入力してアクションを送信します。キーボードショートカットを使用すると、モデレーションアクションを高速化できます。たとえば、Submitの`S`で送信できます。\n"
+msgid "In this case, the most straightforward action is to acknowledge the report without taking further action. Select \"Acknowledge\" from the drop-down, provide a note, then submit the action. You can use keyboard shortcuts to speed up moderation actions — for example, `S` for Submit.\n"
+msgstr "この場合、最も簡単なアクションは、それ以上のアクションをとらずにレポートを承認することです。ドロップダウンから「Acknowledge」を選択し、メモを入力してアクションを送信します。キーボードショートカットを使用すると、モデレーションアクションを高速化できます。たとえば、Submitの`S`で送信できます。\n"
 
 #. type: Plain text
 #: src/guides/using-ozone/en.mdx:112
@@ -404,17 +404,23 @@ msgstr ""
 #. type: Plain text
 #: src/guides/using-ozone/en.mdx:128
 #, no-wrap
+msgid "From here, you can refer to the [Ozone User Guide](https://github.com/bluesky-social/ozone/blob/main/docs/userguide.md) for more.\n"
+msgstr "ここから、詳細については[Ozoneユーザーガイド](https://github.com/bluesky-social/ozone/blob/main/docs/userguide.md)を参照してください。\n"
+
+#. type: Plain text
+#: src/guides/using-ozone/en.mdx:130
+#, no-wrap
 msgid "## Next steps\n"
 msgstr "<Heading level={2} id=\"next-steps\">次のステップ</Heading>\n"
 
 #. type: Plain text
-#: src/guides/using-ozone/en.mdx:130
+#: src/guides/using-ozone/en.mdx:132
 #, no-wrap
 msgid "You now have an understanding of the Ozone moderation flow. Ozone also allows you to create additional user accounts with different permissions, to help manage your moderation workload. To aggregate the data from your Ozone instance, see the [#OzoneInsights](https://bsky.app/search?q=%23ozoneinsights) feed for solutions.\n"
 msgstr "これで、Ozoneによるモデレーションの流れが理解できました。Ozoneでは、モデレーションワークロードの管理に役立つ、さまざまな権限を持つ追加のユーザーアカウントを作成することもできます。Ozoneインスタンスからデータを集計するには、[#OzoneInsights](https://bsky.app/search?q=%23ozoneinsights)フィードを参照してください。\n"
 
 #. type: Plain text
-#: src/guides/using-ozone/en.mdx:137
+#: src/guides/using-ozone/en.mdx:139
 #, no-wrap
 msgid ""
 "- [Moderation](/guides/moderation)\n"
