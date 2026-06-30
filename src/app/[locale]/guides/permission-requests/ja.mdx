@@ -33,7 +33,7 @@ atprotoリソースの制御権は[権限](/specs/permission)によって付与�
 
 <OauthScopeMetadata />
 
-ATにおけるOAuthは[Pushed Authorization Requests](https://auth0.com/blog/what-are-oauth-push-authorization-requests-par/)（PAR）を使用します。クライアントメタデータファイルはセッションライフサイクル中に動的に取得され、`oauth-client-metadata.json`の`scope`パラメータはアプリが実際に行う認可HTTPリクエストと*一致している必要があります*。
+ATにおけるOAuthは[Pushed Authorization Requests](https://auth0.com/blog/what-are-oauth-push-authorization-requests-par/)（PAR）を使用します。クライアントメタデータファイルはセッションライフサイクル中に動的に取得され、`oauth-client-metadata.json`の`scope`パラメータはアプリが実際に行う認可HTTPリクエストを*含んでいる必要があります*。
 
 <OauthAuthUrl />
 
@@ -59,6 +59,28 @@ PDSインスタンス上のユーザー所有リソースに関わる権限は�
 スコープ文字列の構文ではワイルドカード（*）が許可され、すべてのレコードへのアクセス権が付与されます。最も一般的な例は、画像や動画の取り扱い向けの`blob:*/*`です。部分的なワイルドカードはサポート*されません*。例えば、`repo:app.bsky.*`は有効なスコープ文字列ではありません。特定の名前空間やLexiconから複数の権限を要求したい場合は、個別に列挙するか、[権限セット](#for-lexicon-designers)を使用する必要があります。これは過剰に広い権限要求を避けるための意図的な設計です。
 
 権限セット自体もLexiconスキーマであり、他のLexiconと同様に名前空間が付いています。権限セットはスコープ文字列では`include:`のプレフィックスを付けます。他のLexiconと異なり、権限セットは[多くのコンテキスト](#rolling-out-changes)で動的に更新できます。
+
+<Heading level={2} id="permission-sets">権限セット</Heading>
+
+OAuthの目的は、ユーザーが自分のユーザー名とパスワードを渡すことなく、アプリケーションがユーザーに代わって動作できるようにすることです。atprotoアプリの場合、OAuthリクエストは、ユーザーのPDSへのレコード書き込み、APIエンドポイントの呼び出し、メディアのアップロードなど、上記の権限タイプで概説されたあらゆる操作を行うための権限を要求します。
+
+比較的シンプルなアプリでも、最終的にはいくつもの権限を要求することになり、OAuth認可ダイアログでそれらを個別に列挙すると、アプリを使用する人々にとって混乱を招く可能性があります。これを解決するために、権限セットは権限を論理的にグループ化し、人間に優しいタイトルと説明を提示できるようにします。
+
+Blueskyは、Bluesky固有のアプリケーションを構築するさまざまな方法に対応するための権限セットを公開しています。例えば、フル機能のマイクロブログクライアントを構築している場合、投稿、設定、購読をカバーする包括的な権限セットを付与する[`app.bsky.authFullApp`権限セット](https://lexicon.garden/lexicon/did:plc:4v4y5r3lwsbtmsxhile2ljac/app.bsky.authFullApp)を要求することになるでしょう。
+
+しかし、タイムラインに投稿するだけのアプリを構築したい場合は、より狭いスコープの[`app.bsky.authCreatePosts`権限セット](https://lexicon.garden/lexicon/did:plc:4v4y5r3lwsbtmsxhile2ljac/app.bsky.authCreatePosts)を要求できます。
+
+OAuth権限を要求する際には、次のルールを念頭に置いてください。
+
+1. 既存サービスのクライアントアプリを構築している場合、利用可能であればそのサービスが公開している権限セットを使用してください。例えば、Stream.placeのストリーミングクライアントは、ユーザーに代わってStream.placeへの完全なアクセス権を付与する[`place.stream.authFull`権限セット](https://lexicon.garden/lexicon/did:plc:gqtagsooi75obldmytuow57q/place.stream.authFull)を要求します。
+
+2. 独自のLexiconを構築している場合、アプリが公開する関連レコードタイプとAPIエンドポイントをまとめた権限セットを作成してください。設計ガイドについては[権限セット](/guides/permission-sets)を参照してください。
+
+3. アプリが少数の権限しか必要としない場合、または`blob`、`account`、`identity`スコープが必要な場合は、個々のスコープを直接要求してください。これらは権限セットに含めることはできず、常に個別に要求する必要があります。
+
+これらのアプローチは組み合わせることができます。アプリは、同じOAuthフローで1つ以上の権限セットと少数の個別スコープを要求することがよくあります。
+
+独自の権限セットを構築したり、Blueskyの権限を要求する際に支援が必要な場合は、[スコープビルダー](/guides/scope-builder)ページを用意しています。
 
 <Heading level={2} id="clients">クライアント</Heading>
 

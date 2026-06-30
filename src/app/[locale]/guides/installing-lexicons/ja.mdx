@@ -5,15 +5,17 @@ import LexBuild from './_snippets/lex-build.mdx'
 import ClientUsageTs from './_snippets/client-usage-ts.mdx'
 
 export const header = {
-  title: 'Lexiconでの開発',
+  title: 'Lexiconを用いた開発',
   description: '開発環境におけるLexiconの利用',
 }
 
-<Heading level={2} id="using-lex">lexの利用</Heading>
+Lexiconスキーマは、コード生成、リクエストの検証、およびATプロトコルスタック全体のクライアント型付けを推進します。
 
-Lexiconスキーマは、型と検証を備えたコード生成を実現します。SDKには、各ATエンドポイントが期待するパラメータを知っている型安全なクライアントを生成できる`lex`ツールがインストールされています。
+<Heading level={2} id="installing-lexicons-with-lex">lexによるLexiconのインストール</Heading>
 
-<Heading level={2} id="type-script">TypeScript</Heading>
+SDKには、各ATエンドポイントが期待するパラメータを知っている型安全なクライアントを生成できる`lex`ツールがインストールされています。
+
+<Heading level={3} id="type-script">TypeScript</Heading>
 
 まず、`@atproto/lex`パッケージをインストールします。
 
@@ -32,11 +34,36 @@ Lexiconスキーマは、型と検証を備えたコード生成を実現しま�
 
 <LexBuild />
 
-これにより`./src/lexicons`にTypeScriptファイルが生成されます。これで、コードでこれらの関数が利用可能になります。
+これによりTypeScriptファイルが`./src/lexicons`に書き込まれます。`lex build`を実行した後は、生成された定義に対して型付きの`client.call`を呼び出すことができます。
 
 <ClientUsageTs />
 
 `lex`の使用方法に関する詳細については、[readme](https://github.com/bluesky-social/atproto/tree/main/packages/lex/lex#lexicon-schemas)を参照してください。
+
+<Heading level={2} id="xrpc-methods">XRPCメソッド</Heading>
+
+Lexiconの`main`定義がメソッドである場合、3種類のXRPC呼び出しのいずれかを示します。
+
+- **`query`** — 読み取り。HTTP `GET`で提供され、パラメータはクエリ文字列に含まれます。エンドツーエンドの例については[データの読み取り](/guides/reading-data)を参照してください。
+- **`procedure`** — 副作用のある呼び出し。HTTP `POST`で提供され、入力はJSONボディ（または宣言された場合は別のMIMEタイプ）として行われます。[データ書き込み](/guides/writing-data)を参照してください。
+- **`subscription`** — DAG-CBORフレームを使用したサーバープッシュWebSocketストリームで、firehoseに使用されます。
+
+各メソッドは、それを実装するサービスの`/xrpc/<nsid>`でアクセス可能です。例えば、`app.bsky.actor.getProfile`は`https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile`に存在します。NSIDはURLパスそのものです。
+
+パラメータ、入力ボディ、および出力はすべて、コンパイル時に型検査され、実行時にLexiconの形状に対して検証されます。
+
+<Heading level={2} id="using-the-internal-tld">.internal TLDの利用</Heading>
+
+NSIDは逆引きDNSを使用します。例えば、`app.bsky.*`は`bsky.app`の下で解決され、`com.atproto.*`は`atproto.com`の下で解決されます。しかし、**同じオペレーターのコンポーネント間のサービス間呼び出し**では、発行して解決する公開スキーマはありません。
+
+その場合、`internal.`で始まるNSIDを使用できます。[`.internal`が予約済みのTLD](https://www.iana.org/assignments/special-use-domain-names/special-use-domain-names.xhtml)であり、登録されることはないためです。例えば、リファレンス実装には`app.bsky.actor.getProfiles`のバリアントである[`internal.bsky.actor.getProfiles`](https://github.com/bluesky-social/atproto/blob/main/lexicons/internal/bsky/actor/getProfiles.json)が含まれています。
+
+これは以下の利点があります。
+
+- **SDK組み込みの除外機能**。`@atproto/lex`のコード生成フィルターは`*.internal.*`を標準的な除外パターンとして扱うため、内部エンドポイントは公開クライアントSDKに表示されません。
+- **XRPC機構の全て**。同じコード生成、型付きハンドラー、リクエスト/レスポンスの検証、サービス間認証、および`/xrpc/<nsid>`ルーティングが可能ですが、エンドポイントを公開プロトコルの界面にコミットする必要はありません。
+
+XRPCメソッドが自分のインフラストラクチャの配管である場合は、`internal.*`を使用してください。特定の呼び出し元に固有の最適化、管理または運用クエリ、またはサードパーティの実装者がサポートする責任を感じるべきでないものなどです。
 
 <Heading level={2} id="further-reading-and-resources">関連・参考資料</Heading>
 
